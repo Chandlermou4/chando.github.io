@@ -4,65 +4,87 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Strats de Raid — Guides interactifs</title>
+<script>
+  /* thème choisi (partagé avec les guides) — appliqué avant le rendu */
+  try{var t=localStorage.getItem('guide-theme');
+    if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bone:#EDE8DA;--slate:#8C9AB2;--line:rgba(200,215,225,.14);
-  --ember:#FF7A33;--night:#05080D;--card:#0D1219;
+  --bg:#0C0D0B;--fg:#E7E4DA;--dim:#9AA09B;
+  --hair:rgba(231,228,218,.14);
+  --accent:#8FBDAE;--accent-soft:rgba(143,189,174,.14);
+}
+:root[data-theme="light"]{
+  --bg:#F7F4EE;--fg:#20232A;--dim:#6C7178;
+  --hair:rgba(30,34,42,.14);
+  --accent:#3E6B5E;--accent-soft:rgba(62,107,94,.12);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{
-  background:var(--night);color:var(--bone);font-family:'Archivo',sans-serif;line-height:1.4;
-  min-height:100vh;display:flex;flex-direction:column;
-  background-image:radial-gradient(1100px 520px at 50% -15%, rgba(255,122,51,.12), transparent 70%);
+  background:var(--bg);color:var(--fg);font-family:'Hanken Grotesk',system-ui,sans-serif;
+  line-height:1.45;min-height:100vh;display:flex;flex-direction:column;
+  -webkit-font-smoothing:antialiased;
 }
 
 header{
-  padding:26px 40px 22px;display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;
-  border-bottom:1px solid var(--line);
+  padding:34px 48px 26px;display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;
+  border-bottom:1px solid var(--hair);
 }
-header h1{font-family:'Archivo Black',sans-serif;font-size:26px;letter-spacing:-.01em}
-header .eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.28em;
-  color:var(--ember);text-transform:uppercase}
-header .lede{color:var(--slate);font-size:13px;margin-left:auto}
+header h1{font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:29px;letter-spacing:-.01em}
+header .eyebrow{font-size:11px;font-weight:600;letter-spacing:.24em;color:var(--dim);text-transform:uppercase}
+header .lede{color:var(--dim);font-size:13px;margin-left:auto;max-width:44ch}
 
 main{
-  flex:1;display:grid;gap:20px 40px;align-content:center;
+  flex:1;display:grid;gap:24px 48px;align-content:center;
   grid-template-columns:repeat(4,1fr);
-  padding:40px 56px;max-width:1600px;margin:0 auto;width:100%;
+  padding:48px 56px;max-width:1600px;margin:0 auto;width:100%;
 }
 
-.col-k{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--ember);padding-bottom:10px;margin-bottom:16px;border-bottom:1px solid rgba(255,122,51,.35)}
+.col-k{
+  font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);padding-bottom:10px;margin-bottom:18px;border-bottom:1px solid var(--hair);
+}
 
-.raid{margin-bottom:24px}
+.raid{margin-bottom:26px}
 .raid:last-child{margin-bottom:0}
-.raid h2{font-family:'Archivo Black',sans-serif;font-size:17px;letter-spacing:-.01em;margin-bottom:8px}
-.raid .cnt{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--slate);
-  letter-spacing:.06em;font-weight:400}
+.raid h2{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:19px;
+  letter-spacing:-.005em;margin-bottom:10px}
+.raid .cnt{font-family:'Hanken Grotesk',sans-serif;font-size:12px;color:var(--dim);
+  letter-spacing:.02em;font-weight:400;font-style:normal}
 
 .boss{
-  display:flex;align-items:baseline;gap:12px;text-decoration:none;color:var(--bone);
-  padding:8px 12px;border-radius:8px;font-size:15px;
-  transition:background .15s, color .15s, padding .15s;
+  display:flex;align-items:baseline;gap:12px;text-decoration:none;color:var(--fg);
+  padding:8px 12px;border-radius:6px;font-size:15px;
+  transition:background .15s, padding .15s;
 }
-.boss:hover{background:rgba(255,122,51,.13);color:#fff;padding-left:19px}
-.boss .n{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--ember);min-width:15px}
+.boss:hover{background:var(--accent-soft);padding-left:18px}
+.boss .n{font-variant-numeric:tabular-nums;font-size:12px;font-weight:600;color:var(--accent);min-width:15px}
 
-.soon{color:var(--slate);font-size:13px;font-style:italic;padding:5px 12px;opacity:.75}
+.soon{color:var(--dim);font-family:'Newsreader',Georgia,serif;font-style:italic;font-size:14px;
+  padding:4px 12px;opacity:.85}
 
-footer{text-align:center;padding:16px 24px;border-top:1px solid var(--line);color:var(--slate);
-  font-family:'JetBrains Mono',monospace;font-size:11px}
-footer b{color:var(--bone)}
+footer{text-align:center;padding:18px 24px;border-top:1px solid var(--hair);color:var(--dim);
+  font-size:11.5px;letter-spacing:.02em}
+footer b{color:var(--fg);font-weight:600}
+
+#themetoggle{position:fixed;right:24px;bottom:24px;z-index:98;
+  font-family:'Hanken Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:.08em;
+  color:var(--fg);background:transparent;border:1px solid var(--hair);
+  padding:8px 14px;border-radius:999px;cursor:pointer;transition:border-color .2s}
+#themetoggle:hover{border-color:var(--accent)}
 
 @media(max-width:1180px){main{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){
   body{min-height:0}
-  main{grid-template-columns:1fr;align-content:start}
+  header{padding:26px 24px 20px}
+  main{grid-template-columns:1fr;align-content:start;padding:32px 24px}
   header .lede{margin-left:0;flex-basis:100%}
 }
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
@@ -128,6 +150,22 @@ footer b{color:var(--bone)}
 <footer>
   Chaque guide se pilote au clavier — <b>Espace</b> avancer · <b>P</b> lecture auto · <b>R</b> enregistrement · <b>E</b> édition
 </footer>
+
+<button id="themetoggle" type="button" aria-label="Basculer le thème clair ou sombre"></button>
+
+<script>
+(function(){
+  var KEY='guide-theme', root=document.documentElement, btn=document.getElementById('themetoggle');
+  function sync(){ btn.textContent=(root.dataset.theme==='light')?'Sombre':'Clair'; }
+  btn.addEventListener('click',function(){
+    var toLight=root.dataset.theme!=='light';
+    root.dataset.theme=toLight?'light':'dark';
+    try{localStorage.setItem(KEY,toLight?'light':'dark')}catch(e){}
+    sync();
+  });
+  sync();
+})();
+</script>
 
 </body>
 </html>
