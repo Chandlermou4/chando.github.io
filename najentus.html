@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
-<title>Grand Seigneur de Guerre Naj'entus — Temple noir · Boss 1 / 9</title>
+<title>Grand seigneur de guerre Naj'entus — Temple noir · Boss 1 / 9</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
@@ -35,10 +35,12 @@
 
 <!-- 1 · placement -->
 <g id="L1" class="layer">
-  <g class="dist6" transform="translate(210,-40)"><circle r="46"/></g>
-  <g class="dist6" transform="translate(280,60)"><circle r="46"/></g>
-  <text class="note" x="0" y="-350" fill="#EDE8DA">CORPS-À-CORPS EN PLUSIEURS PETITS GROUPES</text>
-  <text class="note" x="0" y="350" fill="#2FC2C7">TOUJOURS 6 MÈTRES ENTRE DEUX JOUEURS</text>
+  <g id="cleave" transform="rotate(-90)"><path class="cone-cl" d="M 0 0 L 250 -118 A 275 275 0 0 1 250 118 Z"/></g>
+  <g class="dist6" transform="translate(140,190)"><circle r="46"/></g>
+  <g class="dist6" transform="translate(-120,240)"><circle r="46"/></g>
+  <text class="tag" x="0" y="-250" fill="#E8443C">PERSONNE DEVANT</text>
+  <text class="note" x="0" y="-350" fill="#EDE8DA">CORPS-À-CORPS EN PLUSIEURS PETITS PAQUETS, DANS SON DOS</text>
+  <text class="note" x="0" y="350" fill="#2FC2C7">TOUT LE RAID AU SUD · 6 MÈTRES ENTRE DEUX JOUEURS</text>
 </g>
 
 <!-- 2 · Épine -->
@@ -47,8 +49,8 @@
   <g class="hit-splash" transform="translate(230,-90)"><circle r="52"/></g>
   <g class="hit-splash" style="--d:.15s" transform="translate(255,0)"><circle r="52"/></g>
   <g class="hit-splash" style="--d:.3s" transform="translate(230,90)"><circle r="52"/></g>
-  <text class="note" x="0" y="-350" fill="#7FB2F0">3 CIBLES AU HASARD · TOUTES LES 20 SECONDES</text>
-  <text class="note" x="0" y="350" fill="#EDE8DA">DÉGÂTS PHYSIQUES + ÉCLAT DE GIVRE À 6 MÈTRES AUTOUR</text>
+  <text class="note" x="0" y="-350" fill="#7FB2F0">SUR DES JOUEURS AU HASARD, EN CONTINU</text>
+  <text class="note" x="0" y="350" fill="#EDE8DA">ÉCLAT QUI TOUCHE TOUT LE MONDE À MOINS DE 6 MÈTRES</text>
 </g>
 
 <!-- 3 · Épine de Perforation -->
@@ -60,9 +62,9 @@
   </g>
   <path class="save-arrow" d="M -220 100 L -60 30" fill="none" marker-end="url(#ahn)"/>
   <g transform="translate(-30,10)"><image href="assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/>
-    <text class="tag" y="34" fill="#F2C14E">RÉCUPÈRE L'ÉCHARDE</text></g>
-  <text class="note" x="0" y="-350" fill="#EDE8DA">CLIQUEZ L'ÉCHARDE POUR LE LIBÉRER</text>
-  <text class="note" x="0" y="350" fill="#F2C14E">L'OBJET RÉCUPÉRÉ SERT À CASSER LE BOUCLIER</text>
+    <text class="tag" y="34" fill="#F2C14E">RAMASSE L'ÉPINE</text></g>
+  <text class="note" x="0" y="-350" fill="#EDE8DA">CLIQUEZ L'ÉPINE AU SOL POUR LE LIBÉRER</text>
+  <text class="note" x="0" y="350" fill="#F2C14E">L'ÉPINE DORSALE RÉCUPÉRÉE SERT À BRISER LE BOUCLIER</text>
 </g>
 
 <!-- 4 · Bouclier de Flots -->
@@ -78,8 +80,8 @@
 <!-- 5 · Rupture -->
 <g id="L5" class="layer">
   <circle class="burst" r="70"/><circle class="burst" r="70"/>
-  <text class="note" x="0" y="-350" fill="#7FB2F0">TOUT LE MONDE À PLEINE VIE AVANT DE LANCER</text>
-  <text class="note" x="0" y="350" fill="#E8443C">LE JAILLISSEMENT DE FLOTS FRAPPE LE RAID ENTIER</text>
+  <text class="note" x="0" y="-350" fill="#7FB2F0">RAID À PLEINE VIE · FURIE SANGUINAIRE · CD DE SOIN</text>
+  <text class="note" x="0" y="350" fill="#E8443C">LE JAILLISSEMENT DE FLOTS COÛTE ~80 % DE LA VIE À TOUT LE RAID</text>
   <text class="note" x="0" y="376" fill="var(--slate)">un lancer trop tôt tue les plus fragiles</text>
 </g>
 
@@ -90,8 +92,8 @@
 <div id="panel">
   <a class="feedback" href="https://discord.gg/rz5PxxMgnv" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.213.386-.46.905-.63 1.319a18.27 18.27 0 0 0-5.51 0C9.575 3.905 9.322 3.386 9.11 3a19.7 19.7 0 0 0-4.432 1.369C1.869 8.59 1.106 12.705 1.488 16.76a19.9 19.9 0 0 0 6.073 3.08 14.6 14.6 0 0 0 1.307-2.136c-.72-.271-1.41-.606-2.06-1 .173-.128.342-.261.505-.398a14.2 14.2 0 0 0 12.171 0c.165.14.334.273.506.398-.652.394-1.343.73-2.064 1.001.377.75.815 1.463 1.307 2.135a19.85 19.85 0 0 0 6.076-3.08c.448-4.7-.766-8.777-3.209-12.39ZM8.02 14.331c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.955 2.419-2.157 2.419Zm7.96 0c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.946 2.419-2.157 2.419Z"/></svg>Pour signaler une erreur ou proposer une modification</a>
   <div class="eyebrow">Temple noir · Boss 1 / 9</div>
-  <h1>Grand Seigneur de Guerre Naj'entus</h1>
-  <div class="subtitle">Une seule vraie règle : ne jamais lancer l'écharde trop tôt.</div>
+  <h1>Grand seigneur de guerre Naj'entus</h1>
+  <div class="subtitle">Une seule règle qui compte : on ne brise pas le bouclier avant que le raid soit à pleine vie.</div>
   <div id="stepno"></div><div id="mech"></div><div id="narration"></div><div id="rail"></div>
 </div>
 

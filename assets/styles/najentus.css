@@ -8,6 +8,8 @@
 #boss{animation:breathe 4s ease-in-out infinite;filter:drop-shadow(0 0 14px rgba(47,194,199,.5))}
 @keyframes breathe{50%{transform:scale(1.05)}}
 .dist6 circle{fill:none;stroke:rgba(47,194,199,.5);stroke-width:2;stroke-dasharray:5 7;animation:dash 3s linear infinite}
+.cone-cl{fill:rgba(232,68,60,.16);stroke:#E8443C;stroke-width:2.5}
+[data-step="1"] #cleave{animation:pulse 2.2s ease-in-out infinite}
 
 .cone-n{fill:rgba(127,178,240,.22);stroke:#7FB2F0;stroke-width:2.5}
 #needle{opacity:0}
