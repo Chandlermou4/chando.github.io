@@ -18,8 +18,8 @@
 .ice-in{fill:rgba(127,178,240,.4)}
 #tomb{opacity:0}
 [data-step="2"] #tomb{animation:tomb 3.4s ease-out infinite}
-@keyframes tomb{0%,20%{opacity:0;transform:translate(-300px,-228px) scale(.5)}
-  30%{opacity:1;transform:translate(-300px,-228px) scale(1)}90%{opacity:1}100%{opacity:0}}
+@keyframes tomb{0%,20%{opacity:0;transform:translate(272px,-112px) scale(.5)}
+  30%{opacity:1;transform:translate(272px,-112px) scale(1)}90%{opacity:1}100%{opacity:0}}
 .hp-bg{fill:rgba(5,10,16,.85);stroke:rgba(200,215,225,.35);stroke-width:1.5}
 .hp{fill:#E8443C;transform-origin:-50px 0}
 [data-step="2"] .hp{animation:hpdrop 3.4s ease-in infinite}
