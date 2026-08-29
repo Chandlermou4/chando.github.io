@@ -7,10 +7,11 @@ window.GUIDE_SETUP=({pc,NS,stage})=>{
 // au SUD-EST, dans son dos ; personne devant.
 const SE = Math.PI/4;          // rassemblement du raid
 const NW = SE + Math.PI;       // dos du boss = cône frontal
-// tank principal : au contact, dans le cône, côté nord-ouest
+// les deux tanks au contact, dans le dos du boss (côté nord-ouest).
+// Le point de Destin funeste n'est PAS une position tenue : le 2e tank
+// n'y va qu'à la sortie d'un Garde funeste (voir étape 4).
 pc(Math.cos(NW)*150, Math.sin(NW)*150, 'tank');
-// second tank : au point de Destin funeste (nord-est, à l'écart du raid), prêt à ramasser les Gardes
-pc(250, -235, 'tank');
+pc(-46, -156, 'tank');
 // corps-à-corps : arc serré collé à son dos, au sud-est
 for(let n=0;n<5;n++){
   const a = SE - 0.55 + n*0.275;
