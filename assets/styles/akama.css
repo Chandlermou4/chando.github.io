@@ -1,28 +1,3 @@
 /* akama — spécifique. Tronc commun : assets/guide.css */
 :root{--h1:56px}
 #bg{background-image:url("../media/6f68bd1bdecaace166cf.jpg")}
-
-.room{fill:rgba(18,10,24,.3);stroke:rgba(210,180,235,.24);stroke-width:2.5}
-.room-inner{fill:none;stroke:rgba(190,160,220,.1);stroke-width:1.5}
-[data-step="1"] #L1,[data-step="2"] #L2,[data-step="3"] #L3,[data-step="4"] #L4,[data-step="5"] #L5{opacity:1}
-#boss{animation:breathe 4.5s ease-in-out infinite;filter:drop-shadow(0 0 14px rgba(140,240,126,.5))}
-@keyframes breathe{50%{transform:scale(1.04)}}
-.chan circle{fill:rgba(140,240,126,.22);stroke:#8CF07E;stroke-width:2.5}
-[data-step="1"] .chan{animation:pulse 1.8s ease-in-out infinite}
-.door{fill:rgba(242,193,78,.14);stroke:#F2C14E;stroke-width:2}
-
-.wave{stroke:#F2C14E;stroke-width:3.5;stroke-dasharray:8 8;animation:dash 1s linear infinite}
-.sorc circle{fill:rgba(181,139,245,.22);stroke:#B58BF5;stroke-width:2.5;opacity:0}
-[data-step="3"] .sorc circle{animation:spawnPulse 3s ease-in-out infinite;animation-delay:var(--d,0s)}
-@keyframes spawnPulse{0%,15%{opacity:0;transform:scale(.4)}30%{opacity:1;transform:scale(1)}85%{opacity:1}100%{opacity:0}}
-
-.tb{fill:rgba(5,10,16,.8);stroke:rgba(200,215,225,.35);stroke-width:2}
-.tf{fill:#E8443C;transform-origin:-136px 0}
-[data-step="4"] .tf{animation:countd 6s linear infinite}
-@keyframes countd{0%{transform:scaleX(1)}100%{transform:scaleX(.05)}}
-
-.mark-ring{fill:rgba(181,139,245,.2);stroke:#B58BF5;stroke-width:3}
-[data-step="5"] .mark-ring{animation:pulse 1.4s ease-in-out infinite}
-.corner-path{stroke:#EDE8DA;stroke-width:3;stroke-dasharray:9 9;animation:dash 1.2s linear infinite}
-.corner{fill:none;stroke:#F2C14E;stroke-width:3;stroke-dasharray:6 8;animation:dash 3s linear infinite}
-
