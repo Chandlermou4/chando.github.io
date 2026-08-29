@@ -52,7 +52,7 @@ main{
 .raid{margin-bottom:26px}
 .raid:last-child{margin-bottom:0}
 .raid h2{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:19px;
-  letter-spacing:-.005em;margin-bottom:10px}
+  letter-spacing:-.005em;margin-bottom:10px;color:var(--accent)}
 .raid .cnt{font-family:'Hanken Grotesk',sans-serif;font-size:12px;color:var(--dim);
   letter-spacing:.02em;font-weight:400;font-style:normal}
 
@@ -67,9 +67,16 @@ main{
 .soon{color:var(--dim);font-family:'Newsreader',Georgia,serif;font-style:italic;font-size:14px;
   padding:4px 12px;opacity:.85}
 
-footer{text-align:center;padding:18px 24px;border-top:1px solid var(--hair);color:var(--dim);
-  font-size:11.5px;letter-spacing:.02em}
+footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
+  font-size:11.5px;letter-spacing:.02em;
+  display:flex;flex-direction:column;align-items:center;gap:8px}
+footer .kbline{text-align:center}
 footer b{color:var(--fg);font-weight:600}
+
+.feedback{display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+  color:var(--dim);font-size:12px;letter-spacing:.01em;transition:color .18s}
+.feedback:hover{color:var(--accent)}
+.feedback svg{width:15px;height:15px;flex:none}
 
 #themetoggle{position:fixed;right:24px;bottom:24px;z-index:98;
   font-family:'Hanken Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:.08em;
@@ -92,7 +99,7 @@ footer b{color:var(--fg);font-weight:600}
 <header>
   <span class="eyebrow">TBC Anniversary</span>
   <h1>Strats de Raid</h1>
-  <span class="lede">Diagrammes interactifs par boss — clavier : Espace avance, P lecture auto, E édition.</span>
+  <span class="lede">Diagrammes interactifs par boss — au clavier : ← → naviguer, E édition.</span>
 </header>
 
 <main>
@@ -148,7 +155,8 @@ footer b{color:var(--fg);font-weight:600}
 </main>
 
 <footer>
-  Chaque guide se pilote au clavier — <b>Espace</b> avancer · <b>P</b> lecture auto · <b>R</b> enregistrement · <b>E</b> édition
+  <a class="feedback" href="https://discord.gg/rz5PxxMgnv" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.213.386-.46.905-.63 1.319a18.27 18.27 0 0 0-5.51 0C9.575 3.905 9.322 3.386 9.11 3a19.7 19.7 0 0 0-4.432 1.369C1.869 8.59 1.106 12.705 1.488 16.76a19.9 19.9 0 0 0 6.073 3.08 14.6 14.6 0 0 0 1.307-2.136c-.72-.271-1.41-.606-2.06-1 .173-.128.342-.261.505-.398a14.2 14.2 0 0 0 12.171 0c.165.14.334.273.506.398-.652.394-1.343.73-2.064 1.001.377.75.815 1.463 1.307 2.135a19.85 19.85 0 0 0 6.076-3.08c.448-4.7-.766-8.777-3.209-12.39ZM8.02 14.331c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.955 2.419-2.157 2.419Zm7.96 0c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.946 2.419-2.157 2.419Z"/></svg>Pour signaler une erreur ou proposer une modification</a>
+  <div class="kbline">Chaque guide se pilote au clavier — <b>←</b> <b>→</b> naviguer · <b>E</b> édition</div>
 </footer>
 
 <button id="themetoggle" type="button" aria-label="Basculer le thème clair ou sombre"></button>
