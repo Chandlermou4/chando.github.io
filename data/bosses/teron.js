@@ -1,12 +1,25 @@
-window.GUIDE_STEPS=[{"mech": "Placement", "t": 8, "txt": "Il est tenu à sa position de départ, et le raid recule tout entier à distance. Sans zone au sol dangereuse ici, <strong>rester groupé aide vraiment les soins</strong> — Chaîne de Guérison et Cercle de Guérison en profitent pleinement."}, {"mech": "Incinérer", "t": 8, "txt": "Dégâts directs suivis d'une brûlure sur trois secondes. <strong>Elle se dissipe</strong> — un prêtre ou un paladin réactif l'empêche de s'accumuler et de tuer par surprise.", "focus": ["healer"]}, {"mech": "Fleur du Destin", "t": 8, "txt": "Des nuages sombres apparaissent et bombardent le raid au hasard. Chaque tir est modeste, mais <strong>plusieurs nuages actifs en même temps</strong> font monter les dégâts de fond sur toute la durée du combat."}, {"mech": "Ombre de la Mort", "t": 10, "txt": "Un joueur est marqué toutes les trente secondes. Après <strong>cinquante-cinq secondes, il meurt</strong> — c'est certain, ça ne se dissipe pas. Direction un coin écarté du raid avant l'échéance, pour que la suite ne touche personne d'autre.", "focus": ["mdps", "rdps"]}, {"mech": "Assemblages Ténébreux", "t": 9, "txt": "À la mort du marqué, quatre Assemblages Ténébreux naissent sur son cadavre et le joueur revient en <strong>esprit vengeur</strong>, seul capable de les détruire. Le reste du raid ne s'en occupe pas — laisser le fantôme faire son travail est le seul plan qui fonctionne."}];
+window.GUIDE_STEPS=[{"mech": "Placement", "t": 8, "txt": "<strong>Un seul tank</strong>, au nord du boss. Tout le raid <strong>sur la plateforme</strong>, en cercle autour de Teron, les corps-à-corps derrière (au sud). Un chasseur ouvre avec un Détournement sur le tank."}, {"mech": "Incinération", "t": 8, "txt": "Teron pose <strong>Incinération</strong> sur un joueur au hasard : gros feu qui fait mal tant qu'il tient. Un soigneur est dédié au <strong>dispel en priorité</strong> (un second en secours), et heal rapide dessus en attendant.", "focus": ["healer"]}, {"mech": "Ombre de la mort", "t": 10, "txt": "Toutes les 30 s, un joueur (jamais le tank) est marqué pour <strong>55 secondes</strong> — rien ne l'enlève. À <strong>15 s de la fin</strong>, il part vers le <strong>losange, contre le mur</strong> : à l'échéance il meurt sur place, passe en <strong>Esprit vengeur</strong> et tue les adds qui déferlent — <strong>aucun ne doit atteindre le raid</strong>. Résurrection automatique ensuite ; un <strong>BR</strong> est gardé en priorité pour un soigneur qui prendrait le debuff.", "focus": ["rdps", "mdps"]}, {"mech": "Fleur du destin", "t": 8, "txt": "Une <strong>Fleur du destin</strong> apparaît au-dessus d'un joueur et crache des traits de l'ombre sur le raid. On la <strong>tue sans traîner</strong>."}];
 window.GUIDE_SETUP=({pc,NS,stage})=>{
-// mise à l'échelle 100% CSS (min() avec vw/vh) — plus de calcul JS, plus de bug de timing au chargement
+// Un seul tank au nord du boss. Tout le raid sur la plateforme, en
+// cercle autour de Teron : corps-à-corps au sud (derrière), soigneurs
+// et distants sur le reste du cercle.
 
-const R=['tank','healer','healer','healer','mdps','mdps','rdps','rdps','healer','rdps','mdps','rdps',
-         'healer','rdps','mdps','rdps','rdps','mdps','rdps','rdps','mdps','rdps','rdps','mdps','rdps'];
-for(let n=0;n<25;n++){
-  const a=(n/25)*Math.PI*2, r=110+(n%3)*36;
-  pc(Math.cos(a)*r, 200+Math.sin(a)*r*0.6, R[n]);
+pc(0, -120, 'tank');
+
+// corps-à-corps : arc serré au sud
+for(let n=0;n<6;n++){
+  const a = Math.PI/2 - 0.8 + n*(1.6/5);
+  pc(Math.cos(a)*140, Math.sin(a)*140, 'mdps');
+}
+
+// soigneurs + distants : le reste du cercle, ouvert au sud pour la mêlée
+const RING=['healer','rdps','rdps','healer','rdps','healer','rdps','rdps','healer','rdps',
+            'healer','rdps','rdps','healer','rdps','rdps','healer','rdps'];
+for(let n=0;n<18;n++){
+  const span = Math.PI*1.66;
+  const a = -Math.PI/2 - span/2 + n*(span/17);
+  const r = 200 + (n%2?24:0);
+  pc(Math.cos(a)*r, Math.sin(a)*r, RING[n]);
 }
 
 

@@ -13,71 +13,30 @@
 <body>
 <div id="fit"><div id="stage" data-step="1">
 <div id="bg"></div><div id="scrim"></div>
-<div id="arena"><svg id="field" viewBox="-500 -500 1000 1000">
-
-<circle class="room" r="410"/>
-<circle class="room-inner" r="260"/>
+<div id="arena"><svg id="field" viewBox="-679 -738 1000 1000">
 
 <g id="anchor-boss">
   <g class="mob" id="boss" data-nodrag>
     <circle class="mob-base" r="62"/><circle class="mob-ring" r="56" stroke="#E8443C"/>
     <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-30" y="-30" width="60" height="60"/>
   </g>
-  <text class="lbl" y="94" fill="#E8443C">TERON GOREFIEND</text>
+  <text class="lbl" x="98" y="6" fill="#E8443C">TERON FIELSANG</text>
 </g>
 
 <g id="raid"></g>
 
-<!-- 1 · placement -->
-<g id="L1" class="layer">
-  <circle class="stack-zone" cx="0" cy="200" r="140"/>
-  <text class="note" x="0" y="-352" fill="#EDE8DA">TENU AU POINT FIXE · LE RAID SE REGROUPE LOIN DE LUI</text>
-  <text class="note" x="0" y="352" fill="var(--slate)">aucune AoE au sol ici — être groupé aide les soins</text>
+<g id="losange" transform="translate(-288,-638)">
+  <path class="losange" d="M 0 -34 L 26 0 L 0 34 L -26 0 Z"/>
+  <text class="tag" y="-52" fill="#B58BF5">LOSANGE · CONTRE LE MUR</text>
+  <text class="tag" y="62" fill="var(--slate)">l'esprit y tue les adds</text>
 </g>
 
-<!-- 2 · Incinérer -->
-<g id="L2" class="layer">
-  <g id="incin" transform="translate(-90,180)">
-    <circle class="burn-ring" r="30"/>
-    <image href="assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/>
-    <text class="note" y="-48" fill="#FF7A33">INCINÉRATION</text>
-  </g>
-  <text class="note" x="0" y="-352" fill="#FF7A33">DÉGÂTS DIRECTS + BRÛLURE SUR TROIS SECONDES</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">DISSIPATION IMMÉDIATE · ÇA TUE SI ON LA LAISSE COURIR</text>
-</g>
+<path id="route" d="M -34 -170 C -130 -320, -230 -470, -278 -600" fill="none" marker-end="url(#aht)"/>
 
-<!-- 3 · Fleur du Destin -->
-<g id="L3" class="layer">
-  <g class="blossom" transform="translate(140,-180)"><circle r="26"/></g>
-  <g class="blossom" style="--d:1.2s" transform="translate(-160,-100)"><circle r="26"/></g>
-  <text class="note" x="0" y="-352" fill="#B58BF5">NUAGES QUI BOMBARDENT LE RAID AU HASARD</text>
-  <text class="note" x="0" y="352" fill="var(--slate)">peu de dégâts individuellement, ça s'accumule sur la durée</text>
-</g>
-
-<!-- 4 · Ombre de la Mort -->
-<g id="L4" class="layer">
-  <g id="doomed2" transform="translate(30,150)">
-    <circle class="doom-r" r="34"/><image href="assets/media/6c1b7ace933b5f5c95ef.svg" x="-16" y="-16" width="32" height="32"/>
-  </g>
-  <path class="run-corner" d="M 46 134 L 340 -320" fill="none" marker-end="url(#aht)"/>
-  <g transform="translate(340,-320)"><circle class="corner2" r="52"/><text class="tag" y="72" fill="#F2C14E">COIN ÉCARTÉ</text></g>
-  <text class="note" x="0" y="-352" fill="#B58BF5">55 SECONDES · PUIS LA MORT EST CERTAINE</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">DIRECTION LE COIN AVANT QUE LE COMPTE N'EXPIRE</text>
-</g>
-
-<!-- 5 · Constructions -->
-<g id="L5" class="layer">
-  <g class="construct" transform="translate(280,-300)"><circle r="22"/></g>
-  <g class="construct" style="--d:.2s" transform="translate(340,-260)"><circle r="22"/></g>
-  <g class="construct" style="--d:.4s" transform="translate(300,-240)"><circle r="22"/></g>
-  <g class="construct" style="--d:.6s" transform="translate(360,-310)"><circle r="22"/></g>
-  <g class="ghost" transform="translate(320,-280)"><image href="assets/media/6c1b7ace933b5f5c95ef.svg" x="-16" y="-16" width="32" height="32"/></g>
-  <text class="note" x="0" y="-352" fill="#8CF07E">QUATRE SPECTRES NAISSENT SUR LE CADAVRE</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">SEUL LE FANTÔME PEUT LES TUER — LE RESTE DU RAID N'Y TOUCHE PAS</text>
-</g>
+<text class="note" x="0" y="176" fill="#EDE8DA">TOUT LE RAID SUR LA PLATEFORME · EN CERCLE AUTOUR DE TERON</text>
 
 <defs><marker id="aht" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-  <path d="M0,0 L8,4 L0,8 Z" fill="#F2C14E"/></marker></defs>
+  <path d="M0,0 L8,4 L0,8 Z" fill="#B58BF5"/></marker></defs>
 
 </svg></div>
 <div id="panel">
