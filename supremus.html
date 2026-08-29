@@ -15,14 +15,6 @@
 <div id="bg"></div><div id="scrim"></div>
 <div id="arena"><svg id="field" viewBox="-500 -500 1000 1000">
 
-<circle class="room" r="410"/>
-<circle class="room-inner" r="260"/>
-<g id="scale" transform="translate(-395,398)">
-  <path d="M 0 0 L 78 0" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
-  <path d="M 0 -7 L 0 7 M 78 -7 L 78 7" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
-  <text class="tag" x="39" y="26" fill="rgba(237,232,218,.7)">15 MÈTRES</text>
-</g>
-
 <g id="anchor-boss">
   <g class="mob" id="boss" data-nodrag>
     <circle class="mob-base" r="70"/><circle class="mob-ring" r="64" stroke="#FF7A33"/>
@@ -32,58 +24,6 @@
 </g>
 
 <g id="raid"></g>
-
-<!-- 1 · placement -->
-<g id="L1" class="layer">
-  <g class="pc tank" transform="translate(0,110)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-18" y="-18" width="36" height="36"/></g>
-  <text class="tag" x="0" y="145" fill="#4C86E0">TANK PRINCIPAL</text>
-  <g class="pc tank" transform="translate(90,90)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-16" y="-16" width="32" height="32"/></g>
-  <text class="tag" x="90" y="122" fill="#4C86E0">TANK N°2 · ENCAISSE</text>
-  <text class="note" x="0" y="-350" fill="#EDE8DA">PHASE 1 · TANK ET SPANK</text>
-  <text class="note" x="0" y="350" fill="var(--slate)">un deuxième tank reste en mêlée en permanence, bien soigné</text>
-</g>
-
-<!-- 2 · Coup de Poing de la Fournaise -->
-<g id="L2" class="layer">
-  <g id="flame-trail">
-    <path class="flame-path" d="M 0 0 C 90 40, 180 30, 280 -60"/>
-    <g id="flame-head2"><circle r="20"/></g>
-  </g>
-  <text class="note" x="0" y="-350" fill="#FF7A33">TRAÎNÉE DE FLAMMES VERS UN JOUEUR AU HASARD</text>
-  <text class="note" x="0" y="350" fill="#EDE8DA">SORTEZ-EN — INUTILE D'ESSAYER DE SOIGNER À TRAVERS</text>
-</g>
-
-<!-- 3 · Frappe Haineuse -->
-<g id="L3" class="layer">
-  <circle class="hateful" cx="90" cy="90" r="46"/>
-  <text class="note" x="90" y="10" fill="#E8443C">LE PLUS HAUT EN VIE AU CORPS-À-CORPS</text>
-  <text class="note" x="0" y="350" fill="#EDE8DA">GARDEZ LE TANK N°2 AU TOP · SINON C'EST LUI QUI TREBUCHE</text>
-</g>
-
-<!-- 4 · Fixation -->
-<g id="L4" class="layer">
-  <circle class="kite-zone" r="230"/>
-  <path class="kite-path" d="M 60 90 C 160 40, 230 -40, 250 -140" fill="none"/>
-  <g id="fixated"><image href="assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/></g>
-  <text class="note" x="0" y="-350" fill="#B58BF5">PHASE 2 · IL SE FIXE SUR VOUS PENDANT DIX SECONDES</text>
-  <text class="note" x="0" y="350" fill="#EDE8DA">RESTEZ À DISTANCE MOYENNE : NI TROP PRÈS, NI TROP LOIN</text>
-  <text class="note" x="0" y="376" fill="var(--slate)">trop près = repoussé · trop loin = il charge</text>
-</g>
-
-<!-- 5 · Geysers -->
-<g id="L5" class="layer">
-  <g class="geyser" transform="translate(-180,-140)"><circle r="55"/></g>
-  <g class="geyser" style="--d:1s" transform="translate(200,80)"><circle r="55"/></g>
-  <g class="geyser" style="--d:2s" transform="translate(-60,220)"><circle r="55"/></g>
-  <text class="note" x="0" y="-350" fill="#FF7A33">VOLCANS AU HASARD · NE RESTEZ PAS GROUPÉS</text>
-  <text class="note" x="0" y="350" fill="#EDE8DA">SOINS INSTANTANÉS PRIORITAIRES PENDANT CETTE PHASE</text>
-</g>
-
-<!-- 6 · Transition -->
-<g id="L6" class="layer">
-  <text class="note" x="0" y="-350" fill="#F2C14E">RETOUR EN PHASE 1 · LA MENACE EST REMISE À ZÉRO</text>
-  <text class="note" x="0" y="350" fill="#EDE8DA">DIVERSION DU CHASSEUR POUR REPRENDRE LE BOSS VITE</text>
-</g>
 
 </svg></div>
 <div id="panel">

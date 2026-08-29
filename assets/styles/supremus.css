@@ -1,31 +1,12 @@
 /* supremus — spécifique. Tronc commun : assets/guide.css */
+/* Carte remise à zéro : arène éclaircie, aucun objet — base de travail. */
 :root{--h1:70px}
-#bg{background-image:url("../media/5bc7738f29dad04d1447.jpg")}
 
-.room{fill:rgba(10,16,10,.3);stroke:rgba(200,220,190,.26);stroke-width:2.5}
-.room-inner{fill:none;stroke:rgba(190,210,180,.1);stroke-width:1.5}
-[data-step="1"] #L1,[data-step="2"] #L2,[data-step="3"] #L3,[data-step="4"] #L4,[data-step="5"] #L5,[data-step="6"] #L6{opacity:1}
-#boss{animation:breathe 4s ease-in-out infinite;filter:drop-shadow(0 0 15px rgba(255,122,51,.5))}
-@keyframes breathe{50%{transform:scale(1.05)}}
+#bg{background-image:url("../media/5bc7738f29dad04d1447.jpg");filter:brightness(1.22) saturate(1.05)}
 
-.flame-path{fill:none;stroke:#FF7A33;stroke-width:5;stroke-dasharray:340;stroke-dashoffset:340;
-  filter:drop-shadow(0 0 10px rgba(255,122,51,.85))}
-[data-step="2"] .flame-path{animation:trailgo 3.6s ease-in infinite}
-@keyframes trailgo{0%{stroke-dashoffset:340}55%{stroke-dashoffset:0}100%{stroke-dashoffset:0;opacity:0}}
-#flame-head2 circle,#flame-head2{fill:#FF7A33}
-[data-step="2"] #flame-head2{offset-path:path("M 0 0 C 90 40, 180 30, 280 -60");animation:headgo 3.6s ease-in infinite}
-@keyframes headgo{0%{offset-distance:0%;opacity:1}55%{offset-distance:100%;opacity:1}70%,100%{opacity:0}}
+/* voile très léger : l'arène reste bien visible, on ne fond que vers le panneau */
+#scrim{background:linear-gradient(90deg,
+  transparent 0%, transparent 58%,
+  rgba(5,10,16,.5) 78%, rgba(5,10,16,.92) 100%)}
 
-.hateful{fill:none;stroke:#E8443C;stroke-width:3.5;stroke-dasharray:7 9}
-[data-step="3"] .hateful{animation:dash 2s linear infinite, pulse 1.2s ease-in-out infinite}
-
-.kite-zone{fill:none;stroke:rgba(181,139,245,.4);stroke-width:2;stroke-dasharray:6 10;animation:dash 5s linear infinite}
-.kite-path{stroke:#B58BF5;stroke-width:3;stroke-dasharray:8 8;animation:dash 1s linear infinite}
-#fixated{opacity:0}
-[data-step="4"] #fixated{offset-path:path("M 60 90 C 160 40, 230 -40, 250 -140");animation:flee2 3.4s ease-in-out infinite;opacity:1}
-@keyframes flee2{0%{offset-distance:0%}100%{offset-distance:100%}}
-
-.geyser circle{fill:rgba(255,122,51,.28);stroke:#FF7A33;stroke-width:3;opacity:0}
-[data-step="5"] .geyser circle{animation:erupt 3.4s ease-out infinite;animation-delay:var(--d,0s)}
-@keyframes erupt{0%,10%{opacity:0;r:10}25%{opacity:1;r:55}75%{opacity:.7}100%{opacity:0}}
-
+#boss{filter:drop-shadow(0 0 15px rgba(255,122,51,.55))}
