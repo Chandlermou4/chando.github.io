@@ -2,11 +2,26 @@ window.GUIDE_STEPS=[{"mech": "Placement", "t": 7, "txt": "Un seul tank. Il arriv
 window.GUIDE_SETUP=({pc,NS,stage})=>{
 // mise à l'échelle 100% CSS (min() avec vw/vh) — plus de calcul JS, plus de bug de timing au chargement
 
-const R=['tank','healer','rdps','mdps','rdps','healer','rdps','mdps','rdps','healer','rdps','mdps',
-         'rdps','healer','rdps','mdps','rdps','healer','rdps','mdps','rdps','healer','rdps','mdps','rdps'];
-for(let n=0;n<25;n++){
-  const a=(n/25)*Math.PI*2+0.5, r=(R[n]==='mdps'||R[n]==='tank')?125:(n%2?255:330);
-  pc(Math.cos(a)*r, Math.sin(a)*r, R[n]);
+// Placement calqué sur les repères : tank + boss + corps-à-corps groupés,
+// distants et soigneurs mélangés, étirés en ligne vers le nord-est.
+
+pc(-70, 82, 'tank');
+
+// Corps-à-corps : petit paquet au contact, au nord-est du boss.
+const M=[[40,-52],[72,-70],[52,-96],[92,-46],[104,-80],[64,-116]];
+for(const [x,y] of M) pc(x, y, 'mdps');
+
+// Distants + soigneurs mélangés : deux rangs étalés le long de la ligne NE.
+const S=[-175,-298], E=[328,62];
+const dx=E[0]-S[0], dy=E[1]-S[1], L=Math.hypot(dx,dy);
+const px=-dy/L, py=dx/L;                 // perpendiculaire unitaire
+const MIX=['healer','rdps','rdps','healer','rdps','rdps','healer','rdps','rdps',
+           'rdps','healer','rdps','rdps','healer','rdps','rdps','healer','rdps'];
+for(let row=0;row<2;row++){
+  for(let i=0;i<9;i++){
+    const t=i/8, off=row?46:-46, k=row*9+i;
+    pc(S[0]+t*dx+off*px, S[1]+t*dy+off*py, MIX[k]);
+  }
 }
 
 
