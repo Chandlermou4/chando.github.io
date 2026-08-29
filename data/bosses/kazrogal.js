@@ -2,12 +2,25 @@ window.GUIDE_STEPS=[{"mech": "Le principe", "t": 8, "txt": "Il n'a que quatre so
 window.GUIDE_SETUP=({pc,NS,stage})=>{
 // mise à l'échelle 100% CSS (min() avec vw/vh) — plus de calcul JS, plus de bug de timing au chargement
 
-// très écartés : c'est toute la parade du combat
-const R=['tank','healer','rdps','mdps','rdps','healer','rdps','mdps','rdps','healer','rdps','mdps',
-         'rdps','healer','rdps','mdps','rdps','healer','rdps','mdps','rdps','healer','rdps','mdps','mdps'];
-for(let n=0;n<25;n++){
-  const a=(n/25)*Math.PI*2+0.15, r=(R[n]==='mdps'||R[n]==='tank')?128:(n%2?250:335);
-  pc(Math.cos(a)*r, Math.sin(a)*r, R[n]);
+// Le raid se tient DERRIÈRE le boss, sur ~120° (le boss fait face au sud) :
+// ni collés, ni éparpillés à 360°.
+const N = -Math.PI/2, ARC = 2*Math.PI/3;      // nord, 120°
+
+// Tank + corps-à-corps : au contact, juste derrière le boss, groupe resserré.
+pc(0, -118, 'tank');
+for(let n=0;n<7;n++){
+  const a = N - 0.65 + n*(1.3/6), r = 132 + (n%2)*22;
+  pc(Math.cos(a)*r, Math.sin(a)*r, 'mdps');
+}
+// Soigneurs : à distance, répartis sur tout l'arc pour couvrir tout le monde.
+for(let n=0;n<6;n++){
+  const a = N - ARC/2 + 0.10 + n*((ARC-0.20)/5);
+  pc(Math.cos(a)*300, Math.sin(a)*300, 'healer');
+}
+// Distants : à distance eux aussi, intercalés entre les soigneurs.
+for(let n=0;n<11;n++){
+  const a = N - ARC/2 + 0.10 + (n+0.5)*((ARC-0.20)/11), r = 235 + (n%3)*42;
+  pc(Math.cos(a)*r, Math.sin(a)*r, 'rdps');
 }
 
 
