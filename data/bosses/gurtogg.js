@@ -1,12 +1,18 @@
-window.GUIDE_STEPS=[{"mech": "Placement", "t": 8, "txt": "Trois tanks tournent sur lui, toujours <strong>dos tourné vers le raid</strong>. Aucun cône, aucune frappe frontale ne doit jamais viser le groupe.", "focus": ["tank"]}, {"mech": "Fièvresang", "t": 8, "txt": "Toutes les dix secondes, les <strong>cinq joueurs les plus éloignés</strong> de lui encaissent un poison qui ronge la vie pendant plusieurs secondes. Restez à distance raisonnable plutôt que de vous replier tout au fond de la salle."}, {"mech": "Blessure Acide", "t": 8, "txt": "Chaque coup empile une réduction de soins sur le tank en place. Elle devient vite ingérable — <strong>la rotation des tanks existe pour ça</strong>, pas pour se relayer au hasard.", "focus": ["tank", "healer"]}, {"mech": "Gangrerage", "t": 10, "txt": "Un joueur au hasard devient l'unique cible pendant trente secondes, gagne une énorme réserve de vie et d'armure, et prend des dégâts massifs. <strong>Tout le monde s'écarte de lui</strong> pour ne pas prendre les éclaboussures, et tous les soins basculent dessus — c'est le moment de sortir ses propres défensives.", "focus": ["healer", "rdps"]}, {"mech": "Le cycle", "t": 9, "txt": "Après trente secondes, le Gangrerage retombe et le combat revient en phase une. Il est <strong>immunisé à la provocation</strong> — s'il perd sa cible, il passe directement au deuxième en menace, pas de rattrapage possible."}];
+window.GUIDE_STEPS=[{"mech": "Placement", "t": 8, "txt": "Gurtogg est tenu <strong>à droite</strong> par <strong>trois tanks</strong> qui se relaient ; tout le raid se tient <strong>à gauche</strong>, groupé. Au pull, le <strong>groupe 2 est déjà sur le triangle</strong> — ça évite un déplacement inutile dès la première Fièvresang."}, {"mech": "Fièvresang", "t": 9, "txt": "Toutes les dix secondes, les <strong>cinq joueurs les plus éloignés</strong> de lui prennent un poison de 600 par seconde pendant vingt-quatre secondes. On tourne donc : <strong>groupes 2, 4 et 5</strong> à tour de rôle, <strong>deux rotations complètes</strong> avant la phase 2.", "focus": ["healer"]}, {"mech": "La rotation des tanks", "t": 10, "txt": "Chaque coup empile une <strong>Blessure acide</strong> : &minus;500 d'armure, une minute de durée. À <strong>huit stacks</strong>, le tank principal arrête de générer de la menace et un autre le reprend. Gurtogg n'est <strong>pas provocable</strong> en phase 1, donc le <strong>Détournement du chasseur</strong> est posé sur le tank qui doit récupérer. Attention aussi à la <strong>Frappe stupéfiante</strong> : elle désoriente le tank cinq secondes et le sort de la table de menace.", "focus": ["tank"]}, {"mech": "Gangrerage", "t": 11, "txt": "À la dernière rotation de Fièvresang, <strong>tout le monde s'écarte sans passer devant le boss</strong> (Enchaînement). Un joueur au hasard est pris pour trente secondes : Gurtogg <strong>ne tape plus que lui</strong>, et un jet de poison part dessus immédiatement. <strong>S'il meurt, c'est le wipe</strong> — la Bénédiction de protection est utilisable, elle ne remet pas la menace à zéro.", "focus": ["healer"]}, {"mech": "Les soins pendant la phase 2", "t": 9, "txt": "Les soigneurs assignés <strong>terminent d'abord</strong> la rotation de Fièvresang en cours et les tanks encore chargés de Blessure acide. Ensuite seulement, tout bascule en <strong>surcharge de soins sur le Gangrerage</strong>.", "focus": ["healer"]}, {"mech": "Retour en phase 1", "t": 8, "txt": "Après trente secondes, on repasse en phase 1 : <strong>replacement des tanks</strong>, puis on reprend la rotation de Fièvresang <strong>groupes 2, 4, 5 — deux fois</strong> avant le Gangrerage suivant."}];
 window.GUIDE_SETUP=({pc,NS,stage})=>{
-// mise à l'échelle 100% CSS (min() avec vw/vh) — plus de calcul JS, plus de bug de timing au chargement
+// Gurtogg est tenu À DROITE par 3 tanks ; tout le raid se tient À GAUCHE,
+// groupé (repères triangle au-dessus, losange en dessous).
 
-const R=['healer','mdps','rdps','healer','mdps','rdps','healer','rdps','mdps','rdps','healer','rdps',
-         'mdps','rdps','healer','mdps','rdps','rdps','mdps','rdps','rdps','mdps','rdps','healer','rdps'];
-for(let n=0;n<25;n++){
-  const a=(n/25)*Math.PI*2+0.6, r=n%2?245:330;
-  pc(Math.cos(a)*r, 40+Math.sin(a)*r, R[n]);
+// 3 tanks collés au boss
+pc(-18, -62, 'tank'); pc(36, -46, 'tank'); pc(58, 26, 'tank');
+
+// le raid : paquet lâche autour du repère « RAID », à gauche
+const R=['mdps','healer','rdps','mdps','rdps','healer','rdps','mdps','healer','rdps','mdps',
+         'rdps','healer','rdps','mdps','rdps','healer','rdps','rdps','healer','rdps','mdps'];
+const CX=-437, CY=118;
+for(let n=0;n<R.length;n++){
+  const a = n*2.399, r = 20*Math.sqrt(n);
+  pc(CX + Math.cos(a)*r*1.15, CY + Math.sin(a)*r*0.9, R[n]);
 }
 
 

@@ -13,65 +13,33 @@
 <body>
 <div id="fit"><div id="stage" data-step="1">
 <div id="bg"></div><div id="scrim"></div>
-<div id="arena"><svg id="field" viewBox="-500 -500 1000 1000">
-
-<circle class="room" r="410"/>
-<circle class="room-inner" r="260"/>
+<div id="arena"><svg id="field" viewBox="-890 -608 1000 1000">
 
 <g id="anchor-boss">
   <g class="mob" id="boss" data-nodrag>
-    <circle class="mob-base" r="62"/><circle class="mob-ring" r="56" stroke="#8CF07E"/>
-    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-30" y="-30" width="60" height="60"/>
+    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#8CF07E"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
-  <text class="lbl" y="94" fill="#8CF07E">GURTOGG</text>
+  <text class="lbl" y="106" fill="#8CF07E">GURTOGG FIÈVRESANG</text>
+  <text class="tag" y="132" fill="var(--slate)">3 tanks en rotation</text>
 </g>
 
 <g id="raid"></g>
 
-<!-- 1 · placement -->
-<g id="L1" class="layer">
-  <g class="pc tank" transform="translate(0,-110)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-17" y="-17" width="34" height="34"/></g>
-  <text class="tag" x="0" y="-140" fill="#4C86E0">TANK ACTUEL</text>
-  <g class="pc tank" transform="translate(-90,-95)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-15" y="-15" width="30" height="30"/></g>
-  <g class="pc tank" transform="translate(90,-95)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-15" y="-15" width="30" height="30"/></g>
-  <text class="tag" x="0" y="-64" fill="var(--slate)">rotation à trois</text>
-  <text class="note" x="0" y="350" fill="#EDE8DA">DOS TOURNÉ VERS LE RAID · JAMAIS FACE À VOUS</text>
-</g>
-
-<!-- 2 · Bouillonnement -->
-<g id="L2" class="layer">
-  <g class="pc mdps boil" transform="translate(-70,140)"><circle r="30"/></g>
-  <g class="pc mdps boil" style="--d:.3s" transform="translate(50,160)"><circle r="30"/></g>
-  <text class="note" x="0" y="-352" fill="#E8443C">DÉGÂTS SUR LA DURÉE · S'EMPILE SI VOUS RESTEZ GROUPÉS</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">BOUGEZ, NE VOUS RÉEMPILEZ PAS AU MÊME ENDROIT</text>
-</g>
-
-<!-- 3 · Blessure Acide -->
-<g id="L3" class="layer">
-  <g id="acid" transform="translate(0,-110)"><circle class="stack-r" r="46"/></g>
-  <text class="note" x="0" y="-352" fill="#FF7A33">S'EMPILE SUR LE TANK ACTUEL À CHAQUE FRAPPE</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">ON TOURNE AVANT QUE ÇA NE DEVIENNE INGÉRABLE</text>
-</g>
-
-<!-- 4 · Gangrerage -->
-<g id="L4" class="layer">
-  <g id="felrage" transform="translate(-200,120)">
-    <circle class="rage-r" r="60"/><image href="assets/media/c0835e827ed757b9014c.svg" x="-18" y="-18" width="36" height="36"/>
-    <text class="note" y="-84" fill="#8CF07E">GANGRERAGE</text>
+<g id="marks">
+  <g id="tri" transform="translate(-458,-36)">
+    <path class="mk-tri" d="M 0 22 L -22 -16 L 22 -16 Z"/>
+    <text class="tag" y="-32" fill="#8CF07E">TRIANGLE</text>
+    <text class="tag" y="48" fill="var(--slate)">groupe 2 y est déjà au pull</text>
   </g>
-  <path class="chase" d="M -172 90 L 0 -32" fill="none" marker-end="url(#ahg)"/>
-  <text class="note" x="0" y="-352" fill="#8CF07E">IL NE FRAPPE PLUS QUE CE JOUEUR · TOUT LE MONDE S'ÉCARTE</text>
-  <text class="note" x="0" y="352" fill="#E8443C">TOUS LES SOINS DESSUS · SES DÉFENSIVES PERSONNELLES SORTENT</text>
+  <g id="dia" transform="translate(-437,256)">
+    <path class="mk-dia" d="M 0 -20 L 18 0 L 0 20 L -18 0 Z"/>
+    <text class="tag" y="44" fill="#B58BF5">LOSANGE</text>
+  </g>
+  <text class="note" x="-666" y="124" fill="#EDE8DA">RAID</text>
 </g>
 
-<!-- 5 · cycle -->
-<g id="L5" class="layer">
-  <text class="note" x="0" y="-352" fill="#F2C14E">TRENTE SECONDES DE GANGRERAGE PUIS RETOUR EN PHASE 1</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">SANS TAUNT POSSIBLE — IL PASSE AU DEUXIÈME EN MENACE</text>
-</g>
-
-<defs><marker id="ahg" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-  <path d="M0,0 L8,4 L0,8 Z" fill="#8CF07E"/></marker></defs>
+<text class="note" x="-330" y="330" fill="#2FC2C7">LE RAID SE TIENT À GAUCHE · LE BOSS EST TENU À DROITE</text>
 
 </svg></div>
 <div id="panel">
