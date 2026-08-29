@@ -1,0 +1,13 @@
+# Archives / local tooling — pas du contenu de site
+Strats Hyjal.7z
+*.7z
+.claude/
+graphify-out/
+
+# Bruit habituel
+node_modules/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db

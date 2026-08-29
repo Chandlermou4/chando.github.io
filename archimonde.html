@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Archimonde — Bataille du mont Hyjal · Boss 5 / 5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles/archimonde.css">
+</head>
+<body>
+<div id="fit"><div id="stage" data-step="1">
+<div id="bg"></div><div id="scrim"></div>
+<div id="arena"><svg id="field" viewBox="-586 -433 1000 1000">
+
+<circle class="room" r="430"/>
+<circle class="room-inner" r="300"/>
+<circle class="room-inner" r="160"/>
+
+<circle class="limit" r="430"/>
+<text class="limit-label" x="0" y="-448" text-anchor="middle">50 MÈTRES — DOIGT DE LA MORT</text>
+
+<g id="anchor-boss">
+  <g class="mob" id="boss" data-nodrag>
+    <circle class="mob-base" r="66"/><circle class="mob-ring" r="62" stroke="#8CF07E"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-34" y="-34" width="68" height="68"/>
+  </g>
+  <text class="lbl" y="104" fill="#8CF07E">ARCHIMONDE</text>
+</g>
+
+<g id="raid"></g>
+
+<!-- 2 · Jaillissement d'Air -->
+<g id="airburst" class="layer" transform="translate(-215,155)">
+  <circle id="ab-shadow" fill="#000" r="10"/>
+  <g id="ab-target" data-nodrag><circle class="ab-halo" r="24"/><image href="assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/></g>
+  <text id="ab-cue" y="-84">LARMES ↓</text>
+</g>
+
+<!-- 3 · Feu Funeste -->
+<g id="doomfire" class="layer" transform="translate(-260,60)">
+  <path class="bad-path" d="M 0 190 C 60 120, 150 60, 230 20"/>
+  <path class="safe-path" d="M 0 190 C 110 210, 200 170, 250 90"/>
+  <g class="trail">
+    <circle cx="0" cy="190" r="18" style="animation-delay:0s"/>
+    <circle cx="52" cy="146" r="18" style="animation-delay:.5s"/>
+    <circle cx="102" cy="108" r="18" style="animation-delay:1s"/>
+    <circle cx="152" cy="72" r="18" style="animation-delay:1.5s"/>
+    <circle cx="200" cy="40" r="18" style="animation-delay:2s"/>
+  </g>
+  <g id="flame-head" data-nodrag><circle class="flame" r="22"/><circle class="flame" r="34" opacity=".3"/></g>
+  <g id="runner" data-nodrag><image href="assets/media/6c1b7ace933b5f5c95ef.svg" x="-16" y="-16" width="32" height="32"/></g>
+</g>
+
+<!-- 4 · Peur -->
+<g id="fear" class="layer">
+  <circle class="fear-wave" r="40"/><circle class="fear-wave" r="40"/>
+  <g transform="translate(-160,200)"><path class="totem" d="M -13 14 L 0 -16 L 13 14 Z"/>
+    <text class="tag" y="40" fill="#FF7A33">TREMBLEMENT</text></g>
+  <g transform="translate(160,200)"><path class="totem" d="M -13 14 L 0 -16 L 13 14 Z"/>
+    <text class="tag" y="40" fill="#FF7A33">TREMBLEMENT</text></g>
+</g>
+
+<!-- 2 · Poigne de la Légion -->
+<g id="grip" class="layer">
+  <g class="cursed" transform="translate(-268,-176)"><circle class="curse-ring" r="40"/><text class="ct2" y="9">✦</text></g>
+  <g class="cursed" style="--d:.4s" transform="translate(296,88)"><circle class="curse-ring" r="40"/><text class="ct2" y="9">✦</text></g>
+  <text class="note" x="0" y="-372" fill="#8CF07E">MALÉDICTION · DÉGÂTS SUR LA DURÉE</text>
+  <text class="note" x="0" y="372" fill="#EDE8DA">DÉSENVOÛTEMENT IMMÉDIAT · MAGES ET DRUIDES ASSIGNÉS</text>
+  <text class="note" x="0" y="398" fill="var(--slate)">elle s'empile si on la laisse traîner</text>
+</g>
+
+<!-- 6 · Doigt de la Mort -->
+<g id="melee" class="layer">
+  <circle class="melee-ring" r="118"/>
+  <g class="pc mdps" transform="translate(-72,84)"><image href="assets/media/6c1b7ace933b5f5c95ef.svg" x="-16" y="-16" width="32" height="32"/></g>
+  <path class="finger" d="M -30 -22 L -318 -246" fill="none"/>
+  <g transform="translate(-330,-256)"><circle class="finger-hit" r="30"/></g>
+  <text class="note" x="0" y="180" fill="#F2C14E">QUELQU'UN AU CORPS-À-CORPS EN PERMANENCE</text>
+  <text class="note" x="0" y="372" fill="#E8443C">SINON IL LANCE LE DOIGT DE LA MORT SUR UN DISTANT</text>
+</g>
+
+<!-- 7 · Charge d'Âme -->
+<g id="soul" class="layer">
+  <g transform="translate(-255,-195)"><circle class="corpse" r="20"/>
+    <image href="assets/media/9bc491bf8f8e302edf47.webp" x="-17" y="-17" width="34" height="34" opacity=".85"/></g>
+  <path class="soul-bolt" d="M -248 -188 L -22 -12" fill="none"/>
+  <text class="note" x="-255" y="-232" fill="#8CF07E">+1 CHARGE D'ÂME</text>
+</g>
+
+</svg></div>
+<div id="panel">
+  <div class="eyebrow">Bataille du mont Hyjal · Boss 5 / 5</div>
+  <h1>Archimonde</h1>
+  <div class="subtitle">Le combat où chaque mort en provoque trois autres.</div>
+  <div id="mech"></div><div id="narration"></div><div id="rail"></div>
+</div>
+
+<div id="ed">
+  <h4>MODE ÉDITION</h4>
+  <div class="row"><span>Sélection</span><b id="ed-sel">—</b></div>
+  <div class="row"><span>Décalage</span><b id="ed-xy">0, 0</b></div>
+  <div class="row"><span>Étape <span id="ed-step">1</span> · durée</span><span><input id="ed-dur" type="number" step="0.5" min="1"> s</span></div>
+  <div class="row"><span>Rôles mis en avant</span><span id="ed-focus">
+    <button class="rb" data-r="tank">TANK</button><button class="rb" data-r="healer">HEAL</button><button class="rb" data-r="mdps">CàC</button><button class="rb" data-r="rdps">DIST</button>
+  </span></div>
+  <div class="keys">
+    Glisser : déplacer · Flèches : 1 px · Maj+Flèches : 10 px<br>
+    Double-clic sur un texte : le réécrire<br>
+    <b>H</b> masquer/afficher · <b>Ctrl+Z</b> annuler · <b>A</b> figer les animations<br>
+    <b>L</b> toutes les étapes visibles · <b>E</b> quitter l'édition
+  </div>
+  <div class="btns">
+    <button id="ed-reset">RÉINITIALISER L'ÉLÉMENT</button>
+    <button id="ed-save">EXPORTER LE HTML</button>
+  </div>
+</div>
+
+<div id="leftnav">
+  <div class="navpair">
+    <a class="navbtn" href="azgalor.html"><span class="lbl">← Précédent</span><span class="ttl">Azgalor</span></a>
+    <a class="navbtn" href="maulgar.html"><span class="lbl">→ Suivant</span><span class="ttl">Haut-Roi Maulgar</span></a>
+  </div>
+  <div id="bossmenu">
+    <a class="home" href="index.html">← Retour à l’accueil</a>
+    <details class="phase-group">
+      <summary>Phase 1</summary>
+      <div class="phase-content">
+        <div class="raid-h">Karazhan</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Repaire de Gruul</div>
+        <a class="" href="maulgar.html">Haut-Roi Maulgar</a>
+        <a class="" href="gruul.html">Gruul le Tue-Dragon</a>
+        <div class="raid-h">Repaire de Magtheridon</div>
+        <div class="coming">Guide à venir</div>
+      </div>
+    </details>
+    <details class="phase-group">
+      <summary>Phase 2</summary>
+      <div class="phase-content">
+        <div class="raid-h">Caverne du sanctuaire du Serpent</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Donjon de la Tempête : L’Œil</div>
+        <div class="coming">Guides à venir</div>
+      </div>
+    </details>
+    <details class="phase-group current-phase" open>
+      <summary>Phase 3</summary>
+      <div class="phase-content">
+        <div class="raid-h">Bataille du mont Hyjal</div>
+        <a class="" href="winterchill.html">Rage Froidhiver</a>
+        <a class="" href="anetheron.html">Anetheron</a>
+        <a class="" href="kazrogal.html">Kaz’rogal</a>
+        <a class="" href="azgalor.html">Azgalor</a>
+        <a class="current" href="archimonde.html">Archimonde</a>
+        <div class="raid-h">Temple noir</div>
+        <a class="" href="najentus.html">Grand seigneur de guerre Naj’entus</a>
+        <a class="" href="supremus.html">Supremus</a>
+        <a class="" href="akama.html">Ombre d’Akama</a>
+        <a class="" href="teron.html">Teron Fielsang</a>
+        <a class="" href="gurtogg.html">Gurtogg Fièvresang</a>
+        <a class="" href="reliquaire.html">Reliquaire des âmes</a>
+        <a class="" href="shahraz.html">Mère Shahraz</a>
+        <a class="" href="conseil.html">Conseil illidari</a>
+        <a class="" href="illidan.html">Illidan Hurlorage</a>
+      </div>
+    </details>
+  </div>
+</div>
+<div id="hint"><span class="kbd">←</span><span class="kbd">→</span> naviguer &nbsp;·&nbsp; <span class="kbd">Espace</span> suivant &nbsp;·&nbsp; <span class="kbd">P</span> lecture auto &nbsp;·&nbsp; <span class="kbd">R</span> enregistrement &nbsp;·&nbsp; <span class="kbd">E</span> édition</div>
+</div></div>
+<script src="data/bosses/archimonde.js"></script>
+<script src="assets/guide.js"></script>
+</body>
+</html>

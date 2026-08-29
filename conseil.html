@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Conseil Illidari — Temple noir · Boss 8 / 9</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles/conseil.css">
+</head>
+<body>
+<div id="fit"><div id="stage" data-step="1">
+<div id="bg"></div><div id="scrim"></div>
+<div id="arena"><svg id="field" viewBox="-500 -500 1000 1000">
+
+<circle class="room" r="410"/>
+<circle class="room-inner" r="260"/>
+
+<!-- 4 membres du conseil -->
+<g id="anchor-gathios" transform="translate(-180,-140)">
+  <g class="mob" id="gathios" data-nodrag>
+    <circle class="mob-base" r="42"/><circle class="mob-ring" r="38" stroke="#F2C14E"/>
+    <image class="marker" href="assets/media/9bc491bf8f8e302edf47.webp" x="-20" y="-20" width="40" height="40"/>
+  </g>
+  <text class="lbl2" y="60" fill="#F2C14E">GATHIOS LE BRISEUR</text>
+</g>
+<g id="anchor-malande" transform="translate(180,-140)">
+  <g class="mob" id="malande" data-nodrag>
+    <circle class="mob-base" r="42"/><circle class="mob-ring" r="38" stroke="#7FB2F0"/>
+    <image class="marker" href="assets/media/4f1d38be993c546f102c.webp" x="-20" y="-20" width="40" height="40"/>
+  </g>
+  <text class="lbl2" y="60" fill="#7FB2F0">DAME MALANDE</text>
+</g>
+<g id="anchor-veras" transform="translate(-180,140)">
+  <g class="mob" id="veras" data-nodrag>
+    <circle class="mob-base" r="42"/><circle class="mob-ring" r="38" stroke="#E8443C"/>
+    <image class="marker" href="assets/media/630dfee0713d6f6050c1.webp" x="-20" y="-20" width="40" height="40"/>
+  </g>
+  <text class="lbl2" y="60" fill="#E8443C">VERAS OMBRENOIR</text>
+</g>
+<g id="anchor-zerevor" transform="translate(180,140)">
+  <g class="mob" id="zerevor" data-nodrag>
+    <circle class="mob-base" r="42"/><circle class="mob-ring" r="38" stroke="#B58BF5"/>
+    <image class="marker" href="assets/media/4c7af39816ee89d5ff39.webp" x="-20" y="-20" width="40" height="40"/>
+  </g>
+  <text class="lbl2" y="60" fill="#B58BF5">GRAND NÉANTOMANCIEN ZEREVOR</text>
+</g>
+
+<g id="raid"></g>
+
+<!-- 1 · shared pool -->
+<g id="L1" class="layer">
+  <g id="hpbar" transform="translate(0,-370)">
+    <rect class="hb-bg" x="-180" y="-18" width="360" height="36" rx="10"/>
+    <rect class="hb-fill" x="-176" y="-14" width="352" height="28" rx="8"/>
+    <text class="note" y="46" fill="#EDE8DA">UNE SEULE BARRE DE VIE POUR LES QUATRE</text>
+  </g>
+  <text class="note" x="0" y="352" fill="var(--slate)">frappez celui qui compte le plus à cet instant, pas toujours le même</text>
+</g>
+
+<!-- 2 · Gathios -->
+<g id="L2" class="layer">
+  <circle class="conse" cx="-180" cy="-140" r="60"/>
+  <text class="note" x="-180" y="-230" fill="#F2C14E">CONSÉCRATION AU SOL · ON EN SORT</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">TENU À L'ÉCART DES AUTRES · SON AURA LES RENFORCE À PROXIMITÉ</text>
+</g>
+
+<!-- 3 · Malande -->
+<g id="L3" class="layer">
+  <g id="chl" transform="translate(180,-140)"><circle class="heal-pulse" r="70"/></g>
+  <text class="note" x="180" y="-230" fill="#7FB2F0">CERCLE DE SOINS · SOIGNE TOUT LE CONSEIL</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">INTERRUPTION SUR CHAQUE LANCER · PHYSIQUE ET MAGIQUE EN ROTATION</text>
+</g>
+
+<!-- 4 · Veras -->
+<g id="L4" class="layer">
+  <g id="vanish" transform="translate(-180,140)"><circle class="vanish-r" r="50"/></g>
+  <g class="poisoned" transform="translate(-40,220)"><image href="assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/></g>
+  <text class="note" x="-180" y="230" fill="#E8443C">DISPARAÎT · EMPOISONNE AU HASARD PENDANT CE TEMPS</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">DÈS SON RETOUR, ON LE REPREND EN MAIN IMMÉDIATEMENT</text>
+</g>
+
+<!-- 5 · Zerevor -->
+<g id="L5" class="layer">
+  <g id="steal" transform="translate(180,140)">
+    <circle class="steal-r" r="50"/><image href="assets/media/6c1b7ace933b5f5c95ef.svg" x="-16" y="-16" width="32" height="32"/>
+  </g>
+  <text class="note" x="180" y="230" fill="#B58BF5">TENU PAR VOL DE SORT, PAS PAR LA MENACE CLASSIQUE</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">SES SALVES ARCANE TOUCHENT LE RAID S'IL EST LÂCHÉ</text>
+</g>
+
+</svg></div>
+<div id="panel">
+  <div class="eyebrow">Temple noir · Boss 8 / 9</div>
+  <h1>Conseil Illidari</h1>
+  <div class="subtitle">Quatre têtes, une seule barre de vie. Ils tombent ensemble.</div>
+  <div id="mech"></div><div id="narration"></div><div id="rail"></div>
+</div>
+
+<div id="ed">
+  <h4>MODE ÉDITION</h4>
+  <div class="row"><span>Sélection</span><b id="ed-sel">—</b></div>
+  <div class="row"><span>Décalage</span><b id="ed-xy">0, 0</b></div>
+  <div class="row"><span>Étape <span id="ed-step">1</span> · durée</span><span><input id="ed-dur" type="number" step="0.5" min="1"> s</span></div>
+  <div class="row"><span>Rôles mis en avant</span><span id="ed-focus">
+    <button class="rb" data-r="tank">TANK</button><button class="rb" data-r="healer">HEAL</button><button class="rb" data-r="mdps">CàC</button><button class="rb" data-r="rdps">DIST</button>
+  </span></div>
+  <div class="keys">
+    Glisser : déplacer · Flèches : 1 px · Maj+Flèches : 10 px<br>
+    Double-clic sur un texte : le réécrire<br>
+    <b>H</b> masquer/afficher · <b>Ctrl+Z</b> annuler · <b>A</b> figer les animations<br>
+    <b>L</b> toutes les étapes visibles · <b>E</b> quitter l'édition
+  </div>
+  <div class="btns">
+    <button id="ed-reset">RÉINITIALISER L'ÉLÉMENT</button>
+    <button id="ed-save">EXPORTER LE HTML</button>
+  </div>
+</div>
+
+<div id="leftnav">
+  <div class="navpair">
+    <a class="navbtn" href="shahraz.html"><span class="lbl">← Précédent</span><span class="ttl">Mère Shahraz</span></a>
+    <a class="navbtn" href="illidan.html"><span class="lbl">→ Suivant</span><span class="ttl">Illidan Hurlorage</span></a>
+  </div>
+  <div id="bossmenu">
+    <a class="home" href="index.html">← Retour à l’accueil</a>
+    <details class="phase-group">
+      <summary>Phase 1</summary>
+      <div class="phase-content">
+        <div class="raid-h">Karazhan</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Repaire de Gruul</div>
+        <a class="" href="maulgar.html">Haut-Roi Maulgar</a>
+        <a class="" href="gruul.html">Gruul le Tue-Dragon</a>
+        <div class="raid-h">Repaire de Magtheridon</div>
+        <div class="coming">Guide à venir</div>
+      </div>
+    </details>
+    <details class="phase-group">
+      <summary>Phase 2</summary>
+      <div class="phase-content">
+        <div class="raid-h">Caverne du sanctuaire du Serpent</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Donjon de la Tempête : L’Œil</div>
+        <div class="coming">Guides à venir</div>
+      </div>
+    </details>
+    <details class="phase-group current-phase" open>
+      <summary>Phase 3</summary>
+      <div class="phase-content">
+        <div class="raid-h">Bataille du mont Hyjal</div>
+        <a class="" href="winterchill.html">Rage Froidhiver</a>
+        <a class="" href="anetheron.html">Anetheron</a>
+        <a class="" href="kazrogal.html">Kaz’rogal</a>
+        <a class="" href="azgalor.html">Azgalor</a>
+        <a class="" href="archimonde.html">Archimonde</a>
+        <div class="raid-h">Temple noir</div>
+        <a class="" href="najentus.html">Grand seigneur de guerre Naj’entus</a>
+        <a class="" href="supremus.html">Supremus</a>
+        <a class="" href="akama.html">Ombre d’Akama</a>
+        <a class="" href="teron.html">Teron Fielsang</a>
+        <a class="" href="gurtogg.html">Gurtogg Fièvresang</a>
+        <a class="" href="reliquaire.html">Reliquaire des âmes</a>
+        <a class="" href="shahraz.html">Mère Shahraz</a>
+        <a class="current" href="conseil.html">Conseil illidari</a>
+        <a class="" href="illidan.html">Illidan Hurlorage</a>
+      </div>
+    </details>
+  </div>
+</div>
+<div id="hint"><span class="kbd">←</span><span class="kbd">→</span> naviguer &nbsp;·&nbsp; <span class="kbd">Espace</span> suivant &nbsp;·&nbsp; <span class="kbd">P</span> lecture auto &nbsp;·&nbsp; <span class="kbd">R</span> enregistrement &nbsp;·&nbsp; <span class="kbd">E</span> édition</div>
+</div></div>
+<script src="data/bosses/conseil.js"></script>
+<script src="assets/guide.js"></script>
+</body>
+</html>

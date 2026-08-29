@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Teron Fielsang — Temple noir · Boss 4 / 9</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles/teron.css">
+</head>
+<body>
+<div id="fit"><div id="stage" data-step="1">
+<div id="bg"></div><div id="scrim"></div>
+<div id="arena"><svg id="field" viewBox="-500 -500 1000 1000">
+
+<circle class="room" r="410"/>
+<circle class="room-inner" r="260"/>
+
+<g id="anchor-boss">
+  <g class="mob" id="boss" data-nodrag>
+    <circle class="mob-base" r="62"/><circle class="mob-ring" r="56" stroke="#E8443C"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-30" y="-30" width="60" height="60"/>
+  </g>
+  <text class="lbl" y="94" fill="#E8443C">TERON GOREFIEND</text>
+</g>
+
+<g id="raid"></g>
+
+<!-- 1 · placement -->
+<g id="L1" class="layer">
+  <circle class="stack-zone" cx="0" cy="200" r="140"/>
+  <text class="note" x="0" y="-352" fill="#EDE8DA">TENU AU POINT FIXE · LE RAID SE REGROUPE LOIN DE LUI</text>
+  <text class="note" x="0" y="352" fill="var(--slate)">aucune AoE au sol ici — être groupé aide les soins</text>
+</g>
+
+<!-- 2 · Incinérer -->
+<g id="L2" class="layer">
+  <g id="incin" transform="translate(-90,180)">
+    <circle class="burn-ring" r="30"/>
+    <image href="assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/>
+    <text class="note" y="-48" fill="#FF7A33">INCINÉRATION</text>
+  </g>
+  <text class="note" x="0" y="-352" fill="#FF7A33">DÉGÂTS DIRECTS + BRÛLURE SUR TROIS SECONDES</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">DISSIPATION IMMÉDIATE · ÇA TUE SI ON LA LAISSE COURIR</text>
+</g>
+
+<!-- 3 · Fleur du Destin -->
+<g id="L3" class="layer">
+  <g class="blossom" transform="translate(140,-180)"><circle r="26"/></g>
+  <g class="blossom" style="--d:1.2s" transform="translate(-160,-100)"><circle r="26"/></g>
+  <text class="note" x="0" y="-352" fill="#B58BF5">NUAGES QUI BOMBARDENT LE RAID AU HASARD</text>
+  <text class="note" x="0" y="352" fill="var(--slate)">peu de dégâts individuellement, ça s'accumule sur la durée</text>
+</g>
+
+<!-- 4 · Ombre de la Mort -->
+<g id="L4" class="layer">
+  <g id="doomed2" transform="translate(30,150)">
+    <circle class="doom-r" r="34"/><image href="assets/media/6c1b7ace933b5f5c95ef.svg" x="-16" y="-16" width="32" height="32"/>
+  </g>
+  <path class="run-corner" d="M 46 134 L 340 -320" fill="none" marker-end="url(#aht)"/>
+  <g transform="translate(340,-320)"><circle class="corner2" r="52"/><text class="tag" y="72" fill="#F2C14E">COIN ÉCARTÉ</text></g>
+  <text class="note" x="0" y="-352" fill="#B58BF5">55 SECONDES · PUIS LA MORT EST CERTAINE</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">DIRECTION LE COIN AVANT QUE LE COMPTE N'EXPIRE</text>
+</g>
+
+<!-- 5 · Constructions -->
+<g id="L5" class="layer">
+  <g class="construct" transform="translate(280,-300)"><circle r="22"/></g>
+  <g class="construct" style="--d:.2s" transform="translate(340,-260)"><circle r="22"/></g>
+  <g class="construct" style="--d:.4s" transform="translate(300,-240)"><circle r="22"/></g>
+  <g class="construct" style="--d:.6s" transform="translate(360,-310)"><circle r="22"/></g>
+  <g class="ghost" transform="translate(320,-280)"><image href="assets/media/6c1b7ace933b5f5c95ef.svg" x="-16" y="-16" width="32" height="32"/></g>
+  <text class="note" x="0" y="-352" fill="#8CF07E">QUATRE SPECTRES NAISSENT SUR LE CADAVRE</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">SEUL LE FANTÔME PEUT LES TUER — LE RESTE DU RAID N'Y TOUCHE PAS</text>
+</g>
+
+<defs><marker id="aht" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+  <path d="M0,0 L8,4 L0,8 Z" fill="#F2C14E"/></marker></defs>
+
+</svg></div>
+<div id="panel">
+  <div class="eyebrow">Temple noir · Boss 4 / 9</div>
+  <h1>Teron Fielsang</h1>
+  <div class="subtitle">Mourir fait partie du plan — à condition de savoir quoi faire ensuite.</div>
+  <div id="mech"></div><div id="narration"></div><div id="rail"></div>
+</div>
+
+<div id="ed">
+  <h4>MODE ÉDITION</h4>
+  <div class="row"><span>Sélection</span><b id="ed-sel">—</b></div>
+  <div class="row"><span>Décalage</span><b id="ed-xy">0, 0</b></div>
+  <div class="row"><span>Étape <span id="ed-step">1</span> · durée</span><span><input id="ed-dur" type="number" step="0.5" min="1"> s</span></div>
+  <div class="row"><span>Rôles mis en avant</span><span id="ed-focus">
+    <button class="rb" data-r="tank">TANK</button><button class="rb" data-r="healer">HEAL</button><button class="rb" data-r="mdps">CàC</button><button class="rb" data-r="rdps">DIST</button>
+  </span></div>
+  <div class="keys">
+    Glisser : déplacer · Flèches : 1 px · Maj+Flèches : 10 px<br>
+    Double-clic sur un texte : le réécrire<br>
+    <b>H</b> masquer/afficher · <b>Ctrl+Z</b> annuler · <b>A</b> figer les animations<br>
+    <b>L</b> toutes les étapes visibles · <b>E</b> quitter l'édition
+  </div>
+  <div class="btns">
+    <button id="ed-reset">RÉINITIALISER L'ÉLÉMENT</button>
+    <button id="ed-save">EXPORTER LE HTML</button>
+  </div>
+</div>
+
+<div id="leftnav">
+  <div class="navpair">
+    <a class="navbtn" href="akama.html"><span class="lbl">← Précédent</span><span class="ttl">Ombre d'Akama</span></a>
+    <a class="navbtn" href="gurtogg.html"><span class="lbl">→ Suivant</span><span class="ttl">Gurtogg Fièvresang</span></a>
+  </div>
+  <div id="bossmenu">
+    <a class="home" href="index.html">← Retour à l’accueil</a>
+    <details class="phase-group">
+      <summary>Phase 1</summary>
+      <div class="phase-content">
+        <div class="raid-h">Karazhan</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Repaire de Gruul</div>
+        <a class="" href="maulgar.html">Haut-Roi Maulgar</a>
+        <a class="" href="gruul.html">Gruul le Tue-Dragon</a>
+        <div class="raid-h">Repaire de Magtheridon</div>
+        <div class="coming">Guide à venir</div>
+      </div>
+    </details>
+    <details class="phase-group">
+      <summary>Phase 2</summary>
+      <div class="phase-content">
+        <div class="raid-h">Caverne du sanctuaire du Serpent</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Donjon de la Tempête : L’Œil</div>
+        <div class="coming">Guides à venir</div>
+      </div>
+    </details>
+    <details class="phase-group current-phase" open>
+      <summary>Phase 3</summary>
+      <div class="phase-content">
+        <div class="raid-h">Bataille du mont Hyjal</div>
+        <a class="" href="winterchill.html">Rage Froidhiver</a>
+        <a class="" href="anetheron.html">Anetheron</a>
+        <a class="" href="kazrogal.html">Kaz’rogal</a>
+        <a class="" href="azgalor.html">Azgalor</a>
+        <a class="" href="archimonde.html">Archimonde</a>
+        <div class="raid-h">Temple noir</div>
+        <a class="" href="najentus.html">Grand seigneur de guerre Naj’entus</a>
+        <a class="" href="supremus.html">Supremus</a>
+        <a class="" href="akama.html">Ombre d’Akama</a>
+        <a class="current" href="teron.html">Teron Fielsang</a>
+        <a class="" href="gurtogg.html">Gurtogg Fièvresang</a>
+        <a class="" href="reliquaire.html">Reliquaire des âmes</a>
+        <a class="" href="shahraz.html">Mère Shahraz</a>
+        <a class="" href="conseil.html">Conseil illidari</a>
+        <a class="" href="illidan.html">Illidan Hurlorage</a>
+      </div>
+    </details>
+  </div>
+</div>
+<div id="hint"><span class="kbd">←</span><span class="kbd">→</span> naviguer &nbsp;·&nbsp; <span class="kbd">Espace</span> suivant &nbsp;·&nbsp; <span class="kbd">P</span> lecture auto &nbsp;·&nbsp; <span class="kbd">R</span> enregistrement &nbsp;·&nbsp; <span class="kbd">E</span> édition</div>
+</div></div>
+<script src="data/bosses/teron.js"></script>
+<script src="assets/guide.js"></script>
+</body>
+</html>

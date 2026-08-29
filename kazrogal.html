@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Kaz'rogal — Bataille du mont Hyjal · Boss 3 / 5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles/kazrogal.css">
+</head>
+<body>
+<div id="fit"><div id="stage" data-step="1">
+<div id="bg"></div><div id="scrim"></div>
+<div id="arena"><svg id="field" viewBox="-582 -455 1000 1000">
+
+<circle class="room" r="425"/>
+<circle class="room-inner" r="270"/>
+<g id="scale" transform="translate(-405,412)">
+  <path d="M 0 0 L 106 0" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
+  <path d="M 0 -7 L 0 7 M 106 -7 L 106 7" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
+  <text class="tag" x="53" y="26" fill="rgba(237,232,218,.7)">20 MÈTRES</text>
+</g>
+
+<g id="anchor-boss">
+  <g class="mob" id="boss" data-nodrag>
+    <circle class="mob-base" r="64"/><circle class="mob-ring" r="58" stroke="#E8443C"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-31" y="-31" width="62" height="62"/>
+  </g>
+  <text class="lbl" y="96" fill="#E8443C">KAZ'ROGAL</text>
+</g>
+
+<g id="raid"></g>
+
+<!-- 1 · le principe -->
+<g id="L1" class="layer">
+  <g id="manabar" transform="translate(0,-368)">
+    <rect class="mb-bg" x="-180" y="-16" width="360" height="32" rx="16"/>
+    <rect class="mb-fill" x="-176" y="-12" width="352" height="24" rx="12"/>
+    <text class="note" y="46" fill="#4C86E0">LE MANA DU RAID</text>
+  </g>
+  <text class="note" x="0" y="368" fill="#EDE8DA">CHAQUE PORTEUR DE MANA S'ÉCARTE DES AUTRES</text>
+</g>
+
+<!-- 2 · la Marque -->
+<g id="L2" class="layer">
+  <g id="drains">
+    <path class="drain" d="M -280 -180 L -50 -34"/><path class="drain" style="--d:.3s" d="M 300 -120 L 54 -26"/>
+    <path class="drain" style="--d:.6s" d="M 180 300 L 34 54"/><path class="drain" style="--d:.9s" d="M -230 250 L -42 46"/>
+    <path class="drain" style="--d:1.2s" d="M 20 -350 L 6 -62"/>
+  </g>
+  <text class="note" x="0" y="-368" fill="#4C86E0">DRAIN SUR TOUT LE RAID</text>
+  <text class="note" x="0" y="368" fill="#FF7A33">ET 10 SECONDES PLUS TÔT À CHAQUE FOIS</text>
+</g>
+
+<!-- 3 · l'explosion -->
+<g id="L3" class="layer">
+  <g class="boom good" transform="translate(-330,-250)">
+    <circle class="boom-r" r="106"/><circle class="boom-c" r="14"/>
+    <text class="note" y="-124" fill="#2FC2C7">ISOLÉ · SANS CONSÉQUENCE</text>
+  </g>
+  <g class="boom bad" transform="translate(285,215)">
+    <circle class="boom-r bad-r" r="106"/><circle class="boom-c bad-c" r="14"/>
+    <circle class="chain" r="106"/>
+    <text class="note" y="-124" fill="#E8443C">DANS LE RAID · RÉACTION EN CHAÎNE</text>
+  </g>
+  <text class="note" x="0" y="-368" fill="#EDE8DA">SOUS 3 000 DE MANA ? SORTEZ AVANT D'EXPLOSER</text>
+</g>
+
+<!-- 4 · les parades -->
+<g id="L4" class="layer">
+  <g class="card" transform="translate(-250,-110)"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
+    <text class="ct" y="-4">BLOC DE GLACE · BOUCLIER DIVIN</text><text class="cs" y="17">retirent la Marque net</text></g>
+  <g class="card" style="--d:.25s" transform="translate(250,-110)"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
+    <text class="ct" y="-4">FORME D'OURS OU DE FÉLIN</text><text class="cs" y="17">pas de mana, pas de drain</text></g>
+  <g class="card" style="--d:.5s" transform="translate(-250,220)"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
+    <text class="ct" y="-4">JUGEMENT DE SAGESSE</text><text class="cs" y="17">en permanence sur lui</text></g>
+  <g class="card" style="--d:.75s" transform="translate(250,220)"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
+    <text class="ct" y="-4">RUNES ET POTIONS</text><text class="cs" y="17">dès le début, pas à la fin</text></g>
+  <text class="note" x="0" y="-368" fill="#EDE8DA">PROTECTION CONTRE L'OMBRE SUR TOUT LE RAID</text>
+</g>
+
+<!-- 5 · mêlée -->
+<g id="L5" class="layer">
+  <circle class="stomp" r="90"/><circle class="stomp" r="90"/>
+  <text class="note" x="0" y="-368" fill="#B58BF5">CHOC MARTIAL · FAIBLESSE</text>
+  <text class="note" x="0" y="368" fill="#EDE8DA">POTION D'ACTION LIBRE PENDANT VOS TEMPS FORTS</text>
+  <text class="note" x="0" y="394" fill="var(--slate)">il n'enrage pas : c'est le mana qui vous tue</text>
+</g>
+
+</svg></div>
+<div id="panel">
+  <div class="eyebrow">Bataille du mont Hyjal · Boss 3 / 5</div>
+  <h1>Kaz'rogal</h1>
+  <div class="subtitle">Le seul boss où votre barre bleue est la barre de vie du raid.</div>
+  <div id="mech"></div><div id="narration"></div><div id="rail"></div>
+</div>
+
+<div id="ed">
+  <h4>MODE ÉDITION</h4>
+  <div class="row"><span>Sélection</span><b id="ed-sel">—</b></div>
+  <div class="row"><span>Décalage</span><b id="ed-xy">0, 0</b></div>
+  <div class="row"><span>Étape <span id="ed-step">1</span> · durée</span><span><input id="ed-dur" type="number" step="0.5" min="1"> s</span></div>
+  <div class="row"><span>Rôles mis en avant</span><span id="ed-focus">
+    <button class="rb" data-r="tank">TANK</button><button class="rb" data-r="healer">HEAL</button><button class="rb" data-r="mdps">CàC</button><button class="rb" data-r="rdps">DIST</button>
+  </span></div>
+  <div class="keys">
+    Glisser : déplacer · Flèches : 1 px · Maj+Flèches : 10 px<br>
+    Double-clic sur un texte : le réécrire<br>
+    <b>H</b> masquer/afficher · <b>Ctrl+Z</b> annuler · <b>A</b> figer les animations<br>
+    <b>L</b> toutes les étapes visibles · <b>E</b> quitter l'édition
+  </div>
+  <div class="btns">
+    <button id="ed-reset">RÉINITIALISER L'ÉLÉMENT</button>
+    <button id="ed-save">EXPORTER LE HTML</button>
+  </div>
+</div>
+
+<div id="leftnav">
+  <div class="navpair">
+    <a class="navbtn" href="anetheron.html"><span class="lbl">← Précédent</span><span class="ttl">Anetheron</span></a>
+    <a class="navbtn" href="azgalor.html"><span class="lbl">→ Suivant</span><span class="ttl">Azgalor</span></a>
+  </div>
+  <div id="bossmenu">
+    <a class="home" href="index.html">← Retour à l’accueil</a>
+    <details class="phase-group">
+      <summary>Phase 1</summary>
+      <div class="phase-content">
+        <div class="raid-h">Karazhan</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Repaire de Gruul</div>
+        <a class="" href="maulgar.html">Haut-Roi Maulgar</a>
+        <a class="" href="gruul.html">Gruul le Tue-Dragon</a>
+        <div class="raid-h">Repaire de Magtheridon</div>
+        <div class="coming">Guide à venir</div>
+      </div>
+    </details>
+    <details class="phase-group">
+      <summary>Phase 2</summary>
+      <div class="phase-content">
+        <div class="raid-h">Caverne du sanctuaire du Serpent</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Donjon de la Tempête : L’Œil</div>
+        <div class="coming">Guides à venir</div>
+      </div>
+    </details>
+    <details class="phase-group current-phase" open>
+      <summary>Phase 3</summary>
+      <div class="phase-content">
+        <div class="raid-h">Bataille du mont Hyjal</div>
+        <a class="" href="winterchill.html">Rage Froidhiver</a>
+        <a class="" href="anetheron.html">Anetheron</a>
+        <a class="current" href="kazrogal.html">Kaz’rogal</a>
+        <a class="" href="azgalor.html">Azgalor</a>
+        <a class="" href="archimonde.html">Archimonde</a>
+        <div class="raid-h">Temple noir</div>
+        <a class="" href="najentus.html">Grand seigneur de guerre Naj’entus</a>
+        <a class="" href="supremus.html">Supremus</a>
+        <a class="" href="akama.html">Ombre d’Akama</a>
+        <a class="" href="teron.html">Teron Fielsang</a>
+        <a class="" href="gurtogg.html">Gurtogg Fièvresang</a>
+        <a class="" href="reliquaire.html">Reliquaire des âmes</a>
+        <a class="" href="shahraz.html">Mère Shahraz</a>
+        <a class="" href="conseil.html">Conseil illidari</a>
+        <a class="" href="illidan.html">Illidan Hurlorage</a>
+      </div>
+    </details>
+  </div>
+</div>
+<div id="hint"><span class="kbd">←</span><span class="kbd">→</span> naviguer &nbsp;·&nbsp; <span class="kbd">Espace</span> suivant &nbsp;·&nbsp; <span class="kbd">P</span> lecture auto &nbsp;·&nbsp; <span class="kbd">R</span> enregistrement &nbsp;·&nbsp; <span class="kbd">E</span> édition</div>
+</div></div>
+<script src="data/bosses/kazrogal.js"></script>
+<script src="assets/guide.js"></script>
+</body>
+</html>

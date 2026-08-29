@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Grand Seigneur de Guerre Naj'entus — Temple noir · Boss 1 / 9</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles/najentus.css">
+</head>
+<body>
+<div id="fit"><div id="stage" data-step="1">
+<div id="bg"></div><div id="scrim"></div>
+<div id="arena"><svg id="field" viewBox="-500 -500 1000 1000">
+
+<circle class="room" r="410"/>
+<circle class="room-inner" r="260"/>
+<g id="scale" transform="translate(-395,398)">
+  <path d="M 0 0 L 62 0" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
+  <path d="M 0 -7 L 0 7 M 62 -7 L 62 7" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
+  <text class="tag" x="31" y="26" fill="rgba(237,232,218,.7)">6 MÈTRES</text>
+</g>
+
+<g id="anchor-boss">
+  <g class="mob" id="boss" data-nodrag>
+    <circle class="mob-base" r="62"/><circle class="mob-ring" r="56" stroke="#2FC2C7"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-30" y="-30" width="60" height="60"/>
+  </g>
+  <text class="lbl" y="94" fill="#2FC2C7">NAJ'ENTUS</text>
+</g>
+
+<g id="raid"></g>
+
+<!-- 1 · placement -->
+<g id="L1" class="layer">
+  <g class="dist6" transform="translate(210,-40)"><circle r="46"/></g>
+  <g class="dist6" transform="translate(280,60)"><circle r="46"/></g>
+  <text class="note" x="0" y="-350" fill="#EDE8DA">CORPS-À-CORPS EN PLUSIEURS PETITS GROUPES</text>
+  <text class="note" x="0" y="350" fill="#2FC2C7">TOUJOURS 6 MÈTRES ENTRE DEUX JOUEURS</text>
+</g>
+
+<!-- 2 · Épine -->
+<g id="L2" class="layer">
+  <g id="needle"><path class="cone-n" d="M 0 0 L 300 -145 A 330 330 0 0 1 300 145 Z"/></g>
+  <g class="hit-splash" transform="translate(230,-90)"><circle r="52"/></g>
+  <g class="hit-splash" style="--d:.15s" transform="translate(255,0)"><circle r="52"/></g>
+  <g class="hit-splash" style="--d:.3s" transform="translate(230,90)"><circle r="52"/></g>
+  <text class="note" x="0" y="-350" fill="#7FB2F0">3 CIBLES AU HASARD · TOUTES LES 20 SECONDES</text>
+  <text class="note" x="0" y="350" fill="#EDE8DA">DÉGÂTS PHYSIQUES + ÉCLAT DE GIVRE À 6 MÈTRES AUTOUR</text>
+</g>
+
+<!-- 3 · Épine de Perforation -->
+<g id="L3" class="layer">
+  <g id="impaled" transform="translate(-260,110)">
+    <circle class="pin-ring" r="40"/>
+    <image class="marker" href="assets/media/9bc491bf8f8e302edf47.webp" x="-22" y="-22" width="44" height="44"/>
+    <text class="note" y="-58" fill="#E8443C">EMPALÉ · ÉTOURDI</text>
+  </g>
+  <path class="save-arrow" d="M -220 100 L -60 30" fill="none" marker-end="url(#ahn)"/>
+  <g transform="translate(-30,10)"><image href="assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/>
+    <text class="tag" y="34" fill="#F2C14E">RÉCUPÈRE L'ÉCHARDE</text></g>
+  <text class="note" x="0" y="-350" fill="#EDE8DA">CLIQUEZ L'ÉCHARDE POUR LE LIBÉRER</text>
+  <text class="note" x="0" y="350" fill="#F2C14E">L'OBJET RÉCUPÉRÉ SERT À CASSER LE BOUCLIER</text>
+</g>
+
+<!-- 4 · Bouclier de Flots -->
+<g id="L4" class="layer">
+  <circle class="shield" r="72"/>
+  <text class="note" x="0" y="-350" fill="#2FC2C7">IMMUNISÉ · IL SE RÉGÉNÈRE CHAQUE SECONDE</text>
+  <g id="reduc" transform="translate(0,300)">
+    <text class="note" y="0" fill="#FF7A33">POISON DE BLESSURE · FRAPPE MORTELLE EN PERMANENCE</text>
+    <text class="note" y="26" fill="var(--slate)">sinon il regagne tout ce que vous venez de lui infliger</text>
+  </g>
+</g>
+
+<!-- 5 · Rupture -->
+<g id="L5" class="layer">
+  <circle class="burst" r="70"/><circle class="burst" r="70"/>
+  <text class="note" x="0" y="-350" fill="#7FB2F0">TOUT LE MONDE À PLEINE VIE AVANT DE LANCER</text>
+  <text class="note" x="0" y="350" fill="#E8443C">LE JAILLISSEMENT DE FLOTS FRAPPE LE RAID ENTIER</text>
+  <text class="note" x="0" y="376" fill="var(--slate)">un lancer trop tôt tue les plus fragiles</text>
+</g>
+
+<defs><marker id="ahn" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+  <path d="M0,0 L8,4 L0,8 Z" fill="#F2C14E"/></marker></defs>
+
+</svg></div>
+<div id="panel">
+  <div class="eyebrow">Temple noir · Boss 1 / 9</div>
+  <h1>Grand Seigneur de Guerre Naj'entus</h1>
+  <div class="subtitle">Une seule vraie règle : ne jamais lancer l'écharde trop tôt.</div>
+  <div id="mech"></div><div id="narration"></div><div id="rail"></div>
+</div>
+
+<div id="ed">
+  <h4>MODE ÉDITION</h4>
+  <div class="row"><span>Sélection</span><b id="ed-sel">—</b></div>
+  <div class="row"><span>Décalage</span><b id="ed-xy">0, 0</b></div>
+  <div class="row"><span>Étape <span id="ed-step">1</span> · durée</span><span><input id="ed-dur" type="number" step="0.5" min="1"> s</span></div>
+  <div class="row"><span>Rôles mis en avant</span><span id="ed-focus">
+    <button class="rb" data-r="tank">TANK</button><button class="rb" data-r="healer">HEAL</button><button class="rb" data-r="mdps">CàC</button><button class="rb" data-r="rdps">DIST</button>
+  </span></div>
+  <div class="keys">
+    Glisser : déplacer · Flèches : 1 px · Maj+Flèches : 10 px<br>
+    Double-clic sur un texte : le réécrire<br>
+    <b>H</b> masquer/afficher · <b>Ctrl+Z</b> annuler · <b>A</b> figer les animations<br>
+    <b>L</b> toutes les étapes visibles · <b>E</b> quitter l'édition
+  </div>
+  <div class="btns">
+    <button id="ed-reset">RÉINITIALISER L'ÉLÉMENT</button>
+    <button id="ed-save">EXPORTER LE HTML</button>
+  </div>
+</div>
+
+<div id="leftnav">
+  <div class="navpair">
+    <a class="navbtn" href="gruul.html"><span class="lbl">← Précédent</span><span class="ttl">Gruul le Tue-Dragon</span></a>
+    <a class="navbtn" href="supremus.html"><span class="lbl">→ Suivant</span><span class="ttl">Supremus</span></a>
+  </div>
+  <div id="bossmenu">
+    <a class="home" href="index.html">← Retour à l’accueil</a>
+    <details class="phase-group">
+      <summary>Phase 1</summary>
+      <div class="phase-content">
+        <div class="raid-h">Karazhan</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Repaire de Gruul</div>
+        <a class="" href="maulgar.html">Haut-Roi Maulgar</a>
+        <a class="" href="gruul.html">Gruul le Tue-Dragon</a>
+        <div class="raid-h">Repaire de Magtheridon</div>
+        <div class="coming">Guide à venir</div>
+      </div>
+    </details>
+    <details class="phase-group">
+      <summary>Phase 2</summary>
+      <div class="phase-content">
+        <div class="raid-h">Caverne du sanctuaire du Serpent</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Donjon de la Tempête : L’Œil</div>
+        <div class="coming">Guides à venir</div>
+      </div>
+    </details>
+    <details class="phase-group current-phase" open>
+      <summary>Phase 3</summary>
+      <div class="phase-content">
+        <div class="raid-h">Bataille du mont Hyjal</div>
+        <a class="" href="winterchill.html">Rage Froidhiver</a>
+        <a class="" href="anetheron.html">Anetheron</a>
+        <a class="" href="kazrogal.html">Kaz’rogal</a>
+        <a class="" href="azgalor.html">Azgalor</a>
+        <a class="" href="archimonde.html">Archimonde</a>
+        <div class="raid-h">Temple noir</div>
+        <a class="current" href="najentus.html">Grand seigneur de guerre Naj’entus</a>
+        <a class="" href="supremus.html">Supremus</a>
+        <a class="" href="akama.html">Ombre d’Akama</a>
+        <a class="" href="teron.html">Teron Fielsang</a>
+        <a class="" href="gurtogg.html">Gurtogg Fièvresang</a>
+        <a class="" href="reliquaire.html">Reliquaire des âmes</a>
+        <a class="" href="shahraz.html">Mère Shahraz</a>
+        <a class="" href="conseil.html">Conseil illidari</a>
+        <a class="" href="illidan.html">Illidan Hurlorage</a>
+      </div>
+    </details>
+  </div>
+</div>
+<div id="hint"><span class="kbd">←</span><span class="kbd">→</span> naviguer &nbsp;·&nbsp; <span class="kbd">Espace</span> suivant &nbsp;·&nbsp; <span class="kbd">P</span> lecture auto &nbsp;·&nbsp; <span class="kbd">R</span> enregistrement &nbsp;·&nbsp; <span class="kbd">E</span> édition</div>
+</div></div>
+<script src="data/bosses/najentus.js"></script>
+<script src="assets/guide.js"></script>
+</body>
+</html>

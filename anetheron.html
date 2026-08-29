@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Anetheron — Bataille du mont Hyjal · Boss 2 / 5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles/anetheron.css">
+</head>
+<body>
+<div id="fit"><div id="stage" data-step="1">
+<div id="bg"></div><div id="scrim"></div>
+<div id="arena"><svg id="field" viewBox="-596 -430 1000 1000">
+
+<circle class="room" r="420"/>
+<circle class="room-inner" r="280"/>
+
+<g id="scale" transform="translate(-405,410)">
+  <path d="M 0 0 L 108 0" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
+  <path d="M 0 -7 L 0 7 M 108 -7 L 108 7" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
+  <text class="tag" x="54" y="26" fill="rgba(237,232,218,.7)">10 MÈTRES</text>
+</g>
+
+<!-- zone Infernal, près de Jaina -->
+<g id="anchor-jaina" transform="translate(-300,285)">
+  <circle class="jaina-ring" r="30"/>
+  <text class="tag" y="52" fill="#4C86E0">JAINA</text>
+</g>
+
+<!-- Anetheron -->
+<g id="anchor-boss">
+  <g class="mob" id="boss" data-nodrag>
+    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#E8443C"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
+  </g>
+  <text class="lbl" y="98" fill="#E8443C">ANETHERON</text>
+</g>
+
+<g id="raid"></g>
+
+<!-- ============ 1 · CERCLE COMPLET ============ -->
+<g id="L1" class="layer">
+  <circle class="spread-guide" r="230"/>
+  <text class="note" x="0" y="-352" fill="#EDE8DA">CERCLE COMPLET AUTOUR DE LUI</text>
+  <text class="note" x="0" y="-326" fill="var(--slate)">soigneurs répartis, jamais deux côte à côte</text>
+</g>
+
+<!-- ============ 2 · VOL DE CHAROGNARDS ============ -->
+<g id="L2" class="layer">
+  <g id="swarm"><path class="cone" d="M 0 0 L 331 -258 A 420 420 0 0 1 331 258 Z"/></g>
+  <text class="note" x="0" y="-352" fill="#B58BF5">CÔNE LANCÉ SUR UN JOUEUR AU HASARD</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">−75 % DE SOINS PRODUITS PENDANT 15 s</text>
+  <text class="note" x="0" y="378" fill="var(--slate)">un seul cône ne doit jamais toucher tous vos soigneurs</text>
+</g>
+
+<!-- ============ 3 · SOMMEIL ============ -->
+<g id="L3" class="layer">
+  <g class="zzz" transform="translate(-215,-160)"><circle r="30"/><text class="zt" y="9">Z</text></g>
+  <g class="zzz" style="--d:.5s" transform="translate(265,55)"><circle r="30"/><text class="zt" y="9">Z</text></g>
+  <g class="zzz" style="--d:1s" transform="translate(45,300)"><circle r="30"/><text class="zt" y="9">Z</text></g>
+  <text class="note" x="0" y="-352" fill="#B58BF5">3 JOUEURS · 10 SECONDES · NON DISSIPABLE</text>
+  <text class="note" x="0" y="378" fill="var(--slate)">le moindre dégât réveille — attention aux dégâts sur la durée</text>
+</g>
+
+<!-- ============ 4 · INFERNAL ============ -->
+<g id="L4" class="layer">
+  <g id="meteor" transform="translate(215,-130)">
+    <circle class="impact" r="46"/>
+    <circle class="stunned" r="17"/>
+    <text class="note" y="-64" fill="#FF7A33">MÉTÉORE · 2 s D'ÉTOURDISSEMENT</text>
+  </g>
+  <path class="drag-path" d="M 195 -110 C 20 90, -140 220, -280 268" fill="none" marker-end="url(#ah4)"/>
+  <g id="inf-spot" transform="translate(-300,285)">
+    <circle class="immo" r="86"/>
+    <image class="marker" href="assets/media/4c7af39816ee89d5ff39.webp" x="-24" y="-24" width="48" height="48"/>
+    <text class="note" y="-104" fill="#FF7A33">IMMOLATION · 8 MÈTRES</text>
+  </g>
+  <path class="range-line" d="M -46 42 L -262 250"/>
+  <text class="note" x="-118" y="130" fill="#2FC2C7" transform="rotate(-44 -118 130)">25 MÈTRES MINIMUM</text>
+  <text class="note" x="0" y="378" fill="var(--slate)">immunisé à la provocation — la Diversion aide le second tank</text>
+</g>
+
+<!-- ============ 5 · AURA VAMPIRIQUE ============ -->
+<g id="L5" class="layer">
+  <circle class="vamp" r="70"/><circle class="vamp" r="70"/>
+  <text class="note" x="0" y="-352" fill="#E8443C">IL SE SOIGNE DE 300 % DE SES DÉGÂTS DE MÊLÉE</text>
+  <g id="debuffs" transform="translate(0,300)">
+    <text class="note" y="0" fill="#FF7A33">FRAPPE MORTELLE · POISON DE BLESSURE · TIR PRÉCIS</text>
+    <text class="note" y="26" fill="var(--slate)">en permanence sur lui, sinon le combat ne finit pas</text>
+  </g>
+  <text class="note" x="0" y="-320" fill="var(--slate)">enrage à 10 minutes</text>
+</g>
+
+<defs><marker id="ah4" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+  <path d="M0,0 L8,4 L0,8 Z" fill="#FF7A33"/></marker></defs>
+
+</svg></div>
+<div id="panel">
+  <div class="eyebrow">Bataille du mont Hyjal · Boss 2 / 5</div>
+  <h1>Anetheron</h1>
+  <div class="subtitle">Un combat qui se perd sur les soins, jamais sur les dégâts.</div>
+  <div id="mech"></div><div id="narration"></div><div id="rail"></div>
+</div>
+
+<div id="ed">
+  <h4>MODE ÉDITION</h4>
+  <div class="row"><span>Sélection</span><b id="ed-sel">—</b></div>
+  <div class="row"><span>Décalage</span><b id="ed-xy">0, 0</b></div>
+  <div class="row"><span>Étape <span id="ed-step">1</span> · durée</span><span><input id="ed-dur" type="number" step="0.5" min="1"> s</span></div>
+  <div class="row"><span>Rôles mis en avant</span><span id="ed-focus">
+    <button class="rb" data-r="tank">TANK</button><button class="rb" data-r="healer">HEAL</button><button class="rb" data-r="mdps">CàC</button><button class="rb" data-r="rdps">DIST</button>
+  </span></div>
+  <div class="keys">
+    Glisser : déplacer · Flèches : 1 px · Maj+Flèches : 10 px<br>
+    Double-clic sur un texte : le réécrire<br>
+    <b>H</b> masquer/afficher · <b>Ctrl+Z</b> annuler · <b>A</b> figer les animations<br>
+    <b>L</b> toutes les étapes visibles · <b>E</b> quitter l'édition
+  </div>
+  <div class="btns">
+    <button id="ed-reset">RÉINITIALISER L'ÉLÉMENT</button>
+    <button id="ed-save">EXPORTER LE HTML</button>
+  </div>
+</div>
+
+<div id="leftnav">
+  <div class="navpair">
+    <a class="navbtn" href="winterchill.html"><span class="lbl">← Précédent</span><span class="ttl">Rage Froidhiver</span></a>
+    <a class="navbtn" href="kazrogal.html"><span class="lbl">→ Suivant</span><span class="ttl">Kaz'rogal</span></a>
+  </div>
+  <div id="bossmenu">
+    <a class="home" href="index.html">← Retour à l’accueil</a>
+    <details class="phase-group">
+      <summary>Phase 1</summary>
+      <div class="phase-content">
+        <div class="raid-h">Karazhan</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Repaire de Gruul</div>
+        <a class="" href="maulgar.html">Haut-Roi Maulgar</a>
+        <a class="" href="gruul.html">Gruul le Tue-Dragon</a>
+        <div class="raid-h">Repaire de Magtheridon</div>
+        <div class="coming">Guide à venir</div>
+      </div>
+    </details>
+    <details class="phase-group">
+      <summary>Phase 2</summary>
+      <div class="phase-content">
+        <div class="raid-h">Caverne du sanctuaire du Serpent</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Donjon de la Tempête : L’Œil</div>
+        <div class="coming">Guides à venir</div>
+      </div>
+    </details>
+    <details class="phase-group current-phase" open>
+      <summary>Phase 3</summary>
+      <div class="phase-content">
+        <div class="raid-h">Bataille du mont Hyjal</div>
+        <a class="" href="winterchill.html">Rage Froidhiver</a>
+        <a class="current" href="anetheron.html">Anetheron</a>
+        <a class="" href="kazrogal.html">Kaz’rogal</a>
+        <a class="" href="azgalor.html">Azgalor</a>
+        <a class="" href="archimonde.html">Archimonde</a>
+        <div class="raid-h">Temple noir</div>
+        <a class="" href="najentus.html">Grand seigneur de guerre Naj’entus</a>
+        <a class="" href="supremus.html">Supremus</a>
+        <a class="" href="akama.html">Ombre d’Akama</a>
+        <a class="" href="teron.html">Teron Fielsang</a>
+        <a class="" href="gurtogg.html">Gurtogg Fièvresang</a>
+        <a class="" href="reliquaire.html">Reliquaire des âmes</a>
+        <a class="" href="shahraz.html">Mère Shahraz</a>
+        <a class="" href="conseil.html">Conseil illidari</a>
+        <a class="" href="illidan.html">Illidan Hurlorage</a>
+      </div>
+    </details>
+  </div>
+</div>
+<div id="hint"><span class="kbd">←</span><span class="kbd">→</span> naviguer &nbsp;·&nbsp; <span class="kbd">Espace</span> suivant &nbsp;·&nbsp; <span class="kbd">P</span> lecture auto &nbsp;·&nbsp; <span class="kbd">R</span> enregistrement &nbsp;·&nbsp; <span class="kbd">E</span> édition</div>
+</div></div>
+<script src="data/bosses/anetheron.js"></script>
+<script src="assets/guide.js"></script>
+</body>
+</html>

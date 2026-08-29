@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Gurtogg Fièvresang — Temple noir · Boss 5 / 9</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles/gurtogg.css">
+</head>
+<body>
+<div id="fit"><div id="stage" data-step="1">
+<div id="bg"></div><div id="scrim"></div>
+<div id="arena"><svg id="field" viewBox="-500 -500 1000 1000">
+
+<circle class="room" r="410"/>
+<circle class="room-inner" r="260"/>
+
+<g id="anchor-boss">
+  <g class="mob" id="boss" data-nodrag>
+    <circle class="mob-base" r="62"/><circle class="mob-ring" r="56" stroke="#8CF07E"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-30" y="-30" width="60" height="60"/>
+  </g>
+  <text class="lbl" y="94" fill="#8CF07E">GURTOGG</text>
+</g>
+
+<g id="raid"></g>
+
+<!-- 1 · placement -->
+<g id="L1" class="layer">
+  <g class="pc tank" transform="translate(0,-110)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-17" y="-17" width="34" height="34"/></g>
+  <text class="tag" x="0" y="-140" fill="#4C86E0">TANK ACTUEL</text>
+  <g class="pc tank" transform="translate(-90,-95)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-15" y="-15" width="30" height="30"/></g>
+  <g class="pc tank" transform="translate(90,-95)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-15" y="-15" width="30" height="30"/></g>
+  <text class="tag" x="0" y="-64" fill="var(--slate)">rotation à trois</text>
+  <text class="note" x="0" y="350" fill="#EDE8DA">DOS TOURNÉ VERS LE RAID · JAMAIS FACE À VOUS</text>
+</g>
+
+<!-- 2 · Bouillonnement -->
+<g id="L2" class="layer">
+  <g class="pc mdps boil" transform="translate(-70,140)"><circle r="30"/></g>
+  <g class="pc mdps boil" style="--d:.3s" transform="translate(50,160)"><circle r="30"/></g>
+  <text class="note" x="0" y="-352" fill="#E8443C">DÉGÂTS SUR LA DURÉE · S'EMPILE SI VOUS RESTEZ GROUPÉS</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">BOUGEZ, NE VOUS RÉEMPILEZ PAS AU MÊME ENDROIT</text>
+</g>
+
+<!-- 3 · Blessure Acide -->
+<g id="L3" class="layer">
+  <g id="acid" transform="translate(0,-110)"><circle class="stack-r" r="46"/></g>
+  <text class="note" x="0" y="-352" fill="#FF7A33">S'EMPILE SUR LE TANK ACTUEL À CHAQUE FRAPPE</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">ON TOURNE AVANT QUE ÇA NE DEVIENNE INGÉRABLE</text>
+</g>
+
+<!-- 4 · Gangrerage -->
+<g id="L4" class="layer">
+  <g id="felrage" transform="translate(-200,120)">
+    <circle class="rage-r" r="60"/><image href="assets/media/c0835e827ed757b9014c.svg" x="-18" y="-18" width="36" height="36"/>
+    <text class="note" y="-84" fill="#8CF07E">GANGRERAGE</text>
+  </g>
+  <path class="chase" d="M -172 90 L 0 -32" fill="none" marker-end="url(#ahg)"/>
+  <text class="note" x="0" y="-352" fill="#8CF07E">IL NE FRAPPE PLUS QUE CE JOUEUR · TOUT LE MONDE S'ÉCARTE</text>
+  <text class="note" x="0" y="352" fill="#E8443C">TOUS LES SOINS DESSUS · SES DÉFENSIVES PERSONNELLES SORTENT</text>
+</g>
+
+<!-- 5 · cycle -->
+<g id="L5" class="layer">
+  <text class="note" x="0" y="-352" fill="#F2C14E">TRENTE SECONDES DE GANGRERAGE PUIS RETOUR EN PHASE 1</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">SANS TAUNT POSSIBLE — IL PASSE AU DEUXIÈME EN MENACE</text>
+</g>
+
+<defs><marker id="ahg" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+  <path d="M0,0 L8,4 L0,8 Z" fill="#8CF07E"/></marker></defs>
+
+</svg></div>
+<div id="panel">
+  <div class="eyebrow">Temple noir · Boss 5 / 9</div>
+  <h1>Gurtogg Fièvresang</h1>
+  <div class="subtitle">Deux phases en boucle, une seule vraie urgence : soigner la Rage.</div>
+  <div id="mech"></div><div id="narration"></div><div id="rail"></div>
+</div>
+
+<div id="ed">
+  <h4>MODE ÉDITION</h4>
+  <div class="row"><span>Sélection</span><b id="ed-sel">—</b></div>
+  <div class="row"><span>Décalage</span><b id="ed-xy">0, 0</b></div>
+  <div class="row"><span>Étape <span id="ed-step">1</span> · durée</span><span><input id="ed-dur" type="number" step="0.5" min="1"> s</span></div>
+  <div class="row"><span>Rôles mis en avant</span><span id="ed-focus">
+    <button class="rb" data-r="tank">TANK</button><button class="rb" data-r="healer">HEAL</button><button class="rb" data-r="mdps">CàC</button><button class="rb" data-r="rdps">DIST</button>
+  </span></div>
+  <div class="keys">
+    Glisser : déplacer · Flèches : 1 px · Maj+Flèches : 10 px<br>
+    Double-clic sur un texte : le réécrire<br>
+    <b>H</b> masquer/afficher · <b>Ctrl+Z</b> annuler · <b>A</b> figer les animations<br>
+    <b>L</b> toutes les étapes visibles · <b>E</b> quitter l'édition
+  </div>
+  <div class="btns">
+    <button id="ed-reset">RÉINITIALISER L'ÉLÉMENT</button>
+    <button id="ed-save">EXPORTER LE HTML</button>
+  </div>
+</div>
+
+<div id="leftnav">
+  <div class="navpair">
+    <a class="navbtn" href="teron.html"><span class="lbl">← Précédent</span><span class="ttl">Teron Fielsang</span></a>
+    <a class="navbtn" href="reliquaire.html"><span class="lbl">→ Suivant</span><span class="ttl">Reliquaire des Âmes</span></a>
+  </div>
+  <div id="bossmenu">
+    <a class="home" href="index.html">← Retour à l’accueil</a>
+    <details class="phase-group">
+      <summary>Phase 1</summary>
+      <div class="phase-content">
+        <div class="raid-h">Karazhan</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Repaire de Gruul</div>
+        <a class="" href="maulgar.html">Haut-Roi Maulgar</a>
+        <a class="" href="gruul.html">Gruul le Tue-Dragon</a>
+        <div class="raid-h">Repaire de Magtheridon</div>
+        <div class="coming">Guide à venir</div>
+      </div>
+    </details>
+    <details class="phase-group">
+      <summary>Phase 2</summary>
+      <div class="phase-content">
+        <div class="raid-h">Caverne du sanctuaire du Serpent</div>
+        <div class="coming">Guides à venir</div>
+        <div class="raid-h">Donjon de la Tempête : L’Œil</div>
+        <div class="coming">Guides à venir</div>
+      </div>
+    </details>
+    <details class="phase-group current-phase" open>
+      <summary>Phase 3</summary>
+      <div class="phase-content">
+        <div class="raid-h">Bataille du mont Hyjal</div>
+        <a class="" href="winterchill.html">Rage Froidhiver</a>
+        <a class="" href="anetheron.html">Anetheron</a>
+        <a class="" href="kazrogal.html">Kaz’rogal</a>
+        <a class="" href="azgalor.html">Azgalor</a>
+        <a class="" href="archimonde.html">Archimonde</a>
+        <div class="raid-h">Temple noir</div>
+        <a class="" href="najentus.html">Grand seigneur de guerre Naj’entus</a>
+        <a class="" href="supremus.html">Supremus</a>
+        <a class="" href="akama.html">Ombre d’Akama</a>
+        <a class="" href="teron.html">Teron Fielsang</a>
+        <a class="current" href="gurtogg.html">Gurtogg Fièvresang</a>
+        <a class="" href="reliquaire.html">Reliquaire des âmes</a>
+        <a class="" href="shahraz.html">Mère Shahraz</a>
+        <a class="" href="conseil.html">Conseil illidari</a>
+        <a class="" href="illidan.html">Illidan Hurlorage</a>
+      </div>
+    </details>
+  </div>
+</div>
+<div id="hint"><span class="kbd">←</span><span class="kbd">→</span> naviguer &nbsp;·&nbsp; <span class="kbd">Espace</span> suivant &nbsp;·&nbsp; <span class="kbd">P</span> lecture auto &nbsp;·&nbsp; <span class="kbd">R</span> enregistrement &nbsp;·&nbsp; <span class="kbd">E</span> édition</div>
+</div></div>
+<script src="data/bosses/gurtogg.js"></script>
+<script src="assets/guide.js"></script>
+</body>
+</html>
