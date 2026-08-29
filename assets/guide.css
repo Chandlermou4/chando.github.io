@@ -67,11 +67,11 @@ svg#field{width:1000px;height:1000px;overflow:visible}
 /* panneau — refonte sobre */
 #panel{padding:64px 72px 0 48px;display:flex;flex-direction:column;
   border-left:1px solid var(--panel-hair);background:var(--panel-bg);color:var(--panel-fg)}
-.feedback{align-self:flex-end;display:inline-flex;align-items:center;gap:7px;margin-bottom:30px;
-  font-family:'Hanken Grotesk',sans-serif;font-size:12px;letter-spacing:.01em;
-  color:var(--panel-dim);text-decoration:none;transition:color .18s}
-.feedback:hover{color:var(--accent)}
-.feedback svg{width:15px;height:15px;flex:none}
+.feedback{align-self:flex-end;display:inline-flex;align-items:center;gap:9px;margin-bottom:28px;
+  font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:600;letter-spacing:.01em;
+  color:#5865F2;text-decoration:none;transition:color .18s}
+.feedback:hover{color:#7B87FF}
+.feedback svg{width:20px;height:20px;flex:none}
 .eyebrow{font-family:'Hanken Grotesk',sans-serif;font-weight:500;font-size:13px;letter-spacing:.2em;
   color:var(--panel-dim);text-transform:uppercase;margin-bottom:26px}
 h1{font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:var(--h1,60px);line-height:1.05;
