@@ -2,11 +2,18 @@ window.GUIDE_STEPS=[{"mech": "Placement", "t": 8, "txt": "Anetheron reste au cen
 window.GUIDE_SETUP=({pc,NS,stage})=>{
 // mise à l'échelle 100% CSS (min() avec vw/vh) — plus de calcul JS, plus de bug de timing au chargement
 
-// cercle complet et régulier autour du boss : c'est la parade au cône
-const ROLES=['tank','healer','mdps','rdps','rdps','healer','rdps','mdps','rdps','healer','rdps','mdps',
-             'rdps','healer','rdps','mdps','rdps','healer','rdps','mdps','rdps','healer','rdps','mdps','tank'];
-for(let n=0;n<25;n++){
-  const a=(n/25)*Math.PI*2-Math.PI/2, r=n%2?232:288;
+// Les deux tanks sont AU CONTACT du boss. Le 2e n'a pas de cône frontal à
+// bloquer (le Vol de charognards part au hasard) : il se tient côté Jaina,
+// prêt à aller chercher l'Infernal monumental.
+pc(0, -88, 'tank');
+pc(-66, 74, 'tank');
+
+// tout le reste : cercle complet et régulier autour du boss, c'est la
+// parade au cône.
+const ROLES=['healer','mdps','rdps','rdps','healer','rdps','mdps','rdps','healer','rdps','mdps',
+             'rdps','healer','rdps','mdps','rdps','healer','rdps','mdps','rdps','healer','rdps','mdps'];
+for(let n=0;n<ROLES.length;n++){
+  const a=(n/ROLES.length)*Math.PI*2-Math.PI/2, r=n%2?232:288;
   pc(Math.cos(a)*r, Math.sin(a)*r, ROLES[n]);
 }
 
