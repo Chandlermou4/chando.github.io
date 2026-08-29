@@ -1,24 +1,39 @@
 # Architecture du site
 
-Les pages à la racine sont la version statique prête à publier. Les éléments
-qui changent le plus souvent se modifient directement dans les fichiers
-extraits ci-dessous ; il n'est pas nécessaire de toucher aux 17 pages.
+Site statique, sans étape de build. Ce qui est dans le dépôt est ce qui est
+publié.
 
-- `assets/guide.js` : moteur commun des guides (navigation, édition, export et
-  raccourcis clavier) ;
-- `data/bosses/<boss>.js` : étapes et positionnement propres à un boss ;
-- `assets/styles/<boss>.css` : le thème et les animations propres au diagramme ;
-- `assets/media/` : images et icônes dédupliquées, au lieu d'être encodées dans
-  chaque page.
+## Fichiers
 
-`src/pages/` contient les anciennes pages autonomes, conservées comme source de
-secours. `tools/build_site.py` permet de régénérer l'architecture extraite à
-partir de ces sources si nécessaire.
+- `index.html` : page d'accueil, guides classés par phase.
+- `<boss>.html` (racine) : une page par boss. Uniquement du markup + le
+  `<link>` de style + deux `<script src>`. Aucun script inline.
+- `assets/guide.js` : moteur commun à tous les guides — navigation clavier,
+  lecture auto, mode enregistrement (`R`), mode édition (`E`), export, et
+  mise à l'échelle 1920x1080.
+- `data/bosses/<boss>.js` : `window.GUIDE_STEPS` (les étapes : titre, texte,
+  durée, rôles mis en avant) et `window.GUIDE_SETUP` (placement du raid sur
+  le diagramme).
+- `assets/styles/<boss>.css` : thème et animations propres au diagramme du
+  boss.
+- `assets/media/` : images et icônes, mutualisées entre les pages.
 
-Pour reconstruire le site après une modification des sources :
+`archimonde_6.html` est une copie de secours d'Archimonde ; elle charge le
+même `data/bosses/archimonde.js`.
 
-```powershell
-C:\Python314\python.exe tools\build_site.py
-```
+## Modifier un guide
 
-`archimonde_6.html` est conservé comme copie de sauvegarde du guide Archimonde.
+- Étapes et placements : `data/bosses/<boss>.js`.
+- Apparence du diagramme : `assets/styles/<boss>.css`.
+- Comportement commun à tous les guides : `assets/guide.js`.
+- Décor et repères du diagramme (cercle d'arène, zones, flèches, libellés) :
+  le bloc `<svg id="field">` dans `<boss>.html`.
+
+Le mode édition (`E`) sur une page permet de déplacer les éléments et de
+réécrire les textes, puis d'exporter un HTML pour tester rapidement — mais la
+modification durable se fait dans les fichiers ci-dessus.
+
+## Publication
+
+Le dépôt est relié à Cloudflare Pages (projet `chando`). Un `git push` sur
+`main` redéploie automatiquement `chando.pages.dev`. Rien d'autre à faire.

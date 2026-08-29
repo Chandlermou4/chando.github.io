@@ -1,60 +1,45 @@
-# chando.github.io
+# chando
 
 Guides de raid interactifs pour TBC Anniversary, organisés par phases de contenu.
 
 - **Phase 1** : Karazhan, Repaire de Gruul, Repaire de Magtheridon
-- **Phase 2** : Caverne du sanctuaire du Serpent, Donjon de la Tempête : L’Œil
+- **Phase 2** : Caverne du sanctuaire du Serpent, Donjon de la Tempête : L'Œil
 - **Phase 3** : Bataille du mont Hyjal, Temple noir
 
-Les guides actuellement disponibles couvrent le Repaire de Gruul, la Bataille du mont Hyjal et le Temple noir. Les autres raids sont déjà présents dans la navigation et seront complétés progressivement.
+Guides disponibles aujourd'hui : Repaire de Gruul, Bataille du mont Hyjal,
+Temple noir. Les autres raids sont dans la navigation et seront complétés.
 
-## Publier ce site
+## Publication
 
-1. Crée un dépôt public nommé exactement `chando.github.io` sur ton compte GitHub.
-2. Dans ce dépôt, mets tous les fichiers de ce dossier à la racine. Il faut bien
-   publier également les dossiers `assets/` et `data/` : les pages de boss les
-   utilisent désormais.
-   - Via l'interface web : bouton **Add file → Upload files**, glisse tout le contenu, puis **Commit changes**.
-   - Via Git en ligne de commande, depuis ce dossier :
-     ```
-     git init
-     git add .
-     git commit -m "Guides de raid"
-     git branch -M main
-     git remote add origin https://github.com/<ton-pseudo>/chando.github.io.git
-     git push -u origin main
-     ```
-3. Dans les paramètres du dépôt (**Settings → Pages**), vérifie que la source est bien la branche `main`, dossier `/ (root)`.
-4. Le site est disponible sous quelques minutes à l'adresse `https://<ton-pseudo>.github.io`.
+Site en ligne : <https://chando.pages.dev>
 
-### Cloudflare Pages
+Le dépôt `Chandlermou4/chando.github.io` est relié à Cloudflare Pages (projet
+`chando`, branche `main`). **Chaque `git push` sur `main` redéploie
+automatiquement.** Aucune commande de build.
 
-Pour le projet déjà en ligne, envoie le contenu complet de ce dossier (sans
-`src/` ni `tools/`, qui servent uniquement à fabriquer le site) avec un
-déploiement direct. Le répertoire de sortie est la racine du dossier :
-`index.html` doit rester au même niveau que `assets/` et `data/`.
+```
+git add <fichiers modifiés>
+git commit -m "…"
+git push
+```
 
 ## Structure
 
-- `src/pages/` — sauvegarde des anciennes pages autonomes ;
-- `tools/build_site.py` — régénère l'architecture extraite depuis cette sauvegarde ;
-- `assets/guide.js` — moteur partagé par tous les guides ;
-- `data/bosses/` — étapes et placement de chaque boss ;
-- `assets/media/` — images et icônes dédupliquées ;
-- `index.html` et les pages de boss à la racine — version générée à publier.
+Voir `ARCHITECTURE.md`. En résumé :
 
-## Mettre à jour un guide plus tard
+- `index.html` et les `<boss>.html` à la racine : pages statiques (markup seul).
+- `assets/guide.js` : moteur partagé par tous les guides.
+- `data/bosses/<boss>.js` : étapes et placement de chaque boss.
+- `assets/styles/<boss>.css` : thème du diagramme.
+- `assets/media/` : images et icônes mutualisées.
 
-Chaque page a un mode édition (touche **E**). L'export reste utile pour tester
-un ajustement rapidement. Pour une modification durable, édite plutôt le
-fichier correspondant dans `data/bosses/` (étapes/placements),
-`assets/styles/` (apparence) ou `assets/guide.js` (fonction commune).
+## Modifier un guide
 
-La commande suivante sert uniquement à refaire l'extraction complète depuis
-la sauvegarde historique de `src/pages/` :
+- Étapes / placements : `data/bosses/<boss>.js`
+- Apparence : `assets/styles/<boss>.css`
+- Fonction commune : `assets/guide.js`
+- Décor du diagramme : le `<svg id="field">` dans `<boss>.html`
 
-```
-C:\Python314\python.exe tools\build_site.py
-```
-
-Elle remplace les fichiers générés à la racine, sans toucher à la sauvegarde.
+Chaque page a un mode édition (touche **E**) pour déplacer les éléments et
+réécrire les textes, avec un export HTML pour tester. Pour une modification
+durable, éditer les fichiers ci-dessus.
