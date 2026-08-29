@@ -237,3 +237,17 @@ document.getElementById('ed-save').onclick=()=>{
   sync(); document.body.appendChild(btn);
 })();
 
+/* ================= BOUTONS PRÉCÉDENT / SUIVANT (souris) ================= */
+(function(){
+  const nav=document.createElement('div');
+  nav.id='stepnav';
+  const mk=(lbl,txt,d)=>{
+    const b=document.createElement('button');
+    b.type='button';b.className='stepnav-btn';b.setAttribute('aria-label',lbl);b.innerHTML=txt;
+    b.addEventListener('click',e=>{e.stopPropagation();go(d);});
+    return b;
+  };
+  nav.append(mk('Étape précédente','&#8249;',-1), mk('Étape suivante','&#8250;',1));
+  document.body.appendChild(nav);
+})();
+
