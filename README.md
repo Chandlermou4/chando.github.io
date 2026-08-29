@@ -29,14 +29,17 @@ Voir `ARCHITECTURE.md`. En résumé :
 
 - `index.html` et les `<boss>.html` à la racine : pages statiques (markup seul).
 - `assets/guide.js` : moteur partagé par tous les guides.
+- `assets/guide.css` : tronc commun de style, partagé par tous les guides.
 - `data/bosses/<boss>.js` : étapes et placement de chaque boss.
-- `assets/styles/<boss>.css` : thème du diagramme.
+- `assets/styles/<boss>.css` : ce qui change d'un boss à l'autre (fond, titre,
+  couleurs de l'arène, animations).
 - `assets/media/` : images et icônes mutualisées.
 
 ## Modifier un guide
 
 - Étapes / placements : `data/bosses/<boss>.js`
-- Apparence : `assets/styles/<boss>.css`
+- Apparence d'un boss : `assets/styles/<boss>.css`
+- Apparence de tous les guides : `assets/guide.css`
 - Fonction commune : `assets/guide.js`
 - Décor du diagramme : le `<svg id="field">` dans `<boss>.html`
 

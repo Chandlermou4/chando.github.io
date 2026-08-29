@@ -2,6 +2,11 @@
 
 Date : 28 août 2026
 
+> **Note (29 août 2026)** — ce compte rendu décrit l'état du projet à la date
+> ci-dessus. Depuis, le site a été déployé, l'architecture a changé et
+> `src/pages/` et `tools/` ont été supprimés. Pour l'état actuel, voir
+> `ARCHITECTURE.md` et `README.md`.
+
 ## Contexte
 
 Le projet est un site de guides de raid interactifs pour TBC Anniversary,
