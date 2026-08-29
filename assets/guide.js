@@ -10,7 +10,8 @@ function pc(x,y,role,size){size=size||30;
   im.setAttribute('width',size);im.setAttribute('height',size);
   g.appendChild(im);(document.getElementById('raid')||document.querySelector('svg')).appendChild(g);return g}
 const stage=document.getElementById('stage'),mechEl=document.getElementById('mech'),
-      narEl=document.getElementById('narration'),rail=document.getElementById('rail');
+      narEl=document.getElementById('narration'),rail=document.getElementById('rail'),
+      stepEl=document.getElementById('stepno');
 let i=0,auto=null;
 STEPS.forEach(()=>{const t=document.createElement('div');t.className='tick';rail.appendChild(t)});
 const ticks=[...rail.children];
@@ -18,6 +19,7 @@ function render(){
   stage.dataset.step=i+1;
   stage.dataset.focus=(STEPS[i].focus||[]).join(' ');
   mechEl.innerHTML='';narEl.innerHTML='';void stage.offsetWidth;
+  if(stepEl)stepEl.textContent=String(i+1).padStart(2,'0')+' / '+String(STEPS.length).padStart(2,'0');
   mechEl.textContent=STEPS[i].mech;narEl.innerHTML=STEPS[i].txt;
   ticks.forEach((t,n)=>t.className='tick'+(n<i?' done':n===i?' now':''));
 }
@@ -200,5 +202,24 @@ document.getElementById('ed-save').onclick=()=>{
   a.download=(document.title.split(' —')[0].toLowerCase().replace(/\s+/g,'-'))+'-edit.html';
   a.click();URL.revokeObjectURL(a.href);
 };
+})();
+
+/* ================= BASCULE CLAIR / SOMBRE ================= */
+(function(){
+  const KEY='guide-theme', root=document.documentElement;
+  let saved=null; try{saved=localStorage.getItem(KEY)}catch(e){}
+  if(saved==='light'||saved==='dark') root.dataset.theme=saved;
+  const btn=document.createElement('button');
+  btn.id='themetoggle'; btn.type='button';
+  btn.setAttribute('aria-label','Basculer le thème clair ou sombre');
+  const sync=()=>btn.textContent=(root.dataset.theme==='light')?'Sombre':'Clair';
+  btn.addEventListener('click',e=>{
+    e.stopPropagation();
+    const toLight=root.dataset.theme!=='light';
+    root.dataset.theme=toLight?'light':'dark';
+    try{localStorage.setItem(KEY,toLight?'light':'dark')}catch(e){}
+    sync();
+  });
+  sync(); document.body.appendChild(btn);
 })();
 
