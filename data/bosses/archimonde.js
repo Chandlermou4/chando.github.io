@@ -2,13 +2,23 @@ window.GUIDE_STEPS=[{"mech": "Placement", "t": 6, "txt": "Prenez les <strong>Lar
 window.GUIDE_SETUP=({pc,NS,stage})=>{
 // mise à l'échelle 100% CSS (min() avec vw/vh) — plus de calcul JS, plus de bug de timing au chargement
 
-const ROLES=['tank','tank','healer','healer','healer','healer','healer','healer',
-             'mdps','mdps','mdps','mdps','mdps','mdps'];
-for(let n=0;n<25;n++){
-  const a=(n/25)*Math.PI*2+0.3, r=205+(n%3)*74;
-  const g=pc(Math.cos(a)*r, Math.sin(a)*r, ROLES[n]||'rdps');
-  const h=document.createElementNS(NS,'circle');
-  h.setAttribute('r','36');h.setAttribute('class','spacing-halo');g.appendChild(h);
+// On s'espace, mais pas sur 360° : le tiers nord reste vide.
+// Seuls les tanks s'y tiennent, au contact d'Archimonde.
+pc(-58, -138, 'tank');
+pc( 58, -138, 'tank');
+
+// Tout le reste réparti sur les 240° restants (est -> sud -> ouest),
+// trois profondeurs, halo d'espacement sur chacun.
+const ROLES=['healer','healer','healer','healer','healer','healer',
+             'mdps','mdps','mdps','mdps','mdps','mdps',
+             'rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps'];
+const A0 = -Math.PI/6 + 0.05;      // juste après le bord est du secteur vide
+const SPAN = 4*Math.PI/3 - 0.10;   // 240°, petite marge de part et d'autre
+for(let n=0;n<ROLES.length;n++){
+  const a = A0 + (n/(ROLES.length-1))*SPAN, r = 205 + (n%3)*74;
+  const g = pc(Math.cos(a)*r, Math.sin(a)*r, ROLES[n]);
+  const h = document.createElementNS(NS,'circle');
+  h.setAttribute('r','36'); h.setAttribute('class','spacing-halo'); g.appendChild(h);
 }
 
 
