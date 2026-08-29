@@ -85,6 +85,9 @@ h1{font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:var(--h1,60p
 #narration{font-family:'Hanken Grotesk',sans-serif;font-size:22px;line-height:1.6;max-width:42ch;
   color:var(--panel-fg)}
 #narration strong{color:var(--panel-strong);font-weight:600;box-shadow:inset 0 -8px 0 var(--accent-soft)}
+#narration a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+#narration a:hover{color:var(--panel-strong)}
+#narration .aside{display:block;margin-top:14px;font-size:16px;color:var(--panel-dim)}
 #stepno,#mech,#narration{animation:enter .5s cubic-bezier(.2,.7,.3,1) both}
 @keyframes enter{from{opacity:0;transform:translateY(12px)}}
 #rail{margin-top:auto;padding-bottom:60px;display:flex;gap:8px;transition:opacity .3s}
