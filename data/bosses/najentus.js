@@ -6,23 +6,23 @@ window.GUIDE_SETUP=({pc,NS,stage})=>{
 // l'axe central laissé libre, six mètres entre chaque joueur.
 
 // deux tanks, dans l'axe, au contact
-pc(-34, 82, 'tank'); pc(34, 82, 'tank');
+pc(-32, 74, 'tank'); pc(32, 74, 'tank');
 
 // corps-à-corps : sur les flancs du boss, juste au sud, hors de l'axe
-[[-150,58],[-120,112],[120,112],[-96,156],[96,156]].forEach(p=>pc(p[0],p[1],'mdps'));
+[[-140,50],[-108,98],[108,98],[-86,138],[86,138]].forEach(p=>pc(p[0],p[1],'mdps'));
 
-// soigneurs : deux ailes au sud, l'axe central laissé aux tanks
+// soigneurs : deux ailes serrées au sud, l'axe central laissé aux tanks
 for(let n=0;n<6;n++){
   const s = n<3 ? -1 : 1, k = n%3;
-  const a = Math.PI/2 + s*(0.45 + k*0.38);
-  pc(Math.cos(a)*205, Math.sin(a)*205, 'healer');
+  const a = Math.PI/2 + s*(0.42 + k*0.36);
+  pc(Math.cos(a)*186, Math.sin(a)*186, 'healer');
 }
 
-// distants : deux ailes plus larges et plus loin (éventail vers le sud)
+// distants : deux ailes un peu plus larges, éventail compact vers le sud
 for(let n=0;n<12;n++){
   const s = n<6 ? -1 : 1, k = n%6;
-  const a = Math.PI/2 + s*(0.38 + k*0.154);
-  pc(Math.cos(a)*288, Math.sin(a)*288, 'rdps');
+  const a = Math.PI/2 + s*(0.36 + k*0.15);
+  pc(Math.cos(a)*252, Math.sin(a)*252, 'rdps');
 }
 
 

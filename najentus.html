@@ -13,11 +13,9 @@
 <body>
 <div id="fit"><div id="stage" data-step="1">
 <div id="bg"></div><div id="scrim"></div>
-<div id="arena"><svg id="field" viewBox="-500 -250 1000 1000">
+<div id="arena"><svg id="field" viewBox="-500 -120 1000 1000">
 
-<circle class="room" r="360" cy="150"/>
-<circle class="room-inner" r="215" cy="150"/>
-<g id="scale" transform="translate(-395,398)">
+<g id="scale" transform="translate(-380,470)">
   <path d="M 0 0 L 62 0" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
   <path d="M 0 -7 L 0 7 M 62 -7 L 62 7" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
   <text class="tag" x="31" y="26" fill="rgba(237,232,218,.7)">6 MÈTRES</text>
@@ -28,27 +26,27 @@
     <circle class="mob-base" r="62"/><circle class="mob-ring" r="56" stroke="#2FC2C7"/>
     <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-30" y="-30" width="60" height="60"/>
   </g>
-  <text class="lbl" y="-78" fill="#2FC2C7">NAJ'ENTUS</text>
+  <text class="lbl" y="-70" fill="#2FC2C7">NAJ'ENTUS</text>
 </g>
 
 <g id="raid"></g>
 
 <!-- 1 · placement -->
 <g id="L1" class="layer">
-  <g id="cleave" transform="rotate(90)"><path class="cone-cl" d="M 0 0 L 220 -95 A 240 240 0 0 1 220 95 Z"/></g>
-  <text class="tag" x="0" y="278" fill="#E8443C">PERSONNE DEVANT DANS L'AXE · IL FEND</text>
-  <text class="note" x="0" y="-165" fill="#EDE8DA">NAJ'ENTUS ADOSSÉ AU FOND, FACE AU RAID</text>
-  <text class="note" x="0" y="430" fill="#2FC2C7">2 TANKS DANS L'AXE · LE RESTE EN ÉVENTAIL, 6 M ENTRE JOUEURS</text>
+  <g id="cleave" transform="rotate(90)"><path class="cone-cl" d="M 0 0 L 205 -90 A 224 224 0 0 1 205 90 Z"/></g>
+  <text class="tag" x="0" y="252" fill="#E8443C">PERSONNE DEVANT DANS L'AXE · IL FEND</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">NAJ'ENTUS ADOSSÉ AU FOND, FACE AU RAID</text>
+  <text class="note" x="0" y="384" fill="#2FC2C7">2 TANKS DANS L'AXE · LE RESTE EN ÉVENTAIL, 6 M ENTRE JOUEURS</text>
 </g>
 
 <!-- 2 · Épine -->
 <g id="L2" class="layer">
   <g id="needle"><path class="cone-n" d="M 0 0 L 300 -145 A 330 330 0 0 1 300 145 Z"/></g>
-  <g class="hit-splash" transform="translate(230,-90)"><circle r="52"/></g>
-  <g class="hit-splash" style="--d:.15s" transform="translate(255,0)"><circle r="52"/></g>
-  <g class="hit-splash" style="--d:.3s" transform="translate(230,90)"><circle r="52"/></g>
-  <text class="note" x="0" y="-165" fill="#7FB2F0">SUR DES JOUEURS AU HASARD, EN CONTINU</text>
-  <text class="note" x="0" y="350" fill="#EDE8DA">ÉCLAT QUI TOUCHE TOUT LE MONDE À MOINS DE 6 MÈTRES</text>
+  <g class="hit-splash" transform="translate(-150,130)"><circle r="52"/></g>
+  <g class="hit-splash" style="--d:.15s" transform="translate(70,205)"><circle r="52"/></g>
+  <g class="hit-splash" style="--d:.3s" transform="translate(175,150)"><circle r="52"/></g>
+  <text class="note" x="0" y="330" fill="#7FB2F0">SUR DES JOUEURS AU HASARD, EN CONTINU</text>
+  <text class="note" x="0" y="366" fill="#EDE8DA">ÉCLAT QUI TOUCHE TOUT LE MONDE À MOINS DE 6 MÈTRES</text>
 </g>
 
 <!-- 3 · Épine de Perforation -->
@@ -61,15 +59,15 @@
   <path class="save-arrow" d="M -220 100 L -60 30" fill="none" marker-end="url(#ahn)"/>
   <g transform="translate(-30,10)"><image href="assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/>
     <text class="tag" y="34" fill="#F2C14E">RAMASSE L'ÉPINE</text></g>
-  <text class="note" x="0" y="-165" fill="#EDE8DA">CLIQUEZ L'ÉPINE AU SOL POUR LE LIBÉRER</text>
-  <text class="note" x="0" y="350" fill="#F2C14E">L'ÉPINE DORSALE RÉCUPÉRÉE SERT À BRISER LE BOUCLIER</text>
+  <text class="note" x="0" y="330" fill="#EDE8DA">CLIQUEZ L'ÉPINE AU SOL POUR LE LIBÉRER</text>
+  <text class="note" x="0" y="366" fill="#F2C14E">L'ÉPINE DORSALE RÉCUPÉRÉE SERT À BRISER LE BOUCLIER</text>
 </g>
 
 <!-- 4 · Bouclier de Flots -->
 <g id="L4" class="layer">
   <circle class="shield" r="72"/>
-  <text class="note" x="0" y="-165" fill="#2FC2C7">IMMUNISÉ · IL SE RÉGÉNÈRE CHAQUE SECONDE</text>
-  <g id="reduc" transform="translate(0,300)">
+  <text class="note" x="0" y="330" fill="#2FC2C7">IMMUNISÉ · IL SE RÉGÉNÈRE CHAQUE SECONDE</text>
+  <g id="reduc" transform="translate(0,360)">
     <text class="note" y="0" fill="#FF7A33">POISON DE BLESSURE · FRAPPE MORTELLE EN PERMANENCE</text>
     <text class="note" y="26" fill="var(--slate)">sinon il regagne tout ce que vous venez de lui infliger</text>
   </g>
@@ -78,9 +76,9 @@
 <!-- 5 · Rupture -->
 <g id="L5" class="layer">
   <circle class="burst" r="70"/><circle class="burst" r="70"/>
-  <text class="note" x="0" y="-165" fill="#7FB2F0">RAID À PLEINE VIE · FURIE SANGUINAIRE · CD DE SOIN</text>
-  <text class="note" x="0" y="350" fill="#E8443C">LE JAILLISSEMENT DE FLOTS COÛTE ~80 % DE LA VIE À TOUT LE RAID</text>
-  <text class="note" x="0" y="376" fill="var(--slate)">un lancer trop tôt tue les plus fragiles</text>
+  <text class="note" x="0" y="330" fill="#7FB2F0">RAID À PLEINE VIE · FURIE SANGUINAIRE · CD DE SOIN</text>
+  <text class="note" x="0" y="366" fill="#E8443C">LE JAILLISSEMENT DE FLOTS COÛTE ~80 % DE LA VIE À TOUT LE RAID</text>
+  <text class="note" x="0" y="392" fill="var(--slate)">un lancer trop tôt tue les plus fragiles</text>
 </g>
 
 <defs><marker id="ahn" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
