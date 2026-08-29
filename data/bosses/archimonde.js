@@ -3,22 +3,31 @@ window.GUIDE_SETUP=({pc,NS,stage})=>{
 // mise à l'échelle 100% CSS (min() avec vw/vh) — plus de calcul JS, plus de bug de timing au chargement
 
 // On s'espace, mais pas sur 360° : le tiers nord reste vide.
-// Seuls les tanks s'y tiennent, au contact d'Archimonde.
-pc(-58, -138, 'tank');
-pc( 58, -138, 'tank');
+const halo = g=>{const h=document.createElementNS(NS,'circle');
+  h.setAttribute('r','36');h.setAttribute('class','spacing-halo');g.appendChild(h);};
 
-// Tout le reste réparti sur les 240° restants (est -> sud -> ouest),
-// trois profondeurs, halo d'espacement sur chacun.
-const ROLES=['healer','healer','healer','healer','healer','healer',
-             'mdps','mdps','mdps','mdps','mdps','mdps',
-             'rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps'];
-const A0 = -Math.PI/6 + 0.05;      // juste après le bord est du secteur vide
-const SPAN = 4*Math.PI/3 - 0.10;   // 240°, petite marge de part et d'autre
-for(let n=0;n<ROLES.length;n++){
-  const a = A0 + (n/(ROLES.length-1))*SPAN, r = 205 + (n%3)*74;
-  const g = pc(Math.cos(a)*r, Math.sin(a)*r, ROLES[n]);
-  const h = document.createElementNS(NS,'circle');
-  h.setAttribute('r','36'); h.setAttribute('class','spacing-halo'); g.appendChild(h);
+// Tanks : au nord, au contact d'Archimonde.
+pc(-58,-138,'tank'); pc(58,-138,'tank');
+
+// Corps-à-corps : au sud, près du boss, groupe resserré — assez espacés
+// pour le Feu funeste et le Jaillissement d'air, pas plus.
+for(let n=0;n<6;n++){
+  const a = Math.PI/2 - 0.85 + n*(1.7/5);      // ~41° -> ~139°, centré plein sud
+  const r = 150 + (n%2)*24;
+  halo(pc(Math.cos(a)*r, Math.sin(a)*r, 'mdps'));
+}
+
+// Soigneurs : à distance, répartis d'est en ouest sur tout l'arc (240°).
+const A0 = -Math.PI/6 + 0.12, ARC = 4*Math.PI/3 - 0.24;
+for(let n=0;n<6;n++){
+  const a = A0 + n*(ARC/5);
+  halo(pc(Math.cos(a)*338, Math.sin(a)*338, 'healer'));
+}
+
+// Distants : à distance eux aussi, intercalés entre les soigneurs.
+for(let n=0;n<11;n++){
+  const a = A0 + (n+0.5)*(ARC/11), r = 250 + (n%3)*40;
+  halo(pc(Math.cos(a)*r, Math.sin(a)*r, 'rdps'));
 }
 
 
