@@ -53,6 +53,8 @@ render();
 
 /* ================= ÉDITEUR ================= */
 (function(){
+// pas de panneau d'édition (ex. HTML exporté) -> on n'installe rien
+if(!document.getElementById('ed'))return;
 const field=document.getElementById('field');
 const edSel=document.getElementById('ed-sel'),edXY=document.getElementById('ed-xy'),
       edStep=document.getElementById('ed-step'),edDur=document.getElementById('ed-dur');
@@ -187,16 +189,28 @@ render=function(){_render();if(editing){edDur.value=STEPS[i].t;edStep.textConten
 document.getElementById('ed-reset').onclick=()=>{if(sel){snapshot(sel);place(sel,0,0);sel.style.display=''}};
 
 // --- export ---
+// Produit un <boss>-edit.html à replacer à la racine du dépôt. On fige le
+// DOM courant : positions des annotations ET des pions (déjà dans #raid),
+// puis on remplace le chargement de data/bosses/<boss>.js par les étapes
+// éditées + un GUIDE_SETUP neutre (le raid est déjà là, rien à régénérer).
 document.getElementById('ed-save').onclick=()=>{
   const c=document.documentElement.cloneNode(true);
+  c.removeAttribute('data-theme');
   c.querySelector('#ed')?.remove();
   c.querySelector('.sel-box')?.remove();
+  c.querySelector('#themetoggle')?.remove();
   c.querySelectorAll('[contenteditable]').forEach(n=>n.removeAttribute('contenteditable'));
-  c.querySelectorAll('#mech,#narration').forEach(n=>n.innerHTML='');
-  const st=c.querySelector('#stage');st.className='';st.setAttribute('data-step','1');
-  const sc=[...c.querySelectorAll('script')].find(s=>s.textContent.includes('const STEPS'));
-  sc.textContent=sc.textContent.replace(/const STEPS = \[[\s\S]*?\];/,
-    'const STEPS = '+JSON.stringify(STEPS)+';');
+  // zones reconstruites par le moteur au chargement
+  c.querySelectorAll('#mech,#narration,#stepno,#rail').forEach(n=>n.innerHTML='');
+  const st=c.querySelector('#stage');
+  st.className='';st.setAttribute('data-step','1');st.removeAttribute('data-focus');
+  const inline=c.ownerDocument.createElement('script');
+  inline.textContent='window.GUIDE_STEPS='+JSON.stringify(STEPS)+';\n'+
+    'window.GUIDE_SETUP=function(){};';
+  const data=[...c.querySelectorAll('script[src]')]
+    .find(s=>/data\/bosses\//.test(s.getAttribute('src')||''));
+  if(data)data.replaceWith(inline);
+  else (c.querySelector('body')||c).appendChild(inline);
   const blob=new Blob(['<!DOCTYPE html>\n'+c.outerHTML],{type:'text/html'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);
   a.download=(document.title.split(' —')[0].toLowerCase().replace(/\s+/g,'-'))+'-edit.html';
