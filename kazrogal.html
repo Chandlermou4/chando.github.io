@@ -24,8 +24,8 @@
 
 <g id="anchor-boss">
   <g class="mob" id="boss" data-nodrag>
-    <circle class="mob-base" r="64"/><circle class="mob-ring" r="58" stroke="#E8443C"/>
-    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-31" y="-31" width="62" height="62"/>
+    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#E8443C"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
   <text class="lbl" y="96" fill="#E8443C">KAZ'ROGAL</text>
 </g>
@@ -39,7 +39,7 @@
     <rect class="mb-fill" x="-176" y="-12" width="352" height="24" rx="12"/>
     <text class="note" y="46" fill="#4C86E0">LE MANA DU RAID</text>
   </g>
-  <text class="note" x="0" y="368" fill="#EDE8DA">CHAQUE PORTEUR DE MANA S'ÉCARTE DES AUTRES</text>
+  <text class="note" x="0" y="270" fill="#EDE8DA">CHAQUE PORTEUR DE MANA S'ÉCARTE DES AUTRES</text>
 </g>
 
 <!-- 2 · la Marque -->
@@ -50,7 +50,7 @@
     <path class="drain" style="--d:1.2s" d="M 20 -350 L 6 -62"/>
   </g>
   <text class="note" x="0" y="-368" fill="#4C86E0">DRAIN SUR TOUT LE RAID</text>
-  <text class="note" x="0" y="368" fill="#FF7A33">ET 10 SECONDES PLUS TÔT À CHAQUE FOIS</text>
+  <text class="note" x="0" y="270" fill="#FF7A33">ET 10 SECONDES PLUS TÔT À CHAQUE FOIS</text>
 </g>
 
 <!-- 3 · l'explosion -->
@@ -69,14 +69,14 @@
 
 <!-- 4 · les parades -->
 <g id="L4" class="layer">
-  <g class="card" transform="translate(-250,-110)"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
-    <text class="ct" y="-4">BLOC DE GLACE · BOUCLIER DIVIN</text><text class="cs" y="17">retirent la Marque net</text></g>
-  <g class="card" style="--d:.25s" transform="translate(250,-110)"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
-    <text class="ct" y="-4">FORME D'OURS OU DE FÉLIN</text><text class="cs" y="17">pas de mana, pas de drain</text></g>
-  <g class="card" style="--d:.5s" transform="translate(-250,220)"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
-    <text class="ct" y="-4">JUGEMENT DE SAGESSE</text><text class="cs" y="17">en permanence sur lui</text></g>
-  <g class="card" style="--d:.75s" transform="translate(250,220)"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
-    <text class="ct" y="-4">RUNES ET POTIONS</text><text class="cs" y="17">dès le début, pas à la fin</text></g>
+  <g transform="translate(-250,-110)"><g class="card"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
+    <text class="ct" y="-4">BLOC DE GLACE · BOUCLIER DIVIN</text><text class="cs" y="17">retirent la Marque net</text></g></g>
+  <g transform="translate(250,-110)"><g class="card" style="--d:.25s"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
+    <text class="ct" y="-4">FORME D'OURS OU DE FÉLIN</text><text class="cs" y="17">pas de mana, pas de drain</text></g></g>
+  <g transform="translate(-250,220)"><g class="card" style="--d:.5s"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
+    <text class="ct" y="-4">JUGEMENT DE SAGESSE</text><text class="cs" y="17">en permanence sur lui</text></g></g>
+  <g transform="translate(250,220)"><g class="card" style="--d:.75s"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
+    <text class="ct" y="-4">RUNES ET POTIONS</text><text class="cs" y="17">dès le début, pas à la fin</text></g></g>
   <text class="note" x="0" y="-368" fill="#EDE8DA">PROTECTION CONTRE L'OMBRE SUR TOUT LE RAID</text>
 </g>
 
@@ -84,7 +84,7 @@
 <g id="L5" class="layer">
   <circle class="stomp" r="90"/><circle class="stomp" r="90"/>
   <text class="note" x="0" y="-368" fill="#B58BF5">CHOC MARTIAL · FAIBLESSE</text>
-  <text class="note" x="0" y="368" fill="#EDE8DA">POTION DE LIBRE ACTION</text>
+  <text class="note" x="0" y="270" fill="#EDE8DA">POTION DE LIBRE ACTION</text>
   <text class="note" x="0" y="394" fill="var(--slate)">il n'enrage pas : c'est le mana qui vous tue</text>
 </g>
 
