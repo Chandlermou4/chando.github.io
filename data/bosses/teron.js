@@ -9,8 +9,8 @@ const RING=['rdps','healer','mdps','rdps','healer','rdps','mdps','rdps','healer'
             'healer','rdps','mdps','rdps','healer','rdps','mdps','rdps','healer','rdps','mdps','healer'];
 for(let n=0;n<24;n++){
   const a = -Math.PI/2 + 0.26 + n*(2*Math.PI/24);
-  const r = 178 + (n%2?26:0);
-  pc(Math.cos(a)*r, Math.sin(a)*r, RING[n]);
+  const r = 200 + (n%2?24:0);
+  pc(Math.cos(a)*r*1.28, Math.sin(a)*r*0.74, RING[n]);
 }
 
 
