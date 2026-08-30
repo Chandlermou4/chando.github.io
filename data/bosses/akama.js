@@ -8,13 +8,14 @@ pc(-300, -190, 'tank');   // tank gauche (plateforme gauche)
 pc( 340, -190, 'tank');   // tank droite (plateforme droite)
 
 // AU DÉPART : le raid monte tout au nord, au-delà des escaliers, sur
-// les Canalistes. Paquet resserré, placement libre.
+// les Canalistes. Paquet resserré et compact, placement libre.
 const R=['mdps','healer','rdps','mdps','rdps','healer','rdps','mdps','healer','rdps','mdps',
          'rdps','healer','rdps','mdps','rdps','healer','rdps','rdps','healer','rdps','rdps','healer'];
+const CX=10, CY=-284;
 for(let n=0;n<R.length;n++){
-  const a = (n/R.length)*Math.PI*2 + 0.6;
-  const r = 42 + (n%4)*30;
-  pc(Math.cos(a)*r*1.35 + 30, Math.sin(a)*r*0.68 - 315, R[n]);
+  const a = n*2.399;                 // angle d'or : remplissage homogène
+  const rr = 18 + 14*Math.sqrt(n);
+  pc(CX + Math.cos(a)*rr*1.2, CY + Math.sin(a)*rr*0.6, R[n]);
 }
 
 
