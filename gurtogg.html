@@ -30,19 +30,22 @@
 <!-- 1 · Placement -->
 <g id="L1" class="layer">
   <rect class="brace" x="-616" y="10" width="320" height="230" rx="20"/>
-  <text class="note" x="-456" y="-8" fill="#EDE8DA">TOUT LE RAID À DISTANCE · LES CORPS-À-CORPS AUSSI</text>
-  <text class="tag"  x="6" y="-102" fill="#7FB2F0">SEULS LES 3 TANKS SONT AU CONTACT</text>
+  <text class="note" x="-456" y="-8" fill="#EDE8DA">SOIGNEURS ET DISTANTS À GAUCHE, À DISTANCE</text>
+  <text class="tag"  x="6" y="-102" fill="#7FB2F0">3 TANKS + CORPS-À-CORPS SUR LE BOSS</text>
+  <text class="tag"  x="-456" y="256" fill="var(--slate)">au pull, les CàC partent aussi de la gauche</text>
 </g>
 
 <!-- 2 · Fièvresang : rotation des groupes -->
 <g id="L2" class="layer">
-  <circle class="zone" cx="-596" cy="118" r="92"/>
-  <g class="grp" transform="translate(-596,118)"><text>2</text></g>
-  <g class="grp" transform="translate(-486,54)"><text>4</text></g>
-  <g class="grp" transform="translate(-402,168)"><text>5</text></g>
-  <path class="cycle" d="M -560 44 C -470 14, -400 56, -378 132" marker-end="url(#agt)"/>
-  <text class="note" x="-470" y="-4" fill="#E8443C">LES 5 PLUS ÉLOIGNÉS · 600/s PENDANT 24 s</text>
-  <text class="tag"  x="-470" y="264" fill="#EDE8DA">GROUPES 2, 4, 5 SE RELAIENT AU PLUS LOIN · DEUX TOURS AVANT LA P2</text>
+  <circle class="zone" cx="-596" cy="118" r="94"/>
+  <g class="cac" transform="translate(-598,116)"><circle r="15"/></g>
+  <g class="cac" transform="translate(-566,90)"><circle r="15"/></g>
+  <g class="cac" transform="translate(-576,150)"><circle r="15"/></g>
+  <path class="melee-in" d="M -558 116 C -400 92, -220 68, -46 12" marker-end="url(#agt)"/>
+  <path class="cycle" d="M -648 66 C -612 40, -560 58, -566 108" marker-end="url(#agt)"/>
+  <text class="note" x="-470" y="-6" fill="#E8443C">LES 5 PLUS ÉLOIGNÉS · 600/s PENDANT 24 s</text>
+  <text class="tag"  x="-250" y="40" fill="#EDE8DA">les CàC prennent la 1re, puis rentrent au contact</text>
+  <text class="tag"  x="-470" y="264" fill="var(--slate)">au moins 3 groupes se relaient à la position la plus éloignée</text>
 </g>
 
 <!-- 3 · Rotation des tanks -->
@@ -87,7 +90,7 @@
 <g id="L6" class="layer">
   <path class="reset" d="M -360 90 C -240 60, -120 40, -8 -30" marker-end="url(#agt)"/>
   <g class="cyc" transform="translate(-360,150)">
-    <text y="0" fill="#EDE8DA">2 → 4 → 5 → 2 → 4 → 5</text>
+    <text y="0" fill="#EDE8DA">≥ 3 GROUPES QUI SE SUCCÈDENT</text>
   </g>
   <text class="note" x="-360" y="-120" fill="#F2C14E">REPLACEMENT DES TANKS, PUIS ON REPREND LA ROTATION</text>
 </g>

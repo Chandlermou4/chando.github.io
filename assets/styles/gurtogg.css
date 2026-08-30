@@ -14,11 +14,12 @@
 /* --- 2 : rotation des groupes --- */
 .zone{fill:rgba(232,68,60,.14);stroke:#E8443C;stroke-width:2.5;stroke-dasharray:7 9}
 [data-step="2"] .zone{animation:dash 4s linear infinite, pulse 1.8s ease-in-out infinite}
-.grp text{font-family:'Archivo Black',sans-serif;font-size:24px;text-anchor:middle;fill:#EDE8DA;
-  paint-order:stroke;stroke:rgba(5,10,16,.92);stroke-width:6px}
-[data-step="2"] .grp:first-of-type text{fill:#E8443C}
-.cycle{fill:none;stroke:#F2C14E;stroke-width:4;stroke-dasharray:10 8}
-[data-step="2"] .cycle{animation:dash 1s linear infinite}
+.cac circle{fill:rgba(228,219,196,.92);stroke:#0B140F;stroke-width:3}
+[data-step="2"] .cac{animation:pulse 1.6s ease-in-out infinite}
+.melee-in{fill:none;stroke:#EDE8DA;stroke-width:4;stroke-dasharray:12 8}
+[data-step="2"] .melee-in{animation:dash 1s linear infinite}
+.cycle{fill:none;stroke:#F2C14E;stroke-width:3.5;stroke-dasharray:9 8}
+[data-step="2"] .cycle{animation:dash 1.1s linear infinite}
 
 /* --- 3 : rotation des tanks --- */
 .badge rect{fill:rgba(8,13,20,.9);stroke:rgba(200,215,225,.4);stroke-width:2}
