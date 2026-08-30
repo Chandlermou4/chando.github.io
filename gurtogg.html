@@ -21,25 +21,95 @@
     <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
   <text class="lbl" y="106" fill="#8CF07E">GURTOGG FIÈVRESANG</text>
-  <text class="tag" y="132" fill="var(--slate)">3 tanks en rotation</text>
 </g>
 
 <g id="raid"></g>
 
 <g id="marks">
-  <g id="tri" transform="translate(-458,-36)">
-    <path class="mk-tri" d="M 0 22 L -22 -16 L 22 -16 Z"/>
-    <text class="tag" y="-32" fill="#8CF07E">TRIANGLE</text>
-    <text class="tag" y="48" fill="var(--slate)">groupe 2 y est déjà au pull</text>
+  <g id="tri" transform="translate(-470,-70)">
+    <path class="mk-tri" d="M 0 24 L -24 -18 L 24 -18 Z"/>
+    <text class="tag" y="-34" fill="#8CF07E">TRIANGLE</text>
   </g>
-  <g id="dia" transform="translate(-437,256)">
+  <g id="dia" transform="translate(-437,270)">
     <path class="mk-dia" d="M 0 -20 L 18 0 L 0 20 L -18 0 Z"/>
-    <text class="tag" y="44" fill="#B58BF5">LOSANGE</text>
+    <text class="tag" y="42" fill="#B58BF5">LOSANGE</text>
   </g>
   <text class="note" x="-666" y="124" fill="#EDE8DA">RAID</text>
 </g>
 
-<text class="note" x="-330" y="330" fill="#2FC2C7">LE RAID SE TIENT À GAUCHE · LE BOSS EST TENU À DROITE</text>
+<!-- 1 · Placement -->
+<g id="L1" class="layer">
+  <rect class="brace" x="-556" y="20" width="240" height="196" rx="18"/>
+  <text class="tag" x="-436" y="4" fill="#EDE8DA">RAID GROUPÉ</text>
+  <text class="tag" x="6" y="-102" fill="#7FB2F0">3 TANKS EN ROTATION</text>
+</g>
+
+<!-- 2 · Fièvresang : rotation des groupes -->
+<g id="L2" class="layer">
+  <circle class="zone" cx="-470" cy="-70" r="96"/>
+  <path class="route out" d="M -430 60 C -470 -6, -486 -34, -470 -66" marker-end="url(#agt)"/>
+  <path class="route back" d="M -400 -30 C -370 20, -400 70, -430 96" marker-end="url(#agt)"/>
+  <g class="cac" transform="translate(-500,-72)"><circle r="13"/></g>
+  <g class="cac" transform="translate(-462,-92)"><circle r="13"/></g>
+  <g class="cac" transform="translate(-446,-52)"><circle r="13"/></g>
+  <text class="note" x="-470" y="-186" fill="#E8443C">5 PLUS ÉLOIGNÉS · 600/s PENDANT 24 s</text>
+  <text class="tag"  x="-470" y="-160" fill="#EDE8DA">GROUPE 2 → 4 → 5, puis on recommence</text>
+  <text class="tag"  x="-360" y="150" fill="var(--slate)">ils encaissent, puis reviennent au corps-à-corps</text>
+  <text class="note" x="-360" y="330" fill="#F2C14E">DEUX ROTATIONS COMPLÈTES AVANT LA PHASE 2</text>
+</g>
+
+<!-- 3 · Rotation des tanks -->
+<g id="L3" class="layer">
+  <g class="badge full" transform="translate(-6,-118)"><rect x="-34" y="-16" width="68" height="32" rx="8"/><text y="6">8</text></g>
+  <g class="badge"      transform="translate(64,-96)"><rect x="-30" y="-15" width="60" height="30" rx="8"/><text y="6">2</text></g>
+  <g class="badge"      transform="translate(96,4)"><rect x="-30" y="-15" width="60" height="30" rx="8"/><text y="6">0</text></g>
+  <path class="swap" d="M -6 -96 C 18 -70, 42 -60, 62 -70" marker-end="url(#agt)"/>
+  <text class="note" x="0" y="-176" fill="#FF7A33">8 STACKS DE BLESSURE ACIDE MAX · −500 D'ARMURE CHACUN</text>
+  <text class="tag"  x="0" y="-150" fill="#EDE8DA">le MT stoppe sa menace, un autre reprend · boss non provocable</text>
+  <text class="tag"  x="120" y="70" fill="#F2C14E">DÉTOURNEMENT SUR LE TANK QUI REPREND</text>
+  <text class="tag"  x="120" y="-40" fill="var(--slate)">Frappe stupéfiante : désoriente le tank 5 s</text>
+</g>
+
+<!-- 4 · Gangrerage -->
+<g id="L4" class="layer">
+  <g id="cleave2" transform="rotate(180)"><path class="cone-cl" d="M 0 0 L 210 -92 A 230 230 0 0 1 210 92 Z"/></g>
+  <g id="felt" transform="translate(-400,150)">
+    <circle class="hi" r="46"/><image href="assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/>
+    <text class="note" y="-64" fill="#8CF07E">CIBLE · 30 s</text>
+  </g>
+  <path class="spread" d="M -400 150 L -300 90"  marker-end="url(#agt)"/>
+  <path class="spread" d="M -400 150 L -320 210" marker-end="url(#agt)"/>
+  <path class="spread" d="M -400 150 L -500 100" marker-end="url(#agt)"/>
+  <path class="spread" d="M -400 150 L -520 205" marker-end="url(#agt)"/>
+  <path class="jet" d="M -560 120 C -500 110, -460 130, -424 146" marker-end="url(#agt2)"/>
+  <text class="tag"  x="-360" y="-118" fill="#E8443C">ON S'ÉCARTE SANS PASSER DEVANT LE BOSS</text>
+  <text class="note" x="-360" y="330" fill="#E8443C">S'IL MEURT = WIPE · la Bénédiction de protection ne reset pas la menace</text>
+</g>
+
+<!-- 5 · Soins en phase 2 -->
+<g id="L5" class="layer">
+  <path class="heal" d="M -380 40 C -430 -6, -456 -34, -470 -60" marker-end="url(#agh)"/>
+  <path class="heal" d="M -300 60 C -160 20, -60 0, 40 -20"      marker-end="url(#agh)"/>
+  <path class="heal big" d="M -360 90 C -390 120, -400 135, -404 146" marker-end="url(#agh)"/>
+  <text class="tag"  x="-470" y="-96" fill="#2FC2C7">on FINIT la rotation Fièvresang</text>
+  <text class="tag"  x="40"   y="-38" fill="#2FC2C7">et les tanks encore chargés</text>
+  <text class="note" x="-360" y="330" fill="#EDE8DA">PUIS TOUT BASCULE SUR LE GANGRERAGE</text>
+</g>
+
+<!-- 6 · Retour en phase 1 -->
+<g id="L6" class="layer">
+  <path class="reset" d="M -360 90 C -240 60, -120 40, -8 -30" marker-end="url(#agt)"/>
+  <g class="cyc" transform="translate(-360,150)">
+    <text y="0" fill="#EDE8DA">2 → 4 → 5 → 2 → 4 → 5</text>
+  </g>
+  <text class="note" x="-360" y="-120" fill="#F2C14E">REPLACEMENT DES TANKS, PUIS ON REPREND LA ROTATION</text>
+</g>
+
+<defs>
+  <marker id="agt" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#EDE8DA"/></marker>
+  <marker id="agt2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#8CF07E"/></marker>
+  <marker id="agh" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2FC2C7"/></marker>
+</defs>
 
 </svg></div>
 <div id="panel">
