@@ -25,37 +25,24 @@
 
 <g id="raid"></g>
 
-<g id="marks">
-  <g id="tri" transform="translate(-470,-70)">
-    <path class="mk-tri" d="M 0 24 L -24 -18 L 24 -18 Z"/>
-    <text class="tag" y="-34" fill="#8CF07E">TRIANGLE</text>
-  </g>
-  <g id="dia" transform="translate(-437,270)">
-    <path class="mk-dia" d="M 0 -20 L 18 0 L 0 20 L -18 0 Z"/>
-    <text class="tag" y="42" fill="#B58BF5">LOSANGE</text>
-  </g>
-  <text class="note" x="-666" y="124" fill="#EDE8DA">RAID</text>
-</g>
+<text class="note" x="-690" y="124" fill="#EDE8DA">RAID</text>
 
 <!-- 1 · Placement -->
 <g id="L1" class="layer">
-  <rect class="brace" x="-556" y="20" width="240" height="196" rx="18"/>
-  <text class="tag" x="-436" y="4" fill="#EDE8DA">RAID GROUPÉ</text>
-  <text class="tag" x="6" y="-102" fill="#7FB2F0">3 TANKS EN ROTATION</text>
+  <rect class="brace" x="-616" y="10" width="320" height="230" rx="20"/>
+  <text class="note" x="-456" y="-8" fill="#EDE8DA">TOUT LE RAID À DISTANCE · LES CORPS-À-CORPS AUSSI</text>
+  <text class="tag"  x="6" y="-102" fill="#7FB2F0">SEULS LES 3 TANKS SONT AU CONTACT</text>
 </g>
 
 <!-- 2 · Fièvresang : rotation des groupes -->
 <g id="L2" class="layer">
-  <circle class="zone" cx="-470" cy="-70" r="96"/>
-  <path class="route out" d="M -430 60 C -470 -6, -486 -34, -470 -66" marker-end="url(#agt)"/>
-  <path class="route back" d="M -400 -30 C -370 20, -400 70, -430 96" marker-end="url(#agt)"/>
-  <g class="cac" transform="translate(-500,-72)"><circle r="13"/></g>
-  <g class="cac" transform="translate(-462,-92)"><circle r="13"/></g>
-  <g class="cac" transform="translate(-446,-52)"><circle r="13"/></g>
-  <text class="note" x="-470" y="-186" fill="#E8443C">5 PLUS ÉLOIGNÉS · 600/s PENDANT 24 s</text>
-  <text class="tag"  x="-470" y="-160" fill="#EDE8DA">GROUPE 2 → 4 → 5, puis on recommence</text>
-  <text class="tag"  x="-360" y="150" fill="var(--slate)">ils encaissent, puis reviennent au corps-à-corps</text>
-  <text class="note" x="-360" y="330" fill="#F2C14E">DEUX ROTATIONS COMPLÈTES AVANT LA PHASE 2</text>
+  <circle class="zone" cx="-596" cy="118" r="92"/>
+  <g class="grp" transform="translate(-596,118)"><text>2</text></g>
+  <g class="grp" transform="translate(-486,54)"><text>4</text></g>
+  <g class="grp" transform="translate(-402,168)"><text>5</text></g>
+  <path class="cycle" d="M -560 44 C -470 14, -400 56, -378 132" marker-end="url(#agt)"/>
+  <text class="note" x="-470" y="-4" fill="#E8443C">LES 5 PLUS ÉLOIGNÉS · 600/s PENDANT 24 s</text>
+  <text class="tag"  x="-470" y="264" fill="#EDE8DA">GROUPES 2, 4, 5 SE RELAIENT AU PLUS LOIN · DEUX TOURS AVANT LA P2</text>
 </g>
 
 <!-- 3 · Rotation des tanks -->
