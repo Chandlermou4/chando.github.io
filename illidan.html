@@ -13,78 +13,105 @@
 <body>
 <div id="fit"><div id="stage" data-step="1">
 <div id="bg"></div><div id="scrim"></div>
-<div id="arena"><svg id="field" viewBox="-500 -500 1000 1000">
-
-<circle class="room" r="410"/>
-<circle class="room-inner" r="260"/>
-<g id="scale" transform="translate(-395,398)">
-  <path d="M 0 0 L 115 0" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
-  <path d="M 0 -7 L 0 7 M 115 -7 L 115 7" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
-  <text class="tag" x="57" y="26" fill="rgba(237,232,218,.7)">25 MÈTRES</text>
-</g>
+<div id="arena"><svg id="field" viewBox="-491 -385 1000 1000">
 
 <g id="anchor-boss">
   <g class="mob" id="boss" data-nodrag>
     <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#8CF07E"/>
     <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
-  <text class="lbl" y="100" fill="#8CF07E">ILLIDAN</text>
+  <text class="lbl" x="120" y="-56" fill="#8CF07E">ILLIDAN</text>
 </g>
 
 <g id="raid"></g>
 
-<!-- 1 · placement phase 1 -->
+<!-- 1 · Placement et tanks -->
 <g id="L1" class="layer">
-  <text class="note" x="0" y="-352" fill="#EDE8DA">TANK PRINCIPAL DOS TOURNÉ · SHEAR SUR LUI</text>
-  <text class="note" x="0" y="352" fill="var(--slate)">chaque transition de phase remet la menace à zéro</text>
+  <path class="facing" d="M 0 -14 L -232 -118 L 116 -232 Z"/>
+  <text class="note" x="10" y="-317" fill="#EDE8DA">TANKÉ AU NORD · TOURNÉ À L’OPPOSÉ DU RAID</text>
+  <text class="note" x="10" y="447" fill="#7FB2F0">QUATRE TANKS : 1 PHYSIQUE · 2 RÉSIST. FEU · 1 DÉMONISTE OMBRE</text>
+  <text class="tag"  x="10" y="473" fill="var(--slate)">le tank principal doit atteindre 100 % d’évitement contre la Tonte</text>
 </g>
 
-<!-- 2 · Flammes d'Azzinoth -->
+<!-- 2 · Déferlante de flammes -->
 <g id="L2" class="layer">
-  <g class="flame3" transform="translate(-260,-130)">
-    <circle class="flame-ring" r="46"/><image href="assets/media/2525fef06c6f205fbd90.svg" x="-15" y="-15" width="30" height="30"/>
-  </g>
-  <g class="flame3" transform="translate(260,-130)">
-    <circle class="flame-ring" r="46"/><image href="assets/media/2525fef06c6f205fbd90.svg" x="-15" y="-15" width="30" height="30"/>
-  </g>
-  <circle class="tether" cx="-260" cy="-130" r="115" stroke-dasharray="4 6"/>
-  <circle class="tether" cx="260" cy="-130" r="115" stroke-dasharray="4 6"/>
-  <text class="note" x="0" y="-352" fill="#FF7A33">DEUX FLAMMES · UN TANK RÉSISTANCE FEU CHACUNE</text>
-  <text class="note" x="0" y="352" fill="#E8443C">PERSONNE NE S'ÉLOIGNE DU CENTRE · ELLES ENRAGENT SINON</text>
+  <circle class="crash" r="120"/>
+  <g class="crash-old" transform="translate(-136,86)"><circle r="120"/></g>
+  <path class="shift" d="M -110 70 L -26 14" marker-end="url(#ahi)"/>
+  <text class="note" x="10" y="-317" fill="#FF7A33">DÉFERLANTE DE FLAMMES · 5 000 FEU TOUTES LES 2 s</text>
+  <text class="note" x="10" y="447" fill="#EDE8DA">ON DÉCALE LE BOSS APRÈS CHAQUE SAUT</text>
 </g>
 
-<!-- 3 · Flammes Tourmentées -->
+<!-- 3 · Attirer l'âme -->
 <g id="L3" class="layer">
-  <g class="agon" transform="translate(-140,180)"><circle r="46"/></g>
-  <g class="agon" style="--d:1s" transform="translate(160,140)"><circle r="46"/></g>
-  <text class="note" x="0" y="-352" fill="#FF7A33">DÉGÂTS DE FEU SUR UN JOUEUR ET SES VOISINS</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">ÉCARTEZ-VOUS LES UNS DES AUTRES · MAINTENEZ LA PORTÉE DE SOIN</text>
+  <path class="soulcone" d="M 0 -14 L -256 -130 L 128 -256 Z"/>
+  <text class="note" x="10" y="-317" fill="#B58BF5">ATTIRER L’ÂME · IL SE SOIGNE DE 100 000 PAR CIBLE</text>
+  <text class="note" x="10" y="447" fill="#EDE8DA">PERSONNE DEVANT LUI · DEBUFF DE SOINS EN PERMANENCE</text>
+  <text class="tag"  x="10" y="473" fill="var(--slate)">Poison douloureux, Frappe mortelle ou Visée — un seul suffit</text>
 </g>
 
-<!-- 4 · Forme Démoniaque -->
+<!-- 4 · Ombrefiel parasite -->
 <g id="L4" class="layer">
-  <g id="demonform">
-    <circle class="dread-r" r="150"/>
-    <g class="pc tank" transform="translate(-260,60)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-16" y="-16" width="32" height="32"/></g>
-    <text class="tag" x="-260" y="96" fill="#B58BF5">DÉMONISTE · RÉSISTANCE OMBRE</text>
+  <g class="para" transform="translate(90,294)"><circle r="30"/></g>
+  <path class="para-run" d="M 118 282 L 196 224" marker-end="url(#ahp)"/>
+  <path class="para-run" d="M 76 264 L 34 200" marker-end="url(#ahp)"/>
+  <g id="trap" transform="translate(-280,300)">
+    <circle class="trapz" r="52"/>
+    <text class="tag" y="-70" fill="#2FC2C7">PIÈGE DE GIVRE</text>
   </g>
-  <text class="note" x="0" y="-352" fill="#B58BF5">TENU À DISTANCE · AURA QUI BRÛLE TOUT PROCHE</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">CORPS-À-CORPS RECULE COMPLÈTEMENT PENDANT CETTE MINUTE</text>
+  <text class="note" x="10" y="-317" fill="#E8443C">DEUX PARASITES À LA FIN DU DEBUFF</text>
+  <text class="note" x="10" y="447" fill="#EDE8DA">LES DISTANTS LES TUENT AVANT QU’ILS ATTEIGNENT QUELQU’UN</text>
 </g>
 
-<!-- 5 · Maiev -->
+<!-- 5 · Phase 2 · Flammes d'Azzinoth -->
 <g id="L5" class="layer">
-  <g id="trap" transform="translate(120,-220)">
-    <rect class="tr" x="-30" y="-20" width="60" height="40" rx="6"/>
-    <text class="tag" y="46" fill="#F2C14E">PIÈGE DE MAIEV</text>
-  </g>
-  <path class="dragpath" d="M 0 0 L 100 -200" fill="none" marker-end="url(#ahi)"/>
-  <text class="note" x="0" y="-352" fill="#F2C14E">SOUS 30 % · ELLE POSE DES PIÈGES AU SOL</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">ON L'Y ENTRAÎNE POUR L'ÉTOURDIR PENDANT L'ENRAGE</text>
+  <g class="glaive" transform="translate(-250,-30)"><circle r="46"/><text class="tag" y="-64" fill="#FF7A33">GLAIVE</text></g>
+  <g class="glaive" transform="translate(250,-30)"><circle r="46"/><text class="tag" y="-64" fill="#FF7A33">GLAIVE</text></g>
+  <g class="pack" transform="translate(-120,250)"><circle r="58"/></g>
+  <g class="pack" style="--d:.3s" transform="translate(30,286)"><circle r="58"/></g>
+  <g class="pack" style="--d:.6s" transform="translate(180,250)"><circle r="58"/></g>
+  <text class="note" x="10" y="-317" fill="#FF7A33">UNE FLAMME PAR GLAIVE · NE PAS L’EN ÉLOIGNER</text>
+  <text class="note" x="10" y="447" fill="#EDE8DA">3 OU 4 PAQUETS SERRÉS, À 11 m LES UNS DES AUTRES</text>
+  <text class="tag"  x="10" y="473" fill="var(--slate)">flamme trop loin de son glaive = Colère débridée, +500 % de dégâts</text>
 </g>
 
-<defs><marker id="ahi" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-  <path d="M0,0 L8,4 L0,8 Z" fill="#F2C14E"/></marker></defs>
+<!-- 6 · Phase 3 · Flammes déchirantes -->
+<g id="L6" class="layer">
+  <g class="spread5" transform="translate(208,206)"><circle r="54"/></g>
+  <g class="spread5" style="--d:.3s" transform="translate(20,291)"><circle r="54"/></g>
+  <g class="spread5" style="--d:.6s" transform="translate(-47,73)"><circle r="54"/></g>
+  <text class="note" x="10" y="-317" fill="#FF7A33">FLAMMES DÉCHIRANTES · 5 m AUTOUR DE LA CIBLE</text>
+  <text class="note" x="10" y="447" fill="#EDE8DA">TOUT LE RAID S’ÉCARTE</text>
+</g>
+
+<!-- 7 · Phase 4 · Forme démoniaque -->
+<g id="L7" class="layer">
+  <circle class="dread" r="170"/>
+  <path class="runout" d="M 96 20 L 244 96" marker-end="url(#ahi)"/>
+  <path class="runout" d="M -42 88 L -150 210" marker-end="url(#ahi)"/>
+  <text class="note" x="10" y="-317" fill="#E8443C">AURA D’EFFROI · 15 m · TOUT LE MONDE SORT</text>
+  <text class="note" x="10" y="447" fill="#EDE8DA">DÉFLAGRATION D’OMBRE SUR LE TANK ET 20 m AUTOUR</text>
+  <text class="tag"  x="10" y="473" fill="var(--slate)">quatre démons des ombres à abattre avant qu’ils touchent un joueur</text>
+</g>
+
+<!-- 8 · Phase 5 · Maiev -->
+<g id="L8" class="layer">
+  <g id="maiev" transform="translate(-300,-180)">
+    <circle class="ally" r="34"/>
+    <text class="tag" y="-52" fill="#8CF07E">MAIEV</text>
+  </g>
+  <g class="trapz2" transform="translate(-150,-40)"><circle r="46"/></g>
+  <path class="drag" d="M -46 -20 L -110 -34" marker-end="url(#ahm)"/>
+  <text class="note" x="10" y="-317" fill="#8CF07E">MAIEV POSE DES PIÈGES D’OMBRE</text>
+  <text class="note" x="10" y="447" fill="#EDE8DA">ON TRAÎNE ILLIDAN DESSUS QUAND IL ENRAGE</text>
+  <text class="tag"  x="10" y="473" fill="var(--slate)">étourdi et dégâts subis augmentés pendant 15 secondes</text>
+</g>
+
+<defs>
+<marker id="ahi" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#FF7A33"/></marker>
+<marker id="ahp" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#E8443C"/></marker>
+<marker id="ahm" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#8CF07E"/></marker>
+</defs>
 
 </svg></div>
 <div id="panel">
