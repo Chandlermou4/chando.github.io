@@ -13,74 +13,95 @@
 <body>
 <div id="fit"><div id="stage" data-step="1">
 <div id="bg"></div><div id="scrim"></div>
-<div id="arena"><svg id="field" viewBox="-500 -500 1000 1000">
+<div id="arena"><svg id="field" viewBox="-830 -457 1000 1000">
 
-<circle class="room" r="410"/>
-<circle class="room-inner" r="260"/>
-<g id="scale" transform="translate(-395,398)">
-  <path d="M 0 0 L 93 0" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
-  <path d="M 0 -7 L 0 7 M 93 -7 L 93 7" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
-  <text class="tag" x="46" y="26" fill="rgba(237,232,218,.7)">18 MÈTRES</text>
+<g id="scale" transform="translate(-800,470)">
+  <path d="M 0 0 L 155 0" stroke="rgba(237,232,218,.6)" stroke-width="3"/>
+  <path d="M 0 -7 L 0 7 M 155 -7 L 155 7" stroke="rgba(237,232,218,.6)" stroke-width="3"/>
+  <text class="tag" x="77" y="26" fill="rgba(237,232,218,.6)">18 MÈTRES</text>
 </g>
 
 <g id="anchor-boss">
   <g class="mob" id="boss" data-nodrag>
-    <circle class="mob-base" r="62"/><circle class="mob-ring" r="56" stroke="#B58BF5"/>
-    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-30" y="-30" width="60" height="60"/>
+    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#B58BF5"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
-  <text class="lbl" y="94" fill="#B58BF5">MÈRE SHAHRAZ</text>
+  <text class="lbl" y="98" fill="#B58BF5">MÈRE SHAHRAZ</text>
 </g>
 
 <g id="raid"></g>
 
-<!-- 1 · placement -->
+<!-- 1 · Placement -->
 <g id="L1" class="layer">
-  <g class="pc tank" transform="translate(0,110)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-16" y="-16" width="32" height="32"/></g>
-  <g class="pc tank" transform="translate(-24,128)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-14" y="-14" width="28" height="28"/></g>
-  <g class="pc tank" transform="translate(24,128)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-14" y="-14" width="28" height="28"/></g>
-  <text class="tag" x="0" y="164" fill="#4C86E0">TROIS TANKS EMPILÉS</text>
-  <text class="note" x="0" y="-352" fill="#EDE8DA">POSITION FIXE · JAMAIS DÉPLACÉE NI RETOURNÉE</text>
+  <ellipse class="spread-z" cx="-508" cy="86" rx="270" ry="210"/>
+  <text class="note" x="-430" y="-389" fill="#EDE8DA">POSITION FIXE · JAMAIS DÉPLACÉE NI RETOURNÉE</text>
+  <text class="note" x="-430" y="375" fill="#EDE8DA">LE RAID S’ÉTALE AU-DELÀ DE 18 m, BIEN ESPACÉ</text>
+  <text class="tag"  x="-430" y="401" fill="var(--slate)">dos à un mur ou derrière un décor : un rayon projette en arrière</text>
 </g>
 
-<!-- 2 · Hurlement d'Interruption -->
+<!-- 2 · Fouette-sabre -->
 <g id="L2" class="layer">
-  <circle class="silence-r" r="164"/>
-  <text class="note" x="0" y="-352" fill="#B58BF5">DIX SECONDES DE SILENCE AUTOUR D'ELLE</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">SOIGNEURS ET LANCEURS DE SORTS RESTENT AU-DELÀ</text>
+  <path class="lash" d="M -46 0 L -210 -132 L -210 132 Z"/>
+  <text class="note" x="-430" y="-389" fill="#E8443C">FOUETTE-SABRE · PARTAGÉ ENTRE LES 3 CIBLES DEVANT ELLE</text>
+  <text class="note" x="-430" y="375" fill="#EDE8DA">À UN OU DEUX TANKS, IL TUE NET</text>
+  <text class="tag"  x="-430" y="401" fill="var(--slate)">son debuff rend les tanks insensibles à l’Ombre : pas de résistance pour eux</text>
 </g>
 
-<!-- 3 · Liaison Fatale -->
+<!-- 3 · Résistance à l'Ombre -->
 <g id="L3" class="layer">
-  <g id="link">
-    <circle class="lk" transform="translate(-40,-180)" r="16"/>
-    <circle class="lk" transform="translate(60,-140)" r="16"/>
-    <circle class="lk" transform="translate(10,-100)" r="16"/>
-    <path class="beam" d="M -40 -180 L 60 -140 L 10 -100 Z"/>
+  <g id="srbadge" transform="translate(-508,-250)">
+    <rect x="-186" y="-30" width="372" height="60" rx="10"/>
+    <text class="lt2" y="-4">~174 DE RÉSISTANCE À L’OMBRE</text>
+    <text class="ls2" y="20">tout le raid sauf les tanks</text>
   </g>
-  <path class="flee1" d="M -40 -180 L -220 -280" fill="none" marker-end="url(#ahs)"/>
-  <path class="flee2" d="M 60 -140 L 260 -220" fill="none" marker-end="url(#ahs)"/>
-  <path class="flee3" d="M 10 -100 L 10 60" fill="none" marker-end="url(#ahs)"/>
-  <text class="note" x="0" y="-352" fill="#E8443C">TROIS JOUEURS TÉLÉPORTÉS ENSEMBLE · LIÉS</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">CHACUN PART DANS UNE DIRECTION DIFFÉRENTE, LOIN DES AUTRES</text>
+  <text class="note" x="-430" y="375" fill="#2FC2C7">+70 DE PRIÈRE DE PROTECTION CONTRE L’OMBRE</text>
+  <text class="tag"  x="-430" y="401" fill="var(--slate)">Médaillon de Karabor · cape · Flacon de merveille chromatique · Glyphe de sauvegarde</text>
 </g>
 
-<!-- 4 · Rayons -->
+<!-- 4 · Hurlement muselant -->
 <g id="L4" class="layer">
-  <g class="beamhit" transform="translate(-180,140)"><circle r="20"/></g>
-  <g class="beamhit" style="--d:.2s" transform="translate(200,180)"><circle r="20"/></g>
-  <g class="beamhit" style="--d:.4s" transform="translate(-220,-60)"><circle r="20"/></g>
-  <text class="note" x="0" y="-352" fill="#7FB2F0">TOUTES LES NEUF SECONDES · DIX JOUEURS TOUCHÉS</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">RÉSISTANCE À L'OMBRE POUR TOUT LE RAID, TANKS EXCLUS</text>
+  <circle class="silence-r" r="155"/>
+  <text class="note" x="-430" y="-389" fill="#B58BF5">HURLEMENT MUSELANT · 18 m · 10 SECONDES DE SILENCE</text>
+  <text class="note" x="-430" y="375" fill="#EDE8DA">SOIGNEURS ET LANCEURS DE SORTS RESTENT AU-DELÀ</text>
 </g>
 
-<!-- 5 · Aura Prismatique -->
+<!-- 5 · Liaison fatale -->
 <g id="L5" class="layer">
-  <g id="aura" transform="translate(0,-330)">
-    <rect x="-170" y="-26" width="340" height="52" rx="10"/>
-    <text class="lt2" y="-2">AURA CHANGE TOUTES LES 15 SECONDES</text>
-    <text class="ls2" y="20">une école affaiblie, une autre amplifiée</text>
+  <g id="link" transform="translate(-470,40)">
+    <circle class="lk" r="17"/>
+    <circle class="lk" cx="74" cy="-40" r="17"/>
+    <circle class="lk" cx="40" cy="60" r="17"/>
+    <path class="beam" d="M 0 0 L 74 -40 L 40 60 Z"/>
   </g>
-  <text class="note" x="0" y="352" fill="#EDE8DA">ADAPTEZ VOS SORTS À CE QUI EST BOOSTÉ, ÉVITEZ CE QUI EST RÉSISTÉ</text>
+  <path class="flee1" d="M -486 24 L -700 -110" fill="none" marker-end="url(#ahs)"/>
+  <path class="flee2" d="M -382 -8 L -180 -130" fill="none" marker-end="url(#ahs)"/>
+  <path class="flee3" d="M -428 112 L -390 330" fill="none" marker-end="url(#ahs)"/>
+  <text class="note" x="-430" y="-389" fill="#E8443C">TROIS JOUEURS TÉLÉPORTÉS ENSEMBLE, LIÉS PAR UN RAYON</text>
+  <text class="note" x="-430" y="375" fill="#EDE8DA">LE LIEN SE BRISE À 25 m</text>
+  <text class="tag"  x="-430" y="401" fill="var(--slate)">chacun part aussitôt dans une direction différente, jamais vers le raid</text>
+</g>
+
+<!-- 6 · Les rayons -->
+<g id="L6" class="layer">
+  <g class="beamhit" transform="translate(-560,-40)"><circle r="22"/></g>
+  <g class="beamhit" style="--d:.25s" transform="translate(-470,60)"><circle r="22"/></g>
+  <g class="beamhit" style="--d:.5s" transform="translate(-620,170)"><circle r="22"/></g>
+  <path class="arc" d="M -560 -40 C -520 0, -500 30, -470 60" fill="none"/>
+  <path class="arc" d="M -470 60 C -520 100, -580 140, -620 170" fill="none"/>
+  <text class="note" x="-430" y="-389" fill="#7FB2F0">UN JOUEUR AU HASARD, PUIS REBOND SUR SES VOISINS</text>
+  <text class="note" x="-430" y="375" fill="#EDE8DA">UN RAYON BRÛLE LE MANA · UN AUTRE PROJETTE EN ARRIÈRE</text>
+  <text class="tag"  x="-430" y="401" fill="var(--slate)">dos à un mur, la projection ne fait plus rien</text>
+</g>
+
+<!-- 7 · Aura prismatique -->
+<g id="L7" class="layer">
+  <g id="aura" transform="translate(-508,-250)">
+    <rect x="-206" y="-30" width="412" height="60" rx="10"/>
+    <text class="lt2" y="-4">OMBRE · ARCANES · FEU · NATURE · GIVRE · SACRÉ</text>
+    <text class="ls2" y="20">une école réduite, les autres amplifiées</text>
+  </g>
+  <text class="note" x="-430" y="375" fill="#EDE8DA">LES AURAS TOURNENT SUR LES JOUEURS TOUT LE COMBAT</text>
+  <text class="tag"  x="-430" y="401" fill="var(--slate)">arrêtez l’école réduite, tapez avec celle qui est amplifiée</text>
 </g>
 
 <defs><marker id="ahs" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
