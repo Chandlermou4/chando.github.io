@@ -11,7 +11,5 @@ pc(52,  32, 'tank');
 
 [[-52,-26],[-44,22],[-20,-64],[-14,60]].forEach(p=>pc(p[0],p[1],'mdps'));
 
-// un distant et un soigneur suffisent a marquer l'emplacement du groupe
-pc(-360,  6, 'rdps');
-pc(-336, 36, 'healer');
+// distants et soigneurs : ce sont les reperes du plan wowhead, deja dans le fond
 };

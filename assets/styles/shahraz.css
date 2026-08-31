@@ -8,8 +8,6 @@
 @keyframes breathe{50%{transform:scale(1.05)}}
 
 /* 1 · etalement du raid */
-.stack-z{fill:rgba(242,193,78,.07);stroke:rgba(242,193,78,.5);stroke-width:2.5;stroke-dasharray:10 11}
-[data-step="1"] .stack-z{animation:dash 3.4s linear infinite}
 .obst{fill:rgba(242,193,78,.14);stroke:#F2C14E;stroke-width:3}
 .lead{stroke:#F2C14E;stroke-width:2;opacity:.75}
 
