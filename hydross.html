@@ -2,93 +2,105 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>Grand seigneur de guerre Naj'entus — Temple noir · Boss 1 / 9</title>
+<title>Hydross l'Instable — Caverne du sanctuaire du Serpent · Boss 1 / 6</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/guide.css">
-<link rel="stylesheet" href="assets/styles/najentus.css">
+<link rel="stylesheet" href="assets/styles/hydross.css">
 </head>
 <body>
 <div id="fit"><div id="stage" data-step="1">
 <div id="bg"></div><div id="scrim"></div>
-<div id="arena"><svg id="field" viewBox="-662 -152 1000 1000">
+<div id="arena"><svg id="field" viewBox="-645 -191 1000 1000">
 
-<g id="scale" transform="translate(-380,470)">
-  <path d="M 0 0 L 62 0" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
-  <path d="M 0 -7 L 0 7 M 62 -7 L 62 7" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
-  <text class="tag" x="31" y="26" fill="rgba(237,232,218,.7)">6 MÈTRES</text>
-</g>
-
-<g id="anchor-boss">
-  <g class="mob" id="boss" data-nodrag>
-    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#2FC2C7"/>
+<g id="anchor-givre">
+  <g class="mob" data-nodrag>
+    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#7FB2F0"/>
     <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
-  <text class="lbl" y="66" fill="#2FC2C7">NAJ'ENTUS</text>
+  <text class="lbl" y="-92" fill="#7FB2F0">FORME GIVRE</text>
+  <text class="tag" y="-66" fill="var(--slate)">dans les faisceaux</text>
+</g>
+
+<g transform="translate(0,466)">
+  <g class="mob" data-nodrag>
+    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#8CF07E"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
+  </g>
+  <text class="lbl" y="104" fill="#8CF07E">FORME NATURE</text>
+  <text class="tag" y="130" fill="var(--slate)">en contrebas des marches</text>
 </g>
 
 <g id="raid"></g>
 
-<!-- 1 · placement -->
+<!-- 1 · Avant le pull -->
 <g id="L1" class="layer">
-  <g id="cleave" transform="rotate(-90)"><path class="cone-cl" d="M 0 0 L 118 -52 A 129 129 0 0 1 118 52 Z"/></g>
-  <text class="tag" x="0" y="-120" fill="#E8443C">PERSONNE DEVANT · ENCHAÎNEMENT</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">NAJ'ENTUS TANKÉ DOS AU RAID</text>
-  <text class="note" x="0" y="384" fill="#2FC2C7">UN SEUL TANK, ENTRE LE BOSS ET LE MUR · LE RESTE EN ÉVENTAIL DERRIÈRE</text>
+  <path class="pullpath" d="M 330 -140 C 200 -110, 120 -60, 74 -18" marker-end="url(#ahh)"/>
+  <text class="tag" x="250" y="-160" fill="#8CF07E">ON ENGAGE PAR LA DROITE</text>
+  <text class="note" x="-145" y="-123" fill="#EDE8DA">UN TANK RÉSISTANCE GIVRE · UN TANK RÉSISTANCE NATURE</text>
+  <text class="note" x="-145" y="641" fill="#8CF07E">LE TANK NATURE RAMASSE LES REJETONS SOUILLÉS DE DROITE</text>
+  <text class="tag"  x="-145" y="667" fill="var(--slate)">ne pas réveiller ceux de gauche : ils disparaissent seuls</text>
 </g>
 
-<!-- 2 · Épine -->
+<!-- 2 · Forme Givre -->
 <g id="L2" class="layer">
-  <g id="needle"><path class="cone-n" d="M 0 0 L 300 -145 A 330 330 0 0 1 300 145 Z"/></g>
-  <g class="hit-splash" transform="translate(-150,130)"><circle r="52"/></g>
-  <g class="hit-splash" style="--d:.15s" transform="translate(70,205)"><circle r="52"/></g>
-  <g class="hit-splash" style="--d:.3s" transform="translate(175,150)"><circle r="52"/></g>
-  <text class="note" x="0" y="330" fill="#7FB2F0">SUR DES JOUEURS AU HASARD, EN CONTINU</text>
-  <text class="note" x="0" y="366" fill="#EDE8DA">EXPLOSION D'ÉPINE · GIVRE · 6 M AUTOUR DE LA CIBLE</text>
+  <g class="tomb" transform="translate(-190,247)"><circle r="110"/></g>
+  <text class="tag" x="-190" y="118" fill="#7FB2F0">TOMBE AQUATIQUE · 8 m</text>
+  <text class="note" x="-145" y="-123" fill="#7FB2F0">MARQUE D’HYDROSS · 10 → 25 → 50 → 100 → 250 → 500 %</text>
+  <text class="note" x="-145" y="641" fill="#EDE8DA">LE RAID S’ÉTALE : LA TOMBE ÉTOURDIT TOUT CE QUI EST AUTOUR</text>
 </g>
 
-<!-- 3 · Épine de Perforation -->
+<!-- 3 · La transition -->
 <g id="L3" class="layer">
-  <g id="impaled" transform="translate(-260,110)">
-    <circle class="pin-ring" r="40"/>
-    <image class="marker" href="assets/media/9bc491bf8f8e302edf47.webp" x="-22" y="-22" width="44" height="44"/>
-    <text class="note" y="-58" fill="#E8443C">EMPALÉ · ÉTOURDI</text>
-  </g>
-  <path class="save-arrow" d="M -220 100 L -60 30" fill="none" marker-end="url(#ahn)"/>
-  <g transform="translate(-30,10)"><image href="assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/>
-    <text class="tag" y="34" fill="#F2C14E">RAMASSE L'ÉPINE</text></g>
-  <text class="note" x="0" y="330" fill="#EDE8DA">CLIQUEZ L'ÉPINE AU SOL POUR LE LIBÉRER</text>
-  <text class="note" x="0" y="366" fill="#F2C14E">L'ÉPINE DORSALE RÉCUPÉRÉE SERT À BRISER LE BOUCLIER</text>
+  <path class="line" d="M -300 233 L 300 233"/>
+  <path class="drag" d="M 0 82 L 0 384" marker-end="url(#ahn)"/>
+  <text class="tag" x="-300" y="212" fill="#E8443C">HORS DES FAISCEAUX = FORME NATURE</text>
+  <text class="note" x="-145" y="-123" fill="#E8443C">MENACE REMISE À ZÉRO · PLUS UN SEUL DÉGÂT</text>
+  <text class="note" x="-145" y="641" fill="#EDE8DA">LE TANK DE L’AUTRE RÉSISTANCE RÉCUPÈRE LE BOSS</text>
+  <text class="tag"  x="-145" y="667" fill="var(--slate)">pets, dots et totems compris · Détournement du chasseur</text>
 </g>
 
-<!-- 4 · Bouclier de Flots -->
+<!-- 4 · Les quatre rejetons -->
 <g id="L4" class="layer">
-  <circle class="shield" r="72"/>
-  <text class="note" x="0" y="330" fill="#2FC2C7">IMMUNISÉ · IL SE RÉGÉNÈRE CHAQUE SECONDE</text>
-  <g id="reduc" transform="translate(0,360)">
-    <text class="note" y="0" fill="#FF7A33">POISON DOULOUREUX · FRAPPE MORTELLE EN PERMANENCE</text>
-    <text class="note" y="26" fill="var(--slate)">sinon il regagne tout ce que vous venez de lui infliger</text>
-  </g>
+  <g class="add" transform="translate(-98,352)"><circle r="26"/></g>
+  <g class="add" style="--d:.2s" transform="translate(-24,388)"><circle r="26"/></g>
+  <g class="add" style="--d:.4s" transform="translate(54,368)"><circle r="26"/></g>
+  <g class="add" style="--d:.6s" transform="translate(112,320)"><circle r="26"/></g>
+  <text class="note" x="-145" y="-123" fill="#F2C14E">QUATRE REJETONS À CHAQUE BASCULE</text>
+  <text class="note" x="-145" y="641" fill="#EDE8DA">ON LES TUE AVANT DE RETOUCHER AU BOSS</text>
+  <text class="tag"  x="-145" y="667" fill="var(--slate)">si ça déborde, un démoniste en Bannit un ou deux</text>
 </g>
 
-<!-- 5 · Rupture -->
+<!-- 5 · Forme Nature -->
 <g id="L5" class="layer">
-  <circle class="burst" r="70"/><circle class="burst" r="70"/>
-  <text class="note" x="0" y="330" fill="#7FB2F0">RAID À PLEINE VIE · FURIE SANGUINAIRE · CD DE SOIN</text>
-  <text class="note" x="0" y="366" fill="#E8443C">LE JAILLISSEMENT DE FLOTS COÛTE ~80 % DE LA VIE À TOUT LE RAID</text>
-  <text class="note" x="0" y="392" fill="var(--slate)">un lancer trop tôt tue les plus fragiles</text>
+  <g class="sludge" transform="translate(184,517)"><circle r="34"/></g>
+  <text class="tag" x="184" y="576" fill="#8CF07E">VASE ABOMINABLE</text>
+  <text class="note" x="-145" y="-123" fill="#8CF07E">MARQUE DE CORRUPTION · MÊME MONTÉE PAR PALIERS</text>
+  <text class="note" x="-145" y="641" fill="#EDE8DA">LA VASE NE SE PROPAGE PAS · INUTILE DE S’ÉTALER ICI</text>
+  <text class="tag"  x="-145" y="667" fill="var(--slate)">−50 % de dégâts infligés et de soins reçus sur la cible</text>
 </g>
 
-<defs><marker id="ahn" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-  <path d="M0,0 L8,4 L0,8 Z" fill="#F2C14E"/></marker></defs>
+<!-- 6 · Le rythme -->
+<g id="L6" class="layer">
+  <path class="cyc" d="M -104 60 C -230 180, -230 300, -104 412" marker-end="url(#ahn)"/>
+  <path class="cyc" d="M 104 412 C 230 300, 230 180, 104 60" marker-end="url(#ahi2)"/>
+  <text class="note" x="-145" y="-123" fill="#EDE8DA">CHAQUE FORME TENUE JUSQU’À 100 % DE MARQUE</text>
+  <text class="note" x="-145" y="641" fill="#F2C14E">LES SOIGNEURS GARDENT LEURS CD POUR LES TRANSITIONS</text>
+</g>
+
+<defs>
+<marker id="ahh" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#8CF07E"/></marker>
+<marker id="ahn" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#E8443C"/></marker>
+<marker id="ahi2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#7FB2F0"/></marker>
+</defs>
 
 </svg></div>
 <div id="panel">
   <a class="feedback" href="https://discord.gg/rz5PxxMgnv" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.213.386-.46.905-.63 1.319a18.27 18.27 0 0 0-5.51 0C9.575 3.905 9.322 3.386 9.11 3a19.7 19.7 0 0 0-4.432 1.369C1.869 8.59 1.106 12.705 1.488 16.76a19.9 19.9 0 0 0 6.073 3.08 14.6 14.6 0 0 0 1.307-2.136c-.72-.271-1.41-.606-2.06-1 .173-.128.342-.261.505-.398a14.2 14.2 0 0 0 12.171 0c.165.14.334.273.506.398-.652.394-1.343.73-2.064 1.001.377.75.815 1.463 1.307 2.135a19.85 19.85 0 0 0 6.076-3.08c.448-4.7-.766-8.777-3.209-12.39ZM8.02 14.331c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.955 2.419-2.157 2.419Zm7.96 0c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.946 2.419-2.157 2.419Z"/></svg>Pour signaler une erreur ou proposer une modification</a>
-  <div class="eyebrow">Temple noir · Boss 1 / 9</div>
-  <h1>Grand seigneur de guerre Naj'entus</h1>
-  <div class="subtitle">Une seule règle qui compte : on ne brise pas le bouclier avant que le raid soit à pleine vie.</div>
+  <div class="eyebrow">Caverne du sanctuaire du Serpent · Boss 1 / 6</div>
+  <h1>Hydross l'Instable</h1>
+  <div class="subtitle">Deux formes, deux résistances, et une menace remise à zéro à chaque bascule.</div>
   <div id="stepno"></div><div id="mech"></div><div id="narration"></div><div id="rail"></div>
 </div>
 
@@ -114,8 +126,8 @@
 
 <div id="leftnav">
   <div class="navpair">
-    <a class="navbtn" href="gruul.html"><span class="lbl">← Précédent</span><span class="ttl">Gruul le Tue-Dragon</span></a>
-    <a class="navbtn" href="supremus.html"><span class="lbl">→ Suivant</span><span class="ttl">Supremus</span></a>
+    <span class="navbtn disabled"><span class="lbl">← Précédent</span></span>
+    <span class="navbtn disabled"><span class="lbl">→ Suivant</span></span>
   </div>
   <div id="bossmenu">
     <a class="home" href="index.html">← Retour à l’accueil</a>
@@ -131,17 +143,17 @@
         <div class="coming">Guide à venir</div>
       </div>
     </details>
-    <details class="phase-group">
+    <details class="phase-group current-phase" open>
       <summary>Phase 2</summary>
       <div class="phase-content">
         <div class="raid-h">Caverne du sanctuaire du Serpent</div>
-        <a class="" href="hydross.html">Hydross l'Instable</a>
+        <a class="current" href="hydross.html">Hydross l'Instable</a>
         <div class="coming">Suite à venir</div>
         <div class="raid-h">Donjon de la Tempête : L’Œil</div>
         <div class="coming">Guides à venir</div>
       </div>
     </details>
-    <details class="phase-group current-phase" open>
+    <details class="phase-group">
       <summary>Phase 3</summary>
       <div class="phase-content">
         <div class="raid-h">Bataille du mont Hyjal</div>
@@ -166,7 +178,7 @@
 </div>
 <div id="hint"><span class="kbd">←</span><span class="kbd">→</span> naviguer &nbsp;·&nbsp; <span class="kbd">E</span> édition</div>
 </div></div>
-<script src="data/bosses/najentus.js"></script>
+<script src="data/bosses/hydross.js"></script>
 <script src="assets/guide.js"></script>
 </body>
 </html>
