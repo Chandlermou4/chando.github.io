@@ -1,12 +1,19 @@
 window.GUIDE_STEPS=[{"mech": "Essence de la souffrance", "t": 9, "txt": "Premier des trois visages. <strong>L'Aura de la souffrance coupe tous les soins et toute régénération</strong>, et réduit l'armure à néant — le tank encaisse à cru, c'est un check de dégâts bruts. Le boss <strong>Fixe le joueur le plus proche toutes les 5 secondes</strong> : pas de menace classique, les tanks se relaient en jouant sur la distance."}, {"mech": "Enrager", "t": 8, "txt": "Environ <strong>toutes les 45 secondes</strong>, l'Essence enrage : vitesse d'attaque et dégâts fortement augmentés pendant 15 secondes. Sur cette fenêtre, <strong>le tank fixé utilise ses cooldowns défensifs</strong> ; sinon, un <strong>voleur sous Évasion</strong> ou un <strong>chasseur sous Dissuasion</strong> peut aussi tanker l’Enrager.", "focus": ["tank"]}, {"mech": "Drain d'âme", "t": 8, "txt": "<strong>Trois joueurs au hasard</strong> : un debuff dissipable de 30 secondes qui inflige des dégâts et draine autant de mana toutes les 3 secondes. <strong>Dissipation immédiate</strong>, dissipeurs assignés — c'est relancé sans arrêt tant que l'Essence est en vie.", "focus": ["healer"]}, {"mech": "Interlude", "t": 8, "txt": "Entre chaque visage, <strong>une cinquantaine de secondes de répit</strong>. Des Âmes asservies apparaissent : on les tue <strong>au contact du raid regroupé</strong>, chaque mort rend 30 % de vie et de mana à tout le monde dans les 10 mètres. Seule pause du combat — on remonte vie et mana à fond avant le visage suivant."}, {"mech": "Essence du désir", "t": 9, "txt": "Deuxième visage. <strong>La moitié de vos dégâts infligés vous revient dessus</strong> ; les soins sont doublés en compensation, et le mana maximum du raid fond de 5 % toutes les 8 secondes. Un seul très gros coup peut vous tuer : on dose. <strong>Choc spirituel se kick</strong> (voleurs, guerriers), <strong>Malédiction des langages</strong> maintenue dessus pour aider ; s'il passe, il désoriente la cible 5 secondes. Le <strong>Bouclier runique</strong> rend l'Essence insensible aux interruptions : les <strong>mages le volent en permanence</strong> (Vol de sort) pour pouvoir continuer les kick."}, {"mech": "Essence de la colère", "t": 8, "txt": "Dernier visage, et vraie course. <strong>L'Aura de la colère inflige des dégâts d'Ombre à tout le raid, de plus en plus fort à chaque tic</strong> — mais elle fait aussi <strong>monter vos propres dégâts</strong> en continu : plus la phase dure, plus vous tapez, et plus vous encaissez. <strong>Cri de l'âme</strong> est un cône frontal : le boss reste <strong>tourné dos au raid</strong>, personne devant lui."}, {"mech": "Bouillant de rage & Dépit", "t": 9, "txt": "À chaque provocation, le boss <strong>frappe 100 % plus vite (Bouillant de rage)</strong> et donne <strong>+200 % de menace à tout le raid sauf au nouveau tank</strong> pendant 10 secondes. Soit un <strong>second tank provoque au tout début</strong> pour coller le malus au main tank, qui prend de l'avance pendant que les DPS attendent la fin du buff ; soit, si le main tank tient sa menace seul, on ne provoque jamais. Un <strong>chasseur retire la vitesse d'attaque au Tir tranquillisant</strong>. <strong>Dépit</strong> rend des joueurs au hasard invulnérables 6 secondes puis leur inflige ~7 500 points de dégâts de la Nature d'un coup — une <strong>potion de protection contre la Nature majeure</strong> prise en début de phase amortit le pic."}];
 window.GUIDE_SETUP=({pc,NS,stage})=>{
-// Le boss se tient au nord de la salle. Le raid se REGROUPE au sud ; les tanks tiennent le boss
-// au NORD, donc le boss est tourne dos au raid (cone du Cri de l'ame).
-pc(-22, -150, 'tank');
-pc( 22, -150, 'tank');
-const R=['healer','healer','healer','healer','mdps','mdps','mdps','mdps','mdps','mdps',
-         'rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps'];
-const CX=-30, CY=262;
+// Le boss est tenu au NORD par les tanks : il est donc tourne dos au raid
+// (cone frontal du Cri de l'ame vers le nord, personne devant lui).
+pc(-24, -96, 'tank');
+pc( 24, -96, 'tank');
+
+// Corps-a-corps DERRIERE le boss, au contact.
+[[-104,104],[-62,134],[-20,150],[20,150],[62,134],[104,104]]
+  .forEach(p=>pc(p[0],p[1],'mdps'));
+
+// Distants et soigneurs plus au sud, regroupes : c'est la que tout le raid
+// se rassemble pendant l'interlude, pour les Ames asservies.
+const R=['healer','rdps','healer','rdps','rdps','healer','rdps','rdps','healer',
+         'rdps','rdps','rdps','rdps','rdps','rdps','rdps','rdps'];
+const CX=-30, CY=336;
 for(let n=0;n<R.length;n++){
   const a=n*2.399, rr=16+13*Math.sqrt(n);
   pc(CX+Math.cos(a)*rr*1.25, CY+Math.sin(a)*rr*0.70, R[n]);
