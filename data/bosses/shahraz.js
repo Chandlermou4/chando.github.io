@@ -11,11 +11,10 @@ pc(52,  32, 'tank');
 
 [[-52,-26],[-44,22],[-20,-64],[-14,60]].forEach(p=>pc(p[0],p[1],'mdps'));
 
-const R=['healer','rdps','rdps','healer','rdps','rdps','healer','rdps','rdps','healer',
-         'rdps','rdps','healer','rdps','rdps','rdps','rdps','rdps'];
-const CX=-320, CY=8;
+const R=['healer','rdps','rdps','healer','rdps','rdps'];
+const CX=-352, CY=20;
 for(let n=0;n<R.length;n++){
-  const a=n*2.399, rr=16+14*Math.sqrt(n);
-  pc(CX+Math.cos(a)*rr*1.15, CY+Math.sin(a)*rr*0.78, R[n]);
+  const a=n*2.399, rr=11+11*Math.sqrt(n);
+  pc(CX+Math.cos(a)*rr*1.15, CY+Math.sin(a)*rr*0.82, R[n]);
 }
 };
