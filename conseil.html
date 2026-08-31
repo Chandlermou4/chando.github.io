@@ -13,83 +13,91 @@
 <body>
 <div id="fit"><div id="stage" data-step="1">
 <div id="bg"></div><div id="scrim"></div>
-<div id="arena"><svg id="field" viewBox="-500 -500 1000 1000">
+<div id="arena"><svg id="field" viewBox="-890 -567 1000 1000">
 
-<circle class="room" r="410"/>
-<circle class="room-inner" r="260"/>
-
-<!-- 4 membres du conseil -->
-<g id="anchor-gathios" transform="translate(-180,-140)">
+<g transform="translate(0,0)">
   <g class="mob" id="gathios" data-nodrag>
-    <circle class="mob-base" r="42"/><circle class="mob-ring" r="38" stroke="#F2C14E"/>
-    <image class="marker" href="assets/media/9bc491bf8f8e302edf47.webp" x="-20" y="-20" width="40" height="40"/>
+    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#F2C14E"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
-  <text class="lbl2" y="60" fill="#F2C14E">GATHIOS LE BRISEUR</text>
+  <text class="lbl2" y="96" fill="#F2C14E">GATHIOS</text>
 </g>
-<g id="anchor-malande" transform="translate(180,-140)">
+<g transform="translate(-711,-354)">
   <g class="mob" id="malande" data-nodrag>
-    <circle class="mob-base" r="42"/><circle class="mob-ring" r="38" stroke="#7FB2F0"/>
-    <image class="marker" href="assets/media/4f1d38be993c546f102c.webp" x="-20" y="-20" width="40" height="40"/>
+    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#7FB2F0"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
-  <text class="lbl2" y="60" fill="#7FB2F0">DAME MALANDE</text>
+  <text class="lbl2" y="-84" fill="#7FB2F0">MALANDE</text>
 </g>
-<g id="anchor-veras" transform="translate(-180,140)">
+<g transform="translate(-224,-287)">
   <g class="mob" id="veras" data-nodrag>
-    <circle class="mob-base" r="42"/><circle class="mob-ring" r="38" stroke="#E8443C"/>
-    <image class="marker" href="assets/media/630dfee0713d6f6050c1.webp" x="-20" y="-20" width="40" height="40"/>
+    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#E8443C"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
-  <text class="lbl2" y="60" fill="#E8443C">VERAS OMBRENOIR</text>
+  <text class="lbl2" y="-84" fill="#E8443C">VERAS</text>
 </g>
-<g id="anchor-zerevor" transform="translate(180,140)">
+<g transform="translate(-415,126)">
   <g class="mob" id="zerevor" data-nodrag>
-    <circle class="mob-base" r="42"/><circle class="mob-ring" r="38" stroke="#B58BF5"/>
-    <image class="marker" href="assets/media/4c7af39816ee89d5ff39.webp" x="-20" y="-20" width="40" height="40"/>
+    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#B58BF5"/>
+    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
-  <text class="lbl2" y="60" fill="#B58BF5">GRAND NÉANTOMANCIEN ZEREVOR</text>
+  <text class="lbl2" y="96" fill="#B58BF5">ZEREVOR</text>
 </g>
 
 <g id="raid"></g>
 
-<!-- 1 · shared pool -->
+<!-- 1 · Placement -->
 <g id="L1" class="layer">
-  <g id="hpbar" transform="translate(0,-370)">
-    <rect class="hb-bg" x="-180" y="-18" width="360" height="36" rx="10"/>
-    <rect class="hb-fill" x="-176" y="-14" width="352" height="28" rx="8"/>
-    <text class="note" y="46" fill="#EDE8DA">UNE SEULE BARRE DE VIE POUR LES QUATRE</text>
-  </g>
-  <text class="note" x="0" y="352" fill="var(--slate)">frappez celui qui compte le plus à cet instant, pas toujours le même</text>
+  <path class="apart" d="M -224 -240 C -110 -150, -60 -80, -18 -34" marker-end="url(#ahc)"/>
+  <text class="tag" x="-150" y="-160" fill="#F2C14E">À L’ÉCART</text>
+  <text class="note" x="-420" y="-499" fill="#EDE8DA">UNE SEULE BARRE DE VIE POUR LES QUATRE</text>
+  <text class="note" x="-420" y="265" fill="#F2C14E">GATHIOS EMMENÉ LOIN DES TROIS AUTRES</text>
+  <text class="tag"  x="-420" y="291" fill="var(--slate)">ses auras renforcent tout le conseil autour de lui</text>
 </g>
 
 <!-- 2 · Gathios -->
 <g id="L2" class="layer">
-  <circle class="conse" cx="-180" cy="-140" r="60"/>
-  <text class="note" x="-180" y="-230" fill="#F2C14E">CONSÉCRATION AU SOL · ON EN SORT</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">TENU À L'ÉCART DES AUTRES · SON AURA LES RENFORCE À PROXIMITÉ</text>
+  <circle class="conse" r="104"/>
+  <text class="note" x="-420" y="-499" fill="#F2C14E">CONSÉCRATION AU SOL · ON LE DÉPLACE SANS ARRÊT</text>
+  <text class="note" x="-420" y="265" fill="#EDE8DA">AURAS ALTERNÉES TOUTES LES 30 s</text>
+  <text class="tag"  x="-420" y="291" fill="var(--slate)">guerrier idéal : Renvoi de sort annule le Jugement d’autorité</text>
 </g>
 
 <!-- 3 · Malande -->
 <g id="L3" class="layer">
-  <g id="chl" transform="translate(180,-140)"><circle class="heal-pulse" r="70"/></g>
-  <text class="note" x="180" y="-230" fill="#7FB2F0">CERCLE DE SOINS · SOIGNE TOUT LE CONSEIL</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">INTERRUPTION SUR CHAQUE LANCER · PHYSIQUE ET MAGIQUE EN ROTATION</text>
+  <g transform="translate(-711,-354)"><circle class="heal-pulse"/></g>
+  <text class="note" x="-420" y="-499" fill="#7FB2F0">CERCLE DE SOINS · 95 000 RENDUS AU CONSEIL</text>
+  <text class="note" x="-420" y="265" fill="#EDE8DA">UNE INTERRUPTION PHYSIQUE ET UNE MAGIQUE</text>
+  <text class="tag"  x="-420" y="291" fill="var(--slate)">Gathios la protège en alternance · Bouclier réflecteur : on lève le pied</text>
 </g>
 
 <!-- 4 · Veras -->
 <g id="L4" class="layer">
-  <g id="vanish" transform="translate(-180,140)"><circle class="vanish-r" r="50"/></g>
-  <g class="poisoned" transform="translate(-40,220)"><image href="assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/></g>
-  <text class="note" x="-180" y="230" fill="#E8443C">DISPARAÎT · EMPOISONNE AU HASARD PENDANT CE TEMPS</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">DÈS SON RETOUR, ON LE REPREND EN MAIN IMMÉDIATEMENT</text>
+  <g transform="translate(-224,-287)"><circle class="vanish-r" r="130"/></g>
+  <g class="poisoned" transform="translate(-434,-80)"><circle r="26"/></g>
+  <g class="poisoned" style="--d:.4s" transform="translate(-360,-106)"><circle r="26"/></g>
+  <text class="note" x="-420" y="-499" fill="#E8443C">DISPARITION ~60 s · ABSENT 30 s</text>
+  <text class="note" x="-420" y="265" fill="#EDE8DA">POISON MORTEL PUIS ENVENIMER · 4 250 D’UN COUP</text>
+  <text class="tag"  x="-420" y="291" fill="var(--slate)">à sa réapparition, reprise immédiate par le tank</text>
 </g>
 
 <!-- 5 · Zerevor -->
 <g id="L5" class="layer">
-  <g id="steal" transform="translate(180,140)">
-    <circle class="steal-r" r="50"/><image href="assets/media/6c1b7ace933b5f5c95ef.svg" x="-16" y="-16" width="32" height="32"/>
-  </g>
-  <text class="note" x="180" y="230" fill="#B58BF5">TENU PAR VOL DE SORT, PAS PAR LA MENACE CLASSIQUE</text>
-  <text class="note" x="0" y="352" fill="#EDE8DA">SES SALVES ARCANE TOUCHENT LE RAID S'IL EST LÂCHÉ</text>
+  <g transform="translate(-415,126)"><circle class="arcane-r" r="180"/></g>
+  <g class="ground" transform="translate(-620,-30)"><circle r="58"/></g>
+  <g class="ground" style="--d:.5s" transform="translate(-250,180)"><circle r="58"/></g>
+  <path class="steal-a" d="M -600 190 L -470 140" marker-end="url(#ahc2)"/>
+  <text class="note" x="-420" y="-499" fill="#B58BF5">TANKÉ PAR UN MAGE · VOL DE SORT SUR L’ATTÉNUATION DE LA MAGIE</text>
+  <text class="note" x="-420" y="265" fill="#EDE8DA">PERSONNE À MOINS DE 10 m · EXPLOSION DES ARCANES</text>
+  <text class="tag"  x="-420" y="291" fill="var(--slate)">Choc de flammes et Blizzard au sol : on en sort tout de suite</text>
 </g>
+
+<defs>
+<marker id="ahc" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+  <path d="M0,0 L8,4 L0,8 Z" fill="#F2C14E"/></marker>
+<marker id="ahc2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+  <path d="M0,0 L8,4 L0,8 Z" fill="#B58BF5"/></marker>
+</defs>
 
 </svg></div>
 <div id="panel">

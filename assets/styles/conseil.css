@@ -1,31 +1,36 @@
 /* conseil — spécifique. Tronc commun : assets/guide.css */
 :root{--h1:52px}
-#bg{background-image:url("../media/83d29756ea0b91c989b2.jpg")}
+#bg{background-image:url("../media/a743d1233a028473b3b4.jpg")}
 
-.room{fill:rgba(14,10,16,.3);stroke:rgba(210,190,215,.24);stroke-width:2.5}
-.room-inner{fill:none;stroke:rgba(195,175,200,.1);stroke-width:1.5}
 [data-step="1"] #L1,[data-step="2"] #L2,[data-step="3"] #L3,[data-step="4"] #L4,[data-step="5"] #L5{opacity:1}
 .mob{animation:breathe 4s ease-in-out infinite}
 @keyframes breathe{50%{transform:scale(1.05)}}
 .lbl2{font-family:'Archivo Black',sans-serif;font-size:15px;letter-spacing:.1em;text-anchor:middle;
   paint-order:stroke;stroke:rgba(5,10,16,.9);stroke-width:5px}
 
-.hb-bg{fill:rgba(5,10,16,.8);stroke:rgba(200,215,225,.35);stroke-width:2}
-.hb-fill{fill:#E8443C;transform-origin:-176px 0}
-[data-step="1"] .hb-fill{animation:sharedDown 5s ease-in infinite}
-@keyframes sharedDown{0%{transform:scaleX(1)}100%{transform:scaleX(.15)}}
+/* 1 · Gathios à l'écart */
+.apart{fill:none;stroke:#F2C14E;stroke-width:3.5;stroke-dasharray:10 9}
+[data-step="1"] .apart{animation:dash 1.2s linear infinite}
 
+/* 2 · Consécration */
 .conse{fill:rgba(242,193,78,.16);stroke:#F2C14E;stroke-width:3;stroke-dasharray:7 9}
 [data-step="2"] .conse{animation:dash 3s linear infinite, pulse 1.4s ease-in-out infinite}
 
+/* 3 · Cercle de soins */
 .heal-pulse{fill:none;stroke:#7FB2F0;stroke-width:3.5;opacity:0}
 [data-step="3"] .heal-pulse{animation:healW 2s ease-out infinite}
-@keyframes healW{0%{r:30;opacity:.9}100%{r:80;opacity:0}}
+@keyframes healW{0%{r:40;opacity:.9}100%{r:150;opacity:0}}
 
-.vanish-r{fill:rgba(232,68,60,.14);stroke:#E8443C;stroke-width:3;stroke-dasharray:6 8;opacity:.4}
+/* 4 · Disparition et poison */
+.vanish-r{fill:rgba(232,68,60,.12);stroke:#E8443C;stroke-width:3;stroke-dasharray:6 8}
 [data-step="4"] .vanish-r{animation:dash 2.5s linear infinite}
-[data-step="4"] .poisoned{animation:pulse 1.2s ease-in-out infinite}
+.poisoned circle{fill:rgba(232,68,60,.26);stroke:#E8443C;stroke-width:2.5;opacity:0}
+[data-step="4"] .poisoned circle{animation:pulse 1.4s ease-in-out infinite;animation-delay:var(--d,0s);opacity:1}
 
-.steal-r{fill:rgba(181,139,245,.16);stroke:#B58BF5;stroke-width:3;stroke-dasharray:5 7}
-[data-step="5"] .steal-r{animation:dash 3s linear infinite, pulse 1.3s ease-in-out infinite}
-
+/* 5 · Zerevor */
+.arcane-r{fill:rgba(181,139,245,.10);stroke:#B58BF5;stroke-width:3;stroke-dasharray:5 7}
+[data-step="5"] .arcane-r{animation:dash 3s linear infinite}
+.ground circle{fill:rgba(255,122,51,.2);stroke:#FF7A33;stroke-width:2.5}
+[data-step="5"] .ground circle{animation:pulse 1.6s ease-in-out infinite;animation-delay:var(--d,0s)}
+.steal-a{fill:none;stroke:#B58BF5;stroke-width:3;stroke-dasharray:8 8}
+[data-step="5"] .steal-a{animation:dash 1.1s linear infinite}
