@@ -25,56 +25,62 @@
 
 <g id="raid"></g>
 
-<!-- 1 · Souffrance -->
+<!-- 1 · Essence de la souffrance -->
 <g id="L1" class="layer">
-  <g id="fixate" transform="translate(-30,130)"><circle class="fix-ring" r="34"/></g>
-  <text class="note" x="0" y="-208" fill="#E8443C">SOINS ET RÉGÉNÉRATION COUPÉS À 100 %</text>
-  <text class="note" x="0" y="560" fill="#EDE8DA">IL FRAPPE LE PLUS PROCHE · ON TOURNE POUR RÉPARTIR</text>
+  <g id="fixate" transform="translate(-6,116)"><circle class="fix-ring" r="34"/></g>
+  <text class="note" x="0" y="-208" fill="#E8443C">AURA DE LA SOUFFRANCE · NI SOIN NI RÉGÉNÉRATION · ARMURE À ZÉRO</text>
+  <text class="note" x="0" y="556" fill="#EDE8DA">FIXE LE PLUS PROCHE TOUTES LES 5 s</text>
+  <text class="tag"  x="0" y="582" fill="var(--slate)">les tanks se relaient en jouant sur la distance</text>
 </g>
 
-<!-- 2 · Drain d'Âme -->
+<!-- 2 · Enrager -->
 <g id="L2" class="layer">
-  <g class="drainT" transform="translate(-268,196)"><circle r="26"/></g>
-  <g class="drainT" style="--d:.3s" transform="translate(150,300)"><circle r="26"/></g>
-  <g class="drainT" style="--d:.6s" transform="translate(-60,118)"><circle r="26"/></g>
-  <text class="note" x="0" y="-208" fill="#B58BF5">TROIS JOUEURS · DÉGÂTS ET MANA QUI SE VIDENT</text>
-  <text class="note" x="0" y="560" fill="#EDE8DA">DISSIPATION IMMÉDIATE · ÇA SE LANCE EN CONTINU</text>
+  <g id="frenzy" transform="translate(-6,116)"><circle class="frenzy-hi" r="42"/></g>
+  <text class="note" x="0" y="-208" fill="#FF7A33">ENRAGE ~45 s · +VITESSE ET +DÉGÂTS PENDANT 15 s</text>
+  <text class="note" x="0" y="556" fill="#EDE8DA">VOLEUR ÉVASION OU CHASSEUR DISSUASION SUR LA FIXATION</text>
+  <text class="tag"  x="0" y="582" fill="var(--slate)">sans eux, gros cooldown défensif du tank fixé</text>
 </g>
 
-<!-- 3 · Interlude -->
+<!-- 3 · Drain d'âme -->
 <g id="L3" class="layer">
-  <g class="soul" transform="translate(-300,148)"><circle r="18"/></g>
-  <g class="soul" style="--d:.4s" transform="translate(128,186)"><circle r="18"/></g>
-  <g class="soul" style="--d:.8s" transform="translate(-186,388)"><circle r="18"/></g>
-  <g class="soul" style="--d:1.2s" transform="translate(66,362)"><circle r="18"/></g>
-  <text class="note" x="0" y="-208" fill="#8CF07E">DES ÂMES ASSERVIES APPARAISSENT · TUEZ-LES PRÈS DE VOUS</text>
-  <text class="note" x="0" y="560" fill="#EDE8DA">CHAQUE MORT RESTAURE 30 % VIE ET MANA AUTOUR D'ELLE</text>
+  <g class="drainT" transform="translate(-120,220)"><circle r="24"/></g>
+  <g class="drainT" style="--d:.3s" transform="translate(30,292)"><circle r="24"/></g>
+  <g class="drainT" style="--d:.6s" transform="translate(-64,300)"><circle r="24"/></g>
+  <text class="note" x="0" y="-208" fill="#B58BF5">TROIS JOUEURS · DÉGÂTS + MANA DRAINÉ TOUTES LES 3 s</text>
+  <text class="note" x="0" y="556" fill="#EDE8DA">DISSIPATION IMMÉDIATE · RELANCÉ EN CONTINU</text>
 </g>
 
-<!-- 4 · Désir -->
+<!-- 4 · Interlude -->
 <g id="L4" class="layer">
-  <g id="reflect" transform="translate(-40,180)">
-    <path class="rf" d="M -60 -20 L -18 -6 M -18 -6 L -34 -30" />
-    <path class="rf" d="M 60 -20 L 18 -6 M 18 -6 L 34 -30" />
-  </g>
-  <text class="note" x="0" y="-208" fill="#F2C14E">LA MOITIÉ DE VOS DÉGÂTS VOUS REVIENT</text>
-  <text class="note" x="0" y="560" fill="#EDE8DA">SOINS DOUBLÉS EN COMPENSATION · NE TAPEZ PAS TROP FORT D'UN COUP</text>
+  <g class="soul" transform="translate(-150,150)"><circle r="17"/></g>
+  <g class="soul" style="--d:.4s" transform="translate(74,172)"><circle r="17"/></g>
+  <g class="soul" style="--d:.8s" transform="translate(-44,330)"><circle r="17"/></g>
+  <g class="soul" style="--d:1.2s" transform="translate(120,300)"><circle r="17"/></g>
+  <text class="note" x="0" y="-208" fill="#8CF07E">ÂMES ASSERVIES · À TUER AU CONTACT DU RAID REGROUPÉ</text>
+  <text class="note" x="0" y="556" fill="#EDE8DA">CHAQUE MORT REND 30 % VIE ET MANA DANS 10 m</text>
 </g>
 
-<!-- 5 · Rune et Réflexion -->
+<!-- 5 · Essence du désir -->
 <g id="L5" class="layer">
-  <g id="runeb"><circle class="rune-r" r="96"/></g>
-  <g transform="translate(0,-104)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-17" y="-17" width="34" height="34"/></g>
-  <path class="reflectA" d="M -210 190 L -46 66" fill="none" marker-end="url(#ahr2)"/>
-  <text class="note" x="0" y="-208" fill="#B58BF5">BOUCLIER DE RUNES À DISSIPER · SORT À RENVOYER</text>
-  <text class="note" x="0" y="560" fill="#EDE8DA">MANA QUI FOND · LE COMBAT SE PERD SEUL SI ÇA TRAÎNE</text>
+  <g id="runeb"><circle class="rune-r" r="94"/></g>
+  <g transform="translate(0,2)"><image href="assets/media/2525fef06c6f205fbd90.svg" x="-17" y="-17" width="34" height="34"/></g>
+  <g id="reflect" transform="translate(-30,262)">
+    <path class="rf" d="M -74 -16 L -24 -3 M -24 -3 L -42 -30" />
+    <path class="rf" d="M 74 -16 L 24 -3 M 24 -3 L 42 -30" />
+    <path class="rf" d="M 0 50 L 0 2 M 0 2 L -16 24 M 0 2 L 16 24" />
+  </g>
+  <text class="note" x="0" y="-208" fill="#F2C14E">50 % DE VOS DÉGÂTS VOUS REVIENNENT · MANA MAX −5 % / 8 s</text>
+  <text class="note" x="0" y="556" fill="#EDE8DA">CHOC SPIRITUEL DÉSORIENTE LE TANK 5 s</text>
+  <text class="tag"  x="0" y="582" fill="var(--slate)">bouclier runique = on tape à travers, rien de plus</text>
 </g>
 
-<!-- 6 · Colère -->
+<!-- 6 · Essence de la colère -->
 <g id="L6" class="layer">
-  <g transform="translate(-40,250)"><circle class="anger-r" r="336"/></g>
-  <text class="note" x="0" y="-208" fill="#E8443C">DÉGÂTS RAID CROISSANTS · IMPOSSIBLE À TENIR LONGTEMPS</text>
-  <text class="note" x="0" y="560" fill="#F2C14E">TOUTES LES SAUVEGARDES OFFENSIVES · C'EST UNE COURSE</text>
+  <path class="anger-cone" d="M 0 -18 L -150 -244 L 150 -244 Z"/>
+  <g transform="translate(-30,262)"><circle class="anger-r" r="196"/></g>
+  <text class="note" x="0" y="-208" fill="#E8443C">AURA DE LA COLÈRE · DÉGÂTS SUBIS QUI MONTENT SANS PLAFOND</text>
+  <text class="note" x="0" y="556" fill="#F2C14E">CRI DE L'ÂME · CÔNE FRONTAL · BOSS DOS AU RAID</text>
+  <text class="tag"  x="0" y="582" fill="var(--slate)">personne devant lui · tous les CD offensifs ici</text>
 </g>
 
 <defs><marker id="ahr2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
