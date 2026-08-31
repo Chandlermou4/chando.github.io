@@ -4,7 +4,7 @@
 
 .room{fill:rgba(6,18,20,.3);stroke:rgba(170,225,215,.24);stroke-width:2.5}
 .room-inner{fill:none;stroke:rgba(160,215,205,.1);stroke-width:1.5}
-[data-step="1"] #L1,[data-step="2"] #L2,[data-step="3"] #L3,[data-step="4"] #L4,[data-step="5"] #L5,[data-step="6"] #L6{opacity:1}
+[data-step="1"] #L1,[data-step="2"] #L2,[data-step="3"] #L3,[data-step="4"] #L4,[data-step="5"] #L5,[data-step="6"] #L6,[data-step="7"] #L7{opacity:1}
 #boss{animation:breathe 4s ease-in-out infinite;filter:drop-shadow(0 0 14px rgba(47,194,199,.5))}
 @keyframes breathe{50%{transform:scale(1.05)}}
 
@@ -35,3 +35,6 @@
 [data-step="2"] .frenzy-hi{animation:pulse 1s ease-in-out infinite}
 .anger-cone{fill:rgba(232,68,60,.16);stroke:rgba(232,68,60,.7);stroke-width:3;stroke-dasharray:6 7}
 [data-step="6"] .anger-cone{animation:angerPulse 1.6s ease-in-out infinite}
+
+.taunt-hi{fill:rgba(255,122,51,.16);stroke:#FF7A33;stroke-width:3}
+[data-step="7"] .taunt-hi{animation:pulse 1s ease-in-out infinite}
