@@ -33,10 +33,16 @@
 
 <!-- 1 · Placement -->
 <g id="L1" class="layer">
-  <ellipse class="spread-z" cx="-508" cy="86" rx="270" ry="210"/>
+  <g id="statue" transform="translate(-408,46)">
+    <rect class="obst" x="-17" y="-40" width="34" height="80" rx="7"/>
+    <text class="tag" y="-56" fill="#F2C14E">STATUE</text>
+  </g>
+  <path class="los" d="M -58 22 L -392 46"/>
+  <path class="los" d="M -58 -22 L -392 46"/>
+  <ellipse class="stack-z" cx="-568" cy="52" rx="128" ry="96"/>
   <text class="note" x="-430" y="-389" fill="#EDE8DA">POSITION FIXE · JAMAIS DÉPLACÉE NI RETOURNÉE</text>
-  <text class="note" x="-430" y="375" fill="#EDE8DA">LE RAID S’ÉTALE AU-DELÀ DE 18 m, BIEN ESPACÉ</text>
-  <text class="tag"  x="-430" y="401" fill="var(--slate)">dos à un mur ou derrière un décor : un rayon projette en arrière</text>
+  <text class="note" x="-430" y="375" fill="#F2C14E">SOIGNEURS ET DISTANTS GROUPÉS DERRIÈRE LA STATUE</text>
+  <text class="tag"  x="-430" y="401" fill="var(--slate)">hors de vue de Shahraz · les corps-à-corps restent au contact</text>
 </g>
 
 <!-- 2 · Fouette-sabre -->
@@ -83,14 +89,17 @@
 
 <!-- 6 · Les rayons -->
 <g id="L6" class="layer">
-  <g class="beamhit" transform="translate(-560,-40)"><circle r="22"/></g>
-  <g class="beamhit" style="--d:.25s" transform="translate(-470,60)"><circle r="22"/></g>
-  <g class="beamhit" style="--d:.5s" transform="translate(-620,170)"><circle r="22"/></g>
-  <path class="arc" d="M -560 -40 C -520 0, -500 30, -470 60" fill="none"/>
-  <path class="arc" d="M -470 60 C -520 100, -580 140, -620 170" fill="none"/>
+  <g id="statue6" transform="translate(-408,46)">
+    <rect class="obst" x="-17" y="-40" width="34" height="80" rx="7"/>
+    <text class="tag" y="-56" fill="#F2C14E">STATUE</text>
+  </g>
+  <g class="beamhit" transform="translate(-46,-92)"><circle r="22"/></g>
+  <g class="beamhit" style="--d:.25s" transform="translate(30,-88)"><circle r="22"/></g>
+  <path class="arc" d="M -46 -92 C -10 -104, 8 -100, 30 -88" fill="none"/>
+  <path class="blocked" d="M -58 22 L -392 46"/>
   <text class="note" x="-430" y="-389" fill="#7FB2F0">UN JOUEUR AU HASARD, PUIS REBOND SUR SES VOISINS</text>
   <text class="note" x="-430" y="375" fill="#EDE8DA">UN RAYON BRÛLE LE MANA · UN AUTRE PROJETTE EN ARRIÈRE</text>
-  <text class="tag"  x="-430" y="401" fill="var(--slate)">dos à un mur, la projection ne fait plus rien</text>
+  <text class="tag"  x="-430" y="401" fill="var(--slate)">à couvert derrière la statue, soigneurs et distants n’en prennent aucun</text>
 </g>
 
 <!-- 7 · Aura prismatique -->
