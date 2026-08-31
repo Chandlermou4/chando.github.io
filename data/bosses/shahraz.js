@@ -11,10 +11,7 @@ pc(52,  32, 'tank');
 
 [[-52,-26],[-44,22],[-20,-64],[-14,60]].forEach(p=>pc(p[0],p[1],'mdps'));
 
-const R=['healer','rdps','rdps','healer','rdps','rdps'];
-const CX=-352, CY=20;
-for(let n=0;n<R.length;n++){
-  const a=n*2.399, rr=11+11*Math.sqrt(n);
-  pc(CX+Math.cos(a)*rr*1.15, CY+Math.sin(a)*rr*0.82, R[n]);
-}
+// un distant et un soigneur suffisent a marquer l'emplacement du groupe
+pc(-360,  6, 'rdps');
+pc(-336, 36, 'healer');
 };
