@@ -325,8 +325,9 @@
   function renderShell() {
     root.className = 'talent-tool';
     root.innerHTML =
-      renderClassTabs() + renderProvenance() + renderLegend() +
+      renderProvenance() + renderLegend() +
       '<div id="mount-bar"></div>' + renderHelp() +
+      renderClassTabs() +
       '<div id="mount-trees"></div><div id="mount-detail"></div>' +
       '<div id="mount-status"></div><div id="mount-foot"></div>';
     renderBar(); renderTrees(); renderDetail(); renderStatus(); renderFoot();
