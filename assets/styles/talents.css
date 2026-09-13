@@ -1,0 +1,182 @@
+/* Calculateur de talents — habillage propre à cette page.
+   Chrome (bandeau, réglages, aide, pied) aligné sur la DA du site : Hanken
+   Grotesk/Newsreader, vert sage, hairlines plutôt que des cartes. La grille et
+   l'infobulle restent une plaque sombre, comme le cadre de talents en jeu —
+   même logique que sur les diagrammes de boss (assets/guide.css). */
+:root {
+  --panel-bg: #101211; --panel-fg: #E7E4DA; --panel-dim: #9AA09B;
+  --panel-hair: rgba(231, 228, 218, .14); --panel-strong: #FFFFFF;
+}
+:root[data-theme="light"] {
+  --panel-bg: #F7F4EE; --panel-fg: #20232A; --panel-dim: #6C7178;
+  --panel-hair: rgba(30, 34, 42, .14); --panel-strong: #20232A;
+}
+
+.talent-tool { --icon: 52px; --trow: 76px; --tgap: 8px; --treepad: 15px; }
+
+/* ── Sélecteur de classe ─────────────────────────────────────────────────── */
+.class-tabs { display: flex; gap: 4px; flex-wrap: wrap; padding: 0 0 22px; margin-bottom: 22px; border-bottom: 1px solid var(--hair); }
+.class-tabs a { text-decoration: none; color: var(--dim); font-size: 13.5px; font-weight: 600; padding: 8px 14px; border-radius: 999px; transition: background .15s, color .15s; }
+.class-tabs a:hover { background: var(--accent-soft); color: var(--fg); }
+.class-tabs a.is-active { background: var(--accent); color: #0C0D0B; }
+
+/* ── Bandeau de provenance ───────────────────────────────────────────────── */
+.talent-provenance { margin: 0 0 18px; padding: 14px 18px; border: 1px solid var(--hair); border-radius: 10px; display: flex; gap: 11px; align-items: flex-start; color: var(--dim); font-size: 13px; line-height: 1.65; }
+.talent-provenance svg { color: var(--accent); flex-shrink: 0; margin-top: 2px; }
+.talent-provenance strong { color: var(--fg); }
+.talent-provenance a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+/* ── Légende ─────────────────────────────────────────────────────────────── */
+.talent-legend { display: flex; flex-wrap: wrap; gap: 7px 20px; padding: 12px 0; border-bottom: 1px solid var(--hair); font-size: 11.5px; color: var(--dim); }
+.talent-legend span { display: flex; align-items: center; gap: 7px; }
+.talent-legend i { width: 14px; height: 14px; border-radius: 3px; background: #2b3138; font-style: normal; box-shadow: 0 0 0 1px #0a0d11, 0 0 0 2px #383e44; }
+.talent-legend i.partial, .talent-legend i.open { box-shadow: 0 0 0 1px #0b140b, 0 0 0 2px #3ddb3d; }
+.talent-legend i.maxed { box-shadow: 0 0 0 1px #16100a, 0 0 0 2px #ffd100; }
+.talent-legend i.locked { opacity: .45; }
+.talent-legend i.new { background: #1f7a33; border-radius: 50%; box-shadow: 0 0 0 1px #05070a; }
+.talent-legend .legend-note { font-style: italic; }
+
+/* ── Barre d'outils ──────────────────────────────────────────────────────── */
+.talent-bar { display: flex; justify-content: space-between; align-items: center; gap: 22px; flex-wrap: wrap; padding: 18px 0; border-bottom: 1px solid var(--hair); }
+.talent-score { display: flex; align-items: center; gap: 26px; flex-wrap: wrap; }
+.talent-score .points, .talent-score .split { text-align: center; }
+.talent-score .points strong { font: 400 30px/1.05 'Newsreader', Georgia, serif; color: var(--accent); display: block; }
+.talent-score .points strong.over { color: #E8443C; }
+.talent-score .split strong { font: 500 20px/1.15 'Newsreader', Georgia, serif; color: var(--fg); display: block; letter-spacing: 1px; }
+.talent-score span { font-size: 9.5px; letter-spacing: 1.3px; color: var(--dim); text-transform: uppercase; }
+.level-picker { display: flex; align-items: center; gap: 8px; font-size: 9.5px; color: var(--dim); text-transform: uppercase; letter-spacing: 1.3px; }
+.level-picker select { background: transparent; color: var(--fg); border: 1px solid var(--hair); border-radius: 6px; padding: 7px 9px; font: 14px 'Hanken Grotesk', sans-serif; }
+.talent-actions { display: flex; gap: 9px; flex-wrap: wrap; align-items: center; }
+
+.talent-actions .button { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; font: 600 13px 'Hanken Grotesk', sans-serif; border: 1px solid var(--hair); background: transparent; color: var(--fg); cursor: pointer; transition: border-color .18s, color .18s, background .18s; }
+.talent-actions .button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.talent-actions .button:disabled { opacity: .4; cursor: default; }
+.talent-actions .button.gold { background: var(--accent); border-color: var(--accent); color: #0C0D0B; }
+.talent-actions .button.gold:hover { background: var(--accent); filter: brightness(1.1); color: #0C0D0B; }
+
+/* Interrupteur « Comparaison talents Classic » : masqué par défaut. */
+.classic-toggle { display: inline-flex; align-items: center; gap: 9px; padding: 10px 16px; border: 1px solid var(--hair); border-radius: 999px; color: var(--dim); font-size: 12.5px; cursor: pointer; user-select: none; transition: border-color .18s, color .18s; }
+.classic-toggle:hover { border-color: var(--accent); color: var(--fg); }
+.classic-toggle input { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; padding: 0; }
+.classic-toggle-track { position: relative; flex-shrink: 0; width: 34px; height: 19px; border-radius: 999px; background: rgba(128,128,128,.25); border: 1px solid var(--hair); transition: background .18s, border-color .18s; }
+.classic-toggle-track:before { content: ''; position: absolute; top: 1px; left: 1px; width: 15px; height: 15px; border-radius: 50%; background: var(--dim); transition: transform .18s, background .18s; }
+.classic-toggle input:checked + .classic-toggle-track { background: var(--accent); border-color: var(--accent); }
+.classic-toggle input:checked + .classic-toggle-track:before { transform: translateX(15px); background: #0C0D0B; }
+.classic-toggle input:focus-visible + .classic-toggle-track { outline: 2px solid var(--accent); outline-offset: 2px; }
+.classic-toggle.is-on { border-color: var(--accent); color: var(--accent); }
+
+.talent-help { padding: 14px 0; margin: 0; font-size: 12.5px; border-bottom: 1px solid var(--hair); color: var(--dim); }
+.talent-help kbd { border: 1px solid var(--hair); border-radius: 4px; padding: 0 4px; font-size: 11px; color: var(--fg); }
+
+/* ── La plaque sombre : les trois arbres partagent un seul cadre, comme le
+      cadre de talents en jeu, quel que soit le thème clair/sombre du site ─── */
+.talent-trees { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 18px;
+  background: var(--panel-bg); border: 1px solid var(--panel-hair); border-radius: 10px; overflow: hidden; color: var(--panel-fg); }
+.talent-tree { display: flex; flex-direction: column; padding: 16px var(--treepad) 0; }
+.talent-tree + .talent-tree { border-left: 1px solid var(--panel-hair); }
+.tree-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--panel-hair); }
+.tree-head h2 { font: 500 18px/1.2 'Newsreader', Georgia, serif; color: var(--panel-strong); margin: 0; }
+.tree-fr { font-size: 10.5px; color: var(--panel-dim); letter-spacing: .5px; }
+.tree-count { display: flex; align-items: center; gap: 8px; }
+.tree-count strong { font: 500 21px/1 'Newsreader', Georgia, serif; color: var(--panel-strong); min-width: 22px; text-align: right; }
+.tree-count button { background: none; border: 1px solid var(--panel-hair); border-radius: 6px; color: var(--panel-dim); padding: 4px; display: flex; cursor: pointer; }
+.tree-count button:hover:not(:disabled) { color: var(--panel-strong); border-color: var(--panel-dim); }
+
+.tree-grid { position: relative; isolation: isolate; display: grid; grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, var(--trow)); gap: var(--tgap); padding: 16px 12px; margin: 0 calc(-1 * var(--treepad)); }
+.tree-grid:before { content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background-image: linear-gradient(180deg, #0c101359, #0c101373 55%, #0c1013a6), var(--tree-bg, none);
+  background-size: cover, 100% 100%; background-position: center, center; }
+.tree-grid > * { position: relative; z-index: 1; }
+
+.talent-cell { position: relative; display: flex; align-items: center; justify-content: center; }
+.talent-arrow { position: absolute; left: 50%; transform: translateX(-50%); width: 3px; background: #d3d8dc;
+  box-shadow: 0 0 0 1px #0b0f1299;
+  height: calc(var(--span) * (var(--trow) + var(--tgap)) - var(--icon));
+  top: calc((var(--trow) - var(--icon)) / 2 - (var(--span) * (var(--trow) + var(--tgap)) - var(--icon))); }
+.talent-arrow:after { content: ''; position: absolute; bottom: -1px; left: -4.5px; border: 6px solid transparent; border-top-color: #d3d8dc; filter: drop-shadow(0 1px 0 #0b0f1299); }
+.talent-arrow.side { top: calc(50% - 1.5px); transform: none; height: 3px; width: calc(100% + var(--tgap) - var(--icon)); }
+.talent-arrow.side:after { bottom: auto; top: -4.5px; }
+.talent-arrow.side.left { left: auto; right: calc(50% + var(--icon) / 2); }
+.talent-arrow.side.left:after { right: -6px; left: auto; border: 6px solid transparent; border-left-color: #d3d8dc; }
+.talent-arrow.side.right { left: calc(50% + var(--icon) / 2); right: auto; }
+.talent-arrow.side.right:after { left: -6px; border: 6px solid transparent; border-right-color: #d3d8dc; }
+
+.talent-node { position: relative; width: var(--icon); height: var(--icon); flex-shrink: 0; display: block; padding: 0; margin: 0; border: 0; background: none; line-height: 0; cursor: pointer; }
+.talent-node .node-icon { display: block; width: 100%; height: 100%; border-radius: 6px; overflow: hidden; background: #05070a;
+  font: 700 15px/1 Arial; letter-spacing: .5px; color: #d8c59b; text-align: center; line-height: var(--icon);
+  box-shadow: 0 0 0 2px #0a0d11, 0 0 0 3px #454c53, 0 2px 5px #000000a8; transition: box-shadow .13s, filter .13s; }
+.talent-node .node-icon img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.talent-node .node-rank { position: absolute; right: -6px; bottom: -6px; z-index: 2; min-width: 23px; padding: 1px 4px; border-radius: 3px; background: #000; color: #fff; font: 700 12px/1.35 Arial, Helvetica, sans-serif; text-align: center; }
+.talent-node .node-flag.new { position: absolute; top: -6px; right: -6px; z-index: 2; width: 12px; height: 12px; border-radius: 50%; font: 700 8px/12px Arial; text-align: center; background: #1f7a33; color: #eafce9; border: 1px solid #05070a; }
+
+.talent-node.locked .node-icon img { filter: grayscale(1) brightness(.75); }
+.talent-node.locked .node-icon { box-shadow: 0 0 0 2px #0a0d11, 0 0 0 3px #383e44, 0 2px 5px #000000a8; }
+.talent-node.open .node-icon, .talent-node.partial .node-icon { box-shadow: 0 0 0 2px #0b140b, 0 0 0 3px #3ddb3d, 0 0 9px #3ddb3d59, 0 2px 5px #000000a8; }
+.talent-node.open .node-rank, .talent-node.partial .node-rank { color: #4ee44e; }
+.talent-node.maxed .node-icon { box-shadow: 0 0 0 2px #16100a, 0 0 0 3px #ffd100, 0 0 11px #ffd1006b, 0 2px 5px #000000a8; }
+.talent-node.maxed .node-rank { color: #ffd100; }
+.talent-node.open:hover .node-icon, .talent-node.partial:hover .node-icon, .talent-node.maxed:hover .node-icon { filter: brightness(1.14); }
+.talent-node.locked:hover .node-icon img { filter: grayscale(1) brightness(.92); }
+.talent-node:focus-visible { outline: none; }
+.talent-node:focus-visible .node-icon, .talent-node.active .node-icon { box-shadow: 0 0 0 2px #05070a, 0 0 0 4px var(--accent), 0 0 13px var(--accent-soft); }
+
+.tree-notes { margin-top: auto; border-top: 1px solid var(--panel-hair); padding: 11px 0 14px; font-size: 12px; }
+.tree-notes details + details { margin-top: 8px; }
+.tree-notes summary { color: var(--panel-dim); cursor: pointer; }
+.tree-notes summary:hover { color: var(--panel-strong); }
+.tree-notes details.disputed summary { color: #d9a88a; }
+.tree-notes p, .tree-notes ul { margin: 7px 0 0; color: var(--panel-dim); font-size: 11.5px; line-height: 1.6; }
+.tree-notes ul { padding-left: 16px; }
+.tree-notes li + li { margin-top: 6px; }
+.tree-notes strong { color: var(--panel-fg); }
+
+/* ── Infobulle : reste sur ardoise, comme le langage du jeu ─────────────────── */
+.talent-detail { width: 330px; background: #14171b; border: 1px solid #4c545c; border-radius: 8px; padding: 14px; box-shadow: 0 16px 44px rgba(0,0,0,.45); font-size: 12.5px; line-height: 1.6; color: #E7E4DA; }
+.talent-detail.floating { z-index: 60; pointer-events: none; }
+.talent-detail.sheet { position: fixed; z-index: 60; left: 50%; bottom: 14px; transform: translateX(-50%); width: min(330px, calc(100vw - 28px)); max-height: 64vh; overflow: auto; }
+.detail-head { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+.detail-head h3 { font: 500 16px/1.25 'Newsreader', Georgia, serif; color: #F2C14E; margin: 0; }
+.detail-head button { background: none; border: 0; color: #8d959c; font-size: 20px; line-height: 1; padding: 0 4px; cursor: pointer; }
+.detail-original { display: block; font-size: 11px; color: #7d858c; font-style: italic; margin-top: 1px; }
+.detail-skill { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 9px 0 0; }
+.detail-skill dt { font-size: 10px; letter-spacing: .7px; color: #8d959c; text-transform: uppercase; }
+.detail-skill dd { margin: 0; color: #d3d9de; }
+.detail-cost { margin: 9px 0 0; color: #a3abb2; font-size: 11.5px; }
+.detail-text { margin: 10px 0 0; color: #dde1e5; }
+.detail-next { margin: 8px 0 0; padding: 7px 9px; background: #1c2026; border-radius: 6px; color: #b2bac1; }
+.detail-next strong { color: #F2C14E; font-weight: 600; }
+.detail-guess { color: #d9b876; font-style: italic; }
+.detail-req { margin: 7px 0 0; display: flex; gap: 6px; align-items: baseline; color: #99a1a8; font-size: 11.5px; }
+.detail-extra { margin: 8px 0 0; padding-left: 16px; color: #99a1a8; font-size: 11.5px; }
+.detail-note { margin: 8px 0 0; display: flex; gap: 6px; color: #d9b876; font-size: 11.5px; }
+.detail-classic { margin: 8px 0 0; padding: 7px 9px; background: #1a1b20; border-left: 2px solid #5b5a6b; color: #a5a3b4; font-size: 11.5px; }
+.detail-classic span { display: block; font: 700 9px Arial; letter-spacing: 1.2px; color: #7d7c8d; text-transform: uppercase; }
+.detail-divergence { margin: 9px 0 0; padding: 8px 10px; background: #2b2230; border: 1px solid #5f4a63; border-radius: 6px; color: #e0c5dd; font-size: 11.5px; }
+.detail-divergence strong { display: block; margin-bottom: 4px; color: #eecfe9; }
+.detail-divergence ul { margin: 0; padding-left: 15px; }
+.detail-controls { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; padding-top: 11px; border-top: 1px solid #2a3036; }
+.detail-controls button { flex: 1; padding: 11px 8px; border: 1px solid #4c545c; border-radius: 6px; background: #1c2026; color: #dde1e5; font: 600 13px 'Hanken Grotesk', sans-serif; cursor: pointer; }
+.detail-controls button:first-child { color: #d8a79b; }
+.detail-controls button:last-child { color: #bfe0cb; }
+.detail-controls button:disabled { opacity: .4; cursor: default; }
+.detail-controls strong { font: 500 16px/1 'Newsreader', Georgia, serif; color: #F2C14E; min-width: 44px; text-align: center; }
+
+.talent-status { min-height: 20px; margin: 10px 0 0; padding: 0; color: #E8443C; font-size: 12.5px; text-align: center; }
+.talent-foot { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; padding: 14px 0; margin-top: 6px; border-top: 1px solid var(--hair); font-size: 12px; color: var(--dim); }
+.talent-foot span:first-child { color: var(--accent); }
+.talent-foot code { font-size: 11px; color: var(--fg); background: var(--accent-soft); border-radius: 4px; padding: 0 4px; }
+
+@media (max-width: 1100px) {
+  .talent-tool { --icon: 56px; --trow: 80px; }
+  .talent-trees { grid-template-columns: 1fr; }
+  .talent-tree + .talent-tree { border-left: 0; border-top: 1px solid var(--panel-hair); }
+}
+@media (max-width: 620px) {
+  .talent-tool { --icon: 44px; --trow: 64px; --tgap: 6px; --treepad: 12px; }
+  .talent-actions { width: 100%; }
+  .talent-actions .button { flex: 1; font-size: 12px; padding: 10px 12px; justify-content: center; }
+  .talent-foot { display: block; }
+  .talent-foot span { display: block; }
+  .talent-foot span + span { margin-top: 6px; }
+}
