@@ -1,90 +1,204 @@
 # Compte rendu — site de stratégies TBC
 
-Date : 28 août 2026
+Date : 13 septembre 2026 · Site en ligne : <https://chando.pages.dev>
 
-> **Note (29 août 2026)** — ce compte rendu décrit l'état du projet à la date
-> ci-dessus. Depuis, le site a été déployé, l'architecture a changé et
-> `src/pages/` et `tools/` ont été supprimés. Pour l'état actuel, voir
-> `ARCHITECTURE.md` et `README.md`.
+> Ce fichier remplace le compte rendu du 28 août 2026, qui décrivait une
+> architecture depuis abandonnée. L'ancienne version reste dans l'historique
+> git. Pour la structure des fichiers, voir `ARCHITECTURE.md`.
 
-## Contexte
+## Où en est le site
 
-Le projet est un site de guides de raid interactifs pour TBC Anniversary,
-actuellement publié sur [chando.pages.dev](https://chando.pages.dev/).
+Dix-sept pages de boss, dont **quinze publiées**. Le Temple noir est complet.
+La Caverne du sanctuaire du Serpent vient d'être ouverte avec son premier boss.
 
-Les fichiers de travail se trouvent dans ce dossier. Ils incluent les guides
-créés précédemment, ainsi que `archimonde_6.html`, qui correspondait aux
-dernières modifications demandées.
+| Raid | Guides | Publié |
+| --- | --- | --- |
+| Repaire de Gruul | Haut-Roi Maulgar, Gruul le Tue-Dragon | non — `noindex`, délié |
+| Caverne du sanctuaire du Serpent | Hydross l'Instable | oui (1 / 6 boss) |
+| Bataille du mont Hyjal | les 5 boss | oui |
+| Temple noir | les 9 boss | oui |
 
-L'accès à la base de données et au compte Cloudflare n'a pas encore été
-partagé ; aucune modification n'a donc été déployée sur le site en ligne.
+Karazhan, le Repaire de Magtheridon et le Donjon de la Tempête n'ont pas encore
+de page ; ils figurent dans la navigation avec la mention « à venir ».
 
-## Changements d'interface demandés
+### Détail des guides publiés
 
-- Le menu des boss est placé à gauche et reste visible.
-- Les boutons « Précédent » et « Suivant » sont situés au-dessus du menu.
-- La zone d'explications est réduite pour éviter que le menu chevauche le
-  diagramme.
-- La touche `R` masque toujours l'interface de navigation pour les
-  enregistrements vidéo.
+`couches` = nombre de calques SVG révélés étape par étape. Une valeur à 0
+signifie que le diagramme est **figé** : toutes les étapes montrent la même
+image.
 
-## Navigation par phases
+| Guide | Étapes | Couches | Jetons |
+| --- | --: | --: | --: |
+| Hydross l'Instable | 6 | 6 | 10 |
+| Rage Froidhiver | 5 | 5 | 3 |
+| Anetheron | 5 | 5 | 3 |
+| Kaz'rogal | 5 | 5 | 4 |
+| Azgalor | 6 | 5 | 8 |
+| Archimonde | 7 | **0** | 5 |
+| Grand seigneur de guerre Naj'entus | 5 | 5 | 4 |
+| Supremus | 6 | **0** | 6 |
+| Ombre d'Akama | 4 | **0** | 3 |
+| Teron Fielsang | 5 | **0** | 2 |
+| Gurtogg Fièvresang | 6 | 6 | 5 |
+| Reliquaire des Perdus | 8 | 8 | 4 |
+| Mère Shahraz | 7 | 7 | 4 |
+| Conseil Illidari | 5 | 5 | 7 |
+| Illidan Hurlorage | 8 | 8 | 7 |
 
-Les noms français officiels utilisés sont :
+## Ce qui a changé depuis le 29 août
 
-| Phase | Raids |
-| --- | --- |
-| Phase 1 | Karazhan ; Repaire de Gruul ; Repaire de Magtheridon |
-| Phase 2 | Caverne du sanctuaire du Serpent ; Donjon de la Tempête : L’Œil |
-| Phase 3 | Bataille du mont Hyjal ; Temple noir |
+Trente commits. L'essentiel :
 
-Le menu de chaque boss comporte maintenant ces trois groupes. Les guides déjà
-créés restent cliquables ; les autres sont indiqués comme « Guide(s) à venir ».
-La page d'accueil est elle aussi organisée par phases.
+**Le Temple noir est terminé.** Les quatre derniers boss — Reliquaire, Shahraz,
+Conseil, Illidan — ont été refaits de zéro sur la stratégie de wowhead et sur
+les plans raidplan qu'elle publie, puis rendus visibles. Les cinq premiers
+l'avaient été juste avant.
 
-## Optimisation pour réduire le coût des modifications
+**SSC est ouvert** avec Hydross l'Instable, premier guide d'un raid qui en
+compte six.
 
-Le site contenait 17 pages de boss très lourdes, notamment parce que chaque
-page embarquait ses propres images en base64, son style et son moteur
-JavaScript. Une petite modification globale imposait donc de relire et de
-réécrire beaucoup de contenu.
+**Quatre noms de boss étaient faux** et ont été corrigés d'après wowhead FR :
 
-La structure a été refactorée :
+| Avant | Après | Source |
+| --- | --- | --- |
+| Reliquaire des Âmes | **Reliquaire des Perdus** | npc 22856 |
+| Gathios le Fracasseur | **Gathios le Briseur** | npc 22949 |
+| Veras l'Ombre-Sombre | **Veras Ombrenoir** | npc 22952 |
+| Zerevor | **Grand néantomancien Zerevor** | npc 22950 |
 
-- `assets/guide.js` contient le moteur commun : navigation, clavier, édition,
-  export et mode enregistrement ;
-- `data/bosses/<boss>.js` contient les étapes et positions propres à chaque
-  boss ;
-- `assets/styles/<boss>.css` contient le style et les animations propres à
-  chaque diagramme ;
-- `assets/media/` contient les 25 images et icônes uniques, partagées au lieu
-  d'être répétées dans les pages ;
-- les fichiers `.html` à la racine sont les fichiers statiques prêts à être
-  publiés.
+**Deux contresens de stratégie** ont été corrigés, tous deux signalés par le
+RL :
 
-Résultat : les pages de boss publiées ne contiennent plus d’images encodées.
-Leur poids cumulé est passé d’environ 3,8 Mo à environ 350 Ko ; les médias sont
-servis séparément et mutualisés.
+- *Reliquaire, Bouillant de rage* — j'avais écrit « le plus sûr est de ne pas
+  provoquer du tout ». Le guide dit l'inverse : on provoque **exprès** une fois
+  au début, pour que le main tank profite du +200 % de menace et prenne une
+  grosse avance pendant que les autres attendent la fin du buff.
+- *Shahraz, la statue de poisson* — j'avais suivi la légende du plan (« Line of
+  Sight to avoid beams ») et écrit que la ligne de vue coupée empêchait le
+  ciblage. En réalité se placer sous la statue empêche seulement d'être
+  **projeté en l'air** par le rayon de recul. Les rayons touchent quand même.
 
-`archimonde_6.html` est conservé comme copie identique d’`archimonde.html`.
+**Une passe de cohérence** sur les seize guides a mis au jour, en plus des
+écarts de style, deux bugs d'animation réels et dix-sept chevauchements dont
+quatorze n'avaient jamais été vus. Voir la section suivante.
 
-## Fichiers utiles
+## Conventions à respecter
 
-- `README.md` : instructions de publication et de mise à jour ;
-- `ARCHITECTURE.md` : description de la nouvelle organisation ;
-- `tools/build_site.py` : outil de régénération depuis la sauvegarde historique
-  située dans `src/pages/`.
+Ces règles ont été établies en corrigeant des erreurs ; s'en écarter les fait
+revenir.
 
-Pour modifier durablement un guide, privilégier :
+**Noms français.** Tout nom de sort, d'objet ou de PNJ vient de wowhead FR, en
+casse de phrase française. Vérification obligatoire **avant** d'écrire :
 
-- `data/bosses/` pour ses étapes et placements ;
-- `assets/styles/` pour son apparence ;
-- `assets/guide.js` pour une fonctionnalité commune à tous les guides.
+```
+curl -sL -A "Mozilla/5.0" "https://www.wowhead.com/tbc/fr/spell=41032" \
+  | grep -oE '<title>[^<]*</title>'
+```
 
-## Publication Cloudflare Pages
+`WebFetch` boucle sur les redirections des pages de sort ; `curl` fonctionne à
+chaque fois. Plusieurs identifiants peuvent être groupés dans un seul appel.
+Corriger **les deux endroits** : le texte dans `data/bosses/<boss>.js` **et**
+les libellés du `<svg>` dans `<boss>.html` — l'oubli du second s'est produit
+deux fois.
 
-Pour déployer la version actuelle, publier le contenu complet du dossier, en
-incluant impérativement `assets/` et `data/` au même niveau que `index.html`.
+**Ne rien inventer.** Aucun chiffre de dégâts, aucun cooldown, aucune mécanique
+qui ne vienne d'une source vérifiable. En cas de doute, décrire sans chiffrer et
+le signaler.
 
-L’accès au compte Cloudflare et à la base de données reste à fournir si des
-modifications du site en ligne ou des données sont souhaitées.
+**Libellés du diagramme, deux niveaux.** Libellé principal en MAJUSCULES avec
+une couleur sémantique ; sous-libellé en minuscules avec `fill="var(--slate)"`.
+
+**Jeton de boss, un seul gabarit** : socle `r=66`, anneau `r=60`, marqueur
+`64×64`, icône `f2557fec60e56cd12215.webp`. Le nom du boss reprend la couleur
+de son anneau.
+
+**Pas de cercle d'arène réflexe.** On ne trace `.room` que si la formation est
+réellement un cercle. Le boss se place là où il se tient vraiment, en décalant
+le `viewBox` — pas au centre par défaut.
+
+**Longueur des textes.** Sur 98 étapes : minimum 81, médiane 255, maximum 437
+caractères. Au-delà de ~350, le panneau devient indigeste — c'est un reproche
+qui a déjà été fait.
+
+**Vérification automatique.** Avant de committer un diagramme, balayer chaque
+étape avec les animations figées et contrôler quatre choses : texte sous les
+boutons ‹ ›, texte sous le panneau, texte sur un jeton, élément hors cadre.
+C'est ce balayage qui a trouvé les dix-sept chevauchements.
+
+**Attention aux animations CSS sur `transform`.** Un `transform` animé en CSS
+**écrase** le `transform="translate(...)"` d'un élément SVG. Deux bugs réels en
+sont nés : les bulles « Z » du Sommeil s'effondraient sur Anetheron, les quatre
+cartes de Kaz'rogal s'empilaient à l'origine. Correctif : sortir le
+positionnement sur un `<g>` parent et n'animer que l'enfant.
+
+## Fabriquer un fond à partir d'un plan raidplan
+
+Méthode mise au point sur Shahraz, le Conseil et Illidan, réutilisable.
+
+1. **Récupérer le plan.** Les images des guides wowhead sont chargées en
+   JavaScript et absentes du HTML brut : il faut ouvrir la page dans un
+   navigateur puis relever les `img` en `uploads/screenshots`. La version
+   `normal/<id>.jpg` fait 1374 × 773 (ratio 16:9) ; il n'existe pas de `large/`.
+2. **Effacer les repères** que les jetons du site ne pourront pas recouvrir. Ces
+   salles sont symétriques gauche/droite : recopier la **zone miroir** donne un
+   résultat propre là où un simple décalage laisse des rectangles visibles.
+   Prévoir des boîtes larges — un masque trop adouci laisse un contour fantôme.
+3. **Élargir le canevas si besoin.** Le panneau du guide recouvre les 31 % de
+   droite de la scène. Quand le boss est au-delà (82 % pour Shahraz, 78 % pour
+   Gathios), étendre le canevas vers la droite — et en haut/bas pour rester en
+   16:9 — avec une copie floutée de la salle. Le plan reste net et le boss
+   revient dans la zone visible. Élargir le canevas réduit aussi la taille des
+   repères du plan par rapport aux jetons, ce qui permet de les recouvrir.
+4. **Relever les coordonnées.** Avec le boss à l'origine du `viewBox` :
+   `minx = -(fx · 1920 - 300)` et `miny = -(fy · 1080 - 40)`, où `fx` et `fy`
+   sont les fractions de l'image. Le champ SVG couvre alors la scène de 300 à
+   1300 en x et de 40 à 1040 en y.
+
+## Ce qui reste à faire
+
+**Hydross n'a pas de fond.** Le plan utilisé pour le placement a été fourni dans
+la conversation, pas depuis wowhead — je n'ai pas le fichier. La page s'affiche
+sur fond sombre. Il faut soit l'URL de l'image, soit la déposer dans
+`assets/media/`.
+
+**Quatre diagrammes sont figés** : Archimonde (7 étapes), Supremus (6), Ombre
+d'Akama (4), Teron Fielsang (5). Toutes leurs étapes montrent la même image,
+alors que les onze autres guides révèlent un calque par étape. C'est exactement
+le reproche qui avait été fait sur Gurtogg avant sa refonte. Supremus est le
+plus pauvre : un seul libellé sur tout le diagramme.
+
+**Gruul et Maulgar restent masqués** et leurs guides n'ont pas été relus — ni
+vérification des noms, ni audit de stratégie.
+
+**Rage Froidhiver a des éléments rognés.** Son `viewBox` commence à `x = -180`,
+mais son cercle de salle (rayon 280) et sa barre d'échelle « 10 mètres » sont à
+`x = -405`. La barre d'échelle est donc totalement invisible.
+
+**Deux classes pour le même rôle.** Les sous-libellés en minuscules utilisent
+`.tag` 45 fois et `.note` 19 fois. Les deux diffèrent en taille et en graisse
+(13 px normal contre 15 px gras). Unifier sur `.tag`, majoritaire et
+sémantiquement juste, demande de reprendre 19 libellés dans les guides anciens
+et de revérifier leur mise en page.
+
+**Le référencement est en place mais inexploitable.** Rien ne bloque
+l'indexation — aucun en-tête `X-Robots-Tag` sur la production, `noindex` retiré
+des quinze guides publiés, toutes les pages accessibles depuis l'accueil. En
+revanche :
+
+- **Le contenu n'est pas dans le HTML.** Le texte des étapes vit dans
+  `data/bosses/*.js` et n'est écrit dans la page que par JavaScript — et seule
+  l'étape affichée est dans le DOM. Le HTML brut d'une page de boss ne contient
+  qu'une poignée de mots. C'est de loin le point le plus lourd.
+- **Aucune `meta description`, aucune balise Open Graph, aucune `canonical`.**
+  Conséquence concrète : les liens partagés sur Discord n'affichent aucun
+  aperçu.
+- **Pas de `viewport` sur les pages de boss**, seulement sur l'accueil. Google
+  indexe en mobile-first.
+- **Pas de `robots.txt` ni de `sitemap.xml`.** L'URL `/robots.txt` renvoie
+  actuellement la page d'accueil en HTTP 200.
+- **Les liens internes passent par une redirection.** Cloudflare sert les pages
+  sans extension : `illidan.html` renvoie un 308 vers `/illidan`.
+
+**Le `README.md` est périmé** : il annonce « Guides disponibles aujourd'hui :
+Repaire de Gruul, Bataille du mont Hyjal, Temple noir », ce qui est faux dans
+les deux sens — Gruul est masqué, SSC n'est pas mentionné.
