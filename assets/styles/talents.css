@@ -15,9 +15,9 @@
 .talent-tool { --icon: 52px; --trow: 76px; --tgap: 8px; --treepad: 15px; }
 
 /* ── Sélecteur de classe ─────────────────────────────────────────────────── */
-.class-tabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin: 22px 0 0; }
-.class-tabs a { display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 8px;
-  overflow: hidden; text-decoration: none; color: var(--dim); font: 700 13px/1 'Hanken Grotesk', sans-serif;
+.class-tabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: space-between; margin: 22px 0 0; }
+.class-tabs a { display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 10px;
+  overflow: hidden; text-decoration: none; color: var(--dim); font: 700 15px/1 'Hanken Grotesk', sans-serif;
   background: var(--accent-soft); box-shadow: 0 0 0 2px transparent; transition: box-shadow .15s, filter .15s; }
 .class-tabs a img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .class-tabs a:hover { filter: brightness(1.15); }
