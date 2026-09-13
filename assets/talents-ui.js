@@ -12,6 +12,9 @@
   }
   function qs(sel) { return root.querySelector(sel); }
   function qsa(sel) { return Array.prototype.slice.call(root.querySelectorAll(sel)); }
+  // Le curseur descend un cran sous le niveau du premier point (10) pour pouvoir
+  // afficher 0 point disponible ; poolFor() vaut déjà 0 à ce niveau et en dessous.
+  var LEVEL_MIN = 9;
 
   // ── État ─────────────────────────────────────────────────────────────────
   var params = new URLSearchParams(window.location.search);
@@ -35,7 +38,7 @@
   (function restoreFromUrl() {
     var code = params.get('build');
     var lvl = Number(params.get('niveau'));
-    var start = (lvl >= T.MIN_LEVEL && lvl <= T.MAX_LEVEL) ? lvl : T.MAX_LEVEL;
+    var start = (lvl >= LEVEL_MIN && lvl <= T.MAX_LEVEL) ? lvl : T.MAX_LEVEL;
     S.level = start;
     if (code) S.points = T.decodeBuild(S.data, code, T.poolFor(start));
   })();
@@ -154,14 +157,13 @@
     var el = qs('#mount-bar'); if (!el) return;
     var perTree = perTreeCounts();
     var spent = spentTotal(), p = pool();
-    var levelOptions = [];
-    for (var l = T.MAX_LEVEL; l >= T.MIN_LEVEL; l--) levelOptions.push('<option value="' + l + '"' + (l === S.level ? ' selected' : '') + '>' + l + '</option>');
     el.innerHTML =
       '<div class="talent-bar">' +
         '<div class="talent-score">' +
           '<div class="points"><strong class="' + (spent > p ? 'over' : '') + '">' + (p - spent) + '</strong><span>points restants</span></div>' +
           '<div class="split"><strong>' + perTree.join(' / ') + '</strong><span>' + S.data.trees.map(function (t) { return esc(t.name_en); }).join(' · ') + '</span></div>' +
-          '<label class="level-picker">Niveau <select id="level-select" aria-label="Niveau du personnage">' + levelOptions.join('') + '</select></label>' +
+          '<label class="level-picker">Niveau <output id="level-value" for="level-select">' + S.level + '</output>' +
+          '<input type="range" id="level-select" min="' + LEVEL_MIN + '" max="' + T.MAX_LEVEL + '" step="1" value="' + S.level + '" aria-label="Niveau du personnage"></label>' +
         '</div>' +
         '<div class="talent-actions">' +
           '<label class="classic-toggle' + (S.showClassic ? ' is-on' : '') + '">' +
@@ -396,8 +398,19 @@
       var found = findTreeTalent(node.getAttribute('data-tree'), node.getAttribute('data-talent'));
       if (found) remove(found.tree, found.talent);
     });
+    // Le curseur de niveau ne touche que le score et le pied de page en glissant :
+    // reconstruire la barre à chaque évènement 'input' détruirait l'élément
+    // <input type="range"> en cours de glissement et couperait le geste.
+    root.addEventListener('input', function (e) {
+      if (e.target.id !== 'level-select') return;
+      S.level = Number(e.target.value);
+      var out = qs('#level-value'); if (out) out.textContent = S.level;
+      var ptsEl = qs('#mount-bar .points strong');
+      if (ptsEl) { var p = pool(), spent = spentTotal(); ptsEl.textContent = p - spent; ptsEl.className = spent > p ? 'over' : ''; }
+      renderFoot();
+    });
     root.addEventListener('change', function (e) {
-      if (e.target.id === 'level-select') { S.level = Number(e.target.value); afterPointsChange(); }
+      if (e.target.id === 'level-select') { S.level = Number(e.target.value); syncUrl(); renderBar(); renderFoot(); }
     });
     // survol (desktop uniquement) : mouseover/mouseout bubblent, contrairement à
     // mouseenter/mouseleave — on filtre nous-mêmes les entrées/sorties du bouton.

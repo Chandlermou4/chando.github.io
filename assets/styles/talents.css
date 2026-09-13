@@ -47,8 +47,26 @@
 .talent-score .points strong.over { color: #E8443C; }
 .talent-score .split strong { font: 500 20px/1.15 'Newsreader', Georgia, serif; color: var(--fg); display: block; letter-spacing: 1px; }
 .talent-score span { font-size: 9.5px; letter-spacing: 1.3px; color: var(--dim); text-transform: uppercase; }
-.level-picker { display: flex; align-items: center; gap: 8px; font-size: 9.5px; color: var(--dim); text-transform: uppercase; letter-spacing: 1.3px; }
-.level-picker select { background: transparent; color: var(--fg); border: 1px solid var(--hair); border-radius: 6px; padding: 7px 9px; font: 14px 'Hanken Grotesk', sans-serif; }
+.level-picker { display: flex; align-items: center; gap: 10px; font-size: 9.5px; color: var(--dim); text-transform: uppercase; letter-spacing: 1.3px; }
+.level-picker output { font: 500 20px/1 'Newsreader', Georgia, serif; color: var(--fg); text-transform: none; letter-spacing: 0; min-width: 1.6em; text-align: right; }
+.level-picker input[type="range"] {
+  -webkit-appearance: none; appearance: none; width: 150px; height: 18px; background: transparent; cursor: pointer;
+}
+.level-picker input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px; border-radius: 999px; background: var(--hair);
+}
+.level-picker input[type="range"]::-moz-range-track {
+  height: 4px; border-radius: 999px; background: var(--hair);
+}
+.level-picker input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; margin-top: -7px; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--accent); border: 2px solid #0C0D0B; box-shadow: 0 0 0 1px var(--accent);
+}
+.level-picker input[type="range"]::-moz-range-thumb {
+  width: 18px; height: 18px; border-radius: 50%; border: 2px solid #0C0D0B;
+  background: var(--accent); box-shadow: 0 0 0 1px var(--accent);
+}
+.level-picker input[type="range"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .talent-actions { display: flex; gap: 9px; flex-wrap: wrap; align-items: center; }
 
 .talent-actions .button { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; font: 600 13px 'Hanken Grotesk', sans-serif; border: 1px solid var(--hair); background: transparent; color: var(--fg); cursor: pointer; transition: border-color .18s, color .18s, background .18s; }
