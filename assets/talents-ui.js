@@ -12,9 +12,13 @@
   }
   function qs(sel) { return root.querySelector(sel); }
   function qsa(sel) { return Array.prototype.slice.call(root.querySelectorAll(sel)); }
-  // Le curseur descend un cran sous le niveau du premier point (10) pour pouvoir
-  // afficher 0 point disponible ; poolFor() vaut déjà 0 à ce niveau et en dessous.
-  var LEVEL_MIN = 9;
+  // Talent Legacy « Talented » (rang 1, arbre Aventure, Points Legacy — système distinct
+  // des arbres de classe) : premier point au niveau 9 au lieu de 10, sans changer le total
+  // de 51. Confirmé par deux relevés indépendants du panel Legacy de la BlizzCon 2026
+  // (classicwow.gg, wowforevertalents.com, contenu concordant). Rangs 2 à 5 non confirmés
+  // par ces sources : non modélisés. Le curseur descend jusque-là pour pouvoir l'afficher ;
+  // pool() applique le bon plancher selon que le talent est supposé pris ou non.
+  var LEGACY_MIN_LEVEL = T.MIN_LEVEL - 1;
 
   // ── État ─────────────────────────────────────────────────────────────────
   var params = new URLSearchParams(window.location.search);
@@ -31,6 +35,7 @@
     pinned: null,         // key — fiche épinglée (tactile)
     coarse: false,
     showClassic: false,
+    legacyTalented: false,
     message: '',
     copied: false,
     messageTimer: null
@@ -38,12 +43,18 @@
   (function restoreFromUrl() {
     var code = params.get('build');
     var lvl = Number(params.get('niveau'));
-    var start = (lvl >= LEVEL_MIN && lvl <= T.MAX_LEVEL) ? lvl : T.MAX_LEVEL;
+    var legacy = params.get('legacy') === '1';
+    var start = (lvl >= LEGACY_MIN_LEVEL && lvl <= T.MAX_LEVEL) ? lvl : T.MAX_LEVEL;
     S.level = start;
-    if (code) S.points = T.decodeBuild(S.data, code, T.poolFor(start));
+    S.legacyTalented = legacy;
+    if (code) S.points = T.decodeBuild(S.data, code, poolAt(start, legacy));
   })();
 
-  function pool() { return T.poolFor(S.level); }
+  function poolAt(level, legacyTalented) {
+    var floor = (legacyTalented ? LEGACY_MIN_LEVEL : T.MIN_LEVEL) - 1;
+    return Math.min(T.talentGrid.totalPoints, Math.max(0, level - floor));
+  }
+  function pool() { return poolAt(S.level, S.legacyTalented); }
   function spentTotal() { var n = 0; for (var k in S.points) n += S.points[k]; return n; }
   function perTreeCounts() { return S.data.trees.map(function (tree) { return T.treeSpent(tree, S.points); }); }
   function buildCode() { return T.encodeBuild(S.data, S.points); }
@@ -54,6 +65,7 @@
     var b = buildCode();
     if (b) q.set('build', b);
     if (S.level !== T.MAX_LEVEL) q.set('niveau', String(S.level));
+    if (S.legacyTalented) q.set('legacy', '1');
     var s = q.toString();
     window.history.replaceState(null, '', window.location.pathname + (s ? '?' + s : ''));
   }
@@ -163,9 +175,13 @@
           '<div class="points"><strong class="' + (spent > p ? 'over' : '') + '">' + (p - spent) + '</strong><span>points restants</span></div>' +
           '<div class="split"><strong>' + perTree.join(' / ') + '</strong><span>' + S.data.trees.map(function (t) { return esc(t.name_en); }).join(' · ') + '</span></div>' +
           '<label class="level-picker">Niveau <output id="level-value" for="level-select">' + S.level + '</output>' +
-          '<input type="range" id="level-select" min="' + LEVEL_MIN + '" max="' + T.MAX_LEVEL + '" step="1" value="' + S.level + '" aria-label="Niveau du personnage"></label>' +
+          '<input type="range" id="level-select" min="' + LEGACY_MIN_LEVEL + '" max="' + T.MAX_LEVEL + '" step="1" value="' + S.level + '" aria-label="Niveau du personnage"></label>' +
         '</div>' +
         '<div class="talent-actions">' +
+          '<label class="classic-toggle' + (S.legacyTalented ? ' is-on' : '') + '" title="Legacy · Aventure · Talented (rang 1) — confirmé par deux relevés indépendants du panel BlizzCon 2026 ; rangs 2 à 5 non modélisés, non confirmés.">' +
+            '<input type="checkbox" id="legacy-toggle-input"' + (S.legacyTalented ? ' checked' : '') + '>' +
+            '<span class="classic-toggle-track" aria-hidden="true"></span>Legacy : premier point au niveau 9' +
+          '</label>' +
           '<label class="classic-toggle' + (S.showClassic ? ' is-on' : '') + '">' +
             '<input type="checkbox" id="classic-toggle-input"' + (S.showClassic ? ' checked' : '') + '>' +
             '<span class="classic-toggle-track" aria-hidden="true"></span>Comparaison talents Classic' +
@@ -364,8 +380,10 @@
     mq.addEventListener('change', function () { syncCoarse(); renderTrees(); renderDetail(); });
 
     root.addEventListener('click', function (e) {
+      var legacyEl = e.target.closest('#legacy-toggle-input');
+      if (legacyEl) { S.legacyTalented = legacyEl.checked; syncUrl(); renderBar(); renderFoot(); return; }
       var toggleEl = e.target.closest('#classic-toggle-input');
-      if (toggleEl) { S.showClassic = toggleEl.checked; qs('.classic-toggle').classList.toggle('is-on', S.showClassic); renderDetail(); return; }
+      if (toggleEl) { S.showClassic = toggleEl.checked; toggleEl.closest('.classic-toggle').classList.toggle('is-on', S.showClassic); renderDetail(); return; }
       var resetAllBtn = e.target.closest('#reset-all'); if (resetAllBtn) { resetAll(); return; }
       var copyBtn = e.target.closest('#copy-link'); if (copyBtn) { copyLink(); return; }
       var resetTreeBtn = e.target.closest('[data-reset-tree]');
