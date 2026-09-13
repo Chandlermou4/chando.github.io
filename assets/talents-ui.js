@@ -12,13 +12,15 @@
   }
   function qs(sel) { return root.querySelector(sel); }
   function qsa(sel) { return Array.prototype.slice.call(root.querySelectorAll(sel)); }
-  // Talent Legacy « Talented » (rang 1, arbre Aventure, Points Legacy — système distinct
-  // des arbres de classe) : premier point au niveau 9 au lieu de 10, sans changer le total
-  // de 51. Confirmé par deux relevés indépendants du panel Legacy de la BlizzCon 2026
-  // (classicwow.gg, wowforevertalents.com, contenu concordant). Rangs 2 à 5 non confirmés
-  // par ces sources : non modélisés. Le curseur descend jusque-là pour pouvoir l'afficher ;
-  // pool() applique le bon plancher selon que le talent est supposé pris ou non.
-  var LEGACY_MIN_LEVEL = T.MIN_LEVEL - 1;
+  // Talent Legacy « Talented » (arbre Aventure, jusqu'à 5 rangs, Points Legacy — système
+  // distinct des arbres de classe). Rang 1 confirmé par deux relevés indépendants du panel
+  // Legacy de la BlizzCon 2026 (classicwow.gg, wowforevertalents.com, contenu concordant) :
+  // premier point au niveau 9 au lieu de 10, sans changer le total de 51. Rangs 2 à 5 non
+  // confirmés par ces sources : la baisse d'un niveau par rang supplémentaire (jusqu'au
+  // niveau 5 au rang 5) est une extrapolation, signalée comme telle avec le repère ≈ déjà
+  // utilisé ailleurs pour les rangs de talent estimés.
+  var LEGACY_MAX_RANK = 5;
+  var LEGACY_MIN_LEVEL = T.MIN_LEVEL - LEGACY_MAX_RANK;
 
   // ── État ─────────────────────────────────────────────────────────────────
   var params = new URLSearchParams(window.location.search);
@@ -35,7 +37,7 @@
     pinned: null,         // key — fiche épinglée (tactile)
     coarse: false,
     showClassic: false,
-    legacyTalented: false,
+    legacyRank: 0,
     message: '',
     copied: false,
     messageTimer: null
@@ -43,18 +45,18 @@
   (function restoreFromUrl() {
     var code = params.get('build');
     var lvl = Number(params.get('niveau'));
-    var legacy = params.get('legacy') === '1';
+    var legacy = Math.min(LEGACY_MAX_RANK, Math.max(0, Number(params.get('legacy')) || 0));
     var start = (lvl >= LEGACY_MIN_LEVEL && lvl <= T.MAX_LEVEL) ? lvl : T.MAX_LEVEL;
     S.level = start;
-    S.legacyTalented = legacy;
+    S.legacyRank = legacy;
     if (code) S.points = T.decodeBuild(S.data, code, poolAt(start, legacy));
   })();
 
-  function poolAt(level, legacyTalented) {
-    var floor = (legacyTalented ? LEGACY_MIN_LEVEL : T.MIN_LEVEL) - 1;
+  function poolAt(level, legacyRank) {
+    var floor = T.MIN_LEVEL - 1 - legacyRank;
     return Math.min(T.talentGrid.totalPoints, Math.max(0, level - floor));
   }
-  function pool() { return poolAt(S.level, S.legacyTalented); }
+  function pool() { return poolAt(S.level, S.legacyRank); }
   function spentTotal() { var n = 0; for (var k in S.points) n += S.points[k]; return n; }
   function perTreeCounts() { return S.data.trees.map(function (tree) { return T.treeSpent(tree, S.points); }); }
   function buildCode() { return T.encodeBuild(S.data, S.points); }
@@ -65,7 +67,7 @@
     var b = buildCode();
     if (b) q.set('build', b);
     if (S.level !== T.MAX_LEVEL) q.set('niveau', String(S.level));
-    if (S.legacyTalented) q.set('legacy', '1');
+    if (S.legacyRank) q.set('legacy', String(S.legacyRank));
     var s = q.toString();
     window.history.replaceState(null, '', window.location.pathname + (s ? '?' + s : ''));
   }
@@ -176,12 +178,11 @@
           '<div class="split"><strong>' + perTree.join(' / ') + '</strong><span>' + S.data.trees.map(function (t) { return esc(t.name_en); }).join(' · ') + '</span></div>' +
           '<label class="level-picker">Niveau <output id="level-value" for="level-select">' + S.level + '</output>' +
           '<input type="range" id="level-select" min="' + LEGACY_MIN_LEVEL + '" max="' + T.MAX_LEVEL + '" step="1" value="' + S.level + '" aria-label="Niveau du personnage"></label>' +
+          '<label class="level-picker" title="Legacy · Aventure · Talented — dépensé en Points Legacy, indépendant des arbres de classe. Rang 1 (niveau 9) confirmé par deux relevés indépendants du panel BlizzCon 2026 ; rangs 2 à 5 estimés par extrapolation, non confirmés.">' +
+          'Legacy <output id="legacy-value" for="legacy-select">' + S.legacyRank + (S.legacyRank > 1 ? '<span class="legacy-guess"> ≈</span>' : '') + '</output>' +
+          '<input type="range" id="legacy-select" min="0" max="' + LEGACY_MAX_RANK + '" step="1" value="' + S.legacyRank + '" aria-label="Rang du talent Legacy Talented"></label>' +
         '</div>' +
         '<div class="talent-actions">' +
-          '<label class="classic-toggle' + (S.legacyTalented ? ' is-on' : '') + '" title="Legacy · Aventure · Talented (rang 1) — confirmé par deux relevés indépendants du panel BlizzCon 2026 ; rangs 2 à 5 non modélisés, non confirmés.">' +
-            '<input type="checkbox" id="legacy-toggle-input"' + (S.legacyTalented ? ' checked' : '') + '>' +
-            '<span class="classic-toggle-track" aria-hidden="true"></span>Legacy : premier point au niveau 9' +
-          '</label>' +
           '<label class="classic-toggle' + (S.showClassic ? ' is-on' : '') + '">' +
             '<input type="checkbox" id="classic-toggle-input"' + (S.showClassic ? ' checked' : '') + '>' +
             '<span class="classic-toggle-track" aria-hidden="true"></span>Comparaison talents Classic' +
@@ -380,8 +381,6 @@
     mq.addEventListener('change', function () { syncCoarse(); renderTrees(); renderDetail(); });
 
     root.addEventListener('click', function (e) {
-      var legacyEl = e.target.closest('#legacy-toggle-input');
-      if (legacyEl) { S.legacyTalented = legacyEl.checked; syncUrl(); renderBar(); renderFoot(); return; }
       var toggleEl = e.target.closest('#classic-toggle-input');
       if (toggleEl) { S.showClassic = toggleEl.checked; toggleEl.closest('.classic-toggle').classList.toggle('is-on', S.showClassic); renderDetail(); return; }
       var resetAllBtn = e.target.closest('#reset-all'); if (resetAllBtn) { resetAll(); return; }
@@ -416,19 +415,29 @@
       var found = findTreeTalent(node.getAttribute('data-tree'), node.getAttribute('data-talent'));
       if (found) remove(found.tree, found.talent);
     });
-    // Le curseur de niveau ne touche que le score et le pied de page en glissant :
-    // reconstruire la barre à chaque évènement 'input' détruirait l'élément
-    // <input type="range"> en cours de glissement et couperait le geste.
-    root.addEventListener('input', function (e) {
-      if (e.target.id !== 'level-select') return;
-      S.level = Number(e.target.value);
-      var out = qs('#level-value'); if (out) out.textContent = S.level;
+    // Les curseurs de niveau et de rang Legacy ne touchent que le score et le pied de
+    // page en glissant : reconstruire la barre à chaque évènement 'input' détruirait
+    // l'élément <input type="range"> en cours de glissement et couperait le geste.
+    function patchPointsLive() {
       var ptsEl = qs('#mount-bar .points strong');
       if (ptsEl) { var p = pool(), spent = spentTotal(); ptsEl.textContent = p - spent; ptsEl.className = spent > p ? 'over' : ''; }
       renderFoot();
+    }
+    root.addEventListener('input', function (e) {
+      if (e.target.id === 'level-select') {
+        S.level = Number(e.target.value);
+        var out = qs('#level-value'); if (out) out.textContent = S.level;
+        patchPointsLive();
+      } else if (e.target.id === 'legacy-select') {
+        S.legacyRank = Number(e.target.value);
+        var lout = qs('#legacy-value');
+        if (lout) lout.innerHTML = S.legacyRank + (S.legacyRank > 1 ? '<span class="legacy-guess"> ≈</span>' : '');
+        patchPointsLive();
+      }
     });
     root.addEventListener('change', function (e) {
       if (e.target.id === 'level-select') { S.level = Number(e.target.value); syncUrl(); renderBar(); renderFoot(); }
+      else if (e.target.id === 'legacy-select') { S.legacyRank = Number(e.target.value); syncUrl(); renderBar(); renderFoot(); }
     });
     // survol (desktop uniquement) : mouseover/mouseout bubblent, contrairement à
     // mouseenter/mouseleave — on filtre nous-mêmes les entrées/sorties du bouton.

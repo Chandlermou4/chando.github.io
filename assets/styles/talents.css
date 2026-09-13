@@ -49,6 +49,7 @@
 .talent-score span { font-size: 9.5px; letter-spacing: 1.3px; color: var(--dim); text-transform: uppercase; }
 .level-picker { display: flex; align-items: center; gap: 10px; font-size: 9.5px; color: var(--dim); text-transform: uppercase; letter-spacing: 1.3px; }
 .level-picker output { font: 500 20px/1 'Newsreader', Georgia, serif; color: var(--fg); text-transform: none; letter-spacing: 0; min-width: 1.6em; text-align: right; }
+.level-picker .legacy-guess { color: var(--accent); text-transform: none; letter-spacing: 0; font-size: 12px; cursor: help; }
 .level-picker input[type="range"] {
   -webkit-appearance: none; appearance: none; width: 150px; height: 18px; background: transparent; cursor: pointer;
 }
