@@ -37,9 +37,12 @@ header{
 }
 header h1{font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:29px;letter-spacing:-.01em}
 header .eyebrow{font-size:11px;font-weight:600;letter-spacing:.24em;color:var(--dim);text-transform:uppercase}
-header .lede{color:var(--dim);font-size:13px;margin-left:auto;max-width:44ch}
-header .back{font-size:13px;color:var(--accent);text-decoration:none;font-weight:600;white-space:nowrap}
-header .back:hover{text-decoration:underline}
+
+.site-switch{display:flex;gap:18px;padding:14px 48px 0}
+.site-switch a{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-decoration:none}
+.site-switch a.is-here{color:var(--accent)}
+.site-switch a:hover{color:var(--fg)}
+@media(max-width:620px){.site-switch{padding:14px 24px 0}}
 
 main{flex:1;width:100%;max-width:1180px;margin:0 auto;padding:40px 48px 60px}
 
@@ -60,7 +63,6 @@ footer b{color:var(--fg);font-weight:600}
 
 @media(max-width:760px){
   header{padding:26px 24px 20px}
-  header .lede{margin-left:0;flex-basis:100%}
   main{padding:28px 24px 48px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -68,11 +70,14 @@ footer b{color:var(--fg);font-weight:600}
 </head>
 <body>
 
+<nav class="site-switch">
+  <a href="index.html">TBC</a>
+  <a href="talents.html" class="is-here">Forever</a>
+</nav>
+
 <header>
   <span class="eyebrow">WoW Forever · démo BlizzCon 2026</span>
   <h1>Calculateur de talents</h1>
-  <span class="lede">Hors-sujet TBC assumé — voir l’avertissement ci-dessous.</span>
-  <a class="back" href="index.html">← Strats de raid</a>
 </header>
 
 <main>
