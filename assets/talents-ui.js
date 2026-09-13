@@ -121,8 +121,11 @@
 
   function renderClassTabs() {
     return '<nav class="class-tabs">' + T.talentClasses.map(function (c) {
-      return '<a href="talents.html?classe=' + encodeURIComponent(c.slug) + '"' +
-        (c.slug === S.slug ? ' class="is-active" aria-current="page"' : '') + '>' + esc(c.name_fr) + '</a>';
+      var active = c.slug === S.slug;
+      return '<a href="talents.html?classe=' + encodeURIComponent(c.slug) + '" title="' + esc(c.name_fr) + '" aria-label="' + esc(c.name_fr) + '"' +
+        (active ? ' class="is-active" aria-current="page"' : '') + '>' +
+        (c.icon ? '<img src="' + esc(T.iconUrl(c.icon)) + '" alt="" loading="lazy" data-fallback="' + esc(T.monogram(c.name_en)) + '">' : esc(T.monogram(c.name_en))) +
+        '</a>';
     }).join('') + '</nav>';
   }
 
@@ -131,10 +134,9 @@
     var pct = Math.round(stats.observed / stats.total * 100);
     return '<div class="talent-provenance">' +
       '<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>' +
-      '<div><strong>Relevés communautaires, pas des données du jeu — et sans rapport avec TBC.</strong> ' +
+      '<div><strong>Relevés communautaires, pas des données du jeu.</strong> ' +
       esc(T.talentOrigin) + ' Icônes et illustrations d’arbre viennent du CDN public de Wowhead ; aucun de ces fichiers n’est copié dans le dépôt. ' +
-      'Pour cette classe, <strong>' + pct + ' %</strong> des textes de rang ont été lus dans la démonstration ; les autres sont extrapolés à partir du rang 1 et signalés par le repère ≈. ' +
-      'Ce calculateur vient d’un autre projet (WoW Forever FR) et ne décrit ni Burning Crusade ni aucune version jouable du jeu.</div></div>';
+      'Pour cette classe, <strong>' + pct + ' %</strong> des textes de rang ont été lus dans la démonstration ; les autres sont extrapolés à partir du rang 1 et signalés par le repère ≈.</div></div>';
   }
 
   function renderLegend() {
@@ -421,12 +423,12 @@
       if (node) leavePeek();
     });
     // repli monogramme si une icône Wowhead ne répond pas (capture : error/load
-    // ne bullent pas, la phase de capture les intercepte quand même)
+    // ne bullent pas, la phase de capture les intercepte quand même) — vaut pour
+    // les icônes de talent (span.node-icon) et les icônes de classe (a.class-tabs)
     root.addEventListener('error', function (e) {
       var img = e.target;
-      if (img && img.tagName === 'IMG' && img.parentElement && img.parentElement.classList.contains('node-icon')) {
-        var span = img.parentElement;
-        span.textContent = img.getAttribute('data-fallback') || '?';
+      if (img && img.tagName === 'IMG' && img.hasAttribute('data-fallback') && img.parentElement) {
+        img.parentElement.textContent = img.getAttribute('data-fallback') || '?';
       }
     }, true);
   }

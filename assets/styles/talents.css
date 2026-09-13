@@ -15,10 +15,13 @@
 .talent-tool { --icon: 52px; --trow: 76px; --tgap: 8px; --treepad: 15px; }
 
 /* ── Sélecteur de classe ─────────────────────────────────────────────────── */
-.class-tabs { display: flex; gap: 4px; flex-wrap: wrap; padding: 0 0 22px; margin-bottom: 22px; border-bottom: 1px solid var(--hair); }
-.class-tabs a { text-decoration: none; color: var(--dim); font-size: 13.5px; font-weight: 600; padding: 8px 14px; border-radius: 999px; transition: background .15s, color .15s; }
-.class-tabs a:hover { background: var(--accent-soft); color: var(--fg); }
-.class-tabs a.is-active { background: var(--accent); color: #0C0D0B; }
+.class-tabs { display: flex; gap: 10px; flex-wrap: wrap; padding: 0 0 22px; margin-bottom: 22px; border-bottom: 1px solid var(--hair); }
+.class-tabs a { display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 8px;
+  overflow: hidden; text-decoration: none; color: var(--dim); font: 700 13px/1 'Hanken Grotesk', sans-serif;
+  background: var(--accent-soft); box-shadow: 0 0 0 2px transparent; transition: box-shadow .15s, filter .15s; }
+.class-tabs a img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.class-tabs a:hover { filter: brightness(1.15); }
+.class-tabs a.is-active { box-shadow: 0 0 0 2px var(--accent); }
 
 /* ── Bandeau de provenance ───────────────────────────────────────────────── */
 .talent-provenance { margin: 0 0 18px; padding: 14px 18px; border: 1px solid var(--hair); border-radius: 10px; display: flex; gap: 11px; align-items: flex-start; color: var(--dim); font-size: 13px; line-height: 1.65; }

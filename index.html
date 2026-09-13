@@ -68,9 +68,10 @@ main{
   padding:4px 12px;opacity:.85}
 
 .site-switch{display:flex;gap:18px;padding:14px 48px 0}
-.site-switch a{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-decoration:none}
-.site-switch a.is-here{color:var(--accent)}
-.site-switch a:hover{color:var(--fg)}
+.site-switch a{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;opacity:.5;transition:opacity .15s}
+.site-switch a:hover,.site-switch a.is-here{opacity:1}
+.site-switch a.tbc{color:#62c907}
+.site-switch a.forever{color:#1d8dcd}
 @media(max-width:620px){.site-switch{padding:14px 24px 0}}
 
 footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
@@ -103,8 +104,8 @@ footer b{color:var(--fg);font-weight:600}
 <body>
 
 <nav class="site-switch">
-  <a href="index.html" class="is-here">TBC</a>
-  <a href="talents.html">Forever</a>
+  <a href="index.html" class="tbc is-here">TBC</a>
+  <a href="talents.html" class="forever">Forever</a>
 </nav>
 
 <header>
