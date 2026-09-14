@@ -146,16 +146,6 @@
     }).join('') + '</nav>';
   }
 
-  function renderProvenance() {
-    var stats = T.observationStats(S.data);
-    var pct = Math.round(stats.observed / stats.total * 100);
-    return '<div class="talent-provenance">' +
-      '<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>' +
-      '<div><strong>Relevés communautaires, pas des données du jeu.</strong> ' +
-      esc(T.talentOrigin) + ' Icônes et illustrations d’arbre viennent du CDN public de Wowhead ; aucun de ces fichiers n’est copié dans le dépôt. ' +
-      'Pour cette classe, <strong>' + pct + ' %</strong> des textes de rang ont été lus dans la démonstration ; les autres sont extrapolés à partir du rang 1 et signalés par le repère ≈.</div></div>';
-  }
-
   function renderLegend() {
     return '<div class="talent-legend">' +
       '<span><i class="open"></i> Disponible</span>' +
@@ -191,13 +181,6 @@
           '<button type="button" class="button gold" id="copy-link">' + (S.copied ? '✓ Lien copié' : '⛓ Copier le lien') + '</button>' +
         '</div>' +
       '</div>';
-  }
-
-  function renderHelp() {
-    return '<p class="talent-help">' +
-      'Clic pour ajouter un point, clic droit ou <kbd>Maj</kbd>+clic pour en retirer. ' +
-      'Une ligne s’ouvre tous les ' + T.talentGrid.pointsPerRow + ' points placés au-dessus d’elle, dans le même arbre. ' +
-      'Une flèche signale un talent à monter au maximum d’abord.</p>';
   }
 
   function renderNode(tree, t) {
@@ -344,8 +327,8 @@
   function renderShell() {
     root.className = 'talent-tool';
     root.innerHTML =
-      renderProvenance() + renderLegend() +
-      '<div id="mount-bar"></div>' + renderHelp() +
+      renderLegend() +
+      '<div id="mount-bar"></div>' +
       renderClassTabs() +
       '<div id="mount-trees"></div><div id="mount-detail"></div>' +
       '<div id="mount-status"></div><div id="mount-foot"></div>';
