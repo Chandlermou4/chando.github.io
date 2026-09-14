@@ -27,7 +27,7 @@ git push
 
 Voir `ARCHITECTURE.md`. En résumé :
 
-- `index.html` et les `<boss>.html` à la racine : pages statiques (markup seul).
+- `index.html` : porte d'entrée sobre, deux liens (TBC / Forever). `strats.html` et les `<boss>.html` à la racine : pages statiques (markup seul).
 - `assets/guide.js` : moteur partagé par tous les guides.
 - `assets/guide.css` : tronc commun de style, partagé par tous les guides.
 - `data/bosses/<boss>.js` : étapes et placement de chaque boss.

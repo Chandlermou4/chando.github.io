@@ -5,7 +5,8 @@ publié.
 
 ## Fichiers
 
-- `index.html` : page d'accueil, guides classés par phase.
+- `index.html` : porte d'entrée, deux liens vers `strats.html` et `talents.html`.
+- `strats.html` : liste des guides, classés par phase.
 - `<boss>.html` (racine) : une page par boss. Uniquement du markup + deux
   `<link>` de style + deux `<script src>`. Aucun script inline.
 - `assets/guide.js` : moteur commun à tous les guides — navigation clavier,
