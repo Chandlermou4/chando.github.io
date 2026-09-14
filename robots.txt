@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chando.pages.dev/sitemap.xml
