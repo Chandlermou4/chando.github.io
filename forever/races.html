@@ -16,11 +16,15 @@
   --bg:#0C0D0B;--fg:#E7E4DA;--dim:#9AA09B;
   --hair:rgba(231,228,218,.14);
   --accent:#8FBDAE;--accent-soft:rgba(143,189,174,.14);
+  --alliance:#3B8EDE;--alliance-soft:rgba(59,142,222,.16);
+  --horde:#D9433D;--horde-soft:rgba(217,67,61,.16);
 }
 :root[data-theme="light"]{
   --bg:#F7F4EE;--fg:#20232A;--dim:#6C7178;
   --hair:rgba(30,34,42,.14);
   --accent:#3E6B5E;--accent-soft:rgba(62,107,94,.12);
+  --alliance:#2A5C99;--alliance-soft:rgba(42,92,153,.12);
+  --horde:#A93129;--horde-soft:rgba(169,49,41,.12);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{
@@ -54,6 +58,10 @@ main h2{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:22px;ma
 main h2:first-child{margin-top:0}
 main h3{font-family:'Newsreader',Georgia,serif;font-weight:600;font-size:18px;margin:34px 0 12px;color:var(--fg);display:flex;align-items:center;gap:12px;background:var(--accent-soft);padding:10px 16px;border-radius:10px}
 .race-ico{width:36px;height:36px;border-radius:50%;border:2px solid var(--accent);flex:none;object-fit:cover}
+main h3.h-alliance{background:var(--alliance-soft)}
+main h3.h-alliance .race-ico{border-color:var(--alliance)}
+main h3.h-horde{background:var(--horde-soft)}
+main h3.h-horde .race-ico{border-color:var(--horde)}
 main .lede{color:var(--dim);font-size:14.5px;max-width:62ch;margin-bottom:8px}
 main p{max-width:66ch}
 main p+p{margin-top:10px}
@@ -136,7 +144,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <h2>Combinaisons race-classe</h2>
 <p class="tree-desc">Nouvelles cases ouvertes par rapport à Classic, marquées « Nouveau ».</p>
 
-<h3>Alliance</h3>
+<h3 class="h-alliance">Alliance</h3>
 <div class="combo-wrap">
 <table class="combo">
   <tr>
@@ -159,7 +167,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 </table>
 </div>
 
-<h3>Horde</h3>
+<h3 class="h-horde">Horde</h3>
 <div class="combo-wrap">
 <table class="combo">
   <tr>
@@ -185,7 +193,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <h2>Changements de raciaux</h2>
 <p class="tree-desc">Certains raciaux Classic sont inchangés, d'autres modifiés, remplacés ou entièrement nouveaux.</p>
 
-<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_human_male.jpg" alt="">Humain</h3>
+<h3 class="h-alliance"><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_human_male.jpg" alt="">Humain</h3>
 <p class="tree-desc">Raciaux Classic retirés : Diplomatie, Spécialisation : masses.</p>
 <div class="tree-block">
   <div class="perk">
@@ -210,7 +218,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_dwarf_male.jpg" alt="">Nain</h3>
+<h3 class="h-alliance"><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_dwarf_male.jpg" alt="">Nain</h3>
 <p class="tree-desc">Raciaux Classic retirés : Résistance au givre, Spécialisation : armes à feu.</p>
 <div class="tree-block">
   <div class="perk">
@@ -235,7 +243,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_nightelf_male.jpg" alt="">Elfe de la nuit</h3>
+<h3 class="h-alliance"><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_nightelf_male.jpg" alt="">Elfe de la nuit</h3>
 <p class="tree-desc">Raciaux Classic retirés : Résistance à la nature.</p>
 <div class="tree-block">
   <div class="perk">
@@ -260,7 +268,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_gnome_male.jpg" alt="">Gnome</h3>
+<h3 class="h-alliance"><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_gnome_male.jpg" alt="">Gnome</h3>
 <p class="tree-desc">Raciaux Classic retirés : Résistance aux arcanes.</p>
 <div class="tree-block">
   <div class="perk">
@@ -285,7 +293,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_orc_male.jpg" alt="">Orc</h3>
+<h3 class="h-horde"><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_orc_male.jpg" alt="">Orc</h3>
 <p class="tree-desc">Raciaux Classic retirés : Autorité.</p>
 <div class="tree-block">
   <div class="perk">
@@ -310,7 +318,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_undead_male.jpg" alt="">Mort-vivant</h3>
+<h3 class="h-horde"><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_undead_male.jpg" alt="">Mort-vivant</h3>
 <p class="tree-desc">Raciaux Classic retirés : Résistance à l'ombre.</p>
 <div class="tree-block">
   <div class="perk">
@@ -335,7 +343,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_tauren_male.jpg" alt="">Tauren</h3>
+<h3 class="h-horde"><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_tauren_male.jpg" alt="">Tauren</h3>
 <p class="tree-desc">Raciaux Classic retirés : Résistance à la nature.</p>
 <div class="tree-block">
   <div class="perk">
@@ -360,7 +368,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_troll_male.jpg" alt="">Troll</h3>
+<h3 class="h-horde"><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_troll_male.jpg" alt="">Troll</h3>
 <p class="tree-desc">Raciaux Classic retirés : Spécialisation : arcs.</p>
 <div class="tree-block">
   <div class="perk">
@@ -388,7 +396,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <h2>Nouvelle race : Skyborne</h2>
 <p class="tree-desc">Peut rejoindre l'Alliance ou la Horde ; la faction choisie détermine l'accès au Mage (Alliance) ou au Chaman (Horde). Deux variantes relevées à la démo, avec des raciaux légèrement différents.</p>
 
-<h3>Skyborne — Ordre supérieur <span style="font-weight:400;color:var(--dim);font-size:13px">(Alliance)</span></h3>
+<h3 class="h-alliance">Skyborne — Ordre supérieur <span style="font-weight:400;color:var(--dim);font-size:13px">(Alliance)</span></h3>
 <div class="tree-block">
   <div class="perk">
     <div class="perk-name">Marche aérienne<span class="en">Walk on Air</span></div>
@@ -412,7 +420,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3>Skyborne — Faiseur de vent <span style="font-weight:400;color:var(--dim);font-size:13px">(Horde)</span></h3>
+<h3 class="h-horde">Skyborne — Faiseur de vent <span style="font-weight:400;color:var(--dim);font-size:13px">(Horde)</span></h3>
 <div class="tree-block">
   <div class="perk">
     <div class="perk-name">Marche aérienne<span class="en">Walk on Air</span></div>
