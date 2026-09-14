@@ -18,6 +18,7 @@
   --accent:#8FBDAE;--accent-soft:rgba(143,189,174,.14);
   --alliance:#3B8EDE;--alliance-soft:rgba(59,142,222,.16);
   --horde:#D9433D;--horde-soft:rgba(217,67,61,.16);
+  --changed:#d99a5b;
 }
 :root[data-theme="light"]{
   --bg:#F7F4EE;--fg:#20232A;--dim:#6C7178;
@@ -25,6 +26,7 @@
   --accent:#3E6B5E;--accent-soft:rgba(62,107,94,.12);
   --alliance:#2A5C99;--alliance-soft:rgba(42,92,153,.12);
   --horde:#A93129;--horde-soft:rgba(169,49,41,.12);
+  --changed:#9a5f22;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{
@@ -78,6 +80,8 @@ main p+p{margin-top:10px}
 .perk-name img.ico{width:20px;height:20px;border-radius:4px;vertical-align:middle;margin-right:8px;border:1px solid var(--hair)}
 .perk-name .en{font-weight:400;font-style:italic;color:var(--dim);font-size:12px;margin-left:8px}
 .perk-ranks{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);white-space:nowrap;align-self:start;padding-top:2px}
+.perk-ranks .tag-new{color:#1d8dcd;font-weight:700}
+.perk-ranks .tag-changed{color:var(--changed);font-weight:700}
 .perk-effect{grid-column:1/-1;font-size:13.5px;color:var(--dim);margin-top:2px;max-width:66ch}
 
 .combo-wrap{overflow-x:auto;margin-top:14px}
@@ -198,7 +202,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <div class="tree-block">
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/spell_shadow_charm.jpg" alt="">Volonté de survie<span class="en">Will to Survive</span></div>
-    <div class="perk-ranks">Nouveau</div>
+    <div class="perk-ranks"><span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Retire les effets d'étourdissement.</div>
   </div>
   <div class="perk">
@@ -208,7 +212,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/ability_meleedamage.jpg" alt="">Spécialisation : épées<span class="en">Sword Specialization</span></div>
-    <div class="perk-ranks">Passif · Modifié</div>
+    <div class="perk-ranks">Passif · <span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">En maniant une épée, augmente de 2% les chances de coup critique avec les sorts et techniques.</div>
   </div>
   <div class="perk">
@@ -223,7 +227,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <div class="tree-block">
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unholystrength.jpg" alt="">Forme de pierre<span class="en">Stoneform</span></div>
-    <div class="perk-ranks">Modifié</div>
+    <div class="perk-ranks"><span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Retire les saignements, poisons et maladies, et réduit les dégâts physiques subis pendant 8 sec.</div>
   </div>
   <div class="perk">
@@ -233,12 +237,12 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/inv_hammer_05.jpg" alt="">Spécialisation : masses<span class="en">Mace Specialization</span></div>
-    <div class="perk-ranks">Passif · Nouveau</div>
+    <div class="perk-ranks">Passif · <span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">En maniant une masse, augmente de 1% les chances de coup critique avec les sorts et techniques.</div>
   </div>
   <div class="perk">
     <div class="perk-name">Chasseur de gros gibier<span class="en">Big Game Hunter</span></div>
-    <div class="perk-ranks">Passif · Nouveau</div>
+    <div class="perk-ranks">Passif · <span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Augmente de 5% les dégâts infligés aux bêtes.</div>
   </div>
 </div>
@@ -248,17 +252,17 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <div class="tree-block">
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/spell_holy_elunesgrace.jpg" alt="">Lumière d'Elune<span class="en">Elune's Light</span></div>
-    <div class="perk-ranks">Nouveau</div>
+    <div class="perk-ranks"><span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Augmente les chances de coup critique de 10% pendant 15 sec.</div>
   </div>
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/ability_ambush.jpg" alt="">Fondu dans l'ombre<span class="en">Shadowmeld</span></div>
-    <div class="perk-ranks">Modifié</div>
+    <div class="perk-ranks"><span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Passez en Furtivité tant que vous restez immobile.</div>
   </div>
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/ability_racial_shadowmeld.jpg" alt="">Célérité<span class="en">Quickness</span></div>
-    <div class="perk-ranks">Passif · Modifié</div>
+    <div class="perk-ranks">Passif · <span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Augmente l'esquive de 1% et la vitesse de déplacement de 2%.</div>
   </div>
   <div class="perk">
@@ -273,22 +277,22 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <div class="tree-block">
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/ability_rogue_trip.jpg" alt="">Numéro d'évasion<span class="en">Escape Artist</span></div>
-    <div class="perk-ranks">Modifié</div>
+    <div class="perk-ranks"><span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Immunité brève aux racines et entraves.</div>
   </div>
   <div class="perk">
     <div class="perk-name">Eurêka !<span class="en">Eureka!</span></div>
-    <div class="perk-ranks">Nouveau</div>
+    <div class="perk-ranks"><span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Réduit le coût et augmente les dégâts ou soins de 10% sur vos 3 prochains sorts ou techniques.</div>
   </div>
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/inv_enchant_essenceeternallarge.jpg" alt="">Esprit expansif<span class="en">Expansive Mind</span></div>
-    <div class="perk-ranks">Passif · Modifié</div>
+    <div class="perk-ranks">Passif · <span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Augmente le mana, la rage ou l'énergie maximum de 5%.</div>
   </div>
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_gear_01.jpg" alt="">Spécialisation : ingénierie<span class="en">Engineering Specialization</span></div>
-    <div class="perk-ranks">Passif · Modifié</div>
+    <div class="perk-ranks">Passif · <span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Vos gadgets d'ingénierie sont plus fiables.</div>
   </div>
 </div>
@@ -298,22 +302,22 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <div class="tree-block">
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/racial_orc_berserkerstrength.jpg" alt="">Furie sanguinaire<span class="en">Blood Fury</span></div>
-    <div class="perk-ranks">Modifié</div>
+    <div class="perk-ranks"><span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Augmente la puissance d'attaque et la puissance des sorts de 10% pendant 15 sec.</div>
   </div>
   <div class="perk">
     <div class="perk-name">Brise-malédiction<span class="en">Shatter Curse</span></div>
-    <div class="perk-ranks">Nouveau</div>
+    <div class="perk-ranks"><span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Immunité aux malédictions, et réduction des dégâts magiques subis pendant 8 sec.</div>
   </div>
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/inv_axe_02.jpg" alt="">Spécialisation : haches<span class="en">Axe Specialization</span></div>
-    <div class="perk-ranks">Passif · Modifié</div>
+    <div class="perk-ranks">Passif · <span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">En maniant une hache, augmente de 1% les chances de coup critique avec les sorts et techniques.</div>
   </div>
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/inv_helmet_23.jpg" alt="">Robustesse<span class="en">Hardiness</span></div>
-    <div class="perk-ranks">Passif · Modifié</div>
+    <div class="perk-ranks">Passif · <span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Réduit la durée des étourdissements de 20%.</div>
   </div>
 </div>
@@ -323,12 +327,12 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <div class="tree-block">
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/spell_shadow_raisedead.jpg" alt="">Volonté des Réprouvés<span class="en">Will of the Forsaken</span></div>
-    <div class="perk-ranks">Modifié</div>
+    <div class="perk-ranks"><span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Retire Charme, Peur et Sommeil.</div>
   </div>
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/ability_racial_cannibalize.jpg" alt="">Cannibaliser<span class="en">Cannibalize</span></div>
-    <div class="perk-ranks">Modifié</div>
+    <div class="perk-ranks"><span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Consommez des cadavres pour régénérer 35% de vos points de vie et de mana au fil du temps.</div>
   </div>
   <div class="perk">
@@ -338,7 +342,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/spell_shadow_fingerofdeath.jpg" alt="">Toucher de la tombe<span class="en">Touch of the Grave</span></div>
-    <div class="perk-ranks">Passif · Nouveau</div>
+    <div class="perk-ranks">Passif · <span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Vos attaques drainent parfois un peu de vie.</div>
   </div>
 </div>
@@ -353,17 +357,17 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_flower_01.jpg" alt="">Culture<span class="en">Cultivation</span></div>
-    <div class="perk-ranks">Modifié</div>
+    <div class="perk-ranks"><span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Faites pousser des herbes bonus, sans besoin d'Herboristerie.</div>
   </div>
   <div class="perk">
     <div class="perk-name">Course des plaines<span class="en">Plainsrunning</span></div>
-    <div class="perk-ranks">Passif · Nouveau</div>
+    <div class="perk-ranks">Passif · <span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Augmente la vitesse de déplacement plus vous restez en mouvement.</div>
   </div>
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/spell_nature_unyeildingstamina.jpg" alt="">Endurance<span class="en">Endurance</span></div>
-    <div class="perk-ranks">Passif · Modifié</div>
+    <div class="perk-ranks">Passif · <span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Augmente les points de vie totaux de 5% et les chances de toucher de 1%.</div>
   </div>
 </div>
@@ -373,12 +377,12 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <div class="tree-block">
   <div class="perk">
     <div class="perk-name"><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/racial_troll_berserk.jpg" alt="">Berserk<span class="en">Berserking</span></div>
-    <div class="perk-ranks">Modifié</div>
+    <div class="perk-ranks"><span class="tag-changed">Modifié</span></div>
     <div class="perk-effect">Augmente la vitesse d'attaque et d'incantation de 10% pendant 10 sec.</div>
   </div>
   <div class="perk">
     <div class="perk-name">Régénération rapide<span class="en">Rapid Regeneration</span></div>
-    <div class="perk-ranks">Nouveau</div>
+    <div class="perk-ranks"><span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Régénère 50% des points de vie maximum au fil du temps.</div>
   </div>
   <div class="perk">
@@ -400,22 +404,22 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <div class="tree-block">
   <div class="perk">
     <div class="perk-name">Marche aérienne<span class="en">Walk on Air</span></div>
-    <div class="perk-ranks">Nouveau</div>
+    <div class="perk-ranks"><span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Planez lentement en descendant pendant 10 sec.</div>
   </div>
   <div class="perk">
     <div class="perk-name">Lire la ligne tellurique<span class="en">Read Ley Line</span></div>
-    <div class="perk-ranks">Nouveau</div>
+    <div class="perk-ranks"><span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Activez une ligne tellurique pour augmenter de 100% la régénération de vie et de mana.</div>
   </div>
   <div class="perk">
     <div class="perk-name">Béni du vent<span class="en">Wind Blessed</span></div>
-    <div class="perk-ranks">Passif · Nouveau</div>
+    <div class="perk-ranks">Passif · <span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Augmente la hâte de mêlée, à distance et d'incantation de 1%.</div>
   </div>
   <div class="perk">
     <div class="perk-name">Perspicacité élémentaire<span class="en">Elemental Insight</span></div>
-    <div class="perk-ranks">Passif · Nouveau</div>
+    <div class="perk-ranks">Passif · <span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Augmente de 5% les dégâts infligés aux élémentaires.</div>
   </div>
 </div>
@@ -424,22 +428,22 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <div class="tree-block">
   <div class="perk">
     <div class="perk-name">Marche aérienne<span class="en">Walk on Air</span></div>
-    <div class="perk-ranks">Nouveau</div>
+    <div class="perk-ranks"><span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Planez lentement en descendant pendant 10 sec.</div>
   </div>
   <div class="perk">
     <div class="perk-name">Vue du ciel<span class="en">Skysight</span></div>
-    <div class="perk-ranks">Nouveau</div>
+    <div class="perk-ranks"><span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Recevez une bénédiction élémentaire augmentant la vitesse de déplacement de 10%.</div>
   </div>
   <div class="perk">
     <div class="perk-name">Béni du vent<span class="en">Wind Blessed</span></div>
-    <div class="perk-ranks">Passif · Nouveau</div>
+    <div class="perk-ranks">Passif · <span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Augmente la hâte de mêlée, à distance et d'incantation de 1%.</div>
   </div>
   <div class="perk">
     <div class="perk-name">Perspicacité élémentaire<span class="en">Elemental Insight</span></div>
-    <div class="perk-ranks">Passif · Nouveau</div>
+    <div class="perk-ranks">Passif · <span class="tag-new">Nouveau</span></div>
     <div class="perk-effect">Augmente de 5% les dégâts infligés aux élémentaires.</div>
   </div>
 </div>
