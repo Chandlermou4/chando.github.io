@@ -30,8 +30,9 @@ Voir `ARCHITECTURE.md`. En résumé :
 - `index.html` : porte d'entrée sobre, deux liens (TBC / Forever).
 - `tbc/` : tout le contenu TBC — `strats.html` (liste des guides) et un
   `<boss>.html` par boss. `chando.pages.dev/tbc/…`
-- `forever/` : tout le contenu Forever — `talents.html` (calculateur) pour
-  l'instant. `chando.pages.dev/forever/…`
+- `forever/` : tout le contenu Forever — `talents.html` (calculateur) et
+  `legacy.html` (résumé des Points Legacy) pour l'instant.
+  `chando.pages.dev/forever/…`
 - `assets/`, `data/` : partagés entre les deux sections, restent à la racine.
   Toutes les pages y font référence par chemin **absolu** (`/assets/…`,
   `/data/…`), jamais relatif — une page à n'importe quelle profondeur

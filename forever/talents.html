@@ -44,6 +44,12 @@ header h1{font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:29px;
 .site-switch a.forever{color:#1d8dcd}
 @media(max-width:620px){.site-switch{padding:14px 24px 0}}
 
+.section-nav{display:flex;gap:22px;padding:16px 48px 0}
+.section-nav a{font-size:13px;font-weight:600;text-decoration:none;color:var(--dim);padding-bottom:4px;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.section-nav a:hover{color:var(--fg)}
+.section-nav a.is-here{color:var(--fg);border-color:#1d8dcd}
+@media(max-width:620px){.section-nav{padding:14px 24px 0}}
+
 main{flex:1;width:100%;max-width:1180px;margin:0 auto;padding:40px 48px 60px}
 
 footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
@@ -77,6 +83,11 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <header>
   <h1>Calculateur de talents</h1>
 </header>
+
+<nav class="section-nav">
+  <a href="/forever/talents.html" class="is-here">Calculateur de talents</a>
+  <a href="/forever/legacy.html">Points Legacy</a>
+</nav>
 
 <main>
   <div id="talent-page"></div>

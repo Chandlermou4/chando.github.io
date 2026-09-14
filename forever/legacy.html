@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Points Legacy — WoW Forever (démo)</title>
+<script>
+  try{var t=localStorage.getItem('guide-theme');
+    if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0C0D0B;--fg:#E7E4DA;--dim:#9AA09B;
+  --hair:rgba(231,228,218,.14);
+  --accent:#8FBDAE;--accent-soft:rgba(143,189,174,.14);
+  --warn:#d99a5b;--warn-soft:rgba(217,154,91,.12);
+}
+:root[data-theme="light"]{
+  --bg:#F7F4EE;--fg:#20232A;--dim:#6C7178;
+  --hair:rgba(30,34,42,.14);
+  --accent:#3E6B5E;--accent-soft:rgba(62,107,94,.12);
+  --warn:#9a5f22;--warn-soft:rgba(154,95,34,.1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--bg);color:var(--fg);font-family:'Hanken Grotesk',system-ui,sans-serif;
+  line-height:1.55;min-height:100vh;display:flex;flex-direction:column;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+header{
+  padding:34px 48px 22px;display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;
+  border-bottom:1px solid var(--hair);
+}
+header h1{font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:29px;letter-spacing:-.01em}
+header .eyebrow{font-size:11px;font-weight:600;letter-spacing:.24em;color:var(--dim);text-transform:uppercase}
+
+.site-switch{display:flex;gap:18px;padding:14px 48px 0}
+.site-switch a{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;opacity:.5;transition:opacity .15s}
+.site-switch a:hover,.site-switch a.is-here{opacity:1}
+.site-switch a.tbc{color:#62c907}
+.site-switch a.forever{color:#1d8dcd}
+@media(max-width:620px){.site-switch{padding:14px 24px 0}}
+
+.section-nav{display:flex;gap:22px;padding:16px 48px 0}
+.section-nav a{font-size:13px;font-weight:600;text-decoration:none;color:var(--dim);padding-bottom:4px;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.section-nav a:hover{color:var(--fg)}
+.section-nav a.is-here{color:var(--fg);border-color:#1d8dcd}
+@media(max-width:620px){.section-nav{padding:14px 24px 0}}
+
+main{flex:1;width:100%;max-width:860px;margin:0 auto;padding:36px 48px 64px}
+main h2{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:22px;margin:40px 0 6px;color:#1d8dcd}
+main h2:first-child{margin-top:0}
+main .lede{color:var(--dim);font-size:14.5px;max-width:62ch;margin-bottom:8px}
+main p{max-width:66ch}
+main p+p{margin-top:10px}
+
+.notice{display:flex;gap:12px;padding:14px 18px;border:1px solid var(--hair);border-radius:10px;margin:18px 0 30px;font-size:13.5px;color:var(--dim)}
+.notice strong{color:var(--fg)}
+.notice svg{flex:none;margin-top:2px;color:#1d8dcd}
+
+.mechanics{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}
+.mechanics li{display:flex;gap:12px;font-size:14px;line-height:1.5}
+.mechanics li b{flex:none;width:1.6em;color:#1d8dcd;font-family:'Newsreader',Georgia,serif;font-size:17px}
+
+.tree-block{margin-top:8px}
+.tree-block .tree-desc{color:var(--dim);font-size:13.5px;margin-bottom:16px}
+.perk{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:14px 0;border-top:1px solid var(--hair)}
+.perk:last-child{padding-bottom:0}
+.perk-name{font-weight:600;font-size:14.5px}
+.perk-name .en{font-weight:400;font-style:italic;color:var(--dim);font-size:12px;margin-left:8px}
+.perk-ranks{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);white-space:nowrap;align-self:start;padding-top:2px}
+.perk-effect{grid-column:1/-1;font-size:13.5px;color:var(--dim);margin-top:2px;max-width:66ch}
+.perk-flag{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;letter-spacing:.04em;color:var(--warn);background:var(--warn-soft);border-radius:999px;padding:2px 8px;margin-left:8px;vertical-align:middle}
+.perk.placeholder .perk-name{color:var(--dim);font-weight:400;font-style:italic}
+
+.rewards{width:100%;border-collapse:collapse;margin-top:14px;font-size:13.5px}
+.rewards th{text-align:left;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);font-weight:600;padding:0 12px 8px 0;border-bottom:1px solid var(--hair)}
+.rewards td{padding:10px 12px 10px 0;border-bottom:1px solid var(--hair)}
+.rewards td:first-child{font-family:'Newsreader',Georgia,serif;font-size:16px;color:#1d8dcd;white-space:nowrap}
+
+.sources{margin-top:44px;padding-top:18px;border-top:1px solid var(--hair);font-size:12.5px;color:var(--dim)}
+.sources a{color:#1d8dcd;text-decoration:underline;text-underline-offset:2px}
+.sources ul{margin:8px 0 0;padding-left:18px}
+.sources li+li{margin-top:4px}
+
+footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
+  font-size:11.5px;letter-spacing:.02em;
+  display:flex;flex-direction:column;align-items:center;gap:8px}
+.feedback{display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+  color:#5865F2;font-size:14px;font-weight:600;letter-spacing:.01em;transition:color .18s}
+.feedback:hover{color:#7B87FF}
+.feedback svg{width:20px;height:20px;flex:none}
+
+#themetoggle{position:fixed;right:24px;bottom:24px;z-index:98;
+  font-family:'Hanken Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:.08em;
+  color:var(--fg);background:transparent;border:1px solid var(--hair);
+  padding:8px 14px;border-radius:999px;cursor:pointer;transition:border-color .2s}
+#themetoggle:hover{border-color:var(--accent)}
+
+@media(max-width:760px){
+  header{padding:26px 24px 20px}
+  main{padding:28px 24px 48px}
+  .perk{grid-template-columns:1fr}
+  .perk-ranks{padding-top:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<nav class="site-switch">
+  <a href="/tbc/strats.html" class="tbc">TBC</a>
+  <a href="/forever/talents.html" class="forever is-here">Forever</a>
+</nav>
+
+<header>
+  <span class="eyebrow">WoW Forever · démo BlizzCon 2026</span>
+  <h1>Points Legacy</h1>
+</header>
+
+<nav class="section-nav">
+  <a href="/forever/talents.html">Calculateur de talents</a>
+  <a href="/forever/legacy.html" class="is-here">Points Legacy</a>
+</nav>
+
+<main>
+
+<p class="lede">Legacy est un système de progression compte, distinct des arbres de talent de classe : on y gagne des points en jouant normalement, à dépenser dans des bonus permanents.</p>
+
+<div class="notice">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+  <div><strong>Relevé communautaire, pas des données du jeu.</strong> Le système Legacy n'a été montré qu'à la démo BlizzCon 2026 ; aucun client français n'existe encore, toutes les traductions ci-dessous sont éditoriales. Sources et écarts entre relevés détaillés en bas de page.</div>
+</div>
+
+<h2>Comment ça marche</h2>
+<ul class="mechanics">
+  <li><b>1</b> Vous gagnez des Points Legacy en accomplissant des défis Legacy pendant que vous jouez normalement — par exemple atteindre un certain niveau avec une classe, ou un certain palier dans un métier.</li>
+  <li><b>2</b> Les points gagnés sont partagés entre tous vos personnages, mais chacun les dépense séparément dans ses propres arbres.</li>
+  <li><b>3</b> Trois arbres au lancement : Métiers, Aventure et Ingéniosité (traduction éditoriale — Resourcefulness).</li>
+  <li><b>4</b> Seuls 16 points sont dépensables au lancement, même si environ 65 sont gagnables. Un choix assumé par Blizzard : ne pas obliger à tout terminer, et faciliter le rattrapage des nouveaux joueurs.</li>
+  <li><b>5</b> Les points gagnés au-delà de 16 ne sont pas perdus : ils avancent une piste de récompenses cosmétiques séparée, sans avantage compétitif.</li>
+</ul>
+
+<h2>Métiers</h2>
+<p class="tree-desc">Gains de compétence, récolte, cuisine et pêche.</p>
+<div class="tree-block">
+
+  <div class="perk">
+    <div class="perk-name">Heures supplémentaires<span class="en">Working Overtime</span></div>
+    <div class="perk-ranks">5 rangs</div>
+    <div class="perk-effect">Augmente de 4% vos chances de gagner un point de compétence en utilisant un métier primaire, secondaire ou lié à la classe.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Récolte abondante<span class="en">Bountiful Harvest</span></div>
+    <div class="perk-ranks">5 rangs</div>
+    <div class="perk-effect">Vous découvrez 20% de matériaux Rares supplémentaires avec la Minéralogie, l'Herboristerie et le Dépeçage.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Chef cuisinier<span class="en">Master Chef</span></div>
+    <div class="perk-ranks">5 rangs</div>
+    <div class="perk-effect">Vos recettes de cuisine ont 10% de chances de produire un résultat supplémentaire.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Prime au rendement<span class="en">Performance Bonus</span><span class="perk-flag">rangs contestés</span></div>
+    <div class="perk-ranks">3 ou 5 rangs</div>
+    <div class="perk-effect">Vous avez 5% de chances de recevoir 100% de Faveur du marchand supplémentaire en rendant une caisse à l'Autorité commerciale d'Azeroth ou à la Logistique de Durotar. classicwow.gg et wowforevertalents.com relèvent 3 rangs, zockify.com en relève 5 — non tranché ici.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Maître-leurreur<span class="en">Luremaster</span></div>
+    <div class="perk-ranks">2 rangs</div>
+    <div class="perk-effect">En pêchant avec un leurre actif, vous avez 25% de chances d'attraper un poisson supplémentaire.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Étude assidue<span class="en">Dedicated Study</span></div>
+    <div class="perk-ranks">1 rang · 25 s · recharge 23 h</div>
+    <div class="perk-effect">Augmente de 1 votre compétence dans votre métier primaire ou secondaire le plus bas. Si vos deux métiers primaires et vos trois métiers secondaires sont déjà à 300, vous gagnez 2 à 4 Essences élémentaires aléatoires à la place.</div>
+  </div>
+  <div class="perk placeholder">
+    <div class="perk-name">2 emplacements non révélés</div>
+    <div class="perk-ranks">à venir</div>
+  </div>
+
+</div>
+
+<h2>Aventure</h2>
+<p class="tree-desc">Expérience de repos, talents plus précoces, campements et déplacement.</p>
+<div class="tree-block">
+
+  <div class="perk">
+    <div class="perk-name">Bien reposé<span class="en">Well Rested</span></div>
+    <div class="perk-ranks">5 rangs</div>
+    <div class="perk-effect">Votre expérience de repos s'accumule 4% plus vite, et son maximum est augmenté de 4%.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Talentueux<span class="en">Talented</span></div>
+    <div class="perk-ranks">5 rangs</div>
+    <div class="perk-effect">Vos points de talent commencent dès le niveau 9 au lieu du niveau 10, sans dépasser le total de 51 points. Rang 1 seul confirmé — voir le <a href="/forever/talents.html">calculateur de talents</a>, qui modélise les rangs suivants par extrapolation.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Haute vigilance<span class="en">High Alert</span><span class="perk-flag">source unique</span></div>
+    <div class="perk-ranks">2 rangs</div>
+    <div class="perk-effect">Augmente votre capacité à détecter les cibles proches utilisant Camouflage, comme si votre niveau était supérieur de 1. Sans effet en champ de bataille.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Frisson de l'aventure<span class="en">Thrill of Adventure</span><span class="perk-flag">source unique</span></div>
+    <div class="perk-ranks">5 rangs</div>
+    <div class="perk-effect">Vous gagnez 1% de vos points de vie et de mana maximum en 10 sec chaque fois que vous portez le coup fatal à un ennemi non trivial. Sans effet en donjon, en raid ou en champ de bataille.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Guide de camp<span class="en">Field Guide</span></div>
+    <div class="perk-ranks">3 rangs</div>
+    <div class="perk-effect">Réduit de 8% votre temps de recharge pour ajouter des installations de campement.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Grand voyageur<span class="en">Frequent Flier</span></div>
+    <div class="perk-ranks">1 rang</div>
+    <div class="perk-effect">Vous bénéficiez d'une réduction de 50% sur toutes les liaisons aériennes, et votre monture de vol se déplace 20% plus vite.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Médecine de terrain<span class="en">Field Medicine</span></div>
+    <div class="perk-ranks">2 rangs</div>
+    <div class="perk-effect">Réduit de 5 sec la durée de l'effet Récemment pansé lorsque vous utilisez un bandage. Sans effet en donjon, en raid ou en champ de bataille.</div>
+  </div>
+
+</div>
+
+<h2>Ingéniosité</h2>
+<p class="tree-desc">Traduction éditoriale de Resourcefulness. Buffs prolongés, moins de réactifs, moins de perte de durabilité.</p>
+<div class="tree-block">
+
+  <div class="perk">
+    <div class="perk-name">Deuxième souffle<span class="en">The Quick and the Dead</span><span class="perk-flag">source unique</span></div>
+    <div class="perk-ranks">2 rangs</div>
+    <div class="perk-effect">Augmente de 5% votre vitesse de déplacement pendant que vous êtes mort, et vos sorts et techniques bénéfiques ne coûtent aucune ressource pendant 1 min après une résurrection, ou jusqu'à votre entrée en combat.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Renforcement<span class="en">Reinforce</span></div>
+    <div class="perk-ranks">5 rangs</div>
+    <div class="perk-effect">Réduit de 8% la perte de durabilité subie à votre mort.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Diplomate<span class="en">Diplomat</span><span class="perk-flag">source unique</span></div>
+    <div class="perk-ranks">5 rangs</div>
+    <div class="perk-effect">Augmente de 2% les points de réputation gagnés.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Pour un grand honneur<span class="en">For Great Honor</span></div>
+    <div class="perk-ranks">5 rangs</div>
+    <div class="perk-effect">Augmente de 2% les points d'Honneur gagnés.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Permanence<span class="en">Permanence</span></div>
+    <div class="perk-ranks">2 rangs</div>
+    <div class="perk-effect">Vos techniques de classe conférant un bonus de caractéristique ou d'attribut de longue durée à tout le groupe ou au raid durent 50% plus longtemps, tout comme les bienfaits du repos au campement.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Gourmand<span class="en">Gourmand</span></div>
+    <div class="perk-ranks">3 rangs</div>
+    <div class="perk-effect">Augmente de 33% la durée des effets bénéfiques procurés par la nourriture.</div>
+  </div>
+  <div class="perk">
+    <div class="perk-name">Économie de réactifs<span class="en">Reagent Economy</span></div>
+    <div class="perk-ranks">1 rang</div>
+    <div class="perk-effect">Vos techniques de classe ne nécessitent plus de réactifs achetables chez un marchand, et vos installations de campement de palier 1 ne coûtent plus de réactifs à fabriquer.</div>
+  </div>
+
+</div>
+
+<h2>Piste de récompenses</h2>
+<p class="tree-desc">Au-delà des 16 points dépensables, chaque Point Legacy gagné avance cette piste — cosmétique, sans avantage compétitif. Paliers montrés à la démo, susceptibles de changer avant la sortie.</p>
+<table class="rewards">
+  <tr><th>Points</th><th>Récompense</th></tr>
+  <tr><td>10 PL</td><td>Réplique de fusil à air comprimé d'Ironforge <span class="en" style="margin-left:6px">Replica Ironforge Air Rifle</span></td></tr>
+  <tr><td>25 PL</td><td>Bébé ours spectral <span class="en" style="margin-left:6px">Spectral Bear Cub</span></td></tr>
+  <tr><td>40 PL</td><td>Tabard de l'ours spectral <span class="en" style="margin-left:6px">Spectral Bear Tabard</span></td></tr>
+  <tr><td>55 PL</td><td>Rênes de l'ours spectral <span class="en" style="margin-left:6px">Reins of the Spectral Bear</span></td></tr>
+</table>
+
+<div class="sources">
+  <strong>Sources</strong> — trois relevés communautaires indépendants de la démo BlizzCon 2026, aucun n'affilié à Blizzard :
+  <ul>
+    <li><a href="https://classicwow.gg/forever/guides/legacy-tree" target="_blank" rel="noreferrer">classicwow.gg</a> et <a href="https://wowforevertalents.com/legacy/" target="_blank" rel="noreferrer">wowforevertalents.com</a> (relevé du 13/09/2026, rangs de « Performance Bonus » à 3, plusieurs emplacements encore marqués inconnus)</li>
+    <li><a href="https://www.zockify.com/forever/legacy-system/" target="_blank" rel="noreferrer">zockify.com</a> (relevé du 14/09/2026, plus complet : « Performance Bonus » à 5 rangs, et nomme Haute vigilance, Frisson de l'aventure, Deuxième souffle et Diplomate là où les deux premiers relevés ne montraient que des emplacements non identifiés)</li>
+  </ul>
+  Le rang 1 de « Talentueux » est le seul chiffre de ce système déjà utilisé ailleurs sur ce site, dans le <a href="/forever/talents.html">calculateur de talents</a> — vérifié par les deux mêmes sources du 13/09.
+</div>
+
+</main>
+
+<footer>
+  <a class="feedback" href="https://discord.gg/rz5PxxMgnv" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.213.386-.46.905-.63 1.319a18.27 18.27 0 0 0-5.51 0C9.575 3.905 9.322 3.386 9.11 3a19.7 19.7 0 0 0-4.432 1.369C1.869 8.59 1.106 12.705 1.488 16.76a19.9 19.9 0 0 0 6.073 3.08 14.6 14.6 0 0 0 1.307-2.136c-.72-.271-1.41-.606-2.06-1 .173-.128.342-.261.505-.398a14.2 14.2 0 0 0 12.171 0c.165.14.334.273.506.398-.652.394-1.343.73-2.064 1.001.377.75.815 1.463 1.307 2.135a19.85 19.85 0 0 0 6.076-3.08c.448-4.7-.766-8.777-3.209-12.39ZM8.02 14.331c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.955 2.419-2.157 2.419Zm7.96 0c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.946 2.419-2.157 2.419Z"/></svg>Pour signaler une erreur ou proposer une modification</a>
+</footer>
+
+<button id="themetoggle" type="button" aria-label="Basculer le thème clair ou sombre"></button>
+
+<script>
+(function(){
+  var KEY='guide-theme', root=document.documentElement, btn=document.getElementById('themetoggle');
+  function sync(){ btn.textContent=(root.dataset.theme==='light')?'Sombre':'Clair'; }
+  btn.addEventListener('click',function(){
+    var toLight=root.dataset.theme!=='light';
+    root.dataset.theme=toLight?'light':'dark';
+    try{localStorage.setItem(KEY,toLight?'light':'dark')}catch(e){}
+    sync();
+  });
+  sync();
+})();
+</script>
+
+</body>
+</html>
