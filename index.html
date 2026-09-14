@@ -16,11 +16,14 @@
 :root[data-theme="light"]{--bg:#F7F4EE;--hair:rgba(30,34,42,.14)}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%}
-body{background:var(--bg);display:flex;align-items:center;justify-content:center}
-.choice{display:flex;align-items:baseline;gap:28px;font-family:'Newsreader',Georgia,serif;font-weight:400;
+body{background:var(--bg);display:flex;flex-direction:column}
+.brand{display:block;width:min(420px,70vw);height:auto;margin:44px auto 0}
+.choice-wrap{flex:1;display:flex;align-items:center;justify-content:center}
+.choice{display:flex;align-items:center;gap:28px;font-family:'Newsreader',Georgia,serif;font-weight:400;
   font-size:clamp(34px,6vw,64px)}
-.choice a{text-decoration:none;color:currentColor;opacity:.82;transition:opacity .2s}
+.choice a{display:flex;align-items:center;gap:14px;text-decoration:none;color:currentColor;opacity:.82;transition:opacity .2s}
 .choice a:hover{opacity:1}
+.choice a img{width:.78em;height:.78em;flex:none}
 .choice .tbc{color:#62c907}
 .choice .forever{color:#1d8dcd}
 .choice .sep{color:var(--hair);font-size:.6em}
@@ -35,11 +38,15 @@ body{background:var(--bg);display:flex;align-items:center;justify-content:center
 </head>
 <body>
 
-<p class="choice">
-  <a class="tbc" href="strats.html">TBC</a>
-  <span class="sep">/</span>
-  <a class="forever" href="talents.html">Forever</a>
-</p>
+<img class="brand" src="assets/media/logo-chando.webp" alt="Chando" width="900" height="450">
+
+<div class="choice-wrap">
+ <p class="choice">
+   <a class="tbc" href="strats.html"><img src="assets/media/logo-tbc.png" alt="" width="48" height="48">TBC</a>
+   <span class="sep">/</span>
+   <a class="forever" href="talents.html"><img src="assets/media/logo-forever.png" alt="" width="48" height="48">Forever</a>
+ </p>
+</div>
 
 <button id="themetoggle" type="button" aria-label="Basculer le thème clair ou sombre"></button>
 
