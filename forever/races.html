@@ -52,8 +52,8 @@ header .eyebrow{font-size:11px;font-weight:600;letter-spacing:.24em;color:var(--
 main{flex:1;width:100%;max-width:860px;margin:0 auto;padding:36px 48px 64px}
 main h2{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:22px;margin:40px 0 6px;color:#1d8dcd}
 main h2:first-child{margin-top:0}
-main h3{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:17px;margin:26px 0 4px;color:var(--fg);display:flex;align-items:center;gap:10px}
-.race-ico{width:26px;height:26px;border-radius:6px;border:1px solid var(--hair)}
+main h3{font-family:'Newsreader',Georgia,serif;font-weight:600;font-size:18px;margin:34px 0 12px;color:var(--fg);display:flex;align-items:center;gap:12px;background:var(--accent-soft);padding:10px 16px;border-radius:10px}
+.race-ico{width:36px;height:36px;border-radius:50%;border:2px solid var(--accent);flex:none;object-fit:cover}
 main .lede{color:var(--dim);font-size:14.5px;max-width:62ch;margin-bottom:8px}
 main p{max-width:66ch}
 main p+p{margin-top:10px}
@@ -67,7 +67,7 @@ main p+p{margin-top:10px}
 .perk{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:14px 0;border-top:1px solid var(--hair)}
 .perk:last-child{padding-bottom:0}
 .perk-name{font-weight:600;font-size:14.5px}
-.perk-name img.ico{width:22px;height:22px;border-radius:4px;vertical-align:middle;margin-right:8px;border:1px solid var(--hair)}
+.perk-name img.ico{width:20px;height:20px;border-radius:4px;vertical-align:middle;margin-right:8px;border:1px solid var(--hair)}
 .perk-name .en{font-weight:400;font-style:italic;color:var(--dim);font-size:12px;margin-left:8px}
 .perk-ranks{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);white-space:nowrap;align-self:start;padding-top:2px}
 .perk-effect{grid-column:1/-1;font-size:13.5px;color:var(--dim);margin-top:2px;max-width:66ch}
@@ -77,7 +77,7 @@ main p+p{margin-top:10px}
 .combo th{text-align:center;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--dim);font-weight:600;padding:0 6px 8px;border-bottom:1px solid var(--hair)}
 .combo th:first-child{text-align:left}
 .combo th img.ico{display:block;width:20px;height:20px;border-radius:4px;margin:0 auto 4px}
-.combo td{text-align:center;padding:8px 6px;border-bottom:1px solid var(--hair);color:var(--hair)}
+.combo td{text-align:center;padding:8px 6px;border-bottom:1px solid var(--hair);color:var(--dim)}
 .combo td:first-child{text-align:left;font-weight:600;color:var(--fg);white-space:nowrap}
 .combo td:first-child img.ico{width:18px;height:18px;border-radius:4px;vertical-align:middle;margin-right:7px}
 .combo td.yes{color:var(--accent);font-weight:700}
@@ -147,14 +147,14 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
     <th><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_nightelf_male.jpg" alt="">Elfe de la nuit</th>
     <th>Skyborne</th>
   </tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" alt="">Druide</td><td>–</td><td>–</td><td>–</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" alt="">Chasseur</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" alt="">Mage</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" alt="">Paladin</td><td class="yes">✓</td><td>–</td><td class="yes">✓</td><td>–</td><td>–</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" alt="">Prêtre</td><td class="yes">✓</td><td class="new">✓ Nouveau</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" alt="">Druide</td><td>✗</td><td>✗</td><td>✗</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" alt="">Chasseur</td><td class="yes">✓</td><td>✗</td><td class="new">✓ Nouveau</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" alt="">Mage</td><td>✗</td><td class="yes">✓</td><td class="yes">✓</td><td>✗</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" alt="">Paladin</td><td class="yes">✓</td><td>✗</td><td class="yes">✓</td><td>✗</td><td>✗</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" alt="">Prêtre</td><td class="yes">✓</td><td class="new">✓ Nouveau</td><td class="yes">✓</td><td class="yes">✓</td><td>✗</td></tr>
   <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" alt="">Voleur</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" alt="">Chaman</td><td class="new">✓ Nouveau</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" alt="">Démoniste</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td><td>–</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" alt="">Chaman</td><td class="new">✓ Nouveau</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" alt="">Démoniste</td><td>✗</td><td class="yes">✓</td><td class="yes">✓</td><td>✗</td><td>✗</td></tr>
   <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" alt="">Guerrier</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
 </table>
 </div>
@@ -170,14 +170,14 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
     <th><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_undead_male.jpg" alt="">Mort-vivant</th>
     <th>Skyborne</th>
   </tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" alt="">Druide</td><td>–</td><td class="yes">✓</td><td>–</td><td>–</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" alt="">Chasseur</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" alt="">Mage</td><td class="new">✓ Nouveau</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" alt="">Paladin</td><td>–</td><td>–</td><td>–</td><td class="new">✓ Nouveau</td><td>–</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" alt="">Prêtre</td><td>–</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" alt="">Voleur</td><td class="yes">✓</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" alt="">Chaman</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" alt="">Démoniste</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td><td class="yes">✓</td><td>–</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" alt="">Druide</td><td>✗</td><td class="yes">✓</td><td>✗</td><td>✗</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" alt="">Chasseur</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td>✗</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" alt="">Mage</td><td class="new">✓ Nouveau</td><td>✗</td><td class="yes">✓</td><td class="yes">✓</td><td>✗</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" alt="">Paladin</td><td>✗</td><td>✗</td><td>✗</td><td class="new">✓ Nouveau</td><td>✗</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" alt="">Prêtre</td><td>✗</td><td>✗</td><td class="yes">✓</td><td class="yes">✓</td><td>✗</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" alt="">Voleur</td><td class="yes">✓</td><td>✗</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" alt="">Chaman</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td>✗</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" alt="">Démoniste</td><td class="yes">✓</td><td>✗</td><td class="new">✓ Nouveau</td><td class="yes">✓</td><td>✗</td></tr>
   <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" alt="">Guerrier</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
 </table>
 </div>
