@@ -162,12 +162,8 @@
 .detail-guess { color: #d9b876; font-style: italic; }
 .detail-req { margin: 7px 0 0; display: flex; gap: 6px; align-items: baseline; color: #99a1a8; font-size: 11.5px; }
 .detail-extra { margin: 8px 0 0; padding-left: 16px; color: #99a1a8; font-size: 11.5px; }
-.detail-note { margin: 8px 0 0; display: flex; gap: 6px; color: #d9b876; font-size: 11.5px; }
 .detail-classic { margin: 8px 0 0; padding: 7px 9px; background: #1a1b20; border-left: 2px solid #5b5a6b; color: #a5a3b4; font-size: 11.5px; }
 .detail-classic span { display: block; font: 700 9px Arial; letter-spacing: 1.2px; color: #7d7c8d; text-transform: uppercase; }
-.detail-divergence { margin: 9px 0 0; padding: 8px 10px; background: #2b2230; border: 1px solid #5f4a63; border-radius: 6px; color: #e0c5dd; font-size: 11.5px; }
-.detail-divergence strong { display: block; margin-bottom: 4px; color: #eecfe9; }
-.detail-divergence ul { margin: 0; padding-left: 15px; }
 .detail-controls { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; padding-top: 11px; border-top: 1px solid #2a3036; }
 .detail-controls button { flex: 1; padding: 11px 8px; border: 1px solid #4c545c; border-radius: 6px; background: #1c2026; color: #dde1e5; font: 600 13px 'Hanken Grotesk', sans-serif; cursor: pointer; }
 .detail-controls button:first-child { color: #d8a79b; }

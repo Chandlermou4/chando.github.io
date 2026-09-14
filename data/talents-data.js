@@ -21347,7 +21347,7 @@ window.TALENT_DATA={
 ;
 window.TALENT_FR={
  "version": 1,
- "updatedAt": "2026-09-13",
+ "updatedAt": "2026-09-14",
  "method": "Les noms français viennent du client français officiel de World of Warcraft. Ils sont relevés sur les fichiers publics des calculateurs de talents de Wowhead, en comparant la version anglaise et la version française de Classic, de Burning Crusade puis de Wrath of the Lich King, dans cet ordre : beaucoup de talents que Forever présente comme nouveaux existent en réalité dans une extension ultérieure. Chaque nom conserve l’identifiant du sort qui le porte, pour être vérifiable. Les talents qui n’existent dans aucune de ces trois extensions, et ceux que Forever a renommés, n’ont aucun nom français officiel : leur traduction est éditoriale et signalée comme telle. Quelques-uns de ces noms éditoriaux reprennent tout de même un nom que Blizzard a donné en français ailleurs — à une extension plus récente, ou à un sort qui ne figure dans aucun arbre de talents et que ce relevé ne pouvait donc pas atteindre ; ils ont été cherchés fiche par fiche sur le site français de Wowhead et leur note cite le sort d’origine. Les textes d’infobulle réécrits par Forever sont traduits par nos soins.",
  "glossary": {
   "trees": {
@@ -25902,6 +25902,332 @@ window.TALENT_FR={
    "note": "Nom repris du sort Lacis du client français (sort 203651), qui traduit le même mot anglais, Overgrowth : Forever lui donne un effet qui lui est propre.",
    "rank1": "Augmente de 1 le nombre maximum de cibles que vous pouvez maintenir sous l’effet de Sarments.",
    "textSource": "editorial"
+  }
+ },
+ "removed": {
+  "guerrier/arms/Axe Specialization": {
+   "name": "Spécialisation Hache",
+   "text": "Augmente de 1% vos chances d'infliger un coup critique avec les haches."
+  },
+  "guerrier/arms/Mace Specialization": {
+   "name": "Spécialisation Masse",
+   "text": "Vous confère 1% de chances d'étourdir votre cible pendant 3 sec avec une Masse."
+  },
+  "guerrier/arms/Sword Specialization": {
+   "name": "Spécialisation Epée",
+   "text": "Vous confère 1% de chances de bénéficier d'une attaque supplémentaire sur la même cible, après avoir infligé des dégâts avec votre épée."
+  },
+  "guerrier/arms/Polearm Specialization": {
+   "name": "Spécialisation Arme d'hast",
+   "text": "Augmente de 1% vos chances d'infliger un coup critique avec les armes d'hast."
+  },
+  "guerrier/fury/Improved Demoralizing Shout": {
+   "name": "Cri démoralisant amélioré",
+   "text": "Augmente la réduction de puissance d'attaque en mêlée de votre Cri démoralisant de 8%."
+  },
+  "guerrier/fury/Improved Battle Shout": {
+   "name": "Cri de guerre amélioré",
+   "text": "Augmente de 5% le bonus à la puissance d'attaque en mêlée de votre Cri de guerre."
+  },
+  "guerrier/protection/Improved Shield Block": {
+   "name": "Maîtrise du blocage améliorée",
+   "text": "Vous permet de bloquer une attaque supplémentaire avec votre technique Maîtrise du blocage et en augmente la durée de 0.5 sec."
+  },
+  "guerrier/protection/Improved Taunt": {
+   "name": "Provocation améliorée",
+   "text": "Réduit le temps de recharge de votre technique Provocation de 1 sec."
+  },
+  "guerrier/protection/One-Handed Weapon Specialization": {
+   "name": "Spécialisation Arme 1M",
+   "text": "Augmente les points de dégâts que vous infligez avec les armes de mêlée à une main de 2%."
+  },
+  "paladin/holy/Consecration": {
+   "name": "Consécration",
+   "text": "Consacre le sol qui se trouve autour du paladin et inflige 64 points de dégâts en 8 sec aux ennemis qui entrent dans la zone."
+  },
+  "paladin/holy/Improved Lay on Hands": {
+   "name": "Imposition des mains améliorée",
+   "text": "La cible du sort Impositions des mains bénéficie d'un bonus de 15% au score d'armure de ses objets pendant 2 min. De plus, le temps de recharge de votre sort Imposition des mains diminue de 10 min."
+  },
+  "paladin/holy/Improved Blessing of Wisdom": {
+   "name": "Bénédiction de sagesse améliorée",
+   "text": "Augmente l'effet de votre sort de Bénédiction de sagesse de 10%."
+  },
+  "paladin/holy/Lasting Judgement": {
+   "name": "Jugement durable",
+   "text": "Augmente la durée de vos Jugement de lumière et Jugement de sagesse de 10 sec."
+  },
+  "paladin/protection/Improved Devotion Aura": {
+   "name": "Aura de dévotion améliorée",
+   "text": "Augmente le bonus d'armure que confère votre Aura de dévotion de 5%."
+  },
+  "paladin/protection/Blessing of Kings": {
+   "name": "Bénédiction des rois",
+   "text": "Place une Bénédiction sur une cible amie qui augmente toutes ses caractéristiques de 10% pendant 5 min. Les joueurs ne peuvent bénéficier des effets que d'une seule Bénédiction par paladin à la fois."
+  },
+  "paladin/protection/Improved Concentration Aura": {
+   "name": "Aura de concentration améliorée",
+   "text": "Augmente de 5% l'effet de votre Aura de concentration et donne à tous les membres du groupe bénéficiant de l'aura 5% de chances supplémentaires de résister aux effets de silence et d'interruption."
+  },
+  "paladin/protection/Blessing of Sanctuary": {
+   "name": "Bénédiction du sanctuaire",
+   "text": "Place une Bénédiction sur la cible amie. Réduit les points de dégâts de tous types qu'elle subit d’un maximum de 10 pendant 5 min. De plus, quand la cible bloque une attaque de mêlée, l'attaquant subit 14 points de dégâts du Sacré. Les personnages ne peuvent bénéficier que des effets d'une seule Bénédiction par paladin à la fois."
+  },
+  "paladin/retribution/Improved Blessing of Might": {
+   "name": "Bénédiction de puissance améliorée",
+   "text": "Augmente le bonus à la puissance d'attaque en mêlée conféré par votre Bénédiction de puissance de 4%."
+  },
+  "paladin/retribution/Improved Seal of the Crusader": {
+   "name": "Sceau du Croisé amélioré",
+   "text": "Augmente le bonus de puissance d'attaque en mêlée de votre Sceau du Croisé et les points de dégâts du Sacré infligés par le Jugement du Croisé de 5%."
+  },
+  "paladin/retribution/Improved Retribution Aura": {
+   "name": "Aura de vindicte améliorée",
+   "text": "Augmente les points de dégâts infligés par votre sort d'Aura de vindicte de 25%."
+  },
+  "paladin/retribution/Sanctity Aura": {
+   "name": "Aura de sainteté",
+   "text": "Augmente de 10% les points de dégâts du Sacré infligés par les membres du groupe se trouvant dans une zone de 30 mètres de rayon. Les personnages ne peuvent bénéficier des effets que d'une aura par paladin à la fois."
+  },
+  "chasseur/beast-mastery/Improved Eyes of the Beast": {
+   "name": "Oeil de la bête amélioré",
+   "text": "Augmente la durée d'Oeil de la bête de 30 sec."
+  },
+  "chasseur/beast-mastery/Thick Hide": {
+   "name": "Peau épaisse",
+   "text": "Augmente le niveau d'armure de vos familiers de 10%."
+  },
+  "chasseur/marksmanship/Improved Hunter's Mark": {
+   "name": "Marque du chasseur améliorée",
+   "text": "Augmente le bonus de puissance d'attaque à distance de votre sort Marque du chasseur de 3%."
+  },
+  "chasseur/marksmanship/Improved Scorpid Sting": {
+   "name": "Piqûre de scorpide améliorée",
+   "text": "Réduit l'Endurance des cibles affectées par votre Piqûre de scorpide d'un montant égal à 10% de la réduction de Force."
+  },
+  "chasseur/survival/Monster Slaying": {
+   "name": "Tueur de monstres",
+   "text": "Augmente tous les dégâts infligés aux bêtes, aux géants et aux draconiens de 1% et augmente les dégâts infligés par les coups critiques aux bêtes, aux géants et aux draconiens de 1% supplémentaires."
+  },
+  "chasseur/survival/Humanoid Slaying": {
+   "name": "Tueur d'humanoïdes",
+   "text": "Augmente tous les dégâts infligés aux humanoïdes de 1% et augmente les dégâts infligés par les coups critiques aux humanoïdes de 1% supplémentaires."
+  },
+  "chasseur/survival/Trap Mastery": {
+   "name": "Maîtrise des pièges",
+   "text": "Réduit de 5% les chances de vos ennemis de résister aux effets de vos pièges."
+  },
+  "chasseur/survival/Improved Feign Death": {
+   "name": "Feindre la mort amélioré",
+   "text": "Réduit la probabilité que l'on résiste à votre technique Feindre la mort de 2%."
+  },
+  "chasseur/survival/Killer Instinct": {
+   "name": "Instinct du tueur",
+   "text": "Augmente vos chances d'infliger un coup critique avec toutes vos attaques de 1%."
+  },
+  "chasseur/survival/Wyvern Sting": {
+   "name": "Piqûre de wyverne",
+   "text": "Une piqûre qui endort la cible pendant 12 sec. Tout point de dégâts subi par la cible annule l’effet. Quand la cible se réveille, la Piqûre inflige 300 points de dégâts de nature en 6 sec. Utilisable uniquement hors de combat. Une seule technique de Morsure ou de Piqûre par chasseur ou chasseresse peut être active sur la cible en même temps."
+  },
+  "voleur/combat/Dagger Specialization": {
+   "name": "Spécialisation Dague",
+   "text": "Augmente vos chances d'infliger un coup critique avec les Dagues de 1%."
+  },
+  "voleur/combat/Mace Specialization": {
+   "name": "Spécialisation Masse",
+   "text": "Augmente votre compétence avec les masses de 1 et vous confère 1% de chances d’étourdir votre cible pendant 3 sec avec une masse."
+  },
+  "voleur/combat/Sword Specialization": {
+   "name": "Spécialisation Epée",
+   "text": "Vous confère 1% de chances de bénéficier d'une attaque supplémentaire sur la même cible après avoir infligé des dégâts avec votre épée."
+  },
+  "voleur/combat/Fist Weapon Specialization": {
+   "name": "Spécialisation Arme de pugilat",
+   "text": "Augmente vos chances d'infliger un coup critique avec les armes de pugilat de 1%."
+  },
+  "voleur/subtlety/Sleight of Hand": {
+   "name": "Passe-passe",
+   "text": "Réduit de 1% la probabilité que vous soyez touché par un coup critique infligé par une attaque en mêlée ou à distance, et augmente la réduction du niveau de menace de votre technique Feinte de 10%."
+  },
+  "voleur/subtlety/Improved Sap": {
+   "name": "Assommer amélioré",
+   "text": "Vous confère 30% de chances de repasser en mode camouflé après avoir utilisé la technique Assommer."
+  },
+  "voleur/subtlety/Deadliness": {
+   "name": "Meurtrier",
+   "text": "Augmente votre puissance d'attaque de 2%."
+  },
+  "pretre/discipline/Unbreakable Will": {
+   "name": "Volonté inflexible",
+   "text": "Augmente vos chances de résister aux effets d'étourdissement, de peur et de silence de 3%."
+  },
+  "pretre/discipline/Improved Power Word: Fortitude": {
+   "name": "Mot de pouvoir : Robustesse amélioré",
+   "text": "Augmente les effets de vos sorts Mot de pouvoir : Robustesse et Prière de robustesse de 15%."
+  },
+  "pretre/discipline/Divine Spirit": {
+   "name": "Esprit divin",
+   "text": "La puissance sacrée envahit le corps de la cible et augmente son Esprit de 17 pendant 30 min."
+  },
+  "pretre/discipline/Force of Will": {
+   "name": "Force de volonté",
+   "text": "Augmente de 1% les points de dégâts infligés par vos sorts et de 1% vos chances d'obtenir un coup critique avec vos sorts offensifs."
+  },
+  "pretre/holy/Improved Prayer of Healing": {
+   "name": "Prière de soins améliorée",
+   "text": "Réduit le coût en mana de vos Prières de soins de 10%."
+  },
+  "pretre/holy/Lightwell": {
+   "name": "Puits de lumière",
+   "text": "Crée un Puits de lumière sacré près du prêtre. Les membres du groupe ou du raid peuvent cliquer sur le Puits de lumière pour recevoir 800 points de vie en 10 sec. L'effet est annulé si vous êtes attaqué. La durée du Puits de lumière est de 3 min ou bien 5 utilisations."
+  },
+  "pretre/shadow-magic/Improved Vampiric Embrace": {
+   "name": "Etreinte vampirique améliorée",
+   "text": "Ajoute 5% supplémentaires au pourcentage des soins produits par Etreinte vampirique."
+  },
+  "chaman/elemental-combat/Elemental Mastery": {
+   "name": "Maîtrise élémentaire",
+   "text": "Lorsqu'il est activé, ce sort confère 100% de chances à vos sorts de Feu, de Givre et de Nature d'infliger un coup critique et il réduit le coût en mana de 100%."
+  },
+  "chaman/enhancement/Shield Specialization": {
+   "name": "Spécialisation Bouclier",
+   "text": "Augmente de 1% vos chances de bloquer les attaques avec votre bouclier et augmente de 5% le nombre de points de dégâts bloqués."
+  },
+  "chaman/enhancement/Enhancing Totems": {
+   "name": "Totems renforcés",
+   "text": "Augmente de 8% l'effet de vos Totems de Force de la Terre et de Grâce aérienne."
+  },
+  "chaman/enhancement/Two-Handed Axes and Maces": {
+   "name": "Haches et masses à deux mains",
+   "text": "Vous permet d'utiliser les Haches à deux mains et les Masses à deux mains."
+  },
+  "chaman/enhancement/Improved Weapon Totems": {
+   "name": "Totems d'armes améliorés",
+   "text": "Augmente le bonus de puissance d'attaque en mêlée de votre totem Furie-des-vents de 15% et augmente les dégâts de votre totem Langue de feu de 6%."
+  },
+  "chaman/enhancement/Weapon Mastery": {
+   "name": "Maîtrise des armes",
+   "text": "Augmente de 2% les dégâts que vous infligez avec toutes les armes."
+  },
+  "chaman/restoration/Nature's Guidance": {
+   "name": "Soutien de la nature",
+   "text": "Augmente vos chances de toucher avec les sorts et attaques de mêlée de 1%."
+  },
+  "chaman/restoration/Totemic Mastery": {
+   "name": "Maîtrise totémique",
+   "text": "Le rayon d'effet de vos totems qui affectent les cibles alliées est augmenté à 30 m."
+  },
+  "mage/arcane/Magic Attunement": {
+   "name": "Harmonisation de la magie",
+   "text": "Augmente de 25% les effets de vos sorts Amplification de la magie et Atténuation de la magie."
+  },
+  "demoniste/affliction/Improved Curse of Weakness": {
+   "name": "Malédiction de faiblesse améliorée",
+   "text": "Augmente les effets de votre sort Malédiction de faiblesse de 6%."
+  },
+  "demoniste/affliction/Improved Drain Soul": {
+   "name": "Siphon d'âme amélioré",
+   "text": "Vous confère 50% de chances d'obtenir un bonus de 100% à votre vitesse de récupération des points de mana pendant 10 sec, si la cible meurt pendant que vous drainez son âme. De plus, votre mana continue de se régénérer pendant vos incantations à 50% de la vitesse de récupération normale."
+  },
+  "demoniste/affliction/Improved Drain Life": {
+   "name": "Drain de vie amélioré",
+   "text": "Augmente de 2% le montant de points de vie drainé par votre sort Drain de vie."
+  },
+  "demoniste/affliction/Grim Reach": {
+   "name": "Allonge sinistre",
+   "text": "Augmente la portée de vos sorts d'Affliction de 10%."
+  },
+  "demoniste/affliction/Improved Drain Mana": {
+   "name": "Drain de mana amélioré",
+   "text": "15% des points de mana drainés par votre sort Drain de mana sont infligés à l'adversaire sous la forme de points de dégâts."
+  },
+  "demoniste/affliction/Improved Curse of Exhaustion": {
+   "name": "Malédiction de fatigue améliorée",
+   "text": "Augmente de 5% l'effet de réduction de vitesse de votre sort Malédiction de fatigue."
+  },
+  "demoniste/affliction/Dark Pact": {
+   "name": "Pacte noir",
+   "text": "Draine 150 points de mana à votre familier et vous les transfère à 100%."
+  },
+  "demoniste/demonology/Improved Healthstone": {
+   "name": "Pierre de soins améliorée",
+   "text": "Augmente le nombre de points de vie restaurés par votre Pierre de soin de 10%."
+  },
+  "demoniste/demonology/Fel Intellect": {
+   "name": "Intelligence corrompue",
+   "text": "Augmente de 3% le maximum de points de mana de vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus."
+  },
+  "demoniste/demonology/Improved Subjugate Demon": {
+   "name": "Subjugation de démon améliorée",
+   "text": "Réduit les pénalités de vitesse d’attaque et d’incantation de Subjugation de démon de 2 % et les chances de résistance de 2 %."
+  },
+  "demoniste/demonology/Improved Firestone": {
+   "name": "Pierre de feu améliorée",
+   "text": "Augmente de 15% le bonus aux dégâts de Feu infligés par les Pierre de feu et les effets de Pierre de feu."
+  },
+  "demoniste/demonology/Improved Spellstone": {
+   "name": "Pierre de sort améliorée",
+   "text": "Augmente la quantité de points de dégâts absorbés par votre Pierre de sort de 15%."
+  },
+  "demoniste/destruction/Improved Firebolt": {
+   "name": "Eclair de feu amélioré",
+   "text": "Réduit le temps d'incantation du sort Eclair de feu de votre Diablotin de 0.5 sec."
+  },
+  "demoniste/destruction/Improved Lash of Pain": {
+   "name": "Fouet de la douleur amélioré",
+   "text": "Réduit le temps de recharge du sort Fouet de la douleur de votre succube ou de votre incube de 3 s."
+  },
+  "demoniste/destruction/Devastation": {
+   "name": "Dévastation",
+   "text": "Augmente de 1% vos chances d'infliger un coup critique avec vos sorts de Destruction."
+  },
+  "demoniste/destruction/Improved Immolate": {
+   "name": "Immolation améliorée",
+   "text": "Augmente les dégâts initiaux de votre sort Immolation de 5%."
+  },
+  "demoniste/destruction/Emberstorm": {
+   "name": "Tempête ardente",
+   "text": "Augmente les points de dégâts infligés par vos sorts de Feu de 2%."
+  },
+  "druide/balance/Nature's Grasp": {
+   "name": "Emprise de la nature",
+   "text": "Pendant que cette technique est active, à chaque fois qu'un ennemi frappe le lanceur de sorts, il a 35% de chances d'être victime du sort Sarments (Rang 1). Ne fonctionne qu'en extérieur. 1 charges. Dure 45 sec."
+  },
+  "druide/balance/Improved Nature's Grasp": {
+   "name": "Emprise de la nature améliorée",
+   "text": "Augmente de 15% les chances que le sort Emprise de la nature immobilise un ennemi."
+  },
+  "druide/balance/Natural Weapons": {
+   "name": "Armes naturelles",
+   "text": "Augmente les dégâts infligés avec les attaques physiques sous toutes les formes de 2 %."
+  },
+  "druide/balance/Improved Thorns": {
+   "name": "Epines améliorées",
+   "text": "Augmente les points de dégâts infligés par votre sort Epines de 25%."
+  },
+  "druide/balance/Omen of Clarity": {
+   "name": "Augure de clarté",
+   "text": "Imprègne le druide ou la druidesse d’énergie naturelle. Chacune de ses attaques de mêlée a une chance de faire entrer le lanceur ou la lanceuse de sorts dans un état d’Idées claires. Cet état réduit le coût en mana, en rage ou en énergie de votre prochain sort de dégât ou de soins, ou de votre prochaine technique offensive de 100 %. Dure 10 min."
+  },
+  "druide/feral-combat/Feral Aggression": {
+   "name": "Agressivité farouche",
+   "text": "Augmente les effets de réduction de la puissance d'attaque de votre Rugissement démoralisant de 8% et les dégâts causés par votre Morsure féroce de 3%."
+  },
+  "druide/feral-combat/Blood Frenzy": {
+   "name": "Frénésie sanglante",
+   "text": "Les coups critiques liés à vos techniques de félin qui ajoutent des points de combo ont 50% de chances vous faire gagner un point de combo supplémentaire."
+  },
+  "druide/feral-combat/Faerie Fire (Feral)": {
+   "name": "Lucioles (farouche)",
+   "text": "Réduit l'Armure de la cible de 175 pendant 40 sec. Tant qu'elle est affectée, la cible ne peut pas se camoufler ni se rendre invisible."
+  },
+  "druide/restoration/Improved Mark of the Wild": {
+   "name": "Marque du fauve améliorée",
+   "text": "Augmente les effets de vos sorts Marque du fauve et Don du fauve de 7%."
+  },
+  "druide/restoration/Improved Enrage": {
+   "name": "Enrager amélioré",
+   "text": "La technique Enrager génère à présent instantanément 5 points de rage."
   }
  }
 }

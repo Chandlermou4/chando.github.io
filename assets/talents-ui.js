@@ -208,18 +208,25 @@
       '</button></div>';
   }
 
+  // Visible seulement avec la Comparaison Classic activée : c'est une note sur ce que
+  // Classic avait et que Forever n'a pas, pas le contenu principal de l'arbre.
   function renderTreeNotes(tree) {
+    if (!S.showClassic) return '';
     if (!tree.removedFromClassic.length && !tree.disputed.length) return '';
     var html = '<div class="tree-notes">';
     tree.disputed.forEach(function (d) {
-      html += '<details class="disputed" open><summary>' + esc(d.name_en) + ' — présence contestée</summary>' +
+      var tr = S.fr.removed[tree.key + '/' + d.name_en];
+      html += '<details class="disputed" open><summary>' + esc((tr && tr.name) || d.name_en) + ' — présence contestée</summary>' +
         '<p>Signalé en ligne ' + d.row + ', colonne ' + d.col + ' par wowtbc.gg (' + d.maxRanks + ' rangs). ' + esc(d.counterClaim) + ' Le talent n’est donc pas placé dans la grille.</p>' +
-        (d.text ? '<p class="small muted">' + esc(d.text) + '</p>' : '') + '</details>';
+        ((tr && tr.text) || d.text ? '<p class="small muted">' + esc((tr && tr.text) || d.text) + '</p>' : '') + '</details>';
     });
     if (tree.removedFromClassic.length > 0) {
       html += '<details><summary>' + tree.removedFromClassic.length + ' talent' + (tree.removedFromClassic.length > 1 ? 's' : '') +
         ' Classic absent' + (tree.removedFromClassic.length > 1 ? 's' : '') + ' de cet arbre</summary><ul>' +
-        tree.removedFromClassic.map(function (r) { return '<li><strong>' + esc(r.name_en) + '</strong> (' + r.maxRanks + ' rangs) — ' + esc(r.text) + '</li>'; }).join('') +
+        tree.removedFromClassic.map(function (r) {
+          var tr = S.fr.removed[tree.key + '/' + r.name_en];
+          return '<li><strong>' + esc((tr && tr.name) || r.name_en) + '</strong> (' + r.maxRanks + ' rangs) — ' + esc((tr && tr.text) || r.text) + '</li>';
+        }).join('') +
         '</ul></details>';
     }
     return html + '</div>';
@@ -246,9 +253,7 @@
     var shownRank = Math.max(1, rank);
     var current = t.ranks[shownRank - 1];
     var next = (rank > 0 && rank < t.maxRanks) ? t.ranks[rank] : null;
-    var dep = t.prerequisite ? tree.talents.find(function (x) { return x.key === t.prerequisite; }) : null;
     var e = S.fr.entries[t.key];
-    var depFr = dep ? S.fr.entries[dep.key] : undefined;
     var texts = T.frRanks(e, t.ranks);
     var skill = T.frSkill(t.skill, S.fr.glossary) || t.skill;
     var floating = !!S.tip && !S.pinned;
@@ -272,19 +277,9 @@
       html += '<p class="detail-next"><strong>Rang suivant.</strong> ' + esc(nextText) + (next.text && !next.observed ? '<em class="detail-guess"> (estimé)</em>' : '') + '</p>';
     }
     if (t.requires.length > 0) html += '<p class="detail-req">' + esc(T.frRequires(t.requires, S.fr.glossary).join(' · ')) + '</p>';
-    if (dep) html += '<p class="detail-req">🔒 Demande ' + dep.maxRanks + ' point' + (dep.maxRanks > 1 ? 's' : '') + ' dans ' + esc((depFr && depFr.name) || dep.name_en) + '.</p>';
     if (t.extra) html += '<ul class="detail-extra">' + t.extra.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
-    if (t.rankNote) html += '<p class="detail-note">❓ ' + esc(t.rankNote) + '</p>';
-    if (e && e.note) html += '<p class="detail-note">❓ ' + esc(e.note) + '</p>';
     var classicText = (e && e.classic) || t.classicText;
     if (S.showClassic && classicText) html += '<p class="detail-classic"><span>Texte Classic — rang 1</span> ' + esc(classicText) + '</p>';
-    if (t.divergences.length > 0) {
-      html += '<div class="detail-divergence"><strong>Les deux relevés ne disent pas la même chose</strong><ul>' +
-        t.divergences.map(function (d) {
-          var field = d.field === 'name' ? 'Nom' : d.field === 'maxRanks' ? 'Rangs' : d.field === 'position' ? 'Position' : 'Prérequis';
-          return '<li>' + field + ' : « ' + esc(d.foreverTalents) + ' » côté relevé image par image, « ' + esc(d.wowtbc) + ' » côté wowtbc.gg.</li>';
-        }).join('') + '</ul></div>';
-    }
     if (!floating) {
       html += '<div class="detail-controls">' +
         '<button type="button" id="detail-remove"' + (rank === 0 ? ' disabled' : '') + ' aria-label="Retirer un point de ' + esc(name) + '">− Retirer</button>' +
@@ -365,7 +360,7 @@
 
     root.addEventListener('click', function (e) {
       var toggleEl = e.target.closest('#classic-toggle-input');
-      if (toggleEl) { S.showClassic = toggleEl.checked; toggleEl.closest('.classic-toggle').classList.toggle('is-on', S.showClassic); renderDetail(); return; }
+      if (toggleEl) { S.showClassic = toggleEl.checked; toggleEl.closest('.classic-toggle').classList.toggle('is-on', S.showClassic); renderTrees(); renderDetail(); return; }
       var resetAllBtn = e.target.closest('#reset-all'); if (resetAllBtn) { resetAll(); return; }
       var copyBtn = e.target.closest('#copy-link'); if (copyBtn) { copyLink(); return; }
       var resetTreeBtn = e.target.closest('[data-reset-tree]');

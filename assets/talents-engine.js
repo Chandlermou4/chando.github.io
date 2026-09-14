@@ -151,13 +151,18 @@ window.Talents = (function () {
   /** Ne garde que les entrées d'une classe (clés `classe/talent` → `talent`). */
   function frenchPack(classSlug) {
     var all = window.TALENT_FR.talents;
+    var allRemoved = window.TALENT_FR.removed || {};
     var glossary = window.TALENT_FR.glossary;
     var entries = {};
+    var removed = {};
     var prefix = classSlug + '/';
     Object.keys(all).forEach(function (key) {
       if (key.indexOf(prefix) === 0) entries[key.slice(prefix.length)] = all[key];
     });
-    return { glossary: glossary, entries: entries };
+    Object.keys(allRemoved).forEach(function (key) {
+      if (key.indexOf(prefix) === 0) removed[key.slice(prefix.length)] = allRemoved[key];
+    });
+    return { glossary: glossary, entries: entries, removed: removed };
   }
 
   // ── Icônes et illustrations : CDN public de Wowhead, jamais copiées ici ────
