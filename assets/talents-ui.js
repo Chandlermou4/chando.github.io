@@ -165,7 +165,7 @@
       '<div class="talent-bar">' +
         '<div class="talent-score">' +
           '<div class="points"><strong class="' + (spent > p ? 'over' : '') + '">' + (p - spent) + '</strong><span>points restants</span></div>' +
-          '<div class="split"><strong>' + perTree.join(' / ') + '</strong><span>' + S.data.trees.map(function (t) { return esc(t.name_en); }).join(' · ') + '</span></div>' +
+          '<div class="split"><strong>' + perTree.join(' / ') + '</strong><span>' + S.data.trees.map(function (t) { return esc(T.frTree(t.name_en, S.fr.glossary)); }).join(' · ') + '</span></div>' +
           '<label class="level-picker">Niveau <output id="level-value" for="level-select">' + S.level + '</output>' +
           '<input type="range" id="level-select" min="' + LEGACY_MIN_LEVEL + '" max="' + T.MAX_LEVEL + '" step="1" value="' + S.level + '" aria-label="Niveau du personnage"></label>' +
           '<label class="level-picker" title="Legacy · Aventure · Talented — dépensé en Points Legacy, indépendant des arbres de classe. Rang 1 (niveau 9) confirmé par deux relevés indépendants du panel BlizzCon 2026 ; rangs 2 à 5 estimés par extrapolation, non confirmés.">' +
