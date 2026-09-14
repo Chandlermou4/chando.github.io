@@ -9,9 +9,10 @@ publié.
   `/forever/talents.html`.
 - `tbc/` : section TBC. `strats.html` liste les guides par phase ; un
   `<boss>.html` par boss. Chaque nouvelle page TBC se dépose ici.
-- `forever/` : section Forever. `talents.html` (calculateur) et `legacy.html`
-  (résumé des Points Legacy, page de contenu simple sans script) pour
-  l'instant ; toute future page Forever se dépose ici. Chaque page de la
+- `forever/` : section Forever. `talents.html` (calculateur), `legacy.html`
+  (résumé des Points Legacy) et `races.html` (combinaisons race-classe et
+  changements de raciaux) pour l'instant — toutes des pages de contenu simple
+  sans script ; toute future page Forever se dépose ici. Chaque page de la
   section porte le même petit `.section-nav` pour naviguer entre elles.
 - `<boss>.html` (dans `tbc/`) : une page par boss. Uniquement du markup + deux
   `<link>` de style + deux `<script src>`. Aucun script inline.
