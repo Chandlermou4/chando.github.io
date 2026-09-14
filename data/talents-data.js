@@ -25773,8 +25773,9 @@ window.TALENT_FR={
   "chaman/elemental-combat-5-4": {
    "name": "Ancrage tellurique",
    "nameSource": "adapte",
-   "rank1": "Votre Totem de glèbe immobilise les cibles proches pendant 5 sec lorsqu’il est invoqué.",
-   "textSource": "editorial"
+   "rank1": "Votre Totem de lien terrestre immobilise les cibles proches pendant 5 sec lorsqu’il est invoqué.",
+   "textSource": "editorial",
+   "note": "Le totem cité est un sort de base du chaman (Earthbind Totem, sort 2484) : nom officiel du client français, « Totem de lien terrestre » — corrigé après une première traduction erronée (« Totem de glèbe »)."
   },
   "chaman/elemental-combat-7-2": {
    "name": "Explosion de lave",
