@@ -52,7 +52,8 @@ header .eyebrow{font-size:11px;font-weight:600;letter-spacing:.24em;color:var(--
 main{flex:1;width:100%;max-width:860px;margin:0 auto;padding:36px 48px 64px}
 main h2{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:22px;margin:40px 0 6px;color:#1d8dcd}
 main h2:first-child{margin-top:0}
-main h3{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:17px;margin:26px 0 4px;color:var(--fg)}
+main h3{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:17px;margin:26px 0 4px;color:var(--fg);display:flex;align-items:center;gap:10px}
+.race-ico{width:26px;height:26px;border-radius:6px;border:1px solid var(--hair)}
 main .lede{color:var(--dim);font-size:14.5px;max-width:62ch;margin-bottom:8px}
 main p{max-width:66ch}
 main p+p{margin-top:10px}
@@ -71,11 +72,13 @@ main p+p{margin-top:10px}
 .perk-effect{grid-column:1/-1;font-size:13.5px;color:var(--dim);margin-top:2px;max-width:66ch}
 
 .combo-wrap{overflow-x:auto;margin-top:14px}
-.combo{width:100%;min-width:480px;border-collapse:collapse;font-size:13px}
+.combo{width:100%;min-width:540px;border-collapse:collapse;font-size:13px}
 .combo th{text-align:center;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--dim);font-weight:600;padding:0 6px 8px;border-bottom:1px solid var(--hair)}
 .combo th:first-child{text-align:left}
+.combo th img.ico{display:block;width:20px;height:20px;border-radius:4px;margin:0 auto 4px}
 .combo td{text-align:center;padding:8px 6px;border-bottom:1px solid var(--hair);color:var(--hair)}
-.combo td:first-child{text-align:left;font-weight:600;color:var(--fg)}
+.combo td:first-child{text-align:left;font-weight:600;color:var(--fg);white-space:nowrap}
+.combo td:first-child img.ico{width:18px;height:18px;border-radius:4px;vertical-align:middle;margin-right:7px}
 .combo td.yes{color:var(--accent);font-weight:700}
 .combo td.new{color:#1d8dcd;font-weight:700;font-size:10.5px;letter-spacing:.02em}
 
@@ -135,39 +138,53 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 <h3>Alliance</h3>
 <div class="combo-wrap">
 <table class="combo">
-  <tr><th>Classe</th><th>Nain</th><th>Gnome</th><th>Humain</th><th>Elfe de la nuit</th><th>Skyborne</th></tr>
-  <tr><td>Druide</td><td>–</td><td>–</td><td>–</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td>Chasseur</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td>Mage</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td>Paladin</td><td class="yes">✓</td><td>–</td><td class="yes">✓</td><td>–</td><td>–</td></tr>
-  <tr><td>Prêtre</td><td class="yes">✓</td><td class="new">✓ Nouveau</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td></tr>
-  <tr><td>Voleur</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td>Chaman</td><td class="new">✓ Nouveau</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
-  <tr><td>Démoniste</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td><td>–</td></tr>
-  <tr><td>Guerrier</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
+  <tr>
+    <th>Classe</th>
+    <th><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_dwarf_male.jpg" alt="">Nain</th>
+    <th><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_gnome_male.jpg" alt="">Gnome</th>
+    <th><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_human_male.jpg" alt="">Humain</th>
+    <th><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_nightelf_male.jpg" alt="">Elfe de la nuit</th>
+    <th>Skyborne</th>
+  </tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" alt="">Druide</td><td>–</td><td>–</td><td>–</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" alt="">Chasseur</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" alt="">Mage</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" alt="">Paladin</td><td class="yes">✓</td><td>–</td><td class="yes">✓</td><td>–</td><td>–</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" alt="">Prêtre</td><td class="yes">✓</td><td class="new">✓ Nouveau</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" alt="">Voleur</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" alt="">Chaman</td><td class="new">✓ Nouveau</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" alt="">Démoniste</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td><td>–</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" alt="">Guerrier</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
 </table>
 </div>
 
 <h3>Horde</h3>
 <div class="combo-wrap">
 <table class="combo">
-  <tr><th>Classe</th><th>Orc</th><th>Tauren</th><th>Troll</th><th>Mort-vivant</th><th>Skyborne</th></tr>
-  <tr><td>Druide</td><td>–</td><td class="yes">✓</td><td>–</td><td>–</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td>Chasseur</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td>Mage</td><td class="new">✓ Nouveau</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td></tr>
-  <tr><td>Paladin</td><td>–</td><td>–</td><td>–</td><td class="new">✓ Nouveau</td><td>–</td></tr>
-  <tr><td>Prêtre</td><td>–</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td></tr>
-  <tr><td>Voleur</td><td class="yes">✓</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td>Chaman</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td></tr>
-  <tr><td>Démoniste</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td><td class="yes">✓</td><td>–</td></tr>
-  <tr><td>Guerrier</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
+  <tr>
+    <th>Classe</th>
+    <th><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_orc_male.jpg" alt="">Orc</th>
+    <th><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_tauren_male.jpg" alt="">Tauren</th>
+    <th><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_troll_male.jpg" alt="">Troll</th>
+    <th><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_undead_male.jpg" alt="">Mort-vivant</th>
+    <th>Skyborne</th>
+  </tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" alt="">Druide</td><td>–</td><td class="yes">✓</td><td>–</td><td>–</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" alt="">Chasseur</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" alt="">Mage</td><td class="new">✓ Nouveau</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" alt="">Paladin</td><td>–</td><td>–</td><td>–</td><td class="new">✓ Nouveau</td><td>–</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" alt="">Prêtre</td><td>–</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" alt="">Voleur</td><td class="yes">✓</td><td>–</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" alt="">Chaman</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" alt="">Démoniste</td><td class="yes">✓</td><td>–</td><td class="new">✓ Nouveau</td><td class="yes">✓</td><td>–</td></tr>
+  <tr><td><img class="ico" src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" alt="">Guerrier</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="new">✓ Nouveau</td></tr>
 </table>
 </div>
 
 <h2>Changements de raciaux</h2>
 <p class="tree-desc">Certains raciaux Classic sont inchangés, d'autres modifiés, remplacés ou entièrement nouveaux.</p>
 
-<h3>Humain</h3>
+<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_human_male.jpg" alt="">Humain</h3>
 <p class="tree-desc">Raciaux Classic retirés : Diplomatie, Spécialisation : masses.</p>
 <div class="tree-block">
   <div class="perk">
@@ -192,7 +209,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3>Nain</h3>
+<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_dwarf_male.jpg" alt="">Nain</h3>
 <p class="tree-desc">Raciaux Classic retirés : Résistance au givre, Spécialisation : armes à feu.</p>
 <div class="tree-block">
   <div class="perk">
@@ -217,7 +234,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3>Elfe de la nuit</h3>
+<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_nightelf_male.jpg" alt="">Elfe de la nuit</h3>
 <p class="tree-desc">Raciaux Classic retirés : Résistance à la nature.</p>
 <div class="tree-block">
   <div class="perk">
@@ -242,7 +259,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3>Gnome</h3>
+<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_gnome_male.jpg" alt="">Gnome</h3>
 <p class="tree-desc">Raciaux Classic retirés : Résistance aux arcanes.</p>
 <div class="tree-block">
   <div class="perk">
@@ -267,7 +284,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3>Orc</h3>
+<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_orc_male.jpg" alt="">Orc</h3>
 <p class="tree-desc">Raciaux Classic retirés : Autorité.</p>
 <div class="tree-block">
   <div class="perk">
@@ -292,7 +309,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3>Mort-vivant</h3>
+<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_undead_male.jpg" alt="">Mort-vivant</h3>
 <p class="tree-desc">Raciaux Classic retirés : Résistance à l'ombre.</p>
 <div class="tree-block">
   <div class="perk">
@@ -317,7 +334,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3>Tauren</h3>
+<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_tauren_male.jpg" alt="">Tauren</h3>
 <p class="tree-desc">Raciaux Classic retirés : Résistance à la nature.</p>
 <div class="tree-block">
   <div class="perk">
@@ -342,7 +359,7 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   </div>
 </div>
 
-<h3>Troll</h3>
+<h3><img class="race-ico" src="https://wow.zamimg.com/images/wow/icons/large/achievement_character_troll_male.jpg" alt="">Troll</h3>
 <p class="tree-desc">Raciaux Classic retirés : Spécialisation : arcs.</p>
 <div class="tree-block">
   <div class="perk">
