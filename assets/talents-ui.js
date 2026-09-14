@@ -25,7 +25,8 @@
   // ── État ─────────────────────────────────────────────────────────────────
   var params = new URLSearchParams(window.location.search);
   var slug = params.get('classe');
-  if (!T.talentClass(slug)) slug = T.talentClasses[0].slug;
+  var hasClass = !!T.talentClass(slug);
+  if (!hasClass) slug = T.talentClasses[0].slug;
 
   var S = {
     slug: slug,
@@ -144,6 +145,18 @@
         (c.icon ? '<img src="' + esc(T.iconUrl(c.icon)) + '" alt="" loading="lazy" data-fallback="' + esc(T.monogram(c.name_en)) + '">' : esc(T.monogram(c.name_en))) +
         '</a>';
     }).join('') + '</nav>';
+  }
+
+  function renderHub() {
+    root.className = 'talent-hub';
+    root.innerHTML =
+      '<p class="hub-intro">Choisissez une classe pour ouvrir son calculateur de talents.</p>' +
+      '<nav class="hub-grid">' + T.talentClasses.map(function (c) {
+        return '<a href="/forever/talents.html?classe=' + encodeURIComponent(c.slug) + '">' +
+          (c.icon ? '<img src="' + esc(T.iconUrl(c.icon)) + '" alt="" loading="lazy" data-fallback="' + esc(T.monogram(c.name_en)) + '">' : '<span class="hub-mono">' + esc(T.monogram(c.name_en)) + '</span>') +
+          '<span class="hub-name">' + esc(c.name_fr) + '</span>' +
+          '</a>';
+      }).join('') + '</nav>';
   }
 
   function renderLegend() {
@@ -441,9 +454,12 @@
       var node = e.target.closest('.talent-node');
       if (node) leavePeek();
     });
-    // repli monogramme si une icône Wowhead ne répond pas (capture : error/load
-    // ne bullent pas, la phase de capture les intercepte quand même) — vaut pour
-    // les icônes de talent (span.node-icon) et les icônes de classe (a.class-tabs)
+  }
+
+  // repli monogramme si une icône Wowhead ne répond pas (capture : error/load
+  // ne bullent pas, la phase de capture les intercepte quand même) — vaut pour
+  // les icônes de talent (span.node-icon), de classe (a.class-tabs) et du hub
+  function wireIconFallback() {
     root.addEventListener('error', function (e) {
       var img = e.target;
       if (img && img.tagName === 'IMG' && img.hasAttribute('data-fallback') && img.parentElement) {
@@ -454,6 +470,8 @@
 
   function init() {
     if (!root) return;
+    wireIconFallback();
+    if (!hasClass) { renderHub(); return; }
     renderShell();
     wireEvents();
     syncUrl();
