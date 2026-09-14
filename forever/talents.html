@@ -27,64 +27,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles/talents.css">
+<link rel="stylesheet" href="/assets/site.css">
 <style>
-:root{
-  --bg:#0C0D0B;--fg:#E7E4DA;--dim:#9AA09B;
-  --hair:rgba(231,228,218,.14);
-  --accent:#8FBDAE;--accent-soft:rgba(143,189,174,.14);
-}
-:root[data-theme="light"]{
-  --bg:#F7F4EE;--fg:#20232A;--dim:#6C7178;
-  --hair:rgba(30,34,42,.14);
-  --accent:#3E6B5E;--accent-soft:rgba(62,107,94,.12);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-  background:var(--bg);color:var(--fg);font-family:'Hanken Grotesk',system-ui,sans-serif;
-  line-height:1.45;min-height:100vh;display:flex;flex-direction:column;
-  -webkit-font-smoothing:antialiased;
-}
-a{color:inherit}
-header{
-  padding:34px 48px 26px;display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;
-  border-bottom:1px solid var(--hair);
-}
-header h1{font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:29px;letter-spacing:-.01em}
-
-.site-switch{display:flex;gap:18px;padding:14px 48px 0}
-.site-switch a{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;opacity:.5;transition:opacity .15s}
-.site-switch a:hover,.site-switch a.is-here{opacity:1}
-.site-switch a.tbc{color:#62c907}
-.site-switch a.forever{color:#1d8dcd}
-@media(max-width:620px){.site-switch{padding:14px 24px 0}}
-
-.section-nav{display:flex;gap:22px;padding:16px 48px 0}
-.section-nav a{font-size:13px;font-weight:600;text-decoration:none;color:var(--dim);padding-bottom:4px;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
-.section-nav a:hover{color:var(--fg)}
-.section-nav a.is-here{color:var(--fg);border-color:#1d8dcd}
-@media(max-width:620px){.section-nav{padding:14px 24px 0}}
-
-main{flex:1;width:100%;max-width:1180px;margin:0 auto;padding:40px 48px 60px}
-
-footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
-  font-size:11.5px;letter-spacing:.02em;
-  display:flex;flex-direction:column;align-items:center;gap:8px}
-.feedback{display:inline-flex;align-items:center;gap:9px;text-decoration:none;
-  color:#5865F2;font-size:14px;font-weight:600;letter-spacing:.01em;transition:color .18s}
-.feedback:hover{color:#7B87FF}
-.feedback svg{width:20px;height:20px;flex:none}
-
-#themetoggle{position:fixed;right:24px;bottom:24px;z-index:98;
-  font-family:'Hanken Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:.08em;
-  color:var(--fg);background:transparent;border:1px solid var(--hair);
-  padding:8px 14px;border-radius:999px;cursor:pointer;transition:border-color .2s}
-#themetoggle:hover{border-color:var(--accent)}
-
-@media(max-width:760px){
-  header{padding:26px 24px 20px}
-  main{padding:28px 24px 48px}
-}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+:root{--body-lh:1.45;--header-pb:26px}
+main{flex:1;width:100%;max-width:1180px;margin:0 auto;padding:40px 48px 60px}@media(max-width:760px){
+  main{padding:28px 24px 48px}}
 </style>
 </head>
 <body>

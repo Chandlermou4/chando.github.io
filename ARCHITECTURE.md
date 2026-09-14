@@ -26,6 +26,19 @@ publié.
   dur (icônes de rôle) : c'est le bug qui s'est produit en déplaçant les
   pages de boss dans `tbc/`, corrigé une fois pour toutes en le rendant
   absolu là aussi.
+- `assets/site.css` : **chrome commun aux pages de contenu** (accueil de section,
+  pages Forever) — jetons de couleur, en-tête, bascule TBC/Forever, navigation
+  de section, bandeau de provenance, pied de page, bascule clair/sombre. Les
+  guides de boss n'y touchent pas : ils ont leur propre tronc commun dans
+  `assets/guide.css`. Chaque page ne garde en ligne que ce qui lui est propre
+  (largeur de son `<main>`, ses composants). Deux variables absorbent des écarts
+  historiques, conservés tels quels pour ne rien déplacer : `--body-lh` (1.45 sur
+  les pages outil, plus denses ; 1.55 ailleurs) et `--header-pb`.
+  **Ce qui n'y a délibérément pas sa place** : les styles de prose
+  (`main p`, `main h2`, `.lede`). Ils ressemblent à du tronc commun mais
+  débordent sur les pages dont le contenu n'est pas de la prose — mis en commun,
+  ils coloraient en bleu les titres de la page Actualités et bridaient les
+  paragraphes du calculateur.
 - `assets/guide.js` : moteur commun à tous les guides — navigation clavier,
   lecture auto, mode enregistrement (`R`), mode édition (`E`), export, et
   mise à l'échelle 1920x1080.
