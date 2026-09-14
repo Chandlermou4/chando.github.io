@@ -139,7 +139,7 @@
   function renderClassTabs() {
     return '<nav class="class-tabs">' + T.talentClasses.map(function (c) {
       var active = c.slug === S.slug;
-      return '<a href="forever.html?classe=' + encodeURIComponent(c.slug) + '" title="' + esc(c.name_fr) + '" aria-label="' + esc(c.name_fr) + '"' +
+      return '<a href="/forever/talents.html?classe=' + encodeURIComponent(c.slug) + '" title="' + esc(c.name_fr) + '" aria-label="' + esc(c.name_fr) + '"' +
         (active ? ' class="is-active" aria-current="page"' : '') + '>' +
         (c.icon ? '<img src="' + esc(T.iconUrl(c.icon)) + '" alt="" loading="lazy" data-fallback="' + esc(T.monogram(c.name_en)) + '">' : esc(T.monogram(c.name_en))) +
         '</a>';

@@ -5,11 +5,22 @@ publié.
 
 ## Fichiers
 
-- `index.html` : porte d'entrée, deux liens vers `tbc.html` et `forever.html`.
-- `tbc.html` : liste des guides, classés par phase.
-- `forever.html` : calculateur de talents (démo WoW Forever, hors-sujet TBC).
-- `<boss>.html` (racine) : une page par boss. Uniquement du markup + deux
+- `index.html` : porte d'entrée, deux liens vers `/tbc/strats.html` et
+  `/forever/talents.html`.
+- `tbc/` : section TBC. `strats.html` liste les guides par phase ; un
+  `<boss>.html` par boss. Chaque nouvelle page TBC se dépose ici.
+- `forever/` : section Forever. `talents.html` (calculateur) pour l'instant ;
+  toute future page Forever se dépose ici.
+- `<boss>.html` (dans `tbc/`) : une page par boss. Uniquement du markup + deux
   `<link>` de style + deux `<script src>`. Aucun script inline.
+- `assets/`, `data/` : **restent à la racine**, partagés entre `tbc/` et
+  `forever/`. Toute référence depuis une page de section est un chemin
+  **absolu** (`/assets/…`, `/data/…`), jamais `assets/…` ni `../assets/…` —
+  un chemin relatif se casserait dès que la page change de profondeur.
+  `assets/guide.js` applique la même règle pour ses propres chemins codés en
+  dur (icônes de rôle) : c'est le bug qui s'est produit en déplaçant les
+  pages de boss dans `tbc/`, corrigé une fois pour toutes en le rendant
+  absolu là aussi.
 - `assets/guide.js` : moteur commun à tous les guides — navigation clavier,
   lecture auto, mode enregistrement (`R`), mode édition (`E`), export, et
   mise à l'échelle 1920x1080.
@@ -21,6 +32,8 @@ publié.
   le diagramme).
 - `assets/styles/<boss>.css` : **uniquement le spécifique** — image de fond,
   `--h1` (taille du titre), couleurs de l'arène et animations du diagramme.
+  Ses `url(...)` restent relatifs au fichier CSS lui-même (`assets/styles/`),
+  donc inchangés quelle que soit la page qui le charge.
 - `assets/media/` : images et icônes, mutualisées entre les pages.
 
 L'ordre des `<link>` compte : `assets/guide.css` d'abord, la feuille du boss

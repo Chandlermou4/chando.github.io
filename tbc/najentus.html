@@ -2,45 +2,93 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>Teron Fielsang — Temple noir · Boss 4 / 9</title>
+<title>Grand seigneur de guerre Naj'entus — Temple noir · Boss 1 / 9</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/guide.css">
-<link rel="stylesheet" href="assets/styles/teron.css">
+<link rel="stylesheet" href="/assets/guide.css">
+<link rel="stylesheet" href="/assets/styles/najentus.css">
 </head>
 <body>
 <div id="fit"><div id="stage" data-step="1">
 <div id="bg"></div><div id="scrim"></div>
-<div id="arena"><svg id="field" viewBox="-679 -738 1000 1000">
+<div id="arena"><svg id="field" viewBox="-662 -152 1000 1000">
+
+<g id="scale" transform="translate(-380,470)">
+  <path d="M 0 0 L 62 0" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
+  <path d="M 0 -7 L 0 7 M 62 -7 L 62 7" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
+  <text class="tag" x="31" y="26" fill="rgba(237,232,218,.7)">6 MÈTRES</text>
+</g>
 
 <g id="anchor-boss">
   <g class="mob" id="boss" data-nodrag>
-    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#E8443C"/>
-    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
+    <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#2FC2C7"/>
+    <image class="marker" href="/assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
-  <text class="lbl" x="0" y="84" fill="#E8443C">TERON FIELSANG</text>
+  <text class="lbl" y="66" fill="#2FC2C7">NAJ'ENTUS</text>
 </g>
 
 <g id="raid"></g>
 
-<g id="losange" transform="translate(-288,-638)">
-  <path class="losange" d="M 0 -34 L 26 0 L 0 34 L -26 0 Z"/>
-  <text class="tag" y="-52" fill="#B58BF5">LOSANGE · CONTRE LE MUR</text>
+<!-- 1 · placement -->
+<g id="L1" class="layer">
+  <g id="cleave" transform="rotate(-90)"><path class="cone-cl" d="M 0 0 L 118 -52 A 129 129 0 0 1 118 52 Z"/></g>
+  <text class="tag" x="0" y="-120" fill="#E8443C">PERSONNE DEVANT · ENCHAÎNEMENT</text>
+  <text class="note" x="0" y="352" fill="#EDE8DA">NAJ'ENTUS TANKÉ DOS AU RAID</text>
+  <text class="note" x="0" y="384" fill="#2FC2C7">UN SEUL TANK, ENTRE LE BOSS ET LE MUR · LE RESTE EN ÉVENTAIL DERRIÈRE</text>
 </g>
 
-<path id="route" d="M -34 -170 C -130 -320, -230 -470, -278 -600" fill="none" marker-end="url(#aht)"/>
+<!-- 2 · Épine -->
+<g id="L2" class="layer">
+  <g id="needle"><path class="cone-n" d="M 0 0 L 300 -145 A 330 330 0 0 1 300 145 Z"/></g>
+  <g class="hit-splash" transform="translate(-150,130)"><circle r="52"/></g>
+  <g class="hit-splash" style="--d:.15s" transform="translate(70,205)"><circle r="52"/></g>
+  <g class="hit-splash" style="--d:.3s" transform="translate(175,150)"><circle r="52"/></g>
+  <text class="note" x="0" y="330" fill="#7FB2F0">SUR DES JOUEURS AU HASARD, EN CONTINU</text>
+  <text class="note" x="0" y="366" fill="#EDE8DA">EXPLOSION D'ÉPINE · GIVRE · 6 M AUTOUR DE LA CIBLE</text>
+</g>
 
+<!-- 3 · Épine de Perforation -->
+<g id="L3" class="layer">
+  <g id="impaled" transform="translate(-260,110)">
+    <circle class="pin-ring" r="40"/>
+    <image class="marker" href="/assets/media/9bc491bf8f8e302edf47.webp" x="-22" y="-22" width="44" height="44"/>
+    <text class="note" y="-58" fill="#E8443C">EMPALÉ · ÉTOURDI</text>
+  </g>
+  <path class="save-arrow" d="M -220 100 L -60 30" fill="none" marker-end="url(#ahn)"/>
+  <g transform="translate(-30,10)"><image href="/assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/>
+    <text class="tag" y="34" fill="#F2C14E">RAMASSE L'ÉPINE</text></g>
+  <text class="note" x="0" y="330" fill="#EDE8DA">CLIQUEZ L'ÉPINE AU SOL POUR LE LIBÉRER</text>
+  <text class="note" x="0" y="366" fill="#F2C14E">L'ÉPINE DORSALE RÉCUPÉRÉE SERT À BRISER LE BOUCLIER</text>
+</g>
 
-<defs><marker id="aht" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-  <path d="M0,0 L8,4 L0,8 Z" fill="#B58BF5"/></marker></defs>
+<!-- 4 · Bouclier de Flots -->
+<g id="L4" class="layer">
+  <circle class="shield" r="72"/>
+  <text class="note" x="0" y="330" fill="#2FC2C7">IMMUNISÉ · IL SE RÉGÉNÈRE CHAQUE SECONDE</text>
+  <g id="reduc" transform="translate(0,360)">
+    <text class="note" y="0" fill="#FF7A33">POISON DOULOUREUX · FRAPPE MORTELLE EN PERMANENCE</text>
+    <text class="note" y="26" fill="var(--slate)">sinon il regagne tout ce que vous venez de lui infliger</text>
+  </g>
+</g>
+
+<!-- 5 · Rupture -->
+<g id="L5" class="layer">
+  <circle class="burst" r="70"/><circle class="burst" r="70"/>
+  <text class="note" x="0" y="330" fill="#7FB2F0">RAID À PLEINE VIE · FURIE SANGUINAIRE · CD DE SOIN</text>
+  <text class="note" x="0" y="366" fill="#E8443C">LE JAILLISSEMENT DE FLOTS COÛTE ~80 % DE LA VIE À TOUT LE RAID</text>
+  <text class="note" x="0" y="392" fill="var(--slate)">un lancer trop tôt tue les plus fragiles</text>
+</g>
+
+<defs><marker id="ahn" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+  <path d="M0,0 L8,4 L0,8 Z" fill="#F2C14E"/></marker></defs>
 
 </svg></div>
 <div id="panel">
   <a class="feedback" href="https://discord.gg/rz5PxxMgnv" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.213.386-.46.905-.63 1.319a18.27 18.27 0 0 0-5.51 0C9.575 3.905 9.322 3.386 9.11 3a19.7 19.7 0 0 0-4.432 1.369C1.869 8.59 1.106 12.705 1.488 16.76a19.9 19.9 0 0 0 6.073 3.08 14.6 14.6 0 0 0 1.307-2.136c-.72-.271-1.41-.606-2.06-1 .173-.128.342-.261.505-.398a14.2 14.2 0 0 0 12.171 0c.165.14.334.273.506.398-.652.394-1.343.73-2.064 1.001.377.75.815 1.463 1.307 2.135a19.85 19.85 0 0 0 6.076-3.08c.448-4.7-.766-8.777-3.209-12.39ZM8.02 14.331c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.955 2.419-2.157 2.419Zm7.96 0c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.946 2.419-2.157 2.419Z"/></svg>Pour signaler une erreur ou proposer une modification</a>
-  <div class="eyebrow">Temple noir · Boss 4 / 9</div>
-  <h1>Teron Fielsang</h1>
-  <div class="subtitle">Mourir fait partie du plan — à condition de savoir quoi faire ensuite.</div>
+  <div class="eyebrow">Temple noir · Boss 1 / 9</div>
+  <h1>Grand seigneur de guerre Naj'entus</h1>
+  <div class="subtitle">Une seule règle qui compte : on ne brise pas le bouclier avant que le raid soit à pleine vie.</div>
   <div id="stepno"></div><div id="mech"></div><div id="narration"></div><div id="rail"></div>
 </div>
 
@@ -66,11 +114,11 @@
 
 <div id="leftnav">
   <div class="navpair">
-    <a class="navbtn" href="akama.html"><span class="lbl">← Précédent</span><span class="ttl">Ombre d'Akama</span></a>
-    <a class="navbtn" href="gurtogg.html"><span class="lbl">→ Suivant</span><span class="ttl">Gurtogg Fièvresang</span></a>
+    <a class="navbtn" href="gruul.html"><span class="lbl">← Précédent</span><span class="ttl">Gruul le Tue-Dragon</span></a>
+    <a class="navbtn" href="supremus.html"><span class="lbl">→ Suivant</span><span class="ttl">Supremus</span></a>
   </div>
   <div id="bossmenu">
-    <a class="home" href="tbc.html">← Retour à l’accueil</a>
+    <a class="home" href="/tbc/strats.html">← Retour à l’accueil</a>
     <details class="phase-group">
       <summary>Phase 1</summary>
       <div class="phase-content">
@@ -103,10 +151,10 @@
         <a class="" href="azgalor.html">Azgalor</a>
         <a class="" href="archimonde.html">Archimonde</a>
         <div class="raid-h">Temple noir</div>
-        <a class="" href="najentus.html">Grand seigneur de guerre Naj’entus</a>
+        <a class="current" href="najentus.html">Grand seigneur de guerre Naj’entus</a>
         <a class="" href="supremus.html">Supremus</a>
         <a class="" href="akama.html">Ombre d’Akama</a>
-        <a class="current" href="teron.html">Teron Fielsang</a>
+        <a class="" href="teron.html">Teron Fielsang</a>
         <a class="" href="gurtogg.html">Gurtogg Fièvresang</a>
         <a class="" href="reliquaire.html">Reliquaire des Perdus</a>
         <a class="" href="shahraz.html">Mère Shahraz</a>
@@ -118,7 +166,7 @@
 </div>
 <div id="hint"><span class="kbd">←</span><span class="kbd">→</span> naviguer &nbsp;·&nbsp; <span class="kbd">E</span> édition</div>
 </div></div>
-<script src="data/bosses/teron.js"></script>
-<script src="assets/guide.js"></script>
+<script src="/data/bosses/najentus.js"></script>
+<script src="/assets/guide.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 
 const STEPS=window.GUIDE_STEPS||[];;
-const ICONS = {"tank": "assets/media/2525fef06c6f205fbd90.svg", "healer": "assets/media/6ebcd4a97c05de8d9b05.svg", "mdps": "assets/media/6c1b7ace933b5f5c95ef.svg", "rdps": "assets/media/c0835e827ed757b9014c.svg"};
+const ICONS = {"tank": "/assets/media/2525fef06c6f205fbd90.svg", "healer": "/assets/media/6ebcd4a97c05de8d9b05.svg", "mdps": "/assets/media/6c1b7ace933b5f5c95ef.svg", "rdps": "/assets/media/c0835e827ed757b9014c.svg"};
 const NS='http://www.w3.org/2000/svg';
 function pc(x,y,role,size){size=size||30;
   const g=document.createElementNS(NS,'g');g.setAttribute('class','pc '+role);

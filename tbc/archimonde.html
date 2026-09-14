@@ -6,8 +6,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/guide.css">
-<link rel="stylesheet" href="assets/styles/archimonde.css">
+<link rel="stylesheet" href="/assets/guide.css">
+<link rel="stylesheet" href="/assets/styles/archimonde.css">
 </head>
 <body>
 <div id="fit"><div id="stage" data-step="1">
@@ -24,7 +24,7 @@
 <g id="anchor-boss">
   <g class="mob" id="boss" data-nodrag>
     <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#8CF07E"/>
-    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
+    <image class="marker" href="/assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
   <text class="lbl" y="104" fill="#8CF07E">ARCHIMONDE</text>
 </g>
@@ -34,7 +34,7 @@
 <!-- 2 · Jaillissement d'Air -->
 <g id="airburst" class="layer" transform="translate(-215,155)">
   <circle id="ab-shadow" fill="#000" r="10"/>
-  <g id="ab-target" data-nodrag><circle class="ab-halo" r="24"/><image href="assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/></g>
+  <g id="ab-target" data-nodrag><circle class="ab-halo" r="24"/><image href="/assets/media/c0835e827ed757b9014c.svg" x="-16" y="-16" width="32" height="32"/></g>
   <text id="ab-cue" y="-84">LARMES ↓</text>
 </g>
 
@@ -50,7 +50,7 @@
     <circle cx="200" cy="40" r="18" style="animation-delay:2s"/>
   </g>
   <g id="flame-head" data-nodrag><circle class="flame" r="22"/><circle class="flame" r="34" opacity=".3"/></g>
-  <g id="runner" data-nodrag><image href="assets/media/6c1b7ace933b5f5c95ef.svg" x="-16" y="-16" width="32" height="32"/></g>
+  <g id="runner" data-nodrag><image href="/assets/media/6c1b7ace933b5f5c95ef.svg" x="-16" y="-16" width="32" height="32"/></g>
 </g>
 
 <!-- 4 · Peur -->
@@ -74,7 +74,7 @@
 <!-- 6 · Doigt de la Mort -->
 <g id="melee" class="layer">
   <circle class="melee-ring" r="118"/>
-  <g class="pc mdps" transform="translate(-72,84)"><image href="assets/media/6c1b7ace933b5f5c95ef.svg" x="-16" y="-16" width="32" height="32"/></g>
+  <g class="pc mdps" transform="translate(-72,84)"><image href="/assets/media/6c1b7ace933b5f5c95ef.svg" x="-16" y="-16" width="32" height="32"/></g>
   <path class="finger" d="M -30 -22 L -318 -246" fill="none"/>
   <g transform="translate(-330,-256)"><circle class="finger-hit" r="30"/></g>
   <text class="note" x="0" y="180" fill="#F2C14E">QUELQU'UN AU CORPS-À-CORPS EN PERMANENCE</text>
@@ -84,7 +84,7 @@
 <!-- 7 · Charge d'Âme -->
 <g id="soul" class="layer">
   <g transform="translate(-255,-195)"><circle class="corpse" r="20"/>
-    <image href="assets/media/9bc491bf8f8e302edf47.webp" x="-17" y="-17" width="34" height="34" opacity=".85"/></g>
+    <image href="/assets/media/9bc491bf8f8e302edf47.webp" x="-17" y="-17" width="34" height="34" opacity=".85"/></g>
   <path class="soul-bolt" d="M -248 -188 L -22 -12" fill="none"/>
   <text class="note" x="-255" y="-232" fill="#8CF07E">+1 CHARGE D'ÂME</text>
 </g>
@@ -124,7 +124,7 @@
     <span class="navbtn disabled"><span class="lbl">→ Suivant</span></span>
   </div>
   <div id="bossmenu">
-    <a class="home" href="tbc.html">← Retour à l’accueil</a>
+    <a class="home" href="/tbc/strats.html">← Retour à l’accueil</a>
     <details class="phase-group">
       <summary>Phase 1</summary>
       <div class="phase-content">
@@ -171,7 +171,7 @@
 </div>
 <div id="hint"><span class="kbd">←</span><span class="kbd">→</span> naviguer &nbsp;·&nbsp; <span class="kbd">E</span> édition</div>
 </div></div>
-<script src="data/bosses/archimonde.js"></script>
-<script src="assets/guide.js"></script>
+<script src="/data/bosses/archimonde.js"></script>
+<script src="/assets/guide.js"></script>
 </body>
 </html>

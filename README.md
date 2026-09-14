@@ -27,13 +27,25 @@ git push
 
 Voir `ARCHITECTURE.md`. En résumé :
 
-- `index.html` : porte d'entrée sobre, deux liens (TBC / Forever). `tbc.html`, `forever.html` et les `<boss>.html` à la racine : pages statiques (markup seul).
-- `assets/guide.js` : moteur partagé par tous les guides.
+- `index.html` : porte d'entrée sobre, deux liens (TBC / Forever).
+- `tbc/` : tout le contenu TBC — `strats.html` (liste des guides) et un
+  `<boss>.html` par boss. `chando.pages.dev/tbc/…`
+- `forever/` : tout le contenu Forever — `talents.html` (calculateur) pour
+  l'instant. `chando.pages.dev/forever/…`
+- `assets/`, `data/` : partagés entre les deux sections, restent à la racine.
+  Toutes les pages y font référence par chemin **absolu** (`/assets/…`,
+  `/data/…`), jamais relatif — une page à n'importe quelle profondeur
+  continue de les trouver sans rien recalculer.
+- `assets/guide.js` : moteur partagé par tous les guides de boss.
 - `assets/guide.css` : tronc commun de style, partagé par tous les guides.
 - `data/bosses/<boss>.js` : étapes et placement de chaque boss.
 - `assets/styles/<boss>.css` : ce qui change d'un boss à l'autre (fond, titre,
-  couleurs de l'arène, animations).
+  couleurs de l'arène, animations) — ses propres `url(...)` restent relatifs
+  au fichier CSS, pas à la page qui le charge.
 - `assets/media/` : images et icônes mutualisées.
+
+Ajouter une page à une section : la déposer dans `tbc/` ou `forever/`, avec
+des chemins `/assets/…` et `/data/…` absolus vers la racine.
 
 ## Modifier un guide
 

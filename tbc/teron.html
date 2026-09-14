@@ -2,98 +2,45 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>Kaz'rogal — Bataille du mont Hyjal · Boss 3 / 5</title>
+<title>Teron Fielsang — Temple noir · Boss 4 / 9</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/guide.css">
-<link rel="stylesheet" href="assets/styles/kazrogal.css">
+<link rel="stylesheet" href="/assets/guide.css">
+<link rel="stylesheet" href="/assets/styles/teron.css">
 </head>
 <body>
 <div id="fit"><div id="stage" data-step="1">
 <div id="bg"></div><div id="scrim"></div>
-<div id="arena"><svg id="field" viewBox="-585 -640 1000 1000">
-
-<circle class="room" r="360"/>
-<circle class="room-inner" r="210"/>
-<g id="scale" transform="translate(-405,-395)">
-  <path d="M 0 0 L 106 0" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
-  <path d="M 0 -7 L 0 7 M 106 -7 L 106 7" stroke="rgba(237,232,218,.7)" stroke-width="3"/>
-  <text class="tag" x="53" y="26" fill="rgba(237,232,218,.7)">20 MÈTRES</text>
-</g>
+<div id="arena"><svg id="field" viewBox="-679 -738 1000 1000">
 
 <g id="anchor-boss">
   <g class="mob" id="boss" data-nodrag>
     <circle class="mob-base" r="66"/><circle class="mob-ring" r="60" stroke="#E8443C"/>
-    <image class="marker" href="assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
+    <image class="marker" href="/assets/media/f2557fec60e56cd12215.webp" x="-32" y="-32" width="64" height="64"/>
   </g>
-  <text class="lbl" y="96" fill="#E8443C">KAZ'ROGAL</text>
+  <text class="lbl" x="0" y="84" fill="#E8443C">TERON FIELSANG</text>
 </g>
 
 <g id="raid"></g>
 
-<!-- 1 · le principe -->
-<g id="L1" class="layer">
-  <g id="manabar" transform="translate(0,-368)">
-    <rect class="mb-bg" x="-180" y="-16" width="360" height="32" rx="16"/>
-    <rect class="mb-fill" x="-176" y="-12" width="352" height="24" rx="12"/>
-    <text class="note" y="46" fill="#4C86E0">LE MANA DU RAID</text>
-  </g>
-  <text class="note" x="0" y="270" fill="#EDE8DA">CHAQUE PORTEUR DE MANA S'ÉCARTE DES AUTRES</text>
+<g id="losange" transform="translate(-288,-638)">
+  <path class="losange" d="M 0 -34 L 26 0 L 0 34 L -26 0 Z"/>
+  <text class="tag" y="-52" fill="#B58BF5">LOSANGE · CONTRE LE MUR</text>
 </g>
 
-<!-- 2 · la Marque -->
-<g id="L2" class="layer">
-  <g id="drains">
-    <path class="drain" d="M -280 -180 L -50 -34"/><path class="drain" style="--d:.3s" d="M 300 -120 L 54 -26"/>
-    <path class="drain" style="--d:.6s" d="M 180 300 L 34 54"/><path class="drain" style="--d:.9s" d="M -230 250 L -42 46"/>
-    <path class="drain" style="--d:1.2s" d="M 20 -350 L 6 -62"/>
-  </g>
-  <text class="note" x="0" y="-368" fill="#4C86E0">DRAIN SUR TOUT LE RAID</text>
-  <text class="note" x="0" y="270" fill="#FF7A33">ET 10 SECONDES PLUS TÔT À CHAQUE FOIS</text>
-</g>
+<path id="route" d="M -34 -170 C -130 -320, -230 -470, -278 -600" fill="none" marker-end="url(#aht)"/>
 
-<!-- 3 · l'explosion -->
-<g id="L3" class="layer">
-  <g class="boom good" transform="translate(-190,155)">
-    <circle class="boom-r" r="106"/><circle class="boom-c" r="14"/>
-    <text class="note" y="-124" fill="#2FC2C7">ISOLÉ · SANS CONSÉQUENCE</text>
-  </g>
-  <g class="boom bad" transform="translate(35,-235)">
-    <circle class="boom-r bad-r" r="106"/><circle class="boom-c bad-c" r="14"/>
-    <circle class="chain" r="106"/>
-    <text class="note" y="142" fill="#E8443C">DANS LE RAID · RÉACTION EN CHAÎNE</text>
-  </g>
-  <text class="note" x="0" y="-368" fill="#EDE8DA">SOUS 3 000 DE MANA ? SORTEZ AVANT D'EXPLOSER</text>
-</g>
 
-<!-- 4 · les parades -->
-<g id="L4" class="layer">
-  <g transform="translate(-250,-110)"><g class="card"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
-    <text class="ct" y="-4">BLOC DE GLACE · BOUCLIER DIVIN</text><text class="cs" y="17">retirent la Marque net</text></g></g>
-  <g transform="translate(250,-110)"><g class="card" style="--d:.25s"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
-    <text class="ct" y="-4">FORME D'OURS OU DE FÉLIN</text><text class="cs" y="17">pas de mana, pas de drain</text></g></g>
-  <g transform="translate(-250,220)"><g class="card" style="--d:.5s"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
-    <text class="ct" y="-4">JUGEMENT DE SAGESSE</text><text class="cs" y="17">en permanence sur lui</text></g></g>
-  <g transform="translate(250,220)"><g class="card" style="--d:.75s"><rect x="-152" y="-30" width="304" height="60" rx="8"/>
-    <text class="ct" y="-4">RUNES ET POTIONS</text><text class="cs" y="17">dès le début, pas à la fin</text></g></g>
-  <text class="note" x="0" y="-368" fill="#EDE8DA">PROTECTION CONTRE L'OMBRE SUR TOUT LE RAID</text>
-</g>
-
-<!-- 5 · mêlée -->
-<g id="L5" class="layer">
-  <circle class="stomp" r="90"/><circle class="stomp" r="90"/>
-  <text class="note" x="0" y="-368" fill="#B58BF5">CHOC MARTIAL · FAIBLESSE</text>
-  <text class="note" x="0" y="270" fill="#EDE8DA">POTION DE LIBRE ACTION</text>
-  <text class="note" x="0" y="394" fill="var(--slate)">il n'enrage pas : c'est le mana qui vous tue</text>
-</g>
+<defs><marker id="aht" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+  <path d="M0,0 L8,4 L0,8 Z" fill="#B58BF5"/></marker></defs>
 
 </svg></div>
 <div id="panel">
   <a class="feedback" href="https://discord.gg/rz5PxxMgnv" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.213.386-.46.905-.63 1.319a18.27 18.27 0 0 0-5.51 0C9.575 3.905 9.322 3.386 9.11 3a19.7 19.7 0 0 0-4.432 1.369C1.869 8.59 1.106 12.705 1.488 16.76a19.9 19.9 0 0 0 6.073 3.08 14.6 14.6 0 0 0 1.307-2.136c-.72-.271-1.41-.606-2.06-1 .173-.128.342-.261.505-.398a14.2 14.2 0 0 0 12.171 0c.165.14.334.273.506.398-.652.394-1.343.73-2.064 1.001.377.75.815 1.463 1.307 2.135a19.85 19.85 0 0 0 6.076-3.08c.448-4.7-.766-8.777-3.209-12.39ZM8.02 14.331c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.955 2.419-2.157 2.419Zm7.96 0c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.946 2.419-2.157 2.419Z"/></svg>Pour signaler une erreur ou proposer une modification</a>
-  <div class="eyebrow">Bataille du mont Hyjal · Boss 3 / 5</div>
-  <h1>Kaz'rogal</h1>
-  <div class="subtitle">Le seul boss où votre barre bleue est la barre de vie du raid.</div>
+  <div class="eyebrow">Temple noir · Boss 4 / 9</div>
+  <h1>Teron Fielsang</h1>
+  <div class="subtitle">Mourir fait partie du plan — à condition de savoir quoi faire ensuite.</div>
   <div id="stepno"></div><div id="mech"></div><div id="narration"></div><div id="rail"></div>
 </div>
 
@@ -119,18 +66,19 @@
 
 <div id="leftnav">
   <div class="navpair">
-    <a class="navbtn" href="anetheron.html"><span class="lbl">← Précédent</span><span class="ttl">Anetheron</span></a>
-    <a class="navbtn" href="azgalor.html"><span class="lbl">→ Suivant</span><span class="ttl">Azgalor</span></a>
+    <a class="navbtn" href="akama.html"><span class="lbl">← Précédent</span><span class="ttl">Ombre d'Akama</span></a>
+    <a class="navbtn" href="gurtogg.html"><span class="lbl">→ Suivant</span><span class="ttl">Gurtogg Fièvresang</span></a>
   </div>
   <div id="bossmenu">
-    <a class="home" href="tbc.html">← Retour à l’accueil</a>
+    <a class="home" href="/tbc/strats.html">← Retour à l’accueil</a>
     <details class="phase-group">
       <summary>Phase 1</summary>
       <div class="phase-content">
         <div class="raid-h">Karazhan</div>
         <div class="coming">Guides à venir</div>
         <div class="raid-h">Repaire de Gruul</div>
-        <div class="coming">Guides à venir</div>
+        <a class="" href="maulgar.html">Haut-Roi Maulgar</a>
+        <a class="" href="gruul.html">Gruul le Tue-Dragon</a>
         <div class="raid-h">Repaire de Magtheridon</div>
         <div class="coming">Guide à venir</div>
       </div>
@@ -151,14 +99,14 @@
         <div class="raid-h">Bataille du mont Hyjal</div>
         <a class="" href="winterchill.html">Rage Froidhiver</a>
         <a class="" href="anetheron.html">Anetheron</a>
-        <a class="current" href="kazrogal.html">Kaz’rogal</a>
+        <a class="" href="kazrogal.html">Kaz’rogal</a>
         <a class="" href="azgalor.html">Azgalor</a>
         <a class="" href="archimonde.html">Archimonde</a>
         <div class="raid-h">Temple noir</div>
         <a class="" href="najentus.html">Grand seigneur de guerre Naj’entus</a>
         <a class="" href="supremus.html">Supremus</a>
         <a class="" href="akama.html">Ombre d’Akama</a>
-        <a class="" href="teron.html">Teron Fielsang</a>
+        <a class="current" href="teron.html">Teron Fielsang</a>
         <a class="" href="gurtogg.html">Gurtogg Fièvresang</a>
         <a class="" href="reliquaire.html">Reliquaire des Perdus</a>
         <a class="" href="shahraz.html">Mère Shahraz</a>
@@ -170,7 +118,7 @@
 </div>
 <div id="hint"><span class="kbd">←</span><span class="kbd">→</span> naviguer &nbsp;·&nbsp; <span class="kbd">E</span> édition</div>
 </div></div>
-<script src="data/bosses/kazrogal.js"></script>
-<script src="assets/guide.js"></script>
+<script src="/data/bosses/teron.js"></script>
+<script src="/assets/guide.js"></script>
 </body>
 </html>
