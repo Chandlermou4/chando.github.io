@@ -10,10 +10,12 @@ publié.
 - `tbc/` : section TBC. `strats.html` liste les guides par phase ; un
   `<boss>.html` par boss. Chaque nouvelle page TBC se dépose ici.
 - `forever/` : section Forever. `talents.html` (calculateur), `legacy.html`
-  (résumé des Points Legacy) et `races.html` (combinaisons race-classe et
-  changements de raciaux) pour l'instant — toutes des pages de contenu simple
-  sans script ; toute future page Forever se dépose ici. Chaque page de la
-  section porte le même petit `.section-nav` pour naviguer entre elles.
+  (résumé des Points Legacy), `races.html` (combinaisons race-classe et
+  changements de raciaux) et `news.html` (actualités, rédaction originale —
+  jamais une traduction, cf. section Actualités ci-dessous) pour l'instant —
+  toutes des pages de contenu simple sans script ; toute future page Forever
+  se dépose ici. Chaque page de la section porte le même petit `.section-nav`
+  pour naviguer entre elles.
 - `<boss>.html` (dans `tbc/`) : une page par boss. Uniquement du markup + deux
   `<link>` de style + deux `<script src>`. Aucun script inline.
 - `assets/`, `data/` : **restent à la racine**, partagés entre `tbc/` et
@@ -54,6 +56,18 @@ ensuite (elle surcharge).
 Le mode édition (`E`) sur une page permet de déplacer les éléments et de
 réécrire les textes — c'est un brouillon local, rien n'est envoyé au site.
 La modification durable se fait dans les fichiers ci-dessus.
+
+## Actualités Forever (`forever/news.html`)
+
+Chaque entrée est une **rédaction originale** des faits (annonces
+officielles, dates, fonctionnalités) — jamais une traduction d'un article
+existant. Les CGU de Wowhead (corp.fanbyte.com/legal/terms, section 8)
+interdisent explicitement de « translate... any content contained within
+the Service » ; ça s'applique que l'accès se fasse par le site, leur flux
+RSS ou un scraping. Sourcer en lien (comme le fait cette page) reste
+autorisé, traduire leur texte ne l'est pas. Source privilégiée : les
+annonces officielles de Blizzard (worldofwarcraft.blizzard.com) plutôt que
+la mise en forme journalistique d'un site tiers.
 
 ## Publication
 

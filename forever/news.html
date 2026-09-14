@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Actualités — WoW Forever</title>
+<script>
+  try{var t=localStorage.getItem('guide-theme');
+    if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0C0D0B;--fg:#E7E4DA;--dim:#9AA09B;
+  --hair:rgba(231,228,218,.14);
+  --accent:#8FBDAE;--accent-soft:rgba(143,189,174,.14);
+}
+:root[data-theme="light"]{
+  --bg:#F7F4EE;--fg:#20232A;--dim:#6C7178;
+  --hair:rgba(30,34,42,.14);
+  --accent:#3E6B5E;--accent-soft:rgba(62,107,94,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--bg);color:var(--fg);font-family:'Hanken Grotesk',system-ui,sans-serif;
+  line-height:1.55;min-height:100vh;display:flex;flex-direction:column;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+header{
+  padding:34px 48px 22px;display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;
+  border-bottom:1px solid var(--hair);
+}
+header h1{font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:29px;letter-spacing:-.01em}
+header .eyebrow{font-size:11px;font-weight:600;letter-spacing:.24em;color:var(--dim);text-transform:uppercase}
+
+.site-switch{display:flex;gap:18px;padding:14px 48px 0}
+.site-switch a{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;opacity:.5;transition:opacity .15s}
+.site-switch a:hover,.site-switch a.is-here{opacity:1}
+.site-switch a.tbc{color:#62c907}
+.site-switch a.forever{color:#1d8dcd}
+@media(max-width:620px){.site-switch{padding:14px 24px 0}}
+
+.section-nav{display:flex;gap:22px;padding:16px 48px 0}
+.section-nav a{font-size:13px;font-weight:600;text-decoration:none;color:var(--dim);padding-bottom:4px;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.section-nav a:hover{color:var(--fg)}
+.section-nav a.is-here{color:var(--fg);border-color:#1d8dcd}
+@media(max-width:620px){.section-nav{padding:14px 24px 0}}
+
+main{flex:1;width:100%;max-width:760px;margin:0 auto;padding:36px 48px 64px}
+main .lede{color:var(--dim);font-size:14.5px;max-width:62ch;margin-bottom:8px}
+main p{max-width:66ch}
+
+.notice{display:flex;gap:12px;padding:14px 18px;border:1px solid var(--hair);border-radius:10px;margin:18px 0 8px;font-size:13.5px;color:var(--dim)}
+.notice strong{color:var(--fg)}
+.notice svg{flex:none;margin-top:2px;color:#1d8dcd}
+
+.news-item{padding:26px 0;border-top:1px solid var(--hair)}
+.news-item:first-of-type{border-top:none;padding-top:22px}
+.news-date{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#1d8dcd;margin-bottom:6px}
+.news-item h2{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:19px;margin-bottom:8px;line-height:1.3}
+.news-item p{color:var(--dim);font-size:14.5px;max-width:64ch}
+.news-item .news-more{margin-top:8px;font-size:13.5px}
+.news-item .news-more a{color:#1d8dcd;text-decoration:none;font-weight:600}
+.news-item .news-more a:hover{text-decoration:underline}
+.news-source{margin-top:10px;font-size:12px;color:var(--dim)}
+.news-source a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+
+footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
+  font-size:11.5px;letter-spacing:.02em;
+  display:flex;flex-direction:column;align-items:center;gap:8px}
+.feedback{display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+  color:#5865F2;font-size:14px;font-weight:600;letter-spacing:.01em;transition:color .18s}
+.feedback:hover{color:#7B87FF}
+.feedback svg{width:20px;height:20px;flex:none}
+
+#themetoggle{position:fixed;right:24px;bottom:24px;z-index:98;
+  font-family:'Hanken Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:.08em;
+  color:var(--fg);background:transparent;border:1px solid var(--hair);
+  padding:8px 14px;border-radius:999px;cursor:pointer;transition:border-color .2s}
+#themetoggle:hover{border-color:var(--accent)}
+
+@media(max-width:760px){
+  header{padding:26px 24px 20px}
+  main{padding:28px 24px 48px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<nav class="site-switch">
+  <a href="/tbc/strats.html" class="tbc">TBC</a>
+  <a href="/forever/talents.html" class="forever is-here">Forever</a>
+</nav>
+
+<header>
+  <span class="eyebrow">WoW Forever</span>
+  <h1>Actualités</h1>
+</header>
+
+<nav class="section-nav">
+  <a href="/forever/talents.html">Calculateur de talents</a>
+  <a href="/forever/legacy.html">Points Legacy</a>
+  <a href="/forever/races.html">Raciaux</a>
+  <a href="/forever/news.html" class="is-here">Actualités</a>
+</nav>
+
+<main>
+
+<p class="lede">World of Warcraft: Forever a été annoncé à la BlizzCon 2026. Voici les grandes lignes confirmées jusqu'ici, en français.</p>
+
+<div class="notice">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+  <div><strong>Rédaction originale, pas une traduction.</strong> Chaque entrée résume dans nos propres mots des annonces officielles de Blizzard et la couverture presse anglophone, avec la source en lien en bas d'entrée.</div>
+</div>
+
+<div class="news-item">
+  <div class="news-date">13 septembre 2026</div>
+  <h2>World of Warcraft: Forever officiellement annoncé à la BlizzCon</h2>
+  <p>Blizzard a dévoilé World of Warcraft: Forever à la BlizzCon 2026 : une façon permanente de vivre Azeroth depuis ses racines, avec des mises à jour de contenu régulières plutôt qu'une succession d'extensions. Le jeu sort le <strong>4 novembre 2026</strong>, inclus avec un abonnement WoW actif ; une bêta est prévue du <strong>17 septembre au 21 octobre 2026</strong> pour les joueurs pré-inscrits.</p>
+  <p class="news-source">Source : <a href="https://worldofwarcraft.blizzard.com/en-gb/forever" target="_blank" rel="noreferrer">worldofwarcraft.blizzard.com</a></p>
+</div>
+
+<div class="news-item">
+  <div class="news-date">13 septembre 2026</div>
+  <h2>Trois nouvelles zones : Zephras Isle, Riverglades et le mont Hyjal</h2>
+  <p>Zephras Isle, une île flottante autrefois isolée, devient le foyer de la nouvelle race Skyborne. Riverglades ajoute un vaste territoire aux Royaumes de l'Est, entre collines verdoyantes et donjons en ruine. Le mont Hyjal complète le trio, avec son lot de menaces anciennes et nouvelles. Plus de 1000 nouvelles quêtes accompagnent ces zones, aux côtés de nouveaux donjons et secrets à découvrir.</p>
+  <p class="news-source">Source : <a href="https://worldofwarcraft.blizzard.com/en-gb/forever" target="_blank" rel="noreferrer">worldofwarcraft.blizzard.com</a></p>
+</div>
+
+<div class="news-item">
+  <div class="news-date">13 septembre 2026</div>
+  <h2>Skyborne : la nouvelle race jouable, entre Faiseurs de vent et Ordre supérieur</h2>
+  <p>Les Skyborne, une nouvelle lignée d'elfes du vent, rejoignent le jeu. Selon la faction choisie, ils suivent la voie des Faiseurs de vent (Horde) ou de l'Ordre supérieur (Alliance) pour défendre Zephras Isle face à une menace existentielle. L'accès à la race est lié à l'édition achetée.</p>
+  <p class="news-more">→ Détail des raciaux et des classes disponibles par faction sur notre page <a href="/forever/races.html">Raciaux</a>.</p>
+  <p class="news-source">Source : <a href="https://worldofwarcraft.blizzard.com/en-gb/forever" target="_blank" rel="noreferrer">worldofwarcraft.blizzard.com</a></p>
+</div>
+
+<div class="news-item">
+  <div class="news-date">13 septembre 2026</div>
+  <h2>De nouvelles combinaisons race-classe, dont Paladin Réprouvé et Chaman Nain</h2>
+  <p>Forever ouvre plusieurs combinaisons inédites entre races et classes — Blizzard cite notamment le Paladin chez les Réprouvés et le Chaman chez les Nains — aux côtés de refontes annoncées pour l'ensemble des classes et spécialisations.</p>
+  <p class="news-more">→ Tableau complet des combinaisons par faction sur notre page <a href="/forever/races.html">Raciaux</a>.</p>
+  <p class="news-source">Source : <a href="https://worldofwarcraft.blizzard.com/en-gb/forever" target="_blank" rel="noreferrer">worldofwarcraft.blizzard.com</a></p>
+</div>
+
+<div class="news-item">
+  <div class="news-date">13 septembre 2026</div>
+  <h2>Le système Legacy, une progression de compte permanente</h2>
+  <p>Chaque étape franchie par un personnage — palier de niveau, avancée dans un métier — peut désormais rapporter des Points Legacy, partagés entre tous les personnages d'un même compte et dépensés dans des bonus durables.</p>
+  <p class="news-more">→ Fonctionnement détaillé sur notre page <a href="/forever/legacy.html">Points Legacy</a>.</p>
+  <p class="news-source">Source : <a href="https://worldofwarcraft.blizzard.com/en-gb/forever" target="_blank" rel="noreferrer">worldofwarcraft.blizzard.com</a></p>
+</div>
+
+<div class="news-item">
+  <div class="news-date">13 septembre 2026</div>
+  <h2>Le mode Hardcore ne sera pas disponible au lancement</h2>
+  <p>Blizzard a confirmé l'arrivée de royaumes Hardcore officiels dans Forever, mais pas dès le 4 novembre : le mode est positionné plus tard dans la feuille de route, autour de l'hiver 2026, sans règles précises annoncées pour l'instant.</p>
+  <p class="news-source">Source : <a href="https://www.icy-veins.com/wow-forever/roadmap" target="_blank" rel="noreferrer">icy-veins.com</a></p>
+</div>
+
+</main>
+
+<footer>
+  <a class="feedback" href="https://discord.gg/rz5PxxMgnv" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.213.386-.46.905-.63 1.319a18.27 18.27 0 0 0-5.51 0C9.575 3.905 9.322 3.386 9.11 3a19.7 19.7 0 0 0-4.432 1.369C1.869 8.59 1.106 12.705 1.488 16.76a19.9 19.9 0 0 0 6.073 3.08 14.6 14.6 0 0 0 1.307-2.136c-.72-.271-1.41-.606-2.06-1 .173-.128.342-.261.505-.398a14.2 14.2 0 0 0 12.171 0c.165.14.334.273.506.398-.652.394-1.343.73-2.064 1.001.377.75.815 1.463 1.307 2.135a19.85 19.85 0 0 0 6.076-3.08c.448-4.7-.766-8.777-3.209-12.39ZM8.02 14.331c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.955 2.419-2.157 2.419Zm7.96 0c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.946 2.419-2.157 2.419Z"/></svg>Pour signaler une erreur ou proposer une modification</a>
+</footer>
+
+<button id="themetoggle" type="button" aria-label="Basculer le thème clair ou sombre"></button>
+
+<script>
+(function(){
+  var KEY='guide-theme', root=document.documentElement, btn=document.getElementById('themetoggle');
+  function sync(){ btn.textContent=(root.dataset.theme==='light')?'Sombre':'Clair'; }
+  btn.addEventListener('click',function(){
+    var toLight=root.dataset.theme!=='light';
+    root.dataset.theme=toLight?'light':'dark';
+    try{localStorage.setItem(KEY,toLight?'light':'dark')}catch(e){}
+    sync();
+  });
+  sync();
+})();
+</script>
+
+<!-- Cloudflare Web Analytics -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cda3a81db83047a5a191c0d75d1db09c"}'></script>
+<!-- End Cloudflare Web Analytics -->
+</body>
+</html>

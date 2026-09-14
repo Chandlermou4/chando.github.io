@@ -31,7 +31,8 @@ Voir `ARCHITECTURE.md`. En résumé :
 - `tbc/` : tout le contenu TBC — `strats.html` (liste des guides) et un
   `<boss>.html` par boss. `chando.pages.dev/tbc/…`
 - `forever/` : tout le contenu Forever — `talents.html` (calculateur),
-  `legacy.html` (résumé des Points Legacy) et `races.html` (raciaux) pour
+  `legacy.html` (résumé des Points Legacy), `races.html` (raciaux) et
+  `news.html` (actualités, rédaction originale — voir ARCHITECTURE.md) pour
   l'instant. `chando.pages.dev/forever/…`
 - `assets/`, `data/` : partagés entre les deux sections, restent à la racine.
   Toutes les pages y font référence par chemin **absolu** (`/assets/…`,
