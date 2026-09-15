@@ -19,7 +19,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%;width:100%;background:#05080D;overflow:hidden}
-body{font-family:'Archivo',sans-serif}
+body{font-family:'Hanken Grotesk',sans-serif}
 #fit{position:fixed;inset:0;overflow:hidden}
 #stage{width:1920px;height:1080px;position:absolute;left:0;top:0;color:var(--bone);
   display:grid;grid-template-columns:1320px 600px;grid-template-rows:1080px;isolation:isolate;overflow:hidden;
@@ -40,7 +40,6 @@ svg#field{width:1000px;height:1000px;overflow:visible}
 .mob{filter:drop-shadow(0 0 12px rgba(0,0,0,.8))}
 .mob-base{fill:rgba(4,10,14,.75)}
 .mob-ring{fill:none;stroke-width:2.5}
-.mob-core{opacity:.9}
 .lbl{font-family:'Archivo Black',sans-serif;font-size:16px;letter-spacing:.11em;text-anchor:middle;
   paint-order:stroke;stroke:rgba(5,10,16,.92);stroke-width:5px}
 .tag{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.05em;text-anchor:middle;
@@ -133,7 +132,6 @@ body.editing #ed{display:block}
 #ed input{background:rgba(255,255,255,.07);border:1px solid rgba(200,215,225,.25);color:#EDE8DA;
   font-family:'JetBrains Mono',monospace;font-size:12px;width:64px;padding:2px 6px;border-radius:4px;text-align:right}
 body.editing #stage{cursor:crosshair}
-body.editing .drag-sel{outline:none}
 .sel-box{fill:none;stroke:#FF7A33;stroke-width:2;stroke-dasharray:5 5;pointer-events:none;
   animation:dash 1s linear infinite}
 body.editing [contenteditable="true"]{outline:1px dashed rgba(255,122,51,.6);outline-offset:6px;border-radius:3px}
@@ -166,7 +164,7 @@ body.editing .layer{opacity:1!important}
   border-top:1px solid rgba(200,215,225,.12)}
 #bossmenu .raid-h:first-child{margin-top:0;padding-top:0;border-top:none}
 #bossmenu a{display:block;padding:7px 9px;border-radius:6px;color:var(--bone,#EDE8DA);
-  text-decoration:none;font-family:'Archivo',sans-serif;font-size:13px;transition:background .15s}
+  text-decoration:none;font-family:'Hanken Grotesk',sans-serif;font-size:13px;transition:background .15s}
 #bossmenu a:hover{background:rgba(143,189,174,.12)}
 #bossmenu a.current{color:#8FBDAE;font-weight:600;background:rgba(62,107,94,.32)}
 #bossmenu a.home{color:var(--slate,#8C9AB2);font-family:'JetBrains Mono',monospace;font-size:11px;
@@ -180,7 +178,7 @@ body.editing .layer{opacity:1!important}
 #bossmenu .phase-group[open] summary{color:#8FBDAE;background:rgba(143,189,174,.08)}
 #bossmenu .phase-group[open] summary::after{content:'−'}
 #bossmenu .phase-content{padding:0 0 4px}
-#bossmenu .coming{padding:3px 9px 7px;color:var(--slate,#8C9AB2);font-family:'Archivo',sans-serif;
+#bossmenu .coming{padding:3px 9px 7px;color:var(--slate,#8C9AB2);font-family:'Hanken Grotesk',sans-serif;
   font-size:11px;font-style:italic;opacity:.72}
 @media(max-width:820px){#leftnav{top:10px;left:10px;width:200px}}
 
