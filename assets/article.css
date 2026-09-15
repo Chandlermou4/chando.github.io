@@ -1,0 +1,58 @@
+/* ================================================================
+   Pages d'article de la section Actualités (/forever/actualites/).
+   Le chrome commun (en-tête, navigation, pied de page, thème) vient
+   de assets/site.css ; cette feuille ne porte que l'article lui-même.
+   Mutualisée parce que les 21 pages sont strictement identiques de
+   structure : une seule feuille à modifier pour les reprendre toutes.
+   ================================================================ */
+
+main{flex:1;width:100%;max-width:760px;margin:0 auto;padding:30px 48px 64px}
+
+/* --- retour vers l'index --- */
+.crumb{display:inline-block;font-size:13px;font-weight:600;color:var(--dim);
+  text-decoration:none;margin-bottom:22px;transition:color .15s}
+.crumb:hover{color:#1d8dcd}
+
+/* --- bandeau date + rubrique --- */
+.a-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.a-cat{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:#1d8dcd;border:1px solid currentColor;border-radius:999px;padding:3px 9px}
+.a-date{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+
+/* --- chapô --- */
+.a-standfirst{font-family:'Newsreader',Georgia,serif;font-size:19px;line-height:1.45;
+  color:var(--fg);max-width:60ch;margin-bottom:24px}
+
+/* --- image officielle, légende et crédit --- */
+.a-figure{margin:0 0 26px}
+.a-figure img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--hair)}
+.a-figure figcaption{margin-top:9px;font-size:12px;line-height:1.5;color:var(--dim);max-width:70ch}
+.a-figure .a-credit{display:block;margin-top:4px;font-size:11.5px;color:var(--dim);opacity:.85}
+.a-figure .a-credit a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+
+/* --- corps --- */
+.a-body p{font-size:14.8px;line-height:1.65;color:var(--dim);max-width:66ch;margin-bottom:16px}
+.a-body p strong{color:var(--fg);font-weight:600}
+.a-body h2{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:20px;
+  line-height:1.3;color:var(--fg);margin:28px 0 10px}
+
+/* --- sources --- */
+.a-sources{margin-top:32px;padding-top:18px;border-top:1px solid var(--hair);
+  font-size:12.5px;color:var(--dim)}
+.a-sources strong{color:var(--fg);font-weight:600;display:block;margin-bottom:6px}
+.a-sources ul{list-style:none}
+.a-sources li{margin-bottom:5px;line-height:1.5}
+.a-sources a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.a-sources a:hover{color:#1d8dcd}
+
+/* --- à lire aussi --- */
+.a-related{margin-top:26px;padding-top:18px;border-top:1px solid var(--hair)}
+.a-related strong{display:block;font-size:12.5px;color:var(--fg);margin-bottom:8px}
+.a-related a{display:block;font-size:14px;font-weight:600;color:#1d8dcd;
+  text-decoration:none;margin-bottom:6px}
+.a-related a:hover{text-decoration:underline}
+
+@media(max-width:760px){
+  main{padding:24px 24px 48px}
+  .a-standfirst{font-size:17.5px}
+}

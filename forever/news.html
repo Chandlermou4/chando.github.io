@@ -4,17 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Actualités — WoW Forever</title>
-<meta name="description" content="Actualités de World of Warcraft: Forever en français : date de sortie, nouvelles zones, race Éolide, système Legacy et feuille de route, d'après les annonces officielles de Blizzard.">
+<meta name="description" content="Toute l&#x27;actualité de World of Warcraft: Forever en français : date de sortie, bêta, éditions, zones, Éolides, donjons, Legacy et Hardcore, d&#x27;après les annonces officielles de Blizzard.">
 <link rel="canonical" href="https://chando.pages.dev/forever/news">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chando">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="Actualités — WoW Forever">
-<meta property="og:description" content="Actualités de World of Warcraft: Forever en français : date de sortie, nouvelles zones, race Éolide, système Legacy et feuille de route, d'après les annonces officielles de Blizzard.">
+<meta property="og:description" content="Toute l&#x27;actualité de World of Warcraft: Forever en français : date de sortie, bêta, éditions, zones, Éolides, donjons, Legacy et Hardcore, d&#x27;après les annonces officielles de Blizzard.">
 <meta property="og:url" content="https://chando.pages.dev/forever/news">
 <meta property="og:image" content="https://chando.pages.dev/assets/media/og-forever.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/media/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/assets/media/favicon-180.png">
@@ -27,24 +25,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
 <style>
-main{flex:1;width:100%;max-width:760px;margin:0 auto;padding:36px 48px 64px}
+main{flex:1;width:100%;max-width:820px;margin:0 auto;padding:36px 48px 64px}
 main .lede{color:var(--dim);font-size:14.5px;max-width:62ch;margin-bottom:8px}
-main p{max-width:66ch}
 
-.notice{display:flex;gap:12px;padding:14px 18px;border:1px solid var(--hair);border-radius:10px;margin:18px 0 8px;font-size:13.5px;color:var(--dim)}
+.notice{display:flex;gap:12px;padding:14px 18px;border:1px solid var(--hair);border-radius:10px;margin:18px 0 26px;font-size:13.5px;color:var(--dim)}
 
-.news-item{padding:26px 0;border-top:1px solid var(--hair)}
-.news-item:first-of-type{border-top:none;padding-top:22px}
-.news-date{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#1d8dcd;margin-bottom:6px}
-.news-item h2{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:19px;margin-bottom:8px;line-height:1.3}
-.news-item img.news-visual{width:100%;height:auto;border-radius:10px;border:1px solid var(--hair);display:block;margin:10px 0 14px}
-.news-item p{color:var(--dim);font-size:14.5px;max-width:64ch}
-.news-item .news-more{margin-top:8px;font-size:13.5px}
-.news-item .news-more a{color:#1d8dcd;text-decoration:none;font-weight:600}
-.news-item .news-more a:hover{text-decoration:underline}
-.news-source{margin-top:10px;font-size:12px;color:var(--dim)}
-.news-source a{color:inherit;text-decoration:underline;text-underline-offset:2px}@media(max-width:760px){
-  main{padding:28px 24px 48px}}
+.n-list{display:flex;flex-direction:column}
+.n-card{display:grid;grid-template-columns:172px 1fr;gap:20px;padding:22px 0;
+  border-top:1px solid var(--hair);text-decoration:none;color:inherit;transition:opacity .15s}
+.n-card:first-child{border-top:none;padding-top:10px}
+.n-card:hover{opacity:.82}
+.n-card:hover .n-title{color:#1d8dcd}
+.n-card img{width:100%;height:97px;object-fit:cover;border-radius:8px;border:1px solid var(--hair);display:block}
+.n-meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:6px}
+.n-cat{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:#1d8dcd;border:1px solid currentColor;border-radius:999px;padding:2px 8px}
+.n-date{font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.n-title{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:18.5px;
+  line-height:1.3;margin-bottom:5px;transition:color .15s}
+.n-desc{font-size:13.6px;line-height:1.55;color:var(--dim);max-width:62ch}
+
+@media(max-width:760px){
+  main{padding:28px 24px 48px}
+  .n-card{grid-template-columns:1fr;gap:12px}
+  .n-card img{height:auto;aspect-ratio:16/9}
+}
 </style>
 </head>
 <body>
@@ -68,78 +73,182 @@ main p{max-width:66ch}
 
 <main>
 
-<p class="lede">World of Warcraft: Forever a été annoncé à la BlizzCon 2026. Voici les grandes lignes confirmées jusqu'ici, en français.</p>
+<p class="lede">World of Warcraft: Forever a été annoncé à la BlizzCon 2026. 21 articles en français sur ce qui est confirmé à ce jour.</p>
 
 <div class="notice">
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
-  <div><strong>Rédaction originale, pas une traduction.</strong> Chaque entrée résume dans nos propres mots des annonces officielles de Blizzard et la couverture presse anglophone, avec la source en lien en bas d'entrée.</div>
+  <div><strong>Rédaction originale, pas une traduction.</strong> Chaque article reformule dans nos propres mots des annonces officielles de Blizzard, sources en lien. Les images sont les visuels officiels, non modifiés et crédités.</div>
 </div>
 
-<div class="news-item">
-  <div class="news-date">13 septembre 2026</div>
-  <h2>World of Warcraft: Forever officiellement annoncé à la BlizzCon</h2>
-  <img class="news-visual" src="/assets/media/forever-news-announce.webp" alt="Image officielle de l'annonce de World of Warcraft: Forever" width="1400" height="583">
-  <p>Blizzard a dévoilé World of Warcraft: Forever à la BlizzCon 2026 : une façon permanente de vivre Azeroth depuis ses racines, avec des mises à jour de contenu régulières plutôt qu'une succession d'extensions. Blizzard le confirme explicitement dans son récapitulatif officiel : le jeu sortira dans le monde entier <strong>le 5 novembre 2026 à minuit, heure française</strong> (le 4 novembre à 15h PST côté US, d'où la date du 4 qu'on voit parfois citée dans la presse). Inclus avec un abonnement WoW actif ; bêta du <strong>17 septembre au 21 octobre 2026</strong> pour les joueurs pré-inscrits.</p>
-  <p class="news-source">Source : <a href="https://news.blizzard.com/fr-fr/article/24303862" target="_blank" rel="noreferrer">news.blizzard.com</a></p>
-</div>
-
-<div class="news-item">
-  <div class="news-date">13 septembre 2026</div>
-  <h2>Quatre nouvelles zones : mont Hyjal, Shen'dralas, Rives Claires et l'île de Zéphras</h2>
-  <img class="news-visual" src="/assets/media/forever-news-zones.webp" alt="L'île de Zéphras, l'une des nouvelles zones de World of Warcraft: Forever" width="1400" height="788" loading="lazy" decoding="async">
-  <p>Le mont Hyjal revient sur les terres marquées par la défaite d'Archimonde, avec la gorge du Sombre Murmure comme nouveau terrain d'aventure. Shen'dralas, nichée entre Mulgore et Désolace, lève le voile sur un mystère resté enfoui autour des Shen'dralar, d'Eldre'Thalas et des tribus centaures de la région. Rives Claires ajoute plus de 150 quêtes réparties sur les niveaux 35 à 45, dans une contrée de rivières, de prairies et de vieilles rancœurs. L'île de Zéphras propose une expérience de départ inédite, du niveau 1 à 12, mêlant esthétique classique et architecture inspirée de Mur-Céleste — et sert de foyer à la nouvelle race des Éolides. Plus de 1000 nouvelles quêtes accompagnent ces zones au total.</p>
-  <p class="news-source">Source : <a href="https://news.blizzard.com/fr-fr/article/24303862" target="_blank" rel="noreferrer">news.blizzard.com</a></p>
-</div>
-
-<div class="news-item">
-  <div class="news-date">13 septembre 2026</div>
-  <h2>Éolides : la nouvelle race jouable, entre Sculpte-vents et Ordre suprême</h2>
-  <img class="news-visual" src="/assets/media/forever-news-eolides.webp" alt="Personnages Éolides personnalisés dans World of Warcraft: Forever" width="1400" height="788" loading="lazy" decoding="async">
-  <p>Les Éolides, une nouvelle lignée dont les origines communes ont donné naissance à deux visions différentes de l'avenir, rejoignent le jeu à la création de personnage : la Horde des Sculpte-vents, fidèle aux traditions élémentaires (accès au Chaman), ou l'Alliance de l'Ordre suprême, héritière de traditions arcaniques (accès au Mage). Les deux factions peuvent aussi devenir Guerrier, Chasseur, Voleur ou Druide, avec de nouvelles formes de druide propres à la race.</p>
-  <p class="news-more">→ Détail des raciaux et des classes disponibles par faction sur notre page <a href="/forever/races.html">Raciaux</a>.</p>
-  <p class="news-source">Source : <a href="https://news.blizzard.com/fr-fr/article/24303862" target="_blank" rel="noreferrer">news.blizzard.com</a></p>
-</div>
-
-<div class="news-item">
-  <div class="news-date">13 septembre 2026</div>
-  <h2>De nouvelles combinaisons race-classe, dont Paladin Réprouvé et Chaman Nain</h2>
-  <img class="news-visual" src="/assets/media/forever-news-combos.webp" alt="Nouvelles combinaisons race-classe dans World of Warcraft: Forever" width="1400" height="788" loading="lazy" decoding="async">
-  <p>Forever ouvre plusieurs combinaisons inédites entre races et classes — Blizzard cite notamment le Paladin chez les Réprouvés et le Chaman chez les Nains — aux côtés de refontes annoncées pour l'ensemble des classes et spécialisations.</p>
-  <p class="news-more">→ Tableau complet des combinaisons par faction sur notre page <a href="/forever/races.html">Raciaux</a>.</p>
-  <p class="news-source">Source : <a href="https://news.blizzard.com/fr-fr/article/24303862" target="_blank" rel="noreferrer">news.blizzard.com</a></p>
-</div>
-
-<div class="news-item">
-  <div class="news-date">13 septembre 2026</div>
-  <h2>Neuf nouveaux donjons et deux raids inédits</h2>
-  <img class="news-visual" src="/assets/media/forever-news-donjons.webp" alt="Le raid du Sommet d'Hyjal dans World of Warcraft: Forever" width="1400" height="788" loading="lazy" decoding="async">
-  <p>Les neuf donjons plongent dans des lieux jusqu'ici seulement évoqués : la salle des Thanes sous Forgefer, les ruines de Lordaeron, un site de fouilles près de Whelgar, Dalaran en plein chaos, le repaire des Noiregueules, la Cité Submergée, le bastion Krol'dok, la prison d'Alcaz et la terrasse du Façonneur. Deux raids inédits complètent l'offre : les Profondeurs des Saisons, un défi de niveau maximum pour 10 joueurs, et le Sommet d'Hyjal, en 20 joueurs — avec de nouveaux ensembles de paliers et une récompense légendaire encore non détaillée.</p>
-  <p class="news-source">Source : <a href="https://news.blizzard.com/fr-fr/article/24303862" target="_blank" rel="noreferrer">news.blizzard.com</a></p>
-</div>
-
-<div class="news-item">
-  <div class="news-date">13 septembre 2026</div>
-  <h2>Un nouveau champ de bataille : les îles des Sombrelances</h2>
-  <img class="news-visual" src="/assets/media/forever-news-bg.webp" alt="Le champ de bataille des îles des Sombrelances" width="1400" height="788" loading="lazy" decoding="async">
-  <p>Au large de Kalimdor, les îles des Sombrelances accueillent un champ de bataille à 15 contre 15 mêlant contrôle de points stratégiques et capture de drapeaux, dans l'esprit du bassin d'Arathi.</p>
-  <p class="news-source">Source : <a href="https://news.blizzard.com/fr-fr/article/24303862" target="_blank" rel="noreferrer">news.blizzard.com</a></p>
-</div>
-
-<div class="news-item">
-  <div class="news-date">13 septembre 2026</div>
-  <h2>Le système Legacy, une progression de compte permanente</h2>
-  <img class="news-visual" src="/assets/media/forever-news-legacy.webp" alt="Joueurs autour d'un campement dans World of Warcraft: Forever" width="1400" height="788" loading="lazy" decoding="async">
-  <p>Chaque étape franchie par un personnage — palier de niveau, avancée dans un métier — peut désormais rapporter des Points Legacy, partagés entre tous les personnages d'un même compte et dépensés dans des bonus durables. Blizzard confirme les chiffres déjà relevés côté communautaire : 16 points dépensables par personnage au lancement, jusqu'à 65 gagnables.</p>
-  <p class="news-more">→ Fonctionnement détaillé sur notre page <a href="/forever/legacy.html">Points Legacy</a>.</p>
-  <p class="news-source">Source : <a href="https://news.blizzard.com/fr-fr/article/24303313" target="_blank" rel="noreferrer">news.blizzard.com</a></p>
-</div>
-
-<div class="news-item">
-  <div class="news-date">13 septembre 2026</div>
-  <h2>Le mode Extrême (Hardcore) ne sera pas disponible au lancement</h2>
-  <img class="news-visual" src="/assets/media/forever-news-hardcore.webp" alt="Image officielle de World of Warcraft: Forever" width="1400" height="583" loading="lazy" decoding="async">
-  <p>Le récapitulatif officiel de Blizzard place le mode Extrême après le déblocage des raids du 9 décembre, aux côtés d'autres donjons, mises à jour JcJ et contenu additionnel — donc bien après le lancement du 5 novembre, sans règles précises encore annoncées.</p>
-  <p class="news-source">Source : <a href="https://news.blizzard.com/fr-fr/article/24303862" target="_blank" rel="noreferrer">news.blizzard.com</a></p>
+<div class="n-list">
+<a class="n-card" href="/forever/actualites/date-sortie-wow-forever-france.html">
+  <img src="/assets/media/forever/foret-arbres-geants.webp" alt="Forêt aux arbres géants dans une capture officielle de Forever." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Lancement</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">WoW Forever : date et heure de sortie en France</div>
+    <p class="n-desc">La sortie française de WoW Forever est annoncée le 5 novembre 2026 à minuit. Comprendre la différence avec la date américaine du 4 novembre.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/beta-wow-forever.html">
+  <img src="/assets/media/forever/ile-zephras.webp" alt="Prairies et architecture de l’île de Zéphras." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Lancement</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">Bêta de WoW Forever : dates et accès confirmés</div>
+    <p class="n-desc">La bêta de WoW Forever est annoncée du 17 septembre au 21 octobre 2026. Voici les accès explicitement inclus dans les offres Blizzard.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/abonnement-editions-wow-forever.html">
+  <img src="/assets/media/forever/offres-editions.webp" alt="Montures, personnages et objets réunis dans le visuel des offres Forever." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Lancement</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">WoW Forever : abonnement et éditions, que faut-il acheter ?</div>
+    <p class="n-desc">L’accès à WoW Forever est inclus dans l’abonnement WoW. Les packs Éolides sont optionnels : voici comment distinguer accès au jeu et avantages.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/reservation-nom-wow-forever.html">
+  <img src="/assets/media/forever/nain-foret-enneigee.webp" alt="Personnage nain devant une forêt enneigée." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Lancement</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">WoW Forever : quand réserver son nom de personnage ?</div>
+    <p class="n-desc">La réservation anticipée des noms est prévue du 27 octobre au 3 novembre 2026, avec jusqu’à trois personnages et une édition supérieure.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/parrainage-lancement-wow-forever.html">
+  <img src="/assets/media/forever/campement-communaute.webp" alt="Trois personnages réunis autour d’un feu et d’une tente." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Lancement</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">WoW Forever : les codes pour inviter un ami au lancement</div>
+    <p class="n-desc">Blizzard annonce des codes Parrainez un ami pour la semaine de lancement. Envoi, éligibilité et distinction avec un accès permanent.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/collector-wow-forever.html">
+  <img src="/assets/media/forever/statue-collector.webp" alt="Statue du nain et de son ours sur un socle." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Lancement</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">Collector WoW Forever : contenu physique et avantages numériques</div>
+    <p class="n-desc">Statue, journal, illustrations et code numérique : le contenu annoncé de la Collector WoW Forever, avec les points à vérifier avant achat.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/wow-forever-classic-plus.html">
+  <img src="/assets/media/forever/tour-pierre-riviere.webp" alt="Tour de pierre au bord d’une rivière dans un paysage montagneux." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Présentation</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">WoW Forever et Classic : quelle différence ?</div>
+    <p class="n-desc">World of Warcraft: Forever est une expérience permanente autour d’Azeroth et du niveau 60. Voici ce que recouvre son rapprochement avec Classic+.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/zones-wow-forever.html">
+  <img src="/assets/media/forever/architecture-elfique.webp" alt="Architecture elfique, eau lumineuse et dragons sous un ciel violet." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Exploration</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">WoW Forever : les quatre régions annoncées</div>
+    <p class="n-desc">Hyjal, Shen’dralas, rives Claires et Zéphras : retrouvez les régions présentées pour WoW Forever et les niveaux explicitement annoncés.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/eolides-wow-forever.html">
+  <img src="/assets/media/forever/eolides-presentation.webp" alt="Trois Éolides devant une architecture de pierre ornée de bannières." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Races</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">Éolides de WoW Forever : factions et classes annoncées</div>
+    <p class="n-desc">Les Éolides rejoignent la Horde ou l’Alliance. Découvrez les classes annoncées, leur départ sur Zéphras et la distinction entre race et faction.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/donjons-raids-wow-forever.html">
+  <img src="/assets/media/forever/ruines-enneigees.webp" alt="Ruines et arbres enneigés sous un ciel rose." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">PvE</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">WoW Forever : donjons et raids annoncés, formats 10 et 20</div>
+    <p class="n-desc">Neuf donjons et deux nouveaux raids figurent dans la présentation de WoW Forever. Formats de groupe et limites des informations disponibles.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/pvp-iles-sombrelances-wow-forever.html">
+  <img src="/assets/media/forever/iles-sombrelances.webp" alt="Zeppelin au-dessus des îles des Sombrelances et de leurs pontons." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">JcJ</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">JcJ de WoW Forever : les îles des Sombrelances en 15 contre 15</div>
+    <p class="n-desc">Les îles des Sombrelances sont le nouveau champ de bataille annoncé pour Forever. Format, objectifs présentés et informations encore à préciser.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/heritage-legacy-wow-forever.html">
+  <img src="/assets/media/forever/interface-legacy.webp" alt="Interface de progression Legacy et ses récompenses." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Progression</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">Legacy de WoW Forever : 16 points dépensables, 65 à gagner</div>
+    <p class="n-desc">Le système d’héritage, aussi appelé Legacy, distingue points gagnés et points dépensés. Une explication claire avant d’utiliser le calculateur.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/campements-metiers-wow-forever.html">
+  <img src="/assets/media/forever/campement-metiers.webp" alt="Personnage devant une tente et un feu de camp dans la forêt." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Métiers</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">Campements de WoW Forever : le rôle annoncé des métiers</div>
+    <p class="n-desc">Les campements réunissent repos, services et objets artisanaux. Ce que Blizzard confirme, avant de parler de routes de métiers ou de rentabilité.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/royaumes-langues-wow-forever.html">
+  <img src="/assets/media/forever/menu-langue.webp" alt="Menu de langue préférée dans les options sociales de Forever." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Communauté</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">WoW Forever : royaumes, langue française et jeu entre amis</div>
+    <p class="n-desc">Blizzard présente des ensembles de règles à la place des royaumes traditionnels. Voici les distinctions essentielles pour préparer un groupe francophone.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/transmogrification-wow-forever.html">
+  <img src="/assets/media/forever/armures-personnages.webp" alt="Trois personnages portant des ensembles d’armure distincts." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Personnalisation</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">WoW Forever : peut-on désactiver la transmogrification ?</div>
+    <p class="n-desc">La transmogrification de Forever est optionnelle. Comprendre la différence entre apparence affichée, équipement porté et collection.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/combat-equipement-wow-forever.html">
+  <img src="/assets/media/forever/reprouve-armure.webp" alt="Personnage réprouvé en armure dorée portant une arme." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Classes</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">WoW Forever : combat et équipement, les changements confirmés</div>
+    <p class="n-desc">Blizzard conserve une approche tactique et annonce une évolution des statistiques. Ce que l’on peut dire sans publier de faux classements BiS.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/talents-paladin-wow-forever.html">
+  <img src="/assets/media/forever/talents-paladin.webp" alt="Les trois arbres de talents du paladin dans l’interface de Forever." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Classes</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">Talents de WoW Forever : ce que montre l’exemple du paladin</div>
+    <p class="n-desc">Blizzard présente un jalon à 16 points et détaille le paladin. Distinguer les annonces de classe des valeurs encore issues de la démonstration.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/races-classes-wow-forever.html">
+  <img src="/assets/media/forever/armures-personnages.webp" alt="Personnages de plusieurs races alignés dans un paysage de Forever." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Races</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">WoW Forever : les nouvelles combinaisons race-classe</div>
+    <p class="n-desc">Paladin réprouvé et chaman nain font partie des nouvelles possibilités de Forever. Comment lire les annonces sans inventer un classement racial.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/hardcore-wow-forever.html">
+  <img src="/assets/media/forever/ruines-brumeuses.webp" alt="Anciennes ruines de pierre dans un paysage sombre et brumeux." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Progression</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">Hardcore WoW Forever : un mode prévu après le lancement</div>
+    <p class="n-desc">Le mode Extrême de WoW Forever est annoncé après la sortie. Ce qui est confirmé et pourquoi il ne faut pas lui attribuer une date précise.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/options-graphiques-manette-wow-forever.html">
+  <img src="/assets/media/forever/modele-nain-hd.webp" alt="Modèle de personnage nain dans un paysage enneigé." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Personnalisation</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">WoW Forever : graphismes Classic, modèles HD et manette</div>
+    <p class="n-desc">Blizzard annonce des options visuelles classiques et modernes ainsi qu’une prise en charge officielle des manettes pour WoW Forever.</p>
+  </div>
+</a>
+<a class="n-card" href="/forever/actualites/forsaken-kingdom-wow-forever.html">
+  <img src="/assets/media/forever/warcraft3-forsaken.webp" alt="Illustration officielle des combattants de Warcraft III Reforged et Forsaken Kingdom." loading="lazy" decoding="async" width="172" height="97">
+  <div>
+    <div class="n-meta"><span class="n-cat">Histoire</span><time class="n-date" datetime="2026-09-15">15 septembre 2026</time></div>
+    <div class="n-title">Forsaken Kingdom : quel lien avec l’histoire de WoW Forever ?</div>
+    <p class="n-desc">La campagne Warcraft III Reforged: Forsaken Kingdom éclaire les Réprouvés et les débuts de Forever. Un repère narratif sans divulgâchage majeur.</p>
+  </div>
+</a>
 </div>
 
 </main>
