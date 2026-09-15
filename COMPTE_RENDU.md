@@ -2,6 +2,12 @@
 
 Date : 13 septembre 2026 · Site en ligne : <https://chando.pages.dev>
 
+> **Portée : la section TBC uniquement.** La section Forever (`forever/` —
+> calculateur de talents, Points Legacy, raciaux, actualités) est née après ce
+> compte rendu et n'y figure pas. Elle est décrite dans `ARCHITECTURE.md`.
+> Seule la section « référencement » ci-dessous a été remise à jour depuis, au
+> 15 septembre 2026 ; le reste reflète l'état du 13 septembre.
+>
 > Ce fichier remplace le compte rendu du 28 août 2026, qui décrivait une
 > architecture depuis abandonnée. L'ancienne version reste dans l'historique
 > git. Pour la structure des fichiers, voir `ARCHITECTURE.md`.
@@ -180,22 +186,25 @@ mais son cercle de salle (rayon 280) et sa barre d'échelle « 10 mètres » son
 sémantiquement juste, demande de reprendre 19 libellés dans les guides anciens
 et de revérifier leur mise en page.
 
-**Le référencement est en place mais inexploitable.** Rien ne bloque
-l'indexation — aucun en-tête `X-Robots-Tag` sur la production, `noindex` retiré
-des quinze guides publiés, toutes les pages accessibles depuis l'accueil. En
-revanche :
+**Le référencement — état au 15 septembre 2026.** Rien ne bloque
+l'indexation : aucun en-tête `X-Robots-Tag` sur la production, `noindex` retiré
+des quinze guides publiés, toutes les pages accessibles depuis l'accueil.
 
-- **Le contenu n'est pas dans le HTML.** Le texte des étapes vit dans
+*Réglé depuis le 13 septembre* : `meta description`, Open Graph, `canonical` et
+favicon sur **les 23 pages** — les liens partagés sur Discord affichent
+désormais un aperçu ; `robots.txt` et `sitemap.xml`, ce dernier listant 21 URL,
+Gruul et Maulgar étant exclus puisqu'ils sont en `noindex`.
+
+*Ce qui reste ouvert* :
+
+- **Le contenu des guides n'est pas dans le HTML.** Le texte des étapes vit dans
   `data/bosses/*.js` et n'est écrit dans la page que par JavaScript — et seule
   l'étape affichée est dans le DOM. Le HTML brut d'une page de boss ne contient
-  qu'une poignée de mots. C'est de loin le point le plus lourd.
-- **Aucune `meta description`, aucune balise Open Graph, aucune `canonical`.**
-  Conséquence concrète : les liens partagés sur Discord n'affichent aucun
-  aperçu.
-- **Pas de `viewport` sur les pages de boss**, seulement sur l'accueil. Google
-  indexe en mobile-first.
-- **Pas de `robots.txt` ni de `sitemap.xml`.** L'URL `/robots.txt` renvoie
-  actuellement la page d'accueil en HTTP 200.
+  qu'une poignée de mots. C'est de loin le point le plus lourd. Il ne touche que
+  les guides : les pages Forever servent leur texte en dur.
+- **Pas de `viewport` sur les dix-sept pages de boss.** `strats.html`,
+  l'accueil et les quatre pages Forever en ont une ; les guides eux-mêmes non.
+  Google indexe en mobile-first.
 - **Les liens internes passent par une redirection.** Cloudflare sert les pages
   sans extension : `illidan.html` renvoie un 308 vers `/illidan`.
 

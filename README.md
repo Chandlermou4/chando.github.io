@@ -6,8 +6,9 @@ Guides de raid interactifs pour TBC Anniversary, organisés par phases de conten
 - **Phase 2** : Caverne du sanctuaire du Serpent, Donjon de la Tempête : L'Œil
 - **Phase 3** : Bataille du mont Hyjal, Temple noir
 
-Guides disponibles aujourd'hui : Repaire de Gruul, Bataille du mont Hyjal,
-Temple noir. Les autres raids sont dans la navigation et seront complétés.
+Guides disponibles aujourd'hui : Caverne du sanctuaire du Serpent (Hydross,
+premier des six boss), Bataille du mont Hyjal et Temple noir — quinze guides au
+total. Les autres raids sont dans la navigation et seront complétés.
 
 ## Publication
 
