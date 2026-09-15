@@ -33,8 +33,12 @@ Voir `ARCHITECTURE.md`. En résumé :
   `<boss>.html` par boss. `chando.pages.dev/tbc/…`
 - `forever/` : tout le contenu Forever — `talents.html` (calculateur),
   `legacy.html` (résumé des Points Legacy), `races.html` (raciaux) et
-  `news.html` (actualités, rédaction originale — voir ARCHITECTURE.md) pour
-  l'instant. `chando.pages.dev/forever/…`
+  `news.html`, l'index des actualités. `chando.pages.dev/forever/…`
+- `forever/actualites/` : une page par article d'actualité, servie en
+  `chando.pages.dev/forever/actualites/<slug>`. Rédaction originale et images
+  officielles créditées — voir ARCHITECTURE.md pour les conditions.
+- `tools/` : scripts de régénération des pages d'actualités et du sitemap.
+  Ce ne sont pas des étapes de build : le site sert le HTML du dépôt.
 - `assets/`, `data/` : partagés entre les deux sections, restent à la racine.
   Toutes les pages y font référence par chemin **absolu** (`/assets/…`,
   `/data/…`), jamais relatif — une page à n'importe quelle profondeur

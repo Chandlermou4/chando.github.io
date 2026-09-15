@@ -11,11 +11,21 @@ publié.
   `<boss>.html` par boss. Chaque nouvelle page TBC se dépose ici.
 - `forever/` : section Forever. `talents.html` (calculateur), `legacy.html`
   (résumé des Points Legacy), `races.html` (combinaisons race-classe et
-  changements de raciaux) et `news.html` (actualités, rédaction originale —
-  jamais une traduction, cf. section Actualités ci-dessous) pour l'instant —
-  toutes des pages de contenu simple sans script ; toute future page Forever
-  se dépose ici. Chaque page de la section porte le même petit `.section-nav`
-  pour naviguer entre elles.
+  changements de raciaux) et `news.html` — toutes des pages de contenu simple
+  sans script ; toute future page Forever se dépose ici. Chaque page de la
+  section porte le même petit `.section-nav` pour naviguer entre elles.
+- `forever/news.html` : **index** de la section Actualités. Ne contient plus
+  d'article, seulement la liste des 21 articles avec vignette, rubrique, date
+  et description. Son URL `/forever/news` ne change pas.
+- `forever/actualites/<slug>.html` : **une page par article**, servie en
+  `/forever/actualites/<slug>`. C'est ce découpage qui rend chaque sujet
+  trouvable isolément sur Google, là où une page unique ne pouvait se
+  positionner que sur un seul intitulé. Le chemin est en `actualites` et non
+  `news` parce que c'est le mot que cherche un lecteur francophone.
+- `assets/article.css` : style commun aux 21 pages d'article (chapô, figure
+  créditée, corps, sources, « à lire aussi »). Mutualisé parce que les pages
+  sont identiques de structure : une seule feuille à reprendre pour les
+  modifier toutes.
 - `<boss>.html` (dans `tbc/`) : une page par boss. Uniquement du markup + deux
   `<link>` de style + deux `<script src>`. Aucun script inline.
 - `assets/`, `data/` : **restent à la racine**, partagés entre `tbc/` et
@@ -70,17 +80,49 @@ Le mode édition (`E`) sur une page permet de déplacer les éléments et de
 réécrire les textes — c'est un brouillon local, rien n'est envoyé au site.
 La modification durable se fait dans les fichiers ci-dessus.
 
-## Actualités Forever (`forever/news.html`)
+## Actualités Forever (`forever/actualites/`)
 
-Chaque entrée est une **rédaction originale** des faits (annonces
+Chaque article est une **rédaction originale** des faits (annonces
 officielles, dates, fonctionnalités) — jamais une traduction d'un article
 existant. Les CGU de Wowhead (corp.fanbyte.com/legal/terms, section 8)
 interdisent explicitement de « translate... any content contained within
 the Service » ; ça s'applique que l'accès se fasse par le site, leur flux
-RSS ou un scraping. Sourcer en lien (comme le fait cette page) reste
+RSS ou un scraping. Sourcer en lien (comme le font ces pages) reste
 autorisé, traduire leur texte ne l'est pas. Source privilégiée : les
-annonces officielles de Blizzard (worldofwarcraft.blizzard.com) plutôt que
-la mise en forme journalistique d'un site tiers.
+annonces officielles de Blizzard plutôt que la mise en forme journalistique
+d'un site tiers. Chaque article porte ses sources en lien en bas de page.
+
+### Images officielles (`assets/media/forever/`)
+
+Les visuels viennent des annonces Blizzard, via leur propre CDN
+(`bnetcmsus-a.akamaihd.net`). `data/forever-images-sources.json` conserve
+pour chacun l'URL d'origine, l'empreinte SHA-256 du fichier téléchargé, la
+légende, le texte alternatif, le crédit et la page source — c'est la pièce
+justificative, à garder à jour si on ajoute une image.
+
+Conditions retenues : la FAQ juridique de Blizzard autorise l'emploi de ses
+visuels sur un site de fans **non commercial**, sans modification et avec
+les mentions conservées. Ce que ça impose concrètement ici :
+
+- **Aucune retouche** : pas de recadrage, pas d'effacement de logo, pas
+  d'ajout sur l'image. La seule transformation appliquée est une réduction
+  proportionnelle (1400 px de large au plus) et un passage en WebP, qui ne
+  changent pas le contenu de l'image. Le ratio est vérifié à la génération.
+- **Crédit visible** sous chaque image, avec un lien vers la publication
+  d'origine.
+- **Pas de monétisation** du site. Si ça devait changer un jour, ces
+  conditions seraient à relire avant toute publicité ou affiliation :
+  le crédit ne remplace pas une autorisation commerciale.
+
+## Outils (`tools/`)
+
+`build-actualites.py` régénère les pages d'article et l'index à partir du
+dossier éditorial ; `build-sitemap.py` régénère `sitemap.xml` en excluant
+les pages en `noindex`.
+
+**Ce ne sont pas des étapes de build.** Le site sert le HTML présent dans le
+dépôt ; ces scripts produisent ce HTML une fois, on commite le résultat, et
+le site reste servable sans eux. On les relance quand la source change.
 
 ## Publication
 
