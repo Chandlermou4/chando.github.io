@@ -193,7 +193,8 @@ des quinze guides publiés, toutes les pages accessibles depuis l'accueil.
 *Réglé depuis le 13 septembre* : `meta description`, Open Graph, `canonical` et
 favicon sur **les 23 pages** — les liens partagés sur Discord affichent
 désormais un aperçu ; `robots.txt` et `sitemap.xml`, ce dernier listant 21 URL,
-Gruul et Maulgar étant exclus puisqu'ils sont en `noindex`.
+Gruul et Maulgar étant exclus puisqu'ils sont en `noindex` ; balise `viewport`
+sur les dix-sept pages de boss, les vingt-trois pages en ont une.
 
 *Ce qui reste ouvert* :
 
@@ -202,9 +203,6 @@ Gruul et Maulgar étant exclus puisqu'ils sont en `noindex`.
   l'étape affichée est dans le DOM. Le HTML brut d'une page de boss ne contient
   qu'une poignée de mots. C'est de loin le point le plus lourd. Il ne touche que
   les guides : les pages Forever servent leur texte en dur.
-- **Pas de `viewport` sur les dix-sept pages de boss.** `strats.html`,
-  l'accueil et les quatre pages Forever en ont une ; les guides eux-mêmes non.
-  Google indexe en mobile-first.
 - **Les liens internes passent par une redirection.** Cloudflare sert les pages
   sans extension : `illidan.html` renvoie un 308 vers `/illidan`.
 
