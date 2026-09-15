@@ -158,7 +158,11 @@ body.editing .layer{opacity:1!important}
 
 #bossmenu{background:rgba(8,12,19,.9);border:1px solid rgba(200,215,225,.18);border-radius:10px;
   padding:14px;backdrop-filter:blur(14px);box-shadow:0 20px 60px rgba(0,0,0,.5);
-  max-height:calc(100vh - 130px);overflow-y:auto}
+  /* Hauteur de la scène, pas de la fenêtre : #bossmenu est en position:fixed
+     dans #stage, qui porte un transform et devient donc son bloc conteneur.
+     Il vit en coordonnées de scène (1920x1080) ; 100vh y lisait une hauteur
+     étrangère et tronquait le menu sur fenêtre courte. */
+  max-height:calc(1080px - 130px);overflow-y:auto}
 #bossmenu .raid-h{font-family:'Archivo Black',sans-serif;font-size:11px;letter-spacing:.14em;
   color:#8FBDAE;text-transform:uppercase;margin:14px 0 8px;padding-top:10px;
   border-top:1px solid rgba(200,215,225,.12)}
