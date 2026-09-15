@@ -69,6 +69,23 @@ window.Legacy = (function () {
     return points;
   }
 
+  /** Millisecondes -> texte français, à la plus grosse unité ronde (23 h plutôt que
+   *  1380 min). Sert l'incantation et la recharge de Dedicated Study, seul perk connu
+   *  qui ait l'un ou l'autre — les 26 autres sont instantanés, sans recharge. */
+  function formatMs(ms) {
+    if (!ms) return null;
+    if (ms % 3600000 === 0) return (ms / 3600000) + ' h';
+    if (ms % 60000 === 0) return (ms / 60000) + ' min';
+    if (ms % 1000 === 0) return (ms / 1000) + ' s';
+    return String(ms / 1000).replace('.', ',') + ' s';
+  }
+  function skillInfo(t) {
+    var castTime = t.castMs ? formatMs(t.castMs) : null;
+    var cooldown = t.cdMs ? formatMs(t.cdMs) : null;
+    if (!castTime && !cooldown) return null;
+    return { castTime: castTime, cooldown: cooldown };
+  }
+
   // ── Couche française — aucun texte officiel n'existe, tout est éditorial ───
   function frEntry(key) { return (window.LEGACY_FR.entries || {})[key]; }
   function frName(key) { var e = frEntry(key); return e && e.name; }
@@ -87,7 +104,7 @@ window.Legacy = (function () {
     trees: trees, CAP: CAP, sources: raw.sources, origin: raw.origin,
     treeByKey: treeByKey, treeSpent: treeSpent, treeTotals: treeTotals,
     gate: gate, canAdd: canAdd, canRemove: canRemove,
-    encodeBuild: encodeBuild, decodeBuild: decodeBuild,
+    encodeBuild: encodeBuild, decodeBuild: decodeBuild, skillInfo: skillInfo,
     frName: frName, frRank: frRank, frTreeName: frTreeName, frBlurb: frBlurb,
     monogram: monogram, iconUrl: iconUrl
   };

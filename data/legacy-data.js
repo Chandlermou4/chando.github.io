@@ -30,6 +30,8 @@ window.LEGACY_DATA={
      "maxRanks": 5,
      "requiredSpent": 5,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -67,6 +69,8 @@ window.LEGACY_DATA={
      "maxRanks": 5,
      "requiredSpent": 0,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -104,6 +108,8 @@ window.LEGACY_DATA={
      "maxRanks": 2,
      "requiredSpent": 5,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -126,6 +132,8 @@ window.LEGACY_DATA={
      "maxRanks": 1,
      "requiredSpent": 10,
      "revealed": true,
+     "castMs": 25000,
+     "cdMs": 82800000,
      "ranks": [
       {
        "rank": 1,
@@ -143,6 +151,8 @@ window.LEGACY_DATA={
      "maxRanks": 5,
      "requiredSpent": 0,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -180,6 +190,8 @@ window.LEGACY_DATA={
      "maxRanks": 3,
      "requiredSpent": 5,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -207,6 +219,8 @@ window.LEGACY_DATA={
      "maxRanks": 1,
      "requiredSpent": 0,
      "revealed": false,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -224,6 +238,8 @@ window.LEGACY_DATA={
      "maxRanks": 1,
      "requiredSpent": 0,
      "revealed": false,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -241,6 +257,8 @@ window.LEGACY_DATA={
      "maxRanks": 2,
      "requiredSpent": 5,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -270,6 +288,8 @@ window.LEGACY_DATA={
      "maxRanks": 2,
      "requiredSpent": 5,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -292,6 +312,8 @@ window.LEGACY_DATA={
      "maxRanks": 5,
      "requiredSpent": 0,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -329,6 +351,8 @@ window.LEGACY_DATA={
      "maxRanks": 5,
      "requiredSpent": 5,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -366,6 +390,8 @@ window.LEGACY_DATA={
      "maxRanks": 1,
      "requiredSpent": 0,
      "revealed": false,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -383,6 +409,8 @@ window.LEGACY_DATA={
      "maxRanks": 1,
      "requiredSpent": 0,
      "revealed": false,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -400,6 +428,8 @@ window.LEGACY_DATA={
      "maxRanks": 5,
      "requiredSpent": 0,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -437,6 +467,8 @@ window.LEGACY_DATA={
      "maxRanks": 3,
      "requiredSpent": 5,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -464,6 +496,8 @@ window.LEGACY_DATA={
      "maxRanks": 1,
      "requiredSpent": 10,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -481,6 +515,8 @@ window.LEGACY_DATA={
      "maxRanks": 2,
      "requiredSpent": 5,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -510,6 +546,8 @@ window.LEGACY_DATA={
      "maxRanks": 5,
      "requiredSpent": 5,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -547,6 +585,8 @@ window.LEGACY_DATA={
      "maxRanks": 3,
      "requiredSpent": 0,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -574,6 +614,8 @@ window.LEGACY_DATA={
      "maxRanks": 2,
      "requiredSpent": 5,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -596,6 +638,8 @@ window.LEGACY_DATA={
      "maxRanks": 1,
      "requiredSpent": 0,
      "revealed": false,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -613,6 +657,8 @@ window.LEGACY_DATA={
      "maxRanks": 1,
      "requiredSpent": 0,
      "revealed": false,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -630,6 +676,8 @@ window.LEGACY_DATA={
      "maxRanks": 2,
      "requiredSpent": 0,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -652,6 +700,8 @@ window.LEGACY_DATA={
      "maxRanks": 1,
      "requiredSpent": 10,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -669,6 +719,8 @@ window.LEGACY_DATA={
      "maxRanks": 5,
      "requiredSpent": 0,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,
@@ -706,6 +758,8 @@ window.LEGACY_DATA={
      "maxRanks": 5,
      "requiredSpent": 5,
      "revealed": true,
+     "castMs": 0,
+     "cdMs": 0,
      "ranks": [
       {
        "rank": 1,

@@ -195,6 +195,13 @@
     var html = '<div class="detail-head"><div><h3>' + esc(name) + '</h3>' +
       '<span class="detail-original">' + esc(t.name_en) + '</span></div>' +
       (!floating ? '<button type="button" id="detail-close" aria-label="Fermer le détail">×</button>' : '') + '</div>';
+    var skill = L.skillInfo(t);
+    if (skill) {
+      html += '<dl class="detail-skill">' +
+        (skill.castTime ? '<div><dt>Incantation</dt><dd>' + esc(skill.castTime) + '</dd></div>' : '') +
+        (skill.cooldown ? '<div><dt>Recharge</dt><dd>' + esc(skill.cooldown) + '</dd></div>' : '') +
+        '</dl>';
+    }
     html += '<p class="detail-text">' + esc(mainText) + '</p>';
     if (next) html += '<p class="detail-next"><strong>Rang suivant.</strong> ' + esc(next) + '</p>';
     if (gateInfo) html += '<p class="detail-req">Demande ' + gateInfo.need + ' Points Legacy dépensés dans ' + esc(L.frTreeName(tree.key)) + '.</p>';
