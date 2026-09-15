@@ -31,9 +31,9 @@ Voir `ARCHITECTURE.md`. En résumé :
 - `index.html` : porte d'entrée sobre, deux liens (TBC / Forever).
 - `tbc/` : tout le contenu TBC — `strats.html` (liste des guides) et un
   `<boss>.html` par boss. `chando.pages.dev/tbc/…`
-- `forever/` : tout le contenu Forever — `talents.html` (calculateur),
-  `legacy.html` (résumé des Points Legacy), `races.html` (raciaux) et
-  `news.html`, l'index des actualités. `chando.pages.dev/forever/…`
+- `forever/` : tout le contenu Forever — `talents.html` (calculateur de
+  talents), `legacy.html` (calculateur de Points Legacy), `races.html`
+  (raciaux) et `news.html`, l'index des actualités. `chando.pages.dev/forever/…`
 - `forever/actualites/` : une page par article d'actualité, servie en
   `chando.pages.dev/forever/actualites/<slug>`. Rédaction originale et images
   officielles créditées — voir ARCHITECTURE.md pour les conditions.

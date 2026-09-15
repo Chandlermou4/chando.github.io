@@ -9,11 +9,28 @@ publié.
   `/forever/talents.html`.
 - `tbc/` : section TBC. `strats.html` liste les guides par phase ; un
   `<boss>.html` par boss. Chaque nouvelle page TBC se dépose ici.
-- `forever/` : section Forever. `talents.html` (calculateur), `legacy.html`
-  (résumé des Points Legacy), `races.html` (combinaisons race-classe et
-  changements de raciaux) et `news.html` — toutes des pages de contenu simple
-  sans script ; toute future page Forever se dépose ici. Chaque page de la
-  section porte le même petit `.section-nav` pour naviguer entre elles.
+- `forever/` : section Forever. `talents.html` (calculateur de talents),
+  `legacy.html` (calculateur de Points Legacy), `races.html` (combinaisons
+  race-classe et changements de raciaux) et `news.html` — toute future page
+  Forever se dépose ici. Chaque page de la section porte le même petit
+  `.section-nav` pour naviguer entre elles.
+- **Les deux calculateurs** (`talents.html`, `legacy.html`) partagent une
+  architecture à trois couches, volontairement identique des deux côtés :
+  - `data/<nom>-data.js` : deux objets globaux, `window.<NOM>_DATA` (grille,
+    rangs, textes anglais — la donnée mécanique, sourcée) et
+    `window.<NOM>_FR` (noms et textes français, avec leur provenance :
+    officiel, adapté ou éditorial).
+  - `assets/<nom>-engine.js` : logique pure sans DOM — verrous de palier,
+    encodage/décodage du lien de partage, dérivation du français. Rien n'y
+    touche l'affichage.
+  - `assets/<nom>-ui.js` : rendu et interactions, branché sur un
+    `<div id="…-page">` dans la page HTML.
+  Le calculateur de Points Legacy réutilise directement les classes CSS du
+  calculateur de talents (`assets/styles/talents.css`) plutôt que de les
+  dupliquer : `assets/styles/legacy.css`, chargée juste après, ne contient
+  que les écarts (4 lignes de grille au lieu de 7, icône « ? » des
+  emplacements non révélés). C'est délibéré — les deux outils doivent se
+  ressembler au pixel près, un seul jeu de règles à modifier pour les deux.
 - `forever/news.html` : **index** de la section Actualités. Ne contient plus
   d'article, seulement la liste des 21 articles avec vignette, rubrique, date
   et description. Son URL `/forever/news` ne change pas.

@@ -13,12 +13,11 @@
   function qs(sel) { return root.querySelector(sel); }
   function qsa(sel) { return Array.prototype.slice.call(root.querySelectorAll(sel)); }
   // Talent Legacy « Talented » (arbre Aventure, jusqu'à 5 rangs, Points Legacy — système
-  // distinct des arbres de classe). Rang 1 confirmé par deux relevés indépendants du panel
-  // Legacy de la BlizzCon 2026 (classicwow.gg, wowforevertalents.com, contenu concordant) :
-  // premier point au niveau 9 au lieu de 10, sans changer le total de 51. Rangs 2 à 5 non
-  // confirmés par ces sources : la baisse d'un niveau par rang supplémentaire (jusqu'au
-  // niveau 5 au rang 5) est une extrapolation, signalée comme telle avec le repère ≈ déjà
-  // utilisé ailleurs pour les rangs de talent estimés.
+  // distinct des arbres de classe) : premier point au niveau 9 au lieu de 10, sans changer
+  // le total de 51, un niveau plus tôt par rang supplémentaire jusqu'au niveau 5 au rang 5.
+  // Les cinq rangs sont confirmés par le calculateur Legacy que Wowhead publie pour ce
+  // système (forever/legacy.html sur ce site) — texte du client de la bêta, pas une
+  // extrapolation : voir data/legacy-data.js, perk adventure-2-2.
   var LEGACY_MAX_RANK = 5;
   var LEGACY_MIN_LEVEL = T.MIN_LEVEL - LEGACY_MAX_RANK;
 
@@ -181,8 +180,8 @@
           '<div class="split"><strong>' + perTree.join(' / ') + '</strong><span>' + S.data.trees.map(function (t) { return esc(T.frTree(t.name_en, S.fr.glossary)); }).join(' · ') + '</span></div>' +
           '<label class="level-picker">Niveau <output id="level-value" for="level-select">' + S.level + '</output>' +
           '<input type="range" id="level-select" min="' + LEGACY_MIN_LEVEL + '" max="' + T.MAX_LEVEL + '" step="1" value="' + S.level + '" aria-label="Niveau du personnage"></label>' +
-          '<label class="level-picker" title="Legacy · Aventure · Talented — dépensé en Points Legacy, indépendant des arbres de classe. Rang 1 (niveau 9) confirmé par deux relevés indépendants du panel BlizzCon 2026 ; rangs 2 à 5 estimés par extrapolation, non confirmés.">' +
-          'Legacy <output id="legacy-value" for="legacy-select">' + S.legacyRank + (S.legacyRank > 1 ? '<span class="legacy-guess"> ≈</span>' : '') + '</output>' +
+          '<label class="level-picker" title="Legacy · Aventure · Talentueux — dépensé en Points Legacy, indépendant des arbres de classe. Les 5 rangs (niveau 9 à niveau 5) sont confirmés par le calculateur Legacy de Wowhead.">' +
+          'Legacy <output id="legacy-value" for="legacy-select">' + S.legacyRank + '</output>' +
           '<input type="range" id="legacy-select" min="0" max="' + LEGACY_MAX_RANK + '" step="1" value="' + S.legacyRank + '" aria-label="Rang du talent Legacy Talented"></label>' +
         '</div>' +
         '<div class="talent-actions">' +
@@ -422,7 +421,7 @@
       } else if (e.target.id === 'legacy-select') {
         S.legacyRank = Number(e.target.value);
         var lout = qs('#legacy-value');
-        if (lout) lout.innerHTML = S.legacyRank + (S.legacyRank > 1 ? '<span class="legacy-guess"> ≈</span>' : '');
+        if (lout) lout.textContent = S.legacyRank;
         patchPointsLive();
       }
     });
