@@ -214,9 +214,6 @@ def page_article(a, sources, par_slug):
 
 CSS_INDEX = '''<style>
 main{flex:1;width:100%;max-width:820px;margin:0 auto;padding:36px 48px 64px}
-main .lede{color:var(--dim);font-size:14.5px;max-width:62ch;margin-bottom:8px}
-
-.notice{display:flex;gap:12px;padding:14px 18px;border:1px solid var(--hair);border-radius:10px;margin:18px 0 26px;font-size:13.5px;color:var(--dim)}
 
 .n-list{display:flex;flex-direction:column}
 .n-card{display:grid;grid-template-columns:172px 1fr;gap:20px;padding:22px 0;
@@ -256,15 +253,7 @@ def page_index(arts):
 '''
     s += nav('Actualités')
     s += '\n<main>\n\n'
-    s += ('<p class="lede">World of Warcraft: Forever a été annoncé à la BlizzCon 2026. '
-          '%d articles en français sur ce qui est confirmé à ce jour.</p>\n\n' % len(arts))
-    s += '''<div class="notice">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
-  <div><strong>Rédaction originale, pas une traduction.</strong> Chaque article reformule dans nos propres mots des annonces officielles de Blizzard, sources en lien. Les images sont les visuels officiels, non modifiés et crédités.</div>
-</div>
-
-<div class="n-list">
-'''
+    s += '<div class="n-list">\n'
     for a in arts:
         fichier = IMAGES[os.path.basename(a['image']['path'])]
         s += '''<a class="n-card" href="/forever/actualites/%s.html">
