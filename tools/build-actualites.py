@@ -32,7 +32,7 @@ IMAGES = {
 
 # liens vers les outils du site, ajoutés sous l'article quand le sujet s'y prête
 OUTILS = {
-    'heritage-legacy-wow-forever': ('/forever/legacy.html', 'Les 20 perks Legacy, rang par rang'),
+    'heritage-legacy-wow-forever': ('/forever/legacy.html', 'Le calculateur de Points Legacy'),
     'eolides-wow-forever':         ('/forever/races.html', 'Raciaux et combinaisons race-classe'),
     'races-classes-wow-forever':   ('/forever/races.html', 'Le tableau complet des combinaisons'),
     'talents-paladin-wow-forever': ('/forever/talents.html', 'Le calculateur de talents'),

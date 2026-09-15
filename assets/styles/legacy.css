@@ -1,0 +1,14 @@
+/* Calculateur de Points Legacy — écarts avec assets/styles/talents.css, chargée juste
+   avant celle-ci. Même grille, mêmes noeuds, même infobulle : voir ce fichier pour la
+   plaque sombre et le langage visuel communs aux deux calculateurs. */
+
+/* 4 lignes par arbre, pas 7 : la grille Legacy est plus compacte que celle des talents. */
+.legacy-tool .tree-grid { grid-template-rows: repeat(4, var(--trow)); }
+
+/* Les 6 emplacements non révélés utilisent l'icône « ? » du talent-node.locked plutôt
+   qu'une image Wowhead — un peu plus grande pour rester lisible sur fond gris. */
+.legacy-tool .talent-node.locked .node-icon { font: 700 20px/var(--icon) 'Hanken Grotesk', sans-serif; color: var(--panel-dim); }
+
+/* La barre n'a qu'un seul curseur (points possédés) : lui laisser toute la largeur que
+   le curseur de niveau + le curseur Legacy se partageaient côté talents. */
+.legacy-tool .talent-score { gap: 30px; }
