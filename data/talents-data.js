@@ -25681,13 +25681,13 @@ window.TALENT_FR={
   "voleur/assassination-7-2": {
    "name": "Venin",
    "nameSource": "adapte",
-   "rank1": "Manœuvre finale qui augmente de 30% les dégâts de vos poisons et de 10% vos chances de les appliquer. Sa durée augmente avec les points de combo :\n 1 point : 9 secondes\n 2 points : 12 secondes\n 3 points : 15 secondes\n 4 points : 18 secondes\n 5 points : 21 secondes",
+   "rank1": "Coup de grâce qui augmente de 30% les dégâts de vos poisons et de 10% vos chances de les appliquer. Sa durée augmente avec les points de combo :\n 1 point : 9 secondes\n 2 points : 12 secondes\n 3 points : 15 secondes\n 4 points : 18 secondes\n 5 points : 21 secondes",
    "textSource": "editorial"
   },
   "voleur/combat-4-2": {
    "name": "Lames sans repos",
    "nameSource": "adapte",
-   "rank1": "Vos manœuvres finales qui infligent des dégâts réduisent de 2 sec par point de combo le temps de recharge restant de vos techniques Poussée d’adrénaline, Déluge de lames, Évasion, Sprint et Disparition.",
+   "rank1": "Vos coups de grâce qui infligent des dégâts réduisent de 2 sec par point de combo le temps de recharge restant de vos techniques Poussée d’adrénaline, Déluge de lames, Évasion, Sprint et Disparition.",
    "textSource": "editorial"
   },
   "voleur/subtlety-3-3": {
