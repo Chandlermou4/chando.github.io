@@ -6,8 +6,8 @@
    structure : une seule feuille à modifier pour les reprendre toutes.
    ================================================================ */
 
-:root{--page-max:760px}
-main{flex:1;width:100%;max-width:760px;margin:0 auto;padding:30px 48px 64px}
+:root{--page-base:1180px}
+main{flex:1;width:100%;max-width:var(--page-max);margin:0 auto;padding:30px 48px 64px}
 
 /* --- retour vers l'index --- */
 .crumb{display:inline-block;font-size:13px;font-weight:600;color:var(--dim);
@@ -62,4 +62,26 @@ main{flex:1;width:100%;max-width:760px;margin:0 auto;padding:30px 48px 64px}
 @media(max-width:760px){
   main{padding:24px 24px 48px}
   .a-standfirst{font-size:17.5px}
+}
+
+/* --- grands écrans : la colonne suit --page-max, le texte doit suivre aussi.
+   Sans cela, un 27 pouces affiche un ruban de 14,8 px perdu dans le vide.
+   La figure et le tableau, eux, prennent toute la colonne : c'est ce qui
+   occupe la largeur sans allonger les lignes au-delà du lisible. --- */
+@media(min-width:1100px){
+  .a-body p{font-size:15.8px;max-width:72ch}
+  .a-standfirst{font-size:20.5px;max-width:64ch}
+  .a-body table{max-width:none}
+  .a-figure figcaption{max-width:80ch}
+}
+@media(min-width:1500px){
+  .a-body p{font-size:16.8px;max-width:74ch}
+  .a-standfirst{font-size:22px;max-width:66ch}
+  .a-body h2{font-size:22.5px}
+  main{padding-top:40px}
+}
+@media(min-width:2100px){
+  .a-body p{font-size:18px;line-height:1.7;max-width:76ch}
+  .a-standfirst{font-size:24px;max-width:68ch}
+  .a-body h2{font-size:25px}
 }
