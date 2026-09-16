@@ -1,0 +1,1025 @@
+[
+ {
+  "slug": "date-sortie-wow-forever-france",
+  "title": "WoW Forever : date et heure de sortie en France",
+  "seo_title": "WoW Forever : date et heure de sortie en France",
+  "description": "La sortie française de WoW Forever est annoncée le 5 novembre 2026 à minuit. Comprendre la différence avec la date américaine du 4 novembre.",
+  "category": "Lancement",
+  "source_ids": [
+   "annonce",
+   "avenir"
+  ],
+  "action": "enrichir-annonce-existante",
+  "priority": 1,
+  "visual": {
+   "kind": "date",
+   "title": "Le rendez-vous français",
+   "big": "05 NOV.",
+   "unit": "2026 · 00 h · Paris",
+   "items": [
+    "Date américaine : 4 novembre",
+    "Date française : 5 novembre",
+    "Un lancement mondial"
+   ]
+  },
+  "body": "**World of Warcraft: Forever doit sortir le 5 novembre 2026 à minuit, heure de Paris.** C’est la date à retenir en France : la nuit du mercredi 4 au jeudi 5 novembre. Blizzard la précise dans son annonce française et dans le récapitulatif consacré à l’avenir du jeu.\n\n## Pourquoi voit-on aussi le 4 novembre ?\n\nLes communications américaines donnent le 4 novembre. Ces deux dates correspondent à un lancement mondial exprimé dans des fuseaux horaires différents. Pour organiser une soirée de lancement en France, utilisez la date française explicitement publiée par Blizzard.\n\n## Une date à distinguer de celle des tests\n\nLa bêta et la réservation anticipée des noms ont leur propre calendrier. Une invitation à tester le jeu ne signifie donc pas que le lancement a déjà eu lieu.\n\nAvant de poser un congé ou de fixer un événement de guilde, relisez l’annonce officielle : un calendrier de lancement reste susceptible d’être actualisé par l’éditeur. Cet article présente l’annonce vérifiée au 15 septembre, pas une confirmation de disponibilité des serveurs.",
+  "related": [
+   "beta-wow-forever",
+   "reservation-nom-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/date-sortie-wow-forever-france/",
+  "illustration_alt": "Forêt aux arbres géants dans une capture officielle de Forever.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/3.png",
+   "alt": "Forêt aux arbres géants dans une capture officielle de Forever.",
+   "caption": "Image d’ambiance publiée lors de la présentation de Forever ; elle ne représente pas un événement de lancement.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/CB9ZES4LYT851789247719066.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "1e618a3204c18dec863a202bf42812cea6bd7403fd680415f886eb959a92572c"
+  }
+ },
+ {
+  "slug": "beta-wow-forever",
+  "title": "Bêta de WoW Forever : dates et accès confirmés",
+  "seo_title": "Bêta de WoW Forever : dates et accès confirmés",
+  "description": "La bêta de WoW Forever est annoncée du 17 septembre au 21 octobre 2026. Voici les accès explicitement inclus dans les offres Blizzard.",
+  "category": "Lancement",
+  "source_ids": [
+   "editions"
+  ],
+  "action": "nouvel-article",
+  "priority": 1,
+  "visual": {
+   "kind": "timeline",
+   "title": "Le calendrier de la bêta",
+   "items": [
+    "17 septembre / Début annoncé",
+    "21 octobre / Fin annoncée",
+    "5 novembre / Lancement français"
+   ]
+  },
+  "body": "**La bêta de WoW Forever est annoncée du 17 septembre au 21 octobre 2026.** Au 15 septembre, elle n’a pas encore commencé.\n\n## Quels accès Blizzard confirme-t-il ?\n\nLe pack épique des Éolides et la Warcraft Forever Collection comprennent un accès à la bêta. Le pack héroïque ne le mentionne pas parmi ses avantages.\n\nCette information ne permet pas de présenter une simple préinscription comme une garantie d’invitation. Il faut distinguer l’existence d’une candidature, une éventuelle sélection et un accès explicitement inclus dans une offre.\n\n## Que vérifier avant de tester ?\n\nVérifiez le compte concerné par votre achat ou votre invitation, puis les instructions officielles reçues. Le calendrier de test ne constitue pas une promesse de disponibilité continue de tous les contenus.\n\nNous ne publions ici ni méthode de contournement, ni promesse de conserver un personnage de test après la bêta : ces affirmations nécessiteraient une confirmation distincte.",
+  "related": [
+   "abonnement-editions-wow-forever",
+   "date-sortie-wow-forever-france"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/beta-wow-forever/",
+  "illustration_alt": "Prairies et architecture de l’île de Zéphras.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/7.png",
+   "alt": "Prairies et architecture de l’île de Zéphras.",
+   "caption": "Aperçu officiel de Zéphras ; image de présentation, pas une capture prise pendant la bêta.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/HY398NET5CH61789247720286.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "39bb570873225bcaab3e312dbc27b4057f92a952d514a332fba02ce5a49befd4"
+  }
+ },
+ {
+  "slug": "abonnement-editions-wow-forever",
+  "title": "WoW Forever : abonnement et éditions, que faut-il acheter ?",
+  "seo_title": "WoW Forever : abonnement et éditions, que faut-il acheter ?",
+  "description": "L’accès à WoW Forever est inclus dans l’abonnement WoW. Les packs Éolides sont optionnels : voici comment distinguer accès au jeu et avantages.",
+  "category": "Lancement",
+  "source_ids": [
+   "annonce",
+   "editions"
+  ],
+  "action": "nouvel-article",
+  "priority": 1,
+  "visual": {
+   "kind": "compare",
+   "title": "Accès au jeu ou avantages ?",
+   "items": [
+    "Abonnement WoW / Accès à Forever",
+    "Pack héroïque / Éolides et avantages",
+    "Pack épique / Bêta et temps de jeu",
+    "Collection / Ajouts Warcraft III"
+   ]
+  },
+  "body": "**L’accès à WoW Forever est inclus dans un abonnement WoW ou du temps de jeu actif.** Les éditions supérieures sont optionnelles : elles ajoutent des avantages, dont l’accès à la nouvelle race des Éolides.\n\n## Les trois offres numériques\n\nLe pack héroïque comprend notamment les Éolides, leur départ sur Zéphras et la réservation anticipée du nom. Le pack épique y ajoute l’accès à la bêta et 30 jours de jeu à compter du lancement. La Warcraft Forever Collection inclut aussi Warcraft III: Reforged et Forsaken Kingdom.\n\n## Comment choisir sans confondre les offres ?\n\nCommencez par votre besoin : jouer à Forever, choisir un Éolide, participer à la bêta ou découvrir Warcraft III. Consultez ensuite les avantages du produit correspondant sur votre boutique régionale.\n\nNous n’affichons pas ici de conversion approximative d’un tarif américain en euros. Les prix, l’éligibilité d’un compte et les conditions d’une mise à niveau doivent être lus sur la fiche commerciale avant achat.",
+  "related": [
+   "beta-wow-forever",
+   "eolides-wow-forever",
+   "collector-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/abonnement-editions-wow-forever/",
+  "illustration_alt": "Montures, personnages et objets réunis dans le visuel des offres Forever.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/0.webp",
+   "alt": "Montures, personnages et objets réunis dans le visuel des offres Forever.",
+   "caption": "Visuel commercial officiel réunissant des avantages de plusieurs jeux et éditions ; les conditions sont précisées dans l’article.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24302093/forgez-un-nouveau-destin-avec-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/7r/7RQ22ZLPRJFD1789240876327.webp",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "ae142bd5fc77609969d3d08a1e65ee3ed698272d6f7225eeeb488022239d258c"
+  }
+ },
+ {
+  "slug": "reservation-nom-wow-forever",
+  "title": "WoW Forever : quand réserver son nom de personnage ?",
+  "seo_title": "WoW Forever : quand réserver son nom de personnage ?",
+  "description": "La réservation anticipée des noms est prévue du 27 octobre au 3 novembre 2026, avec jusqu’à trois personnages et une édition supérieure.",
+  "category": "Lancement",
+  "source_ids": [
+   "editions"
+  ],
+  "action": "nouvel-article",
+  "priority": 2,
+  "visual": {
+   "kind": "timeline",
+   "title": "Préparer son personnage",
+   "items": [
+    "27 octobre / Ouverture annoncée",
+    "3 personnages / Maximum",
+    "3 novembre / Fin annoncée"
+   ]
+  },
+  "body": "**La réservation anticipée des noms est prévue du 27 octobre au 3 novembre 2026.** Blizzard l’inclut dans les éditions supérieures et autorise la création et la personnalisation de trois personnages au maximum pendant cette période.\n\nLes noms sont attribués selon l’ordre d’arrivée. Avoir accès à la réservation ne garantit donc pas l’obtention d’un pseudonyme précis.\n\n## Préparer une petite liste de noms\n\nChoisissez votre nom préféré et quelques alternatives avant l’ouverture. Pour une guilde, mieux vaut partager ce calendrier que promettre à chacun la disponibilité de son pseudonyme historique.\n\nLa réservation d’un nom ne doit pas être présentée comme un accès anticipé à l’aventure. L’annonce distingue cette préparation du lancement du jeu.",
+  "related": [
+   "date-sortie-wow-forever-france"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/reservation-nom-wow-forever/",
+  "illustration_alt": "Personnage nain devant une forêt enneigée.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/26.png",
+   "alt": "Personnage nain devant une forêt enneigée.",
+   "caption": "Personnage présenté par Blizzard ; image d’ambiance, pas l’écran de réservation des noms.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/CAZYRU21CWCS1789247718136.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "9f82ca754ebd43e0b84ed1bf7246b3a6ef80b91c2295bb5e859e7de2f3bc9230"
+  }
+ },
+ {
+  "slug": "parrainage-lancement-wow-forever",
+  "title": "WoW Forever : les codes pour inviter un ami au lancement",
+  "seo_title": "WoW Forever : les codes pour inviter un ami au lancement",
+  "description": "Blizzard annonce des codes Parrainez un ami pour la semaine de lancement. Envoi, éligibilité et distinction avec un accès permanent.",
+  "category": "Lancement",
+  "source_ids": [
+   "editions"
+  ],
+  "action": "nouvel-article",
+  "priority": 2,
+  "visual": {
+   "kind": "timeline",
+   "title": "Inviter un ami",
+   "items": [
+    "20 octobre / Début des envois",
+    "5–12 novembre / Semaine annoncée",
+    "Éligibilité / Conditions Blizzard"
+   ]
+  },
+  "body": "**Des codes Parrainez un ami doivent permettre à des invités éligibles de découvrir Forever pendant la semaine de lancement, sans abonnement ni temps de jeu.** L’article consacré aux éditions situe cette période du 5 au 12 novembre et annonce l’envoi des codes à partir du 20 octobre.\n\n## Ce qu’il faut transmettre à son ami\n\nPartagez les instructions accompagnant le code et le lien d’assistance officiel. L’éligibilité compte autant que la possession du code : ne promettez pas un accès à n’importe quel compte.\n\nIl s’agit d’une fenêtre d’accès temporaire, pas d’un abonnement offert sans limite de durée. Vérifiez les conditions actualisées avant de planifier une invitation : une note de la page Collector contient une date de début différente. Nous retenons ici l’article détaillé des éditions et signalons cette divergence.",
+  "related": [
+   "abonnement-editions-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/parrainage-lancement-wow-forever/",
+  "illustration_alt": "Trois personnages réunis autour d’un feu et d’une tente.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/25.png",
+   "alt": "Trois personnages réunis autour d’un feu et d’une tente.",
+   "caption": "Capture officielle évoquant le jeu en communauté ; elle ne représente pas l’interface d’invitation.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/QDFMACEW41831789247714137.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "eb5fec04d77e4e6a8ffaba09eae2d0a3372afc14d55b1d9d22cd3c63fd98a892"
+  }
+ },
+ {
+  "slug": "collector-wow-forever",
+  "title": "Collector WoW Forever : contenu physique et avantages numériques",
+  "seo_title": "Collector WoW Forever : contenu physique et avantages numériques",
+  "description": "Statue, journal, illustrations et code numérique : le contenu annoncé de la Collector WoW Forever, avec les points à vérifier avant achat.",
+  "category": "Lancement",
+  "source_ids": [
+   "collector"
+  ],
+  "action": "nouvel-article",
+  "priority": 3,
+  "visual": {
+   "kind": "grid",
+   "title": "À l’intérieur du coffret",
+   "items": [
+    "Statue / Nain et ours · 33 cm",
+    "Collection / Code numérique",
+    "Papeterie / Journal et illustrations",
+    "Accessoires / Pins et tapis de souris"
+   ]
+  },
+  "body": "**La Collector de WoW Forever associe des objets physiques à un code pour la Warcraft Forever Collection.** Le coffret annoncé comprend une statue de nain accompagné de son ours, haute de 33 cm, un tapis de souris de Zéphras, des illustrations, des pins et un journal d’aventures.\n\nLe code numérique réunit le pack épique des Éolides, Warcraft III: Reforged et Forsaken Kingdom. Blizzard prévoit également l’envoi par e-mail des instructions liées à l’accès à la bêta.\n\n## Avant une précommande\n\nVérifiez la boutique correspondant à votre pays, les frais de livraison, les stocks et les modalités de réception des codes. Une fiche américaine ne suffit pas à confirmer les conditions applicables en France.\n\nSi vous possédez déjà une édition numérique, ne supposez pas qu’un remboursement sera automatique : Blizzard décrit un éventuel crédit Battle.net soumis à conditions. Le contenu du coffret et les règles d’achat répondent à deux questions différentes.",
+  "related": [
+   "abonnement-editions-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/collector-wow-forever/",
+  "illustration_alt": "Statue du nain et de son ours sur un socle.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/43.png",
+   "alt": "Statue du nain et de son ours sur un socle.",
+   "caption": "Photographie officielle de la statue de l’édition Collector.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24302498/preachetez-ledition-collector-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/6WU1Q2OKMAVM1789244697403.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "6441ec7a405052a941b21546f1c77c9dea3572d28aadccfa84003c1b6df63f16"
+  }
+ },
+ {
+  "slug": "wow-forever-classic-plus",
+  "title": "WoW Forever et Classic : quelle différence ?",
+  "seo_title": "WoW Forever et Classic : quelle différence ?",
+  "description": "World of Warcraft: Forever est une expérience permanente autour d’Azeroth et du niveau 60. Voici ce que recouvre son rapprochement avec Classic+.",
+  "category": "Présentation",
+  "source_ids": [
+   "annonce",
+   "avenir"
+  ],
+  "action": "enrichir-annonce-existante",
+  "priority": 1,
+  "visual": {
+   "kind": "number",
+   "title": "Revenir en Azeroth",
+   "big": "60",
+   "unit": "Le niveau de référence annoncé",
+   "items": [
+    "Une expérience permanente",
+    "Des aventures supplémentaires",
+    "Aux côtés de Classic et du WoW moderne"
+   ]
+  },
+  "body": "**WoW Forever est présenté comme une expérience permanente aux côtés de WoW Classic et du jeu moderne.** L’aventure retrouve les continents originaux et une progression jusqu’au niveau 60, avec de nouvelles histoires et mises à jour.\n\n## Pourquoi parle-t-on de Classic+ ?\n\nCe rapprochement aide à formuler une question simple : peut-on retrouver l’Azeroth des débuts tout en y découvrant du contenu inédit ? Le nom officiel annoncé reste World of Warcraft: Forever.\n\nPour comprendre le projet, il est plus utile de regarder ses destinations, ses systèmes et ses modalités d’accès que de traiter Classic+ comme une édition commerciale supplémentaire.\n\n## Par où commencer ?\n\nLe calendrier répond aux questions pratiques. Le dossier sur les zones donne un aperçu de l’aventure. Les pages Talents et Legacy du site permettent ensuite d’explorer les outils communautaires, en tenant compte du statut provisoire des données de démonstration.",
+  "related": [
+   "date-sortie-wow-forever-france",
+   "zones-wow-forever",
+   "heritage-legacy-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/wow-forever-classic-plus/",
+  "illustration_alt": "Tour de pierre au bord d’une rivière dans un paysage montagneux.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/4.jpg",
+   "alt": "Tour de pierre au bord d’une rivière dans un paysage montagneux.",
+   "caption": "Paysage publié dans la présentation de Forever.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/2w/2WRCABN8AK5Q1789247793344.jpg",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "b7f5698e59f93b8b262aa77441743b07da0cfc39f8581efc8d479ab2892947f6"
+  }
+ },
+ {
+  "slug": "zones-wow-forever",
+  "title": "WoW Forever : les quatre régions annoncées",
+  "seo_title": "WoW Forever : les quatre régions annoncées",
+  "description": "Hyjal, Shen’dralas, rives Claires et Zéphras : retrouvez les régions présentées pour WoW Forever et les niveaux explicitement annoncés.",
+  "category": "Exploration",
+  "source_ids": [
+   "avenir",
+   "sun-interview",
+   "gamespot-interview"
+  ],
+  "action": "enrichir-breve-zones",
+  "priority": 1,
+  "visual": {
+   "kind": "grid",
+   "title": "Quatre destinations",
+   "items": [
+    "Mont Hyjal / Après Archimonde",
+    "Shen’dralas / Un passé à explorer",
+    "Rives Claires / Niveaux 35–45",
+    "Île de Zéphras / Départ 1–12"
+   ]
+  },
+  "body": "**Hyjal, Shen’dralas, les rives Claires et Zéphras font partie des régions présentées par Blizzard pour WoW Forever.** Le récapitulatif officiel décrit leurs ambiances et fournit des repères de progression pour certaines d’entre elles.\n\n## Quels niveaux sont annoncés ?\n\nLes rives Claires accueillent plus de 150 nouvelles quêtes, sur une grande partie du parcours entre les niveaux 35 et 45. Zéphras est une expérience de départ du niveau 1 au niveau 12.\n\n## Des lieux et des histoires\n\nHyjal revient sur les conséquences de la défaite d’Archimonde. Shen’dralas ouvre une aventure liée notamment aux Shen’dralar et aux Centaures. Ces présentations donnent un cadre ; elles ne constituent pas des itinéraires de leveling optimisés.\n\nPour préparer son personnage, il faut donc distinguer une plage de niveaux annoncée d’une route de quêtes testée. Nous n’ajoutons pas de coordonnées, de taux d’expérience ou d’ordre de parcours que les annonces ne documentent pas.\n\n## Où se situent précisément les nouvelles régions\n\nLes rives Claires se trouvent au nord des Carmines : c’est de là qu’arriveront la plupart des joueurs de l’Alliance, et plusieurs intrigues des Carmines s’y prolongent. On y croisera des humains, des orcs, des ogres et un avant-poste gobelin, un hôtel des ventes du marché noir, et un quai jusqu’ici inutilisé qui relie la région à Gadgetzan.\n\nShen’dralas occupe l’extrémité sud de Désolace. La vallée des Ossements y sert de cadre à plusieurs quêtes, l’histoire des centaures Magram et Gelkis se poursuit depuis Désolace, et les ruines rejoignent le fil de Hache-tripes.\n\n## Combien de contenu, au juste\n\nLe WoW d’origine comptait de l’ordre de 3 000 à 3 500 quêtes. Forever en ajoute environ un millier, réparties entre 50 et 200 par nouvelle région. Les Paluns et Azshara, deux zones qui existent déjà, en reçoivent également beaucoup. À partir du niveau 5, on commence à croiser du contenu inédit.\n\n## Trois nouvelles liaisons maritimes\n\nHurlevent sera reliée par bateau à la côte de Sombrivage, une ligne en trois escales partira du port de Menethil vers les Contreforts d’Hillsbrad puis Sombrivage, et les rives Claires disposeront de leur propre quai vers Gadgetzan. De quoi rejoindre la zone de départ d’un ami sans traverser un continent.\n\nCe dernier point vient du relevé de Wowhead, pas d’une annonce officielle : nous le signalons comme tel.",
+  "related": [
+   "eolides-wow-forever",
+   "donjons-raids-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-16",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/zones-wow-forever/",
+  "illustration_alt": "Architecture elfique, eau lumineuse et dragons sous un ciel violet.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/5.png",
+   "alt": "Architecture elfique, eau lumineuse et dragons sous un ciel violet.",
+   "caption": "Aperçu officiel publié dans la présentation des nouvelles régions.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/fo/FOU74XKXWD931789247935672.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "cfc706a429b32b9d3826947ee878ca72dd5ad88dbc80de911999ff2baae810e4"
+  }
+ },
+ {
+  "slug": "eolides-wow-forever",
+  "title": "Éolides de WoW Forever : factions et classes annoncées",
+  "seo_title": "Éolides de WoW Forever : factions et classes annoncées",
+  "description": "Les Éolides rejoignent la Horde ou l’Alliance. Découvrez les classes annoncées, leur départ sur Zéphras et la distinction entre race et faction.",
+  "category": "Races",
+  "source_ids": [
+   "avenir",
+   "annonce",
+   "sun-interview",
+   "gamespot-interview"
+  ],
+  "action": "enrichir-breve-eolides",
+  "priority": 1,
+  "visual": {
+   "kind": "compare",
+   "title": "Éolides : deux factions",
+   "items": [
+    "Horde / Chaman",
+    "Alliance / Mage",
+    "Les deux / Guerrier · Chasseur",
+    "Les deux / Voleur · Druide"
+   ]
+  },
+  "body": "**Les Éolides sont une nouvelle race jouable de WoW Forever, avec un choix entre Horde et Alliance à la création du personnage.** Ce choix détermine notamment l’accès au chaman ou au mage.\n\nLes Éolides de la Horde peuvent devenir chamans ; ceux de l’Alliance peuvent devenir mages. Guerrier, chasseur, voleur et druide sont annoncés pour les deux factions. Leur aventure débute sur Zéphras.\n\n## Une race ne suffit pas à choisir sa classe\n\nSi vous préparez un personnage avec des amis, partez de votre faction et de votre classe souhaitée. Un tableau de possibilités évite de confondre une race accessible aux deux camps avec une classe disponible dans chacun d’eux.\n\nLes avantages commerciaux donnant accès aux Éolides sont détaillés dans notre article sur les éditions. Les noms de factions, raciaux et valeurs numériques du calculateur doivent conserver leurs propres sources : cette présentation ne valide pas automatiquement tous les relevés communautaires.\n\n## Pourquoi une île qui tombe\n\nZéphras flotte au cœur de Mur-Céleste, le plan élémentaire de l’air. Les élémentaires qui y ont élevé les Éolides sont partis et l’île redescend lentement : c’est ce qui pousse ce peuple à chercher de nouvelles alliances, et ce qui donne son sens au choix de faction à la création du personnage.\n\nBlizzard indique avoir travaillé les premières intentions de la race avec Chris Metzen, et avoir su très tôt qu’il s’agirait d’elfes. L’esthétique de Mur-Céleste, elle, n’avait plus été exploitée depuis Cataclysm.",
+  "related": [
+   "abonnement-editions-wow-forever",
+   "races-classes-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-16",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/eolides-wow-forever/",
+  "illustration_alt": "Trois Éolides devant une architecture de pierre ornée de bannières.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/8.png",
+   "alt": "Trois Éolides devant une architecture de pierre ornée de bannières.",
+   "caption": "Présentation officielle de la nouvelle race jouable.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/T57OYWX3BMQM1789247713703.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "ec1f5456243085f85a4bc707efcec1a7102fa771e268bcac91c3949c1521770c"
+  }
+ },
+ {
+  "slug": "donjons-raids-wow-forever",
+  "title": "WoW Forever : donjons et raids annoncés, formats 10 et 20",
+  "seo_title": "WoW Forever : donjons et raids annoncés, formats 10 et 20",
+  "description": "Neuf donjons et deux nouveaux raids figurent dans la présentation de WoW Forever. Formats de groupe et limites des informations disponibles.",
+  "category": "PvE",
+  "source_ids": [
+   "avenir",
+   "blizzard-donjons",
+   "sun-interview"
+  ],
+  "action": "enrichir-breve-donjons-raids",
+  "priority": 1,
+  "visual": {
+   "kind": "number",
+   "title": "De nouvelles aventures en groupe",
+   "big": "9",
+   "unit": "Nouveaux donjons annoncés",
+   "items": [
+    "Profondeurs des Saisons / 10 joueurs",
+    "Sommet d’Hyjal / 20 joueurs"
+   ]
+  },
+  "body": "**Blizzard présente neuf nouveaux donjons et deux raids inédits pour WoW Forever.** Les profondeurs des Saisons sont annoncées pour 10 joueurs au niveau maximum ; le sommet d’Hyjal pour 20 joueurs.\n\n## Où partir en donjon ?\n\nLes lieux cités comprennent la salle des Thanes, les ruines de Lordaeron, un site de fouilles près de Whelgar, Dalaran, le repaire des Noiregueules, la cité Submergée, le bastion Krol’dok, la prison d’Alcaz et la terrasse du Façonneur.\n\n## Préparer un groupe sans inventer une stratégie\n\nLes formats de raid sont utiles pour discuter des effectifs d’une communauté. Ils ne donnent pas encore une composition idéale, un nombre obligatoire de soigneurs ou une stratégie de boss.\n\nLes noms et destinations sont confirmés dans la présentation. Nous ne les accompagnons pas de tables de butin ou de guides de rencontres non vérifiés. L’objectif est de savoir ce qui est annoncé, puis de compléter chaque sujet avec des informations identifiées lorsque le contenu devient observable.\n\n## Les niveaux des neuf donjons\n\nBlizzard a publié la liste complète après avoir corrigé celle du bastion Krol’dok, annoncée à tort pendant la BlizzCon. Les noms anglais sont ceux du message officiel ; les noms français sont ceux employés dans la présentation française quand elle les cite, et les nôtres sinon.\n\n| Donjon | Nom anglais | Niveaux |\n| --- | --- | --- |\n| La salle des Thanes | The Hall of Thanes | 13-18 |\n| Les ruines de Lordaeron | Ruins of Lordaeron | 15-20 |\n| Site de fouilles : les Paluns | Excavation Site: Wetlands | 24-29 |\n| La cité de Dalaran | City of Dalaran | 28-33 |\n| La cité Submergée | The Drowned City | 35-40 |\n| Le bastion Krol’dok | Krol’dok Stronghold | 40-45 |\n| La prison d’Alcaz | Alcaz Prison | 48-53 |\n| Le repaire des Noiregueules | Blackmaw Hold | 55-60 |\n| La terrasse du Façonneur | Shaper’s Terrace | 58-60 |\n\n## Deux raids, un nom qui prête à confusion\n\nLes profondeurs des Saisons s’appellent **the Barrow Deeps** en anglais : les tanières druidiques enfouies sous Hyjal, sans rapport avec des saisons. Le nom français est celui du site officiel de Blizzard, mais si vous lisez un guide anglophone, c’est bien du même raid à 10 joueurs qu’il s’agit. Le sommet d’Hyjal, lui, se dit **Hyjal Summit**.\n\nUn entretien accordé au Sun précise que les deux se situent au mont Hyjal, et que le butin de palier sera accessible dans les trois tailles de raid annoncées.",
+  "related": [
+   "zones-wow-forever",
+   "date-sortie-wow-forever-france"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-16",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/donjons-raids-wow-forever/",
+  "illustration_alt": "Ruines et arbres enneigés sous un ciel rose.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/18.png",
+   "alt": "Ruines et arbres enneigés sous un ciel rose.",
+   "caption": "Capture publiée par Blizzard dans la présentation des raids.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/UUIIBVJQ5URB1789247713326.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "f6d98dabfc7e6ebeb17f124ecac42971bb21036a786f15af1f63b0bb24ac3f77"
+  }
+ },
+ {
+  "slug": "pvp-iles-sombrelances-wow-forever",
+  "title": "JcJ de WoW Forever : les îles des Sombrelances en 15 contre 15",
+  "seo_title": "JcJ de WoW Forever : les îles des Sombrelances en 15 contre 15",
+  "description": "Les îles des Sombrelances sont le nouveau champ de bataille annoncé pour Forever. Format, objectifs présentés et informations encore à préciser.",
+  "category": "JcJ",
+  "source_ids": [
+   "avenir"
+  ],
+  "action": "enrichir-breve-jcj",
+  "priority": 2,
+  "visual": {
+   "kind": "versus",
+   "title": "Îles des Sombrelances",
+   "big": "15",
+   "unit": "Joueurs par équipe : 15",
+   "items": [
+    "15",
+    "Points stratégiques",
+    "Drapeaux et défense"
+   ]
+  },
+  "body": "**Les îles des Sombrelances sont annoncées comme un champ de bataille à 15 contre 15 dans WoW Forever.** La présentation associe contrôle de points stratégiques, capture de drapeaux et défense.\n\nLe bassin Arathi sert de référence d’ambiance dans le récapitulatif. Il ne faut pas en déduire que le nouveau terrain possède exactement les mêmes règles, le même score de victoire ou la même carte.\n\n## À quoi sert cette première présentation ?\n\nElle permet d’identifier un nouveau contenu JcJ et son format de groupe. Pour préparer une stratégie, il faudra disposer des règles détaillées et d’observations autorisées du terrain.\n\nNous n’attribuons pas encore de récompenses d’honneur, de durée moyenne de partie ou de classement des classes à cette annonce. Ces sujets demandent leurs propres éléments de preuve.",
+  "related": [
+   "royaumes-langues-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/pvp-iles-sombrelances-wow-forever/",
+  "illustration_alt": "Zeppelin au-dessus des îles des Sombrelances et de leurs pontons.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/20.png",
+   "alt": "Zeppelin au-dessus des îles des Sombrelances et de leurs pontons.",
+   "caption": "Aperçu officiel du champ de bataille des îles des Sombrelances.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/RLMTVX61QGEW1789247709428.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "2605945d8a086f93b11b555e0b3c60d27633868308b2b0061eccd232fa9539aa"
+  }
+ },
+ {
+  "slug": "heritage-legacy-wow-forever",
+  "title": "Legacy de WoW Forever : 16 points dépensables, 65 à gagner",
+  "seo_title": "Legacy de WoW Forever : 16 points dépensables, 65 à gagner",
+  "description": "Le système d’héritage, aussi appelé Legacy, distingue points gagnés et points dépensés. Une explication claire avant d’utiliser le calculateur.",
+  "category": "Progression",
+  "source_ids": [
+   "systemes"
+  ],
+  "action": "enrichir-breve-legacy",
+  "priority": 1,
+  "visual": {
+   "kind": "compare",
+   "title": "Legacy : deux limites distinctes",
+   "items": [
+    "16 / Dépensables par personnage",
+    "65 / Points pouvant être gagnés",
+    "Compte / Progression partagée",
+    "Personnage / Répartition individuelle"
+   ]
+  },
+  "body": "**Legacy est le nom couramment utilisé pour le système d’héritage de WoW Forever.** Au lancement, 16 points sont dépensables par personnage, pour 65 points pouvant être gagnés. La progression est partagée, la répartition individuelle.\n\n## Gagner n’est pas dépenser\n\nLes deux chiffres répondent à des questions différentes. Le premier décrit ce que vous pouvez affecter à un personnage ; le second décrit une progression plus large. Les additionner ou supposer que tout peut être activé simultanément produirait une lecture trompeuse.\n\nNotre page Points Legacy sert à explorer les choix. Elle ne remplace pas la distinction entre annonce officielle, données de démonstration et état final du jeu. Un exemple de répartition doit toujours préciser le personnage visé et la version des informations utilisées.",
+  "related": [
+   "talents-paladin-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/heritage-legacy-wow-forever/",
+  "illustration_alt": "Interface de progression Legacy et ses récompenses.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/35.png",
+   "alt": "Interface de progression Legacy et ses récompenses.",
+   "caption": "Capture officielle de la progression Legacy ; interface de présentation susceptible d’évoluer.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303313/recapitulatif-de-la-presentation-au-coeur-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/xh/XHJAGQLOOG6M1789320430322.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "756884855e9887ff4f60b9f2c7a5db6fcd1a20b99ee0baacd9dfb21b397e70d3"
+  }
+ },
+ {
+  "slug": "campements-metiers-wow-forever",
+  "title": "Campements de WoW Forever : le rôle annoncé des métiers",
+  "seo_title": "Campements de WoW Forever : le rôle annoncé des métiers",
+  "description": "Les campements réunissent repos, services et objets artisanaux. Ce que Blizzard confirme, avant de parler de routes de métiers ou de rentabilité.",
+  "category": "Métiers",
+  "source_ids": [
+   "systemes"
+  ],
+  "action": "nouvel-article",
+  "priority": 2,
+  "visual": {
+   "kind": "grid",
+   "title": "Faire une halte ensemble",
+   "items": [
+    "Campement / Repos",
+    "Artisanat / Objets de métier",
+    "Services / Réparations",
+    "Recettes / Plus de 600 nouveautés"
+   ]
+  },
+  "body": "**Les campements associent repos, services et objets artisanaux.** Blizzard annonce aussi plus de 600 nouvelles recettes. Les bonus de campement apparentés aux améliorations de classe ne se cumulent pas avec celles-ci.\n\n## Préparer ses métiers, sans fausse promesse de bénéfice\n\nL’annonce donne une raison de s’intéresser à l’artisanat collectif. Elle ne suffit pas à établir quel métier rapportera le plus d’or, ni à publier une liste d’achats prétendument optimale.\n\nPour un groupe d’amis, la bonne discussion porte d’abord sur les métiers que chacun souhaite jouer. Une future fiche pratique pourra ensuite relier chaque objet à sa recette et à sa source vérifiée.\n\nLes guides de rentabilité, les coûts de fabrication et les emplacements exacts ne sont pas déduits de cette présentation. Ils devront être documentés séparément.",
+  "related": [
+   "heritage-legacy-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/campements-metiers-wow-forever/",
+  "illustration_alt": "Personnage devant une tente et un feu de camp dans la forêt.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/32.png",
+   "alt": "Personnage devant une tente et un feu de camp dans la forêt.",
+   "caption": "Capture officielle du campement.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303313/recapitulatif-de-la-presentation-au-coeur-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/6i/6IOXC42AUBHX1789319298469.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "ef231296b684a79a22947a304c2301601a70f842d67f4b225b575adf99749482"
+  }
+ },
+ {
+  "slug": "royaumes-langues-wow-forever",
+  "title": "WoW Forever : royaumes, langue française et jeu entre amis",
+  "seo_title": "WoW Forever : royaumes, langue française et jeu entre amis",
+  "description": "Blizzard présente des ensembles de règles à la place des royaumes traditionnels. Voici les distinctions essentielles pour préparer un groupe francophone.",
+  "category": "Communauté",
+  "source_ids": [
+   "systemes"
+  ],
+  "action": "nouvel-article",
+  "priority": 1,
+  "visual": {
+   "kind": "grid",
+   "title": "Jouer avec ses proches",
+   "items": [
+    "Normal / Coopération",
+    "JcJ / Conflits",
+    "Jeu de rôle / Immersion",
+    "Langue / Préférence de rencontre"
+   ]
+  },
+  "body": "**Forever remplace le choix de royaume par des ensembles de règles.** Les groupes ne traversent ni ces ensembles ni les factions. Une préférence de langue est prévue.\n\n## Trois questions pour votre groupe\n\nAvant de créer vos personnages, convenez de votre faction, de votre ensemble de règles et de votre langue de communication. C’est plus utile que de partager uniquement un nom de personnage.\n\nLa préférence linguistique ne doit pas être transformée en promesse d’un royaume exclusivement francophone. Elle ne signifie pas non plus que l’ensemble de la population joue dans une instance unique.\n\nPour notre communauté, cet article pourra servir de point de départ à une fiche d’organisation : amis à rejoindre, choix communs et canal de discussion. Il ne fournit pas de garantie sur les files d’attente ou sur la capacité d’un serveur.",
+  "related": [
+   "hardcore-wow-forever",
+   "reservation-nom-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/royaumes-langues-wow-forever/",
+  "illustration_alt": "Menu de langue préférée dans les options sociales de Forever.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/37.png",
+   "alt": "Menu de langue préférée dans les options sociales de Forever.",
+   "caption": "Capture officielle du choix de langue ; elle ne constitue pas une liste de royaumes francophones.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303313/recapitulatif-de-la-presentation-au-coeur-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/dv/DVIN39QKQO6C1789320937860.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "84f7e61c7ce6cf3130d3172a98d72d2c4e64c3e56d35cbb8973bb53f97623dfd"
+  }
+ },
+ {
+  "slug": "transmogrification-wow-forever",
+  "title": "WoW Forever : peut-on désactiver la transmogrification ?",
+  "seo_title": "WoW Forever : peut-on désactiver la transmogrification ?",
+  "description": "La transmogrification de Forever est optionnelle. Comprendre la différence entre apparence affichée, équipement porté et collection.",
+  "category": "Personnalisation",
+  "source_ids": [
+   "systemes"
+  ],
+  "action": "nouvel-article",
+  "priority": 2,
+  "visual": {
+   "kind": "compare",
+   "title": "Choisir ce que l’on voit",
+   "items": [
+    "Option activée / Apparences personnalisées",
+    "Option désactivée / Équipement porté",
+    "Collection / Apparences conservées"
+   ]
+  },
+  "body": "**Oui, la transmogrification peut être désactivée.** Vous voyez alors l’équipement porté. La collection d’apparences reste possible ; le mode Classic désactive cette option par défaut.\n\n## Apparence et équipement répondent à deux questions\n\nUne tenue sert à exprimer une préférence visuelle. Une pièce équipée possède ses propres caractéristiques. Ne confondez pas ces deux informations lorsque vous regardez un personnage ou discutez de son équipement.\n\nCette option concerne le choix d’affichage du joueur. Elle ne suffit pas à décrire toutes les règles d’obtention des apparences : un futur guide consacré à la collection devra distinguer les qualités d’objet et les contenus concernés.\n\nAvant de partager une capture comme exemple de butin, indiquez donc s’il s’agit d’un équipement porté ou d’une apparence appliquée.",
+  "related": [
+   "options-graphiques-manette-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/transmogrification-wow-forever/",
+  "illustration_alt": "Trois personnages portant des ensembles d’armure distincts.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/9.png",
+   "alt": "Trois personnages portant des ensembles d’armure distincts.",
+   "caption": "Image d’ambiance officielle consacrée aux personnages ; elle ne montre pas un avant-après de transmogrification.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/O73TW8W369MK1789247716179.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "279ce8b302f7bd27e99029159a0913f58dab7135e84b2f9311803b38faa8c305"
+  }
+ },
+ {
+  "slug": "combat-equipement-wow-forever",
+  "title": "WoW Forever : combat et équipement, les changements confirmés",
+  "seo_title": "WoW Forever : combat et équipement, les changements confirmés",
+  "description": "Blizzard conserve une approche tactique et annonce une évolution des statistiques. Ce que l’on peut dire sans publier de faux classements BiS.",
+  "category": "Classes",
+  "source_ids": [
+   "systemes"
+  ],
+  "action": "nouvel-article",
+  "priority": 2,
+  "visual": {
+   "kind": "compare",
+   "title": "Lire son équipement autrement",
+   "items": [
+    "Toucher / Unifié",
+    "Critique / Unifié",
+    "Menace / Toujours à gérer",
+    "BiS / À démontrer"
+   ]
+  },
+  "body": "**Toucher et critique sont unifiés entre sorts et attaques.** Blizzard conserve une place à la menace et au contrôle des ennemis.\n\n## Pourquoi ne pas recopier une liste Classic ?\n\nUn classement d’équipement est une conclusion, pas une simple liste d’objets familiers. Il faut préciser les caractéristiques retenues, le rôle du personnage, le contenu visé et la version du jeu étudiée.\n\nLa même exigence vaut pour les rotations : un nom de technique ne suffit pas à en déterminer la priorité dans toutes les situations. Notre couverture distinguera les annonces, les tests autorisés et les recommandations issues de ces tests.\n\nCet article ne désigne donc ni meilleure classe ni équipement obligatoire. Il donne un cadre de lecture pour les prochains relevés.",
+  "related": [
+   "talents-paladin-wow-forever",
+   "donjons-raids-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/combat-equipement-wow-forever/",
+  "illustration_alt": "Personnage réprouvé en armure dorée portant une arme.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/22.png",
+   "alt": "Personnage réprouvé en armure dorée portant une arme.",
+   "caption": "Capture officielle de personnage équipé ; elle ne démontre aucun classement de puissance.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/X50U9W72N3NY1789247721299.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "dab2b44ef72a20c92b8baad17d8095f5a1a48ef252813620c58d426bee4ef5d9"
+  }
+ },
+ {
+  "slug": "talents-paladin-wow-forever",
+  "title": "Talents de WoW Forever : ce que montre l’exemple du paladin",
+  "seo_title": "Talents de WoW Forever : ce que montre l’exemple du paladin",
+  "description": "Blizzard présente un jalon à 16 points et détaille le paladin. Distinguer les annonces de classe des valeurs encore issues de la démonstration.",
+  "category": "Classes",
+  "source_ids": [
+   "systemes"
+  ],
+  "action": "nouvel-article",
+  "priority": 1,
+  "visual": {
+   "kind": "timeline",
+   "title": "Des repères dans les arbres",
+   "items": [
+    "11 points / Jalon",
+    "16 points / Nouveau jalon",
+    "21 points / Jalon",
+    "31 points / Jalon"
+   ]
+  },
+  "body": "**Un jalon à 16 points s’ajoute aux repères 11, 21 et 31.** Pour le paladin, Blizzard présente Frappe sacrée au niveau 6 et des sceaux non consommés par Jugement.\n\n## Une annonce de classe n’est pas un build optimal\n\nCes informations aident à lire le calculateur. Elles ne permettent pas de recommander une répartition universelle, ni d’affirmer qu’un rôle dominera les autres.\n\nLorsque vous partagez un build, précisez son usage : découverte, montée de niveau, groupe ou autre objectif. Gardez aussi le lien et la date du relevé. Une répartition enregistrée peut rester consultable même si les données changent ensuite.\n\nNotre calculateur est un outil communautaire de préparation. Les valeurs de la démonstration et les annonces officielles doivent rester identifiables séparément.",
+  "related": [
+   "combat-equipement-wow-forever",
+   "heritage-legacy-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/talents-paladin-wow-forever/",
+  "illustration_alt": "Les trois arbres de talents du paladin dans l’interface de Forever.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/23.png",
+   "alt": "Les trois arbres de talents du paladin dans l’interface de Forever.",
+   "caption": "Aperçu officiel des talents du paladin ; les détails peuvent évoluer pendant le développement.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/7SGUHEP05HV71789247720285.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "7ea8f8be09452e7d84d2371c6e2984d1c053c10f48103ddd2e91e45ecaf13655"
+  }
+ },
+ {
+  "slug": "races-classes-wow-forever",
+  "title": "WoW Forever : les nouvelles combinaisons race-classe",
+  "seo_title": "WoW Forever : les nouvelles combinaisons race-classe",
+  "description": "Paladin réprouvé et chaman nain font partie des nouvelles possibilités de Forever. Comment lire les annonces sans inventer un classement racial.",
+  "category": "Races",
+  "source_ids": [
+   "systemes",
+   "histoire"
+  ],
+  "action": "enrichir-breve-combinaisons",
+  "priority": 2,
+  "visual": {
+   "kind": "grid",
+   "title": "De nouvelles possibilités",
+   "items": [
+    "Gnome / Prêtre",
+    "Humain / Chasseur",
+    "Nain / Chaman",
+    "Orc / Mage",
+    "Troll / Démoniste",
+    "Réprouvé / Paladin"
+   ]
+  },
+  "body": "**Six combinaisons sont annoncées : prêtre gnome, chasseur humain, chaman nain, mage orc, démoniste troll et paladin réprouvé.**\n\n## Choisir un personnage avant de chercher un classement\n\nLe tableau répond à une question de disponibilité. Il ne démontre pas qu’une race sera supérieure en raid, en JcJ ou pendant la montée de niveau.\n\nPour choisir, séparez les contraintes de votre groupe, vos préférences de classe et les effets raciaux que vous souhaitez explorer. Une recommandation chiffrée demanderait ensuite un contexte et des valeurs vérifiées.\n\nLe paladin réprouvé possède aussi un contexte narratif dans Forsaken Kingdom. Ce lien d’histoire ne doit pas servir à transposer les mécanismes du jeu de stratégie dans le MMO.",
+  "related": [
+   "eolides-wow-forever",
+   "forsaken-kingdom-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/races-classes-wow-forever/",
+  "illustration_alt": "Personnages de plusieurs races alignés dans un paysage de Forever.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/9.png",
+   "alt": "Personnages de plusieurs races alignés dans un paysage de Forever.",
+   "caption": "Présentation officielle des possibilités de personnages.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/O73TW8W369MK1789247716179.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "279ce8b302f7bd27e99029159a0913f58dab7135e84b2f9311803b38faa8c305"
+  }
+ },
+ {
+  "slug": "hardcore-wow-forever",
+  "title": "Hardcore WoW Forever : un mode prévu après le lancement",
+  "seo_title": "Hardcore WoW Forever : un mode prévu après le lancement",
+  "description": "Le mode Extrême de WoW Forever est annoncé après la sortie. Ce qui est confirmé et pourquoi il ne faut pas lui attribuer une date précise.",
+  "category": "Progression",
+  "source_ids": [
+   "systemes",
+   "avenir"
+  ],
+  "action": "enrichir-breve-hardcore",
+  "priority": 2,
+  "visual": {
+   "kind": "timeline",
+   "title": "Extrême : après le lancement",
+   "items": [
+    "Sortie de Forever / 5 novembre en France",
+    "Mode Extrême / Prévu après la sortie",
+    "Date précise / Non fixée ici"
+   ]
+  },
+  "body": "**Le mode Extrême, ou Hardcore, est annoncé après la sortie de WoW Forever.** Le récapitulatif des systèmes le présente comme un environnement distinct, avec un transfert possible après la mort vers un autre ensemble de règles.\n\n## Une feuille de route n’est pas une date de sortie\n\nL’ordre d’une liste de contenus à venir ne suffit pas à fixer le jour de disponibilité de chacun. Il ne faut donc pas transformer le calendrier des raids en calendrier du Hardcore.\n\nSi votre groupe souhaite commencer directement en Extrême, attendez une annonce propre à ce mode avant de fixer une soirée de lancement. À l’inverse, découvrir Forever à sa sortie et préparer un projet Hardcore sont deux décisions qui peuvent être discutées séparément.\n\nNous actualiserons ce repère lorsque Blizzard publiera un calendrier explicite.",
+  "related": [
+   "royaumes-langues-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/hardcore-wow-forever/",
+  "illustration_alt": "Anciennes ruines de pierre dans un paysage sombre et brumeux.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/6.png",
+   "alt": "Anciennes ruines de pierre dans un paysage sombre et brumeux.",
+   "caption": "Image d’ambiance de Forever ; ce visuel n’annonce pas une disponibilité du mode Hardcore.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/NID5C6I763JX1789247720169.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "c7f631bae2f9e0efc24a91bdf94fb1b4bc539035f601b7f9c6472836ce01d71b"
+  }
+ },
+ {
+  "slug": "options-graphiques-manette-wow-forever",
+  "title": "WoW Forever : graphismes Classic, modèles HD et manette",
+  "seo_title": "WoW Forever : graphismes Classic, modèles HD et manette",
+  "description": "Blizzard annonce des options visuelles classiques et modernes ainsi qu’une prise en charge officielle des manettes pour WoW Forever.",
+  "category": "Personnalisation",
+  "source_ids": [
+   "avenir"
+  ],
+  "action": "nouvel-article",
+  "priority": 2,
+  "visual": {
+   "kind": "grid",
+   "title": "L’apparence et les commandes",
+   "items": [
+    "Visuel / Classic ou moderne",
+    "Personnages / Modèles HD ou SD",
+    "Animation / Héritage Classic",
+    "Commandes / Manette annoncée"
+   ]
+  },
+  "body": "**WoW Forever proposera des choix visuels Classic et modernes, des modèles HD ou SD et une prise en charge officielle des manettes.** Blizzard mentionne également des animations classiques restaurées pour les modèles HD.\n\n## Ce que ces options ne démontrent pas\n\nUne compatibilité manette ne constitue pas, à elle seule, l’annonce d’une version console. De même, une option graphique ne donne pas une mesure de performances sur une configuration précise.\n\nPour choisir votre présentation, partez de votre confort de lecture et de vos habitudes de jeu. Les comparaisons d’images devront montrer les options réellement sélectionnées, plutôt que mélanger des captures aux réglages inconnus.\n\nNous ne publions pas de configuration minimale inventée ou d’objectif d’images par seconde. Ces informations demandent une fiche de spécifications ou des mesures clairement identifiées.",
+  "related": [
+   "transmogrification-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/options-graphiques-manette-wow-forever/",
+  "illustration_alt": "Modèle de personnage nain dans un paysage enneigé.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/27.png",
+   "alt": "Modèle de personnage nain dans un paysage enneigé.",
+   "caption": "Modèle de personnage publié dans la présentation des options visuelles ; ce n’est pas une démonstration de manette.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/3DI1I0OEEAIB1789247717862.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "c2bb97f9fbe485d025c4905ae14c5dce368d7259013a576733be3117ac5850b9"
+  }
+ },
+ {
+  "slug": "forsaken-kingdom-wow-forever",
+  "title": "Forsaken Kingdom : quel lien avec l’histoire de WoW Forever ?",
+  "seo_title": "Forsaken Kingdom : quel lien avec l’histoire de WoW Forever ?",
+  "description": "La campagne Warcraft III Reforged: Forsaken Kingdom éclaire les Réprouvés et les débuts de Forever. Un repère narratif sans divulgâchage majeur.",
+  "category": "Histoire",
+  "source_ids": [
+   "histoire"
+  ],
+  "action": "nouvel-article",
+  "priority": 3,
+  "visual": {
+   "kind": "timeline",
+   "title": "Le fil narratif",
+   "items": [
+    "Lordaeron / Les Réprouvés",
+    "Fossoyeuse / Un refuge",
+    "Forsaken Kingdom / Campagne Warcraft III",
+    "WoW Forever / Le récit se prolonge"
+   ]
+  },
+  "body": "**Forsaken Kingdom est une campagne de Warcraft III: Reforged qui mène aux premiers événements de World of Warcraft et prépare le contexte de Forever.** Elle suit les Réprouvés, leur lutte contre le Fléau et leur installation à Fossoyeuse, avec Sylvanas parmi les personnages mis en avant.\n\nBlizzard annonce un prologue, trois chapitres et une unité héroïque de paladin réprouvé. Le jeu de stratégie et le MMO restent deux expériences distinctes : une unité de Warcraft III n’est pas une fiche de classe de Forever.\n\n## Faut-il y jouer avant Forever ?\n\nL’annonce décrit un lien narratif. Elle ne présente pas l’achèvement de la campagne comme une condition pour accéder au MMO. Vous pouvez donc consulter ce contexte sans transformer la campagne en devoir préalable.\n\nPour la campagne elle-même, Warcraft III: Reforged est nécessaire. Les offres commerciales sont à vérifier séparément du résumé de l’histoire, notamment si vous possédez déjà le jeu.",
+  "related": [
+   "wow-forever-classic-plus",
+   "races-classes-wow-forever"
+  ],
+  "status": "draft",
+  "verified_at": "2026-09-15",
+  "published_at": null,
+  "author": null,
+  "proposed_path": "/forever/actualites/forsaken-kingdom-wow-forever/",
+  "illustration_alt": "Illustration officielle des combattants de Warcraft III Reforged et Forsaken Kingdom.",
+  "illustration_credit": "© Blizzard Entertainment. Tous droits réservés.",
+  "image": {
+   "path": "illustrations/officielles/50.png",
+   "alt": "Illustration officielle des combattants de Warcraft III Reforged et Forsaken Kingdom.",
+   "caption": "Visuel promotionnel officiel de Warcraft III: Reforged et de Forsaken Kingdom, distinct du MMO.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24301511/reprenez-les-hostilites-avec-warcraft-iii-reforged-forsaken-kingdom",
+   "original_url": "https://bnetcmsus-a.akamaihd.net/cms/content_folder_media/QA2CYBKX4SNN1789238761157.png",
+   "verified_at": "2026-09-15",
+   "rights_status": "Conditions Blizzard à respecter ; aucune licence commerciale générale présumée.",
+   "sha256": "8290f00bc0378226200a1593fcd438f661731e643ac83cbc776396f44f11de93"
+  }
+ },
+ {
+  "slug": "addons-interface-midnight-wow-forever",
+  "title": "WoW Forever : ce qui change pour vos addons",
+  "seo_title": "Addons de WoW Forever : les restrictions de Midnight s’appliquent",
+  "description": "WoW Forever hérite de l’interface du jeu moderne, pas de celle de Classic : les restrictions d’addons de Midnight s’y appliqueront et un addon Classic ne fonctionnera pas tel quel.",
+  "category": "Personnalisation",
+  "source_ids": [
+   "wowhead-addons"
+  ],
+  "verified_at": "2026-09-16",
+  "related": [
+   "wow-forever-classic-plus",
+   "options-graphiques-manette-wow-forever"
+  ],
+  "image": {
+   "path": "illustrations/officielles/37.png",
+   "alt": "Menu d’options de l’interface de Forever.",
+   "caption": "Capture officielle d’un menu d’options ; elle illustre l’interface du jeu, pas le système d’addons lui-même.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303313/recapitulatif-de-la-presentation-au-coeur-de-world-of-warcraft-forever",
+   "verified_at": "2026-09-16"
+  },
+  "body": "**World of Warcraft: Forever hérite de l’architecture d’interface du jeu moderne, pas de celle de Classic : les restrictions d’addons introduites avec Midnight s’y appliqueront aussi.** Blizzard l’a indiqué sur son salon Discord consacré à l’interface.\n\n## Deux jeux, un même socle\n\nForever reprend la quasi-totalité des interfaces de programmation disponibles dans la version 12.1.5 du jeu moderne. En interne, les deux sont décrits comme deux variantes d’une même famille de code : « Camelot » pour Forever — un nom appelé à changer avant la sortie — et « Standard » pour Midnight.\n\n## Ce que cela implique concrètement\n\nLe désarmement des addons introduit avec Midnight, y compris le mécanisme de valeurs secrètes, sera actif dans Forever. Les changements d’AuraContainer et d’AuraButton arrivés en 12.1.0 y seront également présents.\n\nUn addon écrit pour WoW Classic ne fonctionnera donc pas tel quel : c’est la nouvelle interface de programmation qu’il faut viser. À l’inverse, un addon déjà adapté à Midnight devrait se porter plus facilement. Blizzard précise que les évolutions futures concerneront les deux jeux en parallèle.\n\nWeakAuras est le cas le plus visible : son développement s’était arrêté avant Midnight, précisément à cause de ces changements.\n\nNous ne publions pas de liste d’addons « qui marcheront ». Tant que la bêta n’est pas ouverte aux addons tiers, une telle liste relèverait de la supposition."
+ },
+ {
+  "slug": "butin-histoire-wow-forever",
+  "title": "WoW Forever : un objet rare sur chaque boss, et une histoire qui repart de 2004",
+  "seo_title": "Butin et histoire de WoW Forever : objets rares, raids 10/20/40",
+  "description": "Trois tailles de raid, un objet rare sur chaque boss et un point de départ fixé à novembre 2004 : ce que deux concepteurs de Blizzard ont détaillé sur la fin de jeu de WoW Forever.",
+  "category": "Histoire",
+  "source_ids": [
+   "sun-interview"
+  ],
+  "verified_at": "2026-09-16",
+  "related": [
+   "donjons-raids-wow-forever",
+   "forsaken-kingdom-wow-forever"
+  ],
+  "image": {
+   "path": "illustrations/officielles/9.png",
+   "alt": "Trois personnages portant des ensembles d’armure distincts.",
+   "caption": "Image d’ambiance officielle consacrée aux personnages ; elle ne montre pas les objets décrits ici.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "verified_at": "2026-09-16"
+  },
+  "body": "**Chaque boss de raid laissera tomber un objet rare et puissant, et WoW Forever repart du point de canon de novembre 2004 plutôt que du Cœur de Magma.** Deux concepteurs de Blizzard l’ont détaillé dans un entretien accordé au Sun pendant la BlizzCon 2026.\n\n## Trois tailles de raid, un équipement qui vieillit lentement\n\nKris Zierhut, concepteur principal, et Michael Nuthals, concepteur de rencontres, annoncent trois formats : 10, 20 et 40 joueurs. Les ensembles de palier seront accessibles dans les trois, l’idée étant de laisser un groupe se former à sa taille plutôt que d’en imposer une.\n\nLe rythme de progression de l’équipement est volontairement ralenti, pour qu’un raid ne devienne pas obsolète dès l’ouverture du suivant.\n\n## Un objet à courir après sur chaque boss\n\nChaque table de butin comportera un objet à faible taux d’apparition mais, selon les concepteurs, « très, très puissant ». Ils citent comme repère le Trophée Epine-de-dragon de Burning Crusade : l’objectif est qu’un objet obtenu au niveau 60 garde son intérêt longtemps.\n\n## Pourquoi pas le Cœur de Magma\n\nForever reprend le fil là où tout le monde se trouvait en novembre 2004. Le Cœur de Magma « ouvrira un jour, mais pas maintenant » : les joueurs l’ont déjà parcouru dans plusieurs versions du jeu. Blizzard préfère explorer ce qui aurait pu se passer à partir de cet embranchement.\n\nLe studio décrit un monde amené à évoluer par mises à jour successives, avec de quoi occuper aussi les joueurs qui ne raident pas — collectionneurs d’alts, explorateurs, artisans.\n\nCes éléments viennent d’un entretien, pas d’un document de conception publié : ils décrivent une intention, pas un contenu daté."
+ },
+ {
+  "slug": "calculateur-talents-wow-forever",
+  "title": "Le calculateur de talents WoW Forever, en français",
+  "seo_title": "Calculateur de talents WoW Forever en français — les 9 classes",
+  "description": "Répartissez les 51 points de talent de WoW Forever dans les neuf classes, en français, avec le texte de chaque rang et un lien de partage de votre build.",
+  "category": "Outils",
+  "source_ids": [
+   "wowhead-talent-calc",
+   "avenir"
+  ],
+  "verified_at": "2026-09-16",
+  "related": [
+   "talents-paladin-wow-forever",
+   "heritage-legacy-wow-forever"
+  ],
+  "image": {
+   "path": "illustrations/officielles/23.png",
+   "alt": "Les trois arbres de talents du paladin dans l’interface de Forever.",
+   "caption": "Aperçu officiel des talents du paladin par Blizzard ; notre calculateur est un outil distinct, sur ce site.",
+   "credit": "© Blizzard Entertainment. Tous droits réservés.",
+   "source_url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+   "verified_at": "2026-09-16"
+  },
+  "body": "**Le calculateur de talents de WoW Forever est en ligne sur ce site, en français, pour les neuf classes.** Il reprend la grille annoncée — trois arbres par classe, sept lignes, 51 points au niveau 60 — et applique les mêmes verrous que le jeu.\n\n## Ce qu’il permet\n\nChaque talent affiche le texte de son rang actuel et un aperçu du rang suivant. Un curseur de niveau ajuste le nombre de points disponibles, et un lien de partage encode la répartition : il suffit de le copier pour envoyer une composition à sa guilde.\n\nLes paliers de ligne et les prérequis sont appliqués comme en jeu : il faut cinq points par ligne franchie pour descendre dans un arbre — dix points placés plus haut pour ouvrir la troisième ligne, quinze pour la quatrième.\n\n## D’où viennent les valeurs\n\nLes textes viennent du client de la bêta, via le fichier de données que Wowhead publie pour son propre calculateur. Les rangs au-delà du premier, longtemps extrapolés à partir de ce qui avait été relevé pendant la démonstration de la BlizzCon, sont désormais confirmés un par un.\n\nDeux talents font exception et restent marqués comme non relevés : le client y affiche des valeurs manifestement cassées, que nous préférons ne pas publier plutôt que de les présenter comme des chiffres réels.\n\n## Sur la traduction\n\nForever n’a pas encore de client français. Les noms officiels sont repris de Classic, de Burning Crusade ou de Wrath of the Lich King quand le talent existe déjà dans l’une de ces extensions ; les autres sont traduits par nos soins. Chaque fiche indique la provenance de son nom, pour que rien ne soit présenté comme officiel sans l’être.\n\nLe calculateur de Points Legacy suit la même logique, avec ses trois arbres et ses 16 points dépensables."
+ }
+]

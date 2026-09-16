@@ -1,0 +1,74 @@
+{
+ "annonce": {
+  "url": "https://news.blizzard.com/fr-fr/article/24302093/forgez-un-nouveau-destin-avec-world-of-warcraft-forever",
+  "title": "Annonce de World of Warcraft: Forever",
+  "file": "annonce",
+  "date": "2026-09-12"
+ },
+ "avenir": {
+  "url": "https://news.blizzard.com/fr-fr/article/24303862/recapitulatif-de-la-conference-l-avenir-de-world-of-warcraft-forever",
+  "title": "Blizzard : L’avenir de World of Warcraft: Forever",
+  "file": "whats-next",
+  "date": "2026-09-12"
+ },
+ "systemes": {
+  "url": "https://news.blizzard.com/fr-fr/article/24303313/recapitulatif-de-la-presentation-au-coeur-de-world-of-warcraft-forever",
+  "title": "Blizzard : Au cœur de World of Warcraft: Forever",
+  "file": "deep-dive",
+  "date": "2026-09-13"
+ },
+ "editions": {
+  "url": "https://news.blizzard.com/fr-fr/article/24301508/preachetez-les-avantages-de-world-of-warcraft-forever-et-lancez-vous-dans-vos-prochaines-aventures-sur-azeroth",
+  "title": "Blizzard : éditions, bêta et préparation du lancement",
+  "file": "editions",
+  "date": "2026-09-12"
+ },
+ "collector": {
+  "url": "https://news.blizzard.com/fr-fr/article/24302498/preachetez-ledition-collector-de-world-of-warcraft-forever",
+  "title": "Blizzard : édition Collector",
+  "file": "collector",
+  "date": "2026-09-12"
+ },
+ "histoire": {
+  "url": "https://news.blizzard.com/fr-fr/article/24301511/reprenez-les-hostilites-avec-warcraft-iii-reforged-forsaken-kingdom",
+  "title": "Blizzard : Warcraft III Reforged: Forsaken Kingdom",
+  "file": "forsaken",
+  "date": "2026-09-12"
+ },
+ "existant": {
+  "url": "https://chando.pages.dev/forever/news.html",
+  "title": "Actualités déjà publiées sur Chando",
+  "file": "chando-news",
+  "date": null
+ },
+ "blizzard-donjons": {
+  "url": "https://us.forums.blizzard.com/en/wow/t/krol%E2%80%99dok-stronghold/2349672",
+  "title": "Blizzard (Kaivax) : plages de niveaux des neuf donjons",
+  "file": "forums-krondok",
+  "date": "2026-09-15"
+ },
+ "sun-interview": {
+  "url": "https://www.thesun.co.uk/tech/40367702/world-of-warcraft-forever-interview-zones-races-skills-levelling/",
+  "title": "The Sun : entretien avec Kris Zierhut et Michael Nuthals",
+  "file": "sun",
+  "date": "2026-09-15"
+ },
+ "gamespot-interview": {
+  "url": "https://www.gamespot.com/videos/wow-forever-more-gameplay-details-and-lore-blizzcon-2026-interview/",
+  "title": "GameSpot : entretien avec Josh Greenfield et Jeff Parrot",
+  "file": "gamespot",
+  "date": "2026-09-16"
+ },
+ "wowhead-addons": {
+  "url": "https://www.wowhead.com/forever/news/wow-forever-will-have-addon-changes-from-midnight-382921",
+  "title": "Wowhead : Blizzard sur le Discord WoW UI, addons de Forever",
+  "file": "wowhead-addons",
+  "date": "2026-09-16"
+ },
+ "wowhead-talent-calc": {
+  "url": "https://www.wowhead.com/forever/talent-calc/",
+  "title": "Wowhead : calculateur de talents Forever (données du client)",
+  "file": "wowhead-talents",
+  "date": "2026-09-15"
+ }
+}
