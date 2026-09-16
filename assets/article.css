@@ -6,6 +6,7 @@
    structure : une seule feuille à modifier pour les reprendre toutes.
    ================================================================ */
 
+:root{--page-max:760px}
 main{flex:1;width:100%;max-width:760px;margin:0 auto;padding:30px 48px 64px}
 
 /* --- retour vers l'index --- */

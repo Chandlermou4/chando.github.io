@@ -42,14 +42,14 @@ header .eyebrow{font-size:11px;font-weight:600;letter-spacing:.24em;color:var(--
 .site-switch a:hover,.site-switch a.is-here{opacity:1}
 .site-switch a.tbc{color:#62c907}
 .site-switch a.forever{color:#1d8dcd}
-@media(max-width:620px){.site-switch{padding:14px 24px 0}}
+@media(max-width:760px){.site-switch{padding:14px 24px 0}}
 
 /* ── Navigation de section ───────────────────────────────────────────────── */
 .section-nav{display:flex;gap:22px;padding:16px 48px 0}
 .section-nav a{font-size:13px;font-weight:600;text-decoration:none;color:var(--dim);padding-bottom:4px;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
 .section-nav a:hover{color:var(--fg)}
 .section-nav a.is-here{color:var(--fg);border-color:#1d8dcd}
-@media(max-width:620px){.section-nav{padding:14px 24px 0}}
+@media(max-width:760px){.section-nav{padding:14px 24px 0}}
 
 /* ── Bandeau de provenance ───────────────────────────────────────────────── */
 .notice{display:flex;gap:12px;padding:14px 18px;border:1px solid var(--hair);border-radius:10px;margin:18px 0 30px;font-size:13.5px;color:var(--dim)}
@@ -81,3 +81,20 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
 
 @media(max-width:760px){header{padding:26px 24px 20px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ── Alignement du chrome sur la colonne de contenu ──────────────────────────
+   L'en-tête et les deux navigations occupent toute la largeur, le <main> est une
+   colonne centrée : sur un écran large, le texte du chrome se retrouvait très
+   loin à gauche de l'article (563 px d'écart mesurés en 1900 px de large).
+   On ajoute ici au padding latéral exactement le décalage que produit le
+   centrage du <main>. Le filet de l'en-tête reste en pleine largeur — c'est le
+   texte qui se cale, pas la bordure.
+   Chaque page déclare --page-max (largeur de son <main>) et, si elle s'écarte
+   des 48 px habituels, --page-pad. Sous 761 px les règles d'origine reprennent
+   la main : il n'y a plus de marge à rattraper, et le padding y passe à 24 px. */
+@media(min-width:761px){
+  header,.site-switch,.section-nav{
+    padding-inline:max(var(--page-pad,48px),
+      calc((100% - var(--page-max,1600px)) / 2 + var(--page-pad,48px)));
+  }
+}
