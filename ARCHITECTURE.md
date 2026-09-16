@@ -131,11 +131,29 @@ les mentions conservées. Ce que ça impose concrètement ici :
   conditions seraient à relire avant toute publicité ou affiliation :
   le crédit ne remplace pas une autorisation commerciale.
 
+## Source des Actualités (`content/actualites-source/`)
+
+`articles.json` porte le texte de chaque article (corps en markdown réduit :
+`## titre`, `**gras**`, et un tableau à barres verticales) ; `sources/sources.json`
+le registre des sources citées. **C'est la source de vérité** : les pages de
+`forever/actualites/` en sont le produit, pas l'inverse. Modifier une page à la
+main serait perdu à la prochaine régénération.
+
+Le premier lot de 21 articles venait d'un dossier éditorial livré une fois, hors
+dépôt. Il a été rapatrié ici en y ajoutant les articles du 16 septembre : le
+dépôt ne dépend plus d'un dossier extérieur pour se régénérer.
+
+L'index est trié par date décroissante, tri stable — à date égale, l'ordre du
+fichier source est conservé, c'est lui qui groupe les sujets par thème.
+
 ## Outils (`tools/`)
 
-`build-actualites.py` régénère les pages d'article et l'index à partir du
-dossier éditorial ; `build-sitemap.py` régénère `sitemap.xml` en excluant
-les pages en `noindex`.
+`build-actualites.py` régénère les pages d'article et l'index à partir de
+`content/actualites-source/` ; `build-sitemap.py` régénère `sitemap.xml` en
+excluant les pages en `noindex`.
+
+    python tools/build-actualites.py content/actualites-source
+    python tools/build-sitemap.py
 
 **Ce ne sont pas des étapes de build.** Le site sert le HTML présent dans le
 dépôt ; ces scripts produisent ce HTML une fois, on commite le résultat, et

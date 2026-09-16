@@ -36,6 +36,7 @@ OUTILS = {
     'eolides-wow-forever':         ('/forever/races.html', 'Raciaux et combinaisons race-classe'),
     'races-classes-wow-forever':   ('/forever/races.html', 'Le tableau complet des combinaisons'),
     'talents-paladin-wow-forever': ('/forever/talents.html', 'Le calculateur de talents'),
+    'calculateur-talents-wow-forever': ('/forever/talents.html', 'Ouvrir le calculateur de talents'),
 }
 
 e = lambda s: html.escape(s or '', quote=True)
@@ -53,8 +54,26 @@ def date_fr(iso):
     return '%d %s %d' % (d.day, MOIS[d.month - 1], d.year)
 
 
+def table(bloc):
+    """Tableau à barres verticales : | A | B |, ligne 2 = ---|---. Les cellules purement
+    chiffrées (« 13-18 », « 20 ») passent en chiffres tabulaires ; le texte reste du texte."""
+    lignes = [l.strip() for l in bloc.split('\n') if l.strip()]
+    cellules = lambda l: [c.strip() for c in l.strip('|').split('|')]
+    entete = cellules(lignes[0])
+    corps = [cellules(l) for l in lignes[2:]]  # lignes[1] = séparateur ---|---
+    chiffre = lambda c: bool(re.match(r'^[\d\s.,%+–-]+$', c))
+    out = ['<table>', ' <thead><tr>' + ''.join('<th>%s</th>' % e(c) for c in entete) + '</tr></thead>', ' <tbody>']
+    for row in corps:
+        cells = ''.join('<td%s>%s</td>' % (' class="num"' if chiffre(c) else '', e(c)) for c in row)
+        out.append('  <tr>%s</tr>' % cells)
+    out += [' </tbody>', '</table>']
+    return '\n'.join(out)
+
+
 def markdown(txt):
-    """Le corps n'utilise que `## titre` et `**gras**`."""
+    """Le corps n'utilise que `## titre`, `**gras**` et, pour une seule page jusqu'ici,
+    un tableau à barres verticales (une donnée officielle chiffrée s'y prêtait mieux
+    qu'une liste en prose)."""
     out = []
     for bloc in re.split(r'\n\s*\n', txt.strip()):
         bloc = bloc.strip()
@@ -62,6 +81,8 @@ def markdown(txt):
             continue
         if bloc.startswith('## '):
             out.append('<h2>%s</h2>' % gras(bloc[3:].strip()))
+        elif bloc.startswith('|'):
+            out.append(table(bloc))
         else:
             out.append('<p>%s</p>' % gras(bloc))
     return '\n'.join(out)
@@ -239,6 +260,9 @@ main{flex:1;width:100%;max-width:820px;margin:0 auto;padding:36px 48px 64px}
 
 
 def page_index(arts):
+    # Le plus récent d'abord. Tri stable : à date égale, l'ordre éditorial du fichier
+    # source est conservé — c'est lui qui regroupe les sujets par thème.
+    arts = sorted(arts, key=lambda a: a['verified_at'], reverse=True)
     url = BASE + '/forever/news'
     desc = ("Toute l'actualité de World of Warcraft: Forever en français : date de sortie, "
             "bêta, éditions, zones, Éolides, donjons, Legacy et Hardcore, d'après les "
