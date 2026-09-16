@@ -166,6 +166,7 @@ def nav(ici):
             + '\n'.join([lien('/forever/talents.html', 'Calculateur de talents'),
                          lien('/forever/legacy.html', 'Points Legacy'),
                          lien('/forever/races.html', 'Raciaux'),
+                         lien('/forever/metiers.html', 'Métiers'),
                          lien('/forever/news.html', 'Actualités')])
             + '\n</nav>\n')
 
@@ -234,7 +235,8 @@ def page_article(a, sources, par_slug):
 
 
 CSS_INDEX = '''<style>
-main{flex:1;width:100%;max-width:820px;margin:0 auto;padding:36px 48px 64px}
+:root{--page-base:1180px}
+main{flex:1;width:100%;max-width:var(--page-max);margin:0 auto;padding:36px 48px 64px}
 
 .n-list{display:flex;flex-direction:column}
 .n-card{display:grid;grid-template-columns:172px 1fr;gap:20px;padding:22px 0;
