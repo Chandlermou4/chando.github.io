@@ -1,6 +1,6 @@
 window.TALENT_DATA={
  "version": 1,
- "generatedAt": "2026-09-15",
+ "generatedAt": "2026-09-18",
  "grid": {
   "rows": 7,
   "columns": 4,
@@ -8,7 +8,7 @@ window.TALENT_DATA={
   "totalPoints": 51,
   "firstTalentLevel": 10
  },
- "origin": "Démonstration jouable de WoW Forever présentée à la BlizzCon 2026, relevée par deux projets communautaires indépendants.",
+ "origin": "Bêta publique de WoW Forever, ouverte le 17 septembre 2026 : les arbres sont relevés sur les données du client publiées par le calculateur de Wowhead. Le relevé initial, fait à la démonstration jouable de la BlizzCon 2026 par deux projets communautaires indépendants, sert encore de référence pour les textes que la bêta ne résout pas.",
  "sources": [
   {
    "id": "forever-talents-releve",
@@ -35,8 +35,8 @@ window.TALENT_DATA={
    "title": "Wowhead — calculateur de talents Forever",
    "url": "https://www.wowhead.com/forever/talent-calc/",
    "publisher": "Wowhead",
-   "checkedAt": "2026-09-15",
-   "method": "Lecture du fichier de données JSON publié par la page (nether.wowhead.com/forever/data/talents-classic), la même technique déjà utilisée pour les icônes.",
+   "checkedAt": "2026-09-18",
+   "method": "Lecture du jeu de données public du calculateur, une requête par fichier, comparée rang par rang à notre version précédente. Depuis l’ouverture de la bêta, ce fichier renvoie les infobulles du client ; les valeurs qu’il laisse sous forme de formule (« 94.8% of Spell Power ») ou visiblement cassées ne sont pas reprises.",
    "reuse": "editorial-facts",
    "permissionNote": "Texte d'infobulle du client du jeu tel qu'affiché par le calculateur de Wowhead — les chaînes de Blizzard, pas une composition éditoriale de Wowhead. Utilisé pour confirmer ou corriger les rangs 2+ jusque-là estimés par extrapolation à partir du rang 1 relevé dans la vidéo de démo BlizzCon 2026, et pour compléter les quelques rangs dont le texte manquait. Les écarts trouvés sont corrigés silencieusement dans le texte anglais ; le champ observed passe à true pour tout rang désormais confirmé par cette source."
   }
@@ -2329,110 +2329,12 @@ window.TALENT_DATA={
       },
       {
        "key": "protection-5-4",
-       "name_en": "Vitality",
-       "icon": "ability_warrior_strengthofarms",
+       "name_en": "Bastion",
+       "icon": "ability_warrior_shieldmastery",
        "row": 5,
        "col": 4,
        "maxRanks": 5,
        "pointsRequired": 20,
-       "prerequisite": null,
-       "arrow": null,
-       "kind": "passif",
-       "skill": null,
-       "costLine": null,
-       "requires": [],
-       "ranks": [
-        {
-         "rank": 1,
-         "text": "Increases your Stamina and Strength by 2%.",
-         "observed": true
-        },
-        {
-         "rank": 2,
-         "text": "Increases your Stamina and Strength by 4%.",
-         "observed": true
-        },
-        {
-         "rank": 3,
-         "text": "Increases your Stamina and Strength by 6%.",
-         "observed": true
-        },
-        {
-         "rank": 4,
-         "text": "Increases your Stamina and Strength by 8%.",
-         "observed": true
-        },
-        {
-         "rank": 5,
-         "text": "Increases your Stamina and Strength by 10%.",
-         "observed": true
-        }
-       ],
-       "rankNote": null,
-       "extra": null,
-       "fullyObserved": true,
-       "changeFromClassic": "new",
-       "classicText": null,
-       "classicRenamedFrom": null,
-       "divergences": [],
-       "presentIn": [
-        "forever-talents-releve",
-        "wowtbc-forever-calculator",
-        "wowhead-forever-talent-calc"
-       ]
-      },
-      {
-       "key": "protection-6-1",
-       "name_en": "Focused Rage",
-       "icon": "ability_warrior_focusedrage",
-       "row": 6,
-       "col": 1,
-       "maxRanks": 3,
-       "pointsRequired": 25,
-       "prerequisite": null,
-       "arrow": null,
-       "kind": "passif",
-       "skill": null,
-       "costLine": null,
-       "requires": [],
-       "ranks": [
-        {
-         "rank": 1,
-         "text": "Reduces the Rage cost of your offensive abilities by 1.",
-         "observed": true
-        },
-        {
-         "rank": 2,
-         "text": "Reduces the Rage cost of your offensive abilities by 2.",
-         "observed": true
-        },
-        {
-         "rank": 3,
-         "text": "Reduces the Rage cost of your offensive abilities by 3.",
-         "observed": true
-        }
-       ],
-       "rankNote": null,
-       "extra": null,
-       "fullyObserved": true,
-       "changeFromClassic": "new",
-       "classicText": null,
-       "classicRenamedFrom": null,
-       "divergences": [],
-       "presentIn": [
-        "forever-talents-releve",
-        "wowtbc-forever-calculator",
-        "wowhead-forever-talent-calc"
-       ]
-      },
-      {
-       "key": "protection-6-3",
-       "name_en": "Bastion",
-       "icon": "ability_warrior_shieldmastery",
-       "row": 6,
-       "col": 3,
-       "maxRanks": 5,
-       "pointsRequired": 25,
        "prerequisite": null,
        "arrow": null,
        "kind": "passif",
@@ -2463,6 +2365,50 @@ window.TALENT_DATA={
         {
          "rank": 5,
          "text": "Increases all damage you deal by 10% while a shield is equipped.",
+         "observed": true
+        }
+       ],
+       "rankNote": null,
+       "extra": null,
+       "fullyObserved": true,
+       "changeFromClassic": "new",
+       "classicText": null,
+       "classicRenamedFrom": null,
+       "divergences": [],
+       "presentIn": [
+        "forever-talents-releve",
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
+       ]
+      },
+      {
+       "key": "protection-6-3",
+       "name_en": "Focused Rage",
+       "icon": "ability_warrior_focusedrage",
+       "row": 6,
+       "col": 3,
+       "maxRanks": 3,
+       "pointsRequired": 25,
+       "prerequisite": null,
+       "arrow": null,
+       "kind": "passif",
+       "skill": null,
+       "costLine": null,
+       "requires": [],
+       "ranks": [
+        {
+         "rank": 1,
+         "text": "Reduces the Rage cost of your offensive abilities by 1.",
+         "observed": true
+        },
+        {
+         "rank": 2,
+         "text": "Reduces the Rage cost of your offensive abilities by 2.",
+         "observed": true
+        },
+        {
+         "rank": 3,
+         "text": "Reduces the Rage cost of your offensive abilities by 3.",
          "observed": true
         }
        ],
@@ -4968,27 +4914,27 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "While Aspect of the Hawk is active, all normal ranged attacks have a 2% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 2% chance of increasing melee attack speed by 30% for 12 sec.",
+         "text": "While Aspect of the Hawk is active, Auto Shot has a 2% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 2% chance of increasing melee attack speed by 30% for 12 sec.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "While Aspect of the Hawk is active, all normal ranged attacks have a 4% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 4% chance of increasing melee attack speed by 30% for 12 sec.",
+         "text": "While Aspect of the Hawk is active, Auto Shot has a 4% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 4% chance of increasing melee attack speed by 30% for 12 sec.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "While Aspect of the Hawk is active, all normal ranged attacks have a 6% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 6% chance of increasing melee attack speed by 30% for 12 sec.",
+         "text": "While Aspect of the Hawk is active, Auto Shot has a 6% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 6% chance of increasing melee attack speed by 30% for 12 sec.",
          "observed": true
         },
         {
          "rank": 4,
-         "text": "While Aspect of the Hawk is active, all normal ranged attacks have a 8% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 8% chance of increasing melee attack speed by 30% for 12 sec.",
+         "text": "While Aspect of the Hawk is active, Auto Shot has a 8% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 8% chance of increasing melee attack speed by 30% for 12 sec.",
          "observed": true
         },
         {
          "rank": 5,
-         "text": "While Aspect of the Hawk is active, all normal ranged attacks have a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec.",
+         "text": "While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec.",
          "observed": true
         }
        ],
@@ -5076,12 +5022,12 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Increases all damage you deal by 1% while your pet is active.",
+         "text": "Increases all damage you and your pet deal by 1% while your pet is active.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Increases all damage you deal by 2% while your pet is active.",
+         "text": "Increases all damage you and your pet deal by 2% while your pet is active.",
          "observed": true
         }
        ],
@@ -5458,7 +5404,7 @@ window.TALENT_DATA={
         },
         {
          "rank": 2,
-         "text": "While your pet is active, you and your pet will regenerate 2% of total health every 10 sec.",
+         "text": "While your pet is active, you and your pet will regenerate 1% of total health every 5 sec.",
          "observed": true
         }
        ],
@@ -5471,7 +5417,8 @@ window.TALENT_DATA={
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
        ]
       },
       {
@@ -5850,9 +5797,9 @@ window.TALENT_DATA={
        "rankNote": null,
        "extra": null,
        "fullyObserved": true,
-       "changeFromClassic": "changed",
-       "classicText": "Increases the damage done by your Serpent Sting by 2%.",
-       "classicRenamedFrom": "Improved Serpent Sting",
+       "changeFromClassic": "new",
+       "classicText": null,
+       "classicRenamedFrom": null,
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
@@ -6183,6 +6130,58 @@ window.TALENT_DATA={
        "presentIn": [
         "forever-talents-releve",
         "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
+       ]
+      },
+      {
+       "key": "marksmanship-4-4",
+       "name_en": "Improved Serpent Sting",
+       "icon": "ability_hunter_quickshot",
+       "row": 4,
+       "col": 4,
+       "maxRanks": 5,
+       "pointsRequired": 15,
+       "prerequisite": null,
+       "arrow": null,
+       "kind": "passif",
+       "skill": null,
+       "costLine": null,
+       "requires": [],
+       "ranks": [
+        {
+         "rank": 1,
+         "text": "Increases the damage done by your Serpent Sting by 2%.",
+         "observed": true
+        },
+        {
+         "rank": 2,
+         "text": "Increases the damage done by your Serpent Sting by 4%.",
+         "observed": true
+        },
+        {
+         "rank": 3,
+         "text": "Increases the damage done by your Serpent Sting by 6%.",
+         "observed": true
+        },
+        {
+         "rank": 4,
+         "text": "Increases the damage done by your Serpent Sting by 8%.",
+         "observed": true
+        },
+        {
+         "rank": 5,
+         "text": "Increases the damage done by your Serpent Sting by 10%.",
+         "observed": true
+        }
+       ],
+       "rankNote": null,
+       "extra": null,
+       "fullyObserved": true,
+       "changeFromClassic": "moved",
+       "classicRenamedFrom": null,
+       "classicText": "Increases the damage done by your Serpent Sting by 2%.",
+       "divergences": [],
+       "presentIn": [
         "wowhead-forever-talent-calc"
        ]
       },
@@ -6958,7 +6957,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+         "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 26 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
          "observed": true
         }
        ],
@@ -6971,7 +6970,8 @@ window.TALENT_DATA={
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
        ]
       },
       {
@@ -6996,7 +6996,7 @@ window.TALENT_DATA={
         },
         {
          "rank": 2,
-         "text": "Reduces the mana cost of your Trap abilities and melee abilities by 60%. In addition, your critical strikes have a 100% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec.",
+         "text": "Reduces the mana cost of your Trap abilities and melee abilities by 60%. In addition, your critical strikes have a 60% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec.",
          "observed": true
         }
        ],
@@ -7074,7 +7074,7 @@ window.TALENT_DATA={
         },
         {
          "rank": 2,
-         "text": null,
+         "text": "Reduces the cooldown of your Trap and Deterrence abilities by 40%.",
          "observed": false
         }
        ],
@@ -7633,27 +7633,27 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 6%.",
+         "text": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 4%.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 12%.",
+         "text": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 8%.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 18%.",
+         "text": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 12%.",
          "observed": true
         },
         {
          "rank": 4,
-         "text": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 24%.",
+         "text": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 16%.",
          "observed": true
         },
         {
          "rank": 5,
-         "text": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 30%.",
+         "text": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 20%.",
          "observed": true
         }
        ],
@@ -7876,7 +7876,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Instantly attacks with both weapons for 75% weapon damage plus an additional 13 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.",
+         "text": "Instantly attacks with both weapons for 75% weapon damage plus an additional 17 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.",
          "observed": true
         }
        ],
@@ -7889,7 +7889,8 @@ window.TALENT_DATA={
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
        ]
       },
       {
@@ -8469,8 +8470,8 @@ window.TALENT_DATA={
       },
       {
        "key": "combat-4-2",
-       "name_en": "Restless Blades",
-       "icon": "ability_rogue_restlessblades",
+       "name_en": "Flawless Execution",
+       "icon": "inv_sword_35",
        "row": 4,
        "col": 2,
        "maxRanks": 1,
@@ -8484,7 +8485,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Your damaging finishing moves reduce the remaining cooldown of your Adrenaline Rush, Blade Flurry, Evasion, Sprint, and Vanish abilities by 2 sec per combo point.",
+         "text": "Reduces the Energy cost of your Eviscerate ability by 10.",
          "observed": true
         }
        ],
@@ -8496,8 +8497,7 @@ window.TALENT_DATA={
        "classicRenamedFrom": null,
        "divergences": [],
        "presentIn": [
-        "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowhead-forever-talent-calc"
        ]
       },
       {
@@ -9008,7 +9008,7 @@ window.TALENT_DATA={
         },
         {
          "rank": 2,
-         "text": "Reduces the cooldown of your Vanish and Blind abilities by 1.5 min.",
+         "text": "Reduces the cooldown of your Vanish and Blind abilities by 90 sec.",
          "observed": true
         }
        ],
@@ -9021,7 +9021,8 @@ window.TALENT_DATA={
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
        ]
       },
       {
@@ -13097,7 +13098,7 @@ window.TALENT_DATA={
         },
         {
          "rank": 2,
-         "text": "Increases the melee attack power bonus of your Rockbiter Weapon by 14%, your Windfury Weapon effect by 27% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 10%.",
+         "text": "Increases the melee attack power bonus of your Rockbiter Weapon by 13%, your Windfury Weapon effect by 27% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 10%.",
          "observed": true
         },
         {
@@ -13115,7 +13116,8 @@ window.TALENT_DATA={
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
        ]
       },
       {
@@ -13325,7 +13327,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Instantly strike for normal weapon damage and increase Nature damage you deal to the target by 20% for 12 sec.",
+         "text": "Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.",
          "observed": true
         }
        ],
@@ -13338,7 +13340,8 @@ window.TALENT_DATA={
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
        ]
       },
       {
@@ -13912,7 +13915,7 @@ window.TALENT_DATA={
         },
         {
          "rank": 2,
-         "text": "Increases your target's armor value by 16% for 15 sec after getting a critical effect from one of your healing spells.",
+         "text": "Increases your target's armor value by 17% for 15 sec after getting a critical effect from one of your healing spells.",
          "observed": true
         },
         {
@@ -13930,7 +13933,8 @@ window.TALENT_DATA={
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
        ]
       },
       {
@@ -16356,7 +16360,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Deals 28 to 33 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
+         "text": "Deals 30 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
          "observed": true
         }
        ],
@@ -16369,7 +16373,8 @@ window.TALENT_DATA={
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
        ]
       },
       {
@@ -16740,7 +16745,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Instantly shields you, absorbing 431 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.",
+         "text": "Instantly shields you, absorbing 448 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.",
          "observed": true
         }
        ],
@@ -16753,7 +16758,8 @@ window.TALENT_DATA={
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
        ]
       }
      ],
@@ -17039,17 +17045,17 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Increases the damage done or health drained by your Drain Life and Drain Soul spells by 2% per each of your other Affliction effects active on the target, up to a maximum increase of 6%. When your Drain Soul damages targets below 20% health, this bonus is tripled. Additionally, your Drain Life range is extended by 3 yards.",
+         "text": "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 7%.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Increases the damage done or health drained by your Drain Life and Drain Soul spells by 4% per each of your other Affiction effects active on the target, up to a maximum increase of 12%. When your Drain Soul damages targets below 20% health, this bonus is tripled. Additionally, your Drain Life range is extended by 7 yards.",
+         "text": "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 13%.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Increases the damage done or health drained by your Drain Life and Drain Soul spells by 6% per each of your other Affliction effects active on the target, up to a maximum increase of 18%. When your Drain Soul damages targets below 20% health, this bonus is tripled. Additionally, your Drain Life range is extended by 10 yards.",
+         "text": "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 20%.",
          "observed": true
         }
        ],
@@ -17122,17 +17128,17 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Gives you a 23% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, or Drain Soul spells.",
+         "text": "Gives you a 23% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, Drain Soul, or Wrack spells.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Gives you a 47% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, or Drain Soul spells.",
+         "text": "Gives you a 47% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, Drain Soul, or Wrack spells.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Gives you a 70% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, or Drain Soul spells.",
+         "text": "Gives you a 70% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, Drain Soul, or Wrack spells.",
          "observed": true
         }
        ],
@@ -17204,17 +17210,17 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Drain Hope spells by 33%.",
+         "text": "Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 33%.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Drain Hope spells by 67%.",
+         "text": "Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 67%.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Drain Hope spells by 100%.",
+         "text": "Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 100%.",
          "observed": true
         }
        ],
@@ -17302,12 +17308,12 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Gives your Corruption, Drain Soul, and Drain Life spells a 2% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by 100%.",
+         "text": "Gives your Corruption, Drain Soul, Drain Life, and Wrack spells a 2% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by 100%.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Gives your Corruption, Drain Soul, and Drain Life spells a 4% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by 100%.",
+         "text": "Gives your Corruption, Drain Soul, Drain Life, and Wrack spells a 4% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by 100%.",
          "observed": true
         }
        ],
@@ -17384,7 +17390,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Transfers 15 health from the target to the caster every 3 sec. Lasts 30 sec.",
+         "text": "Transfers 11 health from the target to the caster every 3 sec. Lasts 30 sec.",
          "observed": true
         }
        ],
@@ -17397,7 +17403,8 @@ window.TALENT_DATA={
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
        ]
       },
       {
@@ -17417,17 +17424,17 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Increases the rate at which your Drain Life and Drain Soul deal damage by 17%, but reduces your healing from Drain Life by 10%.",
+         "text": "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 4% per each of your other Affliction effects active on the target, up to a maximum increase of 12%.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Increases the rate at which your Drain Life and Drain Soul deal damage by 33%, but reduces your healing from Drain Life by 15%.",
+         "text": "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 8% per each of your other Affliction effects active on the target, up to a maximum increase of 24%.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Increases the rate at which your Drain Life and Drain Soul deal damage by 50%, but reduces your healing from Drain Life by 20%.",
+         "text": "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 12% per each of your other Affliction effects active on the target, up to a maximum increase of 36%.",
          "observed": true
         }
        ],
@@ -17500,8 +17507,8 @@ window.TALENT_DATA={
       },
       {
        "key": "affliction-7-2",
-       "name_en": "Drain Hope",
-       "icon": "spell_shadow_haunting",
+       "name_en": "Wrack",
+       "icon": "ability_deathknight_hemorrhagicfever",
        "row": 7,
        "col": 2,
        "maxRanks": 1,
@@ -17520,7 +17527,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Drains all hope from the target, dealing 52 Shadow damage every 1 sec and increasing all other Shadow damage over time you deal to that target by 10%. Lasts 6 sec.",
+         "text": "Tears the target apart from within, dealing 37 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10%. Lasts 6 sec.",
          "observed": true
         }
        ],
@@ -17532,8 +17539,7 @@ window.TALENT_DATA={
        "classicRenamedFrom": null,
        "divergences": [],
        "presentIn": [
-        "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowhead-forever-talent-calc"
        ]
       }
      ],
@@ -18138,7 +18144,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Your next Imp, Voidwalker, Succubus, Incubus, or Felhunter Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%.",
+         "text": "Your next Imp, Voidwalker, Succubus, Incubus, or Felhunter Summon spell has its casting time reduced by 6 sec and its Mana cost reduced by 50%.",
          "observed": true
         }
        ],
@@ -18151,7 +18157,8 @@ window.TALENT_DATA={
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
        ]
       },
       {
@@ -18176,12 +18183,12 @@ window.TALENT_DATA={
         },
         {
          "rank": 2,
-         "text": "Your Searing Pain generates 33% less threat and brands the target for 10 sec. Your pet's next 4 attacks against the target generate high threat and deal $<minDam> to $<maxDam> Fire or Shadow damage based on the pet.",
+         "text": "Your Searing Pain generates 33% less threat and brands the target for 10 sec. Your pet's next 4 attacks against the target generate high threat and deal 39 to 42 Fire or Shadow damage based on the pet.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Your Searing Pain generates 50% less threat and brands the target for 10 sec. Your pet's next 6 attacks against the target generate high threat and deal $<minDam> to $<maxDam> Fire or Shadow damage based on the pet.",
+         "text": "Your Searing Pain generates 50% less threat and brands the target for 10 sec. Your pet's next 6 attacks against the target generate high threat and deal 39 to 42 Fire or Shadow damage based on the pet.",
          "observed": true
         }
        ],
@@ -18297,17 +18304,17 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Increases your spell damage and healing by up to 33% of your level while you have a summoned Demon pet active.",
+         "text": "Increases your spell damage and your Demon pet's spell damage by up to 33% of your level while you have a summoned Demon pet active.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Increases your spell damage and healing by up to 67% of your level while you have a summoned Demon pet active.",
+         "text": "Increases your spell damage and your Demon pet's spell damage by up to 67% of your level while you have a summoned Demon pet active.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Increases your spell damage and healing by up to 100% of your level while you have a summoned Demon pet active.",
+         "text": "Increases your spell damage and your Demon pet's spell damage by up to 100% of your level while you have a summoned Demon pet active.",
          "observed": true
         }
        ],
@@ -19368,17 +19375,17 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Reduces the Mana cost of your spells by 3%.",
+         "text": "Reduces the Mana cost of your damaging spells by 8%.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Reduces the Mana cost of your spells by 6%.",
+         "text": "Reduces the Mana cost of your damaging spells by 17%.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Reduces the Mana cost of your spells by 9%.",
+         "text": "Reduces the Mana cost of your damaging spells by 25%.",
          "observed": true
         }
        ],
@@ -19593,60 +19600,6 @@ window.TALENT_DATA={
        "presentIn": [
         "forever-talents-releve",
         "wowtbc-forever-calculator"
-       ]
-      },
-      {
-       "key": "balance-3-4",
-       "name_en": "Balance of Nature",
-       "icon": "ability_druid_balanceofpower",
-       "row": 3,
-       "col": 4,
-       "maxRanks": 5,
-       "pointsRequired": 10,
-       "prerequisite": null,
-       "arrow": null,
-       "kind": "passif",
-       "skill": null,
-       "costLine": null,
-       "requires": [],
-       "ranks": [
-        {
-         "rank": 1,
-         "text": "Each time you cast a Nature spell, your next Arcane damage spell within 10 sec deals 1% increased damage. Each time you cast an Arcane spell, your next Nature damage spell within 10 sec deals 1% increased damage.",
-         "observed": true
-        },
-        {
-         "rank": 2,
-         "text": "Each time you cast a Nature spell, your next Arcane damage spell within 10 sec deals 2% increased damage. Each time you cast an Arcane spell, your next Nature damage spell within 10 sec deals 2% increased damage.",
-         "observed": true
-        },
-        {
-         "rank": 3,
-         "text": "Each time you cast a Nature spell, your next Arcane damage spell within 10 sec deals 3% increased damage. Each time you cast an Arcane spell, your next Nature damage spell within 10 sec deals 3% increased damage.",
-         "observed": true
-        },
-        {
-         "rank": 4,
-         "text": "Each time you cast a Nature spell, your next Arcane damage spell within 10 sec deals 4% increased damage. Each time you cast an Arcane spell, your next Nature damage spell within 10 sec deals 4% increased damage.",
-         "observed": true
-        },
-        {
-         "rank": 5,
-         "text": "Each time you cast a Nature spell, your next Arcane damage spell within 10 sec deals 5% increased damage. Each time you cast an Arcane spell, your next Nature damage spell within 10 sec deals 5% increased damage.",
-         "observed": true
-        }
-       ],
-       "rankNote": null,
-       "extra": null,
-       "fullyObserved": true,
-       "changeFromClassic": "new",
-       "classicText": null,
-       "classicRenamedFrom": null,
-       "divergences": [],
-       "presentIn": [
-        "forever-talents-releve",
-        "wowtbc-forever-calculator",
-        "wowhead-forever-talent-calc"
        ]
       },
       {
@@ -19928,27 +19881,27 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Increases the damage done by your Arcane and Nature spells by 1%.",
-         "observed": true
-        },
-        {
-         "rank": 2,
          "text": "Increases the damage done by your Arcane and Nature spells by 2%.",
          "observed": true
         },
         {
-         "rank": 3,
-         "text": "Increases the damage done by your Arcane and Nature spells by 3%.",
-         "observed": true
-        },
-        {
-         "rank": 4,
+         "rank": 2,
          "text": "Increases the damage done by your Arcane and Nature spells by 4%.",
          "observed": true
         },
         {
+         "rank": 3,
+         "text": "Increases the damage done by your Arcane and Nature spells by 6%.",
+         "observed": true
+        },
+        {
+         "rank": 4,
+         "text": "Increases the damage done by your Arcane and Nature spells by 8%.",
+         "observed": true
+        },
+        {
          "rank": 5,
-         "text": "Increases the damage done by your Arcane and Nature spells by 5%.",
+         "text": "Increases the damage done by your Arcane and Nature spells by 10%.",
          "observed": true
         }
        ],
@@ -19987,7 +19940,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Transforms the Druid into Moonkin Form. While in this form, the armor contribution from items is increased by 360% and all party members within 45 yards have their critical chance increased by 3%, exclusive with Leader of the Pack. The Moonkin cannot cast healing spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+         "text": "Transforms the Druid into Moonkin Form. While in this form, the armor contribution from items is increased by 360%, Omen of Clarity gains 100% increased chance to trigger, and all party members within 45 yards have their critical strike chance increased by 3%, exclusive with Leader of the Pack. The Moonkin cannot cast healing spells while shapeshifted. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
          "observed": true
         }
        ],
@@ -20002,7 +19955,8 @@ window.TALENT_DATA={
        "divergences": [],
        "presentIn": [
         "forever-talents-releve",
-        "wowtbc-forever-calculator"
+        "wowtbc-forever-calculator",
+        "wowhead-forever-talent-calc"
        ]
       }
      ],
@@ -20545,17 +20499,17 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Increases your melee Attack Power by 50% of your level.",
+         "text": "Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 50% of your level.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Increases your melee Attack Power by 100% of your level.",
+         "text": "Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 100% of your level.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Increases your melee Attack Power by 150% of your level.",
+         "text": "Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level.",
          "observed": true
         }
        ],
@@ -21669,7 +21623,7 @@ window.TALENT_DATA={
 ;
 window.TALENT_FR={
  "version": 1,
- "updatedAt": "2026-09-15",
+ "updatedAt": "2026-09-18",
  "method": "Les noms français viennent du client français officiel de World of Warcraft. Ils sont relevés sur les fichiers publics des calculateurs de talents de Wowhead, en comparant la version anglaise et la version française de Classic, de Burning Crusade puis de Wrath of the Lich King, dans cet ordre : beaucoup de talents que Forever présente comme nouveaux existent en réalité dans une extension ultérieure. Chaque nom conserve l’identifiant du sort qui le porte, pour être vérifiable. Les talents qui n’existent dans aucune de ces trois extensions, et ceux que Forever a renommés, n’ont aucun nom français officiel : leur traduction est éditoriale et signalée comme telle. Quelques-uns de ces noms éditoriaux reprennent tout de même un nom que Blizzard a donné en français ailleurs — à une extension plus récente, ou à un sort qui ne figure dans aucun arbre de talents et que ce relevé ne pouvait donc pas atteindre ; ils ont été cherchés fiche par fiche sur le site français de Wowhead et leur note cite le sort d’origine. Les textes d’infobulle réécrits par Forever sont traduits par nos soins.",
  "glossary": {
   "trees": {
@@ -22528,13 +22482,13 @@ window.TALENT_FR={
    "note": "Forever a renommé ce talent : le client français ne connaît que « Aspect du faucon amélioré » (anciennement « Improved Aspect of the Hawk »).",
    "nameBranch": "classic",
    "ranks": [
-    "Tant qu’Aspect du faucon est actif, vos attaques à distance normales ont 2% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 2% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
-    "Tant qu’Aspect du faucon est actif, vos attaques à distance normales ont 4% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 4% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
-    "Tant qu’Aspect du faucon est actif, vos attaques à distance normales ont 6% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 6% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
-    "Tant qu’Aspect du faucon est actif, vos attaques à distance normales ont 8% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 8% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
-    "Tant qu’Aspect du faucon est actif, vos attaques à distance normales ont 10% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 10% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec."
+    "Tant qu’Aspect du faucon est actif, votre Tir automatique a 2% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 2% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
+    "Tant qu’Aspect du faucon est actif, votre Tir automatique a 4% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 4% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
+    "Tant qu’Aspect du faucon est actif, votre Tir automatique a 6% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 6% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
+    "Tant qu’Aspect du faucon est actif, votre Tir automatique a 8% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 8% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
+    "Tant qu’Aspect du faucon est actif, votre Tir automatique a 10% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 10% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec."
    ],
-   "rank1": "Tant qu’Aspect du faucon est actif, vos attaques à distance normales ont 2% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 2% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
+   "rank1": "Tant qu’Aspect du faucon est actif, votre Tir automatique a 2% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 2% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
    "textSource": "editorial"
   },
   "chasseur/beast-mastery-1-3": {
@@ -22698,12 +22652,9 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "chasseur/marksmanship-2-1": {
-   "name": "Morsure de serpent améliorée",
+   "name": "Morsures améliorées",
    "nameSource": "adapte",
-   "spell": 19464,
-   "classic": "Augmente les points de dégâts infligés par votre technique Morsure de serpent de 2%.",
-   "note": "Forever a renommé ce talent : le client français ne connaît que « Morsure de serpent améliorée » (anciennement « Improved Serpent Sting »).",
-   "nameBranch": "classic",
+   "note": "Forever a élargi ce talent aux trois morsures ; le pluriel le distingue de « Morsure de serpent améliorée », que la bêta rétablit en (4,4) avec le sort 19464 dont ce nom officiel provient.",
    "ranks": [
     "Augmente de 6% les points de dégâts de votre technique Morsure de serpent, réduit de 2 sec le temps de recharge de votre Morsure de vipère et augmente de 15 sec la durée de votre Morsure de scorpide.",
     "Augmente de 13% les points de dégâts de votre technique Morsure de serpent, réduit de 4 sec le temps de recharge de votre Morsure de vipère et augmente de 30 sec la durée de votre Morsure de scorpide.",
@@ -22880,7 +22831,7 @@ window.TALENT_FR={
    "spell": 19306,
    "classic": "Une attaque disponible après avoir paré une attaque de l'adversaire. Elle inflige 40 points de dégâts et immobilise la cible pendant 5 sec. Contre-attaque ne peut pas être bloquée, esquivée ou parée.",
    "nameBranch": "classic",
-   "rank1": "Une attaque qui devient disponible après avoir paré l’attaque d’un adversaire. Elle inflige 50% des dégâts de l’arme plus 13 et immobilise la cible pendant 5 sec. Contre-attaque ne peut être ni bloquée, ni esquivée, ni parée.",
+   "rank1": "Une attaque qui devient disponible après avoir paré l’attaque d’un adversaire. Elle inflige 50% des dégâts de l’arme plus 26 et immobilise la cible pendant 5 sec. Contre-attaque ne peut être ni bloquée, ni esquivée, ni parée.",
    "textSource": "editorial"
   },
   "chasseur/survival-6-3": {
@@ -22975,7 +22926,7 @@ window.TALENT_FR={
    "spell": 14128,
    "classic": "Augmente de 6% les points de dégâts supplémentaires infligés par vos coups critiques, lorsque vous utilisez les techniques : Attaque pernicieuse, Suriner, Attaque sournoise, Frappe fantomatique ou Hémorragie.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 6% le bonus de dégâts critiques de vos techniques Attaque pernicieuse, Suriner, Attaque sournoise, Estropier, Frappe fantomatique et Hémorragie.",
+   "rank1": "Augmente de 4% le bonus de dégâts critiques de vos techniques Attaque pernicieuse, Suriner, Attaque sournoise, Estropier, Frappe fantomatique et Hémorragie.",
    "textSource": "editorial"
   },
   "voleur/assassination-4-1": {
@@ -23235,7 +23186,7 @@ window.TALENT_FR={
    "nameBranch": "classic",
    "ranks": [
     "Réduit de 45 sec le temps de recharge de vos techniques Disparition et Cécité.",
-    "Réduit de 1,5 min le temps de recharge de vos techniques Disparition et Cécité."
+    "Réduit de 90 sec le temps de recharge de vos techniques Disparition et Cécité."
    ],
    "rank1": "Réduit de 45 sec le temps de recharge de vos techniques Disparition et Cécité.",
    "textSource": "editorial"
@@ -23965,7 +23916,7 @@ window.TALENT_FR={
    "spell": 17364,
    "classic": "Donne une attaque supplémentaire. De plus, les deux prochaines sources de dégâts de nature infligés à la cible sont augmentées de 20 %. Dure 12 sec.",
    "nameBranch": "classic",
-   "rank1": "Frappe instantanément pour les dégâts normaux de l’arme et augmente de 20% les dégâts de Nature que vous infligez à la cible pendant 12 sec.",
+   "rank1": "Frappe instantanément pour les dégâts normaux de l’arme et augmente de 20% les dégâts que vous infligez à la cible avec votre prochain sort Éclair, Chaîne d’éclairs ou Choc de terre, pendant 12 sec.",
    "textSource": "editorial"
   },
   "chaman/enhancement-5-1": {
@@ -24593,7 +24544,7 @@ window.TALENT_FR={
    "spell": 11426,
    "classic": "Vous protège instantanément à l'aide d'un bouclier magique qui absorbe 455 points de dégâts. Dure 1 min. Tant que le bouclier est actif, les sorts ne sont pas interrompus.",
    "nameBranch": "classic",
-   "rank1": "Vous protège instantanément d’un bouclier absorbant 431 points de dégâts. Dure 1 min. Tant que le bouclier tient, vos incantations ne sont ni interrompues ni retardées par les dégâts subis.",
+   "rank1": "Vous protège instantanément d’un bouclier absorbant 448 points de dégâts. Dure 1 min. Tant que le bouclier tient, vos incantations ne sont ni interrompues ni retardées par les dégâts subis.",
    "textSource": "editorial"
   },
   "demoniste/affliction-1-1": {
@@ -24646,7 +24597,7 @@ window.TALENT_FR={
    "spell": 17783,
    "classic": "Vous confère 14% de chances d'éviter les interruptions causées par les points de dégâts lorsque vous canalisez vos sorts Drain de vie, Drain de mana et Siphon d'âme.",
    "nameBranch": "classic",
-   "rank1": "Vous donne 23% de chances d’éviter les interruptions causées par les dégâts lorsque vous canalisez ou incantez vos sorts Drain de vie, Drain de mana et Siphon d’âme.",
+   "rank1": "Vous donne 23% de chances d’éviter les interruptions causées par les dégâts lorsque vous canalisez ou incantez vos sorts Drain de vie, Drain de mana, Siphon d’âme et Supplice.",
    "textSource": "editorial"
   },
   "demoniste/affliction-3-3": {
@@ -24664,7 +24615,7 @@ window.TALENT_FR={
    "spell": 18094,
    "classic": "Confère à vos sorts Corruption et Drain de vie 2 % de chances de vous plonger dans un état de Transe de l’ombre après avoir infligé des dégâts à une cible. Cet état réduit le temps d’incantation de votre prochain sort Trait de l’ombre de 100 %.",
    "nameBranch": "classic",
-   "rank1": "Confère à vos sorts Corruption, Siphon d’âme et Drain de vie 2% de chances de vous plonger dans un état de Transe de l’ombre après avoir infligé des dégâts à une cible. Cet état réduit de 100% le temps d’incantation de votre prochain sort Trait de l’ombre.",
+   "rank1": "Confère à vos sorts Corruption, Siphon d’âme, Drain de vie et Supplice 2% de chances de vous plonger dans un état de Transe de l’ombre après avoir infligé des dégâts à une cible. Cet état réduit de 100% le temps d’incantation de votre prochain sort Trait de l’ombre.",
    "textSource": "editorial"
   },
   "demoniste/affliction-4-3": {
@@ -24681,8 +24632,8 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "spell": 18265,
    "classic": "Transfère 15 points de vie de la cible vers le lanceur de sorts toutes les 3 sec. Dure 30 sec.",
-   "rank1": "Transfère 15 points de vie de la cible vers le lanceur de sorts toutes les 3 sec. Dure 30 sec.",
-   "textSource": "officiel",
+   "rank1": "Transfère 11 points de vie de la cible vers le lanceur de sorts toutes les 3 sec. Dure 30 sec.",
+   "textSource": "officiel-chiffre",
    "nameBranch": "classic"
   },
   "demoniste/affliction-6-3": {
@@ -24802,8 +24753,8 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "spell": 18708,
    "classic": "Le temps d’incantation de votre prochain sort d’invocation de diablotin, de marcheur du Vide, de succube, d’incube ou de chasseur corrompu est réduit de 5.5 s, et son coût en mana est réduit de 50%.",
-   "rank1": "Le temps d’incantation de votre prochain sort d’invocation de diablotin, de marcheur du Vide, de succube, d’incube ou de chasseur corrompu est réduit de 5.5 s, et son coût en mana est réduit de 50%.",
-   "textSource": "officiel",
+   "rank1": "Le temps d’incantation de votre prochain sort d’invocation de diablotin, de marcheur du Vide, de succube, d’incube ou de chasseur corrompu est réduit de 6 s, et son coût en mana est réduit de 50%.",
+   "textSource": "officiel-chiffre",
    "nameBranch": "classic"
   },
   "demoniste/demonology-5-2": {
@@ -24950,7 +24901,7 @@ window.TALENT_FR={
    "spell": 16845,
    "classic": "Réduit de 3% le coût en mana de vos sorts Eclat lunaire, Feu stellaire, Colère, Toucher guérisseur, Rétablissement et Récupération.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 3% le coût en mana de vos sorts.",
+   "rank1": "Réduit de 8% le coût en mana de vos sorts offensifs.",
    "textSource": "editorial"
   },
   "druide/balance-2-2": {
@@ -25022,7 +24973,7 @@ window.TALENT_FR={
    "spell": 16896,
    "classic": "Augmente les points de dégâts infligés par vos sorts Feu stellaire, Eclat lunaire et Colère de .",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% les dégâts infligés par vos sorts des Arcanes et de Nature.",
+   "rank1": "Augmente de 2% les dégâts infligés par vos sorts des Arcanes et de Nature.",
    "textSource": "editorial"
   },
   "druide/balance-7-2": {
@@ -25031,7 +24982,7 @@ window.TALENT_FR={
    "spell": 24858,
    "classic": "Transforme le personnage druide en sélénien. Sous cette forme, l’Armure conférée par les objets est augmentée de 360 % et les membres du groupe à moins de 30 m voient leurs chances de coup critique des sorts augmentées de 3 %. La transformation libère le personnage-joueur des effets de métamorphose ou affectant le déplacement.",
    "nameBranch": "classic",
-   "rank1": "Transforme le druide en sélénien. Sous cette forme, l’armure conférée par les objets est augmentée de 360% et tous les membres du groupe se trouvant à moins de 45 mètres voient leurs chances de coup critique augmentées de 3%, effet exclusif avec Chef de la meute. Le sélénien ne peut pas lancer de sorts de soins tant qu’il est transformé.\n\nLa transformation libère le lanceur des effets de métamorphose et de ceux qui entravent le déplacement.",
+   "rank1": "Transforme le druide en sélénien. Sous cette forme, l’armure conférée par les objets est augmentée de 360%, Augure de lucidité a 100% de chances supplémentaires de se déclencher, et tous les membres du groupe se trouvant à moins de 45 mètres voient leurs chances de coup critique augmentées de 3%, effet exclusif avec Chef de la meute. Le sélénien ne peut pas lancer de sorts de soins tant qu’il est transformé.\n\nLa transformation libère le lanceur des effets de métamorphose et de ceux qui entravent le déplacement.",
    "textSource": "editorial"
   },
   "druide/feral-combat-1-2": {
@@ -25159,7 +25110,7 @@ window.TALENT_FR={
    "spell": 16972,
    "classic": "Augmente votre puissance d'attaque en mêlée en forme de félin, d'ours et d'ours redoutable de 50% de votre niveau.",
    "nameBranch": "classic",
-   "rank1": "Augmente votre puissance d’attaque en mêlée de 50% de votre niveau.",
+   "rank1": "Augmente votre puissance d’attaque en mêlée de 50% de votre niveau en forme de félin, en forme d’ours et en forme d’ours redoutable.",
    "textSource": "editorial"
   },
   "druide/feral-combat-4-4": {
@@ -25328,22 +25279,6 @@ window.TALENT_FR={
    "rank1": "Augmente de 1% vos chances de toucher avec toutes vos attaques et techniques.",
    "textSource": "editorial"
   },
-  "guerrier/protection-5-4": {
-   "name": "Vitalité",
-   "nameSource": "officiel",
-   "nameBranch": "tbc",
-   "spell": 29140,
-   "rank1": "Augmente de 2% votre Endurance et votre Force.",
-   "textSource": "editorial"
-  },
-  "guerrier/protection-6-1": {
-   "name": "Rage focalisée",
-   "nameSource": "officiel",
-   "nameBranch": "tbc",
-   "spell": 29787,
-   "rank1": "Réduit le coût en rage de vos techniques offensives de 1.",
-   "textSource": "officiel"
-  },
   "paladin/holy-3-3": {
    "name": "Puissance purifiante",
    "nameSource": "officiel",
@@ -25397,7 +25332,7 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 35029,
-   "rank1": "Augmente de 1% tous les dégâts que vous infligez tant que votre familier est actif.",
+   "rank1": "Augmente de 1% tous les dégâts que vous et votre familier infligez tant que votre familier est actif.",
    "textSource": "editorial"
   },
   "chasseur/marksmanship-2-3": {
@@ -25458,7 +25393,7 @@ window.TALENT_FR={
    "spell": 34491,
    "ranks": [
     "Réduit de 30% le coût en mana de vos techniques de Piège et de mêlée. De plus, vos coups critiques ont 30% de chances de permettre à 50% de votre régénération de mana de se poursuivre pendant l’incantation durant 30 sec.",
-    "Réduit de 60% le coût en mana de vos techniques de Piège et de mêlée. De plus, vos coups critiques ont 100% de chances de permettre à 50% de votre régénération de mana de se poursuivre pendant l’incantation durant 30 sec."
+    "Réduit de 60% le coût en mana de vos techniques de Piège et de mêlée. De plus, vos coups critiques ont 60% de chances de permettre à 50% de votre régénération de mana de se poursuivre pendant l’incantation durant 30 sec."
    ],
    "rank1": "Réduit de 30% le coût en mana de vos techniques de Piège et de mêlée. De plus, vos coups critiques ont 30% de chances de permettre à 50% de votre régénération de mana de se poursuivre pendant l’incantation durant 30 sec.",
    "textSource": "editorial"
@@ -25468,7 +25403,7 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 1329,
-   "rank1": "Attaque instantanément des deux armes, infligeant 75% des dégâts de l’arme plus 13 points de dégâts supplémentaires par arme. Dégâts augmentés de 20% contre une cible empoisonnée. Rapporte 2 points de combo.",
+   "rank1": "Attaque instantanément des deux armes, infligeant 75% des dégâts de l’arme plus 17 points de dégâts supplémentaires par arme. Dégâts augmentés de 20% contre une cible empoisonnée. Rapporte 2 points de combo.",
    "textSource": "editorial"
   },
   "voleur/combat-5-3": {
@@ -25635,7 +25570,7 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 58435,
-   "rank1": "Augmente de 33% le bonus de dégâts critiques de vos sorts Corruption, Plaie d’agonie, Plaie funeste, Siphon d’âme, Drain de vie, Siphon de vie et Drain d’espoir.",
+   "rank1": "Augmente de 33% le bonus de dégâts critiques de vos sorts Corruption, Plaie d’agonie, Plaie funeste, Siphon d’âme, Drain de vie, Siphon de vie et Supplice.",
    "textSource": "editorial"
   },
   "demoniste/affliction-5-3": {
@@ -25643,7 +25578,7 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 17804,
-   "rank1": "Augmente de 17% la vitesse à laquelle vos sorts Drain de vie et Siphon d’âme infligent leurs dégâts, mais réduit de 10% les soins que vous rend Drain de vie.",
+   "rank1": "Augmente de 4% les dégâts infligés ou la vie drainée par vos sorts Drain de vie, Siphon d’âme et Supplice, par effet d’Affliction actif sur la cible, jusqu’à un maximum de 12%.",
    "textSource": "editorial"
   },
   "demoniste/demonology-2-1": {
@@ -25681,7 +25616,7 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 35691,
-   "rank1": "Augmente vos dégâts et vos soins par sort d’un montant pouvant atteindre 33% de votre niveau tant qu’un démon invoqué est actif.",
+   "rank1": "Augmente vos dégâts par sort et ceux de votre démon d’un montant pouvant atteindre 33% de votre niveau tant qu’un démon invoqué est actif.",
    "textSource": "editorial"
   },
   "demoniste/demonology-7-2": {
@@ -25855,12 +25790,6 @@ window.TALENT_FR={
    "rank1": "Votre technique Charge devient utilisable en posture défensive.",
    "textSource": "editorial"
   },
-  "guerrier/protection-6-3": {
-   "name": "Bastion",
-   "nameSource": "adapte",
-   "rank1": "Augmente de 2% tous les dégâts que vous infligez lorsqu’un bouclier est équipé.",
-   "textSource": "editorial"
-  },
   "paladin/holy-1-1": {
    "name": "Frappe sacrée améliorée",
    "nameSource": "adapte",
@@ -26020,9 +25949,9 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "voleur/combat-4-2": {
-   "name": "Lames sans repos",
+   "name": "Exécution parfaite",
    "nameSource": "adapte",
-   "rank1": "Vos coups de grâce qui infligent des dégâts réduisent de 2 sec par point de combo le temps de recharge restant de vos techniques Poussée d’adrénaline, Déluge de lames, Évasion, Sprint et Disparition.",
+   "rank1": "Réduit de 10 le coût en énergie de votre technique Éviscération.",
    "textSource": "editorial"
   },
   "voleur/subtlety-3-3": {
@@ -26160,7 +26089,7 @@ window.TALENT_FR={
   "mage/frost-3-3": {
    "name": "Lance de glace",
    "nameSource": "adapte",
-   "rank1": "Inflige 28 à 33 points de dégâts de Givre à une cible ennemie. Inflige 300% de dégâts supplémentaires aux cibles gelées.",
+   "rank1": "Inflige 30 points de dégâts de Givre à une cible ennemie. Inflige 300% de dégâts supplémentaires aux cibles gelées.",
    "textSource": "editorial"
   },
   "demoniste/affliction-2-2": {
@@ -26178,11 +26107,11 @@ window.TALENT_FR={
    "name": "Drains améliorés",
    "nameSource": "adapte",
    "ranks": [
-    "Augmente de 2% les dégâts infligés ou la vie drainée par vos sorts Drain de vie et Siphon d’âme, par effet d’Affliction actif sur la cible, jusqu’à un maximum de 6%. Lorsque votre Siphon d’âme frappe une cible sous 20% de points de vie, ce bonus est triplé. De plus, la portée de votre Drain de vie est augmentée de 3 mètres.",
-    "Augmente de 4% les dégâts infligés ou la vie drainée par vos sorts Drain de vie et Siphon d’âme, par effet d’Affliction actif sur la cible, jusqu’à un maximum de 12%. Lorsque votre Siphon d’âme frappe une cible sous 20% de points de vie, ce bonus est triplé. De plus, la portée de votre Drain de vie est augmentée de 7 mètres.",
-    "Augmente de 6% les dégâts infligés ou la vie drainée par vos sorts Drain de vie et Siphon d’âme, par effet d’Affliction actif sur la cible, jusqu’à un maximum de 18%. Lorsque votre Siphon d’âme frappe une cible sous 20% de points de vie, ce bonus est triplé. De plus, la portée de votre Drain de vie est augmentée de 10 mètres."
+    "Augmente de 7% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Supplice.",
+    "Augmente de 13% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Supplice.",
+    "Augmente de 20% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Supplice."
    ],
-   "rank1": "Augmente de 2% les dégâts infligés ou la vie drainée par vos sorts Drain de vie et Siphon d’âme, par effet d’Affliction actif sur la cible, jusqu’à un maximum de 6%. Lorsque votre Siphon d’âme frappe une cible sous 20% de points de vie, ce bonus est triplé. De plus, la portée de votre Drain de vie est augmentée de 3 mètres.",
+   "rank1": "Augmente de 7% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Supplice.",
    "textSource": "editorial"
   },
   "demoniste/affliction-4-1": {
@@ -26193,9 +26122,9 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "demoniste/affliction-7-2": {
-   "name": "Drain d’espoir",
+   "name": "Supplice",
    "nameSource": "adapte",
-   "rank1": "Draine tout espoir de la cible, lui infligeant 52 points de dégâts d’Ombre toutes les 1 sec et augmentant de 10% tous les autres dégâts d’Ombre périodiques que vous lui infligez. Dure 6 sec.",
+   "rank1": "Déchire la cible de l’intérieur, lui infligeant 37 points de dégâts d’Ombre toutes les 1 sec et augmentant de 10% les dégâts qu’elle subit de vos autres effets d’Ombre périodiques. Dure 6 sec.",
    "textSource": "editorial"
   },
   "demoniste/demonology-2-4": {
@@ -26210,8 +26139,8 @@ window.TALENT_FR={
    "note": "Traduction éditoriale : le mot anglais « Brand » est rendu par « Marque » dans le client français (ainsi « Fiery Brand » y devient « Marque enflammée », sort 204021).",
    "ranks": [
     "Votre Douleur brûlante génère 17% de menace en moins et marque la cible pendant 10 sec. Les 2 prochaines attaques de votre démon contre elle génèrent une menace élevée et infligent 39 à 42 points de dégâts de Feu ou d’Ombre selon le démon.",
-    "Votre Douleur brûlante génère 33% de menace en moins et marque la cible pendant 10 sec. Les 4 prochaines attaques de votre démon contre elle génèrent une menace élevée et infligent des dégâts de Feu ou d’Ombre selon le démon.",
-    "Votre Douleur brûlante génère 50% de menace en moins et marque la cible pendant 10 sec. Les 6 prochaines attaques de votre démon contre elle génèrent une menace élevée et infligent des dégâts de Feu ou d’Ombre selon le démon."
+    "Votre Douleur brûlante génère 33% de menace en moins et marque la cible pendant 10 sec. Les 4 prochaines attaques de votre démon contre elle génèrent une menace élevée et infligent 39 à 42 points de dégâts de Feu ou d’Ombre selon le démon.",
+    "Votre Douleur brûlante génère 50% de menace en moins et marque la cible pendant 10 sec. Les 6 prochaines attaques de votre démon contre elle génèrent une menace élevée et infligent 39 à 42 points de dégâts de Feu ou d’Ombre selon le démon."
    ],
    "rank1": "Votre Douleur brûlante génère 17% de menace en moins et marque la cible pendant 10 sec. Les 2 prochaines attaques de votre démon contre elle génèrent une menace élevée et infligent 39 à 42 points de dégâts de Feu ou d’Ombre selon le démon.",
    "textSource": "editorial"
@@ -26230,17 +26159,35 @@ window.TALENT_FR={
    "rank1": "Inflige 125 à 140 points de dégâts de Feu à votre cible, et 25% de dégâts supplémentaires si elle est affectée par Immolation.",
    "textSource": "editorial"
   },
-  "druide/balance-3-4": {
-   "name": "Équilibre de la nature",
-   "nameSource": "adapte",
-   "rank1": "Chaque fois que vous lancez un sort de Nature, votre prochain sort de dégâts des Arcanes lancé dans les 10 sec inflige 1% de dégâts supplémentaires. Chaque fois que vous lancez un sort des Arcanes, votre prochain sort de dégâts de Nature lancé dans les 10 sec inflige 1% de dégâts supplémentaires.",
-   "textSource": "editorial"
-  },
   "druide/balance-5-1": {
    "name": "Lacis",
    "nameSource": "adapte",
    "note": "Nom repris du sort Lacis du client français (sort 203651), qui traduit le même mot anglais, Overgrowth : Forever lui donne un effet qui lui est propre.",
    "rank1": "Augmente de 1 le nombre maximum de cibles que vous pouvez maintenir sous l’effet de Sarments.",
+   "textSource": "editorial"
+  },
+  "guerrier/protection-5-4": {
+   "name": "Bastion",
+   "nameSource": "adapte",
+   "rank1": "Augmente de 2% tous les dégâts que vous infligez lorsqu’un bouclier est équipé.",
+   "textSource": "editorial"
+  },
+  "guerrier/protection-6-3": {
+   "name": "Rage focalisée",
+   "nameSource": "officiel",
+   "nameBranch": "tbc",
+   "spell": 29787,
+   "rank1": "Réduit le coût en rage de vos techniques offensives de 1.",
+   "textSource": "officiel"
+  },
+  "chasseur/marksmanship-4-4": {
+   "name": "Morsure de serpent améliorée",
+   "nameSource": "officiel",
+   "nameBranch": "classic",
+   "spell": 19464,
+   "classic": "Augmente les points de dégâts infligés par votre technique Morsure de serpent de 2%.",
+   "note": "La bêta ouverte réintroduit ce talent sous son nom Classic et sur le même sort (19464), distinct des « Morsures améliorées » de la ligne 2 que Forever avait élargies aux morsures de vipère et de scorpide.",
+   "rank1": "Augmente de 2% les dégâts infligés par votre Morsure de serpent.",
    "textSource": "editorial"
   }
  },
