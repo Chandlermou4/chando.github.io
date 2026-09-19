@@ -1,6 +1,6 @@
 window.TALENT_DATA={
  "version": 1,
- "generatedAt": "2026-09-18",
+ "generatedAt": "2026-09-19",
  "grid": {
   "rows": 7,
   "columns": 4,
@@ -21623,7 +21623,7 @@ window.TALENT_DATA={
 ;
 window.TALENT_FR={
  "version": 1,
- "updatedAt": "2026-09-18",
+ "updatedAt": "2026-09-19",
  "method": "Les noms français viennent du client français officiel de World of Warcraft. Ils sont relevés sur les fichiers publics des calculateurs de talents de Wowhead, en comparant la version anglaise et la version française de Classic, de Burning Crusade puis de Wrath of the Lich King, dans cet ordre : beaucoup de talents que Forever présente comme nouveaux existent en réalité dans une extension ultérieure. Chaque nom conserve l’identifiant du sort qui le porte, pour être vérifiable. Les talents qui n’existent dans aucune de ces trois extensions, et ceux que Forever a renommés, n’ont aucun nom français officiel : leur traduction est éditoriale et signalée comme telle. Quelques-uns de ces noms éditoriaux reprennent tout de même un nom que Blizzard a donné en français ailleurs — à une extension plus récente, ou à un sort qui ne figure dans aucun arbre de talents et que ce relevé ne pouvait donc pas atteindre ; ils ont été cherchés fiche par fiche sur le site français de Wowhead et leur note cite le sort d’origine. Les textes d’infobulle réécrits par Forever sont traduits par nos soins.",
  "glossary": {
   "trees": {
@@ -22475,21 +22475,21 @@ window.TALENT_FR={
    "nameBranch": "classic"
   },
   "chasseur/beast-mastery-1-2": {
-   "name": "Aspect du faucon amélioré",
-   "nameSource": "adapte",
+   "name": "Aspects mortels",
+   "nameSource": "officiel",
    "spell": 19552,
    "classic": "Pendant qu'Aspect du faucon est activé, toutes les attaques à distance normales ont 1% de chances d'augmenter la vitesse d'attaque à distance de 30% pendant 12 sec.",
-   "note": "Forever a renommé ce talent : le client français ne connaît que « Aspect du faucon amélioré » (anciennement « Improved Aspect of the Hawk »).",
-   "nameBranch": "classic",
+   "note": "Nom et texte relevés dans le client français de la bêta ouverte. Le talent Classic qui occupait cette case s’appelait « Aspect du faucon amélioré » ; Forever l’a renommé et le client lui donne son propre nom français.",
+   "nameBranch": "forever",
    "ranks": [
-    "Tant qu’Aspect du faucon est actif, votre Tir automatique a 2% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 2% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
-    "Tant qu’Aspect du faucon est actif, votre Tir automatique a 4% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 4% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
-    "Tant qu’Aspect du faucon est actif, votre Tir automatique a 6% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 6% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
-    "Tant qu’Aspect du faucon est actif, votre Tir automatique a 8% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 8% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
-    "Tant qu’Aspect du faucon est actif, votre Tir automatique a 10% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 10% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec."
+    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 2 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 2 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
+    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 4 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 4 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
+    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 6 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 6 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
+    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 8 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 8 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
+    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 10 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 10 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec."
    ],
-   "rank1": "Tant qu’Aspect du faucon est actif, votre Tir automatique a 2% de chances d’augmenter de 30% votre vitesse d’attaque à distance pendant 12 sec. Tant qu’Aspect de la bête est actif, vos attaques automatiques de mêlée ont 2% de chances d’augmenter de 30% votre vitesse d’attaque de mêlée pendant 12 sec.",
-   "textSource": "editorial"
+   "rank1": "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 2 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 2 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
+   "textSource": "client-forever"
   },
   "chasseur/beast-mastery-1-3": {
    "name": "Entraînement à l'Endurance",
@@ -25902,9 +25902,12 @@ window.TALENT_FR={
   },
   "chasseur/beast-mastery-4-4": {
    "name": "Invocation de faucon",
-   "nameSource": "adapte",
-   "rank1": "Ordonne à un faucon de fondre sur votre cible, infligeant 53 points de dégâts physiques et poursuivant son assaut pendant 18 sec. Seuls 2 faucons peuvent être actifs à la fois. Invocation de faucon partage son temps de recharge avec Tir des arcanes.",
-   "textSource": "editorial"
+   "nameSource": "officiel",
+   "rank1": "Ordonne à un faucon de réaliser un bombardement en piqué sur l’adversaire que vous ciblez. Il lui inflige 53 points de dégâts physiques et continue son assaut pendant 18 sec. Seuls 2 faucons peuvent être actifs à la fois. Invoquer un faucon partage son temps de recharge avec Tir des arcanes.",
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "spell": 1293241,
+   "note": "Formulation relevée dans le client français de la bêta. Les dégâts restent la valeur niveau 60 du calculateur : l’infobulle relevée est celle d’un personnage en cours de montée, où ce chiffre suit le niveau et la puissance d’attaque."
   },
   "chasseur/marksmanship-3-4": {
    "name": "Loup solitaire",

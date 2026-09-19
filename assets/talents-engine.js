@@ -136,11 +136,13 @@ window.Talents = (function () {
   function frRequires(list, g) { return list.map(function (r) { return g.requires[r] || r; }); }
   function frTree(name, g) { return g.trees[name] || name; }
 
-  var BRANCH_LABEL = { classic: 'Classic', tbc: 'Burning Crusade', wotlk: 'Wrath of the Lich King' };
+  var BRANCH_LABEL = { classic: 'Classic', tbc: 'Burning Crusade', wotlk: 'Wrath of the Lich King',
+    forever: 'client français de Forever' };
   var TEXT_SOURCE_LABEL = {
     officiel: 'texte d’infobulle officiel',
     'officiel-chiffre': 'texte officiel, chiffres de Forever',
-    editorial: 'texte traduit par nos soins'
+    editorial: 'texte traduit par nos soins',
+    'client-forever': 'relevé dans le client français de Forever'
   };
   var NAME_SOURCE_LABEL = {
     officiel: 'Nom officiel du client français',
