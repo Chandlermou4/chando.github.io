@@ -21,8 +21,22 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/assets/media/favicon-32.png" sizes="32x32">
+<!-- Google cherche l'icône du site dans le <head> de l'accueil, puis à /favicon.ico.
+     Le .ico est déclaré en premier et embarque 16, 32 et 48 px : sans lui, la requête
+     du robot vers /favicon.ico tombait sur du HTML, et Google retombait sur l'icône
+     générique de l'hébergeur — d'où le « Cloudflare » affiché au-dessus du lien. -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/media/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/media/favicon-180.png">
+<!-- Nom du site affiché au-dessus du lien dans les résultats Google. C'est le seul
+     mécanisme que Google documente pour le choisir ; og:site_name pèse moins. Il ne
+     vaut que sur la page d'accueil du domaine, d'où sa présence ici seulement.
+     pages.dev figure sur la Public Suffix List, donc chando.pages.dev compte bien
+     comme un site à part entière et non comme une page de Cloudflare. -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite",
+ "name":"Chando","url":"https://chando.pages.dev/"}
+</script>
 <script>
   try{var t=localStorage.getItem('guide-theme');
     if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}
