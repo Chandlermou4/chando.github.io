@@ -415,7 +415,7 @@ window.TALENT_DATA={
       {
        "key": "arms-4-1",
        "name_en": "Spearing Strike",
-       "icon": "ability_warrior_savageblow",
+       "icon": "inv_spear_01",
        "row": 4,
        "col": 1,
        "maxRanks": 1,
@@ -536,7 +536,7 @@ window.TALENT_DATA={
       {
        "key": "arms-5-1",
        "name_en": "Bloodthrill",
-       "icon": "ability_warrior_bloodfrenzy",
+       "icon": "inv_sword_01",
        "row": 5,
        "col": 1,
        "maxRanks": 5,
@@ -630,7 +630,7 @@ window.TALENT_DATA={
       {
        "key": "arms-5-3",
        "name_en": "Weaponmaster",
-       "icon": "ability_warrior_weaponmastery",
+       "icon": "garrison_weaponupgrade",
        "row": 5,
        "col": 3,
        "maxRanks": 5,
@@ -1182,7 +1182,7 @@ window.TALENT_DATA={
       {
        "key": "fury-3-4",
        "name_en": "Boundless Rage",
-       "icon": "ability_warrior_endlessrage",
+       "icon": "ability_warrior_intensifyrage",
        "row": 3,
        "col": 4,
        "maxRanks": 3,
@@ -1280,7 +1280,7 @@ window.TALENT_DATA={
       {
        "key": "fury-4-2",
        "name_en": "Raging Blows",
-       "icon": "ability_warrior_rampage",
+       "icon": "ability_whirlwind",
        "row": 4,
        "col": 2,
        "maxRanks": 1,
@@ -1964,7 +1964,7 @@ window.TALENT_DATA={
       {
        "key": "protection-3-2",
        "name_en": "Master of Defense",
-       "icon": "ability_defend",
+       "icon": "ability_warrior_shieldguard",
        "row": 3,
        "col": 2,
        "maxRanks": 2,
@@ -2181,7 +2181,7 @@ window.TALENT_DATA={
       {
        "key": "protection-4-3",
        "name_en": "Vanguard",
-       "icon": "ability_warrior_shieldguard",
+       "icon": "ability_warrior_shieldcharge",
        "row": 4,
        "col": 3,
        "maxRanks": 1,
@@ -2330,7 +2330,7 @@ window.TALENT_DATA={
       {
        "key": "protection-5-4",
        "name_en": "Bastion",
-       "icon": "ability_warrior_shieldmastery",
+       "icon": "inv_shield_04",
        "row": 5,
        "col": 4,
        "maxRanks": 5,
@@ -2514,7 +2514,7 @@ window.TALENT_DATA={
       {
        "key": "holy-1-1",
        "name_en": "Improved Holy Strike",
-       "icon": "spell_holy_crusaderstrike",
+       "icon": "classicon_paladin",
        "row": 1,
        "col": 1,
        "maxRanks": 2,
@@ -2742,7 +2742,7 @@ window.TALENT_DATA={
       {
        "key": "holy-2-3",
        "name_en": "Improved Seals",
-       "icon": "spell_holy_healingaura",
+       "icon": "ability_thunderbolt",
        "row": 2,
        "col": 3,
        "maxRanks": 3,
@@ -2825,7 +2825,7 @@ window.TALENT_DATA={
       {
        "key": "holy-3-1",
        "name_en": "Voice of Truth",
-       "icon": "spell_holy_silence",
+       "icon": "inv_misc_horn_03",
        "row": 3,
        "col": 1,
        "maxRanks": 1,
@@ -2863,7 +2863,7 @@ window.TALENT_DATA={
       {
        "key": "holy-3-2",
        "name_en": "Reverence",
-       "icon": "spell_holy_mindvision",
+       "icon": "spell_holy_divineillumination",
        "row": 3,
        "col": 2,
        "maxRanks": 3,
@@ -3083,7 +3083,7 @@ window.TALENT_DATA={
       {
        "key": "holy-5-1",
        "name_en": "Divine Precision",
-       "icon": "spell_holy_holybolt",
+       "icon": "spell_holy_healingfocus",
        "row": 5,
        "col": 1,
        "maxRanks": 3,
@@ -3258,7 +3258,7 @@ window.TALENT_DATA={
       {
        "key": "holy-7-2",
        "name_en": "Light's Vigil",
-       "icon": "spell_holy_holyguidance",
+       "icon": "ability_paladin_judgementofthepure",
        "row": 7,
        "col": 2,
        "maxRanks": 1,
@@ -3576,7 +3576,7 @@ window.TALENT_DATA={
       {
        "key": "protection-3-1",
        "name_en": "Improved Seal of Fury",
-       "icon": "spell_holy_sealoffury",
+       "icon": "spell_holy_righteousnessaura",
        "row": 3,
        "col": 1,
        "maxRanks": 1,
@@ -3736,7 +3736,7 @@ window.TALENT_DATA={
       {
        "key": "protection-4-1",
        "name_en": "Swift Judgement",
-       "icon": "spell_holy_righteousfury",
+       "icon": "ability_paladin_judgementred",
        "row": 4,
        "col": 1,
        "maxRanks": 1,
@@ -3953,7 +3953,7 @@ window.TALENT_DATA={
       {
        "key": "protection-6-3",
        "name_en": "Iron Creed",
-       "icon": "ability_paladin_shieldofvengeance",
+       "icon": "spell_holy_improvedresistanceauras",
        "row": 6,
        "col": 3,
        "maxRanks": 5,
@@ -4007,7 +4007,7 @@ window.TALENT_DATA={
       {
        "key": "protection-7-2",
        "name_en": "Holy Shield",
-       "icon": "classic_spell_holy_blessingofprotection",
+       "icon": "spell_holy_blessingofprotection",
        "row": 7,
        "col": 2,
        "maxRanks": 1,
@@ -4229,7 +4229,7 @@ window.TALENT_DATA={
       {
        "key": "retribution-2-2",
        "name_en": "Holy Conduit",
-       "icon": "spell_holy_divineillumination",
+       "icon": "spell_holy_devineaegis",
        "row": 2,
        "col": 2,
        "maxRanks": 2,
@@ -4366,7 +4366,7 @@ window.TALENT_DATA={
       {
        "key": "retribution-3-2",
        "name_en": "Sanctified Judgement",
-       "icon": "spell_holy_righteousfury",
+       "icon": "ability_paladin_judgementblue",
        "row": 3,
        "col": 2,
        "maxRanks": 3,
@@ -4526,7 +4526,7 @@ window.TALENT_DATA={
       {
        "key": "retribution-4-3",
        "name_en": "Sacred Arbiter",
-       "icon": "spell_holy_righteousfury",
+       "icon": "inv_sword_08",
        "row": 4,
        "col": 3,
        "maxRanks": 1,
@@ -4724,7 +4724,7 @@ window.TALENT_DATA={
       {
        "key": "retribution-6-2",
        "name_en": "Champion of the Light",
-       "icon": "spell_holy_championsbond",
+       "icon": "ability_paladin_enlightenedjudgements",
        "row": 6,
        "col": 2,
        "maxRanks": 3,
@@ -4774,7 +4774,7 @@ window.TALENT_DATA={
       {
        "key": "retribution-6-3",
        "name_en": "Instrument of Law",
-       "icon": "ability_paladin_hammeroftherighteous",
+       "icon": "spell_holy_divinepurpose",
        "row": 6,
        "col": 3,
        "maxRanks": 2,
@@ -4813,7 +4813,7 @@ window.TALENT_DATA={
       {
        "key": "retribution-7-2",
        "name_en": "Twist of Light",
-       "icon": "spell_holy_divineintervention",
+       "icon": "spell_holy_blessedresillience",
        "row": 7,
        "col": 2,
        "maxRanks": 1,
@@ -4900,7 +4900,7 @@ window.TALENT_DATA={
       {
        "key": "beast-mastery-1-2",
        "name_en": "Deadly Aspects",
-       "icon": "ability_hunter_aspectofthemonkey",
+       "icon": "spell_nature_ravenform",
        "row": 1,
        "col": 2,
        "maxRanks": 5,
@@ -5008,7 +5008,7 @@ window.TALENT_DATA={
       {
        "key": "beast-mastery-2-1",
        "name_en": "Focused Fire",
-       "icon": "ability_hunter_focusfire",
+       "icon": "inv_weapon_crossbow_10",
        "row": 2,
        "col": 1,
        "maxRanks": 2,
@@ -5347,7 +5347,7 @@ window.TALENT_DATA={
       {
        "key": "beast-mastery-4-4",
        "name_en": "Summon Hawk",
-       "icon": "ability_eyeoftheowl",
+       "icon": "ability_hunter_animalhandler",
        "row": 4,
        "col": 4,
        "maxRanks": 1,
@@ -5385,7 +5385,7 @@ window.TALENT_DATA={
       {
        "key": "beast-mastery-5-1",
        "name_en": "Spirit Bond",
-       "icon": "classic_ability_druid_demoralizingroar",
+       "icon": "ability_druid_demoralizingroar",
        "row": 5,
        "col": 1,
        "maxRanks": 2,
@@ -5712,7 +5712,7 @@ window.TALENT_DATA={
       {
        "key": "marksmanship-1-3",
        "name_en": "Lethal Attacks",
-       "icon": "ability_hunter_criticalshot",
+       "icon": "ability_searingarrow",
        "row": 1,
        "col": 3,
        "maxRanks": 5,
@@ -5766,7 +5766,7 @@ window.TALENT_DATA={
       {
        "key": "marksmanship-2-1",
        "name_en": "Improved Stings",
-       "icon": "ability_hunter_quickshot",
+       "icon": "hunter_pvp_spidersting",
        "row": 2,
        "col": 1,
        "maxRanks": 3,
@@ -6011,7 +6011,7 @@ window.TALENT_DATA={
       {
        "key": "marksmanship-3-4",
        "name_en": "Lone Wolf",
-       "icon": "spell_nature_spiritwolf",
+       "icon": "ability_mount_whitedirewolf",
        "row": 3,
        "col": 4,
        "maxRanks": 1,
@@ -6364,7 +6364,7 @@ window.TALENT_DATA={
       {
        "key": "marksmanship-7-2",
        "name_en": "Sniper Shot",
-       "icon": "ability_hunter_snipershot",
+       "icon": "hunter_pvp_snipershot",
        "row": 7,
        "col": 2,
        "maxRanks": 1,
@@ -6426,7 +6426,7 @@ window.TALENT_DATA={
       {
        "key": "survival-1-2",
        "name_en": "Improved Tracking",
-       "icon": "ability_hunter_improvedtracking",
+       "icon": "inv_misc_head_dragon_black",
        "row": 1,
        "col": 2,
        "maxRanks": 5,
@@ -6845,7 +6845,7 @@ window.TALENT_DATA={
       {
        "key": "survival-4-1",
        "name_en": "Survival Tactics",
-       "icon": "ability_rogue_feint",
+       "icon": "ability_ensnare",
        "row": 4,
        "col": 1,
        "maxRanks": 2,
@@ -6884,7 +6884,7 @@ window.TALENT_DATA={
       {
        "key": "survival-4-2",
        "name_en": "Predator's Edge",
-       "icon": "ability_hunter_huntingparty",
+       "icon": "ability_hunter_hatchettoss",
        "row": 4,
        "col": 2,
        "maxRanks": 5,
@@ -7016,7 +7016,7 @@ window.TALENT_DATA={
       {
        "key": "survival-5-2",
        "name_en": "Expose Prey",
-       "icon": "ability_hunter_markedfordeath",
+       "icon": "ability_hunter_swiftstrike",
        "row": 5,
        "col": 2,
        "maxRanks": 2,
@@ -7055,7 +7055,7 @@ window.TALENT_DATA={
       {
        "key": "survival-5-3",
        "name_en": "Survivalist's Discipline",
-       "icon": "ability_hunter_survivalinstincts",
+       "icon": "ability_hunter_mastertactitian",
        "row": 5,
        "col": 3,
        "maxRanks": 2,
@@ -7186,7 +7186,7 @@ window.TALENT_DATA={
       {
        "key": "survival-7-2",
        "name_en": "Lacerating Strikes",
-       "icon": "ability_druid_lacerate",
+       "icon": "ability_gouge",
        "row": 7,
        "col": 2,
        "maxRanks": 1,
@@ -7857,7 +7857,7 @@ window.TALENT_DATA={
       {
        "key": "assassination-5-2",
        "name_en": "Mutilate",
-       "icon": "ability_rogue_shadowstrikes",
+       "icon": "ability_rogue_deadlybrew",
        "row": 5,
        "col": 2,
        "maxRanks": 1,
@@ -7989,7 +7989,7 @@ window.TALENT_DATA={
       {
        "key": "assassination-7-2",
        "name_en": "Venom",
-       "icon": "ability_rogue_deadlybrew",
+       "icon": "inv_sword_31",
        "row": 7,
        "col": 2,
        "maxRanks": 1,
@@ -9028,7 +9028,7 @@ window.TALENT_DATA={
       {
        "key": "subtlety-2-3",
        "name_en": "Dirty Tricks",
-       "icon": "ability_rogue_dirtydeeds",
+       "icon": "ability_sap",
        "row": 2,
        "col": 3,
        "maxRanks": 2,
@@ -9469,7 +9469,7 @@ window.TALENT_DATA={
       {
        "key": "subtlety-6-1",
        "name_en": "Quietus",
-       "icon": "ability_rogue_quickrecovery",
+       "icon": "ability_rogue_garrote",
        "row": 6,
        "col": 1,
        "maxRanks": 5,
@@ -9523,7 +9523,7 @@ window.TALENT_DATA={
       {
        "key": "subtlety-6-3",
        "name_en": "Cutthroat",
-       "icon": "ability_rogue_cuttothechase",
+       "icon": "classicon_rogue",
        "row": 6,
        "col": 3,
        "maxRanks": 5,
@@ -9577,7 +9577,7 @@ window.TALENT_DATA={
       {
        "key": "subtlety-7-2",
        "name_en": "Thousand Cuts",
-       "icon": "ability_rogue_shadowstrikes",
+       "icon": "ability_rogue_rupture",
        "row": 7,
        "col": 2,
        "maxRanks": 1,
@@ -9656,7 +9656,7 @@ window.TALENT_DATA={
       {
        "key": "discipline-1-1",
        "name_en": "Power in Light",
-       "icon": "spell_holy_searinglightpriest",
+       "icon": "spell_holy_searinglight",
        "row": 1,
        "col": 1,
        "maxRanks": 5,
@@ -9847,7 +9847,7 @@ window.TALENT_DATA={
       {
        "key": "discipline-2-2",
        "name_en": "Holy Precision",
-       "icon": "spell_holy_surgeoflight",
+       "icon": "spell_holy_divineillumination",
        "row": 2,
        "col": 2,
        "maxRanks": 3,
@@ -10198,7 +10198,7 @@ window.TALENT_DATA={
       {
        "key": "discipline-4-3",
        "name_en": "Soul Warding",
-       "icon": "spell_holy_powerwordshield",
+       "icon": "spell_holy_pureofheart",
        "row": 4,
        "col": 3,
        "maxRanks": 1,
@@ -10480,7 +10480,7 @@ window.TALENT_DATA={
       {
        "key": "holy-1-1",
        "name_en": "Twilight Focus",
-       "icon": "spell_holy_layonhands",
+       "icon": "spell_holy_healingfocus",
        "row": 1,
        "col": 1,
        "maxRanks": 3,
@@ -11012,7 +11012,7 @@ window.TALENT_DATA={
       {
        "key": "holy-5-1",
        "name_en": "Litany of Light",
-       "icon": "spell_holy_holyguidance",
+       "icon": "inv_scroll_07",
        "row": 5,
        "col": 1,
        "maxRanks": 2,
@@ -11655,7 +11655,7 @@ window.TALENT_DATA={
       {
        "key": "shadow-magic-3-4",
        "name_en": "Improved Mind Flay",
-       "icon": "spell_shadow_siphonmana",
+       "icon": "spell_shadow_soulleech_2",
        "row": 3,
        "col": 4,
        "maxRanks": 2,
@@ -12110,7 +12110,7 @@ window.TALENT_DATA={
       {
        "key": "elemental-combat-1-3",
        "name_en": "Concussion",
-       "icon": "spell_fire_fireball",
+       "icon": "spell_nature_earthshock",
        "row": 1,
        "col": 3,
        "maxRanks": 5,
@@ -12305,7 +12305,7 @@ window.TALENT_DATA={
       {
        "key": "elemental-combat-2-4",
        "name_en": "Elemental Devastation",
-       "icon": "classic_spell_fire_elementaldevastation",
+       "icon": "spell_fire_elementaldevastation",
        "row": 2,
        "col": 4,
        "maxRanks": 3,
@@ -12635,7 +12635,7 @@ window.TALENT_DATA={
       {
        "key": "elemental-combat-5-4",
        "name_en": "Earthbound",
-       "icon": "spell_nature_strengthofearthtotem02",
+       "icon": "spell_nature_stranglevines",
        "row": 5,
        "col": 4,
        "maxRanks": 1,
@@ -12669,7 +12669,7 @@ window.TALENT_DATA={
       {
        "key": "elemental-combat-6-3",
        "name_en": "Elemental Alacrity",
-       "icon": "spell_nature_unrelentingstorm",
+       "icon": "spell_lightning_lightningbolt01",
        "row": 6,
        "col": 3,
        "maxRanks": 3,
@@ -13308,7 +13308,7 @@ window.TALENT_DATA={
       {
        "key": "enhancement-4-3",
        "name_en": "Stormstrike",
-       "icon": "spell_holy_sealofmight",
+       "icon": "ability_shaman_stormstrike",
        "row": 4,
        "col": 3,
        "maxRanks": 1,
@@ -13380,7 +13380,7 @@ window.TALENT_DATA={
       {
        "key": "enhancement-5-2",
        "name_en": "Mental Quickness",
-       "icon": "spell_nature_mentalquickness",
+       "icon": "spell_nature_sleep",
        "row": 5,
        "col": 2,
        "maxRanks": 2,
@@ -13419,7 +13419,7 @@ window.TALENT_DATA={
       {
        "key": "enhancement-5-3",
        "name_en": "Improved Stormstrike",
-       "icon": "ability_shaman_stormstrike",
+       "icon": "spell_shaman_improvedstormstrike",
        "row": 5,
        "col": 3,
        "maxRanks": 2,
@@ -13753,7 +13753,7 @@ window.TALENT_DATA={
       {
        "key": "restoration-2-2",
        "name_en": "Natural Grace",
-       "icon": "spell_nature_naturetouchgrow",
+       "icon": "spell_nature_healingtouch",
        "row": 2,
        "col": 2,
        "maxRanks": 3,
@@ -14170,7 +14170,7 @@ window.TALENT_DATA={
       {
        "key": "restoration-5-2",
        "name_en": "Healing Way",
-       "icon": "classic_spell_nature_healingway",
+       "icon": "spell_nature_healingway",
        "row": 5,
        "col": 2,
        "maxRanks": 3,
@@ -14476,7 +14476,7 @@ window.TALENT_DATA={
       {
        "key": "arcane-1-3",
        "name_en": "Improved Channeling",
-       "icon": "spell_holy_mindvision",
+       "icon": "spell_nature_starfall",
        "row": 1,
        "col": 3,
        "maxRanks": 5,
@@ -14706,7 +14706,7 @@ window.TALENT_DATA={
       {
        "key": "arcane-3-1",
        "name_en": "Arcane Geometry",
-       "icon": "spell_arcane_arcane01",
+       "icon": "inv_ability_mage_radiantspark",
        "row": 3,
        "col": 1,
        "maxRanks": 2,
@@ -14745,7 +14745,7 @@ window.TALENT_DATA={
       {
        "key": "arcane-3-2",
        "name_en": "Arcane Impact",
-       "icon": "spell_nature_starfall",
+       "icon": "spell_nature_wispsplode",
        "row": 3,
        "col": 2,
        "maxRanks": 3,
@@ -15180,7 +15180,7 @@ window.TALENT_DATA={
       {
        "key": "fire-1-1",
        "name_en": "Wake of Fire",
-       "icon": "spell_fire_fireball",
+       "icon": "spell_fire_lavaspawn",
        "row": 1,
        "col": 1,
        "maxRanks": 2,
@@ -15588,7 +15588,7 @@ window.TALENT_DATA={
       {
        "key": "fire-4-1",
        "name_en": "Improved Scorch",
-       "icon": "spell_fire_soulburn",
+       "icon": "spell_fire_windsofwoe",
        "row": 4,
        "col": 1,
        "maxRanks": 3,
@@ -16992,7 +16992,7 @@ window.TALENT_DATA={
       {
        "key": "affliction-2-2",
        "name_en": "Soul Harvesting",
-       "icon": "spell_shadow_soulgem",
+       "icon": "inv_elemental_primal_shadow",
        "row": 2,
        "col": 2,
        "maxRanks": 2,
@@ -17031,7 +17031,7 @@ window.TALENT_DATA={
       {
        "key": "affliction-2-3",
        "name_en": "Improved Drains",
-       "icon": "spell_shadow_lifedrain02",
+       "icon": "spell_shadow_haunting",
        "row": 2,
        "col": 3,
        "maxRanks": 3,
@@ -17240,7 +17240,7 @@ window.TALENT_DATA={
       {
        "key": "affliction-4-1",
        "name_en": "Malevolence",
-       "icon": "spell_shadow_deathpact",
+       "icon": "spell_shadow_focusedpower",
        "row": 4,
        "col": 1,
        "maxRanks": 5,
@@ -17410,7 +17410,7 @@ window.TALENT_DATA={
       {
        "key": "affliction-5-3",
        "name_en": "Soul Siphon",
-       "icon": "spell_shadow_soulleech_3",
+       "icon": "spell_shadow_lifedrain02",
        "row": 5,
        "col": 3,
        "maxRanks": 3,
@@ -17879,7 +17879,7 @@ window.TALENT_DATA={
       {
        "key": "demonology-2-3",
        "name_en": "Fel Vitality",
-       "icon": "spell_shadow_demonicfortitude",
+       "icon": "spell_shadow_demonictactics",
        "row": 2,
        "col": 3,
        "maxRanks": 3,
@@ -17923,7 +17923,7 @@ window.TALENT_DATA={
       {
        "key": "demonology-2-4",
        "name_en": "Demonic Energies",
-       "icon": "spell_shadow_demonicempathy",
+       "icon": "spell_shadow_felmending",
        "row": 2,
        "col": 4,
        "maxRanks": 2,
@@ -18164,7 +18164,7 @@ window.TALENT_DATA={
       {
        "key": "demonology-4-4",
        "name_en": "Demonic Brand",
-       "icon": "spell_shadow_demonbreath",
+       "icon": "ability_demonhunter_chaoticimprint_fire",
        "row": 4,
        "col": 4,
        "maxRanks": 3,
@@ -18388,7 +18388,7 @@ window.TALENT_DATA={
       {
        "key": "demonology-7-2",
        "name_en": "Demonic Pact",
-       "icon": "spell_shadow_demonicpact",
+       "icon": "inv_ability_soulharvesterwarlock_demonicsoul",
        "row": 7,
        "col": 2,
        "maxRanks": 1,
@@ -18900,7 +18900,7 @@ window.TALENT_DATA={
       {
        "key": "destruction-4-2",
        "name_en": "Agonizing Flames",
-       "icon": "spell_fire_immolation",
+       "icon": "spell_fire_soulburn",
        "row": 4,
        "col": 2,
        "maxRanks": 3,
@@ -19059,7 +19059,7 @@ window.TALENT_DATA={
       {
        "key": "destruction-5-3",
        "name_en": "Fire and Brimstone",
-       "icon": "ability_warlock_fireandbrimstone",
+       "icon": "spell_fire_meteorstorm",
        "row": 5,
        "col": 3,
        "maxRanks": 3,
@@ -19103,7 +19103,7 @@ window.TALENT_DATA={
       {
        "key": "destruction-6-3",
        "name_en": "Shadow and Flame",
-       "icon": "spell_shadow_shadowandflame",
+       "icon": "spell_fire_playingwithfire",
        "row": 6,
        "col": 3,
        "maxRanks": 5,
@@ -19444,7 +19444,7 @@ window.TALENT_DATA={
       {
        "key": "balance-2-3",
        "name_en": "Nature's Majesty",
-       "icon": "spell_nature_wispsplode",
+       "icon": "inv_staff_01",
        "row": 2,
        "col": 3,
        "maxRanks": 2,
@@ -19572,7 +19572,7 @@ window.TALENT_DATA={
       {
        "key": "balance-3-3",
        "name_en": "Nature's Splendor",
-       "icon": "spell_nature_naturesblessing",
+       "icon": "spell_nature_natureresistancetotem",
        "row": 3,
        "col": 3,
        "maxRanks": 1,
@@ -19751,7 +19751,7 @@ window.TALENT_DATA={
       {
        "key": "balance-5-1",
        "name_en": "Overgrowth",
-       "icon": "ability_druid_flourish",
+       "icon": "inv_misc_herb_15",
        "row": 5,
        "col": 1,
        "maxRanks": 2,
@@ -20112,7 +20112,7 @@ window.TALENT_DATA={
       {
        "key": "feral-combat-2-1",
        "name_en": "Feral Swiftness",
-       "icon": "ability_druid_dash",
+       "icon": "spell_nature_spiritwolf",
        "row": 2,
        "col": 1,
        "maxRanks": 2,
@@ -20746,7 +20746,7 @@ window.TALENT_DATA={
       {
        "key": "feral-combat-6-3",
        "name_en": "Rend and Tear",
-       "icon": "ability_druid_swipe",
+       "icon": "ability_druid_primalagression",
        "row": 6,
        "col": 3,
        "maxRanks": 5,
@@ -21217,7 +21217,7 @@ window.TALENT_DATA={
       {
        "key": "restoration-3-4",
        "name_en": "Gift of the Earthmother",
-       "icon": "ability_druid_manatree",
+       "icon": "spell_nature_spiritarmor",
        "row": 3,
        "col": 4,
        "maxRanks": 1,
@@ -21422,7 +21422,7 @@ window.TALENT_DATA={
       {
        "key": "restoration-5-2",
        "name_en": "Living Spirit",
-       "icon": "spell_nature_giftofthewild",
+       "icon": "spell_nature_giftofthewaterspirit",
        "row": 5,
        "col": 2,
        "maxRanks": 3,
