@@ -21659,7 +21659,7 @@ window.TALENT_FR={
    "Energy": "d’énergie"
   },
   "ranges": {
-   "Melee": "Corps à corps",
+   "Melee": "Allonge",
    "8-35": "8 à 35 m",
    "8 - 25": "8 à 25 m"
   },
@@ -22579,9 +22579,9 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "spell": 19578,
    "classic": "Tant que votre familier est actif, vous et votre familier retrouvez 1% du total de vos points de vie toutes les 10 sec.",
-   "rank1": "Tant que votre familier est actif, vous et votre familier retrouvez 1% du total de vos points de vie toutes les 10 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Tant que votre familier est actif, vous et votre familier récupérez 1 % du total de vos points de vie toutes les 10 s.",
+   "textSource": "client-forever",
+   "nameBranch": "forever"
   },
   "chasseur/beast-mastery-5-2": {
    "name": "Intimidation",
@@ -22642,26 +22642,26 @@ window.TALENT_FR={
    "nameBranch": "classic"
   },
   "chasseur/marksmanship-1-3": {
-   "name": "Coups fatals",
-   "nameSource": "adapte",
+   "name": "Attaques mortelles",
+   "nameSource": "officiel",
    "spell": 19426,
    "classic": "Augmente vos chances de coup critique avec les armes à distance de1 %.",
-   "note": "Forever a renommé ce talent : le client français ne connaît que « Coups fatals » (anciennement « Lethal Shots »).",
-   "nameBranch": "classic",
-   "rank1": "Augmente de 1% vos chances de coup critique avec toutes vos attaques.",
-   "textSource": "editorial"
+   "nameBranch": "forever",
+   "rank1": "Augmente de 1 % vos chances d’infliger un coup critique avec toutes vos attaques.",
+   "textSource": "client-forever"
   },
   "chasseur/marksmanship-2-1": {
-   "name": "Morsures améliorées",
-   "nameSource": "adapte",
-   "note": "Forever a élargi ce talent aux trois morsures ; le pluriel le distingue de « Morsure de serpent améliorée », que la bêta rétablit en (4,4) avec le sort 19464 dont ce nom officiel provient.",
+   "name": "Morsures et piqûres améliorées",
+   "nameSource": "officiel",
    "ranks": [
-    "Augmente de 6% les points de dégâts de votre technique Morsure de serpent, réduit de 2 sec le temps de recharge de votre Morsure de vipère et augmente de 15 sec la durée de votre Morsure de scorpide.",
-    "Augmente de 13% les points de dégâts de votre technique Morsure de serpent, réduit de 4 sec le temps de recharge de votre Morsure de vipère et augmente de 30 sec la durée de votre Morsure de scorpide.",
-    "Augmente de 20% les points de dégâts de votre technique Morsure de serpent, réduit de 6 sec le temps de recharge de votre Morsure de vipère et augmente de 45 sec la durée de votre Morsure de scorpide."
+    "Augmente les dégâts de votre Morsure de serpent de 6 %, réduit le temps de recharge de votre Morsure de vipère de 2 s et prolonge la durée de votre Piqûre de scorpide de 15 s.",
+    "Augmente les dégâts de votre Morsure de serpent de 13 %, réduit le temps de recharge de votre Morsure de vipère de 4 s et prolonge la durée de votre Piqûre de scorpide de 30 s.",
+    "Augmente les dégâts de votre Morsure de serpent de 20 %, réduit le temps de recharge de votre Morsure de vipère de 6 s et prolonge la durée de votre Piqûre de scorpide de 45 s."
    ],
-   "rank1": "Augmente de 6% les points de dégâts de votre technique Morsure de serpent, réduit de 2 sec le temps de recharge de votre Morsure de vipère et augmente de 15 sec la durée de votre Morsure de scorpide.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts de votre Morsure de serpent de 6 %, réduit le temps de recharge de votre Morsure de vipère de 2 s et prolonge la durée de votre Piqûre de scorpide de 15 s.",
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "spell": 1310661
   },
   "chasseur/marksmanship-2-2": {
    "name": "Efficacité",
@@ -22732,14 +22732,13 @@ window.TALENT_FR={
    "nameBranch": "classic"
   },
   "chasseur/marksmanship-7-2": {
-   "name": "Visée",
-   "nameSource": "adapte",
-   "spell": 19434,
+   "name": "Tir de précision",
+   "nameSource": "officiel",
+   "spell": 1310687,
    "classic": "Un tir précis qui augmente les points de dégâts infligés par votre attaque à distance de 70.",
-   "note": "Forever a renommé ce talent : le client français ne connaît que « Visée » (anciennement « Aimed Shot »).",
-   "nameBranch": "classic",
-   "rank1": "Un tir posé qui augmente de 160 les points de dégâts de votre attaque à distance.",
-   "textSource": "editorial"
+   "nameBranch": "forever",
+   "rank1": "Un tir précis qui augmente de 160 les points de dégâts infligés par votre attaque à distance.",
+   "textSource": "client-forever"
   },
   "chasseur/survival-1-3": {
    "name": "Déviation",
@@ -25330,10 +25329,10 @@ window.TALENT_FR={
   "chasseur/beast-mastery-2-1": {
    "name": "Feu focalisé",
    "nameSource": "officiel",
-   "nameBranch": "tbc",
-   "spell": 35029,
-   "rank1": "Augmente de 1% tous les dégâts que vous et votre familier infligez tant que votre familier est actif.",
-   "textSource": "editorial"
+   "nameBranch": "forever",
+   "spell": 1223755,
+   "rank1": "Augmente de 1 % tous les dégâts que vous et votre familier infligez tant que ce dernier est actif.",
+   "textSource": "client-forever"
   },
   "chasseur/marksmanship-2-3": {
    "name": "Visée minutieuse",
@@ -25387,16 +25386,17 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "chasseur/survival-5-1": {
-   "name": "Ressource",
+   "name": "Ingéniosité",
    "nameSource": "officiel",
-   "nameBranch": "tbc",
-   "spell": 34491,
+   "nameBranch": "forever",
+   "spell": 440529,
    "ranks": [
-    "Réduit de 30% le coût en mana de vos techniques de Piège et de mêlée. De plus, vos coups critiques ont 30% de chances de permettre à 50% de votre régénération de mana de se poursuivre pendant l’incantation durant 30 sec.",
-    "Réduit de 60% le coût en mana de vos techniques de Piège et de mêlée. De plus, vos coups critiques ont 60% de chances de permettre à 50% de votre régénération de mana de se poursuivre pendant l’incantation durant 30 sec."
+    "Réduit de 30 % le coût en mana de vos techniques de Piège et techniques en mêlée. De plus, vos coups critiques ont 30 % de chances de permettre à 50 % de votre régénération de mana de se poursuivre lors des incantations pendant 30 sec.",
+    "Réduit de 60 % le coût en mana de vos techniques de Piège et techniques en mêlée. De plus, vos coups critiques ont 60 % de chances de permettre à 50 % de votre régénération de mana de se poursuivre lors des incantations pendant 30 sec."
    ],
-   "rank1": "Réduit de 30% le coût en mana de vos techniques de Piège et de mêlée. De plus, vos coups critiques ont 30% de chances de permettre à 50% de votre régénération de mana de se poursuivre pendant l’incantation durant 30 sec.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 30 % le coût en mana de vos techniques de Piège et techniques en mêlée. De plus, vos coups critiques ont 30 % de chances de permettre à 50 % de votre régénération de mana de se poursuivre lors des incantations pendant 30 sec.",
+   "textSource": "client-forever",
+   "note": "Nous portions « Ressource », nom officiel de ce talent en Burning Crusade. Le client de Forever emploie « Ingéniosité » : un nom officiel d’une extension antérieure ne dit rien du nom retenu par Forever."
   },
   "voleur/assassination-5-2": {
    "name": "Estropier",
@@ -25911,39 +25911,51 @@ window.TALENT_FR={
   },
   "chasseur/marksmanship-3-4": {
    "name": "Loup solitaire",
-   "nameSource": "adapte",
-   "rank1": "Vous infligez 20% de dégâts supplémentaires avec toutes vos attaques tant que vous n’avez pas de familier actif.",
-   "textSource": "editorial"
+   "nameSource": "officiel",
+   "rank1": "Vous infligez 20 % de dégâts supplémentaires avec toutes vos attaques tant que vous n’avez pas de familier actif.",
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "spell": 415370
   },
   "chasseur/survival-4-2": {
-   "name": "Tranchant du prédateur",
-   "nameSource": "adapte",
-   "rank1": "Augmente de 6% les dégâts de vos coups critiques de mêlée et de 10% les dégâts de votre arme de main gauche.",
-   "textSource": "editorial"
+   "name": "Tranchant de prédateur",
+   "nameSource": "officiel",
+   "rank1": "Augmente de 6 % les dégâts des coups critiques de vos techniques de mêlée et de 10 % les dégâts de votre arme en main gauche.",
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "spell": 1310627
   },
   "chasseur/survival-5-2": {
-   "name": "Proie exposée",
-   "nameSource": "adapte",
-   "rank1": "Vos attaques contre des cibles portant la Marque du chasseur ont 5% de chances d’activer votre Morsure de la mangouste pendant 5 sec.",
-   "textSource": "editorial"
+   "name": "Exposition de proie",
+   "nameSource": "officiel",
+   "rank1": "Vos attaques contre les cibles portant la Marque du chasseur ont 5 % de chances d’activer votre Morsure de mangouste pendant 5 sec.",
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "spell": 1310532
   },
   "chasseur/survival-5-3": {
-   "name": "Discipline du survivant",
-   "nameSource": "adapte",
-   "rank1": "Réduit de 20% le temps de recharge de vos techniques Piège et Dissuasion.",
-   "textSource": "editorial"
+   "name": "Discipline de survivaliste",
+   "nameSource": "officiel",
+   "rank1": "Réduit de 20 % le temps de recharge de vos techniques Piège et Dissuasion.",
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "spell": 1310496
   },
   "chasseur/survival-5-4": {
-   "name": "Coup d’arpenteur",
-   "nameSource": "adapte",
-   "rank1": "Un coup de pied puissant qui inflige 100% des dégâts de votre arme de mêlée.",
-   "textSource": "editorial"
+   "name": "Coup de trotteur",
+   "nameSource": "officiel",
+   "rank1": "Un coup puissant qui inflige 100 % des dégâts de l’arme de mêlée.",
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "spell": 1317257
   },
   "chasseur/survival-7-2": {
    "name": "Frappes lacérantes",
-   "nameSource": "adapte",
-   "rank1": "Votre Morsure de la mangouste fait également saigner la cible, lui infligeant sur 21 sec des dégâts égaux à 40% de ceux de la Morsure de la mangouste.",
-   "textSource": "editorial"
+   "nameSource": "officiel",
+   "rank1": "Votre Morsure de mangouste fait également saigner la cible, ce qui lui inflige 40 % des dégâts de la morsure en 21 sec.",
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "spell": 1310533
   },
   "voleur/assassination-7-2": {
    "name": "Venin",
