@@ -1932,7 +1932,7 @@ window.TALENT_DATA={
        "maxRanks": 1,
        "pointsRequired": 10,
        "prerequisite": "protection-2-1",
-       "arrow": null,
+       "arrow": "l1",
        "kind": "actif",
        "skill": {
         "cost": null,
@@ -2997,7 +2997,7 @@ window.TALENT_DATA={
        "maxRanks": 5,
        "pointsRequired": 15,
        "prerequisite": "holy-3-2",
-       "arrow": null,
+       "arrow": "l1",
        "kind": "passif",
        "skill": null,
        "costLine": null,
@@ -3742,7 +3742,7 @@ window.TALENT_DATA={
        "maxRanks": 1,
        "pointsRequired": 15,
        "prerequisite": "protection-3-1",
-       "arrow": null,
+       "arrow": "l1",
        "kind": "actif",
        "skill": {
         "cost": null,
@@ -5560,7 +5560,7 @@ window.TALENT_DATA={
        "maxRanks": 1,
        "pointsRequired": 30,
        "prerequisite": "beast-mastery-5-2",
-       "arrow": null,
+       "arrow": "l2",
        "kind": "actif",
        "skill": {
         "cost": "125 Mana",
@@ -8361,8 +8361,8 @@ window.TALENT_DATA={
        "col": 2,
        "maxRanks": 1,
        "pointsRequired": 10,
-       "prerequisite": null,
-       "arrow": null,
+       "prerequisite": "combat-2-2",
+       "arrow": "l1",
        "kind": "actif",
        "skill": {
         "cost": "10 Energy",
@@ -8695,7 +8695,7 @@ window.TALENT_DATA={
        "col": 3,
        "maxRanks": 3,
        "pointsRequired": 25,
-       "prerequisite": "combat-5-3",
+       "prerequisite": null,
        "arrow": null,
        "kind": "passif",
        "skill": null,
@@ -9474,8 +9474,8 @@ window.TALENT_DATA={
        "col": 1,
        "maxRanks": 5,
        "pointsRequired": 25,
-       "prerequisite": null,
-       "arrow": null,
+       "prerequisite": "subtlety-5-1",
+       "arrow": "l1",
        "kind": "passif",
        "skill": null,
        "costLine": null,
@@ -13654,8 +13654,8 @@ window.TALENT_DATA={
       },
       {
        "key": "restoration-1-3",
-       "name_en": "Tidal Mastery",
-       "icon": "spell_nature_tranquility",
+       "name_en": "Totemic Focus",
+       "icon": "spell_nature_moonglow",
        "row": 1,
        "col": 3,
        "maxRanks": 5,
@@ -13669,27 +13669,27 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Increases the critical effect chance of your healing spells by 1%.",
+         "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 5%.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Increases the critical effect chance of your healing spells by 2%.",
+         "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 10%.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Increases the critical effect chance of your healing spells by 3%.",
+         "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 15%.",
          "observed": true
         },
         {
          "rank": 4,
-         "text": "Increases the critical effect chance of your healing spells by 4%.",
+         "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 20%.",
          "observed": true
         },
         {
          "rank": 5,
-         "text": "Increases the critical effect chance of your healing spells by 5%.",
+         "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 25%.",
          "observed": true
         }
        ],
@@ -13697,7 +13697,7 @@ window.TALENT_DATA={
        "extra": null,
        "fullyObserved": true,
        "changeFromClassic": "changed",
-       "classicText": "Increases the critical effect chance of your healing and lightning spells by 1%.",
+       "classicText": "Reduces the Mana cost of your totems by 5%.",
        "classicRenamedFrom": null,
        "divergences": [],
        "presentIn": [
@@ -14021,8 +14021,8 @@ window.TALENT_DATA={
       },
       {
        "key": "restoration-4-1",
-       "name_en": "Totemic Focus",
-       "icon": "spell_nature_moonglow",
+       "name_en": "Tidal Mastery",
+       "icon": "spell_nature_tranquility",
        "row": 4,
        "col": 1,
        "maxRanks": 5,
@@ -14036,27 +14036,27 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 5%.",
+         "text": "Increases the critical effect chance of your healing spells by 1%.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 10%.",
+         "text": "Increases the critical effect chance of your healing spells by 2%.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 15%.",
+         "text": "Increases the critical effect chance of your healing spells by 3%.",
          "observed": true
         },
         {
          "rank": 4,
-         "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 20%.",
+         "text": "Increases the critical effect chance of your healing spells by 4%.",
          "observed": true
         },
         {
          "rank": 5,
-         "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 25%.",
+         "text": "Increases the critical effect chance of your healing spells by 5%.",
          "observed": true
         }
        ],
@@ -14064,7 +14064,7 @@ window.TALENT_DATA={
        "extra": null,
        "fullyObserved": true,
        "changeFromClassic": "changed",
-       "classicText": "Reduces the Mana cost of your totems by 5%.",
+       "classicText": "Increases the critical effect chance of your healing and lightning spells by 1%.",
        "classicRenamedFrom": null,
        "divergences": [],
        "presentIn": [
@@ -18949,7 +18949,7 @@ window.TALENT_DATA={
        "col": 3,
        "maxRanks": 1,
        "pointsRequired": 15,
-       "prerequisite": "destruction-3-3",
+       "prerequisite": null,
        "arrow": null,
        "kind": "actif",
        "skill": {
@@ -23938,12 +23938,19 @@ window.TALENT_FR={
    "nameBranch": "classic"
   },
   "chaman/restoration-1-3": {
-   "name": "Maîtrise des flots",
+   "name": "Focalisation totémique",
    "nameSource": "officiel",
-   "spell": 16194,
-   "classic": "Augmente les chances d'obtenir un effet critique avec vos sorts de soins et d'éclair de 1%.",
+   "spell": 16173,
+   "classic": "Réduit le coût en mana de vos sorts Totem de 5%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% les chances d’effet critique de vos sorts de soins.",
+   "ranks": [
+    "Réduit de 5% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
+    "Réduit de 10% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
+    "Réduit de 15% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
+    "Réduit de 20% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
+    "Réduit de 25% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent."
+   ],
+   "rank1": "Réduit de 5% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
    "textSource": "editorial"
   },
   "chaman/restoration-2-2": {
@@ -24004,19 +24011,12 @@ window.TALENT_FR={
    "nameBranch": "classic"
   },
   "chaman/restoration-4-1": {
-   "name": "Focalisation totémique",
+   "name": "Maîtrise des flots",
    "nameSource": "officiel",
-   "spell": 16173,
-   "classic": "Réduit le coût en mana de vos sorts Totem de 5%.",
+   "spell": 16194,
+   "classic": "Augmente les chances d'obtenir un effet critique avec vos sorts de soins et d'éclair de 1%.",
    "nameBranch": "classic",
-   "ranks": [
-    "Réduit de 5% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
-    "Réduit de 10% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
-    "Réduit de 15% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
-    "Réduit de 20% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
-    "Réduit de 25% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent."
-   ],
-   "rank1": "Réduit de 5% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
+   "rank1": "Augmente de 1% les chances d’effet critique de vos sorts de soins.",
    "textSource": "editorial"
   },
   "chaman/restoration-4-2": {
