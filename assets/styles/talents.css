@@ -155,21 +155,30 @@
 .tree-notes li + li { margin-top: 6px; }
 .tree-notes strong { color: var(--panel-fg); }
 
-/* ── Infobulle : reste sur ardoise, comme le langage du jeu ─────────────────── */
-.talent-detail { width: 330px; background: #14171b; border: 1px solid #4c545c; border-radius: 8px; padding: 14px; box-shadow: 0 16px 44px rgba(0,0,0,.45); font-size: 12.5px; line-height: 1.6; color: #E7E4DA; }
+/* ── Infobulle : reste sur ardoise, comme le langage du jeu ───────────────────
+   Le jeu ne dore que la description de l'effet — titre, rang et ligne de coût y
+   sont blancs. Nous faisions l'inverse. --wow-or est relevé sur une capture du
+   client : #FFD200 au cœur des glyphes, soit le NORMAL_FONT_COLOR de WoW
+   (1 / 0,82 / 0 = #FFD100) à une unité de vert près.
+   La police du client est un sans-serif humaniste, plus le Friz Quadrata des
+   anciennes versions. Noto Sans en est le plus proche parmi les fontes libres ;
+   la pile essaie d'abord celles installées avec le jeu, si le lecteur les a. */
+.talent-detail { --wow-or: #FFD100;
+  width: 330px; background: #14171b; border: 1px solid #4c545c; border-radius: 8px; padding: 14px; box-shadow: 0 16px 44px rgba(0,0,0,.45); font-size: 12.5px; line-height: 1.6; color: #E7E4DA;
+  font-family: 'Friz Quadrata TT', 'Noto Sans', 'Open Sans', 'Hanken Grotesk', system-ui, sans-serif; }
 .talent-detail.floating { z-index: 60; pointer-events: none; }
 .talent-detail.sheet { position: fixed; z-index: 60; left: 50%; bottom: 14px; transform: translateX(-50%); width: min(330px, calc(100vw - 28px)); max-height: 64vh; overflow: auto; }
 .detail-head { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
-.detail-head h3 { font: 500 16px/1.25 'Newsreader', Georgia, serif; color: #F2C14E; margin: 0; }
+.detail-head h3 { font: 600 15.5px/1.3 inherit; color: #F4F2EC; margin: 0; }
 .detail-head button { background: none; border: 0; color: #8d959c; font-size: 20px; line-height: 1; padding: 0 4px; cursor: pointer; }
 .detail-original { display: block; font-size: 11px; color: #7d858c; font-style: italic; margin-top: 1px; }
 .detail-skill { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 9px 0 0; }
 .detail-skill dt { font-size: 10px; letter-spacing: .7px; color: #8d959c; text-transform: uppercase; }
 .detail-skill dd { margin: 0; color: #d3d9de; }
 .detail-cost { margin: 9px 0 0; color: #a3abb2; font-size: 11.5px; }
-.detail-text { margin: 10px 0 0; color: #dde1e5; }
-.detail-next { margin: 8px 0 0; padding: 7px 9px; background: #1c2026; border-radius: 6px; color: #b2bac1; }
-.detail-next strong { color: #F2C14E; font-weight: 600; }
+.detail-text { margin: 10px 0 0; color: var(--wow-or); }
+.detail-next { margin: 8px 0 0; padding: 7px 9px; background: #1c2026; border-radius: 6px; color: var(--wow-or); }
+.detail-next strong { color: #F4F2EC; font-weight: 600; }
 .detail-guess { color: #d9b876; font-style: italic; }
 .detail-req { margin: 7px 0 0; display: flex; gap: 6px; align-items: baseline; color: #99a1a8; font-size: 11.5px; }
 .detail-extra { margin: 8px 0 0; padding-left: 16px; color: #99a1a8; font-size: 11.5px; }
