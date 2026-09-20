@@ -796,7 +796,7 @@ window.LEGACY_DATA={
 window.LEGACY_FR={
  "version": 1,
  "updatedAt": "2026-09-20",
- "method": "Le système Legacy est localisé depuis l’ouverture de la bêta. Les noms et les textes marqués « client-forever » sont relevés tels quels dans le client français du jeu : c’est la meilleure provenance possible, et elle remplace la traduction éditoriale que cette couche portait jusque-là. Les rangs au-delà du premier sont dérivés du rang 1 en y réinjectant les nombres du rang anglais correspondant. Les entrées sans cette marque restent éditoriales, faute d’avoir été relevées en jeu. Les emplacements non révélés n’ont volontairement pas d’entrée : le client les nomme « Inconnu », mais la page explique à leur place pourquoi la case est vide, ce qui renseigne mieux le lecteur.",
+ "method": "Le système Legacy est localisé depuis l’ouverture de la bêta. Les noms et les textes marqués « client-forever » sont relevés tels quels dans le client français du jeu : c’est la meilleure provenance possible, et elle remplace la traduction éditoriale que cette couche portait jusque-là. Les rangs au-delà du premier sont dérivés du rang 1 en y réinjectant les nombres du rang anglais correspondant. Les entrées sans cette marque restent éditoriales, faute d’avoir été relevées en jeu. Les emplacements non révélés n’ont volontairement pas d’entrée : le client les nomme « Inconnu », mais la page explique à leur place pourquoi la case est vide, ce qui renseigne mieux le lecteur. Deux noms — Cordon bleu et Renforcer — viennent des tables frFR du client lues via wago.tools, faute de capture les couvrant.",
  "trees": {
   "professions": "Métiers",
   "adventure": "Aventure",
@@ -809,14 +809,15 @@ window.LEGACY_FR={
  },
  "entries": {
   "professions-1-3": {
-   "name": "Chef cuisinier",
+   "name": "Cordon bleu",
    "ranks": [
     "Vos recettes de cuisine ont 10% de chances de produire un résultat supplémentaire.",
     "Vos recettes de cuisine ont 20% de chances de produire un résultat supplémentaire.",
     "Vos recettes de cuisine ont 30% de chances de produire un résultat supplémentaire.",
     "Vos recettes de cuisine ont 40% de chances de produire un résultat supplémentaire.",
     "Vos recettes de cuisine ont 50% de chances de produire un résultat supplémentaire."
-   ]
+   ],
+   "source": "client-forever"
   },
   "professions-2-1": {
    "name": "Heures supplémentaires",
@@ -981,14 +982,15 @@ window.LEGACY_FR={
    "source": "client-forever"
   },
   "resourcefulness-4-1": {
-   "name": "Renforcement",
+   "name": "Renforcer",
    "ranks": [
     "Réduit de 8% la perte de durabilité subie à votre mort.",
     "Réduit de 16% la perte de durabilité subie à votre mort.",
     "Réduit de 24% la perte de durabilité subie à votre mort.",
     "Réduit de 32% la perte de durabilité subie à votre mort.",
     "Réduit de 40% la perte de durabilité subie à votre mort."
-   ]
+   ],
+   "source": "client-forever"
   },
   "resourcefulness-4-2": {
    "name": "Diplomatie",

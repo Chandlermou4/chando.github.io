@@ -21729,14 +21729,14 @@ window.TALENT_FR={
    "nameBranch": "classic"
   },
   "guerrier/arms-2-2": {
-   "name": "Maîtrise tactique",
-   "nameSource": "adapte",
+   "name": "Maîtrise tactique améliorée",
+   "nameSource": "officiel",
    "rank1": "Maîtrise tactique vous fait conserver jusqu’à 3 points de rage supplémentaires lorsque vous changez de posture.",
    "classic": "Vous conservez jusqu'à 5 de vos points de rage lorsque vous changez de posture.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Maîtrise tactique » (anciennement « Tactical Mastery »).",
    "spell": 12295,
    "textSource": "editorial",
-   "nameBranch": "classic"
+   "nameBranch": "forever"
   },
   "guerrier/arms-2-4": {
    "name": "Fulgurance améliorée",
@@ -21766,10 +21766,12 @@ window.TALENT_FR={
    "nameBranch": "classic"
   },
   "guerrier/arms-4-1": {
-   "name": "Frappe perforante",
-   "nameSource": "adapte",
+   "name": "Frappe transperçante",
+   "nameSource": "officiel",
    "rank1": "Une attaque brutale qui inflige 40% des points de dégâts de l’arme. Inflige 80% de points de dégâts d’arme supplémentaires aux géants, aux draconiens et aux cibles montées, qui sont alors désarçonnées.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1310222
   },
   "guerrier/arms-4-2": {
    "name": "Spécialisation Arme 2M",
@@ -21790,8 +21792,8 @@ window.TALENT_FR={
    "nameBranch": "classic"
   },
   "guerrier/arms-5-1": {
-   "name": "Frisson sanglant",
-   "nameSource": "adapte",
+   "name": "Exaltation sanguinaire",
+   "nameSource": "officiel",
    "rank1": "Vos attaques de mêlée contre une cible affectée par votre Pourfendre ont 2% de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
    "ranks": [
     "Vos attaques de mêlée contre une cible affectée par votre Pourfendre ont 2% de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
@@ -21800,7 +21802,9 @@ window.TALENT_FR={
     "Vos attaques de mêlée contre une cible affectée par votre Pourfendre ont 8% de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
     "Vos attaques de mêlée contre une cible affectée par votre Pourfendre ont 10% de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec."
    ],
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1289682
   },
   "guerrier/arms-5-2": {
    "name": "Attaques circulaires",
@@ -22199,12 +22203,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "paladin/holy-2-3": {
-   "name": "Sceau de piété amélioré",
-   "nameSource": "adapte",
+   "name": "Sceaux améliorés",
+   "nameSource": "officiel",
    "spell": 20224,
    "classic": "Augmente les points de dégâts infligés par votre Sceau de piété et votre Jugement de piété de 3%.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Sceau de piété amélioré » (anciennement « Improved Seal of Righteousness »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "ranks": [
     "Augmente de 5% les points de dégâts infligés par vos Sceaux et vos Jugements.",
     "Augmente de 10% les points de dégâts infligés par vos Sceaux et vos Jugements.",
@@ -22566,11 +22570,11 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "chasseur/beast-mastery-4-3": {
-   "name": "Ferocité",
+   "name": "Férocité",
    "nameSource": "officiel",
-   "spell": 19598,
+   "spell": 16934,
    "classic": "Augmente les chances de votre familier d'infliger un coup critique de 3%.",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Augmente de 2% les chances de coup critique de vos familiers et de vos faucons.",
    "textSource": "editorial"
   },
@@ -22834,13 +22838,13 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "chasseur/survival-6-3": {
-   "name": "Réflexes éclairs",
+   "name": "Réflexes-éclairs",
    "nameSource": "officiel",
-   "spell": 19168,
+   "spell": 13712,
    "classic": "Augmente votre Agilité de 3%.",
    "rank1": "Augmente votre Agilité de 2%.",
    "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "nameBranch": "forever"
   },
   "voleur/assassination-1-1": {
    "name": "Suriner amélioré",
@@ -22983,14 +22987,14 @@ window.TALENT_FR={
    "nameBranch": "classic"
   },
   "voleur/combat-1-1": {
-   "name": "Eviscération améliorée",
+   "name": "Éviscération améliorée",
    "nameSource": "officiel",
    "spell": 14162,
    "classic": "Augmente les points de dégâts infligés par votre technique Eviscération de 5%.",
    "note": "Nom repris d’un talent homonyme du client français (Classic), trouvé hors de l’arbre où Forever le place.",
    "rank1": "Augmente les points de dégâts infligés par votre technique Eviscération de 7%.",
    "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "nameBranch": "forever"
   },
   "voleur/combat-1-2": {
    "name": "Attaque pernicieuse améliorée",
@@ -23002,21 +23006,21 @@ window.TALENT_FR={
    "nameBranch": "classic"
   },
   "voleur/combat-1-3": {
-   "name": "Réflexes éclairs",
+   "name": "Réflexes-éclairs",
    "nameSource": "officiel",
    "spell": 13712,
    "classic": "Augmente vos chances d'esquiver une attaque de 1%.",
    "rank1": "Augmente vos chances d'esquiver une attaque de 1%.",
    "textSource": "officiel",
-   "nameBranch": "classic"
+   "nameBranch": "forever"
   },
   "voleur/combat-2-1": {
-   "name": "Attaque sournoise améliorée",
-   "nameSource": "adapte",
-   "spell": 13733,
+   "name": "Blessures transperçantes",
+   "nameSource": "officiel",
+   "spell": 1224716,
    "classic": "Augmente vos chances d'infliger un coup critique avec la technique Attaque sournoise de 10%.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Attaque sournoise améliorée » (anciennement « Improved Backstab »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "ranks": [
     "Augmente de 10% les chances de coup critique de votre Attaque sournoise et de 5% celles de votre Estropier, et confère à Attaque sournoise 15% de chances d’ajouter un point de combo supplémentaire.",
     "Augmente de 20% les chances de coup critique de votre Attaque sournoise et de 10% celles de votre Estropier, et confère à Attaque sournoise 30% de chances d’ajouter un point de combo supplémentaire.",
@@ -23399,12 +23403,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "pretre/holy-1-1": {
-   "name": "Focalisation des soins",
-   "nameSource": "adapte",
+   "name": "Concentration crépusculaire",
+   "nameSource": "officiel",
    "spell": 14913,
    "classic": "Vous donne 35% de chances d'éviter d'être interrompu par des dégâts subis quand vous lancez un sort de soins.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Focalisation des soins » (anciennement « Healing Focus »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "ranks": [
     "Vous confère 23% de chances d’éviter l’interruption causée par les dégâts lors de l’incantation de n’importe quel sort.",
     "Vous confère 47% de chances d’éviter l’interruption causée par les dégâts lors de l’incantation de n’importe quel sort de soins.",
@@ -23761,12 +23765,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "chaman/elemental-combat-4-1": {
-   "name": "Totems de Feu améliorés",
-   "nameSource": "adapte",
+   "name": "Nova de feu améliorée",
+   "nameSource": "officiel",
    "spell": 16086,
    "classic": "Réduit le délai avant activation de votre Totem Nova de feu de 1 sec. et diminue la menace générée par votre Totem de Magma de 25%.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Totems de Feu améliorés » (anciennement « Improved Fire Totems »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Augmente de 10% les dégâts de votre sort Nova de feu et réduit de 2 sec son temps de recharge.",
    "textSource": "editorial"
   },
@@ -23789,22 +23793,22 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "chaman/elemental-combat-5-1": {
-   "name": "Allonge de la tempête",
-   "nameSource": "adapte",
+   "name": "Allonge élémentaire",
+   "nameSource": "officiel",
    "spell": 28999,
    "classic": "Augmente la portée de vos sorts Eclair et Chaîne d'éclairs de 3 mètres.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Allonge de la tempête » (anciennement « Storm Reach »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Augmente de 3 mètres la portée de vos sorts Éclair, Chaîne d’éclairs, Nova de feu et Explosion de lave, et de 8 mètres celle de votre sort Horion de flammes.",
    "textSource": "editorial"
   },
   "chaman/elemental-combat-6-3": {
-   "name": "Maîtrise de la foudre",
-   "nameSource": "adapte",
+   "name": "Empressement élémentaire",
+   "nameSource": "officiel",
    "spell": 16578,
    "classic": "Réduit le temps d'incantation de vos sorts Eclair et Chaîne d'éclairs de 0.2 secondes.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Maîtrise de la foudre » (anciennement « Lightning Mastery »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Réduit de 0,17 sec le temps d’incantation de vos sorts Éclair, Chaîne d’éclairs et Explosion de lave.",
    "textSource": "editorial"
   },
@@ -23919,12 +23923,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "chaman/enhancement-5-1": {
-   "name": "Parade",
-   "nameSource": "adapte",
+   "name": "Armes spirituelles",
+   "nameSource": "officiel",
    "spell": 16268,
    "classic": "Donne une chance de parer les attaques de mêlée des ennemis.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Parade » (anciennement « Parry »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Vous donne une chance de parer les attaques de mêlée ennemies, réduit de 30% toute la menace générée par vos attaques tant qu’Arme de mordroche est inactive, et l’augmente de 30% tant qu’Arme de mordroche est active.",
    "textSource": "editorial"
   },
@@ -23954,12 +23958,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "chaman/restoration-2-2": {
-   "name": "Grâce guérisseuse",
-   "nameSource": "adapte",
+   "name": "Grâce naturelle",
+   "nameSource": "officiel",
    "spell": 29187,
    "classic": "Diminue le niveau de menace généré par vos sorts de soins de 5%.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Grâce guérisseuse » (anciennement « Healing Grace »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Réduit de 5% la menace générée par vos sorts.",
    "textSource": "editorial"
   },
@@ -24095,12 +24099,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "mage/arcane-1-3": {
-   "name": "Projectiles des arcanes améliorés",
-   "nameSource": "adapte",
+   "name": "Canalisation améliorée",
+   "nameSource": "officiel",
    "spell": 11237,
    "classic": "Vous donne 20 % de chances d’éviter les interruptions provoquées par les dégâts pendant que vous canalisez Projectiles des arcanes .",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Projectiles des arcanes améliorés » (anciennement « Improved Arcane Missiles »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Vous donne 20% de chances d’éviter l’interruption causée par les dégâts pendant que vous canalisez Projectiles des arcanes, et 14% pendant l’incantation de Décharge des arcanes.",
    "textSource": "editorial"
   },
@@ -24141,22 +24145,22 @@ window.TALENT_FR={
    "nameBranch": "classic"
   },
   "mage/arcane-3-2": {
-   "name": "Explosion des arcanes améliorée",
-   "nameSource": "adapte",
+   "name": "Impact des arcanes",
+   "nameSource": "officiel",
    "spell": 11242,
    "classic": "Augmente de 2% supplémentaires les chances d'infliger un coup critique avec votre sort Explosion des arcanes.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Explosion des arcanes améliorée » (anciennement « Improved Arcane Explosion »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Augmente de 2% les chances de coup critique de vos sorts des Arcanes.",
    "textSource": "editorial"
   },
   "mage/arcane-4-1": {
-   "name": "Bouclier de mana amélioré",
-   "nameSource": "adapte",
+   "name": "Sauvegarde des arcanes",
+   "nameSource": "officiel",
    "spell": 11252,
    "classic": "Diminue de 10% le mana perdu par point de dégâts reçu lorsque Bouclier de mana est actif.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Bouclier de mana amélioré » (anciennement « Improved Mana Shield »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Réduit de 17% le mana perdu par point de dégâts subi tant que votre sort Bouclier de mana est actif, et augmente de 25% les résistances conférées par votre sort Armure de mage.",
    "textSource": "editorial"
   },
@@ -24227,22 +24231,22 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "mage/fire-1-1": {
-   "name": "Trait de feu amélioré",
-   "nameSource": "adapte",
+   "name": "Sillage de feu",
+   "nameSource": "officiel",
    "spell": 11078,
    "classic": "Réduit le temps de recharge de votre sort Trait de feu de 0.5 secondes.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Trait de feu amélioré » (anciennement « Improved Fire Blast »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Réduit de 1 sec le temps de recharge de votre sort Trait de feu. Tuer une cible non triviale augmente, pendant les 20 sec qui suivent, de 25% les chances de coup critique de votre prochain Trait de feu.",
    "textSource": "editorial"
   },
   "mage/fire-1-2": {
-   "name": "Incinérer",
-   "nameSource": "adapte",
+   "name": "Incinération",
+   "nameSource": "officiel",
    "spell": 18459,
    "classic": "Augmente de 2% les chances d'infliger un coup critique avec vos sorts Trait de feu et Brûlure.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Incinérer » (anciennement « Incinerate »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Augmente de 2% les chances de coup critique de vos sorts Trait de feu, Lance de glace, Décharge des arcanes et Brûlure.",
    "textSource": "editorial"
   },
@@ -24596,7 +24600,7 @@ window.TALENT_FR={
    "spell": 17783,
    "classic": "Vous confère 14% de chances d'éviter les interruptions causées par les points de dégâts lorsque vous canalisez vos sorts Drain de vie, Drain de mana et Siphon d'âme.",
    "nameBranch": "classic",
-   "rank1": "Vous donne 23% de chances d’éviter les interruptions causées par les dégâts lorsque vous canalisez ou incantez vos sorts Drain de vie, Drain de mana, Siphon d’âme et Supplice.",
+   "rank1": "Vous donne 23% de chances d’éviter les interruptions causées par les dégâts lorsque vous canalisez ou incantez vos sorts Drain de vie, Drain de mana, Siphon d’âme et Calvaire.",
    "textSource": "editorial"
   },
   "demoniste/affliction-3-3": {
@@ -24614,7 +24618,7 @@ window.TALENT_FR={
    "spell": 18094,
    "classic": "Confère à vos sorts Corruption et Drain de vie 2 % de chances de vous plonger dans un état de Transe de l’ombre après avoir infligé des dégâts à une cible. Cet état réduit le temps d’incantation de votre prochain sort Trait de l’ombre de 100 %.",
    "nameBranch": "classic",
-   "rank1": "Confère à vos sorts Corruption, Siphon d’âme, Drain de vie et Supplice 2% de chances de vous plonger dans un état de Transe de l’ombre après avoir infligé des dégâts à une cible. Cet état réduit de 100% le temps d’incantation de votre prochain sort Trait de l’ombre.",
+   "rank1": "Confère à vos sorts Corruption, Siphon d’âme, Drain de vie et Calvaire 2% de chances de vous plonger dans un état de Transe de l’ombre après avoir infligé des dégâts à une cible. Cet état réduit de 100% le temps d’incantation de votre prochain sort Trait de l’ombre.",
    "textSource": "editorial"
   },
   "demoniste/affliction-4-3": {
@@ -24706,12 +24710,12 @@ window.TALENT_FR={
    "nameBranch": "classic"
   },
   "demoniste/demonology-2-3": {
-   "name": "Endurance corrompue",
-   "nameSource": "adapte",
-   "spell": 18748,
+   "name": "Vitalité gangrenée",
+   "nameSource": "officiel",
+   "spell": 18731,
    "classic": "Augmente de 3% le maximum de points de vie de vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Endurance corrompue » (anciennement « Fel Stamina »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "ranks": [
     "Augmente de 5% le maximum de points de vie et de mana de vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus, et de 5% votre propre maximum de mana.",
     "Augmente de 10% le maximum de points de vie de vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus, et de 10% votre propre maximum de mana.",
@@ -24854,12 +24858,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "demoniste/destruction-4-2": {
-   "name": "Douleur brûlante améliorée",
-   "nameSource": "adapte",
+   "name": "Flammes déchirantes",
+   "nameSource": "officiel",
    "spell": 17927,
    "classic": "Augmente de 2% les chances d'infliger un coup critique avec votre sort Douleur brûlante.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Douleur brûlante améliorée » (anciennement « Improved Searing Pain »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Augmente de 3% les chances d’infliger un coup critique avec votre sort Douleur brûlante et de 3% les dégâts infligés par tous vos sorts de Destruction.",
    "textSource": "editorial"
   },
@@ -25017,12 +25021,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "druide/feral-combat-2-1": {
-   "name": "Célérité féline",
-   "nameSource": "adapte",
+   "name": "Célérité farouche",
+   "nameSource": "officiel",
    "spell": 17002,
    "classic": "Augmente votre vitesse de déplacement de 15 % à l’extérieur avec votre forme de félin et augmente vos chances d’esquiver lorsque vous êtes en forme de félin de 2 %.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Célérité féline » (anciennement « Feline Swiftness »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "ranks": [
     "Augmente de 15% votre vitesse de déplacement en forme de félin et de 2% vos chances d’esquiver.",
     "Augmente de 30% votre vitesse de déplacement en forme de félin et de 4% vos chances d’esquiver."
@@ -25094,12 +25098,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "druide/feral-combat-4-1": {
-   "name": "Lambeau amélioré",
-   "nameSource": "adapte",
+   "name": "Attaques lacérantes",
+   "nameSource": "officiel",
    "spell": 16966,
    "classic": "Réduit de 6 le coût en énergie de votre technique Lambeau.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Lambeau amélioré » (anciennement « Improved Shred »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Réduit de 6 le coût en énergie de votre technique Lambeau et de 1 le coût en rage de votre technique Lacérer.",
    "textSource": "editorial"
   },
@@ -25167,12 +25171,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "druide/restoration-2-1": {
-   "name": "Toucher guérisseur amélioré",
-   "nameSource": "adapte",
+   "name": "Naturaliste",
+   "nameSource": "officiel",
    "spell": 17069,
    "classic": "Réduit le temps d'incantation de votre sort Toucher guérisseur de 0.1 sec.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Toucher guérisseur amélioré » (anciennement « Improved Healing Touch »).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Réduit de 0,1 sec le temps d’incantation de votre sort Toucher guérisseur et augmente de 1% tous les dégâts que vous infligez.",
    "textSource": "editorial"
   },
@@ -25438,10 +25442,10 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "pretre/discipline-4-3": {
-   "name": "Protection de l'âme",
+   "name": "Protection de l’âme",
    "nameSource": "officiel",
-   "nameBranch": "wotlk",
-   "spell": 63574,
+   "nameBranch": "forever",
+   "spell": 402000,
    "rank1": "Réduit de 4 sec le temps de recharge de votre sort Mot de pouvoir : Bouclier et de 15% son coût en mana.",
    "textSource": "editorial"
   },
@@ -25454,18 +25458,18 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "pretre/discipline-5-3": {
-   "name": "Regain d'espoir",
+   "name": "Regain d’espoir",
    "nameSource": "officiel",
-   "nameBranch": "wotlk",
-   "spell": 57470,
+   "nameBranch": "forever",
+   "spell": 425280,
    "rank1": "Vos soins de Soins rapides, Soins de liaison, Soins inférieurs, Soins, Soins supérieurs et Pénitence gagnent 2% de chances de coup critique lorsqu’ils sont lancés sur une cible affectée par Âme affaiblie, et réduisent de 1 sec la durée restante de cette Âme affaiblie.",
    "textSource": "editorial"
   },
   "pretre/discipline-6-3": {
-   "name": "Egide divine",
+   "name": "Égide divine",
    "nameSource": "officiel",
-   "nameBranch": "wotlk",
-   "spell": 47509,
+   "nameBranch": "forever",
+   "spell": 431622,
    "rank1": "Vos soins critiques créent sur la cible un bouclier protecteur absorbant 5% du montant soigné. Dure 12 sec.",
    "textSource": "editorial"
   },
@@ -25538,10 +25542,10 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "mage/fire-4-3": {
-   "name": "Chaleur continue",
+   "name": "Bonne série",
    "nameSource": "officiel",
-   "nameBranch": "wotlk",
-   "spell": 44445,
+   "nameBranch": "forever",
+   "spell": 400624,
    "rank1": "Vos coups critiques non périodiques de Boule de feu, Trait de givre-feu, Trait de feu et Brûlure vous confèrent Chaleur continue pendant 15 sec. Chaleur continue réduit de 25% le temps d’incantation d’Explosion pyrotechnique, cumulable jusqu’à 3 fois.",
    "textSource": "editorial"
   },
@@ -25558,10 +25562,10 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "demoniste/affliction-2-1": {
-   "name": "Imprécation",
+   "name": "Malédiction",
    "nameSource": "officiel",
-   "nameBranch": "tbc",
-   "spell": 32477,
+   "nameBranch": "forever",
+   "spell": 1225177,
    "rank1": "Augmente de 1% tous les dégâts périodiques infligés par vos sorts de démoniste.",
    "textSource": "editorial"
   },
@@ -25570,7 +25574,7 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 58435,
-   "rank1": "Augmente de 33% le bonus de dégâts critiques de vos sorts Corruption, Plaie d’agonie, Plaie funeste, Siphon d’âme, Drain de vie, Siphon de vie et Supplice.",
+   "rank1": "Augmente de 33% le bonus de dégâts critiques de vos sorts Corruption, Plaie d’agonie, Plaie funeste, Siphon d’âme, Drain de vie, Siphon de vie et Calvaire.",
    "textSource": "editorial"
   },
   "demoniste/affliction-5-3": {
@@ -25578,14 +25582,14 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 17804,
-   "rank1": "Augmente de 4% les dégâts infligés ou la vie drainée par vos sorts Drain de vie, Siphon d’âme et Supplice, par effet d’Affliction actif sur la cible, jusqu’à un maximum de 12%.",
+   "rank1": "Augmente de 4% les dégâts infligés ou la vie drainée par vos sorts Drain de vie, Siphon d’âme et Calvaire, par effet d’Affliction actif sur la cible, jusqu’à un maximum de 12%.",
    "textSource": "editorial"
   },
   "demoniste/demonology-2-1": {
-   "name": "Egide démoniaque",
+   "name": "Égide démoniaque",
    "nameSource": "officiel",
-   "nameBranch": "tbc",
-   "spell": 30143,
+   "nameBranch": "forever",
+   "spell": 1235316,
    "rank1": "Augmente de 15% l’efficacité de vos sorts Peau de démon et Armure de démon.",
    "textSource": "editorial"
   },
@@ -25676,10 +25680,10 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "druide/balance-5-3": {
-   "name": "Eclipse",
+   "name": "Éclipse",
    "nameSource": "officiel",
-   "nameBranch": "wotlk",
-   "spell": 48516,
+   "nameBranch": "forever",
+   "spell": 408248,
    "rank1": "Votre sort Colère réduit le temps d’incantation de vos 2 prochains sorts Feu stellaire de 0,17 sec. Cumule jusqu’à 4 charges. Dure 15 sec.",
    "textSource": "editorial"
   },
@@ -25692,10 +25696,10 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "druide/feral-combat-5-1": {
-   "name": "Instincts de prédateur",
+   "name": "Instincts prédateurs",
    "nameSource": "officiel",
-   "nameBranch": "tbc",
-   "spell": 33859,
+   "nameBranch": "forever",
+   "spell": 1223242,
    "rank1": "Augmente de 10% le bonus de dégâts critiques de vos techniques de mêlée.",
    "textSource": "editorial"
   },
@@ -25763,26 +25767,32 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "guerrier/fury-3-4": {
-   "name": "Rage sans limite",
-   "nameSource": "adapte",
+   "name": "Rage infinie",
+   "nameSource": "officiel",
    "rank1": "Augmente votre rage maximale de 10.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1310236
   },
   "guerrier/fury-4-2": {
-   "name": "Coups enragés",
-   "nameSource": "adapte",
+   "name": "Coups déchaînés",
+   "nameSource": "officiel",
    "rank1": "Votre Tourbillon frappe également avec votre arme de main gauche et le coût en rage de votre technique Enchaînement est réduit de 2.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1310315
   },
   "guerrier/protection-3-2": {
-   "name": "Maître de la défense",
-   "nameSource": "adapte",
+   "name": "Maîtrise de la défense",
+   "nameSource": "officiel",
    "ranks": [
     "Vous donne 50% de chances de générer 5 points de rage lorsque vous esquivez ou parez avec un bouclier équipé.",
     "Vous donne 100% de chances de générer 5 points de rage lorsque vous esquivez ou parez avec un bouclier équipé."
    ],
    "rank1": "Vous donne 50% de chances de générer 5 points de rage lorsque vous esquivez ou parez avec un bouclier équipé.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1310316
   },
   "guerrier/protection-4-3": {
    "name": "Avant-garde",
@@ -25797,10 +25807,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "paladin/holy-3-1": {
-   "name": "Voix de vérité",
-   "nameSource": "adapte",
+   "name": "Voix de la vérité",
+   "nameSource": "officiel",
    "rank1": "Vous rend insensible aux effets de silence et d’interruption. Dure 6 sec.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1310897
   },
   "paladin/holy-3-2": {
    "name": "Révérence",
@@ -25825,10 +25837,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "paladin/holy-7-2": {
-   "name": "Veille de la Lumière",
-   "nameSource": "adapte",
+   "name": "Vigile de Lumière",
+   "nameSource": "officiel",
    "rank1": "Applique Veille de la Lumière à la cible pendant 30 sec. Votre prochain Horion sacré lancé sur elle ne déclenche aucun temps de recharge : sur un allié, il soigne son groupe de 315 à 333 points de vie ; sur un ennemi, il inflige 175 à 189 points de dégâts du Sacré et rembourse 75% du coût en mana de Veille de la Lumière. Un seul effet Veille de la Lumière peut être actif par paladin et par groupe.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1310911
   },
   "paladin/protection-3-1": {
    "name": "Sceau de fureur amélioré",
@@ -25843,10 +25857,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "paladin/protection-5-2": {
-   "name": "Rempart du templier",
-   "nameSource": "adapte",
+   "name": "Rempart de templier",
+   "nameSource": "officiel",
    "rank1": "Une fois activée, cette technique vous accorde un bouclier d’absorption égal à 100% de votre maximum de points de vie pendant 8 sec. Applique Tolérance pendant 1 min. Ne peut pas être lancée tant que Tolérance est active.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1311015
   },
   "paladin/protection-6-3": {
    "name": "Credo de fer",
@@ -25872,21 +25888,25 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "paladin/retribution-4-3": {
-   "name": "Arbitre sacré",
-   "nameSource": "adapte",
+   "name": "Sentence sacrée",
+   "nameSource": "officiel",
    "rank1": "Augmente de 10% les points de dégâts de votre technique Frappe sacrée et lui fait renouveler tous les effets de Jugement présents sur la cible.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1311087
   },
   "paladin/retribution-6-2": {
-   "name": "Champion de la Lumière",
-   "nameSource": "adapte",
+   "name": "Champion de la lumière",
+   "nameSource": "officiel",
    "ranks": [
     "Augmente vos dégâts et vos soins par sort d’un montant pouvant atteindre 33% de votre Intelligence.",
     "Augmente vos dégâts et vos soins par sort d’un montant pouvant atteindre 66% de votre Intelligence.",
     "Augmente vos dégâts et vos soins par sort d’un montant pouvant atteindre 100% de votre Intelligence."
    ],
    "rank1": "Augmente vos dégâts et vos soins par sort d’un montant pouvant atteindre 33% de votre Intelligence.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1311084
   },
   "paladin/retribution-6-3": {
    "name": "Instrument de la loi",
@@ -25895,10 +25915,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "paladin/retribution-7-2": {
-   "name": "Torsion de Lumière",
-   "nameSource": "adapte",
+   "name": "Effet de lumière",
+   "nameSource": "officiel",
    "rank1": "Lorsque vous remplacez votre Sceau d’autorité, Sceau de piété, Sceau de fureur ou Sceau de justice par un autre Sceau, vous gagnez un Écho. Votre prochaine attaque de mêlée applique les effets du Sceau remplacé et consomme l’Écho.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1310735
   },
   "chasseur/beast-mastery-4-4": {
    "name": "Invocation de faucon",
@@ -25958,10 +25980,12 @@ window.TALENT_FR={
    "spell": 1310533
   },
   "voleur/assassination-7-2": {
-   "name": "Venin",
-   "nameSource": "adapte",
+   "name": "Toxine",
+   "nameSource": "officiel",
    "rank1": "Coup de grâce qui augmente de 30% les dégâts de vos poisons et de 10% vos chances de les appliquer. Sa durée augmente avec les points de combo :\n 1 point : 9 secondes\n 2 points : 12 secondes\n 3 points : 15 secondes\n 4 points : 18 secondes\n 5 points : 21 secondes",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1310703
   },
   "voleur/combat-4-2": {
    "name": "Exécution parfaite",
@@ -25970,32 +25994,40 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "voleur/subtlety-3-3": {
-   "name": "Diversion améliorée",
-   "nameSource": "adapte",
+   "name": "Distraction améliorée",
+   "nameSource": "officiel",
    "rank1": "Augmente de 3 mètres le rayon de votre technique Diversion et réduit encore la détection du camouflage des ennemis distraits, comme s’ils avaient 1 niveau de moins.",
    "textSource": "editorial",
    "ranks": [
     "Augmente de 3 mètres le rayon de votre technique Diversion et réduit encore la détection du camouflage des ennemis distraits, comme s’ils avaient 1 niveau de moins.",
     "Augmente de 5 mètres le rayon de votre technique Diversion et réduit encore la détection du camouflage des ennemis distraits, comme s’ils avaient 2 niveaux de moins."
-   ]
+   ],
+   "nameBranch": "forever",
+   "spell": 14084
   },
   "voleur/subtlety-6-1": {
-   "name": "Quietus",
-   "nameSource": "adapte",
+   "name": "Quiétus",
+   "nameSource": "officiel",
    "rank1": "Vos techniques Attaque pernicieuse, Frappe fantomatique et Hémorragie infligent 2% de dégâts supplémentaires aux cibles dont les points de vie sont inférieurs à 35%.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1310728
   },
   "voleur/subtlety-6-3": {
-   "name": "Égorgeur",
-   "nameSource": "adapte",
+   "name": "Coupe-gorge",
+   "nameSource": "officiel",
    "rank1": "Votre Attaque sournoise a 3% de chances de rendre votre prochaine Embuscade utilisable sans camouflage dans les 10 sec.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 462708
   },
   "voleur/subtlety-7-2": {
-   "name": "Mille entailles",
-   "nameSource": "adapte",
+   "name": "Mille coupures",
+   "nameSource": "officiel",
    "rank1": "Lorsque votre technique Rupture inflige ses dégâts périodiques, le coût en énergie de votre prochaine Hémorragie ou Attaque sournoise dans les 10 sec est réduit de 3, cumulable jusqu’à 5 fois.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1310721
   },
   "pretre/discipline-1-1": {
    "name": "Puissance de la Lumière",
@@ -26010,10 +26042,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "pretre/holy-4-4": {
-   "name": "Soins de liaison",
-   "nameSource": "adapte",
+   "name": "Soins de lien",
+   "nameSource": "officiel",
    "rank1": "Soigne une cible alliée et le lanceur de 346 à 403 points de vie. Menace faible.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 401937
   },
   "pretre/holy-5-1": {
    "name": "Litanie de Lumière",
@@ -26048,17 +26082,21 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "pretre/shadow-magic-6-1": {
-   "name": "Trépas précoce",
-   "nameSource": "adapte",
+   "name": "Trépas prématuré",
+   "nameSource": "officiel",
    "rank1": "Contre les cibles dont les points de vie sont à 20% ou moins, augmente de 15% les chances de coup critique de Mot de l’ombre : Mort.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1310076
   },
   "chaman/elemental-combat-5-4": {
-   "name": "Ancrage tellurique",
-   "nameSource": "adapte",
+   "name": "Lien terrestre",
+   "nameSource": "officiel",
    "rank1": "Votre Totem de lien terrestre immobilise les cibles proches pendant 5 sec lorsqu’il est invoqué.",
    "textSource": "editorial",
-   "note": "Le totem cité est un sort de base du chaman (Earthbind Totem, sort 2484) : nom officiel du client français, « Totem de lien terrestre » — corrigé après une première traduction erronée (« Totem de glèbe »)."
+   "note": "Le totem cité est un sort de base du chaman (Earthbind Totem, sort 2484) : nom officiel du client français, « Totem de lien terrestre » — corrigé après une première traduction erronée (« Totem de glèbe »).",
+   "nameBranch": "forever",
+   "spell": 1222988
   },
   "chaman/elemental-combat-7-2": {
    "name": "Explosion de lave",
@@ -26067,10 +26105,12 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "chaman/enhancement-7-2": {
-   "name": "Rage du Voyant",
-   "nameSource": "adapte",
+   "name": "Rage long-voyante",
+   "nameSource": "officiel",
    "rank1": "Augmente de 30% votre vitesse d’attaque de mêlée et votre vitesse d’incantation pendant 25 sec.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 425336
   },
   "chaman/restoration-2-1": {
    "name": "Pleine conscience",
@@ -26096,37 +26136,43 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "mage/arcane-3-4": {
-   "name": "Décharge des arcanes",
-   "nameSource": "adapte",
+   "name": "Déflagration des arcanes",
+   "nameSource": "officiel",
    "rank1": "Frappe la cible d’une décharge d’énergie, infligeant 95 à 104 points de dégâts des Arcanes. Chaque fois que vous lancez Décharge des arcanes, les dégâts de tous vos autres sorts augmentent de 10% et le coût en mana de Décharge des arcanes augmente de 175%. L’effet se cumule jusqu’à 4 fois et dure 8 sec, ou jusqu’à ce que vous lanciez un autre sort de dégâts.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 400574
   },
   "mage/frost-3-3": {
-   "name": "Lance de glace",
-   "nameSource": "adapte",
+   "name": "Javelot de glace",
+   "nameSource": "officiel",
    "rank1": "Inflige 30 points de dégâts de Givre à une cible ennemie. Inflige 300% de dégâts supplémentaires aux cibles gelées.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1312002
   },
   "demoniste/affliction-2-2": {
-   "name": "Récolte d’âmes",
-   "nameSource": "adapte",
+   "name": "Moisson d’âme",
+   "nameSource": "officiel",
    "note": "Nom repris du sort Récolte d’âmes du client français (sort 196098) : Forever ne reprend que le nom anglais Soul Harvest, l’effet lui est propre.",
    "ranks": [
     "Vous gagnez Récolte d’âmes pendant 10 sec si une victime meurt en étant affectée par votre Siphon d’âme. Récolte d’âmes permet à votre mana de se régénérer à 50% de sa vitesse normale pendant que vous incantez, et augmente de 50% votre régénération de mana.",
     "Vous gagnez Récolte d’âmes pendant 10 sec si une victime meurt en étant affectée par votre Siphon d’âme. Récolte d’âmes permet à votre mana de se régénérer à 100% de sa vitesse normale pendant que vous incantez, et augmente de 100% votre régénération de mana."
    ],
    "rank1": "Vous gagnez Récolte d’âmes pendant 10 sec si une victime meurt en étant affectée par votre Siphon d’âme. Récolte d’âmes permet à votre mana de se régénérer à 50% de sa vitesse normale pendant que vous incantez, et augmente de 50% votre régénération de mana.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 437032
   },
   "demoniste/affliction-2-3": {
    "name": "Drains améliorés",
    "nameSource": "adapte",
    "ranks": [
-    "Augmente de 7% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Supplice.",
-    "Augmente de 13% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Supplice.",
-    "Augmente de 20% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Supplice."
+    "Augmente de 7% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Calvaire.",
+    "Augmente de 13% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Calvaire.",
+    "Augmente de 20% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Calvaire."
    ],
-   "rank1": "Augmente de 7% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Supplice.",
+   "rank1": "Augmente de 7% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Calvaire.",
    "textSource": "editorial"
   },
   "demoniste/affliction-4-1": {
@@ -26137,16 +26183,21 @@ window.TALENT_FR={
    "textSource": "editorial"
   },
   "demoniste/affliction-7-2": {
-   "name": "Supplice",
-   "nameSource": "adapte",
-   "rank1": "Déchire la cible de l’intérieur, lui infligeant 37 points de dégâts d’Ombre toutes les 1 sec et augmentant de 10% les dégâts qu’elle subit de vos autres effets d’Ombre périodiques. Dure 6 sec.",
-   "textSource": "editorial"
+   "name": "Calvaire",
+   "nameSource": "officiel",
+   "rank1": "Déchire la cible de l’intérieur, ce qui lui inflige 37 points de dégâts d’ombre toutes les 1 s et augmente les dégâts qu’elle subit par vos autres effets de dégâts d’ombre de 10 %. Dure 6 sec.",
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "spell": 1316697,
+   "note": "Relevé dans les tables du client via wago.tools. Nous avions inventé « Supplice » faute de connaître le nom français ; le jeu dit « Calvaire »."
   },
   "demoniste/demonology-2-4": {
-   "name": "Énergies démoniaques",
-   "nameSource": "adapte",
+   "name": "Énergie démoniaque",
+   "nameSource": "officiel",
    "rank1": "Vous soignez votre démon de 8% de tous les dégâts que vous infligez par sort. Lorsque Connexion vous rend du mana, votre démon invoqué reçoit 50% du mana que vous gagnez.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1225214
   },
   "demoniste/demonology-4-4": {
    "name": "Marque démoniaque",
