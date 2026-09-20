@@ -795,8 +795,8 @@ window.LEGACY_DATA={
 ;
 window.LEGACY_FR={
  "version": 1,
- "updatedAt": "2026-09-15",
- "method": "Aucun texte français officiel n'existe pour Legacy : le système n'a pas encore été localisé par Blizzard (vérifié sur la page française de Wowhead, identique à l'anglaise). Toute la traduction ci-dessous est éditoriale — rédigée à partir du texte anglais confirmé, jamais une traduction du texte de Wowhead lui-même.",
+ "updatedAt": "2026-09-20",
+ "method": "Le système Legacy est localisé depuis l’ouverture de la bêta. Les noms et les textes marqués « client-forever » sont relevés tels quels dans le client français du jeu : c’est la meilleure provenance possible, et elle remplace la traduction éditoriale que cette couche portait jusque-là. Les rangs au-delà du premier sont dérivés du rang 1 en y réinjectant les nombres du rang anglais correspondant. Les entrées sans cette marque restent éditoriales, faute d’avoir été relevées en jeu. Les emplacements non révélés n’ont volontairement pas d’entrée : le client les nomme « Inconnu », mais la page explique à leur place pourquoi la case est vide, ce qui renseigne mieux le lecteur.",
  "trees": {
   "professions": "Métiers",
   "adventure": "Aventure",
@@ -821,146 +821,164 @@ window.LEGACY_FR={
   "professions-2-1": {
    "name": "Heures supplémentaires",
    "ranks": [
-    "Augmente de 4% vos chances de gagner un point de compétence en utilisant un métier primaire, secondaire ou lié à la classe.",
-    "Augmente de 8% vos chances de gagner un point de compétence en utilisant un métier primaire, secondaire ou lié à la classe.",
-    "Augmente de 12% vos chances de gagner un point de compétence en utilisant un métier primaire, secondaire ou lié à la classe.",
-    "Augmente de 16% vos chances de gagner un point de compétence en utilisant un métier primaire, secondaire ou lié à la classe.",
-    "Augmente de 20% vos chances de gagner un point de compétence en utilisant un métier primaire, secondaire ou lié à la classe."
-   ]
+    "Augmente de 4 % vos chances de bénéficier d’une augmentation de compétence en exerçant un métier principal, secondaire ou de classe.",
+    "Augmente de 8 % vos chances de bénéficier d’une augmentation de compétence en exerçant un métier principal, secondaire ou de classe.",
+    "Augmente de 12 % vos chances de bénéficier d’une augmentation de compétence en exerçant un métier principal, secondaire ou de classe.",
+    "Augmente de 16 % vos chances de bénéficier d’une augmentation de compétence en exerçant un métier principal, secondaire ou de classe.",
+    "Augmente de 20 % vos chances de bénéficier d’une augmentation de compétence en exerçant un métier principal, secondaire ou de classe."
+   ],
+   "source": "client-forever"
   },
   "professions-2-2": {
    "name": "Marchandage",
    "ranks": [
-    "Réduit de 5% le prix en or des objets vendus par tous les marchands.",
-    "Réduit de 10% le prix en or des objets vendus par tous les marchands."
-   ]
+    "Réduit le prix en or des objets achetés à tous les marchands de 5 %.",
+    "Réduit le prix en or des objets achetés à tous les marchands de 10 %."
+   ],
+   "source": "client-forever"
   },
   "professions-2-3": {
    "name": "Étude assidue",
    "ranks": [
-    "Augmente de 1 votre compétence dans votre métier primaire ou secondaire le plus bas. Si vos deux métiers primaires et vos trois métiers secondaires sont déjà à 300, vous gagnez 2 à 4 Essences élémentaires aléatoires à la place."
-   ]
+    "Augmente de 1 votre compétence dans le métier que vous maîtrisez le moins parmi vos métiers principaux et secondaires. Si vous avez déjà atteint un niveau de compétence de 300 dans vos deux métiers principaux actuels et vos trois métiers secondaires, vous obtenez 2 à 4 essences élémentaires aléatoires."
+   ],
+   "source": "client-forever"
   },
   "professions-3-1": {
-   "name": "Récolte abondante",
+   "name": "Récolte généreuse",
    "ranks": [
-    "Vous découvrez 20% de matériaux Rares supplémentaires avec la Minéralogie, l’Herboristerie et le Dépeçage.",
-    "Vous découvrez 40% de matériaux Rares supplémentaires avec la Minéralogie, l’Herboristerie et le Dépeçage.",
-    "Vous découvrez 60% de matériaux Rares supplémentaires avec la Minéralogie, l’Herboristerie et le Dépeçage.",
-    "Vous découvrez 80% de matériaux Rares supplémentaires avec la Minéralogie, l’Herboristerie et le Dépeçage.",
-    "Vous découvrez 100% de matériaux Rares supplémentaires avec la Minéralogie, l’Herboristerie et le Dépeçage."
-   ]
+    "Vous découvrez 20 % de matériaux rares en plus grâce au minage, à l’herboristerie et au dépeçage.",
+    "Vous découvrez 40 % de matériaux rares en plus grâce au minage, à l’herboristerie et au dépeçage.",
+    "Vous découvrez 60 % de matériaux rares en plus grâce au minage, à l’herboristerie et au dépeçage.",
+    "Vous découvrez 80 % de matériaux rares en plus grâce au minage, à l’herboristerie et au dépeçage.",
+    "Vous découvrez 100 % de matériaux rares en plus grâce au minage, à l’herboristerie et au dépeçage."
+   ],
+   "source": "client-forever"
   },
   "professions-3-2": {
-   "name": "Prime au rendement",
+   "name": "Bonus de performance",
    "ranks": [
-    "Vous avez 5% de chances de recevoir 100% de Faveur du marchand supplémentaire en rendant une caisse à l’Autorité commerciale d’Azeroth ou à la Logistique de Durotar.",
-    "Vous avez 10% de chances de recevoir 100% de Faveur du marchand supplémentaire en rendant une caisse à l’Autorité commerciale d’Azeroth ou à la Logistique de Durotar.",
-    "Vous avez 15% de chances de recevoir 100% de Faveur du marchand supplémentaire en rendant une caisse à l’Autorité commerciale d’Azeroth ou à la Logistique de Durotar."
-   ]
+    "Vous avez 5 % de chances de recevoir 100 % de faveur marchande supplémentaire lorsque vous apportez une caisse à l’Administration commerciale d’Azeroth ou aux Transports logistiques Durotar.",
+    "Vous avez 10 % de chances de recevoir 100 % de faveur marchande supplémentaire lorsque vous apportez une caisse à l’Administration commerciale d’Azeroth ou aux Transports logistiques Durotar.",
+    "Vous avez 15 % de chances de recevoir 100 % de faveur marchande supplémentaire lorsque vous apportez une caisse à l’Administration commerciale d’Azeroth ou aux Transports logistiques Durotar."
+   ],
+   "source": "client-forever"
   },
   "professions-4-3": {
-   "name": "Maître-leurreur",
+   "name": "Maître des appâts",
    "ranks": [
-    "En pêchant avec un leurre actif, vous avez 25% de chances d’attraper un poisson supplémentaire.",
-    "En pêchant avec un leurre actif, vous avez 50% de chances d’attraper un poisson supplémentaire."
-   ]
+    "Lorsque vous pêchez avec un appât, vous avez 25 % de chances d’attraper un poisson supplémentaire.",
+    "Lorsque vous pêchez avec un appât, vous avez 50 % de chances d’attraper un poisson supplémentaire."
+   ],
+   "source": "client-forever"
   },
   "adventure-1-2": {
-   "name": "Haute vigilance",
+   "name": "Alerte avancée",
    "ranks": [
-    "Augmente votre capacité à détecter les cibles proches utilisant Camouflage, comme si votre niveau était supérieur de 1. Sans effet en champ de bataille.",
-    "Augmente votre capacité à détecter les cibles proches utilisant Camouflage, comme si votre niveau était supérieur de 2. Sans effet en champ de bataille."
-   ]
+    "Améliore votre capacité à détecter les cibles proches camouflées si vous aviez gagné 1 niveau. Sans effet sur les champs de bataille.",
+    "Améliore votre capacité à détecter les cibles proches camouflées si vous aviez gagné 2 niveaux. Sans effet sur les champs de bataille."
+   ],
+   "source": "client-forever"
   },
   "adventure-2-1": {
    "name": "Bien reposé",
    "ranks": [
-    "Votre expérience de repos s’accumule 4% plus vite, et son maximum est augmenté de 4%.",
-    "Votre expérience de repos s’accumule 8% plus vite, et son maximum est augmenté de 8%.",
-    "Votre expérience de repos s’accumule 12% plus vite, et son maximum est augmenté de 12%.",
-    "Votre expérience de repos s’accumule 16% plus vite, et son maximum est augmenté de 16%.",
-    "Votre expérience de repos s’accumule 20% plus vite, et son maximum est augmenté de 20%."
-   ]
+    "Vous accumulez de l’expérience de repos 4 % plus rapidement et la limite d’expérience de repos est augmentée de 4 %.",
+    "Vous accumulez de l’expérience de repos 8 % plus rapidement et la limite d’expérience de repos est augmentée de 8 %.",
+    "Vous accumulez de l’expérience de repos 12 % plus rapidement et la limite d’expérience de repos est augmentée de 12 %.",
+    "Vous accumulez de l’expérience de repos 16 % plus rapidement et la limite d’expérience de repos est augmentée de 16 %.",
+    "Vous accumulez de l’expérience de repos 20 % plus rapidement et la limite d’expérience de repos est augmentée de 20 %."
+   ],
+   "source": "client-forever"
   },
   "adventure-2-2": {
-   "name": "Talentueux",
+   "name": "Talent",
    "ranks": [
-    "Vos points de talent commencent dès le niveau 9 au lieu du niveau 10, sans dépasser le total de 51 points.",
-    "Vos points de talent commencent dès le niveau 8 au lieu du niveau 10, sans dépasser le total de 51 points.",
-    "Vos points de talent commencent dès le niveau 7 au lieu du niveau 10, sans dépasser le total de 51 points.",
-    "Vos points de talent commencent dès le niveau 6 au lieu du niveau 10, sans dépasser le total de 51 points.",
-    "Vos points de talent commencent dès le niveau 5 au lieu du niveau 10, sans dépasser le total de 51 points."
-   ]
+    "Vous obtenez des points de talent à chaque niveau à partir du niveau 9 au lieu de commencer au niveau 10, mais vous ne pouvez tout de même pas en obtenir plus de 51.",
+    "Vous obtenez des points de talent à chaque niveau à partir du niveau 8 au lieu de commencer au niveau 10, mais vous ne pouvez tout de même pas en obtenir plus de 51.",
+    "Vous obtenez des points de talent à chaque niveau à partir du niveau 7 au lieu de commencer au niveau 10, mais vous ne pouvez tout de même pas en obtenir plus de 51.",
+    "Vous obtenez des points de talent à chaque niveau à partir du niveau 6 au lieu de commencer au niveau 10, mais vous ne pouvez tout de même pas en obtenir plus de 51.",
+    "Vous obtenez des points de talent à chaque niveau à partir du niveau 5 au lieu de commencer au niveau 10, mais vous ne pouvez tout de même pas en obtenir plus de 51."
+   ],
+   "source": "client-forever"
   },
   "adventure-3-1": {
    "name": "Frisson de l’aventure",
    "ranks": [
-    "Vous gagnez 1% de vos points de vie et de mana maximum en 10 sec chaque fois que vous portez le coup fatal à un ennemi non trivial. Sans effet en donjon, en raid ou en champ de bataille.",
-    "Vous gagnez 2% de vos points de vie et de mana maximum en 10 sec chaque fois que vous portez le coup fatal à un ennemi non trivial. Sans effet en donjon, en raid ou en champ de bataille.",
-    "Vous gagnez 3% de vos points de vie et de mana maximum en 10 sec chaque fois que vous portez le coup fatal à un ennemi non trivial. Sans effet en donjon, en raid ou en champ de bataille.",
-    "Vous gagnez 4% de vos points de vie et de mana maximum en 10 sec chaque fois que vous portez le coup fatal à un ennemi non trivial. Sans effet en donjon, en raid ou en champ de bataille.",
-    "Vous gagnez 5% de vos points de vie et de mana maximum en 10 sec chaque fois que vous portez le coup fatal à un ennemi non trivial. Sans effet en donjon, en raid ou en champ de bataille."
-   ]
+    "Vous récupérez 1 % de votre maximum de points de vie et de mana en 10 sec chaque fois que vous portez le coup fatal à un personnage adverse non négligeable. N’a pas d’effet dans les donjons, les raids et les champs de bataille.",
+    "Vous récupérez 2 % de votre maximum de points de vie et de mana en 10 sec chaque fois que vous portez le coup fatal à un personnage adverse non négligeable. N’a pas d’effet dans les donjons, les raids et les champs de bataille.",
+    "Vous récupérez 3 % de votre maximum de points de vie et de mana en 10 sec chaque fois que vous portez le coup fatal à un personnage adverse non négligeable. N’a pas d’effet dans les donjons, les raids et les champs de bataille.",
+    "Vous récupérez 4 % de votre maximum de points de vie et de mana en 10 sec chaque fois que vous portez le coup fatal à un personnage adverse non négligeable. N’a pas d’effet dans les donjons, les raids et les champs de bataille.",
+    "Vous récupérez 5 % de votre maximum de points de vie et de mana en 10 sec chaque fois que vous portez le coup fatal à un personnage adverse non négligeable. N’a pas d’effet dans les donjons, les raids et les champs de bataille."
+   ],
+   "source": "client-forever"
   },
   "adventure-3-2": {
-   "name": "Guide de camp",
+   "name": "Guide de terrain",
    "ranks": [
-    "Réduit de 8% votre temps de recharge pour ajouter des installations de campement.",
-    "Réduit de 17% votre temps de recharge pour ajouter des installations de campement.",
-    "Réduit de 25% votre temps de recharge pour ajouter des installations de campement."
-   ]
+    "Réduit le temps de recharge de l’ajout de fonctionnalités de camp de 8 %.",
+    "Réduit le temps de recharge de l’ajout de fonctionnalités de camp de 17 %.",
+    "Réduit le temps de recharge de l’ajout de fonctionnalités de camp de 25 %."
+   ],
+   "source": "client-forever"
   },
   "adventure-3-3": {
-   "name": "Grand voyageur",
+   "name": "Vols fréquents",
    "ranks": [
-    "Vous bénéficiez d’une réduction de 50% sur toutes les liaisons aériennes, et votre monture de vol se déplace 20% plus vite."
-   ]
+    "Vous bénéficiez d’une réduction de 50 % sur tous les trajets aériens et la monture utilisée pour vous déplacer vole 20 % plus vite."
+   ],
+   "source": "client-forever"
   },
   "adventure-4-2": {
    "name": "Médecine de terrain",
    "ranks": [
-    "Réduit de 5 sec la durée de l’effet Récemment pansé lorsque vous utilisez un bandage. Sans effet en donjon, en raid ou en champ de bataille.",
-    "Réduit de 10 sec la durée de l’effet Récemment pansé lorsque vous utilisez un bandage. Sans effet en donjon, en raid ou en champ de bataille."
-   ]
+    "Réduit la durée de l’effet « Un bandage a été appliqué récemment » de 5 s lorsque vous utilisez un bandage. Sans effet dans les donjons et raids et sur les champs de bataille.",
+    "Réduit la durée de l’effet « Un bandage a été appliqué récemment » de 10 s lorsque vous utilisez un bandage. Sans effet dans les donjons et raids et sur les champs de bataille."
+   ],
+   "source": "client-forever"
   },
   "resourcefulness-1-2": {
    "name": "Pour un grand honneur",
    "ranks": [
-    "Augmente de 2% les points d’Honneur gagnés.",
-    "Augmente de 4% les points d’Honneur gagnés.",
-    "Augmente de 6% les points d’Honneur gagnés.",
-    "Augmente de 8% les points d’Honneur gagnés.",
-    "Augmente de 10% les points d’Honneur gagnés."
-   ]
+    "Augmente les points d’honneur gagnés de 2 %.",
+    "Augmente les points d’honneur gagnés de 4 %.",
+    "Augmente les points d’honneur gagnés de 6 %.",
+    "Augmente les points d’honneur gagnés de 8 %.",
+    "Augmente les points d’honneur gagnés de 10 %."
+   ],
+   "source": "client-forever"
   },
   "resourcefulness-2-1": {
    "name": "Gourmand",
    "ranks": [
-    "Augmente de 33% la durée des effets bénéfiques procurés par la nourriture.",
-    "Augmente de 67% la durée des effets bénéfiques procurés par la nourriture.",
-    "Augmente de 100% la durée des effets bénéfiques procurés par la nourriture."
-   ]
+    "Augmente la durée des effets bénéfiques obtenus en mangeant de 33 %.",
+    "Augmente la durée des effets bénéfiques obtenus en mangeant de 67 %.",
+    "Augmente la durée des effets bénéfiques obtenus en mangeant de 100 %."
+   ],
+   "source": "client-forever"
   },
   "resourcefulness-2-2": {
    "name": "Permanence",
    "ranks": [
-    "Vos techniques de classe conférant un bonus de caractéristique ou d’attribut de longue durée à tout le groupe ou au raid durent 50% plus longtemps, tout comme les bienfaits du repos au campement.",
-    "Vos techniques de classe conférant un bonus de caractéristique ou d’attribut de longue durée à tout le groupe ou au raid durent 100% plus longtemps, tout comme les bienfaits du repos au campement."
-   ]
+    "Vos techniques de classe qui augmentent durablement les caractéristiques ou attributs de tous les membres du groupe ou raid durent 50 % plus longtemps et les bonus obtenus en vous reposant au camp durent 50 % plus longtemps.",
+    "Vos techniques de classe qui augmentent durablement les caractéristiques ou attributs de tous les membres du groupe ou raid durent 100 % plus longtemps et les bonus obtenus en vous reposant au camp durent 100 % plus longtemps."
+   ],
+   "source": "client-forever"
   },
   "resourcefulness-3-1": {
-   "name": "Deuxième souffle",
+   "name": "Mort et vif",
    "ranks": [
-    "Augmente de 5% votre vitesse de déplacement pendant que vous êtes mort, et vos sorts et techniques bénéfiques ne coûtent aucune ressource pendant 1 min après une résurrection, ou jusqu’à votre entrée en combat.",
-    "Augmente de 10% votre vitesse de déplacement pendant que vous êtes mort, et vos sorts et techniques bénéfiques ne coûtent aucune ressource pendant 2 min après une résurrection, ou jusqu’à votre entrée en combat."
-   ]
+    "Augmente la vitesse de déplacement de 5 % lors de la mort, et vos sorts et techniques utiles ne coûtent aucune ressource pendant 1 min après votre résurrection ou jusqu’à ce que vous engagiez le combat.",
+    "Augmente la vitesse de déplacement de 10 % lors de la mort, et vos sorts et techniques utiles ne coûtent aucune ressource pendant 2 min après votre résurrection ou jusqu’à ce que vous engagiez le combat."
+   ],
+   "source": "client-forever"
   },
   "resourcefulness-3-3": {
-   "name": "Économie de réactifs",
+   "name": "Économie des composants",
    "ranks": [
-    "Vos techniques de classe ne nécessitent plus de réactifs achetables chez un marchand, et vos installations de campement de palier 1 ne coûtent plus de réactifs à fabriquer."
-   ]
+    "Vos techniques de classe ne nécessitent plus de composants achetables auprès de vendeurs, et la fabrication de vos éléments de campement de niveau 1 ne nécessite plus de composants."
+   ],
+   "source": "client-forever"
   },
   "resourcefulness-4-1": {
    "name": "Renforcement",
@@ -973,14 +991,15 @@ window.LEGACY_FR={
    ]
   },
   "resourcefulness-4-2": {
-   "name": "Diplomate",
+   "name": "Diplomatie",
    "ranks": [
-    "Augmente de 2% les points de réputation gagnés.",
-    "Augmente de 4% les points de réputation gagnés.",
-    "Augmente de 6% les points de réputation gagnés.",
-    "Augmente de 8% les points de réputation gagnés.",
-    "Augmente de 10% les points de réputation gagnés."
-   ]
+    "Augmente vos gains de réputation de 2 %.",
+    "Augmente vos gains de réputation de 4 %.",
+    "Augmente vos gains de réputation de 6 %.",
+    "Augmente vos gains de réputation de 8 %.",
+    "Augmente vos gains de réputation de 10 %."
+   ],
+   "source": "client-forever"
   }
  }
 }
