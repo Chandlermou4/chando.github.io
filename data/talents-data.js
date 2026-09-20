@@ -21863,7 +21863,7 @@ window.TALENT_FR={
   },
   "guerrier/arms-5-3": {
    "name": "Maître d’armes",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/arme d’hast : augmente vos chances de coup critique de 1 %. Masse/bâton : vos attaques ignorent 3 % de l’Armure de votre cible. Épée : les attaques en mêlée réussies ont 1 % de chances de déclencher une attaque supplémentaire contre la cible.",
    "ranks": [
     "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/arme d’hast : augmente vos chances de coup critique de 1 %. Masse/bâton : vos attaques ignorent 3 % de l’Armure de votre cible. Épée : les attaques en mêlée réussies ont 1 % de chances de déclencher une attaque supplémentaire contre la cible.",
@@ -21873,7 +21873,8 @@ window.TALENT_FR={
     "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/arme d’hast : augmente vos chances de coup critique de 5 %. Masse/bâton : vos attaques ignorent 15 % de l’Armure de votre cible. Épée : les attaques en mêlée réussies ont 5 % de chances de déclencher une attaque supplémentaire contre la cible."
    ],
    "textSource": "client-forever",
-   "spell": 1290261
+   "spell": 1290261,
+   "nameBranch": "forever"
   },
   "guerrier/arms-6-1": {
    "name": "Heurtoir amélioré",
@@ -22849,9 +22850,9 @@ window.TALENT_FR={
    "textSource": "client-forever"
   },
   "chasseur/beast-mastery-4-3": {
-   "name": "Férocité",
+   "name": "Ferocité",
    "nameSource": "officiel",
-   "spell": 16934,
+   "spell": 19598,
    "classic": "Augmente les chances de votre familier d'infliger un coup critique de 3%.",
    "nameBranch": "forever",
    "rank1": "Augmente de 2 % les chances de coup critique de vos faucons et familiers.",
@@ -22862,7 +22863,8 @@ window.TALENT_FR={
     "Augmente de 6 % les chances de coup critique de vos faucons et familiers.",
     "Augmente de 8 % les chances de coup critique de vos faucons et familiers.",
     "Augmente de 10 % les chances de coup critique de vos faucons et familiers."
-   ]
+   ],
+   "note": "Le client écrit « Ferocité » sans accent pour le chasseur, et « Férocité » pour le talent druide du même nom anglais (sort 16934). La coquille est de Blizzard ; on suit le client, puisque c'est ce que le joueur lit en jeu."
   },
   "chasseur/beast-mastery-5-1": {
    "name": "Engagement spirituel",
@@ -23209,9 +23211,9 @@ window.TALENT_FR={
    "textSource": "client-forever"
   },
   "chasseur/survival-6-3": {
-   "name": "Réflexes-éclairs",
+   "name": "Réflexes éclairs",
    "nameSource": "officiel",
-   "spell": 13712,
+   "spell": 19168,
    "classic": "Augmente votre Agilité de 3%.",
    "rank1": "Augmente votre Agilité de 2%.",
    "textSource": "client-forever",
@@ -25551,11 +25553,11 @@ window.TALENT_FR={
   },
   "demoniste/affliction-3-1": {
    "name": "Plaie d’agonie améliorée",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "spell": 18827,
    "classic": "Augmente les points de dégâts infligés par votre sort Malédiction d'agonie de 2%.",
    "note": "Forever a renommé ce talent (anciennement « Improved Curse of Agony ») : le client français de Classic ne connaît que « Malédiction d’agonie améliorée ». Le nom retenu suit celui du sort renommé, « Plaie d’agonie » dans le client français de Cataclysme (sort 980).",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "rank1": "Augmente de 5 % les dégâts infligés par votre sort Plaie d’agonie.",
    "textSource": "client-forever",
    "ranks": [
@@ -27138,21 +27140,23 @@ window.TALENT_FR={
   },
   "guerrier/protection-4-3": {
    "name": "Avant-garde",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Votre technique Charge est désormais utilisable en posture défensive.",
    "textSource": "client-forever",
-   "spell": 1310317
+   "spell": 1310317,
+   "nameBranch": "forever"
   },
   "paladin/holy-1-1": {
    "name": "Frappe sacrée améliorée",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Réduit de 1 s le temps de recharge de votre technique Frappe sacrée.",
    "textSource": "client-forever",
    "ranks": [
     "Réduit de 1 s le temps de recharge de votre technique Frappe sacrée.",
     "Réduit de 2 s le temps de recharge de votre technique Frappe sacrée."
    ],
-   "spell": 1310902
+   "spell": 1310902,
+   "nameBranch": "forever"
   },
   "paladin/holy-3-1": {
    "name": "Voix de la vérité",
@@ -27164,7 +27168,7 @@ window.TALENT_FR={
   },
   "paladin/holy-3-2": {
    "name": "Révérence",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Vous confère 10 % de votre vitesse normale de récupération du mana pendant l’incantation.",
    "textSource": "client-forever",
    "ranks": [
@@ -27172,11 +27176,12 @@ window.TALENT_FR={
     "Vous confère 20 % de votre vitesse normale de récupération du mana pendant l’incantation.",
     "Vous confère 30 % de votre vitesse normale de récupération du mana pendant l’incantation."
    ],
-   "spell": 1310899
+   "spell": 1310899,
+   "nameBranch": "forever"
   },
   "paladin/holy-5-1": {
    "name": "Précision divine",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Améliore de 6 % vos chances de toucher avec les sorts du sacré.",
    "textSource": "client-forever",
    "ranks": [
@@ -27184,18 +27189,20 @@ window.TALENT_FR={
     "Améliore de 12 % vos chances de toucher avec les sorts du sacré.",
     "Améliore de 18 % vos chances de toucher avec les sorts du sacré."
    ],
-   "spell": 1310904
+   "spell": 1310904,
+   "nameBranch": "forever"
   },
   "paladin/holy-5-3": {
    "name": "Terre consacrée",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "ranks": [
     "Augmente les dégâts de vos sorts du sacré de 5 % contre les 4 premiers adversaires qui entrent dans la zone d’effet de votre Consécration.",
     "Augmente les dégâts de vos sorts du sacré de 10 % contre les 4 premiers adversaires qui entrent dans la zone d’effet de votre Consécration."
    ],
    "rank1": "Augmente les dégâts de vos sorts du sacré de 5 % contre les 4 premiers adversaires qui entrent dans la zone d’effet de votre Consécration.",
    "textSource": "client-forever",
-   "spell": 1310905
+   "spell": 1310905,
+   "nameBranch": "forever"
   },
   "paladin/holy-7-2": {
    "name": "Vigile de Lumière",
@@ -27207,17 +27214,19 @@ window.TALENT_FR={
   },
   "paladin/protection-3-1": {
    "name": "Sceau de fureur amélioré",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Une fois que le bouclier de Sceau de fureur est entièrement absorbé, rend 0 points de mana, augmentés de 15 % par niveau vous séparant du personnage attaquant, jusqu’à 45 %.",
    "textSource": "client-forever",
-   "spell": 1314103
+   "spell": 1314103,
+   "nameBranch": "forever"
   },
   "paladin/protection-4-1": {
    "name": "Jugement rapide",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Réinitialise le temps de recharge de Jugement et réduit le coût en mana de votre prochaine utilisation de cette technique de 100 %.",
    "textSource": "client-forever",
-   "spell": 1310994
+   "spell": 1310994,
+   "nameBranch": "forever"
   },
   "paladin/protection-5-2": {
    "name": "Rempart de templier",
@@ -27229,7 +27238,7 @@ window.TALENT_FR={
   },
   "paladin/protection-6-3": {
    "name": "Credo de fer",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "ranks": [
     "Augmente le niveau de menace généré par votre technique Frappe sacrée de 5 %. Tant que Fureur vertueuse est active, Frappe sacrée réduit également les dégâts que vous subissez de 2 % pendant 6 sec.",
     "Augmente le niveau de menace généré par votre technique Frappe sacrée de 10 %. Tant que Fureur vertueuse est active, Frappe sacrée réduit également les dégâts que vous subissez de 4 % pendant 6 sec.",
@@ -27239,18 +27248,20 @@ window.TALENT_FR={
    ],
    "rank1": "Augmente le niveau de menace généré par votre technique Frappe sacrée de 5 %. Tant que Fureur vertueuse est active, Frappe sacrée réduit également les dégâts que vous subissez de 2 % pendant 6 sec.",
    "textSource": "client-forever",
-   "spell": 1311034
+   "spell": 1311034,
+   "nameBranch": "forever"
   },
   "paladin/retribution-2-2": {
    "name": "Conduit sacré",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "ranks": [
     "Réduit de 20 % le coût en mana de vos sorts Consécration, Colère divine, Exorcisme et Marteau de courroux.",
     "Réduit de 40 % le coût en mana de vos sorts Consécration, Colère divine, Exorcisme et Marteau de courroux."
    ],
    "rank1": "Réduit de 20 % le coût en mana de vos sorts Consécration, Colère divine, Exorcisme et Marteau de courroux.",
    "textSource": "client-forever",
-   "spell": 1237268
+   "spell": 1237268,
+   "nameBranch": "forever"
   },
   "paladin/retribution-4-3": {
    "name": "Sentence sacrée",
@@ -27275,14 +27286,15 @@ window.TALENT_FR={
   },
   "paladin/retribution-6-3": {
    "name": "Instrument de la loi",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Réduit le temps d’incantation de Marteau de courroux de 0.5 s et réduit le niveau de menace que vous générez de 10 % tant que Fureur vertueuse est inactive.",
    "textSource": "client-forever",
    "ranks": [
     "Réduit le temps d’incantation de Marteau de courroux de 0.5 s et réduit le niveau de menace que vous générez de 10 % tant que Fureur vertueuse est inactive.",
     "Réduit le temps d’incantation de Marteau de courroux de 1.0 s et réduit le niveau de menace que vous générez de 20 % tant que Fureur vertueuse est inactive."
    ],
-   "spell": 1311085
+   "spell": 1311085,
+   "nameBranch": "forever"
   },
   "paladin/retribution-7-2": {
    "name": "Effet de lumière",
@@ -27374,10 +27386,11 @@ window.TALENT_FR={
   },
   "voleur/combat-4-2": {
    "name": "Exécution parfaite",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Réduit de 10 le coût en énergie de votre technique Éviscération.",
    "textSource": "client-forever",
-   "spell": 1310711
+   "spell": 1310711,
+   "nameBranch": "forever"
   },
   "voleur/subtlety-3-3": {
    "name": "Distraction améliorée",
@@ -27431,7 +27444,7 @@ window.TALENT_FR={
   },
   "pretre/discipline-1-1": {
    "name": "Puissance de la Lumière",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Vos sorts Châtiment et Pénitence infligent 2 % de dégâts supplémentaires aux cibles affectées par votre sort Flammes sacrées.",
    "textSource": "client-forever",
    "ranks": [
@@ -27441,11 +27454,12 @@ window.TALENT_FR={
     "Vos sorts Châtiment et Pénitence infligent 8 % de dégâts supplémentaires aux cibles affectées par votre sort Flammes sacrées.",
     "Vos sorts Châtiment et Pénitence infligent 10 % de dégâts supplémentaires aux cibles affectées par votre sort Flammes sacrées."
    ],
-   "spell": 1309969
+   "spell": 1309969,
+   "nameBranch": "forever"
   },
   "pretre/discipline-2-2": {
    "name": "Précision sacrée",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Améliore de 6 % vos chances de toucher avec les sorts du sacré.",
    "textSource": "client-forever",
    "ranks": [
@@ -27453,7 +27467,8 @@ window.TALENT_FR={
     "Améliore de 12 % vos chances de toucher avec les sorts du sacré.",
     "Améliore de 18 % vos chances de toucher avec les sorts du sacré."
    ],
-   "spell": 1309957
+   "spell": 1309957,
+   "nameBranch": "forever"
   },
   "pretre/holy-4-4": {
    "name": "Soins de lien",
@@ -27465,42 +27480,47 @@ window.TALENT_FR={
   },
   "pretre/holy-5-1": {
    "name": "Litanie de Lumière",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Lorsque vous lancez un sort de soins, vous récupérez un montant de mana égal à 5 % du coût de base du sort si vos soins précédents proviennent d’un sort différent.",
    "textSource": "client-forever",
    "ranks": [
     "Lorsque vous lancez un sort de soins, vous récupérez un montant de mana égal à 5 % du coût de base du sort si vos soins précédents proviennent d’un sort différent.",
     "Lorsque vous lancez un sort de soins, vous récupérez un montant de mana égal à 10 % du coût de base du sort si vos soins précédents proviennent d’un sort différent."
    ],
-   "spell": 1317006
+   "spell": 1317006,
+   "nameBranch": "forever"
   },
   "pretre/holy-7-2": {
    "name": "Prière de guérison",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Place sur la cible un sort qui la soigne de 247 points de vie la prochaine fois qu’elle subit des dégâts ou reçoit des soins non périodiques. Lorsque le soin se produit, Prière de guérison bondit vers un membre du groupe ou du raid situé dans un rayon de 20 mètres. Bondit jusqu’à 5 fois et dure 30 sec après chaque bond. Ce sort ne peut être placé que sur une seule cible à la fois par lanceur.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 401859
   },
   "pretre/shadow-magic-3-4": {
    "name": "Fouet mental amélioré",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "ranks": [
     "Votre sort Fouet mental inflige désormais 10 % de dégâts supplémentaires, sa portée augmente de 5 m, et il diminue la vitesse de déplacement de la cible de 35 %.",
     "Votre sort Fouet mental inflige désormais 20 % de dégâts supplémentaires, sa portée augmente de 10 m, et il diminue la vitesse de déplacement de la cible de 20 %."
    ],
    "rank1": "Votre sort Fouet mental inflige désormais 10 % de dégâts supplémentaires, sa portée augmente de 5 m, et il diminue la vitesse de déplacement de la cible de 35 %.",
    "textSource": "client-forever",
-   "spell": 1225139
+   "spell": 1225139,
+   "nameBranch": "forever"
   },
   "pretre/shadow-magic-5-3": {
    "name": "Contagion dévorante",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "ranks": [
     "Réduit le coût en mana de Peste dévorante de 25 %. Les cibles qui meurent alors que Peste dévorante est active propagent l’effet à un personnage adverse proche à moins de 5 m pendant la durée restante.",
     "Réduit le coût en mana de Peste dévorante de 50 %. Les cibles qui meurent alors que Peste dévorante est active propagent l’effet à un personnage adverse proche à moins de 10 m pendant la durée restante."
    ],
    "rank1": "Réduit le coût en mana de Peste dévorante de 25 %. Les cibles qui meurent alors que Peste dévorante est active propagent l’effet à un personnage adverse proche à moins de 5 m pendant la durée restante.",
    "textSource": "client-forever",
-   "spell": 1309950
+   "spell": 1309950,
+   "nameBranch": "forever"
   },
   "pretre/shadow-magic-6-1": {
    "name": "Trépas prématuré",
@@ -27525,9 +27545,11 @@ window.TALENT_FR={
   },
   "chaman/elemental-combat-7-2": {
    "name": "Explosion de lave",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Vous projetez de la lave en fusion sur la cible, lui infligeant 158 à 187 points de dégâts de Feu. Si votre Horion de flammes affecte la cible, Explosion de lave inflige 20% de dégâts supplémentaires.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 408490
   },
   "chaman/enhancement-7-2": {
    "name": "Rage long-voyante",
@@ -27539,7 +27561,7 @@ window.TALENT_FR={
   },
   "chaman/restoration-2-1": {
    "name": "Pleine conscience",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "ranks": [
     "Vous confère 17 % de votre vitesse normale de récupération du mana pendant l’incantation.",
     "Vous confère 33 % de votre vitesse normale de récupération du mana pendant l’incantation.",
@@ -27547,25 +27569,28 @@ window.TALENT_FR={
    ],
    "rank1": "Vous confère 17 % de votre vitesse normale de récupération du mana pendant l’incantation.",
    "textSource": "client-forever",
-   "spell": 1223033
+   "spell": 1223033,
+   "nameBranch": "forever"
   },
   "chaman/restoration-3-3": {
    "name": "Bouclier d’eau",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Le lanceur ou la lanceuse s’entoure de 3 globes d’eau. Si une attaque en mêlée, à distance ou un sort touche le lanceur ou la lanceuse, ou si l’un de ses sorts de soins obtient un effet critique, un globe d’eau est dépensé pour restaurer 2 % de son maximum de mana. Un seul globe peut s’activer toutes les quelques secondes. Dure 10 min. Un seul bouclier élémentaire peut être actif sur le chaman ou la chamane à la fois.",
    "textSource": "client-forever",
-   "spell": 408510
+   "spell": 408510,
+   "nameBranch": "forever"
   },
   "mage/arcane-3-1": {
    "name": "Géométrie des arcanes",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "rank1": "Augmente la portée de vos sorts des Arcanes de 3 m.",
    "textSource": "client-forever",
    "ranks": [
     "Augmente la portée de vos sorts des Arcanes de 3 m.",
     "Augmente la portée de vos sorts des Arcanes de 6 m."
    ],
-   "spell": 11247
+   "spell": 11247,
+   "nameBranch": "forever"
   },
   "mage/arcane-3-4": {
    "name": "Déflagration des arcanes",
@@ -27610,7 +27635,7 @@ window.TALENT_FR={
   },
   "demoniste/affliction-4-1": {
    "name": "Malveillance",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "note": "Nom repris du sort Malveillance du client français (sort 442726), qui traduit le même mot anglais.",
    "rank1": "Augmente de 1 % les chances d’obtenir un effet critique avec vos sorts d’ombre.",
    "textSource": "client-forever",
@@ -27621,7 +27646,8 @@ window.TALENT_FR={
     "Augmente de 4 % les chances d’obtenir un effet critique avec vos sorts d’ombre.",
     "Augmente de 5 % les chances d’obtenir un effet critique avec vos sorts d’ombre."
    ],
-   "spell": 1310949
+   "spell": 1310949,
+   "nameBranch": "forever"
   },
   "demoniste/affliction-7-2": {
    "name": "Calvaire",
@@ -27646,7 +27672,7 @@ window.TALENT_FR={
   },
   "demoniste/demonology-4-4": {
    "name": "Marque démoniaque",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "note": "Traduction éditoriale : le mot anglais « Brand » est rendu par « Marque » dans le client français (ainsi « Fiery Brand » y devient « Marque enflammée », sort 204021).",
    "ranks": [
     "Votre Douleur brûlante génère 17% de menace en moins et marque la cible pendant 10 sec. Les 2 prochaines attaques de votre démon contre elle génèrent une menace élevée et infligent 39 à 42 points de dégâts de Feu ou d’Ombre selon le démon.",
@@ -27654,26 +27680,31 @@ window.TALENT_FR={
     "Votre Douleur brûlante génère 50% de menace en moins et marque la cible pendant 10 sec. Les 6 prochaines attaques de votre démon contre elle génèrent une menace élevée et infligent 39 à 42 points de dégâts de Feu ou d’Ombre selon le démon."
    ],
    "rank1": "Votre Douleur brûlante génère 17% de menace en moins et marque la cible pendant 10 sec. Les 2 prochaines attaques de votre démon contre elle génèrent une menace élevée et infligent 39 à 42 points de dégâts de Feu ou d’Ombre selon le démon.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 1293695
   },
   "demoniste/destruction-5-2": {
    "name": "Plaie de tumulte",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "note": "Nom officiel du client français de Cataclysme (sort 80240), extension d’où Forever reprend ce sort — hors du relevé Classic, Burning Crusade et Wrath sur lequel s’appuie l’import, d’où une entrée éditoriale.",
    "rank1": "Afflige la cible pendant 5 min. La cible maudite subit 15 % de tous les dégâts infligés par le personnage démoniste à d’autres cibles. Plaie de tumulte est limité à 1 cible, et une seule plaie par démoniste peut être active sur une même cible.",
    "textSource": "client-forever",
-   "spell": 1225228
+   "spell": 1225228,
+   "nameBranch": "forever"
   },
   "demoniste/destruction-7-2": {
    "name": "Incinérer",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "note": "Nom officiel du client français (sort 29722, Burning Crusade) : le sort existe hors des arbres de talents, l’import qui ne relève que les calculateurs ne pouvait pas l’y trouver.",
    "rank1": "Inflige 125 à 140 points de dégâts de Feu à votre cible, et 25% de dégâts supplémentaires si elle est affectée par Immolation.",
-   "textSource": "editorial"
+   "textSource": "editorial",
+   "nameBranch": "forever",
+   "spell": 412758
   },
   "druide/balance-5-1": {
    "name": "Lacis",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "note": "Nom repris du sort Lacis du client français (sort 203651), qui traduit le même mot anglais, Overgrowth : Forever lui donne un effet qui lui est propre.",
    "rank1": "Augmente de 1 le nombre maximum de cibles pouvant être affectées par Sarments.",
    "textSource": "client-forever",
@@ -27681,7 +27712,8 @@ window.TALENT_FR={
     "Augmente de 1 le nombre maximum de cibles pouvant être affectées par Sarments.",
     "Augmente de 2 le nombre maximum de cibles pouvant être affectées par Sarments."
    ],
-   "spell": 17245
+   "spell": 17245,
+   "nameBranch": "forever"
   },
   "guerrier/protection-5-4": {
    "name": "Bastion",
