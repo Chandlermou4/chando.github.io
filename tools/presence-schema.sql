@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS presence (id TEXT PRIMARY KEY, seen INTEGER NOT NULL);
+CREATE INDEX IF NOT EXISTS presence_seen ON presence (seen);
+CREATE TABLE IF NOT EXISTS compteur (cle TEXT PRIMARY KEY, valeur INTEGER NOT NULL DEFAULT 0);
+INSERT INTO compteur (cle, valeur) VALUES ('visites', 0) ON CONFLICT(cle) DO NOTHING;

@@ -11,3 +11,7 @@ __pycache__/
 *.log
 .DS_Store
 Thumbs.db
+
+# État local de `wrangler pages dev`, utilisé pour essayer la fonction
+# de présence hors ligne. Base D1 locale et cache : rien à publier.
+.wrangler/

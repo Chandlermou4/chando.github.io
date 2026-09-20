@@ -77,6 +77,10 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
   color:#5865F2;font-size:14px;font-weight:600;letter-spacing:.01em;transition:color .18s}
 .feedback:hover{color:#7B87FF}
 .feedback svg{width:20px;height:20px;flex:none}
+/* Compteur de présence, injecté par assets/online.js quand l'API répond.
+   Volontairement discret : c'est une indication d'ambiance, pas une statistique
+   à mettre en avant. Absent de la page tant qu'il n'y a pas de chiffre. */
+.online-now{font-size:11px;letter-spacing:.04em;color:var(--dim);opacity:.65}
 
 /* ── Bascule clair / sombre ──────────────────────────────────────────────── */
 #themetoggle{position:fixed;right:24px;bottom:24px;z-index:98;
