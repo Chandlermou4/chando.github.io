@@ -21623,8 +21623,8 @@ window.TALENT_DATA={
 ;
 window.TALENT_FR={
  "version": 1,
- "updatedAt": "2026-09-19",
- "method": "Les noms français viennent du client français officiel de World of Warcraft. Ils sont relevés sur les fichiers publics des calculateurs de talents de Wowhead, en comparant la version anglaise et la version française de Classic, de Burning Crusade puis de Wrath of the Lich King, dans cet ordre : beaucoup de talents que Forever présente comme nouveaux existent en réalité dans une extension ultérieure. Chaque nom conserve l’identifiant du sort qui le porte, pour être vérifiable. Les talents qui n’existent dans aucune de ces trois extensions, et ceux que Forever a renommés, n’ont aucun nom français officiel : leur traduction est éditoriale et signalée comme telle. Quelques-uns de ces noms éditoriaux reprennent tout de même un nom que Blizzard a donné en français ailleurs — à une extension plus récente, ou à un sort qui ne figure dans aucun arbre de talents et que ce relevé ne pouvait donc pas atteindre ; ils ont été cherchés fiche par fiche sur le site français de Wowhead et leur note cite le sort d’origine. Les textes d’infobulle réécrits par Forever sont traduits par nos soins.",
+ "updatedAt": "2026-09-20",
+ "method": "Les noms et les textes marqués « client-forever » viennent des tables du client français de Forever, publiées par wago.tools pour la build 1.60.1.69913. Les descriptions y figurent avec leurs variables ($s1, $t, $d) : on les résout en alignant le gabarit anglais de la même table sur le texte anglais déjà résolu que publie le calculateur de Wowhead, rang par rang. Les valeurs sont associées au nom de la variable et non à sa position, le français réordonnant souvent les phrases. Un texte n’est repris que s’il se résout entièrement et que tous les nombres du texte anglais s’y retrouvent ; sinon il reste celui que nous avions. La méthode est vérifiée contre les infobulles photographiées en jeu, qu’elle reproduit au mot près. Les entrées sans cette marque restent éditoriales.",
  "glossary": {
   "trees": {
    "Arms": "Armes",
@@ -21695,11 +21695,16 @@ window.TALENT_FR={
   "guerrier/arms-1-1": {
    "name": "Frappe héroïque améliorée",
    "nameSource": "officiel",
-   "rank1": "Réduit de 1 point le coût en rage de votre technique Frappe héroïque.",
+   "rank1": "Réduit le coût de votre technique Frappe héroïque de 1 point de rage.",
    "classic": "Réduit le coût en rage de votre technique Frappe héroïque de 1 points.",
    "spell": 12282,
-   "textSource": "editorial",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit le coût de votre technique Frappe héroïque de 1 point de rage.",
+    "Réduit le coût de votre technique Frappe héroïque de 2 points de rage.",
+    "Réduit le coût de votre technique Frappe héroïque de 3 points de rage."
+   ]
   },
   "guerrier/arms-1-2": {
    "name": "Déviation",
@@ -21707,36 +21712,59 @@ window.TALENT_FR={
    "rank1": "Augmente de 1% vos chances de Parer.",
    "classic": "Augmente de 1% vos chances de Parer.",
    "spell": 16462,
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 1% vos chances de Parer.",
+    "Augmente de 2% vos chances de Parer.",
+    "Augmente de 3% vos chances de Parer.",
+    "Augmente de 4% vos chances de Parer.",
+    "Augmente de 5% vos chances de Parer."
+   ]
   },
   "guerrier/arms-1-3": {
    "name": "Pourfendre amélioré",
    "nameSource": "officiel",
-   "rank1": "Augmente de 12% les points de dégâts infligés par la technique Pourfendre.",
+   "rank1": "Augmente de 12 % les dégâts de saignement infligés par votre technique Pourfendre.",
    "classic": "Augmente de 15% les points de dégâts infligés par la technique Pourfendre.",
    "spell": 12286,
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 12 % les dégâts de saignement infligés par votre technique Pourfendre.",
+    "Augmente de 23 % les dégâts de saignement infligés par votre technique Pourfendre.",
+    "Augmente de 35 % les dégâts de saignement infligés par votre technique Pourfendre."
+   ]
   },
   "guerrier/arms-2-1": {
    "name": "Charge améliorée",
    "nameSource": "officiel",
-   "rank1": "Augmente de 3 la quantité de rage générée par votre technique Charge.",
+   "rank1": "Augmente de 3 points la rage générée par votre technique Charge.",
    "classic": "Augmente la quantité de Rage générée par votre technique Charge de 3.",
    "spell": 12285,
-   "textSource": "editorial",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 3 points la rage générée par votre technique Charge.",
+    "Augmente de 6 points la rage générée par votre technique Charge."
+   ]
   },
   "guerrier/arms-2-2": {
    "name": "Maîtrise tactique améliorée",
    "nameSource": "officiel",
-   "rank1": "Maîtrise tactique vous fait conserver jusqu’à 3 points de rage supplémentaires lorsque vous changez de posture.",
+   "rank1": "Votre Maîtrise tactique vous permet de conserver jusqu’à 3 points de rage supplémentaires lorsque vous changez de posture.",
    "classic": "Vous conservez jusqu'à 5 de vos points de rage lorsque vous changez de posture.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Maîtrise tactique » (anciennement « Tactical Mastery »).",
    "spell": 12295,
-   "textSource": "editorial",
-   "nameBranch": "forever"
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "ranks": [
+    "Votre Maîtrise tactique vous permet de conserver jusqu’à 3 points de rage supplémentaires lorsque vous changez de posture.",
+    "Votre Maîtrise tactique vous permet de conserver jusqu’à 6 points de rage supplémentaires lorsque vous changez de posture.",
+    "Votre Maîtrise tactique vous permet de conserver jusqu’à 9 points de rage supplémentaires lorsque vous changez de posture.",
+    "Votre Maîtrise tactique vous permet de conserver jusqu’à 12 points de rage supplémentaires lorsque vous changez de posture.",
+    "Votre Maîtrise tactique vous permet de conserver jusqu’à 15 points de rage supplémentaires lorsque vous changez de posture."
+   ]
   },
   "guerrier/arms-2-4": {
    "name": "Fulgurance améliorée",
@@ -21744,32 +21772,41 @@ window.TALENT_FR={
    "rank1": "Augmente de 25% vos chances d'infliger un coup critique avec la technique Fulgurance.",
    "classic": "Augmente de 25% vos chances d'infliger un coup critique avec la technique Fulgurance.",
    "spell": 12290,
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 25% vos chances d'infliger un coup critique avec la technique Fulgurance.",
+    "Augmente de 50% vos chances d'infliger un coup critique avec la technique Fulgurance."
+   ]
   },
   "guerrier/arms-3-2": {
    "name": "Maîtrise de la Rage",
    "nameSource": "officiel",
-   "rank1": "Génère 1 point de rage toutes les 3 sec en combat et réduit de 30% la déperdition de rage hors combat.",
+   "rank1": "Génère 1 point de rage toutes les 3 s au combat et réduit la perte de rage en dehors des combats de 30 %.",
    "classic": "Augmente de 30% le temps nécessaire au processus de déperdition des points de rage lorsque vous cessez le combat.",
    "spell": 12296,
-   "textSource": "editorial",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "guerrier/arms-3-3": {
    "name": "Blessures profondes",
    "nameSource": "officiel",
-   "rank1": "Vos coups critiques font saigner l’adversaire et lui infligent 20% des points de dégâts moyens de votre arme de mêlée en 12 sec.",
+   "rank1": "Vos coups critiques font saigner votre adversaire, lui infligeant 20 % des dégâts moyens de votre arme de mêlée pendant 12 sec.",
    "classic": "Vos coups critiques font saigner l'adversaire et lui infligent 20% des points de dégâts moyens de votre arme en 12 sec.",
    "spell": 12834,
-   "textSource": "editorial",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Vos coups critiques font saigner votre adversaire, lui infligeant 20 % des dégâts moyens de votre arme de mêlée pendant 12 sec.",
+    "Vos coups critiques font saigner votre adversaire, lui infligeant 40 % des dégâts moyens de votre arme de mêlée pendant 12 sec.",
+    "Vos coups critiques font saigner votre adversaire, lui infligeant 60 % des dégâts moyens de votre arme de mêlée pendant 12 sec."
+   ]
   },
   "guerrier/arms-4-1": {
    "name": "Frappe transperçante",
    "nameSource": "officiel",
-   "rank1": "Une attaque brutale qui inflige 40% des points de dégâts de l’arme. Inflige 80% de points de dégâts d’arme supplémentaires aux géants, aux draconiens et aux cibles montées, qui sont alors désarçonnées.",
-   "textSource": "editorial",
+   "rank1": "Une attaque brutale qui inflige 40 % des dégâts de l’arme. Inflige 80 % des dégâts de l’arme supplémentaires contre les géants, les draconiens et les cibles sur une monture. Les cibles sur une monture sont désarçonnées.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1310222
   },
@@ -21779,30 +21816,39 @@ window.TALENT_FR={
    "rank1": "Augmente de 1% les points de dégâts que vous infligez avec les armes à deux mains.",
    "classic": "Augmente de 1% les points de dégâts que vous infligez avec les armes à deux mains.",
    "spell": 12163,
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 1% les points de dégâts que vous infligez avec les armes à deux mains.",
+    "Augmente de 2% les points de dégâts que vous infligez avec les armes à deux mains.",
+    "Augmente de 3% les points de dégâts que vous infligez avec les armes à deux mains."
+   ]
   },
   "guerrier/arms-4-3": {
    "name": "Empaler",
    "nameSource": "officiel",
-   "rank1": "Augmente de 10% les points de dégâts supplémentaires infligés par vos coups critiques.",
+   "rank1": "Augmente de 10% le bonus aux dégâts des coups critiques réussis avec vos techniques.",
    "classic": "Augmente de 10% les points de dégâts supplémentaires infligés par vos coups critiques, lorsque vous utilisez vos techniques en postures de combat, défensive et berserker.",
    "spell": 16493,
-   "textSource": "editorial",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 10% le bonus aux dégâts des coups critiques réussis avec vos techniques.",
+    "Augmente de 20% le bonus aux dégâts des coups critiques réussis avec vos techniques."
+   ]
   },
   "guerrier/arms-5-1": {
    "name": "Exaltation sanguinaire",
    "nameSource": "officiel",
-   "rank1": "Vos attaques de mêlée contre une cible affectée par votre Pourfendre ont 2% de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
+   "rank1": "Vos attaques en mêlée contre les cibles affectées par Pourfendre ont 2 % de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
    "ranks": [
-    "Vos attaques de mêlée contre une cible affectée par votre Pourfendre ont 2% de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
-    "Vos attaques de mêlée contre une cible affectée par votre Pourfendre ont 4% de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
-    "Vos attaques de mêlée contre une cible affectée par votre Pourfendre ont 6% de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
-    "Vos attaques de mêlée contre une cible affectée par votre Pourfendre ont 8% de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
-    "Vos attaques de mêlée contre une cible affectée par votre Pourfendre ont 10% de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec."
+    "Vos attaques en mêlée contre les cibles affectées par Pourfendre ont 2 % de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
+    "Vos attaques en mêlée contre les cibles affectées par Pourfendre ont 4 % de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
+    "Vos attaques en mêlée contre les cibles affectées par Pourfendre ont 6 % de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
+    "Vos attaques en mêlée contre les cibles affectées par Pourfendre ont 8 % de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
+    "Vos attaques en mêlée contre les cibles affectées par Pourfendre ont 10 % de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec."
    ],
-   "textSource": "editorial",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1289682
   },
@@ -21812,47 +21858,57 @@ window.TALENT_FR={
    "rank1": "Vos 5 prochaines attaques de mêlée touchent un adversaire proche supplémentaire.",
    "classic": "Vos 5 prochaines attaques de mêlée touchent un adversaire proche supplémentaire.",
    "spell": 12292,
-   "textSource": "officiel",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "guerrier/arms-5-3": {
    "name": "Maître d’armes",
    "nameSource": "adapte",
-   "rank1": "Confère un bénéfice à vos attaques d’arme de mêlée, selon l’arme employée.\n\nHache et arme d’hast : augmente de 1% vos chances d’infliger un coup critique.\n\nMasse et bâton : vos attaques ignorent 3% de l’armure de votre cible.\n\nÉpée : vos attaques de mêlée réussies ont 1% de chances de déclencher une attaque supplémentaire sur la cible.",
+   "rank1": "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/arme d’hast : augmente vos chances de coup critique de 1 %. Masse/bâton : vos attaques ignorent 3 % de l’Armure de votre cible. Épée : les attaques en mêlée réussies ont 1 % de chances de déclencher une attaque supplémentaire contre la cible.",
    "ranks": [
-    "Confère un bénéfice à vos attaques d’arme de mêlée, selon l’arme employée.\n\nHache et arme d’hast : augmente de 1% vos chances d’infliger un coup critique.\n\nMasse et bâton : vos attaques ignorent 3% de l’armure de votre cible.\n\nÉpée : vos attaques de mêlée réussies ont 1% de chances de déclencher une attaque supplémentaire sur la cible.",
-    "Confère un bénéfice à vos attaques d’arme de mêlée, selon l’arme employée.\n\nHache et arme d’hast : augmente de 2% vos chances d’infliger un coup critique.\n\nMasse et bâton : vos attaques ignorent 6% de l’armure de votre cible.\n\nÉpée : vos attaques de mêlée réussies ont 2% de chances de déclencher une attaque supplémentaire sur la cible.",
-    "Confère un bénéfice à vos attaques d’arme de mêlée, selon l’arme employée.\n\nHache et arme d’hast : augmente de 3% vos chances d’infliger un coup critique.\n\nMasse et bâton : vos attaques ignorent 9% de l’armure de votre cible.\n\nÉpée : vos attaques de mêlée réussies ont 3% de chances de déclencher une attaque supplémentaire sur la cible.",
-    "Confère un bénéfice à vos attaques d’arme de mêlée, selon l’arme employée.\n\nHache et arme d’hast : augmente de 4% vos chances d’infliger un coup critique.\n\nMasse et bâton : vos attaques ignorent 12% de l’armure de votre cible.\n\nÉpée : vos attaques de mêlée réussies ont 4% de chances de déclencher une attaque supplémentaire sur la cible.",
-    "Confère un bénéfice à vos attaques d’arme de mêlée, selon l’arme employée.\n\nHache et arme d’hast : augmente de 5% vos chances d’infliger un coup critique.\n\nMasse et bâton : vos attaques ignorent 15% de l’armure de votre cible.\n\nÉpée : vos attaques de mêlée réussies ont 5% de chances de déclencher une attaque supplémentaire sur la cible."
+    "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/arme d’hast : augmente vos chances de coup critique de 1 %. Masse/bâton : vos attaques ignorent 3 % de l’Armure de votre cible. Épée : les attaques en mêlée réussies ont 1 % de chances de déclencher une attaque supplémentaire contre la cible.",
+    "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/arme d’hast : augmente vos chances de coup critique de 2 %. Masse/bâton : vos attaques ignorent 6 % de l’Armure de votre cible. Épée : les attaques en mêlée réussies ont 2 % de chances de déclencher une attaque supplémentaire contre la cible.",
+    "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/arme d’hast : augmente vos chances de coup critique de 3 %. Masse/bâton : vos attaques ignorent 9 % de l’Armure de votre cible. Épée : les attaques en mêlée réussies ont 3 % de chances de déclencher une attaque supplémentaire contre la cible.",
+    "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/arme d’hast : augmente vos chances de coup critique de 4 %. Masse/bâton : vos attaques ignorent 12 % de l’Armure de votre cible. Épée : les attaques en mêlée réussies ont 4 % de chances de déclencher une attaque supplémentaire contre la cible.",
+    "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/arme d’hast : augmente vos chances de coup critique de 5 %. Masse/bâton : vos attaques ignorent 15 % de l’Armure de votre cible. Épée : les attaques en mêlée réussies ont 5 % de chances de déclencher une attaque supplémentaire contre la cible."
    ],
-   "textSource": "editorial"
+   "textSource": "client-forever",
+   "spell": 1290261
   },
   "guerrier/arms-6-1": {
    "name": "Heurtoir amélioré",
    "nameSource": "officiel",
-   "rank1": "Réduit de 0,25 sec le temps de recharge global et le temps d’incantation de votre technique Heurtoir. De plus, Heurtoir n’interrompt plus le cycle d’attaque de votre arme de mêlée.",
+   "rank1": "Réduit de 0.25 s le temps de recharge global et le temps d’incantation de votre technique Heurtoir. De plus, Heurtoir n’interrompt plus votre temps de frappe en mêlée.",
    "classic": "Réduit le temps d'incantation de votre technique Heurtoir de 0.1 sec.",
    "spell": 12862,
-   "textSource": "editorial",
-   "nameBranch": "wotlk"
+   "textSource": "client-forever",
+   "nameBranch": "wotlk",
+   "ranks": [
+    "Réduit de 0.25 s le temps de recharge global et le temps d’incantation de votre technique Heurtoir. De plus, Heurtoir n’interrompt plus votre temps de frappe en mêlée.",
+    "Réduit de 0.50 s le temps de recharge global et le temps d’incantation de votre technique Heurtoir. De plus, Heurtoir n’interrompt plus votre temps de frappe en mêlée."
+   ]
   },
   "guerrier/arms-6-3": {
    "name": "Brise-genou amélioré",
    "nameSource": "officiel",
-   "rank1": "Confère à votre technique Brise-genou 5% de chances d'immobiliser votre cible pendant 5 sec.",
+   "rank1": "Confère à votre technique Brise-genou 5 % de chances d’immobiliser la cible pendant 5 sec.",
    "classic": "Confère à votre technique Brise-genou 5% de chances d'immobiliser votre cible pendant 5 sec.",
    "spell": 12289,
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Confère à votre technique Brise-genou 5 % de chances d’immobiliser la cible pendant 5 sec.",
+    "Confère à votre technique Brise-genou 10 % de chances d’immobiliser la cible pendant 5 sec.",
+    "Confère à votre technique Brise-genou 15 % de chances d’immobiliser la cible pendant 5 sec."
+   ]
   },
   "guerrier/arms-7-2": {
    "name": "Frappe mortelle",
    "nameSource": "officiel",
-   "rank1": "Une attaque vicieuse qui inflige les points de dégâts de l'arme plus 85 et blesse la cible. L'effet des sorts de soins dont elle est la cible est réduit de 50% pendant 10 sec.",
+   "rank1": "Une attaque vicieuse qui inflige les dégâts de l’arme plus 85 et blesse la cible. L’efficacité des sorts de soins dont elle est la cible est réduite de 50 % pendant 10 sec.",
    "classic": "Une attaque vicieuse qui inflige les points de dégâts de l'arme plus 85 et blesse la cible. L'effet des sorts de soins dont elle est la cible est réduit de 50% pendant 10 sec.",
    "spell": 12294,
-   "textSource": "officiel",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "guerrier/fury-1-2": {
@@ -21862,14 +21918,14 @@ window.TALENT_FR={
    "classic": "Augmente la zone d’effet et la durée de Cri de guerre et Cri démoralisant de 10 %.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 10% le rayon d’action de vos techniques Cri de guerre et Cri démoralisant.",
-    "Augmente de 20% le rayon d’action de vos techniques Cri de guerre et Cri démoralisant.",
-    "Augmente de 30% le rayon d’action de vos techniques Cri de guerre et Cri démoralisant.",
-    "Augmente de 40% le rayon d’action de vos techniques Cri de guerre et Cri démoralisant.",
-    "Augmente de 50% le rayon d’action de vos techniques Cri de guerre et Cri démoralisant."
+    "Augmente de 10 % la zone d’effet de vos techniques Cri de guerre et Cri démoralisant.",
+    "Augmente de 20 % la zone d’effet de vos techniques Cri de guerre et Cri démoralisant.",
+    "Augmente de 30 % la zone d’effet de vos techniques Cri de guerre et Cri démoralisant.",
+    "Augmente de 40 % la zone d’effet de vos techniques Cri de guerre et Cri démoralisant.",
+    "Augmente de 50 % la zone d’effet de vos techniques Cri de guerre et Cri démoralisant."
    ],
-   "rank1": "Augmente de 10% le rayon d’action de vos techniques Cri de guerre et Cri démoralisant.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 10 % la zone d’effet de vos techniques Cri de guerre et Cri démoralisant.",
+   "textSource": "client-forever"
   },
   "guerrier/fury-1-3": {
    "name": "Cruauté",
@@ -21877,8 +21933,15 @@ window.TALENT_FR={
    "spell": 12320,
    "classic": "Augmente vos chances d'infliger un coup critique avec les armes de mêlée de 1%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% vos chances d’infliger un coup critique avec vos attaques de mêlée.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 1 % vos chances d’infliger un coup critique avec vos attaques en mêlée.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 1 % vos chances d’infliger un coup critique avec vos attaques en mêlée.",
+    "Augmente de 2 % vos chances d’infliger un coup critique avec vos attaques en mêlée.",
+    "Augmente de 3 % vos chances d’infliger un coup critique avec vos attaques en mêlée.",
+    "Augmente de 4 % vos chances d’infliger un coup critique avec vos attaques en mêlée.",
+    "Augmente de 5 % vos chances d’infliger un coup critique avec vos attaques en mêlée."
+   ]
   },
   "guerrier/fury-2-2": {
    "name": "Volonté de fer",
@@ -21887,8 +21950,15 @@ window.TALENT_FR={
    "classic": "Augmente de 3% vos chances de résister aux effets d'étourdissements et aux charmes.",
    "note": "Nom repris d’un talent homonyme du client français (Classic), trouvé hors de l’arbre où Forever le place.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 3% la durée des effets d’étourdissement et de peur qui vous sont infligés.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 3 % la durée des effets d’étourdissement et de peur qui vous sont infligés.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 3 % la durée des effets d’étourdissement et de peur qui vous sont infligés.",
+    "Réduit de 6 % la durée des effets d’étourdissement et de peur qui vous sont infligés.",
+    "Réduit de 9 % la durée des effets d’étourdissement et de peur qui vous sont infligés.",
+    "Réduit de 12 % la durée des effets d’étourdissement et de peur qui vous sont infligés.",
+    "Réduit de 15 % la durée des effets d’étourdissement et de peur qui vous sont infligés."
+   ]
   },
   "guerrier/fury-2-3": {
    "name": "Colère déchaînée",
@@ -21897,14 +21967,14 @@ window.TALENT_FR={
    "classic": "Donne 8% de chances de gagner un point de rage supplémentaire quand vous infligez des dégâts en mêlée avec une arme.",
    "nameBranch": "classic",
    "ranks": [
-    "Vous donne 12% de chances de générer 1 point de rage supplémentaire lorsque vous infligez des dégâts de mêlée avec une arme. Cet effet passe à 2 points de rage avec les armes à deux mains.",
-    "Vous donne 24% de chances de générer 1 point de rage supplémentaire lorsque vous infligez des dégâts de mêlée avec une arme. Cet effet passe à 2 points de rage avec les armes à deux mains.",
-    "Vous donne 36% de chances de générer 1 point de rage supplémentaire lorsque vous infligez des dégâts de mêlée avec une arme. Cet effet passe à 2 points de rage avec les armes à deux mains.",
-    "Vous donne 48% de chances de générer 1 point de rage supplémentaire lorsque vous infligez des dégâts de mêlée avec une arme. Cet effet passe à 2 points de rage avec les armes à deux mains.",
-    "Vous donne 60% de chances de générer 1 point de rage supplémentaire lorsque vous infligez des dégâts de mêlée avec une arme. Cet effet passe à 2 points de rage avec les armes à deux mains."
+    "Donne 12 % de chances de générer 1 point de rage supplémentaire quand vous infligez des dégâts en mêlée avec une arme. Cet effet passe à 2 points de rage si vous utilisez une arme à deux mains.",
+    "Donne 24 % de chances de générer 1 point de rage supplémentaire quand vous infligez des dégâts en mêlée avec une arme. Cet effet passe à 2 points de rage si vous utilisez une arme à deux mains.",
+    "Donne 36 % de chances de générer 1 point de rage supplémentaire quand vous infligez des dégâts en mêlée avec une arme. Cet effet passe à 2 points de rage si vous utilisez une arme à deux mains.",
+    "Donne 48 % de chances de générer 1 point de rage supplémentaire quand vous infligez des dégâts en mêlée avec une arme. Cet effet passe à 2 points de rage si vous utilisez une arme à deux mains.",
+    "Donne 60 % de chances de générer 1 point de rage supplémentaire quand vous infligez des dégâts en mêlée avec une arme. Cet effet passe à 2 points de rage si vous utilisez une arme à deux mains."
    ],
-   "rank1": "Vous donne 12% de chances de générer 1 point de rage supplémentaire lorsque vous infligez des dégâts de mêlée avec une arme. Cet effet passe à 2 points de rage avec les armes à deux mains.",
-   "textSource": "editorial"
+   "rank1": "Donne 12 % de chances de générer 1 point de rage supplémentaire quand vous infligez des dégâts en mêlée avec une arme. Cet effet passe à 2 points de rage si vous utilisez une arme à deux mains.",
+   "textSource": "client-forever"
   },
   "guerrier/fury-3-1": {
    "name": "Enchaînement amélioré",
@@ -21912,8 +21982,13 @@ window.TALENT_FR={
    "spell": 12329,
    "classic": "Augmente le bonus de dégâts infligé par votre technique Enchaînement de 40%.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 1 le coût en rage de votre technique Enchaînement.",
-   "textSource": "editorial"
+   "rank1": "Réduit le coût en rage de votre prochaine technique Enchaînement de 1.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le coût en rage de votre prochaine technique Enchaînement de 1.",
+    "Réduit le coût en rage de votre prochaine technique Enchaînement de 2.",
+    "Réduit le coût en rage de votre prochaine technique Enchaînement de 3."
+   ]
   },
   "guerrier/fury-3-2": {
    "name": "Hurlement perçant",
@@ -21921,8 +21996,8 @@ window.TALENT_FR={
    "spell": 12323,
    "classic": "Tous les ennemis à proximité du guerrier sont hébétés, et leurs vitesse de déplacement est réduite de 50% pendant 6 sec.",
    "nameBranch": "classic",
-   "rank1": "Tous les ennemis proches sont hébétés, leur vitesse de déplacement étant réduite de 50% pendant 6 sec.",
-   "textSource": "editorial"
+   "rank1": "Hébète les adversaires proches et réduit leur vitesse de déplacement de 50 % pendant 6 sec.",
+   "textSource": "client-forever"
   },
   "guerrier/fury-3-3": {
    "name": "Folie sanguinaire",
@@ -21931,12 +22006,12 @@ window.TALENT_FR={
    "classic": "Régénère 1% de votre nombre total de points de vie sur 6 sec après avoir reçu un coup critique.",
    "nameBranch": "classic",
    "ranks": [
-    "Régénère 1% de votre total de points de vie en 6 sec après avoir subi un coup critique, infligé des dégâts avec Sanguinaire, ou encaissé plus de 20% de votre maximum de points de vie en une seule attaque.",
-    "Régénère 2% de votre total de points de vie en 6 sec après avoir subi un coup critique, infligé des dégâts avec Sanguinaire, ou encaissé plus de 20% de votre maximum de points de vie en une seule attaque.",
-    "Régénère 3% de votre total de points de vie en 6 sec après avoir subi un coup critique, infligé des dégâts avec Sanguinaire, ou encaissé plus de 20% de votre maximum de points de vie en une seule attaque."
+    "Régénère 1 % de votre total de points de vie en 6 sec après avoir reçu un coup critique, infligé des dégâts avec Sanguinaire ou subi une attaque vous faisant perdre plus de 20 % de votre maximum de points de vie.",
+    "Régénère 2 % de votre total de points de vie en 6 sec après avoir reçu un coup critique, infligé des dégâts avec Sanguinaire ou subi une attaque vous faisant perdre plus de 20 % de votre maximum de points de vie.",
+    "Régénère 3 % de votre total de points de vie en 6 sec après avoir reçu un coup critique, infligé des dégâts avec Sanguinaire ou subi une attaque vous faisant perdre plus de 20 % de votre maximum de points de vie."
    ],
-   "rank1": "Régénère 1% de votre total de points de vie en 6 sec après avoir subi un coup critique, infligé des dégâts avec Sanguinaire, ou encaissé plus de 20% de votre maximum de points de vie en une seule attaque.",
-   "textSource": "editorial"
+   "rank1": "Régénère 1 % de votre total de points de vie en 6 sec après avoir reçu un coup critique, infligé des dégâts avec Sanguinaire ou subi une attaque vous faisant perdre plus de 20 % de votre maximum de points de vie.",
+   "textSource": "client-forever"
   },
   "guerrier/fury-4-1": {
    "name": "Spécialisation Ambidextrie",
@@ -21944,8 +22019,15 @@ window.TALENT_FR={
    "spell": 23584,
    "classic": "Augmente de 5% les points de dégâts infligés par l'arme que vous utilisez en main gauche.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 5% les points de dégâts de votre arme de main gauche, de 20% la rage qu’elle génère et de 2% vos chances de toucher avec elle.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 5 % les dégâts de votre arme tenue en main gauche, de 20 % les points de rage générés avec la main gauche et de 2 % vos chances de toucher avec les attaques effectuées avec la main gauche.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 5 % les dégâts de votre arme tenue en main gauche, de 20 % les points de rage générés avec la main gauche et de 2 % vos chances de toucher avec les attaques effectuées avec la main gauche.",
+    "Augmente de 10 % les dégâts de votre arme tenue en main gauche, de 40 % les points de rage générés avec la main gauche et de 4 % vos chances de toucher avec les attaques effectuées avec la main gauche.",
+    "Augmente de 15 % les dégâts de votre arme tenue en main gauche, de 60 % les points de rage générés avec la main gauche et de 6 % vos chances de toucher avec les attaques effectuées avec la main gauche.",
+    "Augmente de 20 % les dégâts de votre arme tenue en main gauche, de 80 % les points de rage générés avec la main gauche et de 8 % vos chances de toucher avec les attaques effectuées avec la main gauche.",
+    "Augmente de 25 % les dégâts de votre arme tenue en main gauche, de 100 % les points de rage générés avec la main gauche et de 10 % vos chances de toucher avec les attaques effectuées avec la main gauche."
+   ]
   },
   "guerrier/fury-4-3": {
    "name": "Enrager",
@@ -21953,8 +22035,15 @@ window.TALENT_FR={
    "spell": 12317,
    "classic": "Vous confère un bonus aux dégâts en mêlée de 5% pendant 12 sec pour un maximum de 12 coups lorsque vous êtes victime d'un coup critique.",
    "nameBranch": "classic",
-   "rank1": "Vous donne 30% de chances d’infliger 2% de dégâts physiques supplémentaires pendant 12 sec après avoir subi une attaque.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 30 % de chances d’infliger 2 % de dégâts physiques supplémentaires pendant 12 sec après avoir été victime d’une attaque infligeant des dégâts.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vous confère 30 % de chances d’infliger 2 % de dégâts physiques supplémentaires pendant 12 sec après avoir été victime d’une attaque infligeant des dégâts.",
+    "Vous confère 30 % de chances d’infliger 4 % de dégâts physiques supplémentaires pendant 12 sec après avoir été victime d’une attaque infligeant des dégâts.",
+    "Vous confère 30 % de chances d’infliger 6 % de dégâts physiques supplémentaires pendant 12 sec après avoir été victime d’une attaque infligeant des dégâts.",
+    "Vous confère 30 % de chances d’infliger 8 % de dégâts physiques supplémentaires pendant 12 sec après avoir été victime d’une attaque infligeant des dégâts.",
+    "Vous confère 30 % de chances d’infliger 10 % de dégâts physiques supplémentaires pendant 12 sec après avoir été victime d’une attaque infligeant des dégâts."
+   ]
   },
   "guerrier/fury-4-4": {
    "name": "Exécution améliorée",
@@ -21963,11 +22052,11 @@ window.TALENT_FR={
    "classic": "Réduit le coût en rage de votre technique Exécution de 2.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 3 le coût en rage de votre technique Exécution.",
-    "Réduit de 5 le coût en rage de votre technique Exécution."
+    "Réduit le coût en rage de votre technique Exécution de 3.",
+    "Réduit le coût en rage de votre technique Exécution de 5."
    ],
-   "rank1": "Réduit de 3 le coût en rage de votre technique Exécution.",
-   "textSource": "editorial"
+   "rank1": "Réduit le coût en rage de votre technique Exécution de 3.",
+   "textSource": "client-forever"
   },
   "guerrier/fury-5-2": {
    "name": "Souhait mortel",
@@ -21975,8 +22064,8 @@ window.TALENT_FR={
    "spell": 12328,
    "classic": "Lorsque cette technique est activée, elle augmente les dégâts physiques que vous infligez de 20% et vous rend insensible aux effets de Peur. En contrepartie, votre armure et toutes vos résistances sont réduites de 20%. Dure 30 sec.",
    "nameBranch": "classic",
-   "rank1": "Une fois activée, augmente de 20% les dégâts physiques que vous infligez et vous rend insensible aux effets de peur, mais augmente de 5% tous les dégâts que vous subissez. Dure 30 sec.",
-   "textSource": "editorial"
+   "rank1": "À l’activation, augmente de 20 % les dégâts physiques que vous infligez et vous rend insensible aux effets de peur, mais augmente de 5 % les dégâts que vous subissez. Dure 30 sec.",
+   "textSource": "client-forever"
   },
   "guerrier/fury-5-4": {
    "name": "Interception améliorée",
@@ -21984,8 +22073,12 @@ window.TALENT_FR={
    "spell": 20504,
    "classic": "Réduit le temps de recharge de votre technique Interception de 5 sec.",
    "rank1": "Réduit le temps de recharge de votre technique Interception de 5 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit le temps de recharge de votre technique Interception de 5 sec.",
+    "Réduit le temps de recharge de votre technique Interception de 10 sec."
+   ]
   },
   "guerrier/fury-6-1": {
    "name": "Rage berserker améliorée",
@@ -21993,8 +22086,12 @@ window.TALENT_FR={
    "spell": 20500,
    "classic": "La technique Rage berserker génère 5 points de rage quand elle est utilisée.",
    "nameBranch": "classic",
-   "rank1": "Votre technique Rage berserker génère instantanément 5 points de rage et a 50% de chances de dissiper tous les effets qui entravent vos déplacements lorsqu’elle est activée.",
-   "textSource": "editorial"
+   "rank1": "Votre technique Rage de berserker génère désormais instantanément 5 points de rage et a 50 % de chances d’annuler tous les effets affectant le déplacement quand elle est active.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Votre technique Rage de berserker génère désormais instantanément 5 points de rage et a 50 % de chances d’annuler tous les effets affectant le déplacement quand elle est active.",
+    "Votre technique Rage de berserker génère désormais instantanément 10 points de rage et a 100 % de chances d’annuler tous les effets affectant le déplacement quand elle est active."
+   ]
   },
   "guerrier/fury-6-3": {
    "name": "Rafale",
@@ -22003,14 +22100,14 @@ window.TALENT_FR={
    "classic": "Lorsque vous infligez un coup critique en mêlée, augmente votre vitesse d'attaque de 10% pour les 3 prochains coups.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 5% votre vitesse d’attaque au corps à corps pour vos 3 prochains coups après un coup critique de mêlée.",
-    "Augmente de 10% votre vitesse d’attaque pour vos 3 prochains coups après un coup critique de mêlée.",
-    "Augmente de 15% votre vitesse d’attaque pour vos 3 prochains coups après un coup critique de mêlée.",
-    "Augmente de 20% votre vitesse d’attaque pour vos 3 prochains coups après un coup critique de mêlée.",
-    "Augmente de 25% votre vitesse d’attaque pour vos 3 prochains coups après un coup critique de mêlée."
+    "Augmente votre vitesse d’attaque en mêlée de 5 % pour vos 3 prochaines attaques après avoir infligé un coup critique en mêlée.",
+    "Augmente votre vitesse d’attaque en mêlée de 10 % pour vos 3 prochaines attaques après avoir infligé un coup critique en mêlée.",
+    "Augmente votre vitesse d’attaque en mêlée de 15 % pour vos 3 prochaines attaques après avoir infligé un coup critique en mêlée.",
+    "Augmente votre vitesse d’attaque en mêlée de 20 % pour vos 3 prochaines attaques après avoir infligé un coup critique en mêlée.",
+    "Augmente votre vitesse d’attaque en mêlée de 25 % pour vos 3 prochaines attaques après avoir infligé un coup critique en mêlée."
    ],
-   "rank1": "Augmente de 5% votre vitesse d’attaque au corps à corps pour vos 3 prochains coups après un coup critique de mêlée.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre vitesse d’attaque en mêlée de 5 % pour vos 3 prochaines attaques après avoir infligé un coup critique en mêlée.",
+   "textSource": "client-forever"
   },
   "guerrier/fury-7-2": {
    "name": "Sanguinaire",
@@ -22028,14 +22125,14 @@ window.TALENT_FR={
    "classic": "Augmente de 1% vos chances de bloquer les attaques avec votre bouclier, avec 20% de chances d'obtenir 1 point de Rage quand vous bloquez une attaque.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 1% vos chances de bloquer les attaques avec votre bouclier et vous donne 20% de chances de générer 5 points de rage lorsque vous bloquez.",
-    "Augmente de 2% vos chances de bloquer les attaques avec votre bouclier et vous donne 40% de chances de générer 5 points de rage lorsque vous bloquez.",
-    "Augmente de 3% vos chances de bloquer les attaques avec votre bouclier et vous donne 60% de chances de générer 5 points de rage lorsque vous bloquez.",
-    "Augmente de 4% vos chances de bloquer les attaques avec votre bouclier et vous donne 80% de chances de générer 5 points de rage lorsque vous bloquez.",
-    "Augmente de 5% vos chances de bloquer les attaques avec votre bouclier et vous donne 100% de chances de générer 5 points de rage lorsque vous bloquez."
+    "Augmente de 1 % vos chances de bloquer les attaques avec votre bouclier et vous confère 20 % de chances de générer 5 points de rage lorsque vous bloquez une attaque.",
+    "Augmente de 2 % vos chances de bloquer les attaques avec votre bouclier et vous confère 40 % de chances de générer 5 points de rage lorsque vous bloquez une attaque.",
+    "Augmente de 3 % vos chances de bloquer les attaques avec votre bouclier et vous confère 60 % de chances de générer 5 points de rage lorsque vous bloquez une attaque.",
+    "Augmente de 4 % vos chances de bloquer les attaques avec votre bouclier et vous confère 80 % de chances de générer 5 points de rage lorsque vous bloquez une attaque.",
+    "Augmente de 5 % vos chances de bloquer les attaques avec votre bouclier et vous confère 100 % de chances de générer 5 points de rage lorsque vous bloquez une attaque."
    ],
-   "rank1": "Augmente de 1% vos chances de bloquer les attaques avec votre bouclier et vous donne 20% de chances de générer 5 points de rage lorsque vous bloquez.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 1 % vos chances de bloquer les attaques avec votre bouclier et vous confère 20 % de chances de générer 5 points de rage lorsque vous bloquez une attaque.",
+   "textSource": "client-forever"
   },
   "guerrier/protection-1-3": {
    "name": "Anticipation",
@@ -22044,14 +22141,14 @@ window.TALENT_FR={
    "classic": "Augmente votre Défense de 2.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente votre compétence Défense de 4.",
-    "Augmente votre compétence Défense de 8.",
-    "Augmente votre compétence Défense de 12.",
-    "Augmente votre compétence Défense de 16.",
-    "Augmente votre compétence Défense de 20."
+    "Augmente votre défense de 4.",
+    "Augmente votre défense de 8.",
+    "Augmente votre défense de 12.",
+    "Augmente votre défense de 16.",
+    "Augmente votre défense de 20."
    ],
-   "rank1": "Augmente votre compétence Défense de 4.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre défense de 4.",
+   "textSource": "client-forever"
   },
   "guerrier/protection-2-1": {
    "name": "Rage sanguinaire améliorée",
@@ -22059,17 +22156,28 @@ window.TALENT_FR={
    "spell": 12301,
    "classic": "Augmente le nombre de points de rage instantanés générés par votre technique Rage sanguinaire de 2.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 25% toute la rage générée par votre technique Rage sanguinaire.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 25 % la rage générée par votre technique Rage de sang.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 25 % la rage générée par votre technique Rage de sang.",
+    "Augmente de 50 % la rage générée par votre technique Rage de sang."
+   ]
   },
   "guerrier/protection-2-3": {
    "name": "Résistance",
    "nameSource": "officiel",
    "spell": 12299,
    "classic": "Augmente le score d'armure des objets de 2%.",
-   "rank1": "Augmente le score d'armure des objets de 2%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Augmente la valeur d’armure des objets de 2 %.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente la valeur d’armure des objets de 2 %.",
+    "Augmente la valeur d’armure des objets de 4 %.",
+    "Augmente la valeur d’armure des objets de 6 %.",
+    "Augmente la valeur d’armure des objets de 8 %.",
+    "Augmente la valeur d’armure des objets de 10 %."
+   ]
   },
   "guerrier/protection-2-4": {
    "name": "Coup de tonnerre amélioré",
@@ -22077,8 +22185,13 @@ window.TALENT_FR={
    "spell": 12287,
    "classic": "Réduit le coup de votre technique Coup de tonnerre de 1 points de rage.",
    "nameBranch": "wotlk",
-   "rank1": "Réduit de 2 le coût en rage de votre technique Coup de tonnerre.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 2 points le coût en rage de votre technique Coup de tonnerre.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 2 points le coût en rage de votre technique Coup de tonnerre.",
+    "Réduit de 4 points le coût en rage de votre technique Coup de tonnerre.",
+    "Réduit de 6 points le coût en rage de votre technique Coup de tonnerre."
+   ]
   },
   "guerrier/protection-3-1": {
    "name": "Dernier rempart",
@@ -22086,8 +22199,8 @@ window.TALENT_FR={
    "spell": 12975,
    "classic": "Activée, cette technique vous accorde pendant 20 secondes 30% de votre maximum de points de vie en plus. Lorsque l'effet expire, les points de vie sont perdus.",
    "nameBranch": "classic",
-   "rank1": "Une fois activée, cette technique vous accorde temporairement 30% de votre maximum de points de vie pendant 20 sec. À la fin de l’effet, ces points de vie sont perdus.",
-   "textSource": "editorial"
+   "rank1": "À l’activation, cette technique vous confère temporairement 30 % de vos points de vie maximum pendant 20 sec. Lorsque l’effet expire, les points de vie sont perdus.",
+   "textSource": "client-forever"
   },
   "guerrier/protection-3-3": {
    "name": "Vengeance améliorée",
@@ -22096,12 +22209,12 @@ window.TALENT_FR={
    "classic": "Confère 15% de chances à votre technique Vengeance d'étourdir la cible pendant 3 sec.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 20% les points de dégâts infligés par votre technique Vengeance.",
-    "Augmente de 40% les points de dégâts infligés par votre technique Vengeance.",
-    "Augmente de 60% les points de dégâts infligés par votre technique Vengeance."
+    "Augmente les dégâts infligés par votre technique Revanche de 20 %.",
+    "Augmente les dégâts infligés par votre technique Revanche de 40 %.",
+    "Augmente les dégâts infligés par votre technique Revanche de 60 %."
    ],
-   "rank1": "Augmente de 20% les points de dégâts infligés par votre technique Vengeance.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts infligés par votre technique Revanche de 20 %.",
+   "textSource": "client-forever"
   },
   "guerrier/protection-3-4": {
    "name": "Défi",
@@ -22109,8 +22222,13 @@ window.TALENT_FR={
    "spell": 12303,
    "classic": "Augmente de 3% la menace générée par vos attaques lorsque vous êtes en posture défensive.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 5% supplémentaires toute la menace générée en posture défensive lorsqu’un bouclier est équipé.",
-   "textSource": "editorial"
+   "rank1": "Augmente la génération de menace globale en posture défensive de 5 % supplémentaires si le personnage est équipé d’un bouclier.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente la génération de menace globale en posture défensive de 5 % supplémentaires si le personnage est équipé d’un bouclier.",
+    "Augmente la génération de menace globale en posture défensive de 10 % supplémentaires si le personnage est équipé d’un bouclier.",
+    "Augmente la génération de menace globale en posture défensive de 15 % supplémentaires si le personnage est équipé d’un bouclier."
+   ]
   },
   "guerrier/protection-4-1": {
    "name": "Fracasser armure amélioré",
@@ -22118,8 +22236,13 @@ window.TALENT_FR={
    "spell": 12308,
    "classic": "Réduit le coût de la technique Fracasser armure de 1 points de rage.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 1 le coût en rage de votre technique Fracasser armure.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 1 point le coût en rage de votre technique Fracasser armure.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 1 point le coût en rage de votre technique Fracasser armure.",
+    "Réduit de 2 points le coût en rage de votre technique Fracasser armure.",
+    "Réduit de 3 points le coût en rage de votre technique Fracasser armure."
+   ]
   },
   "guerrier/protection-4-2": {
    "name": "Désarmement amélioré",
@@ -22127,8 +22250,13 @@ window.TALENT_FR={
    "spell": 12313,
    "classic": "Augmente la durée de la technique Désarmement de 1 secondes.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 7 sec le temps de recharge de votre technique Désarmement.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps de recharge de votre technique Désarmement de 7 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le temps de recharge de votre technique Désarmement de 7 s.",
+    "Réduit le temps de recharge de votre technique Désarmement de 13 s.",
+    "Réduit le temps de recharge de votre technique Désarmement de 20 s."
+   ]
   },
   "guerrier/protection-5-1": {
    "name": "Mur protecteur amélioré",
@@ -22136,8 +22264,12 @@ window.TALENT_FR={
    "spell": 12312,
    "classic": "Augmente la durée de la technique Mur protecteur de 3 secondes.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 5,5 min le temps de recharge de votre technique Mur protecteur.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps de recharge de votre technique Mur protecteur de 5.5 min.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le temps de recharge de votre technique Mur protecteur de 5.5 min.",
+    "Réduit le temps de recharge de votre technique Mur protecteur de 11.0 min."
+   ]
   },
   "guerrier/protection-5-2": {
    "name": "Bourrasque",
@@ -22146,16 +22278,20 @@ window.TALENT_FR={
    "classic": "Etourdit l'adversaire pendant 5 sec.",
    "nameBranch": "classic",
    "rank1": "Étourdit la cible pendant 5 sec.",
-   "textSource": "editorial"
+   "textSource": "client-forever"
   },
   "guerrier/protection-5-3": {
    "name": "Coup de bouclier amélioré",
    "nameSource": "officiel",
    "spell": 12311,
    "classic": "Confère à votre technique Coup de bouclier 50% de chances de rendre la cible muette pendant 3 sec.",
-   "rank1": "Confère à votre technique Coup de bouclier 50% de chances de rendre la cible muette pendant 3 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Confère à votre technique Coup de bouclier 50 % de chances de réduire la cible au silence pendant 3 sec.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Confère à votre technique Coup de bouclier 50 % de chances de réduire la cible au silence pendant 3 sec.",
+    "Confère à votre technique Coup de bouclier 100 % de chances de réduire la cible au silence pendant 3 sec."
+   ]
   },
   "guerrier/protection-7-2": {
    "name": "Heurt de bouclier",
@@ -22172,8 +22308,15 @@ window.TALENT_FR={
    "spell": 20262,
    "classic": "Augmente votre Force de 2%.",
    "rank1": "Augmente votre Force de 2%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente votre Force de 2%.",
+    "Augmente votre Force de 4%.",
+    "Augmente votre Force de 6%.",
+    "Augmente votre Force de 8%.",
+    "Augmente votre Force de 10%."
+   ]
   },
   "paladin/holy-1-3": {
    "name": "Intelligence divine",
@@ -22181,8 +22324,15 @@ window.TALENT_FR={
    "spell": 20257,
    "classic": "Augmente votre total d'Intelligence de 2%.",
    "rank1": "Augmente votre total d'Intelligence de 2%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente votre total d'Intelligence de 2%.",
+    "Augmente votre total d'Intelligence de 4%.",
+    "Augmente votre total d'Intelligence de 6%.",
+    "Augmente votre total d'Intelligence de 8%.",
+    "Augmente votre total d'Intelligence de 10%."
+   ]
   },
   "paladin/holy-2-1": {
    "name": "Lumière guérisseuse",
@@ -22190,8 +22340,13 @@ window.TALENT_FR={
    "spell": 20237,
    "classic": "Augmente le nombre de points de vie rendus par vos sorts Lumière sacrée et Eclair lumineux de 4%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 4% le nombre de points de vie rendus par vos sorts Lumière sacrée, Éclair lumineux et Horion sacré.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 4 % le nombre de points de vie rendus par vos sorts Lumière sacrée, Éclair lumineux et Horion sacré.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 4 % le nombre de points de vie rendus par vos sorts Lumière sacrée, Éclair lumineux et Horion sacré.",
+    "Augmente de 8 % le nombre de points de vie rendus par vos sorts Lumière sacrée, Éclair lumineux et Horion sacré.",
+    "Augmente de 12 % le nombre de points de vie rendus par vos sorts Lumière sacrée, Éclair lumineux et Horion sacré."
+   ]
   },
   "paladin/holy-2-2": {
    "name": "Focalisation spirituelle",
@@ -22199,8 +22354,12 @@ window.TALENT_FR={
    "spell": 20205,
    "classic": "Confère 14% de chances à l'incantation de vos sorts Lumière sacrée et Eclair lumineux de ne pas être retardée lorsque vous subissez des dégâts.",
    "nameBranch": "classic",
-   "rank1": "Confère 35% de chances à l’incantation de vos sorts Éclair lumineux, Lumière sacrée et Veille de la Lumière de ne pas être retardée lorsque vous subissez des dégâts.",
-   "textSource": "editorial"
+   "rank1": "Confère à vos sorts Éclair lumineux, Lumière sacrée et Vigile de lumière 35 % de chances de ne pas voir leur incantation interrompue lorsque vous subissez des dégâts.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Confère à vos sorts Éclair lumineux, Lumière sacrée et Vigile de lumière 35 % de chances de ne pas voir leur incantation interrompue lorsque vous subissez des dégâts.",
+    "Confère à vos sorts Éclair lumineux, Lumière sacrée et Vigile de lumière 70 % de chances de ne pas voir leur incantation interrompue lorsque vous subissez des dégâts."
+   ]
   },
   "paladin/holy-2-3": {
    "name": "Sceaux améliorés",
@@ -22210,12 +22369,12 @@ window.TALENT_FR={
    "note": "Forever a renommé ce talent : le client français ne connaît que « Sceau de piété amélioré » (anciennement « Improved Seal of Righteousness »).",
    "nameBranch": "forever",
    "ranks": [
-    "Augmente de 5% les points de dégâts infligés par vos Sceaux et vos Jugements.",
-    "Augmente de 10% les points de dégâts infligés par vos Sceaux et vos Jugements.",
-    "Augmente de 15% les points de dégâts infligés par vos Sceaux et vos Jugements."
+    "Augmente de 5 % les dégâts infligés par vos sceaux et jugements.",
+    "Augmente de 10 % les dégâts infligés par vos sceaux et jugements.",
+    "Augmente de 15 % les dégâts infligés par vos sceaux et jugements."
    ],
-   "rank1": "Augmente de 5% les points de dégâts infligés par vos Sceaux et vos Jugements.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 5 % les dégâts infligés par vos sceaux et jugements.",
+   "textSource": "client-forever"
   },
   "paladin/holy-2-4": {
    "name": "Foi inflexible",
@@ -22223,8 +22382,12 @@ window.TALENT_FR={
    "spell": 9453,
    "classic": "Augmente de 5% vos chances de résister aux effets de Peur et de Désorientation.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 15% la durée des effets de peur et de désorientation qui vous affectent.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 15 % la durée de tous les effets de peur et de désorientation.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 15 % la durée de tous les effets de peur et de désorientation.",
+    "Réduit de 30 % la durée de tous les effets de peur et de désorientation."
+   ]
   },
   "paladin/holy-4-2": {
    "name": "Illumination",
@@ -22233,14 +22396,14 @@ window.TALENT_FR={
    "classic": "Lorsque vous obtenez un effet critique avec Eclair lumineux, Lumière sacrée, ou le sort de soins Horion sacré, vous avez 20% de chances de gagner un nombre de points de mana égal au coût en mana du sort.",
    "nameBranch": "classic",
    "ranks": [
-    "Lorsque vous obtenez un effet critique avec vos sorts de soins Éclair lumineux, Lumière sacrée, Veille de la Lumière ou Horion sacré, vous avez 20% de chances de récupérer un nombre de points de mana égal à 50% du coût de base du sort.",
-    "Lorsque vous obtenez un effet critique avec vos sorts de soins Éclair lumineux, Lumière sacrée, Veille de la Lumière ou Horion sacré, vous avez 40% de chances de récupérer un nombre de points de mana égal à 50% du coût de base du sort.",
-    "Lorsque vous obtenez un effet critique avec vos sorts de soins Éclair lumineux, Lumière sacrée, Veille de la Lumière ou Horion sacré, vous avez 60% de chances de récupérer un nombre de points de mana égal à 50% du coût de base du sort.",
-    "Lorsque vous obtenez un effet critique avec vos sorts de soins Éclair lumineux, Lumière sacrée, Veille de la Lumière ou Horion sacré, vous avez 80% de chances de récupérer un nombre de points de mana égal à 50% du coût de base du sort.",
-    "Lorsque vous obtenez un effet critique avec vos sorts de soins Éclair lumineux, Lumière sacrée, Veille de la Lumière ou Horion sacré, vous avez 100% de chances de récupérer un nombre de points de mana égal à 50% du coût de base du sort."
+    "Lorsque vous obtenez un effet critique avec Éclair lumineux, Lumière sacrée, Vigile de Lumière ou le sort de soins Horion sacré, vous avez 20 % de chances de recevoir un montant de mana égal à 50 % du coût de base du sort.",
+    "Lorsque vous obtenez un effet critique avec Éclair lumineux, Lumière sacrée, Vigile de Lumière ou le sort de soins Horion sacré, vous avez 40 % de chances de recevoir un montant de mana égal à 50 % du coût de base du sort.",
+    "Lorsque vous obtenez un effet critique avec Éclair lumineux, Lumière sacrée, Vigile de Lumière ou le sort de soins Horion sacré, vous avez 60 % de chances de recevoir un montant de mana égal à 50 % du coût de base du sort.",
+    "Lorsque vous obtenez un effet critique avec Éclair lumineux, Lumière sacrée, Vigile de Lumière ou le sort de soins Horion sacré, vous avez 80 % de chances de recevoir un montant de mana égal à 50 % du coût de base du sort.",
+    "Lorsque vous obtenez un effet critique avec Éclair lumineux, Lumière sacrée, Vigile de Lumière ou le sort de soins Horion sacré, vous avez 100 % de chances de recevoir un montant de mana égal à 50 % du coût de base du sort."
    ],
-   "rank1": "Lorsque vous obtenez un effet critique avec vos sorts de soins Éclair lumineux, Lumière sacrée, Veille de la Lumière ou Horion sacré, vous avez 20% de chances de récupérer un nombre de points de mana égal à 50% du coût de base du sort.",
-   "textSource": "editorial"
+   "rank1": "Lorsque vous obtenez un effet critique avec Éclair lumineux, Lumière sacrée, Vigile de Lumière ou le sort de soins Horion sacré, vous avez 20 % de chances de recevoir un montant de mana égal à 50 % du coût de base du sort.",
+   "textSource": "client-forever"
   },
   "paladin/holy-4-3": {
    "name": "Faveur divine",
@@ -22248,7 +22411,7 @@ window.TALENT_FR={
    "spell": 20216,
    "classic": "Une fois activé, confère 100% de chances à votre prochain sort Eclair lumineux, Lumière sacrée ou Horion sacré d'avoir un effet critique.",
    "rank1": "Une fois activé, confère 100% de chances à votre prochain sort Eclair lumineux, Lumière sacrée ou Horion sacré d'avoir un effet critique.",
-   "textSource": "officiel",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "paladin/holy-5-2": {
@@ -22266,8 +22429,15 @@ window.TALENT_FR={
    "spell": 5923,
    "classic": "Augmente les chances d'obtenir un effet critique avec vos sorts du Sacré de 1%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 3% les chances de coup critique de votre sort Horion sacré, et de 1% celles de tous vos autres sorts.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 3 % les chances de coup critique de votre sort Horion sacré, et celles de vos autres sorts de 1 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 3 % les chances de coup critique de votre sort Horion sacré, et celles de vos autres sorts de 1 %.",
+    "Augmente de 6 % les chances de coup critique de votre sort Horion sacré, et celles de vos autres sorts de 2 %.",
+    "Augmente de 9 % les chances de coup critique de votre sort Horion sacré, et celles de vos autres sorts de 3 %.",
+    "Augmente de 12 % les chances de coup critique de votre sort Horion sacré, et celles de vos autres sorts de 4 %.",
+    "Augmente de 15 % les chances de coup critique de votre sort Horion sacré, et celles de vos autres sorts de 5 %."
+   ]
   },
   "paladin/protection-1-2": {
    "name": "Résistance",
@@ -22275,8 +22445,15 @@ window.TALENT_FR={
    "spell": 20143,
    "classic": "Augmente le score d'armure des objets de 2%.",
    "rank1": "Augmente le score d'armure des objets de 2%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente le score d'armure des objets de 2%.",
+    "Augmente le score d'armure des objets de 4%.",
+    "Augmente le score d'armure des objets de 6%.",
+    "Augmente le score d'armure des objets de 8%.",
+    "Augmente le score d'armure des objets de 10%."
+   ]
   },
   "paladin/protection-1-3": {
    "name": "Redoute",
@@ -22284,8 +22461,15 @@ window.TALENT_FR={
    "spell": 20127,
    "classic": "Augmente vos chances de bloquer les attaques avec votre bouclier de 6% après avoir subi un coup critique. Dure 10 sec ou bloque 5 attaques.",
    "nameBranch": "classic",
-   "rank1": "Les attaques de mêlée qui vous infligent des dégâts ont 10% de chances d’augmenter de 6% vos chances de bloquer. Dure 10 sec ou 5 blocages.",
-   "textSource": "editorial"
+   "rank1": "Les attaques en mêlée qui vous infligent des dégâts ont 10 % de chances d’augmenter vos chances de blocage de 6 %. Dure 10 sec ou bloque 5 attaques.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Les attaques en mêlée qui vous infligent des dégâts ont 10 % de chances d’augmenter vos chances de blocage de 6 %. Dure 10 sec ou bloque 5 attaques.",
+    "Les attaques en mêlée qui vous infligent des dégâts ont 10 % de chances d’augmenter vos chances de blocage de 12 %. Dure 10 sec ou bloque 5 attaques.",
+    "Les attaques en mêlée qui vous infligent des dégâts ont 10 % de chances d’augmenter vos chances de blocage de 18 %. Dure 10 sec ou bloque 5 attaques.",
+    "Les attaques en mêlée qui vous infligent des dégâts ont 10 % de chances d’augmenter vos chances de blocage de 24 %. Dure 10 sec ou bloque 5 attaques.",
+    "Les attaques en mêlée qui vous infligent des dégâts ont 10 % de chances d’augmenter vos chances de blocage de 30 %. Dure 10 sec ou bloque 5 attaques."
+   ]
   },
   "paladin/protection-2-1": {
    "name": "Précision",
@@ -22293,8 +22477,13 @@ window.TALENT_FR={
    "spell": 20189,
    "classic": "Augmente vos chances de toucher avec les armes de mêlée de 1%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% vos chances de toucher avec tous vos sorts et attaques.",
-   "textSource": "editorial"
+   "rank1": "Améliore vos chances de toucher de 1 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Améliore vos chances de toucher de 1 %.",
+    "Améliore vos chances de toucher de 2 %.",
+    "Améliore vos chances de toucher de 3 %."
+   ]
   },
   "paladin/protection-2-2": {
    "name": "Faveur du Gardien",
@@ -22302,17 +22491,28 @@ window.TALENT_FR={
    "spell": 20174,
    "classic": "Réduit le temps de recharge de votre Bénédiction de protection de 60 sec. et augmente la durée de votre Bénédiction de liberté de 3 sec.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 1 min le temps de recharge de votre Bénédiction de protection et augmente de 3 sec la durée de votre Bénédiction de liberté.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 1 min le temps de recharge de votre sort Bénédiction de protection et augmente la durée de votre sort Bénédiction de liberté de 3 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 1 min le temps de recharge de votre sort Bénédiction de protection et augmente la durée de votre sort Bénédiction de liberté de 3 s.",
+    "Réduit de 2 min le temps de recharge de votre sort Bénédiction de protection et augmente la durée de votre sort Bénédiction de liberté de 6 s."
+   ]
   },
   "paladin/protection-2-4": {
    "name": "Anticipation",
    "nameSource": "officiel",
    "spell": 20096,
    "classic": "Augmente votre Défense de 2.",
-   "rank1": "Augmente votre Défense de 4.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "rank1": "Augmente votre défense de 4.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente votre défense de 4.",
+    "Augmente votre défense de 8.",
+    "Augmente votre défense de 12.",
+    "Augmente votre défense de 16.",
+    "Augmente votre défense de 20."
+   ]
   },
   "paladin/protection-3-2": {
    "name": "Fureur vertueuse améliorée",
@@ -22320,8 +22520,13 @@ window.TALENT_FR={
    "spell": 20468,
    "classic": "Augmente le niveau de menace généré par votre sort Fureur vertueuse de 16%.",
    "nameBranch": "classic",
-   "rank1": "Tant que Fureur vertueuse est active, tous les dégâts que vous subissez sont réduits de 2%.",
-   "textSource": "editorial"
+   "rank1": "Tant que Fureur vertueuse est active, tous les dégâts subis sont réduits de 2 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Tant que Fureur vertueuse est active, tous les dégâts subis sont réduits de 2 %.",
+    "Tant que Fureur vertueuse est active, tous les dégâts subis sont réduits de 4 %.",
+    "Tant que Fureur vertueuse est active, tous les dégâts subis sont réduits de 6 %."
+   ]
   },
   "paladin/protection-3-3": {
    "name": "Spécialisation Bouclier",
@@ -22329,8 +22534,13 @@ window.TALENT_FR={
    "spell": 20148,
    "classic": "Augmente le nombre de points de dégâts absorbés par votre bouclier de 10%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 10% les points de dégâts absorbés par votre bouclier et confère à vos blocages 33% de chances de vous rendre 6% de votre mana maximal. Ne peut se produire qu’une fois toutes les 3 sec.",
-   "textSource": "editorial"
+   "rank1": "Augmente le nombre de points de dégâts absorbés par votre bouclier de 10 %. De plus, vos blocages ont 33 % de chances de restaurer 6 % de votre maximum de mana. Ne peut se produire plus d’une fois toutes les 3 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente le nombre de points de dégâts absorbés par votre bouclier de 10 %. De plus, vos blocages ont 33 % de chances de restaurer 6 % de votre maximum de mana. Ne peut se produire plus d’une fois toutes les 3 s.",
+    "Augmente le nombre de points de dégâts absorbés par votre bouclier de 20 %. De plus, vos blocages ont 66 % de chances de restaurer 6 % de votre maximum de mana. Ne peut se produire plus d’une fois toutes les 3 s.",
+    "Augmente le nombre de points de dégâts absorbés par votre bouclier de 30 %. De plus, vos blocages ont 100 % de chances de restaurer 6 % de votre maximum de mana. Ne peut se produire plus d’une fois toutes les 3 s."
+   ]
   },
   "paladin/protection-4-2": {
    "name": "Spécialisation Arme 1M",
@@ -22338,8 +22548,13 @@ window.TALENT_FR={
    "spell": 20196,
    "classic": "Augmente les points de dégâts que vous infligez avec les armes de mêlée à une main de 2%.",
    "rank1": "Augmente les points de dégâts que vous infligez avec les armes de mêlée à une main de 3%.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente les points de dégâts que vous infligez avec les armes de mêlée à une main de 3%.",
+    "Augmente les points de dégâts que vous infligez avec les armes de mêlée à une main de 7%.",
+    "Augmente les points de dégâts que vous infligez avec les armes de mêlée à une main de 10%."
+   ]
   },
   "paladin/protection-4-3": {
    "name": "Marteau de la justice amélioré",
@@ -22347,8 +22562,13 @@ window.TALENT_FR={
    "spell": 20487,
    "classic": "Diminue le temps de recharge de votre sort Marteau de la justice de 5 sec.",
    "rank1": "Diminue le temps de recharge de votre sort Marteau de la justice de 5 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Diminue le temps de recharge de votre sort Marteau de la justice de 5 sec.",
+    "Diminue le temps de recharge de votre sort Marteau de la justice de 10 sec.",
+    "Diminue le temps de recharge de votre sort Marteau de la justice de 15 sec."
+   ]
   },
   "paladin/protection-5-3": {
    "name": "Rétribution",
@@ -22356,16 +22576,23 @@ window.TALENT_FR={
    "spell": 20177,
    "classic": "Confère 20% de chances de bénéficier d'une attaque supplémentaire lorsque vous êtes victime d'un coup critique.",
    "nameBranch": "classic",
-   "rank1": "Vous donne 8% de chances de bénéficier d’une attaque supplémentaire après avoir bloqué une attaque de mêlée, et 20% après avoir subi un coup critique non périodique.",
-   "textSource": "editorial"
+   "rank1": "Confère 8 % de chances de bénéficier d’une attaque supplémentaire lorsque vous bloquez une attaque en mêlée et 20 % de chances de bénéficier d’une attaque supplémentaire lorsque vous êtes victime d’un coup critique non périodique.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Confère 8 % de chances de bénéficier d’une attaque supplémentaire lorsque vous bloquez une attaque en mêlée et 20 % de chances de bénéficier d’une attaque supplémentaire lorsque vous êtes victime d’un coup critique non périodique.",
+    "Confère 16 % de chances de bénéficier d’une attaque supplémentaire lorsque vous bloquez une attaque en mêlée et 40 % de chances de bénéficier d’une attaque supplémentaire lorsque vous êtes victime d’un coup critique non périodique.",
+    "Confère 24 % de chances de bénéficier d’une attaque supplémentaire lorsque vous bloquez une attaque en mêlée et 60 % de chances de bénéficier d’une attaque supplémentaire lorsque vous êtes victime d’un coup critique non périodique.",
+    "Confère 32 % de chances de bénéficier d’une attaque supplémentaire lorsque vous bloquez une attaque en mêlée et 80 % de chances de bénéficier d’une attaque supplémentaire lorsque vous êtes victime d’un coup critique non périodique.",
+    "Confère 40 % de chances de bénéficier d’une attaque supplémentaire lorsque vous bloquez une attaque en mêlée et 100 % de chances de bénéficier d’une attaque supplémentaire lorsque vous êtes victime d’un coup critique non périodique."
+   ]
   },
   "paladin/protection-7-2": {
    "name": "Bouclier sacré",
    "nameSource": "officiel",
    "spell": 20925,
    "classic": "Augmente les chances de bloquer de 30 % pendant 10 sec et inflige 65 points de dégâts du sacré par attaque bloquée pendant que l’effet est actif. Les dégâts de Bouclier sacré génèrent 20 % de menace supplémentaire. Chaque blocage dépense une charge. 4 charges.",
-   "rank1": "Augmente les chances de bloquer de 20 % pendant 10 sec et inflige 110 points de dégâts du sacré par attaque bloquée pendant que l’effet est actif. Les dégâts de Bouclier sacré génèrent 20 % de menace supplémentaire. Chaque blocage dépense une charge. 4 charges.",
-   "textSource": "officiel-chiffre",
+   "rank1": "Augmente les chances de bloquer de 20 % pendant 10 sec et inflige 110 points de dégâts du sacré pour chaque attaque bloquée pendant que l’effet est actif. Les dégâts infligés par Bouclier sacré augmentent le niveau de menace de 20 %. Chaque blocage consomme une charge. 4 charges.",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "paladin/retribution-1-2": {
@@ -22374,8 +22601,15 @@ window.TALENT_FR={
    "spell": 20060,
    "classic": "Augmente vos chances de Parer de 1%.",
    "rank1": "Augmente vos chances de Parer de 1%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente vos chances de Parer de 1%.",
+    "Augmente vos chances de Parer de 2%.",
+    "Augmente vos chances de Parer de 3%.",
+    "Augmente vos chances de Parer de 4%.",
+    "Augmente vos chances de Parer de 5%."
+   ]
   },
   "paladin/retribution-1-3": {
    "name": "Bénédiction",
@@ -22384,14 +22618,14 @@ window.TALENT_FR={
    "classic": "Réduit le coût en mana de vos Jugements et Sceaux de 3%.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 2% le coût en mana de tous vos sorts et techniques à lancement instantané.",
-    "Réduit de 4% le coût en mana de tous vos sorts et techniques à lancement instantané.",
-    "Réduit de 6% le coût en mana de tous vos sorts et techniques à lancement instantané.",
-    "Réduit de 8% le coût en mana de tous vos sorts et techniques à lancement instantané.",
-    "Réduit de 10% le coût en mana de tous vos sorts et techniques à lancement instantané."
+    "Réduit le coût en mana de tous les sorts et techniques instantanés de 2 %.",
+    "Réduit le coût en mana de tous les sorts et techniques instantanés de 4 %.",
+    "Réduit le coût en mana de tous les sorts et techniques instantanés de 6 %.",
+    "Réduit le coût en mana de tous les sorts et techniques instantanés de 8 %.",
+    "Réduit le coût en mana de tous les sorts et techniques instantanés de 10 %."
    ],
-   "rank1": "Réduit de 2% le coût en mana de tous vos sorts et techniques à lancement instantané.",
-   "textSource": "editorial"
+   "rank1": "Réduit le coût en mana de tous les sorts et techniques instantanés de 2 %.",
+   "textSource": "client-forever"
   },
   "paladin/retribution-2-1": {
    "name": "Jugement amélioré",
@@ -22399,8 +22633,12 @@ window.TALENT_FR={
    "spell": 25956,
    "classic": "Diminue le temps de recharge de votre sort Jugement de 1 sec.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 1 sec le temps de recharge de votre technique Jugement.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps de recharge de votre technique Jugement de 1 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le temps de recharge de votre technique Jugement de 1 s.",
+    "Réduit le temps de recharge de votre technique Jugement de 2 s."
+   ]
   },
   "paladin/retribution-2-3": {
    "name": "Conviction",
@@ -22408,8 +22646,15 @@ window.TALENT_FR={
    "spell": 20117,
    "classic": "Augmente vos chances d'infliger un coup critique avec les armes de mêlée de 1%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% vos chances d’infliger un coup critique avec vos attaques de mêlée.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 1 % vos chances d’infliger un coup critique avec vos attaques en mêlée.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 1 % vos chances d’infliger un coup critique avec vos attaques en mêlée.",
+    "Augmente de 2 % vos chances d’infliger un coup critique avec vos attaques en mêlée.",
+    "Augmente de 3 % vos chances d’infliger un coup critique avec vos attaques en mêlée.",
+    "Augmente de 4 % vos chances d’infliger un coup critique avec vos attaques en mêlée.",
+    "Augmente de 5 % vos chances d’infliger un coup critique avec vos attaques en mêlée."
+   ]
   },
   "paladin/retribution-3-1": {
    "name": "Justification",
@@ -22436,11 +22681,11 @@ window.TALENT_FR={
    "classic": "Augmente votre vitesse de déplacement et la vitesse de déplacement de votre monture de 4%. Ne s'additionne pas avec les autres effets qui augmentent la vitesse de déplacement.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 8% votre vitesse de déplacement, à pied comme en monture. Ne se cumule pas avec les autres effets qui augmentent la vitesse de déplacement.",
-    "Augmente de 15% votre vitesse de déplacement, à pied comme en monture. Ne se cumule pas avec les autres effets qui augmentent la vitesse de déplacement."
+    "Augmente votre vitesse de déplacement et la vitesse de déplacement de votre monture de 8 %. Ne se cumule pas avec les autres effets qui augmentent la vitesse de déplacement.",
+    "Augmente votre vitesse de déplacement et la vitesse de déplacement de votre monture de 15 %. Ne se cumule pas avec les autres effets qui augmentent la vitesse de déplacement."
    ],
-   "rank1": "Augmente de 8% votre vitesse de déplacement, à pied comme en monture. Ne se cumule pas avec les autres effets qui augmentent la vitesse de déplacement.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre vitesse de déplacement et la vitesse de déplacement de votre monture de 8 %. Ne se cumule pas avec les autres effets qui augmentent la vitesse de déplacement.",
+   "textSource": "client-forever"
   },
   "paladin/retribution-4-1": {
    "name": "Oeil pour oeil",
@@ -22448,8 +22693,12 @@ window.TALENT_FR={
    "spell": 9799,
    "classic": "Tous les coups critiques obtenus contre vous avec des sorts infligent également 15% des dégâts que vous subissez au lanceur de sorts. Les points de dégâts causés par Oeil pour oeil ne peuvent excéder 50% du total des points de vie du paladin.",
    "nameBranch": "classic",
-   "rank1": "Tous les coups critiques portés contre vous infligent également 5% des dégâts subis à leur auteur. Les points de dégâts causés par Œil pour œil ne peuvent excéder 50% du total des points de vie du paladin.",
-   "textSource": "editorial"
+   "rank1": "Tous les coups critiques contre vous infligent également 5% des dégâts que vous subissez au personnage attaquant. Les points de dégâts causés par Œil pour oeil ne peuvent excéder 50 % du total des points de vie du personnage paladin.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Tous les coups critiques contre vous infligent également 5% des dégâts que vous subissez au personnage attaquant. Les points de dégâts causés par Œil pour oeil ne peuvent excéder 50 % du total des points de vie du personnage paladin.",
+    "Tous les coups critiques contre vous infligent également 10% des dégâts que vous subissez au personnage attaquant. Les points de dégâts causés par Œil pour oeil ne peuvent excéder 50 % du total des points de vie du personnage paladin."
+   ]
   },
   "paladin/retribution-5-1": {
    "name": "Spécialisation Arme 2M",
@@ -22457,8 +22706,13 @@ window.TALENT_FR={
    "spell": 20111,
    "classic": "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 2%.",
    "rank1": "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 3%.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 3%.",
+    "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 6%.",
+    "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 9%."
+   ]
   },
   "paladin/retribution-5-2": {
    "name": "Vengeance",
@@ -22466,16 +22720,21 @@ window.TALENT_FR={
    "spell": 20049,
    "classic": "Après un coup critique obtenu en frappant avec une arme ou avec un sort ou une technique, vous infligez 3 % de dégâts physiques et du sacré supplémentaires pendant 8 sec.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% les dégâts physiques et du Sacré que vous infligez pendant 30 sec après un coup critique. Se cumule jusqu’à 5 fois.",
-   "textSource": "editorial"
+   "rank1": "Vos coups critiques augmentent les dégâts physiques et les dégâts du sacré que vous infligez de 1 % pendant 30 sec. Cumulable jusqu’à 5 fois.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vos coups critiques augmentent les dégâts physiques et les dégâts du sacré que vous infligez de 1 % pendant 30 sec. Cumulable jusqu’à 5 fois.",
+    "Vos coups critiques augmentent les dégâts physiques et les dégâts du sacré que vous infligez de 2 % pendant 30 sec. Cumulable jusqu’à 5 fois.",
+    "Vos coups critiques augmentent les dégâts physiques et les dégâts du sacré que vous infligez de 3 % pendant 30 sec. Cumulable jusqu’à 5 fois."
+   ]
   },
   "paladin/retribution-5-3": {
    "name": "Repentir",
    "nameSource": "officiel",
    "spell": 20066,
    "classic": "Plonge la cible ennemie dans une transe méditative qui la stupéfie pendant 6 sec au maximum. Si la cible subit des dégâts, elle se réveille. Ne fonctionne que contre les Humanoïdes.",
-   "rank1": "Plonge la cible ennemie dans une transe méditative qui la stupéfie pendant 6 sec au maximum. Si la cible subit des dégâts, elle se réveille. Ne fonctionne que contre les Humanoïdes.",
-   "textSource": "officiel",
+   "rank1": "Plonge la cible adverse dans une transe méditative qui la stupéfie pendant 6 sec au maximum. Si la cible subit des dégâts, elle se réveille. Ne fonctionne que sur les humanoïdes.",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "chasseur/beast-mastery-1-2": {
@@ -22486,13 +22745,13 @@ window.TALENT_FR={
    "note": "Nom et texte relevés dans le client français de la bêta ouverte. Le talent Classic qui occupait cette case s’appelait « Aspect du faucon amélioré » ; Forever l’a renommé et le client lui donne son propre nom français.",
    "nameBranch": "forever",
    "ranks": [
-    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 2 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 2 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
-    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 4 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 4 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
-    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 6 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 6 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
-    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 8 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 8 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
-    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 10 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 10 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec."
+    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 2 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 2 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
+    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 4 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 4 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
+    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 6 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 6 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
+    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 8 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 8 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
+    "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 10 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 10 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec."
    ],
-   "rank1": "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 2 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 2 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
+   "rank1": "Lorsqu’Aspect du faucon est actif, les tirs automatiques ont 2 % de chances d’augmenter la vitesse d’attaque à distance de 30 % pendant 12 sec. Lorsqu’Aspect de la bête est actif, toutes les attaques automatiques en mêlée ont 2 % de chances d’augmenter la vitesse d’attaque en mêlée de 30 % pendant 12 sec.",
    "textSource": "client-forever"
   },
   "chasseur/beast-mastery-1-3": {
@@ -22501,8 +22760,15 @@ window.TALENT_FR={
    "spell": 19583,
    "classic": "Augmente les points de vie de vos familiers de 3%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 3% les points de vie et l’armure de vos familiers.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 3 % les points de vie et l’armure de vos familiers.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 3 % les points de vie et l’armure de vos familiers.",
+    "Augmente de 6 % les points de vie et l’armure de vos familiers.",
+    "Augmente de 9 % les points de vie et l’armure de vos familiers.",
+    "Augmente de 12 % les points de vie et l’armure de vos familiers.",
+    "Augmente de 15 % les points de vie et l’armure de vos familiers."
+   ]
   },
   "chasseur/beast-mastery-2-2": {
    "name": "Aspect du singe amélioré",
@@ -22510,8 +22776,13 @@ window.TALENT_FR={
    "spell": 19549,
    "classic": "Augmente le bonus d'Esquive conféré par Aspect du singe de 1%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 2% le bonus d’esquive conféré par votre Aspect du singe. De plus, votre familier bénéficie de 50% de l’effet de votre technique Aspect du singe.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 2 % le bonus d’Esquive conféré par votre Aspect du singe. De plus, votre familier obtient 50 % de l’effet de votre technique Aspect du singe.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 2 % le bonus d’Esquive conféré par votre Aspect du singe. De plus, votre familier obtient 50 % de l’effet de votre technique Aspect du singe.",
+    "Augmente de 4 % le bonus d’Esquive conféré par votre Aspect du singe. De plus, votre familier obtient 50 % de l’effet de votre technique Aspect du singe.",
+    "Augmente de 6 % le bonus d’Esquive conféré par votre Aspect du singe. De plus, votre familier obtient 50 % de l’effet de votre technique Aspect du singe."
+   ]
   },
   "chasseur/beast-mastery-2-3": {
    "name": "Science des chemins",
@@ -22519,8 +22790,12 @@ window.TALENT_FR={
    "spell": 19559,
    "classic": "Augmente le bonus d'accélération de vos Aspects de la meute et du guépard de 3%.",
    "rank1": "Augmente le bonus d'accélération de vos Aspects de la meute et du guépard de 3%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente le bonus d'accélération de vos Aspects de la meute et du guépard de 3%.",
+    "Augmente le bonus d'accélération de vos Aspects de la meute et du guépard de 6%."
+   ]
   },
   "chasseur/beast-mastery-2-4": {
    "name": "Ressusciter le familier amélioré",
@@ -22528,8 +22803,12 @@ window.TALENT_FR={
    "spell": 24443,
    "classic": "Le temps d'incantation du sort Ressusciter le familier est réduit de 3 sec., son coût en mana est diminué de 20% et le familier revient avec 15% points de vie supplémentaires.",
    "rank1": "Le temps d'incantation du sort Ressusciter le familier est réduit de 3 sec., son coût en mana est diminué de 20% et le familier revient avec 15% points de vie supplémentaires.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Le temps d'incantation du sort Ressusciter le familier est réduit de 3 sec., son coût en mana est diminué de 20% et le familier revient avec 15% points de vie supplémentaires.",
+    "Le temps d'incantation du sort Ressusciter le familier est réduit de 6 sec., son coût en mana est diminué de 40% et le familier revient avec 30% points de vie supplémentaires."
+   ]
   },
   "chasseur/beast-mastery-3-2": {
    "name": "Rapidité bestiale",
@@ -22537,8 +22816,8 @@ window.TALENT_FR={
    "spell": 19596,
    "classic": "Augmente la vitesse de déplacement en extérieur de vos familiers de 30%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 30% la vitesse de déplacement de vos familiers.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 30 % la vitesse de déplacement de vos familiers.",
+   "textSource": "client-forever"
   },
   "chasseur/beast-mastery-3-3": {
    "name": "Fureur libérée",
@@ -22547,14 +22826,14 @@ window.TALENT_FR={
    "classic": "Augmente les dégâts infligés par vos familiers de 4%.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 3% les dégâts infligés par vos familiers et vos faucons.",
-    "Augmente de 6% les dégâts infligés par vos familiers.",
-    "Augmente de 9% les dégâts infligés par vos familiers.",
-    "Augmente de 12% les dégâts infligés par vos familiers.",
-    "Augmente de 15% les dégâts infligés par vos familiers."
+    "Augmente de 3 % les dégâts infligés par vos faucons et familiers.",
+    "Augmente de 6 % les dégâts infligés par vos faucons et familiers.",
+    "Augmente de 9 % les dégâts infligés par vos faucons et familiers.",
+    "Augmente de 12 % les dégâts infligés par vos faucons et familiers.",
+    "Augmente de 15 % les dégâts infligés par vos faucons et familiers."
    ],
-   "rank1": "Augmente de 3% les dégâts infligés par vos familiers et vos faucons.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 3 % les dégâts infligés par vos faucons et familiers.",
+   "textSource": "client-forever"
   },
   "chasseur/beast-mastery-4-1": {
    "name": "Guérison du familier améliorée",
@@ -22563,11 +22842,11 @@ window.TALENT_FR={
    "classic": "Donne à la Guérison du familier 15% de chances de faire disparaître 1 effet(s) de Malédiction, Maladie, Magie ou Poison à chaque augmentation de points de vie.",
    "nameBranch": "classic",
    "ranks": [
-    "Confère à votre sort Guérison du familier 15% de chances de dissiper 1 effet de malédiction, maladie, magie ou poison sur votre familier à chaque soin, et réduit son coût en mana de 10%.",
-    "Confère à votre sort Guérison du familier 50% de chances de dissiper 1 effet de malédiction, maladie, magie ou poison sur votre familier à chaque soin, et réduit son coût en mana de 20%."
+    "Confère à votre sort Guérison du familier 15 % de chances de dissiper 1 effet de malédiction, de maladie, de magie ou de poison affectant votre familier à chaque fois qu’il le soigne, et réduit le coût en mana de 10 %.",
+    "Confère à votre sort Guérison du familier 50 % de chances de dissiper 1 effet de malédiction, de maladie, de magie ou de poison affectant votre familier à chaque fois qu’il le soigne, et réduit le coût en mana de 20 %."
    ],
-   "rank1": "Confère à votre sort Guérison du familier 15% de chances de dissiper 1 effet de malédiction, maladie, magie ou poison sur votre familier à chaque soin, et réduit son coût en mana de 10%.",
-   "textSource": "editorial"
+   "rank1": "Confère à votre sort Guérison du familier 15 % de chances de dissiper 1 effet de malédiction, de maladie, de magie ou de poison affectant votre familier à chaque fois qu’il le soigne, et réduit le coût en mana de 10 %.",
+   "textSource": "client-forever"
   },
   "chasseur/beast-mastery-4-3": {
    "name": "Férocité",
@@ -22575,17 +22854,28 @@ window.TALENT_FR={
    "spell": 16934,
    "classic": "Augmente les chances de votre familier d'infliger un coup critique de 3%.",
    "nameBranch": "forever",
-   "rank1": "Augmente de 2% les chances de coup critique de vos familiers et de vos faucons.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 2 % les chances de coup critique de vos faucons et familiers.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 2 % les chances de coup critique de vos faucons et familiers.",
+    "Augmente de 4 % les chances de coup critique de vos faucons et familiers.",
+    "Augmente de 6 % les chances de coup critique de vos faucons et familiers.",
+    "Augmente de 8 % les chances de coup critique de vos faucons et familiers.",
+    "Augmente de 10 % les chances de coup critique de vos faucons et familiers."
+   ]
   },
   "chasseur/beast-mastery-5-1": {
    "name": "Engagement spirituel",
    "nameSource": "officiel",
    "spell": 19578,
    "classic": "Tant que votre familier est actif, vous et votre familier retrouvez 1% du total de vos points de vie toutes les 10 sec.",
-   "rank1": "Tant que votre familier est actif, vous et votre familier récupérez 1 % du total de vos points de vie toutes les 10 s.",
+   "rank1": "Tant que votre familier est actif, vous et votre familier récupérez 1 % du total de vos points de vie toutes les 10 s.",
    "textSource": "client-forever",
-   "nameBranch": "forever"
+   "nameBranch": "forever",
+   "ranks": [
+    "Tant que votre familier est actif, vous et votre familier récupérez 1 % du total de vos points de vie toutes les 10 s.",
+    "Tant que votre familier est actif, vous et votre familier récupérez 1 % du total de vos points de vie toutes les 5 s."
+   ]
   },
   "chasseur/beast-mastery-5-2": {
    "name": "Intimidation",
@@ -22593,8 +22883,8 @@ window.TALENT_FR={
    "spell": 19577,
    "classic": "Ordonne à votre familier d'intimider la cible à la prochaine attaque en mêlée réussie, générant un haut niveau de menace et étourdissant la cible pendant 3 sec.",
    "nameBranch": "classic",
-   "rank1": "Ordonne à votre familier d’étourdir la cible pendant 3 sec à sa prochaine attaque réussie, laquelle bénéficie en outre de 100% de chances de coup critique supplémentaires. Génère un niveau de menace élevé.",
-   "textSource": "editorial"
+   "rank1": "Vous ordonnez à votre familier d’étourdir la cible pendant 3 sec lors de sa prochaine attaque réussie, qui bénéficie également de chances de coup critique augmentées de 100 %. Génère un niveau élevé de menace.",
+   "textSource": "client-forever"
   },
   "chasseur/beast-mastery-5-4": {
    "name": "Discipline bestiale",
@@ -22603,11 +22893,11 @@ window.TALENT_FR={
    "classic": "Augmente de 10% la régénération de focalisation de vos familiers.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 10% la régénération de focalisation de vos familiers et permet à 25% de votre régénération de mana de se poursuivre pendant l’incantation.",
-    "Augmente de 20% la régénération de focalisation de vos familiers et permet à 50% de votre régénération de mana de se poursuivre pendant l’incantation."
+    "Augmente de 10 % la régénération de focalisation de vos familiers et permet à 25 % de votre régénération de mana de se poursuivre pendant les incantations.",
+    "Augmente de 20 % la régénération de focalisation de vos familiers et permet à 50 % de votre régénération de mana de se poursuivre pendant les incantations."
    ],
-   "rank1": "Augmente de 10% la régénération de focalisation de vos familiers et permet à 25% de votre régénération de mana de se poursuivre pendant l’incantation.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 10 % la régénération de focalisation de vos familiers et permet à 25 % de votre régénération de mana de se poursuivre pendant les incantations.",
+   "textSource": "client-forever"
   },
   "chasseur/beast-mastery-6-3": {
    "name": "Frénésie",
@@ -22615,16 +22905,23 @@ window.TALENT_FR={
    "spell": 19621,
    "classic": "Confère à votre familier 20% de chances de bénéficier d'un bonus de 30% à la vitesse d'attaque pendant 8 sec après qu'il a infligé un coup critique.",
    "rank1": "Confère à votre familier 20% de chances de bénéficier d'un bonus de 30% à la vitesse d'attaque pendant 8 sec après qu'il a infligé un coup critique.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Confère à votre familier 20% de chances de bénéficier d'un bonus de 30% à la vitesse d'attaque pendant 8 sec après qu'il a infligé un coup critique.",
+    "Confère à votre familier 40% de chances de bénéficier d'un bonus de 30% à la vitesse d'attaque pendant 8 sec après qu'il a infligé un coup critique.",
+    "Confère à votre familier 60% de chances de bénéficier d'un bonus de 30% à la vitesse d'attaque pendant 8 sec après qu'il a infligé un coup critique.",
+    "Confère à votre familier 80% de chances de bénéficier d'un bonus de 30% à la vitesse d'attaque pendant 8 sec après qu'il a infligé un coup critique.",
+    "Confère à votre familier 100% de chances de bénéficier d'un bonus de 30% à la vitesse d'attaque pendant 8 sec après qu'il a infligé un coup critique."
+   ]
   },
   "chasseur/beast-mastery-7-2": {
    "name": "Courroux bestial",
    "nameSource": "officiel",
    "spell": 19574,
    "classic": "Votre familier, fou de rage, inflige 50% points de dégâts supplémentaires pendant 18 sec. Lorsqu’il est dans cet état, il n'éprouve ni pitié, ni remords, ni peur et ne peut plus être arrêté à moins d'être tué.",
-   "rank1": "Votre familier, fou de rage, inflige 50% points de dégâts supplémentaires pendant 18 sec. Lorsqu’il est dans cet état, il n'éprouve ni pitié, ni remords, ni peur et ne peut plus être arrêté à moins d'être tué.",
-   "textSource": "officiel",
+   "rank1": "Votre familier, fou de rage, inflige 50% de points de dégâts supplémentaires pendant 18 sec. Lorsqu’il est dans cet état, il n’éprouve ni pitié, ni remords, ni peur et ne peut plus être arrêté à moins d’être tué.",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "chasseur/marksmanship-1-1": {
@@ -22633,8 +22930,13 @@ window.TALENT_FR={
    "spell": 19498,
    "classic": "Augmente la portée de vos armes à distance de 2 mètres.",
    "rank1": "Augmente la portée de vos armes à distance de 2 mètres.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente la portée de vos armes à distance de 2 mètres.",
+    "Augmente la portée de vos armes à distance de 4 mètres.",
+    "Augmente la portée de vos armes à distance de 6 mètres."
+   ]
   },
   "chasseur/marksmanship-1-2": {
    "name": "Trait de choc amélioré",
@@ -22642,8 +22944,15 @@ window.TALENT_FR={
    "spell": 19407,
    "classic": "Confère à votre technique Trait de choc 4% de chances d'étourdir la cible pendant 3 sec.",
    "rank1": "Confère à votre technique Trait de choc 4% de chances d'étourdir la cible pendant 3 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Confère à votre technique Trait de choc 4% de chances d'étourdir la cible pendant 3 sec.",
+    "Confère à votre technique Trait de choc 8% de chances d'étourdir la cible pendant 3 sec.",
+    "Confère à votre technique Trait de choc 12% de chances d'étourdir la cible pendant 3 sec.",
+    "Confère à votre technique Trait de choc 16% de chances d'étourdir la cible pendant 3 sec.",
+    "Confère à votre technique Trait de choc 20% de chances d'étourdir la cible pendant 3 sec."
+   ]
   },
   "chasseur/marksmanship-1-3": {
    "name": "Attaques mortelles",
@@ -22651,18 +22960,25 @@ window.TALENT_FR={
    "spell": 19426,
    "classic": "Augmente vos chances de coup critique avec les armes à distance de1 %.",
    "nameBranch": "forever",
-   "rank1": "Augmente de 1 % vos chances d’infliger un coup critique avec toutes vos attaques.",
-   "textSource": "client-forever"
+   "rank1": "Augmente de 1 % vos chances d’infliger un coup critique avec toutes vos attaques.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 1 % vos chances d’infliger un coup critique avec toutes vos attaques.",
+    "Augmente de 2 % vos chances d’infliger un coup critique avec toutes vos attaques.",
+    "Augmente de 3 % vos chances d’infliger un coup critique avec toutes vos attaques.",
+    "Augmente de 4 % vos chances d’infliger un coup critique avec toutes vos attaques.",
+    "Augmente de 5 % vos chances d’infliger un coup critique avec toutes vos attaques."
+   ]
   },
   "chasseur/marksmanship-2-1": {
    "name": "Morsures et piqûres améliorées",
    "nameSource": "officiel",
    "ranks": [
-    "Augmente les dégâts de votre Morsure de serpent de 6 %, réduit le temps de recharge de votre Morsure de vipère de 2 s et prolonge la durée de votre Piqûre de scorpide de 15 s.",
-    "Augmente les dégâts de votre Morsure de serpent de 13 %, réduit le temps de recharge de votre Morsure de vipère de 4 s et prolonge la durée de votre Piqûre de scorpide de 30 s.",
-    "Augmente les dégâts de votre Morsure de serpent de 20 %, réduit le temps de recharge de votre Morsure de vipère de 6 s et prolonge la durée de votre Piqûre de scorpide de 45 s."
+    "Augmente les dégâts de votre Morsure de serpent de 6 %, réduit le temps de recharge de votre Morsure de vipère de 2 s et prolonge la durée de votre Piqûre de scorpide de 15 s.",
+    "Augmente les dégâts de votre Morsure de serpent de 13 %, réduit le temps de recharge de votre Morsure de vipère de 4 s et prolonge la durée de votre Piqûre de scorpide de 30 s.",
+    "Augmente les dégâts de votre Morsure de serpent de 20 %, réduit le temps de recharge de votre Morsure de vipère de 6 s et prolonge la durée de votre Piqûre de scorpide de 45 s."
    ],
-   "rank1": "Augmente les dégâts de votre Morsure de serpent de 6 %, réduit le temps de recharge de votre Morsure de vipère de 2 s et prolonge la durée de votre Piqûre de scorpide de 15 s.",
+   "rank1": "Augmente les dégâts de votre Morsure de serpent de 6 %, réduit le temps de recharge de votre Morsure de vipère de 2 s et prolonge la durée de votre Piqûre de scorpide de 15 s.",
    "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1310661
@@ -22673,8 +22989,15 @@ window.TALENT_FR={
    "spell": 19416,
    "classic": "Réduit le coût en mana de vos Tirs et Piqûres de 2 %.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 3% le coût en mana de vos Tirs, de vos Morsures et de vos techniques de mêlée.",
-   "textSource": "editorial"
+   "rank1": "Réduit le coût en mana de vos Tirs, Piqûres et techniques de mêlée de 3 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le coût en mana de vos Tirs, Piqûres et techniques de mêlée de 3 %.",
+    "Réduit le coût en mana de vos Tirs, Piqûres et techniques de mêlée de 6 %.",
+    "Réduit le coût en mana de vos Tirs, Piqûres et techniques de mêlée de 9 %.",
+    "Réduit le coût en mana de vos Tirs, Piqûres et techniques de mêlée de 12 %.",
+    "Réduit le coût en mana de vos Tirs, Piqûres et techniques de mêlée de 15 %."
+   ]
   },
   "chasseur/marksmanship-3-2": {
    "name": "Tir des arcanes amélioré",
@@ -22682,8 +23005,15 @@ window.TALENT_FR={
    "spell": 19454,
    "classic": "Réduit le temps de recharge de votre Tir des arcanes de 0.2 sec.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 0,3 sec le temps de recharge de votre Tir des arcanes. N’affecte pas le temps de recharge des techniques qui le partagent avec Tir des arcanes.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps de recharge de votre Tir des arcanes de 0.3 s. N’affecte pas le temps de recharge des techniques qui partagent un temps de recharge avec Tir des arcanes.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le temps de recharge de votre Tir des arcanes de 0.3 s. N’affecte pas le temps de recharge des techniques qui partagent un temps de recharge avec Tir des arcanes.",
+    "Réduit le temps de recharge de votre Tir des arcanes de 0.6 s. N’affecte pas le temps de recharge des techniques qui partagent un temps de recharge avec Tir des arcanes.",
+    "Réduit le temps de recharge de votre Tir des arcanes de 0.9 s. N’affecte pas le temps de recharge des techniques qui partagent un temps de recharge avec Tir des arcanes.",
+    "Réduit le temps de recharge de votre Tir des arcanes de 1.2 s. N’affecte pas le temps de recharge des techniques qui partagent un temps de recharge avec Tir des arcanes.",
+    "Réduit le temps de recharge de votre Tir des arcanes de 1.5 s. N’affecte pas le temps de recharge des techniques qui partagent un temps de recharge avec Tir des arcanes."
+   ]
   },
   "chasseur/marksmanship-4-2": {
    "name": "Aura de précision",
@@ -22691,8 +23021,8 @@ window.TALENT_FR={
    "spell": 19506,
    "classic": "Augmente la puissance d’attaque des membres du groupe qui se trouvent dans un rayon de 45 m de 50 . Dure 30 min.",
    "nameBranch": "classic",
-   "rank1": "Les membres du groupe situés dans un rayon de 45 mètres voient leur puissance d’attaque à distance augmentée de 30. Dure 30 min.",
-   "textSource": "editorial"
+   "rank1": "Augmente la puissance d’attaque à distance des membres du groupe à moins de 45 m de 30. Dure 30 min.",
+   "textSource": "client-forever"
   },
   "chasseur/marksmanship-4-3": {
    "name": "Coups mortels",
@@ -22700,8 +23030,15 @@ window.TALENT_FR={
    "spell": 19485,
    "classic": "Augmente le bonus de dégâts de vos coups critiques avec les armes à distance de 6 %.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 6% le bonus de dégâts critiques de toutes vos techniques à distance.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 6 % le bonus de dégâts des coups critiques de toutes vos techniques à distance.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 6 % le bonus de dégâts des coups critiques de toutes vos techniques à distance.",
+    "Augmente de 12 % le bonus de dégâts des coups critiques de toutes vos techniques à distance.",
+    "Augmente de 18 % le bonus de dégâts des coups critiques de toutes vos techniques à distance.",
+    "Augmente de 24 % le bonus de dégâts des coups critiques de toutes vos techniques à distance.",
+    "Augmente de 30 % le bonus de dégâts des coups critiques de toutes vos techniques à distance."
+   ]
   },
   "chasseur/marksmanship-5-3": {
    "name": "Barrage",
@@ -22710,12 +23047,12 @@ window.TALENT_FR={
    "classic": "Augmente les dégâts infligés par vos sorts Flèches multiples et Salve de 5%.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 3% les dégâts infligés par vos techniques Flèches multiples, Visée et Salve.",
-    "Augmente de 7% les dégâts infligés par vos techniques Flèches multiples, Visée et Salve.",
-    "Augmente de 10% les dégâts infligés par vos techniques Flèches multiples, Visée et Salve."
+    "Augmente de 3 % les dégâts infligés par vos techniques Flèches multiples, Visée et Salve.",
+    "Augmente de 7 % les dégâts infligés par vos techniques Flèches multiples, Visée et Salve.",
+    "Augmente de 10 % les dégâts infligés par vos techniques Flèches multiples, Visée et Salve."
    ],
-   "rank1": "Augmente de 3% les dégâts infligés par vos techniques Flèches multiples, Visée et Salve.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 3 % les dégâts infligés par vos techniques Flèches multiples, Visée et Salve.",
+   "textSource": "client-forever"
   },
   "chasseur/marksmanship-5-4": {
    "name": "Flèche de dispersion",
@@ -22723,7 +23060,7 @@ window.TALENT_FR={
    "spell": 19503,
    "classic": "Un tir à courte distance qui inflige 50% des points de dégâts de l'arme et désoriente la cible pendant 4 sec. Si la cible subit des dégâts, l'effet est annulé. Interrompt l'attaque lors de son utilisation.",
    "rank1": "Un tir à courte distance qui inflige 50% des points de dégâts de l'arme et désoriente la cible pendant 4 sec. Si la cible subit des dégâts, l'effet est annulé. Interrompt l'attaque lors de son utilisation.",
-   "textSource": "officiel",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "chasseur/marksmanship-6-3": {
@@ -22732,8 +23069,15 @@ window.TALENT_FR={
    "spell": 19507,
    "classic": "Augmente les points de dégâts que vous infligez avec les armes à distance de 1%.",
    "rank1": "Augmente les points de dégâts que vous infligez avec les armes à distance de 1%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente les points de dégâts que vous infligez avec les armes à distance de 1%.",
+    "Augmente les points de dégâts que vous infligez avec les armes à distance de 2%.",
+    "Augmente les points de dégâts que vous infligez avec les armes à distance de 3%.",
+    "Augmente les points de dégâts que vous infligez avec les armes à distance de 4%.",
+    "Augmente les points de dégâts que vous infligez avec les armes à distance de 5%."
+   ]
   },
   "chasseur/marksmanship-7-2": {
    "name": "Tir de précision",
@@ -22750,8 +23094,15 @@ window.TALENT_FR={
    "spell": 19295,
    "classic": "Augmente vos chances de Parer de 1%.",
    "rank1": "Augmente vos chances de Parer de 2%.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente vos chances de Parer de 2%.",
+    "Augmente vos chances de Parer de 4%.",
+    "Augmente vos chances de Parer de 6%.",
+    "Augmente vos chances de Parer de 8%.",
+    "Augmente vos chances de Parer de 10%."
+   ]
   },
   "chasseur/survival-2-1": {
    "name": "Piège",
@@ -22759,8 +23110,15 @@ window.TALENT_FR={
    "spell": 19184,
    "classic": "Confère à vos sorts de Piège d'Immolation, Piège de givre et Piège explosif, 5% de chances d'emprisonner la cible, l'empêchant de se déplacer pendant 5 sec.",
    "nameBranch": "classic",
-   "rank1": "Lorsque vos pièges se déclenchent, toutes les cibles touchées sont entravées et ne peuvent plus se déplacer pendant 1 sec.",
-   "textSource": "editorial"
+   "rank1": "Lorsque vos pièges se déclenchent, toutes les cibles affectées subissent Pris au piège et ne peuvent plus se déplacer pendant 1 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Lorsque vos pièges se déclenchent, toutes les cibles affectées subissent Pris au piège et ne peuvent plus se déplacer pendant 1 s.",
+    "Lorsque vos pièges se déclenchent, toutes les cibles affectées subissent Pris au piège et ne peuvent plus se déplacer pendant 2 s.",
+    "Lorsque vos pièges se déclenchent, toutes les cibles affectées subissent Pris au piège et ne peuvent plus se déplacer pendant 3 s.",
+    "Lorsque vos pièges se déclenchent, toutes les cibles affectées subissent Pris au piège et ne peuvent plus se déplacer pendant 4 s.",
+    "Lorsque vos pièges se déclenchent, toutes les cibles affectées subissent Pris au piège et ne peuvent plus se déplacer pendant 5 s."
+   ]
   },
   "chasseur/survival-2-2": {
    "name": "Frappes sauvages",
@@ -22768,8 +23126,12 @@ window.TALENT_FR={
    "spell": 19159,
    "classic": "Augmente de 10% les chances d'infliger un coup critique avec Attaque du raptor et Morsure de la mangouste.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 2% les chances de coup critique de toutes vos techniques de mêlée.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 2 % les chances de coup critique de toutes vos techniques de mêlée.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 2 % les chances de coup critique de toutes vos techniques de mêlée.",
+    "Augmente de 4 % les chances de coup critique de toutes vos techniques de mêlée."
+   ]
   },
   "chasseur/survival-2-3": {
    "name": "Survivant",
@@ -22778,23 +23140,28 @@ window.TALENT_FR={
    "classic": "Augmente les points de vie totaux de 2%.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 2% votre total de points de vie.",
-    "Augmente de 4% votre total de points de vie.",
-    "Augmente de 6% votre total de points de vie.",
-    "Augmente de 8% votre total de points de vie.",
-    "Augmente de 10% votre total de points de vie."
+    "Augmente votre total de points de vie de 2 %.",
+    "Augmente votre total de points de vie de 4 %.",
+    "Augmente votre total de points de vie de 6 %.",
+    "Augmente votre total de points de vie de 8 %.",
+    "Augmente votre total de points de vie de 10 %."
    ],
-   "rank1": "Augmente de 2% votre total de points de vie.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre total de points de vie de 2 %.",
+   "textSource": "client-forever"
   },
   "chasseur/survival-2-4": {
    "name": "Coupure d'ailes améliorée",
    "nameSource": "officiel",
    "spell": 19228,
    "classic": "Confère à votre technique Coupure d'ailes 4% de chances d'immobiliser la cible pendant 5 sec.",
-   "rank1": "Confère à votre technique Coupure d'ailes 7% de chances d'immobiliser la cible pendant 5 sec.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "rank1": "Confère à votre technique Coupure d’ailes 7 % de chances d’immobiliser la cible pendant 5 sec.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Confère à votre technique Coupure d’ailes 7 % de chances d’immobiliser la cible pendant 5 sec.",
+    "Confère à votre technique Coupure d’ailes 13 % de chances d’immobiliser la cible pendant 5 sec.",
+    "Confère à votre technique Coupure d’ailes 20 % de chances d’immobiliser la cible pendant 5 sec."
+   ]
   },
   "chasseur/survival-3-1": {
    "name": "Pièges astucieux",
@@ -22802,8 +23169,12 @@ window.TALENT_FR={
    "spell": 19239,
    "classic": "Augmente la durée des effets de Piège givrant et Piège de givre de 15% et les dégâts infligés par les effets de Piège d'Immolation et Piège explosif de 15%.",
    "rank1": "Augmente la durée des effets de Piège givrant et Piège de givre de 15% et les dégâts infligés par les effets de Piège d'Immolation et Piège explosif de 15%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente la durée des effets de Piège givrant et Piège de givre de 15% et les dégâts infligés par les effets de Piège d'Immolation et Piège explosif de 15%.",
+    "Augmente la durée des effets de Piège givrant et Piège de givre de 30% et les dégâts infligés par les effets de Piège d'Immolation et Piège explosif de 30%."
+   ]
   },
   "chasseur/survival-3-2": {
    "name": "Pied sûr",
@@ -22812,12 +23183,12 @@ window.TALENT_FR={
    "classic": "Augmente vos chances de toucher votre cible de 1% et vos chances de résister aux effets affectant le mouvement de 5%.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 1% vos chances de toucher et réduit de 10% la durée des effets qui entravent vos déplacements.",
-    "Augmente de 2% vos chances de toucher et réduit de 20% la durée des effets qui entravent vos déplacements.",
-    "Augmente de 3% vos chances de toucher et réduit de 30% la durée des effets qui entravent vos déplacements."
+    "Augmente vos chances de toucher de 1 % et réduit la durée des effets ralentissant vos déplacements de 10 %.",
+    "Augmente vos chances de toucher de 2 % et réduit la durée des effets ralentissant vos déplacements de 20 %.",
+    "Augmente vos chances de toucher de 3 % et réduit la durée des effets ralentissant vos déplacements de 30 %."
    ],
-   "rank1": "Augmente de 1% vos chances de toucher et réduit de 10% la durée des effets qui entravent vos déplacements.",
-   "textSource": "editorial"
+   "rank1": "Augmente vos chances de toucher de 1 % et réduit la durée des effets ralentissant vos déplacements de 10 %.",
+   "textSource": "client-forever"
   },
   "chasseur/survival-3-3": {
    "name": "Dissuasion",
@@ -22825,7 +23196,7 @@ window.TALENT_FR={
    "spell": 19263,
    "classic": "Une fois activé, augmente vos chances d'Esquiver et de Parer de 25% pendant 10 sec.",
    "rank1": "Une fois activé, augmente vos chances d'Esquiver et de Parer de 25% pendant 10 sec.",
-   "textSource": "officiel",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "chasseur/survival-4-3": {
@@ -22834,8 +23205,8 @@ window.TALENT_FR={
    "spell": 19306,
    "classic": "Une attaque disponible après avoir paré une attaque de l'adversaire. Elle inflige 40 points de dégâts et immobilise la cible pendant 5 sec. Contre-attaque ne peut pas être bloquée, esquivée ou parée.",
    "nameBranch": "classic",
-   "rank1": "Une attaque qui devient disponible après avoir paré l’attaque d’un adversaire. Elle inflige 50% des dégâts de l’arme plus 26 et immobilise la cible pendant 5 sec. Contre-attaque ne peut être ni bloquée, ni esquivée, ni parée.",
-   "textSource": "editorial"
+   "rank1": "Disponible après avoir paré une attaque de l’adversaire, cette technique inflige 50 % des dégâts de l’arme plus 26, et immobilise la cible pendant 5 sec. La contre-attaque ne peut être bloquée, esquivée ou parée.",
+   "textSource": "client-forever"
   },
   "chasseur/survival-6-3": {
    "name": "Réflexes-éclairs",
@@ -22843,8 +23214,15 @@ window.TALENT_FR={
    "spell": 13712,
    "classic": "Augmente votre Agilité de 3%.",
    "rank1": "Augmente votre Agilité de 2%.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "forever"
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "ranks": [
+    "Augmente votre Agilité de 2%.",
+    "Augmente votre Agilité de 4%.",
+    "Augmente votre Agilité de 6%.",
+    "Augmente votre Agilité de 8%.",
+    "Augmente votre Agilité de 10%."
+   ]
   },
   "voleur/assassination-1-1": {
    "name": "Suriner amélioré",
@@ -22853,8 +23231,13 @@ window.TALENT_FR={
    "classic": "Augmente la durée de l'effet de votre technique Suriner de 0.5 sec.",
    "note": "Nom repris d’un talent homonyme du client français (Classic), trouvé hors de l’arbre où Forever le place.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 0,5 sec la durée de votre technique Suriner.",
-   "textSource": "editorial"
+   "rank1": "Augmente la durée de votre technique Suriner de 0.5 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente la durée de votre technique Suriner de 0.5 s.",
+    "Augmente la durée de votre technique Suriner de 1 s.",
+    "Augmente la durée de votre technique Suriner de 1.5 s."
+   ]
   },
   "voleur/assassination-1-2": {
    "name": "Attaques impitoyables",
@@ -22862,8 +23245,12 @@ window.TALENT_FR={
    "spell": 14144,
    "classic": "Lorsque vous tuez un adversaire qui vous fait gagner de l'expérience ou de l'honneur, vous avez 20% de chances d'infliger un coup critique lors de votre prochaine Attaque pernicieuse, Attaque sournoise, Embuscade ou Frappe fantomatique. Dure 20 sec.",
    "nameBranch": "classic",
-   "rank1": "Après avoir tué un adversaire non trivial, votre prochaine Attaque pernicieuse, Attaque sournoise, Embuscade, Estropier ou Frappe fantomatique bénéficie de 20% de chances de coup critique supplémentaires. Dure 20 sec.",
-   "textSource": "editorial"
+   "rank1": "Après avoir éliminé un personnage adverse non négligeable, augmente de 20 % les chances de coup critique de votre prochaine attaque utilisant Attaque pernicieuse, Attaque sournoise, Embuscade, Estropier ou Frappe fantomatique. Dure 20 sec.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Après avoir éliminé un personnage adverse non négligeable, augmente de 20 % les chances de coup critique de votre prochaine attaque utilisant Attaque pernicieuse, Attaque sournoise, Embuscade, Estropier ou Frappe fantomatique. Dure 20 sec.",
+    "Après avoir éliminé un personnage adverse non négligeable, augmente de 40 % les chances de coup critique de votre prochaine attaque utilisant Attaque pernicieuse, Attaque sournoise, Embuscade, Estropier ou Frappe fantomatique. Dure 20 sec."
+   ]
   },
   "voleur/assassination-1-3": {
    "name": "Malice",
@@ -22871,17 +23258,29 @@ window.TALENT_FR={
    "spell": 14138,
    "classic": "Augmente vos chances d'infliger un coup critique de 1%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% vos chances de coup critique avec toutes vos attaques et vos poisons.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 1 % vos chances d’infliger un coup critique avec vos attaques et poisons.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 1 % vos chances d’infliger un coup critique avec vos attaques et poisons.",
+    "Augmente de 2 % vos chances d’infliger un coup critique avec vos attaques et poisons.",
+    "Augmente de 3 % vos chances d’infliger un coup critique avec vos attaques et poisons.",
+    "Augmente de 4 % vos chances d’infliger un coup critique avec vos attaques et poisons.",
+    "Augmente de 5 % vos chances d’infliger un coup critique avec vos attaques et poisons."
+   ]
   },
   "voleur/assassination-2-1": {
    "name": "Némésis",
    "nameSource": "officiel",
    "spell": 14156,
    "classic": "Confère à votre coup de grâce, 20% de chances d'ajouter un point de combo à votre cible.",
-   "rank1": "Confère à votre coup de grâce, 20% de chances d'ajouter un point de combo à votre cible.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Confère à vos coups de grâce 20 % de chances de générer un point de combo sur votre cible.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Confère à vos coups de grâce 20 % de chances de générer un point de combo sur votre cible.",
+    "Confère à vos coups de grâce 40 % de chances de générer un point de combo sur votre cible.",
+    "Confère à vos coups de grâce 60 % de chances de générer un point de combo sur votre cible."
+   ]
   },
   "voleur/assassination-2-2": {
    "name": "Meurtre",
@@ -22889,8 +23288,12 @@ window.TALENT_FR={
    "spell": 14158,
    "classic": "Augmente tous les dégâts infligés aux humanoïdes, géants, bêtes et draconiens de 1%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 2% tous les dégâts que vous infligez aux humanoïdes et aux géants.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 2 % tous les dégâts infligés contre les cibles humanoïdes et géantes.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 2 % tous les dégâts infligés contre les cibles humanoïdes et géantes.",
+    "Augmente de 4 % tous les dégâts infligés contre les cibles humanoïdes et géantes."
+   ]
   },
   "voleur/assassination-2-4": {
    "name": "Débiter amélioré",
@@ -22898,16 +23301,21 @@ window.TALENT_FR={
    "spell": 14165,
    "classic": "Augmente la durée de votre technique Débiter de 15%.",
    "rank1": "Augmente la durée de votre technique Débiter de 15%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente la durée de votre technique Débiter de 15%.",
+    "Augmente la durée de votre technique Débiter de 30%.",
+    "Augmente la durée de votre technique Débiter de 45%."
+   ]
   },
   "voleur/assassination-3-1": {
    "name": "Frappes implacables",
    "nameSource": "officiel",
    "spell": 14179,
    "classic": "Votre coup de grâce a 20% de chances par point de combo de vous rendre 25 points d'énergie.",
-   "rank1": "Votre coup de grâce a 20% de chances par point de combo de vous rendre 25 points d'énergie.",
-   "textSource": "officiel",
+   "rank1": "Vos coups de grâce ont 20 % de chances par point de combo de restaurer 25 points d’énergie.",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "voleur/assassination-3-2": {
@@ -22929,17 +23337,31 @@ window.TALENT_FR={
    "spell": 14128,
    "classic": "Augmente de 6% les points de dégâts supplémentaires infligés par vos coups critiques, lorsque vous utilisez les techniques : Attaque pernicieuse, Suriner, Attaque sournoise, Frappe fantomatique ou Hémorragie.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 4% le bonus de dégâts critiques de vos techniques Attaque pernicieuse, Suriner, Attaque sournoise, Estropier, Frappe fantomatique et Hémorragie.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 4 % le bonus de dégâts des coups critiques de vos techniques Attaque pernicieuse, Suriner, Attaque sournoise, Estropier, Frappe fantomatique et Hémorragie.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 4 % le bonus de dégâts des coups critiques de vos techniques Attaque pernicieuse, Suriner, Attaque sournoise, Estropier, Frappe fantomatique et Hémorragie.",
+    "Augmente de 8 % le bonus de dégâts des coups critiques de vos techniques Attaque pernicieuse, Suriner, Attaque sournoise, Estropier, Frappe fantomatique et Hémorragie.",
+    "Augmente de 12 % le bonus de dégâts des coups critiques de vos techniques Attaque pernicieuse, Suriner, Attaque sournoise, Estropier, Frappe fantomatique et Hémorragie.",
+    "Augmente de 16 % le bonus de dégâts des coups critiques de vos techniques Attaque pernicieuse, Suriner, Attaque sournoise, Estropier, Frappe fantomatique et Hémorragie.",
+    "Augmente de 20 % le bonus de dégâts des coups critiques de vos techniques Attaque pernicieuse, Suriner, Attaque sournoise, Estropier, Frappe fantomatique et Hémorragie."
+   ]
   },
   "voleur/assassination-4-1": {
    "name": "Poisons abominables",
    "nameSource": "officiel",
    "spell": 16513,
    "classic": "Augmente les points de dégâts infligés par vos poisons de 4% et donne à vos poisons 8% de chances supplémentaires de résister aux effets de dissipation.",
-   "rank1": "Augmente les points de dégâts infligés par vos poisons de 4% et donne à vos poisons 8% de chances supplémentaires de résister aux effets de dissipation.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Augmente de 4 % les dégâts infligés par vos poisons et confère à ces derniers 8 % de chances supplémentaires de résister aux effets de dissipation.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 4 % les dégâts infligés par vos poisons et confère à ces derniers 8 % de chances supplémentaires de résister aux effets de dissipation.",
+    "Augmente de 8 % les dégâts infligés par vos poisons et confère à ces derniers 16 % de chances supplémentaires de résister aux effets de dissipation.",
+    "Augmente de 12 % les dégâts infligés par vos poisons et confère à ces derniers 24 % de chances supplémentaires de résister aux effets de dissipation.",
+    "Augmente de 16 % les dégâts infligés par vos poisons et confère à ces derniers 32 % de chances supplémentaires de résister aux effets de dissipation.",
+    "Augmente de 20 % les dégâts infligés par vos poisons et confère à ces derniers 40 % de chances supplémentaires de résister aux effets de dissipation."
+   ]
   },
   "voleur/assassination-4-2": {
    "name": "Sang froid",
@@ -22947,8 +23369,8 @@ window.TALENT_FR={
    "spell": 14177,
    "classic": "Lorsque vous déclenchez ce talent, vos chances d'infliger un coup critique lors de votre prochaine Attaque pernicieuse, Attaque sournoise, Embuscade ou Eviscération augmentent de 100%.",
    "nameBranch": "classic",
-   "rank1": "Une fois activée, augmente de 100% les chances de coup critique de votre prochaine Attaque pernicieuse, Attaque sournoise, Embuscade, Éviscération ou Estropier.",
-   "textSource": "editorial"
+   "rank1": "À l’activation, augmente de 100 % les chances de coup critique de votre prochaine attaque utilisant Attaque pernicieuse, Attaque sournoise, Embuscade, Éviscération ou Estropier.",
+   "textSource": "client-forever"
   },
   "voleur/assassination-4-3": {
    "name": "Poisons améliorés",
@@ -22956,17 +23378,28 @@ window.TALENT_FR={
    "spell": 14113,
    "classic": "Augmente vos chances d'appliquer des poisons sur votre cible de 2%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 2% vos chances d’appliquer un poison sur votre cible et confère aux applications de poison 10% de chances de ne pas consommer de charge.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 2 % vos chances d’appliquer des poisons à votre cible et confère aux applications de poison 10 % de chances de ne pas consommer de charge.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 2 % vos chances d’appliquer des poisons à votre cible et confère aux applications de poison 10 % de chances de ne pas consommer de charge.",
+    "Augmente de 4 % vos chances d’appliquer des poisons à votre cible et confère aux applications de poison 20 % de chances de ne pas consommer de charge.",
+    "Augmente de 6 % vos chances d’appliquer des poisons à votre cible et confère aux applications de poison 30 % de chances de ne pas consommer de charge.",
+    "Augmente de 8 % vos chances d’appliquer des poisons à votre cible et confère aux applications de poison 40 % de chances de ne pas consommer de charge.",
+    "Augmente de 10 % vos chances d’appliquer des poisons à votre cible et confère aux applications de poison 50 % de chances de ne pas consommer de charge."
+   ]
   },
   "voleur/assassination-5-1": {
    "name": "Vigueur",
    "nameSource": "officiel",
    "spell": 14983,
    "classic": "Augmente votre maximum d'Energie de 10.",
-   "rank1": "Augmente votre maximum d'Energie de 5.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "rank1": "Augmente votre maximum de points d’énergie de 5.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente votre maximum de points d’énergie de 5.",
+    "Augmente votre maximum de points d’énergie de 10."
+   ]
   },
   "voleur/assassination-5-3": {
    "name": "Aiguillon perfide amélioré",
@@ -22974,17 +23407,28 @@ window.TALENT_FR={
    "spell": 14174,
    "classic": "Lorsqu'elle est affectée par votre technique Aiguillon perfide, la cible subit 3% de points de dégâts supplémentaires de toutes les sources.",
    "nameBranch": "classic",
-   "rank1": "Les ennemis étourdis par votre technique Aiguillon perfide subissent 5% de dégâts supplémentaires de vos poisons et de vos attaques.",
-   "textSource": "editorial"
+   "rank1": "Les dégâts infligés par vos poisons et attaques augmentent de 5 % contre les personnages adverses étourdis par votre technique Aiguillon perfide.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Les dégâts infligés par vos poisons et attaques augmentent de 5 % contre les personnages adverses étourdis par votre technique Aiguillon perfide.",
+    "Les dégâts infligés par vos poisons et attaques augmentent de 10 % contre les personnages adverses étourdis par votre technique Aiguillon perfide."
+   ]
   },
   "voleur/assassination-6-3": {
    "name": "Scelle le destin",
    "nameSource": "officiel",
    "spell": 14186,
    "classic": "Les coups critiques infligés par les techniques qui ajoutent un point de combo ont 20% de chances de vous faire gagner un point de combo supplémentaire.",
-   "rank1": "Les coups critiques infligés par les techniques qui ajoutent un point de combo ont 20% de chances de vous faire gagner un point de combo supplémentaire.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Vos coups critiques obtenus avec des techniques générant des points de combo ont 20 % de chances de générer un point de combo supplémentaire.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Vos coups critiques obtenus avec des techniques générant des points de combo ont 20 % de chances de générer un point de combo supplémentaire.",
+    "Vos coups critiques obtenus avec des techniques générant des points de combo ont 40 % de chances de générer un point de combo supplémentaire.",
+    "Vos coups critiques obtenus avec des techniques générant des points de combo ont 60 % de chances de générer un point de combo supplémentaire.",
+    "Vos coups critiques obtenus avec des techniques générant des points de combo ont 80 % de chances de générer un point de combo supplémentaire.",
+    "Vos coups critiques obtenus avec des techniques générant des points de combo ont 100 % de chances de générer un point de combo supplémentaire."
+   ]
   },
   "voleur/combat-1-1": {
    "name": "Éviscération améliorée",
@@ -22992,9 +23436,14 @@ window.TALENT_FR={
    "spell": 14162,
    "classic": "Augmente les points de dégâts infligés par votre technique Eviscération de 5%.",
    "note": "Nom repris d’un talent homonyme du client français (Classic), trouvé hors de l’arbre où Forever le place.",
-   "rank1": "Augmente les points de dégâts infligés par votre technique Eviscération de 7%.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "forever"
+   "rank1": "Augmente de 7 % les dégâts infligés par votre technique Eviscération.",
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "ranks": [
+    "Augmente de 7 % les dégâts infligés par votre technique Eviscération.",
+    "Augmente de 13 % les dégâts infligés par votre technique Eviscération.",
+    "Augmente de 20 % les dégâts infligés par votre technique Eviscération."
+   ]
   },
   "voleur/combat-1-2": {
    "name": "Attaque pernicieuse améliorée",
@@ -23002,17 +23451,28 @@ window.TALENT_FR={
    "spell": 13732,
    "classic": "Réduit de 3 le coût en énergie de votre technique Attaque pernicieuse.",
    "rank1": "Réduit de 3 le coût en énergie de votre technique Attaque pernicieuse.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit de 3 le coût en énergie de votre technique Attaque pernicieuse.",
+    "Réduit de 5 le coût en énergie de votre technique Attaque pernicieuse."
+   ]
   },
   "voleur/combat-1-3": {
    "name": "Réflexes-éclairs",
    "nameSource": "officiel",
    "spell": 13712,
    "classic": "Augmente vos chances d'esquiver une attaque de 1%.",
-   "rank1": "Augmente vos chances d'esquiver une attaque de 1%.",
-   "textSource": "officiel",
-   "nameBranch": "forever"
+   "rank1": "Augmente vos chances d’esquiver de 1 %.",
+   "textSource": "client-forever",
+   "nameBranch": "forever",
+   "ranks": [
+    "Augmente vos chances d’esquiver de 1 %.",
+    "Augmente vos chances d’esquiver de 2 %.",
+    "Augmente vos chances d’esquiver de 3 %.",
+    "Augmente vos chances d’esquiver de 4 %.",
+    "Augmente vos chances d’esquiver de 5 %."
+   ]
   },
   "voleur/combat-2-1": {
    "name": "Blessures transperçantes",
@@ -23022,12 +23482,12 @@ window.TALENT_FR={
    "note": "Forever a renommé ce talent : le client français ne connaît que « Attaque sournoise améliorée » (anciennement « Improved Backstab »).",
    "nameBranch": "forever",
    "ranks": [
-    "Augmente de 10% les chances de coup critique de votre Attaque sournoise et de 5% celles de votre Estropier, et confère à Attaque sournoise 15% de chances d’ajouter un point de combo supplémentaire.",
-    "Augmente de 20% les chances de coup critique de votre Attaque sournoise et de 10% celles de votre Estropier, et confère à Attaque sournoise 30% de chances d’ajouter un point de combo supplémentaire.",
-    "Augmente de 30% les chances de coup critique de votre Attaque sournoise et de 15% celles de votre Estropier, et confère à Attaque sournoise 45% de chances d’ajouter un point de combo supplémentaire."
+    "Augmente les chances de coup critique de vos techniques Attaque sournoise et Estropier respectivement de 10 % et 5 %, et confère à Attaque sournoise 15 % de chances de générer un point de combo supplémentaire.",
+    "Augmente les chances de coup critique de vos techniques Attaque sournoise et Estropier respectivement de 20 % et 10 %, et confère à Attaque sournoise 30 % de chances de générer un point de combo supplémentaire.",
+    "Augmente les chances de coup critique de vos techniques Attaque sournoise et Estropier respectivement de 30 % et 15 %, et confère à Attaque sournoise 45 % de chances de générer un point de combo supplémentaire."
    ],
-   "rank1": "Augmente de 10% les chances de coup critique de votre Attaque sournoise et de 5% celles de votre Estropier, et confère à Attaque sournoise 15% de chances d’ajouter un point de combo supplémentaire.",
-   "textSource": "editorial"
+   "rank1": "Augmente les chances de coup critique de vos techniques Attaque sournoise et Estropier respectivement de 10 % et 5 %, et confère à Attaque sournoise 15 % de chances de générer un point de combo supplémentaire.",
+   "textSource": "client-forever"
   },
   "voleur/combat-2-2": {
    "name": "Déviation",
@@ -23035,8 +23495,13 @@ window.TALENT_FR={
    "spell": 13713,
    "classic": "Augmente vos chances de parer de 1%.",
    "rank1": "Augmente vos chances de parer de 2%.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente vos chances de parer de 2%.",
+    "Augmente vos chances de parer de 4%.",
+    "Augmente vos chances de parer de 6%."
+   ]
   },
   "voleur/combat-2-3": {
    "name": "Précision",
@@ -23044,8 +23509,13 @@ window.TALENT_FR={
    "spell": 13705,
    "classic": "Augmente vos chances de toucher avec les armes de mêlée de 1%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% vos chances de toucher avec toutes vos attaques et vos poisons.",
-   "textSource": "editorial"
+   "rank1": "Améliore vos chances de toucher de 1 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Améliore vos chances de toucher de 1 %.",
+    "Améliore vos chances de toucher de 2 %.",
+    "Améliore vos chances de toucher de 3 %."
+   ]
   },
   "voleur/combat-3-1": {
    "name": "Endurcissement",
@@ -23053,16 +23523,20 @@ window.TALENT_FR={
    "spell": 13742,
    "classic": "Réduit le temps de recharge de vos techniques Sprint et Evasion de 45 sec.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 30% le temps de recharge de vos techniques Sprint et Évasion.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 30 % le temps de recharge de vos techniques Sprint et Évasion.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 30 % le temps de recharge de vos techniques Sprint et Évasion.",
+    "Réduit de 60 % le temps de recharge de vos techniques Sprint et Évasion."
+   ]
   },
   "voleur/combat-3-2": {
    "name": "Riposte",
    "nameSource": "officiel",
    "spell": 14251,
    "classic": "Une attaque disponible après avoir paré une attaque de l'adversaire. Elle inflige 150% des dégâts de l'arme et désarme la cible pendant 6 sec.",
-   "rank1": "Une attaque disponible après avoir paré une attaque de l'adversaire. Elle inflige 150% des dégâts de l'arme et désarme la cible pendant 6 sec.",
-   "textSource": "officiel",
+   "rank1": "Disponible après avoir paré une attaque de l’adversaire, cette technique inflige 150 % des dégâts de l’arme et désarme la cible pendant 6 sec.",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "voleur/combat-3-4": {
@@ -23070,18 +23544,26 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "spell": 13743,
    "classic": "Confère 50% de chances d'annuler tous les effets gênant le mouvement lorsque vous activez votre technique Sprint.",
-   "rank1": "Confère 50% de chances d'annuler tous les effets gênant le mouvement lorsque vous activez votre technique Sprint.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Confère 50 % de chances de dissiper tous les effets qui affectent le déplacement lorsque vous activez votre technique Sprint.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Confère 50 % de chances de dissiper tous les effets qui affectent le déplacement lorsque vous activez votre technique Sprint.",
+    "Confère 100 % de chances de dissiper tous les effets qui affectent le déplacement lorsque vous activez votre technique Sprint."
+   ]
   },
   "voleur/combat-4-1": {
    "name": "Coup de pied amélioré",
    "nameSource": "officiel",
    "spell": 13754,
    "classic": "Confère à votre technique Coup de pied 50% de chances de rendre la cible muette pendant 2 sec.",
-   "rank1": "Confère à votre technique Coup de pied 50% de chances de rendre la cible muette pendant 2 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Confère à votre technique Coup de pied 50 % de chances de réduire la cible au silence pendant 2 sec.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Confère à votre technique Coup de pied 50 % de chances de réduire la cible au silence pendant 2 sec.",
+    "Confère à votre technique Coup de pied 100 % de chances de réduire la cible au silence pendant 2 sec."
+   ]
   },
   "voleur/combat-4-3": {
    "name": "Spécialisation Ambidextrie",
@@ -23090,14 +23572,14 @@ window.TALENT_FR={
    "classic": "Augmente les points de dégâts infligés par l'arme que vous utilisez en main gauche de 10%.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 5% les dégâts infligés par votre arme de main gauche.",
-    "Augmente de 10% les dégâts infligés par votre arme de main gauche.",
-    "Augmente de 15% les dégâts infligés par votre arme de main gauche.",
-    "Augmente de 20% les dégâts infligés par votre arme de main gauche.",
-    "Augmente de 25% les dégâts infligés par votre arme de main gauche."
+    "Augmente de 5 % les dégâts infligés par votre arme tenue en main gauche.",
+    "Augmente de 10 % les dégâts infligés par votre arme tenue en main gauche.",
+    "Augmente de 15 % les dégâts infligés par votre arme tenue en main gauche.",
+    "Augmente de 20 % les dégâts infligés par votre arme tenue en main gauche.",
+    "Augmente de 25 % les dégâts infligés par votre arme tenue en main gauche."
    ],
-   "rank1": "Augmente de 5% les dégâts infligés par votre arme de main gauche.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 5 % les dégâts infligés par votre arme tenue en main gauche.",
+   "textSource": "client-forever"
   },
   "voleur/combat-5-2": {
    "name": "Déluge de lames",
@@ -23105,8 +23587,8 @@ window.TALENT_FR={
    "spell": 13877,
    "classic": "Augmente votre vitesse d'attaque de 20%. De plus, vos attaques frappent un adversaire proche supplémentaire. Dure 15 sec.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 20% votre vitesse d’attaque de mêlée et vos attaques de mêlée frappent un adversaire proche supplémentaire. Dure 15 sec.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre vitesse d’attaque en mêlée de 20 % et permet à vos attaques en mêlée de toucher un personnage adverse proche supplémentaire. Dure 15 sec.",
+   "textSource": "client-forever"
   },
   "voleur/combat-6-2": {
    "name": "Expertise en armes",
@@ -23114,8 +23596,12 @@ window.TALENT_FR={
    "spell": 30919,
    "classic": "Augmente de 3 votre compétence avec les Epées, les armes de pugilat et les Dagues.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 1% les chances que vos attaques soient esquivées ou parées.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 1 % les chances que vos attaques soient esquivées ou parées.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 1 % les chances que vos attaques soient esquivées ou parées.",
+    "Réduit de 2 % les chances que vos attaques soient esquivées ou parées."
+   ]
   },
   "voleur/combat-6-3": {
    "name": "Agressivité",
@@ -23123,8 +23609,13 @@ window.TALENT_FR={
    "spell": 18427,
    "classic": "Augmente les points de dégâts infligés par vos techniques Attaque pernicieuse et Eviscération de 2%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 2% les dégâts de vos techniques Attaque pernicieuse, Attaque sournoise et Éviscération.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 2% les points de dégâts infligés par vos techniques Attaque pernicieuse, Attaque sournoise et Eviscération.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 2% les points de dégâts infligés par vos techniques Attaque pernicieuse, Attaque sournoise et Eviscération.",
+    "Augmente de 4% les points de dégâts infligés par vos techniques Attaque pernicieuse, Attaque sournoise et Eviscération.",
+    "Augmente de 6% les points de dégâts infligés par vos techniques Attaque pernicieuse, Attaque sournoise et Eviscération."
+   ]
   },
   "voleur/combat-7-2": {
    "name": "Poussée d'adrénaline",
@@ -23132,7 +23623,7 @@ window.TALENT_FR={
    "spell": 13750,
    "classic": "Augmente la vitesse de régénération de votre Energie de 100% pendant 15 sec.",
    "rank1": "Augmente la vitesse de régénération de votre Energie de 100% pendant 15 sec.",
-   "textSource": "officiel",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "voleur/subtlety-1-1": {
@@ -23141,8 +23632,15 @@ window.TALENT_FR={
    "spell": 13975,
    "classic": "Augmente de 3% votre vitesse de déplacement lorsque vous êtes invisible et réduit de 1 sec. le temps de recharge de votre technique Camouflage.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 3% la pénalité de vitesse de votre technique Camouflage et de 2 sec son temps de recharge.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 3 % la pénalité affectant la vitesse de votre technique Camouflage et réduit son temps de recharge de 2 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 3 % la pénalité affectant la vitesse de votre technique Camouflage et réduit son temps de recharge de 2 s.",
+    "Réduit de 6 % la pénalité affectant la vitesse de votre technique Camouflage et réduit son temps de recharge de 3 s.",
+    "Réduit de 9 % la pénalité affectant la vitesse de votre technique Camouflage et réduit son temps de recharge de 4 s.",
+    "Réduit de 12 % la pénalité affectant la vitesse de votre technique Camouflage et réduit son temps de recharge de 5 s.",
+    "Réduit de 15 % la pénalité affectant la vitesse de votre technique Camouflage et réduit son temps de recharge de 6 s."
+   ]
   },
   "voleur/subtlety-1-2": {
    "name": "Maître des illusions",
@@ -23164,8 +23662,12 @@ window.TALENT_FR={
    "spell": 14057,
    "classic": "Augmente de 4% les dégâts que vous infligez avec les techniques Attaque sournoise, Garrot et Embuscade, lorsque vous attaquez votre cible de dos.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 5% les dégâts infligés par vos techniques Attaque sournoise, Garrot, Embuscade et Estropier.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 5 % les dégâts infligés avec vos techniques Attaque sournoise, Garrot, Embuscade et Estropier.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 5 % les dégâts infligés avec vos techniques Attaque sournoise, Garrot, Embuscade et Estropier.",
+    "Augmente de 10 % les dégâts infligés avec vos techniques Attaque sournoise, Garrot, Embuscade et Estropier."
+   ]
   },
   "voleur/subtlety-2-1": {
    "name": "Préparatifs",
@@ -23174,12 +23676,12 @@ window.TALENT_FR={
    "classic": "Vous confère 15% de chances d'ajouter un point de combo à votre cible après avoir esquivé son attaque ou entièrement résisté à un de ses sorts.",
    "nameBranch": "classic",
    "ranks": [
-    "Vous confère 33% de chances d’ajouter un point de combo à votre cible après avoir esquivé une attaque ou entièrement résisté à un sort.",
-    "Vous confère 67% de chances d’ajouter un point de combo à votre cible après avoir esquivé une attaque ou entièrement résisté à un sort.",
-    "Vous confère 100% de chances d’ajouter un point de combo à votre cible après avoir esquivé une attaque ou entièrement résisté à un sort."
+    "Vous confère 33 % de chances de générer un point de combo sur votre cible après avoir esquivé une attaque ou complètement résisté à un sort.",
+    "Vous confère 67 % de chances de générer un point de combo sur votre cible après avoir esquivé une attaque ou complètement résisté à un sort.",
+    "Vous confère 100 % de chances de générer un point de combo sur votre cible après avoir esquivé une attaque ou complètement résisté à un sort."
    ],
-   "rank1": "Vous confère 33% de chances d’ajouter un point de combo à votre cible après avoir esquivé une attaque ou entièrement résisté à un sort.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 33 % de chances de générer un point de combo sur votre cible après avoir esquivé une attaque ou complètement résisté à un sort.",
+   "textSource": "client-forever"
   },
   "voleur/subtlety-2-2": {
    "name": "Insaisissable",
@@ -23188,20 +23690,25 @@ window.TALENT_FR={
    "classic": "Réduit le temps de recharge de vos techniques Disparition et Cécité de 45 sec.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 45 sec le temps de recharge de vos techniques Disparition et Cécité.",
-    "Réduit de 90 sec le temps de recharge de vos techniques Disparition et Cécité."
+    "Réduit le temps de recharge de vos techniques Disparition et Cécité de 45 sec.",
+    "Réduit le temps de recharge de vos techniques Disparition et Cécité de 90 sec."
    ],
-   "rank1": "Réduit de 45 sec le temps de recharge de vos techniques Disparition et Cécité.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps de recharge de vos techniques Disparition et Cécité de 45 sec.",
+   "textSource": "client-forever"
   },
   "voleur/subtlety-2-4": {
    "name": "Embuscade améliorée",
    "nameSource": "officiel",
    "spell": 14079,
    "classic": "Augmente les chances d'infliger un coup critique avec votre technique Embuscade de 15%.",
-   "rank1": "Augmente les chances d'infliger un coup critique avec votre technique Embuscade de 15%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Augmente de 15 % les chances de coup critique de votre technique Embuscade.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 15 % les chances de coup critique de votre technique Embuscade.",
+    "Augmente de 30 % les chances de coup critique de votre technique Embuscade.",
+    "Augmente de 45 % les chances de coup critique de votre technique Embuscade."
+   ]
   },
   "voleur/subtlety-3-1": {
    "name": "Initiative",
@@ -23210,12 +23717,12 @@ window.TALENT_FR={
    "classic": "Vous confère 25% de chances de gagner un point de combo supplémentaire lorsque vous utilisez les techniques Embuscade, Garrot et Coup bas.",
    "nameBranch": "classic",
    "ranks": [
-    "Vous confère 33% de chances d’ajouter un point de combo supplémentaire à votre cible lorsque vous utilisez vos techniques Embuscade, Garrot ou Coup bas.",
-    "Vous confère 67% de chances d’ajouter un point de combo supplémentaire à votre cible lorsque vous utilisez vos techniques Embuscade, Garrot ou Coup bas.",
-    "Vous confère 100% de chances d’ajouter un point de combo supplémentaire à votre cible lorsque vous utilisez vos techniques Embuscade, Garrot ou Coup bas."
+    "Vous confère 33% de chances de gagner un point de combo supplémentaire lorsque vous utilisez les techniques Embuscade, Garrot et Coup bas.",
+    "Vous confère 67% de chances de gagner un point de combo supplémentaire lorsque vous utilisez les techniques Embuscade, Garrot et Coup bas.",
+    "Vous confère 100% de chances de gagner un point de combo supplémentaire lorsque vous utilisez les techniques Embuscade, Garrot et Coup bas."
    ],
-   "rank1": "Vous confère 33% de chances d’ajouter un point de combo supplémentaire à votre cible lorsque vous utilisez vos techniques Embuscade, Garrot ou Coup bas.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 33% de chances de gagner un point de combo supplémentaire lorsque vous utilisez les techniques Embuscade, Garrot et Coup bas.",
+   "textSource": "client-forever"
   },
   "voleur/subtlety-3-2": {
    "name": "Frappe fantomatique",
@@ -23245,8 +23752,8 @@ window.TALENT_FR={
    "spell": 14183,
    "classic": "Lorsqu'elle est utilisée, cette technique ajoute 2 points de combo à la cible. Vous devez ajouter à ces points de combo ou les utiliser avant 10 sec sinon les points de combo sont perdus.",
    "nameBranch": "classic",
-   "rank1": "Ajoute 2 points de combo à votre cible. Vous devez y ajouter d’autres points ou les utiliser dans les 20 sec, sans quoi ils sont perdus.",
-   "textSource": "editorial"
+   "rank1": "Confère 2 points de combo à la cible. Vous devez accumuler d’autres points de combo ou les utiliser en moins de 20 sec sinon les points de combo sont perdus.",
+   "textSource": "client-forever"
   },
   "voleur/subtlety-4-3": {
    "name": "Lames dentelées",
@@ -23254,8 +23761,13 @@ window.TALENT_FR={
    "spell": 14171,
    "classic": "Vos attaques ignorent 0 points de l'Armure de votre cible. Augmente les points de dégâts infligés par votre technique Rupture de 10%. Le nombre de points d'Armure réduits augmente avec votre niveau.",
    "nameBranch": "classic",
-   "rank1": "Vos attaques ignorent 3% de l’armure de votre cible et les dégâts de votre technique Rupture sont augmentés de 10%.",
-   "textSource": "editorial"
+   "rank1": "Vos attaques ignorent 3 % de l’armure de votre cible. Augmente de 10 % les dégâts infligés par votre technique Rupture.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vos attaques ignorent 3 % de l’armure de votre cible. Augmente de 10 % les dégâts infligés par votre technique Rupture.",
+    "Vos attaques ignorent 6 % de l’armure de votre cible. Augmente de 20 % les dégâts infligés par votre technique Rupture.",
+    "Vos attaques ignorent 9 % de l’armure de votre cible. Augmente de 30 % les dégâts infligés par votre technique Rupture."
+   ]
   },
   "voleur/subtlety-5-1": {
    "name": "Coups fourrés",
@@ -23263,8 +23775,12 @@ window.TALENT_FR={
    "spell": 14082,
    "classic": "Réduit de 10 le coût en énergie de vos techniques Coup bas et Garrot.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 10 le coût en énergie de vos techniques Coup bas et Garrot, et votre Garrot ne nécessite plus d’être derrière votre cible.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 10 le coût en énergie de vos techniques Coup bas et Garrot. De plus, votre technique Garrot ne requiert plus que vous vous placiez derrière la cible.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 10 le coût en énergie de vos techniques Coup bas et Garrot. De plus, votre technique Garrot ne requiert plus que vous vous placiez derrière la cible.",
+    "Réduit de 20 le coût en énergie de vos techniques Coup bas et Garrot. De plus, votre technique Garrot ne requiert plus que vous vous placiez derrière la cible."
+   ]
   },
   "voleur/subtlety-5-2": {
    "name": "Préparation",
@@ -23272,7 +23788,7 @@ window.TALENT_FR={
    "spell": 14185,
    "classic": "Lorsque vous la déclenchez, cette technique annule le temps de recharge de toutes vos autres techniques de voleur.",
    "rank1": "Lorsque vous la déclenchez, cette technique annule le temps de recharge de toutes vos autres techniques de voleur.",
-   "textSource": "officiel",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "voleur/subtlety-5-3": {
@@ -23290,8 +23806,12 @@ window.TALENT_FR={
    "spell": 14524,
    "classic": "Augmente les dégâts que vous infligez avec les baguettes de 5%.",
    "rank1": "Augmente les dégâts que vous infligez avec les baguettes de 13%.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente les dégâts que vous infligez avec les baguettes de 13%.",
+    "Augmente les dégâts que vous infligez avec les baguettes de 25%."
+   ]
   },
   "pretre/discipline-2-1": {
    "name": "Résolution silencieuse",
@@ -23300,12 +23820,12 @@ window.TALENT_FR={
    "classic": "Diminue le niveau de menace généré par vos sorts de 4%.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 10% la menace générée par vos sorts du Sacré et de 5% la durée des effets d’étourdissement, de peur et de silence qui vous sont infligés.",
-    "Réduit de 20% la menace générée par vos sorts du Sacré et de 10% la durée des effets d’étourdissement, de peur et de silence qui vous sont infligés.",
-    "Réduit de 30% la menace générée par vos sorts du Sacré et de 15% la durée des effets d’étourdissement, de peur et de silence qui vous sont infligés."
+    "Diminue la menace générée par vos sorts du sacré de 10 % et réduit la durée des effets d’étourdissement, de peur et de silence qui vous sont infligés de 5 %.",
+    "Diminue la menace générée par vos sorts du sacré de 20 % et réduit la durée des effets d’étourdissement, de peur et de silence qui vous sont infligés de 10 %.",
+    "Diminue la menace générée par vos sorts du sacré de 30 % et réduit la durée des effets d’étourdissement, de peur et de silence qui vous sont infligés de 15 %."
    ],
-   "rank1": "Réduit de 10% la menace générée par vos sorts du Sacré et de 5% la durée des effets d’étourdissement, de peur et de silence qui vous sont infligés.",
-   "textSource": "editorial"
+   "rank1": "Diminue la menace générée par vos sorts du sacré de 10 % et réduit la durée des effets d’étourdissement, de peur et de silence qui vous sont infligés de 5 %.",
+   "textSource": "client-forever"
   },
   "pretre/discipline-2-3": {
    "name": "Mot de pouvoir : Bouclier amélioré",
@@ -23313,8 +23833,13 @@ window.TALENT_FR={
    "spell": 14748,
    "classic": "Augmente les dégâts absorbés par votre Mot de pouvoir : Bouclier de 5%.",
    "rank1": "Augmente les dégâts absorbés par votre Mot de pouvoir : Bouclier de 7%.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente les dégâts absorbés par votre Mot de pouvoir : Bouclier de 7%.",
+    "Augmente les dégâts absorbés par votre Mot de pouvoir : Bouclier de 14%.",
+    "Augmente les dégâts absorbés par votre Mot de pouvoir : Bouclier de 20%."
+   ]
   },
   "pretre/discipline-2-4": {
    "name": "Martyre",
@@ -23323,11 +23848,11 @@ window.TALENT_FR={
    "classic": "Vous confère 50% de chances de bénéficier de l'effet Incantation focalisée pendant 6 sec après avoir été victime d'un coup critique en mêlée ou à distance. Cet effet vous évite, lors de l'incantation d'un sort, d'être interrompu lorsque vous subissez des dégâts. Il augmente aussi la résistance aux effets d'interruption de 10%.",
    "nameBranch": "classic",
    "ranks": [
-    "Vous confère 50% de chances de bénéficier d’Incantation focalisée pendant 6 sec après avoir subi un coup critique de mêlée ou à distance. Incantation focalisée vous évite de perdre du temps d’incantation lorsque vous subissez des dégâts et augmente de 20% votre résistance aux effets d’interruption.",
-    "Vous confère 100% de chances de bénéficier d’Incantation focalisée pendant 6 sec après avoir subi un coup critique de mêlée ou à distance. Incantation focalisée vous évite de perdre du temps d’incantation lorsque vous subissez des dégâts et augmente de 20% votre résistance aux effets d’interruption."
+    "Vous confère 50 % de chances de bénéficier d’Incantation focalisée pendant 6 sec après avoir été victime d’un coup critique en mêlée ou à distance. Cet effet vous évite, lors de l’incantation d’un sort, de vous faire interrompre lorsque vous subissez des dégâts. Il augmente aussi votre résistance aux effets d’interruption de 20 %.",
+    "Vous confère 100 % de chances de bénéficier d’Incantation focalisée pendant 6 sec après avoir été victime d’un coup critique en mêlée ou à distance. Cet effet vous évite, lors de l’incantation d’un sort, de vous faire interrompre lorsque vous subissez des dégâts. Il augmente aussi votre résistance aux effets d’interruption de 20 %."
    ],
-   "rank1": "Vous confère 50% de chances de bénéficier d’Incantation focalisée pendant 6 sec après avoir subi un coup critique de mêlée ou à distance. Incantation focalisée vous évite de perdre du temps d’incantation lorsque vous subissez des dégâts et augmente de 20% votre résistance aux effets d’interruption.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 50 % de chances de bénéficier d’Incantation focalisée pendant 6 sec après avoir été victime d’un coup critique en mêlée ou à distance. Cet effet vous évite, lors de l’incantation d’un sort, de vous faire interrompre lorsque vous subissez des dégâts. Il augmente aussi votre résistance aux effets d’interruption de 20 %.",
+   "textSource": "client-forever"
   },
   "pretre/discipline-3-1": {
    "name": "Sagacité",
@@ -23336,12 +23861,12 @@ window.TALENT_FR={
    "classic": "Réduit le coût en mana de vos sorts instantanés de 2%.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 3% le coût en mana de vos sorts Châtiment, Flammes sacrées et de vos sorts à lancement instantané.",
-    "Réduit de 7% le coût en mana de vos sorts Châtiment, Flammes sacrées et de vos sorts à lancement instantané.",
-    "Réduit de 10% le coût en mana de vos sorts Châtiment, Flammes sacrées et de vos sorts à lancement instantané."
+    "Réduit de 3 % le coût en mana de Châtiment, Flammes sacrées et des sorts instantanés.",
+    "Réduit de 7 % le coût en mana de Châtiment, Flammes sacrées et des sorts instantanés.",
+    "Réduit de 10 % le coût en mana de Châtiment, Flammes sacrées et des sorts instantanés."
    ],
-   "rank1": "Réduit de 3% le coût en mana de vos sorts Châtiment, Flammes sacrées et de vos sorts à lancement instantané.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 3 % le coût en mana de Châtiment, Flammes sacrées et des sorts instantanés.",
+   "textSource": "client-forever"
   },
   "pretre/discipline-3-2": {
    "name": "Focalisation améliorée",
@@ -23349,7 +23874,7 @@ window.TALENT_FR={
    "spell": 14751,
    "classic": "Lorsqu'elle est activée, cette technique réduit de 100% le coût en mana de votre prochain sort et augmente ses chances d'infliger un effet critique de 25%, si cela est possible.",
    "rank1": "Lorsqu'elle est activée, cette technique réduit de 100% le coût en mana de votre prochain sort et augmente ses chances d'infliger un effet critique de 25%, si cela est possible.",
-   "textSource": "officiel",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "pretre/discipline-3-4": {
@@ -23359,12 +23884,12 @@ window.TALENT_FR={
    "classic": "Vous confère 5% de votre vitesse de récupération du mana normale pendant l'incantation.",
    "nameBranch": "classic",
    "ranks": [
-    "Permet à 17% de votre régénération de mana de se poursuivre pendant l’incantation.",
-    "Permet à 33% de votre régénération de mana de se poursuivre pendant l’incantation.",
-    "Permet à 50% de votre régénération de mana de se poursuivre pendant l’incantation."
+    "Vous confère 17% de votre vitesse de récupération du mana normale pendant l'incantation.",
+    "Vous confère 33% de votre vitesse de récupération du mana normale pendant l'incantation.",
+    "Vous confère 50% de votre vitesse de récupération du mana normale pendant l'incantation."
    ],
-   "rank1": "Permet à 17% de votre régénération de mana de se poursuivre pendant l’incantation.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 17% de votre vitesse de récupération du mana normale pendant l'incantation.",
+   "textSource": "client-forever"
   },
   "pretre/discipline-4-1": {
    "name": "Feu intérieur amélioré",
@@ -23372,8 +23897,13 @@ window.TALENT_FR={
    "spell": 14747,
    "classic": "Augmente le bonus d'armure que confère votre sort Feu intérieur de 10%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 15% le bonus d’armure de votre sort Feu intérieur et de 4 son nombre total de charges.",
-   "textSource": "editorial"
+   "rank1": "Augmente le bonus d’armure que confère votre sort Feu intérieur de 15 %, et son nombre de charges de 4.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente le bonus d’armure que confère votre sort Feu intérieur de 15 %, et son nombre de charges de 4.",
+    "Augmente le bonus d’armure que confère votre sort Feu intérieur de 30 %, et son nombre de charges de 8.",
+    "Augmente le bonus d’armure que confère votre sort Feu intérieur de 45 %, et son nombre de charges de 12."
+   ]
   },
   "pretre/discipline-4-2": {
    "name": "Force mentale",
@@ -23381,8 +23911,15 @@ window.TALENT_FR={
    "spell": 18551,
    "classic": "Augmente votre maximum de points de mana de 2%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 3% votre Intelligence totale.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre total d’intelligence de 3 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente votre total d’intelligence de 3 %.",
+    "Augmente votre total d’intelligence de 6 %.",
+    "Augmente votre total d’intelligence de 9 %.",
+    "Augmente votre total d’intelligence de 12 %.",
+    "Augmente votre total d’intelligence de 15 %."
+   ]
   },
   "pretre/discipline-4-4": {
    "name": "Brûlure de mana améliorée",
@@ -23390,8 +23927,12 @@ window.TALENT_FR={
    "spell": 14750,
    "classic": "Réduit le temps d'incantation du sort Brûlure de mana de 0,25 sec.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 0,5 sec le temps d’incantation de votre sort Brûlure de mana.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps d’incantation de votre sort Brûlure de mana de 0.5 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le temps d’incantation de votre sort Brûlure de mana de 0.5 s.",
+    "Réduit le temps d’incantation de votre sort Brûlure de mana de 1.0 s."
+   ]
   },
   "pretre/discipline-7-2": {
    "name": "Infusion de puissance",
@@ -23399,8 +23940,8 @@ window.TALENT_FR={
    "spell": 10060,
    "classic": "Imprègne la cible de puissance, ce qui augmente de 20% les dégâts et les soins qu'elle produit avec des sorts. Dure 15 sec.",
    "nameBranch": "classic",
-   "rank1": "Imprègne la cible de puissance, augmentant de 20% les dégâts et les soins de ses sorts pendant 15 sec.",
-   "textSource": "editorial"
+   "rank1": "Imprègne la cible de puissance, ce qui augmente de 20 % les dégâts et les soins qu’elle produit avec des sorts pendant 15 sec.",
+   "textSource": "client-forever"
   },
   "pretre/holy-1-1": {
    "name": "Concentration crépusculaire",
@@ -23410,12 +23951,12 @@ window.TALENT_FR={
    "note": "Forever a renommé ce talent : le client français ne connaît que « Focalisation des soins » (anciennement « Healing Focus »).",
    "nameBranch": "forever",
    "ranks": [
-    "Vous confère 23% de chances d’éviter l’interruption causée par les dégâts lors de l’incantation de n’importe quel sort.",
-    "Vous confère 47% de chances d’éviter l’interruption causée par les dégâts lors de l’incantation de n’importe quel sort de soins.",
-    "Vous confère 70% de chances d’éviter l’interruption causée par les dégâts lors de l’incantation de n’importe quel sort de soins."
+    "Vous confère 23 % de chances d’éviter l’interruption de vos incantations par des dégâts.",
+    "Vous confère 47 % de chances d’éviter l’interruption de vos incantations par des dégâts.",
+    "Vous confère 70 % de chances d’éviter l’interruption de vos incantations par des dégâts."
    ],
-   "rank1": "Vous confère 23% de chances d’éviter l’interruption causée par les dégâts lors de l’incantation de n’importe quel sort.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 23 % de chances d’éviter l’interruption de vos incantations par des dégâts.",
+   "textSource": "client-forever"
   },
   "pretre/holy-1-2": {
    "name": "Rénovation améliorée",
@@ -23423,17 +23964,29 @@ window.TALENT_FR={
    "spell": 14908,
    "classic": "Augmente de 5% le nombre de points de vie soignés par votre sort Rénovation.",
    "rank1": "Augmente de 5% le nombre de points de vie soignés par votre sort Rénovation.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 5% le nombre de points de vie soignés par votre sort Rénovation.",
+    "Augmente de 10% le nombre de points de vie soignés par votre sort Rénovation.",
+    "Augmente de 15% le nombre de points de vie soignés par votre sort Rénovation."
+   ]
   },
   "pretre/holy-1-3": {
    "name": "Spécialisation (Sacré)",
    "nameSource": "officiel",
    "spell": 14889,
    "classic": "Augmente les chances d'obtenir un effet critique avec vos sorts du Sacré de 1%.",
-   "rank1": "Augmente les chances d'obtenir un effet critique avec vos sorts du Sacré de 1%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Augmente de 1 % les chances d’effet critique de vos sorts du sacré.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 1 % les chances d’effet critique de vos sorts du sacré.",
+    "Augmente de 2 % les chances d’effet critique de vos sorts du sacré.",
+    "Augmente de 3 % les chances d’effet critique de vos sorts du sacré.",
+    "Augmente de 4 % les chances d’effet critique de vos sorts du sacré.",
+    "Augmente de 5 % les chances d’effet critique de vos sorts du sacré."
+   ]
   },
   "pretre/holy-2-2": {
    "name": "Protection contre les sorts",
@@ -23441,17 +23994,31 @@ window.TALENT_FR={
    "spell": 27900,
    "classic": "Réduit tous les dégâts des sorts subis de 2%.",
    "rank1": "Réduit tous les dégâts des sorts subis de 2%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit tous les dégâts des sorts subis de 2%.",
+    "Réduit tous les dégâts des sorts subis de 4%.",
+    "Réduit tous les dégâts des sorts subis de 6%.",
+    "Réduit tous les dégâts des sorts subis de 8%.",
+    "Réduit tous les dégâts des sorts subis de 10%."
+   ]
   },
   "pretre/holy-2-3": {
    "name": "Fureur divine",
    "nameSource": "officiel",
    "spell": 18530,
    "classic": "Réduit le temps d'incantation de vos sorts Châtiment, Flammes sacrées, Soins et Soins supérieurs de 0.1 sec.",
-   "rank1": "Réduit le temps d'incantation de vos sorts Châtiment, Flammes sacrées, Soins et Soins supérieurs de 0.1 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Réduit le temps d’incantation de vos sorts Châtiment, Flammes sacrées, Soins et Soins supérieurs de 0.1 s.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit le temps d’incantation de vos sorts Châtiment, Flammes sacrées, Soins et Soins supérieurs de 0.1 s.",
+    "Réduit le temps d’incantation de vos sorts Châtiment, Flammes sacrées, Soins et Soins supérieurs de 0.2 s.",
+    "Réduit le temps d’incantation de vos sorts Châtiment, Flammes sacrées, Soins et Soins supérieurs de 0.3 s.",
+    "Réduit le temps d’incantation de vos sorts Châtiment, Flammes sacrées, Soins et Soins supérieurs de 0.4 s.",
+    "Réduit le temps d’incantation de vos sorts Châtiment, Flammes sacrées, Soins et Soins supérieurs de 0.5 s."
+   ]
   },
   "pretre/holy-3-1": {
    "name": "Nova sacrée",
@@ -23468,8 +24035,13 @@ window.TALENT_FR={
    "spell": 27811,
    "classic": "Lorsque vous avez été frappé par un coup critique en mêlée ou à distance, rend 8% des points de dégâts subis en 6 sec.",
    "nameBranch": "classic",
-   "rank1": "Après avoir subi un coup critique de mêlée ou à distance, ou plus de 30% de votre maximum de points de vie en une seule attaque, rend 8% des dégâts subis en 6 sec. Renouveler cet effet reporte les soins restants.",
-   "textSource": "editorial"
+   "rank1": "Lorsque vous subissez un coup critique en mêlée ou à distance, ou qu’une seule attaque vous fait perdre 30 % de votre maximum de points de vie, vous récupérez 8 % des points de dégâts subis en 6 sec. Lorsque cet effet est renouvelé, les soins restants sont conservés.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Lorsque vous subissez un coup critique en mêlée ou à distance, ou qu’une seule attaque vous fait perdre 30 % de votre maximum de points de vie, vous récupérez 8 % des points de dégâts subis en 6 sec. Lorsque cet effet est renouvelé, les soins restants sont conservés.",
+    "Lorsque vous subissez un coup critique en mêlée ou à distance, ou qu’une seule attaque vous fait perdre 30 % de votre maximum de points de vie, vous récupérez 17 % des points de dégâts subis en 6 sec. Lorsque cet effet est renouvelé, les soins restants sont conservés.",
+    "Lorsque vous subissez un coup critique en mêlée ou à distance, ou qu’une seule attaque vous fait perdre 30 % de votre maximum de points de vie, vous récupérez 25 % des points de dégâts subis en 6 sec. Lorsque cet effet est renouvelé, les soins restants sont conservés."
+   ]
   },
   "pretre/holy-3-4": {
    "name": "Inspiration",
@@ -23477,8 +24049,13 @@ window.TALENT_FR={
    "spell": 14892,
    "classic": "Augmente l’Armure de votre cible de 8 % pendant 15 sec après obtention d’un effet critique avec",
    "nameBranch": "classic",
-   "rank1": "Vos soins critiques non périodiques augmentent de 8% l’armure de votre cible pendant 15 sec.",
-   "textSource": "editorial"
+   "rank1": "Vos soins critiques non périodiques augmentent l’armure de votre cible de 8 % pendant 15 sec.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vos soins critiques non périodiques augmentent l’armure de votre cible de 8 % pendant 15 sec.",
+    "Vos soins critiques non périodiques augmentent l’armure de votre cible de 17 % pendant 15 sec.",
+    "Vos soins critiques non périodiques augmentent l’armure de votre cible de 25 % pendant 15 sec."
+   ]
   },
   "pretre/holy-4-1": {
    "name": "Allonge du Sacré",
@@ -23486,8 +24063,12 @@ window.TALENT_FR={
    "spell": 27789,
    "classic": "Augmente de 10% la portée de vos sorts Châtiment et Flammes sacrées et le rayon d'effet de vos sorts Prière de soins et Nova sacrée.",
    "rank1": "Augmente de 10% la portée de vos sorts Châtiment et Flammes sacrées et le rayon d'effet de vos sorts Prière de soins et Nova sacrée.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 10% la portée de vos sorts Châtiment et Flammes sacrées et le rayon d'effet de vos sorts Prière de soins et Nova sacrée.",
+    "Augmente de 20% la portée de vos sorts Châtiment et Flammes sacrées et le rayon d'effet de vos sorts Prière de soins et Nova sacrée."
+   ]
   },
   "pretre/holy-4-2": {
    "name": "Soin amélioré",
@@ -23495,8 +24076,13 @@ window.TALENT_FR={
    "spell": 14912,
    "classic": "Réduit le coût en mana des sorts Soins inférieurs, Soins et Soins supérieurs de 5%.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 5% le coût en mana de vos sorts Soins inférieurs, Soins, Soins supérieurs, Pénitence et Prière de guérison.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 5 % le coût en mana de vos sorts Soins inférieurs, Soins, Soins supérieurs, Pénitence et Prière de guérison.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 5 % le coût en mana de vos sorts Soins inférieurs, Soins, Soins supérieurs, Pénitence et Prière de guérison.",
+    "Réduit de 10 % le coût en mana de vos sorts Soins inférieurs, Soins, Soins supérieurs, Pénitence et Prière de guérison.",
+    "Réduit de 15 % le coût en mana de vos sorts Soins inférieurs, Soins, Soins supérieurs, Pénitence et Prière de guérison."
+   ]
   },
   "pretre/holy-4-3": {
    "name": "Lumière incendiaire",
@@ -23504,8 +24090,12 @@ window.TALENT_FR={
    "spell": 14909,
    "classic": "Augmente de 5% les dégâts infligés par vos sorts Châtiment et Flammes sacrées.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 2% les dégâts du Sacré que vous infligez et confère 5% de chances, chaque fois que votre sort Flammes sacrées inflige ses dégâts périodiques, que votre prochaine Nova sacrée ne coûte aucun mana.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts du sacré que vous infligez de 2 %, et chaque fois que votre sort Flammes sacrées inflige des dégâts périodiques, vous avez 5 % de chances que votre prochaine utilisation de Nova sacrée ne coûte pas de mana.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente les dégâts du sacré que vous infligez de 2 %, et chaque fois que votre sort Flammes sacrées inflige des dégâts périodiques, vous avez 5 % de chances que votre prochaine utilisation de Nova sacrée ne coûte pas de mana.",
+    "Augmente les dégâts du sacré que vous infligez de 5 %, et chaque fois que votre sort Flammes sacrées inflige des dégâts périodiques, vous avez 10 % de chances que votre prochaine utilisation de Nova sacrée ne coûte pas de mana."
+   ]
   },
   "pretre/holy-5-2": {
    "name": "Esprit de rédemption",
@@ -23513,7 +24103,7 @@ window.TALENT_FR={
    "spell": 20711,
    "classic": "Au moment de sa mort, le prêtre devient l'Esprit de rédemption pendant 10 sec. L'Esprit de rédemption ne peut pas se déplacer ou attaquer, ni être attaqué ou ciblé par aucun sort ou effet. Tant qu'il est sous cette forme, le prêtre peut lancer tout sort de soins sans le moindre coût. A la fin de l'effet, le prêtre meurt.",
    "rank1": "Au moment de sa mort, le prêtre devient l'Esprit de rédemption pendant 15 sec. L'Esprit de rédemption ne peut pas se déplacer ou attaquer, ni être attaqué ou ciblé par aucun sort ou effet. Tant qu'il est sous cette forme, le prêtre peut lancer tout sort de soins sans le moindre coût. A la fin de l'effet, le prêtre meurt.",
-   "textSource": "officiel-chiffre",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "pretre/holy-5-3": {
@@ -23522,8 +24112,15 @@ window.TALENT_FR={
    "spell": 14901,
    "classic": "Augmente les dégâts et les soins produits par les sorts d'un montant au maximum égal à 5% de votre total d'Esprit.",
    "nameBranch": "classic",
-   "rank1": "Augmente vos soins par sort d’un montant pouvant atteindre 5% de votre Esprit total, et vos dégâts par sort d’un montant pouvant atteindre 1% de votre Esprit total.",
-   "textSource": "editorial"
+   "rank1": "Augmente les soins de vos sorts d’un montant au maximum égal à 5 % de votre total d’Esprit et les dégâts de vos sorts d’un montant au maximum égal à 1 % de votre total d’Esprit.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente les soins de vos sorts d’un montant au maximum égal à 5 % de votre total d’Esprit et les dégâts de vos sorts d’un montant au maximum égal à 1 % de votre total d’Esprit.",
+    "Augmente les soins de vos sorts d’un montant au maximum égal à 10 % de votre total d’Esprit et les dégâts de vos sorts d’un montant au maximum égal à 3 % de votre total d’Esprit.",
+    "Augmente les soins de vos sorts d’un montant au maximum égal à 15 % de votre total d’Esprit et les dégâts de vos sorts d’un montant au maximum égal à 5 % de votre total d’Esprit.",
+    "Augmente les soins de vos sorts d’un montant au maximum égal à 20 % de votre total d’Esprit et les dégâts de vos sorts d’un montant au maximum égal à 6 % de votre total d’Esprit.",
+    "Augmente les soins de vos sorts d’un montant au maximum égal à 25 % de votre total d’Esprit et les dégâts de vos sorts d’un montant au maximum égal à 8 % de votre total d’Esprit."
+   ]
   },
   "pretre/holy-6-3": {
    "name": "Soins spirituels",
@@ -23531,8 +24128,13 @@ window.TALENT_FR={
    "spell": 14898,
    "classic": "Augmente le nombre de points de vie rendus par vos sorts de soins de 2%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 3% le nombre de points de vie rendus par vos sorts.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 3 % le montant de points de vie rendus par vos sorts.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 3 % le montant de points de vie rendus par vos sorts.",
+    "Augmente de 7 % le montant de points de vie rendus par vos sorts.",
+    "Augmente de 10 % le montant de points de vie rendus par vos sorts."
+   ]
   },
   "pretre/shadow-magic-1-1": {
    "name": "Focalisation de l'ombre",
@@ -23540,17 +24142,31 @@ window.TALENT_FR={
    "spell": 15260,
    "classic": "Réduit de 2% les chances de votre cible de résister à vos sorts d'Ombre.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% vos chances de toucher avec vos sorts d’Ombre.",
-   "textSource": "editorial"
+   "rank1": "Améliore de 1 % vos chances de toucher avec les sorts d’ombre.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Améliore de 1 % vos chances de toucher avec les sorts d’ombre.",
+    "Améliore de 2 % vos chances de toucher avec les sorts d’ombre.",
+    "Améliore de 3 % vos chances de toucher avec les sorts d’ombre.",
+    "Améliore de 4 % vos chances de toucher avec les sorts d’ombre.",
+    "Améliore de 5 % vos chances de toucher avec les sorts d’ombre."
+   ]
   },
   "pretre/shadow-magic-1-2": {
    "name": "Aveuglement",
    "nameSource": "officiel",
    "spell": 15268,
    "classic": "Confère 2% de chances à vos sorts d'Ombre d'étourdir la cible pendant 3 sec.",
-   "rank1": "Confère 2% de chances à vos sorts d'Ombre d'étourdir la cible pendant 3 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Vos sorts de dégâts d’ombre ont 2 % de chances d’étourdir la cible pendant 3 sec.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Vos sorts de dégâts d’ombre ont 2 % de chances d’étourdir la cible pendant 3 sec.",
+    "Vos sorts de dégâts d’ombre ont 4 % de chances d’étourdir la cible pendant 3 sec.",
+    "Vos sorts de dégâts d’ombre ont 6 % de chances d’étourdir la cible pendant 3 sec.",
+    "Vos sorts de dégâts d’ombre ont 8 % de chances d’étourdir la cible pendant 3 sec.",
+    "Vos sorts de dégâts d’ombre ont 10 % de chances d’étourdir la cible pendant 3 sec."
+   ]
   },
   "pretre/shadow-magic-1-3": {
    "name": "Connexion spirituelle",
@@ -23558,8 +24174,15 @@ window.TALENT_FR={
    "spell": 15270,
    "classic": "Vous donne 20% de chances de gagner un bonus de 100% à l'Esprit après avoir tué une cible qui rapporte de l'expérience. Votre mana se régénère à 50% de la vitesse de récupération normale pendant l'incantation de sorts. Dure 15 sec.",
    "nameBranch": "classic",
-   "rank1": "Vous donne 20% de chances de gagner un bonus de 100% à votre Esprit pendant 15 sec après avoir tué une cible non triviale. Pendant ce temps, votre mana se régénère à 50% de sa vitesse normale pendant l’incantation.",
-   "textSource": "editorial"
+   "rank1": "Vous donne 20 % de chances de gagner un bonus de 100 % à l’Esprit pendant 15 sec après avoir tué une cible non négligeable. Tant que l’effet est actif, votre mana se régénère à 50 % de la vitesse de récupération normale pendant l’incantation de sorts.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vous donne 20 % de chances de gagner un bonus de 100 % à l’Esprit pendant 15 sec après avoir tué une cible non négligeable. Tant que l’effet est actif, votre mana se régénère à 50 % de la vitesse de récupération normale pendant l’incantation de sorts.",
+    "Vous donne 40 % de chances de gagner un bonus de 100 % à l’Esprit pendant 15 sec après avoir tué une cible non négligeable. Tant que l’effet est actif, votre mana se régénère à 50 % de la vitesse de récupération normale pendant l’incantation de sorts.",
+    "Vous donne 60 % de chances de gagner un bonus de 100 % à l’Esprit pendant 15 sec après avoir tué une cible non négligeable. Tant que l’effet est actif, votre mana se régénère à 50 % de la vitesse de récupération normale pendant l’incantation de sorts.",
+    "Vous donne 80 % de chances de gagner un bonus de 100 % à l’Esprit pendant 15 sec après avoir tué une cible non négligeable. Tant que l’effet est actif, votre mana se régénère à 50 % de la vitesse de récupération normale pendant l’incantation de sorts.",
+    "Vous donne 100 % de chances de gagner un bonus de 100 % à l’Esprit pendant 15 sec après avoir tué une cible non négligeable. Tant que l’effet est actif, votre mana se régénère à 50 % de la vitesse de récupération normale pendant l’incantation de sorts."
+   ]
   },
   "pretre/shadow-magic-2-1": {
    "name": "Affinité avec l'Ombre",
@@ -23567,17 +24190,26 @@ window.TALENT_FR={
    "spell": 15318,
    "classic": "Diminue le niveau de menace généré par vos sorts d'Ombre de 8%.",
    "rank1": "Diminue le niveau de menace généré par vos sorts d'Ombre de 10%.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Diminue le niveau de menace généré par vos sorts d'Ombre de 10%.",
+    "Diminue le niveau de menace généré par vos sorts d'Ombre de 20%.",
+    "Diminue le niveau de menace généré par vos sorts d'Ombre de 30%."
+   ]
   },
   "pretre/shadow-magic-2-3": {
    "name": "Mot de l'ombre : Douleur amélioré",
    "nameSource": "officiel",
    "spell": 15275,
    "classic": "Augmente la durée de votre sort Mot de l'ombre : Douleur de 3 secondes.",
-   "rank1": "Augmente la durée de votre sort Mot de l'ombre : Douleur de 3 secondes.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Augmente la durée de votre sort Mot de l’ombre : Douleur de 3 s.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente la durée de votre sort Mot de l’ombre : Douleur de 3 s.",
+    "Augmente la durée de votre sort Mot de l’ombre : Douleur de 6 s."
+   ]
   },
   "pretre/shadow-magic-2-4": {
    "name": "Allonge de l'Ombre",
@@ -23586,11 +24218,11 @@ window.TALENT_FR={
    "classic": "Augmente de 6% la portée de vos sorts de dégâts d'Ombre.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 10% la portée de vos sorts d’Ombre offensifs.",
-    "Augmente de 20% la portée de vos sorts de dégâts d’Ombre."
+    "Augmente de 10% la portée de vos sorts offensifs d'Ombre.",
+    "Augmente de 20% la portée de vos sorts offensifs d'Ombre."
    ],
-   "rank1": "Augmente de 10% la portée de vos sorts d’Ombre offensifs.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 10% la portée de vos sorts offensifs d'Ombre.",
+   "textSource": "client-forever"
   },
   "pretre/shadow-magic-3-1": {
    "name": "Attaque mentale améliorée",
@@ -23598,8 +24230,15 @@ window.TALENT_FR={
    "spell": 15273,
    "classic": "Réduit le temps de recharge du sort Attaque mentale de 0.5 secondes.",
    "rank1": "Réduit le temps de recharge du sort Attaque mentale de 0.5 secondes.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit le temps de recharge du sort Attaque mentale de 0.5 secondes.",
+    "Réduit le temps de recharge du sort Attaque mentale de 1 secondes.",
+    "Réduit le temps de recharge du sort Attaque mentale de 1.5 secondes.",
+    "Réduit le temps de recharge du sort Attaque mentale de 2 secondes.",
+    "Réduit le temps de recharge du sort Attaque mentale de 2.5 secondes."
+   ]
   },
   "pretre/shadow-magic-3-2": {
    "name": "Cri psychique amélioré",
@@ -23607,8 +24246,12 @@ window.TALENT_FR={
    "spell": 15392,
    "classic": "Réduit le temps de recharge de votre sort Cri psychique de 2 sec.",
    "rank1": "Réduit le temps de recharge de votre sort Cri psychique de 2 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit le temps de recharge de votre sort Cri psychique de 2 sec.",
+    "Réduit le temps de recharge de votre sort Cri psychique de 4 sec."
+   ]
   },
   "pretre/shadow-magic-3-3": {
    "name": "Fouet mental",
@@ -23625,8 +24268,12 @@ window.TALENT_FR={
    "spell": 15274,
    "classic": "Diminue le temps de recharge de votre technique Oubli de 3 sec.",
    "rank1": "Diminue le temps de recharge de votre technique Oubli de 3 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Diminue le temps de recharge de votre technique Oubli de 3 sec.",
+    "Diminue le temps de recharge de votre technique Oubli de 6 sec."
+   ]
   },
   "pretre/shadow-magic-4-2": {
    "name": "Etreinte vampirique",
@@ -23634,8 +24281,8 @@ window.TALENT_FR={
    "spell": 15286,
    "classic": "Libère sur votre cible l’énergie de l’ombre, qui soigne tous les personnages de votre groupe de 20 % de tous les dégâts de sorts d’ombre que vous infligez pendant 1 min.",
    "nameBranch": "classic",
-   "rank1": "Afflige votre cible d’une énergie d’ombre qui soigne tous les membres du groupe de 20% des dégâts d’Ombre que vous infligez pendant 30 sec. Étreinte vampirique permet aussi à votre talent Connexion spirituelle de se déclencher lorsqu’un ennemi qu’elle affecte meurt.",
-   "textSource": "editorial"
+   "rank1": "Libère sur votre cible de l’énergie de l’ombre qui soigne tous les personnages de votre groupe de 20 % de tous les dégâts de sorts d’ombre que vous infligez pendant 30 sec. Lorsqu’un personnage adverse affecté par Étreinte vampirique meurt, vous bénéficiez également d’une chance de déclencher votre talent Connexion spirituelle.",
+   "textSource": "client-forever"
   },
   "pretre/shadow-magic-4-3": {
    "name": "Tissage de l'ombre",
@@ -23643,8 +24290,13 @@ window.TALENT_FR={
    "spell": 15257,
    "classic": "Vos sorts d'Ombre ont 20% de chances de rendre la cible vulnérable aux dégâts d'Ombre. Les dégâts infligés à la cible sont alors augmentés de 3% pendant 15 sec. Cumulable jusqu'à 5 fois.",
    "nameBranch": "classic",
-   "rank1": "Vos sorts de dégâts d’Ombre ont 33% de chances d’augmenter de 2% les dégâts d’Ombre que vous infligez pendant 15 sec, cumulable jusqu’à 5 fois.",
-   "textSource": "editorial"
+   "rank1": "Vos sorts d’ombre infligeant des dégâts ont 33 % de chances d’augmenter les dégâts d’ombre que vous infligez de 2 % pendant 15 sec. Cumulable jusqu’à 5 fois.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vos sorts d’ombre infligeant des dégâts ont 33 % de chances d’augmenter les dégâts d’ombre que vous infligez de 2 % pendant 15 sec. Cumulable jusqu’à 5 fois.",
+    "Vos sorts d’ombre infligeant des dégâts ont 67 % de chances d’augmenter les dégâts d’ombre que vous infligez de 2 % pendant 15 sec. Cumulable jusqu’à 5 fois.",
+    "Vos sorts d’ombre infligeant des dégâts ont 100 % de chances d’augmenter les dégâts d’ombre que vous infligez de 2 % pendant 15 sec. Cumulable jusqu’à 5 fois."
+   ]
   },
   "pretre/shadow-magic-5-1": {
    "name": "Silence",
@@ -23652,8 +24304,8 @@ window.TALENT_FR={
    "spell": 15487,
    "classic": "Rend la cible silencieuse, l'empêchant de lancer des sorts pendant 5 sec.",
    "nameBranch": "classic",
-   "rank1": "Rend la cible silencieuse, l’empêchant de lancer des sorts pendant 5 sec et interrompant son incantation pendant 3 sec.",
-   "textSource": "editorial"
+   "rank1": "Rend la cible silencieuse, ce qui l’empêche de lancer des sorts pendant 5 sec et interrompt ses incantations pendant 3 sec.",
+   "textSource": "client-forever"
   },
   "pretre/shadow-magic-6-3": {
    "name": "Ténèbres",
@@ -23661,8 +24313,15 @@ window.TALENT_FR={
    "spell": 15259,
    "classic": "Augmente les dégâts de vos sorts d'Ombre de 2%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 2% les dégâts d’Ombre que vous infligez.",
-   "textSource": "editorial"
+   "rank1": "Augmente vos dégâts d’ombre de 2 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente vos dégâts d’ombre de 2 %.",
+    "Augmente vos dégâts d’ombre de 4 %.",
+    "Augmente vos dégâts d’ombre de 6 %.",
+    "Augmente vos dégâts d’ombre de 8 %.",
+    "Augmente vos dégâts d’ombre de 10 %."
+   ]
   },
   "pretre/shadow-magic-7-2": {
    "name": "Forme d'Ombre",
@@ -23670,8 +24329,8 @@ window.TALENT_FR={
    "spell": 15473,
    "classic": "Permet d’adopter une forme d’ombre qui augmente de 15 % les dégâts d’ombre infligés et réduit les dégâts physiques subis de 15 %, mais empêche de lancer des sorts du sacré.",
    "nameBranch": "classic",
-   "rank1": "Adopte une forme d’Ombre qui augmente de 10% vos dégâts d’Ombre, réduit de 50% le coût en mana de tous vos sorts d’Ombre, augmente de 100% le bonus de dégâts critiques de vos sorts d’Ombre et réduit de 15% les dégâts physiques que vous subissez. En revanche, vous ne pouvez pas lancer de sorts de soins sous cette forme.",
-   "textSource": "editorial"
+   "rank1": "Permet d’adopter une forme d’ombre qui augmente de 10 % les dégâts d’ombre infligés, réduit le coût en mana des sorts d’ombre de 50 %, augmente le bonus aux dégâts des coups critiques de vos sorts d’ombre de 100 % et réduit les dégâts physiques que vous subissez de 15 %. Vous ne pouvez pas lancer de sorts de soins sous cette forme.",
+   "textSource": "client-forever"
   },
   "chaman/elemental-combat-1-2": {
    "name": "Convection",
@@ -23680,14 +24339,14 @@ window.TALENT_FR={
    "classic": "Réduit le coût en mana de vos sorts Horion, Eclair et Chaîne d'éclairs de 2%.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 2% le coût en mana de vos sorts Horion, Éclair, Explosion de lave et Chaîne d’éclairs.",
-    "Réduit de 4% le coût en mana de vos sorts Horion, Éclair, Explosion de lave et Chaîne d’éclairs.",
-    "Réduit de 6% le coût en mana de vos sorts Horion, Éclair, Explosion de lave et Chaîne d’éclairs.",
-    "Réduit de 8% le coût en mana de vos sorts Horion, Éclair, Explosion de lave et Chaîne d’éclairs.",
-    "Réduit de 10% le coût en mana de vos sorts Horion, Éclair, Explosion de lave et Chaîne d’éclairs."
+    "Réduit de 2 % le coût en mana de vos sorts Horion, Éclair, Explosion de lave et Chaîne d’éclairs.",
+    "Réduit de 4 % le coût en mana de vos sorts Horion, Éclair, Explosion de lave et Chaîne d’éclairs.",
+    "Réduit de 6 % le coût en mana de vos sorts Horion, Éclair, Explosion de lave et Chaîne d’éclairs.",
+    "Réduit de 8 % le coût en mana de vos sorts Horion, Éclair, Explosion de lave et Chaîne d’éclairs.",
+    "Réduit de 10 % le coût en mana de vos sorts Horion, Éclair, Explosion de lave et Chaîne d’éclairs."
    ],
-   "rank1": "Réduit de 2% le coût en mana de vos sorts Horion, Éclair, Explosion de lave et Chaîne d’éclairs.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 2 % le coût en mana de vos sorts Horion, Éclair, Explosion de lave et Chaîne d’éclairs.",
+   "textSource": "client-forever"
   },
   "chaman/elemental-combat-1-3": {
    "name": "Commotion",
@@ -23696,14 +24355,14 @@ window.TALENT_FR={
    "classic": "Augmente de 1% les dégâts infligés par vos sorts Eclair, Chaîne d'éclairs et Horion.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 1% les dégâts infligés par vos sorts Éclair, Chaîne d’éclairs et Horion de terre.",
-    "Augmente de 2% les dégâts infligés par vos sorts Éclair, Chaîne d’éclairs et Horion de terre.",
-    "Augmente de 3% les dégâts infligés par vos sorts Éclair, Chaîne d’éclairs et Horion de terre.",
-    "Augmente de 4% les dégâts infligés par vos sorts Éclair, Chaîne d’éclairs et Horion de terre.",
-    "Augmente de 5% les dégâts infligés par vos sorts Éclair, Chaîne d’éclairs et Horion de terre."
+    "Augmente de 1 % les dégâts infligés par vos sorts Éclair, Chaîne d’éclairs et Horion de terre.",
+    "Augmente de 2 % les dégâts infligés par vos sorts Éclair, Chaîne d’éclairs et Horion de terre.",
+    "Augmente de 3 % les dégâts infligés par vos sorts Éclair, Chaîne d’éclairs et Horion de terre.",
+    "Augmente de 4 % les dégâts infligés par vos sorts Éclair, Chaîne d’éclairs et Horion de terre.",
+    "Augmente de 5 % les dégâts infligés par vos sorts Éclair, Chaîne d’éclairs et Horion de terre."
    ],
-   "rank1": "Augmente de 1% les dégâts infligés par vos sorts Éclair, Chaîne d’éclairs et Horion de terre.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 1 % les dégâts infligés par vos sorts Éclair, Chaîne d’éclairs et Horion de terre.",
+   "textSource": "client-forever"
   },
   "chaman/elemental-combat-2-1": {
    "name": "Protection contre les éléments",
@@ -23712,21 +24371,28 @@ window.TALENT_FR={
    "classic": "Réduit les dégâts infligés par les effets de Feu, de Givre et de Nature de 4%.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 3% les dégâts que vous subissez des effets de Feu, de Givre et de Nature.",
-    "Réduit de 7% les dégâts que vous subissez des effets de Feu, de Givre et de Nature.",
-    "Réduit de 10% les dégâts que vous subissez des effets de Feu, de Givre et de Nature."
+    "Réduit de 3 % les dégâts subis des effets de feu, de givre et de nature.",
+    "Réduit de 7 % les dégâts subis des effets de feu, de givre et de nature.",
+    "Réduit de 10 % les dégâts subis des effets de feu, de givre et de nature."
    ],
-   "rank1": "Réduit de 3% les dégâts que vous subissez des effets de Feu, de Givre et de Nature.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 3 % les dégâts subis des effets de feu, de givre et de nature.",
+   "textSource": "client-forever"
   },
   "chaman/elemental-combat-2-2": {
    "name": "Réverbération",
    "nameSource": "officiel",
    "spell": 16040,
    "classic": "Réduit le temps de recharge de vos Horions de 0.2 secondes.",
-   "rank1": "Réduit le temps de recharge de vos Horions de 0.2 secondes.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Réduit le temps de recharge de vos sorts Horion de 0.2 s.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit le temps de recharge de vos sorts Horion de 0.2 s.",
+    "Réduit le temps de recharge de vos sorts Horion de 0.4 s.",
+    "Réduit le temps de recharge de vos sorts Horion de 0.6 s.",
+    "Réduit le temps de recharge de vos sorts Horion de 0.8 s.",
+    "Réduit le temps de recharge de vos sorts Horion de 1.0 s."
+   ]
   },
   "chaman/elemental-combat-2-3": {
    "name": "Appel des flammes",
@@ -23734,8 +24400,13 @@ window.TALENT_FR={
    "spell": 16038,
    "classic": "Augmente de 5% les dégâts infligés par vos Totems de feu.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 5% les dégâts infligés par vos Totems de feu et par vos sorts Horion de flammes, Nova de feu et Explosion de lave.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 5 % les dégâts infligés par vos totems de feu et vos sorts Horion de flamme, Nova de feu et Explosion de lave.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 5 % les dégâts infligés par vos totems de feu et vos sorts Horion de flamme, Nova de feu et Explosion de lave.",
+    "Augmente de 10 % les dégâts infligés par vos totems de feu et vos sorts Horion de flamme, Nova de feu et Explosion de lave.",
+    "Augmente de 15 % les dégâts infligés par vos totems de feu et vos sorts Horion de flamme, Nova de feu et Explosion de lave."
+   ]
   },
   "chaman/elemental-combat-2-4": {
    "name": "Dévastation élémentaire",
@@ -23743,16 +24414,21 @@ window.TALENT_FR={
    "spell": 30160,
    "classic": "Vos coups critiques obtenus avec des sorts offensifs augmentent de 3% vos chances d'obtenir un coup critique avec les attaques de mêlée pendant 10 sec.",
    "nameBranch": "classic",
-   "rank1": "Vos coups critiques de sorts offensifs augmentent de 3% vos chances de coup critique avec vos attaques de mêlée pendant 10 sec.",
-   "textSource": "editorial"
+   "rank1": "Vos coups critiques avec des sorts offensifs augmentent de 3 % vos chances d’infliger un coup critique avec vos attaques en mêlée pendant 10 sec.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vos coups critiques avec des sorts offensifs augmentent de 3 % vos chances d’infliger un coup critique avec vos attaques en mêlée pendant 10 sec.",
+    "Vos coups critiques avec des sorts offensifs augmentent de 6 % vos chances d’infliger un coup critique avec vos attaques en mêlée pendant 10 sec.",
+    "Vos coups critiques avec des sorts offensifs augmentent de 9 % vos chances d’infliger un coup critique avec vos attaques en mêlée pendant 10 sec."
+   ]
   },
   "chaman/elemental-combat-3-2": {
    "name": "Focalisation élémentaire",
    "nameSource": "officiel",
    "spell": 16164,
    "classic": "Vous confère 10% de chances d'entrer dans un état \"Idées claires\" après avoir lancé un sort de dégâts de Feu, de Givre ou de Nature. Idées claires réduit le coût en mana de votre prochain sort de dégâts de 100%.",
-   "rank1": "Vous confère 10% de chances d'entrer dans un état \"Idées claires\" après avoir lancé un sort de dégâts de Feu, de Givre ou de Nature. Idées claires réduit le coût en mana de votre prochain sort de dégâts de 100%.",
-   "textSource": "officiel",
+   "rank1": "Vous confère 10 % de chances d’entrer dans un état d’Idées claires après avoir lancé un sort infligeant des dégâts de feu, de givre ou de nature. L’état d’Idées claires réduit de 100 % le coût en mana de votre prochain sort de dégâts.",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "chaman/elemental-combat-3-3": {
@@ -23761,8 +24437,15 @@ window.TALENT_FR={
    "spell": 16089,
    "classic": "Augmente de 100% le bonus en points de dégâts des coups critiques obtenus avec les Totems incendiaires, Nova de Feu de Magma ainsi qu'avec les sorts de Feu, de Givre et de Nature.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 20% le bonus de dégâts critiques de vos Totems incendiaire et de magma, ainsi que de vos sorts de Feu, de Givre et de Nature.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 20 % le bonus de dégâts des coups critiques de votre totem incendiaire et de votre totem de magma, ainsi que les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de feu, de givre et de nature.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 20 % le bonus de dégâts des coups critiques de votre totem incendiaire et de votre totem de magma, ainsi que les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de feu, de givre et de nature.",
+    "Augmente de 40 % le bonus de dégâts des coups critiques de votre totem incendiaire et de votre totem de magma, ainsi que les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de feu, de givre et de nature.",
+    "Augmente de 60 % le bonus de dégâts des coups critiques de votre totem incendiaire et de votre totem de magma, ainsi que les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de feu, de givre et de nature.",
+    "Augmente de 80 % le bonus de dégâts des coups critiques de votre totem incendiaire et de votre totem de magma, ainsi que les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de feu, de givre et de nature.",
+    "Augmente de 100 % le bonus de dégâts des coups critiques de votre totem incendiaire et de votre totem de magma, ainsi que les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de feu, de givre et de nature."
+   ]
   },
   "chaman/elemental-combat-4-1": {
    "name": "Nova de feu améliorée",
@@ -23771,8 +24454,12 @@ window.TALENT_FR={
    "classic": "Réduit le délai avant activation de votre Totem Nova de feu de 1 sec. et diminue la menace générée par votre Totem de Magma de 25%.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Totems de Feu améliorés » (anciennement « Improved Fire Totems »).",
    "nameBranch": "forever",
-   "rank1": "Augmente de 10% les dégâts de votre sort Nova de feu et réduit de 2 sec son temps de recharge.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts infligés par votre sort Nova de feu de 10 % et réduit le temps de recharge de 2 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente les dégâts infligés par votre sort Nova de feu de 10 % et réduit le temps de recharge de 2 s.",
+    "Augmente les dégâts infligés par votre sort Nova de feu de 20 % et réduit le temps de recharge de 4 s."
+   ]
   },
   "chaman/elemental-combat-4-2": {
    "name": "Oeil du cyclone",
@@ -23780,8 +24467,13 @@ window.TALENT_FR={
    "spell": 29062,
    "classic": "Vous confère 33% de chances de bénéficier de l'effet Incantation focalisée pendant 6 sec après avoir été victime d'un coup critique en mêlée ou à distance. Cet effet vous évite, lors de l'incantation d'un sort, d'être interrompu lorsque vous subissez des dégâts.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 23% le recul subi lorsque vous encaissez des dégâts pendant l’incantation d’Éclair, de Chaîne d’éclairs et d’Explosion de lave.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 23 % la perte de temps d’incantation causée par les attaques infligeant des dégâts pendant que vous incantez les sorts Éclair, Chaîne d’éclairs et Explosion de lave.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 23 % la perte de temps d’incantation causée par les attaques infligeant des dégâts pendant que vous incantez les sorts Éclair, Chaîne d’éclairs et Explosion de lave.",
+    "Réduit de 47 % la perte de temps d’incantation causée par les attaques infligeant des dégâts pendant que vous incantez les sorts Éclair, Chaîne d’éclairs et Explosion de lave.",
+    "Réduit de 70 % la perte de temps d’incantation causée par les attaques infligeant des dégâts pendant que vous incantez les sorts Éclair, Chaîne d’éclairs et Explosion de lave."
+   ]
   },
   "chaman/elemental-combat-4-3": {
    "name": "Appel de la foudre",
@@ -23789,8 +24481,8 @@ window.TALENT_FR={
    "spell": 16041,
    "classic": "Augmente vos chances de réaliser un coup critique avec vos sorts Eclair et Chaîne d'éclairs de 1% supplémentaires.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 3% les chances de coup critique de vos sorts Éclair et Chaîne d’éclairs.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 3 % les chances de coup critique de vos sorts Éclair et Chaîne d’éclairs.",
+   "textSource": "client-forever"
   },
   "chaman/elemental-combat-5-1": {
    "name": "Allonge élémentaire",
@@ -23799,8 +24491,12 @@ window.TALENT_FR={
    "classic": "Augmente la portée de vos sorts Eclair et Chaîne d'éclairs de 3 mètres.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Allonge de la tempête » (anciennement « Storm Reach »).",
    "nameBranch": "forever",
-   "rank1": "Augmente de 3 mètres la portée de vos sorts Éclair, Chaîne d’éclairs, Nova de feu et Explosion de lave, et de 8 mètres celle de votre sort Horion de flammes.",
-   "textSource": "editorial"
+   "rank1": "Augmente la portée de vos sorts Éclair, Chaîne d’éclairs, Nova de feu et Explosion de lave de 3 m et augmente la portée de votre sort Horion de flamme de 8 m.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente la portée de vos sorts Éclair, Chaîne d’éclairs, Nova de feu et Explosion de lave de 3 m et augmente la portée de votre sort Horion de flamme de 8 m.",
+    "Augmente la portée de vos sorts Éclair, Chaîne d’éclairs, Nova de feu et Explosion de lave de 6 m et augmente la portée de votre sort Horion de flamme de 15 m."
+   ]
   },
   "chaman/elemental-combat-6-3": {
    "name": "Empressement élémentaire",
@@ -23809,17 +24505,26 @@ window.TALENT_FR={
    "classic": "Réduit le temps d'incantation de vos sorts Eclair et Chaîne d'éclairs de 0.2 secondes.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Maîtrise de la foudre » (anciennement « Lightning Mastery »).",
    "nameBranch": "forever",
-   "rank1": "Réduit de 0,17 sec le temps d’incantation de vos sorts Éclair, Chaîne d’éclairs et Explosion de lave.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 0.17 s le temps d’incantation de vos sorts Éclair, Chaîne d’éclairs et Explosion de lave.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 0.17 s le temps d’incantation de vos sorts Éclair, Chaîne d’éclairs et Explosion de lave.",
+    "Réduit de 0.33 s le temps d’incantation de vos sorts Éclair, Chaîne d’éclairs et Explosion de lave.",
+    "Réduit de 0.50 s le temps d’incantation de vos sorts Éclair, Chaîne d’éclairs et Explosion de lave."
+   ]
   },
   "chaman/enhancement-1-1": {
    "name": "Emprise de la terre",
    "nameSource": "officiel",
    "spell": 16043,
    "classic": "Augmente les points de vie de votre Totem Griffe de pierre de 25% et le rayon de votre Totem de lien terrestre de 10%.",
-   "rank1": "Augmente les points de vie de votre Totem Griffe de pierre de 25% et le rayon de votre Totem de lien terrestre de 10%.",
-   "textSource": "officiel",
-   "nameBranch": "wotlk"
+   "rank1": "Augmente de 25 % les points de vie de votre totem de griffes de pierre et de 10 % le rayon d’action de votre totem de lien terrestre.",
+   "textSource": "client-forever",
+   "nameBranch": "wotlk",
+   "ranks": [
+    "Augmente de 25 % les points de vie de votre totem de griffes de pierre et de 10 % le rayon d’action de votre totem de lien terrestre.",
+    "Augmente de 50 % les points de vie de votre totem de griffes de pierre et de 20 % le rayon d’action de votre totem de lien terrestre."
+   ]
   },
   "chaman/enhancement-1-2": {
    "name": "Frappe foudroyante",
@@ -23827,8 +24532,15 @@ window.TALENT_FR={
    "spell": 16255,
    "classic": "Augmente de 1% vos chances d'infliger un coup critique avec votre arme.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% vos chances de coup critique avec tous vos sorts et attaques.",
-   "textSource": "editorial"
+   "rank1": "Améliore vos chances de coup critique des sorts et attaques de 1 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Améliore vos chances de coup critique des sorts et attaques de 1 %.",
+    "Améliore vos chances de coup critique des sorts et attaques de 2 %.",
+    "Améliore vos chances de coup critique des sorts et attaques de 3 %.",
+    "Améliore vos chances de coup critique des sorts et attaques de 4 %.",
+    "Améliore vos chances de coup critique des sorts et attaques de 5 %."
+   ]
   },
   "chaman/enhancement-1-3": {
    "name": "Connaissance ancestrale",
@@ -23836,17 +24548,28 @@ window.TALENT_FR={
    "spell": 17485,
    "classic": "Augmente votre maximum de points de mana de 1%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 2% votre Intelligence.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre intelligence de 2 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente votre intelligence de 2 %.",
+    "Augmente votre intelligence de 4 %.",
+    "Augmente votre intelligence de 6 %.",
+    "Augmente votre intelligence de 8 %.",
+    "Augmente votre intelligence de 10 %."
+   ]
   },
   "chaman/enhancement-2-1": {
    "name": "Totems gardiens",
    "nameSource": "officiel",
    "spell": 16258,
    "classic": "Augmente de 10% le nombre de points de dégâts absorbés par votre Totem Peau de pierre et votre Totem de Mur des vents et réduit le temps de recharge de votre Totem de Glèbe de 1 sec.",
-   "rank1": "Augmente de 10% le nombre de points de dégâts absorbés par votre Totem Peau de pierre et votre Totem de Mur des vents et réduit le temps de recharge de votre Totem de Glèbe de 1 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Augmente de 10 % la quantité de dégâts réduits par votre totem de peau de pierre et votre totem Mur de vent. Réduit le temps de recharge de votre totem de glèbe de 1 s.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 10 % la quantité de dégâts réduits par votre totem de peau de pierre et votre totem Mur de vent. Réduit le temps de recharge de votre totem de glèbe de 1 s.",
+    "Augmente de 20 % la quantité de dégâts réduits par votre totem de peau de pierre et votre totem Mur de vent. Réduit le temps de recharge de votre totem de glèbe de 2 s."
+   ]
   },
   "chaman/enhancement-2-3": {
    "name": "Loup fantôme amélioré",
@@ -23854,11 +24577,11 @@ window.TALENT_FR={
    "spell": 16262,
    "classic": "Réduit le temps d'incantation de votre sort Loup fantôme de 1 secondes.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 1,0 sec le temps d’incantation de votre sort Loup fantôme, qui devient en outre utilisable en intérieur.",
-   "textSource": "editorial",
+   "rank1": "Réduit le temps d’incantation de votre sort Loup fantôme de 1.0 s. De plus, Loup fantôme peut être utilisé en intérieur.",
+   "textSource": "client-forever",
    "ranks": [
-    "Réduit de 1,0 sec le temps d’incantation de votre sort Loup fantôme, qui devient en outre utilisable en intérieur.",
-    "Réduit de 3 sec le temps d’incantation de votre sort Loup fantôme, qui devient en outre utilisable en intérieur."
+    "Réduit le temps d’incantation de votre sort Loup fantôme de 1.0 s. De plus, Loup fantôme peut être utilisé en intérieur.",
+    "Réduit le temps d’incantation de votre sort Loup fantôme de 3.0 s. De plus, Loup fantôme peut être utilisé en intérieur."
    ]
   },
   "chaman/enhancement-2-4": {
@@ -23866,27 +24589,42 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "spell": 16261,
    "classic": "Augmente de 5% les dégâts infligés par les orbes de votre Bouclier de foudre.",
-   "rank1": "Augmente de 5% les dégâts infligés par les orbes de votre Bouclier de foudre.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Augmente de 5 % les dégâts infligés par les orbes de votre bouclier de foudre.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 5 % les dégâts infligés par les orbes de votre bouclier de foudre.",
+    "Augmente de 10 % les dégâts infligés par les orbes de votre bouclier de foudre.",
+    "Augmente de 15 % les dégâts infligés par les orbes de votre bouclier de foudre."
+   ]
   },
   "chaman/enhancement-3-1": {
    "name": "Armes élémentaires",
    "nameSource": "officiel",
    "spell": 16266,
    "classic": "Augmente de 7% le bonus de puissance d'attaque en mêlée conféré par votre Arme Croque-roc, de 13% votre effet Arme Furie-des-vents, et de 5% les dégâts causés par votre Arme Langue de feu et votre Arme de givre.",
-   "rank1": "Augmente de 7% le bonus de puissance d'attaque en mêlée conféré par votre Arme Croque-roc, de 13% votre effet Arme Furie-des-vents, et de 5% les dégâts causés par votre Arme Langue de feu et votre Arme de givre.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Augmente de 7 % le bonus à la puissance d’attaque en mêlée de votre arme Croque-roc, de 13 % l’effet de votre arme Furie-des-vents et de 5 % les dégâts infligés par votre arme Langue de feu et votre arme de givre.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 7 % le bonus à la puissance d’attaque en mêlée de votre arme Croque-roc, de 13 % l’effet de votre arme Furie-des-vents et de 5 % les dégâts infligés par votre arme Langue de feu et votre arme de givre.",
+    "Augmente de 13 % le bonus à la puissance d’attaque en mêlée de votre arme Croque-roc, de 27 % l’effet de votre arme Furie-des-vents et de 10 % les dégâts infligés par votre arme Langue de feu et votre arme de givre.",
+    "Augmente de 20 % le bonus à la puissance d’attaque en mêlée de votre arme Croque-roc, de 40 % l’effet de votre arme Furie-des-vents et de 15 % les dégâts infligés par votre arme Langue de feu et votre arme de givre."
+   ]
   },
   "chaman/enhancement-3-4": {
    "name": "Anticipation",
    "nameSource": "officiel",
    "spell": 16254,
    "classic": "Augmente de 1% vos chances d'esquiver.",
-   "rank1": "Augmente de 2% vos chances d'esquiver.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "rank1": "Augmente vos chances d’esquiver de 2 %supplémentaires.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente vos chances d’esquiver de 2 %supplémentaires.",
+    "Augmente vos chances d’esquiver de 4 %supplémentaires.",
+    "Augmente vos chances d’esquiver de 6 %supplémentaires."
+   ]
   },
   "chaman/enhancement-4-1": {
    "name": "Résistance",
@@ -23894,8 +24632,15 @@ window.TALENT_FR={
    "spell": 16252,
    "classic": "Augmente le score d'armure des objets de 2%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 2% votre Endurance.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre endurance de 2 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente votre endurance de 2 %.",
+    "Augmente votre endurance de 4 %.",
+    "Augmente votre endurance de 6 %.",
+    "Augmente votre endurance de 8 %.",
+    "Augmente votre endurance de 10 %."
+   ]
   },
   "chaman/enhancement-4-2": {
    "name": "Rafale",
@@ -23904,14 +24649,14 @@ window.TALENT_FR={
    "classic": "Lorsque vous infligez un coup critique, augmente votre vitesse d'attaque de 10% pour les 3 prochaines attaques.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 5% votre vitesse d’attaque pour vos 3 prochains coups après un coup critique de mêlée.",
-    "Augmente de 10% votre vitesse d’attaque pour vos 3 prochains coups après un coup critique.",
-    "Augmente de 15% votre vitesse d’attaque pour vos 3 prochains coups après un coup critique.",
-    "Augmente de 20% votre vitesse d’attaque pour vos 3 prochains coups après un coup critique.",
-    "Augmente de 25% votre vitesse d’attaque pour vos 3 prochains coups après un coup critique."
+    "Augmente votre vitesse d’attaque de 5 % pour vos 3 prochaines attaques après avoir infligé un coup critique en mêlée.",
+    "Augmente votre vitesse d’attaque de 10 % pour vos 3 prochaines attaques après avoir infligé un coup critique en mêlée.",
+    "Augmente votre vitesse d’attaque de 15 % pour vos 3 prochaines attaques après avoir infligé un coup critique en mêlée.",
+    "Augmente votre vitesse d’attaque de 20 % pour vos 3 prochaines attaques après avoir infligé un coup critique en mêlée.",
+    "Augmente votre vitesse d’attaque de 25 % pour vos 3 prochaines attaques après avoir infligé un coup critique en mêlée."
    ],
-   "rank1": "Augmente de 5% votre vitesse d’attaque pour vos 3 prochains coups après un coup critique de mêlée.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre vitesse d’attaque de 5 % pour vos 3 prochaines attaques après avoir infligé un coup critique en mêlée.",
+   "textSource": "client-forever"
   },
   "chaman/enhancement-4-3": {
    "name": "Courroux naturel",
@@ -23919,8 +24664,8 @@ window.TALENT_FR={
    "spell": 17364,
    "classic": "Donne une attaque supplémentaire. De plus, les deux prochaines sources de dégâts de nature infligés à la cible sont augmentées de 20 %. Dure 12 sec.",
    "nameBranch": "classic",
-   "rank1": "Frappe instantanément pour les dégâts normaux de l’arme et augmente de 20% les dégâts que vous infligez à la cible avec votre prochain sort Éclair, Chaîne d’éclairs ou Choc de terre, pendant 12 sec.",
-   "textSource": "editorial"
+   "rank1": "Inflige instantanément les dégâts normaux de l’arme et augmente de 20 % les dégâts que vous infligez à la cible avec votre prochain sort Éclair, Chaîne d’éclairs ou Horion de terre pendant 12 sec.",
+   "textSource": "client-forever"
   },
   "chaman/enhancement-5-1": {
    "name": "Armes spirituelles",
@@ -23929,17 +24674,24 @@ window.TALENT_FR={
    "classic": "Donne une chance de parer les attaques de mêlée des ennemis.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Parade » (anciennement « Parry »).",
    "nameBranch": "forever",
-   "rank1": "Vous donne une chance de parer les attaques de mêlée ennemies, réduit de 30% toute la menace générée par vos attaques tant qu’Arme de mordroche est inactive, et l’augmente de 30% tant qu’Arme de mordroche est active.",
-   "textSource": "editorial"
+   "rank1": "Donne une chance de parer les attaques en mêlée des adversaires, réduit la menace générée par vos attaques de 30 % tant que l’arme Croque-roc est inactive, et augmente le niveau de menace généré de 30 % quand Arme Croque-roc est active.",
+   "textSource": "client-forever"
   },
   "chaman/restoration-1-2": {
    "name": "Vague de soins améliorée",
    "nameSource": "officiel",
    "spell": 16182,
    "classic": "Réduit le temps d'incantation de votre sort Vague de soins de 0.1 secondes.",
-   "rank1": "Réduit le temps d'incantation de votre sort Vague de soins de 0.1 secondes.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Réduit le temps d’incantation de votre sort Vague de soins de 0.1 s.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit le temps d’incantation de votre sort Vague de soins de 0.1 s.",
+    "Réduit le temps d’incantation de votre sort Vague de soins de 0.2 s.",
+    "Réduit le temps d’incantation de votre sort Vague de soins de 0.3 s.",
+    "Réduit le temps d’incantation de votre sort Vague de soins de 0.4 s.",
+    "Réduit le temps d’incantation de votre sort Vague de soins de 0.5 s."
+   ]
   },
   "chaman/restoration-1-3": {
    "name": "Focalisation totémique",
@@ -23948,14 +24700,14 @@ window.TALENT_FR={
    "classic": "Réduit le coût en mana de vos sorts Totem de 5%.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 5% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
-    "Réduit de 10% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
-    "Réduit de 15% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
-    "Réduit de 20% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
-    "Réduit de 25% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent."
+    "Réduit de 5 % le coût en mana de vos totems et des sorts qui permettent de les invoquer ou de les déplacer.",
+    "Réduit de 10 % le coût en mana de vos totems et des sorts qui permettent de les invoquer ou de les déplacer.",
+    "Réduit de 15 % le coût en mana de vos totems et des sorts qui permettent de les invoquer ou de les déplacer.",
+    "Réduit de 20 % le coût en mana de vos totems et des sorts qui permettent de les invoquer ou de les déplacer.",
+    "Réduit de 25 % le coût en mana de vos totems et des sorts qui permettent de les invoquer ou de les déplacer."
    ],
-   "rank1": "Réduit de 5% le coût en mana de vos totems et de tous les sorts qui les invoquent ou les déplacent.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 5 % le coût en mana de vos totems et des sorts qui permettent de les invoquer ou de les déplacer.",
+   "textSource": "client-forever"
   },
   "chaman/restoration-2-2": {
    "name": "Grâce naturelle",
@@ -23964,8 +24716,13 @@ window.TALENT_FR={
    "classic": "Diminue le niveau de menace généré par vos sorts de soins de 5%.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Grâce guérisseuse » (anciennement « Healing Grace »).",
    "nameBranch": "forever",
-   "rank1": "Réduit de 5% la menace générée par vos sorts.",
-   "textSource": "editorial"
+   "rank1": "Diminue le niveau de menace généré par vos sorts de 5 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Diminue le niveau de menace généré par vos sorts de 5 %.",
+    "Diminue le niveau de menace généré par vos sorts de 10 %.",
+    "Diminue le niveau de menace généré par vos sorts de 15 %."
+   ]
   },
   "chaman/restoration-2-3": {
    "name": "Focalisation des flots",
@@ -23974,14 +24731,14 @@ window.TALENT_FR={
    "classic": "Réduit de 1% le coût en mana de vos sorts de soins.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 1% le coût en mana de vos sorts de soins et augmente de 1% vos chances de toucher avec tous vos sorts et attaques.",
-    "Réduit de 2% le coût en mana de vos sorts de soins et augmente de 2% vos chances de toucher avec vos sorts et attaques.",
-    "Réduit de 3% le coût en mana de vos sorts de soins et augmente de 3% vos chances de toucher avec vos sorts et attaques.",
-    "Réduit de 4% le coût en mana de vos sorts de soins et augmente de 4% vos chances de toucher avec vos sorts et attaques.",
-    "Réduit de 5% le coût en mana de vos sorts de soins et augmente de 5% vos chances de toucher avec vos sorts et attaques."
+    "Réduit de 1 % le coût en mana de vos sorts de soins et améliore de 1 % vos chances de toucher.",
+    "Réduit de 2 % le coût en mana de vos sorts de soins et améliore de 2 % vos chances de toucher.",
+    "Réduit de 3 % le coût en mana de vos sorts de soins et améliore de 3 % vos chances de toucher.",
+    "Réduit de 4 % le coût en mana de vos sorts de soins et améliore de 4 % vos chances de toucher.",
+    "Réduit de 5 % le coût en mana de vos sorts de soins et améliore de 5 % vos chances de toucher."
    ],
-   "rank1": "Réduit de 1% le coût en mana de vos sorts de soins et augmente de 1% vos chances de toucher avec tous vos sorts et attaques.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 1 % le coût en mana de vos sorts de soins et améliore de 1 % vos chances de toucher.",
+   "textSource": "client-forever"
   },
   "chaman/restoration-2-4": {
    "name": "Réincarnation améliorée",
@@ -23990,29 +24747,39 @@ window.TALENT_FR={
    "classic": "Réduit le temps de recharge de votre sort Réincarnation de 10 minutes et augmente le nombre de points de vie et de mana avec lesquels vous vous réincarnez de 10% supplémentaires.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 10 min le temps de recharge de votre sort Réincarnation, augmente de 2% votre maximum de points de vie et de 10% supplémentaires le montant de vie et de mana avec lequel vous vous réincarnez.",
-    "Réduit de 20 min le temps de recharge de votre sort Réincarnation, augmente de 4% votre maximum de points de vie et de 20% supplémentaires le montant de vie et de mana avec lequel vous vous réincarnez."
+    "Réduit le temps de recharge de votre sort Réincarnation de 10 min, augmente de 2 % votre maximum de points de vie et augmente les points de vie et de mana dont vous disposez quand vous vous réincarnez de 10 %supplémentaires.",
+    "Réduit le temps de recharge de votre sort Réincarnation de 20 min, augmente de 4 % votre maximum de points de vie et augmente les points de vie et de mana dont vous disposez quand vous vous réincarnez de 20 %supplémentaires."
    ],
-   "rank1": "Réduit de 10 min le temps de recharge de votre sort Réincarnation, augmente de 2% votre maximum de points de vie et de 10% supplémentaires le montant de vie et de mana avec lequel vous vous réincarnez.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps de recharge de votre sort Réincarnation de 10 min, augmente de 2 % votre maximum de points de vie et augmente les points de vie et de mana dont vous disposez quand vous vous réincarnez de 10 %supplémentaires.",
+   "textSource": "client-forever"
   },
   "chaman/restoration-3-1": {
    "name": "Guérison des anciens",
    "nameSource": "officiel",
    "spell": 16176,
    "classic": "Augmente le score d'armure de la cible de 8% pendant 15 sec lorsque vous obtenez un effet critique en la soignant.",
-   "rank1": "Augmente le score d'armure de la cible de 8% pendant 15 sec lorsque vous obtenez un effet critique en la soignant.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Augmente de 8 % la valeur d’armure de votre cible pendant 15 sec après qu’elle a subi un effet critique de l’un de vos sorts de soins.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 8 % la valeur d’armure de votre cible pendant 15 sec après qu’elle a subi un effet critique de l’un de vos sorts de soins.",
+    "Augmente de 17 % la valeur d’armure de votre cible pendant 15 sec après qu’elle a subi un effet critique de l’un de vos sorts de soins.",
+    "Augmente de 25 % la valeur d’armure de votre cible pendant 15 sec après qu’elle a subi un effet critique de l’un de vos sorts de soins."
+   ]
   },
   "chaman/restoration-3-2": {
    "name": "Focalisation des soins",
    "nameSource": "officiel",
    "spell": 16181,
    "classic": "Vous donne 14% de chances d'éviter d'être interrompu par des dégâts subis quand vous lancez un sort de soins.",
-   "rank1": "Vous donne 23% de chances d'éviter d'être interrompu par des dégâts subis quand vous lancez un sort de soins.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "rank1": "Vous confère 23 % de chances d’éviter l’interruption de vos incantations par des dégâts lorsque vous lancez un sort de soins.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Vous confère 23 % de chances d’éviter l’interruption de vos incantations par des dégâts lorsque vous lancez un sort de soins.",
+    "Vous confère 47 % de chances d’éviter l’interruption de vos incantations par des dégâts lorsque vous lancez un sort de soins.",
+    "Vous confère 70 % de chances d’éviter l’interruption de vos incantations par des dégâts lorsque vous lancez un sort de soins."
+   ]
   },
   "chaman/restoration-4-1": {
    "name": "Maîtrise des flots",
@@ -24020,8 +24787,15 @@ window.TALENT_FR={
    "spell": 16194,
    "classic": "Augmente les chances d'obtenir un effet critique avec vos sorts de soins et d'éclair de 1%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% les chances d’effet critique de vos sorts de soins.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 1 % les chances d’effet critique de vos sorts de soins.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 1 % les chances d’effet critique de vos sorts de soins.",
+    "Augmente de 2 % les chances d’effet critique de vos sorts de soins.",
+    "Augmente de 3 % les chances d’effet critique de vos sorts de soins.",
+    "Augmente de 4 % les chances d’effet critique de vos sorts de soins.",
+    "Augmente de 5 % les chances d’effet critique de vos sorts de soins."
+   ]
   },
   "chaman/restoration-4-2": {
    "name": "Totems de restauration",
@@ -24030,14 +24804,14 @@ window.TALENT_FR={
    "classic": "Augmente de 5% les effets de votre Totem Fontaine de mana et de votre Totem guérisseur.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 5% l’effet de votre Totem Fontaine de mana et de 10% celui de votre Totem guérisseur.",
-    "Augmente de 10% l’effet de votre Totem Fontaine de mana et de 20% celui de votre Totem guérisseur.",
-    "Augmente de 15% l’effet de votre Totem Fontaine de mana et de 30% celui de votre Totem guérisseur.",
-    "Augmente de 20% l’effet de votre Totem Fontaine de mana et de 40% celui de votre Totem guérisseur.",
-    "Augmente de 25% l’effet de votre Totem Fontaine de mana et de 50% celui de votre Totem guérisseur."
+    "Augmente de 5 % les effets de votre totem Fontaine de mana et de 10 % celui de votre totem guérisseur.",
+    "Augmente de 10 % les effets de votre totem Fontaine de mana et de 20 % celui de votre totem guérisseur.",
+    "Augmente de 15 % les effets de votre totem Fontaine de mana et de 30 % celui de votre totem guérisseur.",
+    "Augmente de 20 % les effets de votre totem Fontaine de mana et de 40 % celui de votre totem guérisseur.",
+    "Augmente de 25 % les effets de votre totem Fontaine de mana et de 50 % celui de votre totem guérisseur."
    ],
-   "rank1": "Augmente de 5% l’effet de votre Totem Fontaine de mana et de 10% celui de votre Totem guérisseur.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 5 % les effets de votre totem Fontaine de mana et de 10 % celui de votre totem guérisseur.",
+   "textSource": "client-forever"
   },
   "chaman/restoration-4-3": {
    "name": "Totem de Vague de mana",
@@ -24045,7 +24819,7 @@ window.TALENT_FR={
    "spell": 16190,
    "classic": "Invoque un Totem de Vague de mana aux pieds du lanceur de sorts ; le Totem dispose de 5 points de vie. Agit pendant 12 s. Il rend 170 points de mana toutes les 3 secondes, à tous les membres du groupe qui se trouvent dans une zone de 20 mètres.",
    "rank1": "Invoque un Totem de Vague de mana aux pieds du lanceur de sorts ; le Totem dispose de 5 points de vie. Agit pendant 12 s. Il rend 88 points de mana toutes les 3 secondes, à tous les membres du groupe qui se trouvent dans une zone de 30 mètres.",
-   "textSource": "officiel-chiffre",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "chaman/restoration-5-2": {
@@ -24055,12 +24829,12 @@ window.TALENT_FR={
    "classic": "Vos Vagues de soins ont 33% de chances d'augmenter les effets des vagues de soins suivantes sur cette cible de 6% pendant 15 sec. Cet effet peut se cumuler au maximum 3 fois.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 8% le nombre de points de vie rendus par votre sort Vague de soins.",
-    "Augmente de 17% le nombre de points de vie rendus par votre sort Vague de soins.",
-    "Augmente de 25% le nombre de points de vie rendus par votre sort Vague de soins."
+    "Augmente le montant de points de vie rendus par votre Vague de soins de 8 %.",
+    "Augmente le montant de points de vie rendus par votre Vague de soins de 17 %.",
+    "Augmente le montant de points de vie rendus par votre Vague de soins de 25 %."
    ],
-   "rank1": "Augmente de 8% le nombre de points de vie rendus par votre sort Vague de soins.",
-   "textSource": "editorial"
+   "rank1": "Augmente le montant de points de vie rendus par votre Vague de soins de 8 %.",
+   "textSource": "client-forever"
   },
   "chaman/restoration-5-3": {
    "name": "Rapidité de la nature",
@@ -24068,7 +24842,7 @@ window.TALENT_FR={
    "spell": 16188,
    "classic": "Activé, votre prochain sort de Nature dont le temps d'incantation est inférieur à 10 secondes devient un sort instantané.",
    "rank1": "Activé, votre prochain sort de Nature dont le temps d'incantation est inférieur à 10 secondes devient un sort instantané.",
-   "textSource": "officiel",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "chaman/restoration-6-3": {
@@ -24076,9 +24850,16 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "spell": 16178,
    "classic": "Augmente l’efficacité de vos sorts de soins de 2 %.",
-   "rank1": "Augmente l’efficacité de vos sorts de soins de 2 %.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Augmente de 2 % l’efficacité de vos sorts de soins.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 2 % l’efficacité de vos sorts de soins.",
+    "Augmente de 4 % l’efficacité de vos sorts de soins.",
+    "Augmente de 6 % l’efficacité de vos sorts de soins.",
+    "Augmente de 8 % l’efficacité de vos sorts de soins.",
+    "Augmente de 10 % l’efficacité de vos sorts de soins."
+   ]
   },
   "mage/arcane-1-1": {
    "name": "Spécialisation Baguette",
@@ -24086,8 +24867,12 @@ window.TALENT_FR={
    "spell": 6057,
    "classic": "Augmente de 13% les points de dégâts que vous infligez avec une Baguette.",
    "rank1": "Augmente de 13% les points de dégâts que vous infligez avec une Baguette.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 13% les points de dégâts que vous infligez avec une Baguette.",
+    "Augmente de 25% les points de dégâts que vous infligez avec une Baguette."
+   ]
   },
   "mage/arcane-1-2": {
    "name": "Focalisation des arcanes",
@@ -24095,8 +24880,15 @@ window.TALENT_FR={
    "spell": 11222,
    "classic": "Réduit de 2% les chances que votre adversaire résiste à vos sorts des Arcanes.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% vos chances de toucher avec vos sorts des Arcanes.",
-   "textSource": "editorial"
+   "rank1": "Améliore de 1 % vos chances de toucher avec les sorts des arcanes.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Améliore de 1 % vos chances de toucher avec les sorts des arcanes.",
+    "Améliore de 2 % vos chances de toucher avec les sorts des arcanes.",
+    "Améliore de 3 % vos chances de toucher avec les sorts des arcanes.",
+    "Améliore de 4 % vos chances de toucher avec les sorts des arcanes.",
+    "Améliore de 5 % vos chances de toucher avec les sorts des arcanes."
+   ]
   },
   "mage/arcane-1-3": {
    "name": "Canalisation améliorée",
@@ -24105,8 +24897,15 @@ window.TALENT_FR={
    "classic": "Vous donne 20 % de chances d’éviter les interruptions provoquées par les dégâts pendant que vous canalisez Projectiles des arcanes .",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Projectiles des arcanes améliorés » (anciennement « Improved Arcane Missiles »).",
    "nameBranch": "forever",
-   "rank1": "Vous donne 20% de chances d’éviter l’interruption causée par les dégâts pendant que vous canalisez Projectiles des arcanes, et 14% pendant l’incantation de Décharge des arcanes.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 20 % de chances d’éviter une interruption provoquée par des dégâts pendant que vous canalisez Projectiles des arcanes et 14 % de chances pendant que vous lancez Déflagration des arcanes.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vous confère 20 % de chances d’éviter une interruption provoquée par des dégâts pendant que vous canalisez Projectiles des arcanes et 14 % de chances pendant que vous lancez Déflagration des arcanes.",
+    "Vous confère 40 % de chances d’éviter une interruption provoquée par des dégâts pendant que vous canalisez Projectiles des arcanes et 28 % de chances pendant que vous lancez Déflagration des arcanes.",
+    "Vous confère 60 % de chances d’éviter une interruption provoquée par des dégâts pendant que vous canalisez Projectiles des arcanes et 42 % de chances pendant que vous lancez Déflagration des arcanes.",
+    "Vous confère 80 % de chances d’éviter une interruption provoquée par des dégâts pendant que vous canalisez Projectiles des arcanes et 56 % de chances pendant que vous lancez Déflagration des arcanes.",
+    "Vous confère 100 % de chances d’éviter une interruption provoquée par des dégâts pendant que vous canalisez Projectiles des arcanes et 70 % de chances pendant que vous lancez Déflagration des arcanes."
+   ]
   },
   "mage/arcane-2-1": {
    "name": "Subtilité des arcanes",
@@ -24114,8 +24913,12 @@ window.TALENT_FR={
    "spell": 11210,
    "classic": "Réduit de 5 la résistance de votre cible à tous les types de magie, et diminue de 20% la menace générée par vos sorts d'Arcanes.",
    "rank1": "Réduit de 8 la résistance de votre cible à tous les types de magie, et diminue de 15% la menace générée par vos sorts d'Arcanes.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit de 8 la résistance de votre cible à tous les types de magie, et diminue de 15% la menace générée par vos sorts d'Arcanes.",
+    "Réduit de 15 la résistance de votre cible à tous les types de magie, et diminue de 30% la menace générée par vos sorts d'Arcanes."
+   ]
   },
   "mage/arcane-2-2": {
    "name": "Absorption de magie",
@@ -24131,18 +24934,29 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "spell": 11213,
    "classic": "Vous confère 2% de chances d'entrer dans un état \"Idées claires\" après avoir infligé des dégâts avec un sort à la cible. Cet état réduit le coût en mana de votre prochain sort de 100%.",
-   "rank1": "Vous confère 2% de chances d'entrer dans un état \"Idées claires\" après avoir infligé des dégâts avec un sort à la cible. Cet état réduit le coût en mana de votre prochain sort de 100%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Vous confère 2 % de chances d’entrer dans un état d’Idées claires après qu’un sort de dégâts a touché une cible. L’état d’Idées claires réduit de 100 % le coût en mana de votre prochain sort de dégâts.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Vous confère 2 % de chances d’entrer dans un état d’Idées claires après qu’un sort de dégâts a touché une cible. L’état d’Idées claires réduit de 100 % le coût en mana de votre prochain sort de dégâts.",
+    "Vous confère 4 % de chances d’entrer dans un état d’Idées claires après qu’un sort de dégâts a touché une cible. L’état d’Idées claires réduit de 100 % le coût en mana de votre prochain sort de dégâts.",
+    "Vous confère 6 % de chances d’entrer dans un état d’Idées claires après qu’un sort de dégâts a touché une cible. L’état d’Idées claires réduit de 100 % le coût en mana de votre prochain sort de dégâts.",
+    "Vous confère 8 % de chances d’entrer dans un état d’Idées claires après qu’un sort de dégâts a touché une cible. L’état d’Idées claires réduit de 100 % le coût en mana de votre prochain sort de dégâts.",
+    "Vous confère 10 % de chances d’entrer dans un état d’Idées claires après qu’un sort de dégâts a touché une cible. L’état d’Idées claires réduit de 100 % le coût en mana de votre prochain sort de dégâts."
+   ]
   },
   "mage/arcane-2-4": {
    "name": "Résistance des arcanes",
    "nameSource": "officiel",
    "spell": 28574,
    "classic": "Augmente votre Armure d'un montant égal à 50% de votre Intelligence.",
-   "rank1": "Augmente votre Armure d'un montant égal à 25% de votre Intelligence.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "rank1": "Augmente votre armure d’un montant égal à 25 % de votre Intelligence.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente votre armure d’un montant égal à 25 % de votre Intelligence.",
+    "Augmente votre armure d’un montant égal à 50 % de votre Intelligence."
+   ]
   },
   "mage/arcane-3-2": {
    "name": "Impact des arcanes",
@@ -24151,8 +24965,13 @@ window.TALENT_FR={
    "classic": "Augmente de 2% supplémentaires les chances d'infliger un coup critique avec votre sort Explosion des arcanes.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Explosion des arcanes améliorée » (anciennement « Improved Arcane Explosion »).",
    "nameBranch": "forever",
-   "rank1": "Augmente de 2% les chances de coup critique de vos sorts des Arcanes.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 2 % les chances de coup critique de vos sorts des arcanes.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 2 % les chances de coup critique de vos sorts des arcanes.",
+    "Augmente de 4 % les chances de coup critique de vos sorts des arcanes.",
+    "Augmente de 6 % les chances de coup critique de vos sorts des arcanes."
+   ]
   },
   "mage/arcane-4-1": {
    "name": "Sauvegarde des arcanes",
@@ -24161,8 +24980,12 @@ window.TALENT_FR={
    "classic": "Diminue de 10% le mana perdu par point de dégâts reçu lorsque Bouclier de mana est actif.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Bouclier de mana amélioré » (anciennement « Improved Mana Shield »).",
    "nameBranch": "forever",
-   "rank1": "Réduit de 17% le mana perdu par point de dégâts subi tant que votre sort Bouclier de mana est actif, et augmente de 25% les résistances conférées par votre sort Armure de mage.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 17 % le mana perdu par point de dégâts subi lorsque votre sort Bouclier de mana est actif et augmente de 25 % les résistances conférées par votre sort Armure du mage.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 17 % le mana perdu par point de dégâts subi lorsque votre sort Bouclier de mana est actif et augmente de 25 % les résistances conférées par votre sort Armure du mage.",
+    "Réduit de 33 % le mana perdu par point de dégâts subi lorsque votre sort Bouclier de mana est actif et augmente de 50 % les résistances conférées par votre sort Armure du mage."
+   ]
   },
   "mage/arcane-4-2": {
    "name": "Contresort amélioré",
@@ -24170,8 +24993,12 @@ window.TALENT_FR={
    "spell": 11255,
    "classic": "Confère 50% de chances à votre Contresort de rendre la cible muette pendant 4 sec.",
    "nameBranch": "classic",
-   "rank1": "Votre Contresort rend également la cible silencieuse pendant 2 sec.",
-   "textSource": "editorial"
+   "rank1": "Votre Contresort réduit également la cible au silence pendant 2 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Votre Contresort réduit également la cible au silence pendant 2 s.",
+    "Votre Contresort réduit également la cible au silence pendant 4 s."
+   ]
   },
   "mage/arcane-4-3": {
    "name": "Méditation des arcanes",
@@ -24180,12 +25007,12 @@ window.TALENT_FR={
    "classic": "Vous confère 5% de votre vitesse de récupération du mana normale pendant l'incantation.",
    "nameBranch": "classic",
    "ranks": [
-    "Permet à 17% de votre régénération de mana de se poursuivre pendant l’incantation.",
-    "Permet à 33% de votre régénération de mana de se poursuivre pendant l’incantation.",
-    "Permet à 50% de votre régénération de mana de se poursuivre pendant l’incantation."
+    "Vous confère 17% de votre vitesse de récupération du mana normale pendant l'incantation.",
+    "Vous confère 33% de votre vitesse de récupération du mana normale pendant l'incantation.",
+    "Vous confère 50% de votre vitesse de récupération du mana normale pendant l'incantation."
    ],
-   "rank1": "Permet à 17% de votre régénération de mana de se poursuivre pendant l’incantation.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 17% de votre vitesse de récupération du mana normale pendant l'incantation.",
+   "textSource": "client-forever"
   },
   "mage/arcane-5-2": {
    "name": "Présence spirituelle",
@@ -24193,7 +25020,7 @@ window.TALENT_FR={
    "spell": 12043,
    "classic": "Lorsque cette technique est activée, votre prochain sort de mage dont le temps d'incantation est inférieur à 10 sec. devient un sort instantané.",
    "rank1": "Lorsque cette technique est activée, votre prochain sort de mage dont le temps d'incantation est inférieur à 10 sec. devient un sort instantané.",
-   "textSource": "officiel",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "mage/arcane-5-3": {
@@ -24203,14 +25030,14 @@ window.TALENT_FR={
    "classic": "Augmente votre maximum de points de mana de 2%.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 2% votre Intelligence et de 20% le bonus de dégâts critiques de vos sorts des Arcanes.",
-    "Augmente de 4% votre Intelligence maximale et de 40% le bonus de dégâts critiques de vos sorts des Arcanes.",
-    "Augmente de 6% votre Intelligence maximale et de 60% le bonus de dégâts critiques de vos sorts des Arcanes.",
-    "Augmente de 8% votre Intelligence maximale et de 80% le bonus de dégâts critiques de vos sorts des Arcanes.",
-    "Augmente de 10% votre Intelligence maximale et de 100% le bonus de dégâts critiques de vos sorts des Arcanes."
+    "Augmente de 2 % votre intelligence et de 20 % les points de dégâts supplémentaires infligés par les coups critiques de vos sorts des arcanes.",
+    "Augmente de 4 % votre intelligence et de 40 % les points de dégâts supplémentaires infligés par les coups critiques de vos sorts des arcanes.",
+    "Augmente de 6 % votre intelligence et de 60 % les points de dégâts supplémentaires infligés par les coups critiques de vos sorts des arcanes.",
+    "Augmente de 8 % votre intelligence et de 80 % les points de dégâts supplémentaires infligés par les coups critiques de vos sorts des arcanes.",
+    "Augmente de 10 % votre intelligence et de 100 % les points de dégâts supplémentaires infligés par les coups critiques de vos sorts des arcanes."
    ],
-   "rank1": "Augmente de 2% votre Intelligence et de 20% le bonus de dégâts critiques de vos sorts des Arcanes.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 2 % votre intelligence et de 20 % les points de dégâts supplémentaires infligés par les coups critiques de vos sorts des arcanes.",
+   "textSource": "client-forever"
   },
   "mage/arcane-6-3": {
    "name": "Instabilité des arcanes",
@@ -24218,8 +25045,13 @@ window.TALENT_FR={
    "spell": 15058,
    "classic": "Augmente de 1% les dégâts de vos sorts et leurs chances de coup critique.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% les dégâts de tous vos sorts et de 1% vos chances de coup critique avec toutes vos attaques.",
-   "textSource": "editorial"
+   "rank1": "Increases the damage done by your spells by 1% and your critical strike chance by 1%.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Increases the damage done by your spells by 1% and your critical strike chance by 1%.",
+    "Increases the damage done by your spells by 2% and your critical strike chance by 2%.",
+    "Increases the damage done by your spells by 3% and your critical strike chance by 3%."
+   ]
   },
   "mage/arcane-7-2": {
    "name": "Pouvoir des arcanes",
@@ -24227,8 +25059,8 @@ window.TALENT_FR={
    "spell": 12042,
    "classic": "Lorsqu'il est activé, vos sorts infligent 30% de points de dégâts supplémentaires et ils vous coûtent 30% de points de mana supplémentaires. Cet effet dure 15 sec.",
    "nameBranch": "classic",
-   "rank1": "Pendant 15 sec, vos sorts infligent 30% de dégâts supplémentaires mais coûtent 30% de mana en plus.",
-   "textSource": "editorial"
+   "rank1": "Pendant 15 sec, vos sorts infligent 30 % de points de dégâts supplémentaires et ils vous coûtent 30 % de points de mana supplémentaires.",
+   "textSource": "client-forever"
   },
   "mage/fire-1-1": {
    "name": "Sillage de feu",
@@ -24237,8 +25069,12 @@ window.TALENT_FR={
    "classic": "Réduit le temps de recharge de votre sort Trait de feu de 0.5 secondes.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Trait de feu amélioré » (anciennement « Improved Fire Blast »).",
    "nameBranch": "forever",
-   "rank1": "Réduit de 1 sec le temps de recharge de votre sort Trait de feu. Tuer une cible non triviale augmente, pendant les 20 sec qui suivent, de 25% les chances de coup critique de votre prochain Trait de feu.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps de recharge de votre sort Trait de feu de 1 s. L’élimination d’une cible non négligeable augmente de 25 % les chances de coup critique de votre sort Trait de feu lancé dans les 20 sec.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le temps de recharge de votre sort Trait de feu de 1 s. L’élimination d’une cible non négligeable augmente de 25 % les chances de coup critique de votre sort Trait de feu lancé dans les 20 sec.",
+    "Réduit le temps de recharge de votre sort Trait de feu de 2 s. L’élimination d’une cible non négligeable augmente de 50 % les chances de coup critique de votre sort Trait de feu lancé dans les 20 sec."
+   ]
   },
   "mage/fire-1-2": {
    "name": "Incinération",
@@ -24247,8 +25083,13 @@ window.TALENT_FR={
    "classic": "Augmente de 2% les chances d'infliger un coup critique avec vos sorts Trait de feu et Brûlure.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Incinérer » (anciennement « Incinerate »).",
    "nameBranch": "forever",
-   "rank1": "Augmente de 2% les chances de coup critique de vos sorts Trait de feu, Lance de glace, Décharge des arcanes et Brûlure.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 2 % les chances de coup critique de vos sorts Trait de feu, Javelot de glace, Déflagration des arcanes et Brûlure.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 2 % les chances de coup critique de vos sorts Trait de feu, Javelot de glace, Déflagration des arcanes et Brûlure.",
+    "Augmente de 4 % les chances de coup critique de vos sorts Trait de feu, Javelot de glace, Déflagration des arcanes et Brûlure.",
+    "Augmente de 6 % les chances de coup critique de vos sorts Trait de feu, Javelot de glace, Déflagration des arcanes et Brûlure."
+   ]
   },
   "mage/fire-1-3": {
    "name": "Boule de feu améliorée",
@@ -24256,17 +25097,31 @@ window.TALENT_FR={
    "spell": 11069,
    "classic": "Réduit le temps d'incantation de votre sort Boule de feu de 0.1 secondes.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 0,1 sec le temps d’incantation de vos sorts Boule de feu et Trait de givre-feu.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps d’incantation de vos sorts Boule de feu et Éclair de givrefeu de 0.1 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le temps d’incantation de vos sorts Boule de feu et Éclair de givrefeu de 0.1 s.",
+    "Réduit le temps d’incantation de vos sorts Boule de feu et Éclair de givrefeu de 0.2 s.",
+    "Réduit le temps d’incantation de vos sorts Boule de feu et Éclair de givrefeu de 0.3 s.",
+    "Réduit le temps d’incantation de vos sorts Boule de feu et Éclair de givrefeu de 0.4 s.",
+    "Réduit le temps d’incantation de vos sorts Boule de feu et Éclair de givrefeu de 0.5 s."
+   ]
   },
   "mage/fire-2-1": {
    "name": "Enflammer",
    "nameSource": "officiel",
    "spell": 11119,
    "classic": "Les coups critiques infligés par vos sorts de Feu enflamment la cible et lui infligent 8% des points de dégâts de vos sorts en plus, en 4 sec.",
-   "rank1": "Les coups critiques infligés par vos sorts de Feu enflamment la cible et lui infligent 8% des points de dégâts de vos sorts en plus, en 4 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Les coups critiques de vos sorts de feu embrasent la cible pendant 4 sec, lui infligeant un montant de dégâts supplémentaires égal à 8 % des dégâts de votre sort.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Les coups critiques de vos sorts de feu embrasent la cible pendant 4 sec, lui infligeant un montant de dégâts supplémentaires égal à 8 % des dégâts de votre sort.",
+    "Les coups critiques de vos sorts de feu embrasent la cible pendant 4 sec, lui infligeant un montant de dégâts supplémentaires égal à 16 % des dégâts de votre sort.",
+    "Les coups critiques de vos sorts de feu embrasent la cible pendant 4 sec, lui infligeant un montant de dégâts supplémentaires égal à 24 % des dégâts de votre sort.",
+    "Les coups critiques de vos sorts de feu embrasent la cible pendant 4 sec, lui infligeant un montant de dégâts supplémentaires égal à 32 % des dégâts de votre sort.",
+    "Les coups critiques de vos sorts de feu embrasent la cible pendant 4 sec, lui infligeant un montant de dégâts supplémentaires égal à 40 % des dégâts de votre sort."
+   ]
   },
   "mage/fire-2-2": {
    "name": "Jet de flammes",
@@ -24274,17 +25129,26 @@ window.TALENT_FR={
    "spell": 11100,
    "classic": "Augmente la portée de vos sorts de Feu de 3 mètres.",
    "rank1": "Augmente la portée de vos sorts de Feu de 3 mètres.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente la portée de vos sorts de Feu de 3 mètres.",
+    "Augmente la portée de vos sorts de Feu de 6 mètres."
+   ]
   },
   "mage/fire-2-3": {
    "name": "Impact",
    "nameSource": "officiel",
    "spell": 11103,
    "classic": "Confère 2% de chances à vos sorts de Feu d'étourdir vos cibles pendant 2 sec.",
-   "rank1": "Confère 3% de chances à vos sorts de Feu d'étourdir vos cibles pendant 2 sec.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "rank1": "Confère 3 % de chances à vos sorts de Feu d’étourdir vos cibles pendant 2 sec.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Confère 3 % de chances à vos sorts de Feu d’étourdir vos cibles pendant 2 sec.",
+    "Confère 7 % de chances à vos sorts de Feu d’étourdir vos cibles pendant 2 sec.",
+    "Confère 10 % de chances à vos sorts de Feu d’étourdir vos cibles pendant 2 sec."
+   ]
   },
   "mage/fire-3-1": {
    "name": "Ame ardente",
@@ -24292,8 +25156,13 @@ window.TALENT_FR={
    "spell": 11083,
    "classic": "Vos sorts de Feu gagnent 35% de chances de ne pas être retardés lorsque vous subissez des dégâts pendant l'incantation, et la menace qu'ils génèrent est réduite de 15%.",
    "rank1": "Vos sorts de Feu gagnent 23% de chances de ne pas être retardés lorsque vous subissez des dégâts pendant l'incantation, et la menace qu'ils génèrent est réduite de 10%.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Vos sorts de Feu gagnent 23% de chances de ne pas être retardés lorsque vous subissez des dégâts pendant l'incantation, et la menace qu'ils génèrent est réduite de 10%.",
+    "Vos sorts de Feu gagnent 47% de chances de ne pas être retardés lorsque vous subissez des dégâts pendant l'incantation, et la menace qu'ils génèrent est réduite de 20%.",
+    "Vos sorts de Feu gagnent 70% de chances de ne pas être retardés lorsque vous subissez des dégâts pendant l'incantation, et la menace qu'ils génèrent est réduite de 30%."
+   ]
   },
   "mage/fire-3-2": {
    "name": "Choc de flammes amélioré",
@@ -24301,8 +25170,13 @@ window.TALENT_FR={
    "spell": 11108,
    "classic": "Augmente de 5% vos chances de réaliser un coup critique avec votre sort Choc de flammes.",
    "rank1": "Augmente de 5% vos chances de réaliser un coup critique avec votre sort Choc de flammes.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 5% vos chances de réaliser un coup critique avec votre sort Choc de flammes.",
+    "Augmente de 10% vos chances de réaliser un coup critique avec votre sort Choc de flammes.",
+    "Augmente de 15% vos chances de réaliser un coup critique avec votre sort Choc de flammes."
+   ]
   },
   "mage/fire-3-3": {
    "name": "Explosion pyrotechnique",
@@ -24320,12 +25194,12 @@ window.TALENT_FR={
    "classic": "Vos sorts de Brûlure ont 33% de chances de rendre votre cible vulnérable aux dégâts de Feu. Cette vulnérabilité augmente les dégâts de Feu infligés à la cible de 3% et dure 30 sec. Cumulable jusqu'à 5 fois.",
    "nameBranch": "classic",
    "ranks": [
-    "Votre sort Brûlure a 33% de chances de rendre votre cible vulnérable aux dégâts de Feu. Cette vulnérabilité augmente de 3% tous les dégâts de Feu que vous lui infligez et dure 30 sec, cumulable jusqu’à 5 fois.",
-    "Vos sorts Brûlure ont 67% de chances de rendre votre cible vulnérable aux dégâts de Feu. Cette vulnérabilité augmente de 3% tous les dégâts de Feu que vous lui infligez et dure 30 sec, cumulable jusqu’à 5 fois.",
-    "Vos sorts Brûlure ont 100% de chances de rendre votre cible vulnérable aux dégâts de Feu. Cette vulnérabilité augmente de 3% tous les dégâts de Feu que vous lui infligez et dure 30 sec, cumulable jusqu’à 5 fois."
+    "Votre sort Brûlure a 33 % de chances de rendre votre cible vulnérable aux dégâts de feu. Cette vulnérabilité augmente tous les dégâts de feu que vous infligez à votre cible de 3 % et dure 30 sec. Cumulable jusqu’à 5 fois.",
+    "Votre sort Brûlure a 67 % de chances de rendre votre cible vulnérable aux dégâts de feu. Cette vulnérabilité augmente tous les dégâts de feu que vous infligez à votre cible de 3 % et dure 30 sec. Cumulable jusqu’à 5 fois.",
+    "Votre sort Brûlure a 100 % de chances de rendre votre cible vulnérable aux dégâts de feu. Cette vulnérabilité augmente tous les dégâts de feu que vous infligez à votre cible de 3 % et dure 30 sec. Cumulable jusqu’à 5 fois."
    ],
-   "rank1": "Votre sort Brûlure a 33% de chances de rendre votre cible vulnérable aux dégâts de Feu. Cette vulnérabilité augmente de 3% tous les dégâts de Feu que vous lui infligez et dure 30 sec, cumulable jusqu’à 5 fois.",
-   "textSource": "editorial"
+   "rank1": "Votre sort Brûlure a 33 % de chances de rendre votre cible vulnérable aux dégâts de feu. Cette vulnérabilité augmente tous les dégâts de feu que vous infligez à votre cible de 3 % et dure 30 sec. Cumulable jusqu’à 5 fois.",
+   "textSource": "client-forever"
   },
   "mage/fire-4-2": {
    "name": "Gardien de feu amélioré",
@@ -24333,8 +25207,12 @@ window.TALENT_FR={
    "spell": 11094,
    "classic": "Confère à votre Gardien de feu 10% de chances de renvoyer les sorts de Feu tant qu'il est actif.",
    "rank1": "Confère à votre Gardien de feu 10% de chances de renvoyer les sorts de Feu tant qu'il est actif.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Confère à votre Gardien de feu 10% de chances de renvoyer les sorts de Feu tant qu'il est actif.",
+    "Confère à votre Gardien de feu 20% de chances de renvoyer les sorts de Feu tant qu'il est actif."
+   ]
   },
   "mage/fire-4-4": {
    "name": "Maître des éléments",
@@ -24342,8 +25220,13 @@ window.TALENT_FR={
    "spell": 29074,
    "classic": "Les coups critiques obtenus avec les sorts de Feu et de Givre vous rendront 10% de leur coût en mana de base.",
    "nameBranch": "classic",
-   "rank1": "Vos coups critiques de Feu et de Givre vous rendent 10% de leur coût en mana de base.",
-   "textSource": "editorial"
+   "rank1": "Vos coups critiques de feu et de givre vous rendent 10 % du coût en mana de base de ces sorts.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vos coups critiques de feu et de givre vous rendent 10 % du coût en mana de base de ces sorts.",
+    "Vos coups critiques de feu et de givre vous rendent 20 % du coût en mana de base de ces sorts.",
+    "Vos coups critiques de feu et de givre vous rendent 30 % du coût en mana de base de ces sorts."
+   ]
   },
   "mage/fire-5-2": {
    "name": "Masse critique",
@@ -24351,8 +25234,13 @@ window.TALENT_FR={
    "spell": 11115,
    "classic": "Augmente de 2% vos chances d'infliger un coup critique avec vos sorts de Feu.",
    "rank1": "Augmente de 2% vos chances d'infliger un coup critique avec vos sorts de Feu.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 2% vos chances d'infliger un coup critique avec vos sorts de Feu.",
+    "Augmente de 4% vos chances d'infliger un coup critique avec vos sorts de Feu.",
+    "Augmente de 6% vos chances d'infliger un coup critique avec vos sorts de Feu."
+   ]
   },
   "mage/fire-5-3": {
    "name": "Vague explosive",
@@ -24369,8 +25257,15 @@ window.TALENT_FR={
    "spell": 11124,
    "classic": "Augmente de 2% les points de dégâts infligés par vos sorts de Feu.",
    "rank1": "Augmente de 2% les points de dégâts infligés par vos sorts de Feu.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 2% les points de dégâts infligés par vos sorts de Feu.",
+    "Augmente de 4% les points de dégâts infligés par vos sorts de Feu.",
+    "Augmente de 6% les points de dégâts infligés par vos sorts de Feu.",
+    "Augmente de 8% les points de dégâts infligés par vos sorts de Feu.",
+    "Augmente de 10% les points de dégâts infligés par vos sorts de Feu."
+   ]
   },
   "mage/fire-7-2": {
    "name": "Combustion",
@@ -24378,8 +25273,8 @@ window.TALENT_FR={
    "spell": 11129,
    "classic": "Lorsqu'il est activé, ce sort augmente vos chances de coup critique avec les sorts de dégâts de Feu de 10% chaque fois que vous touchez avec un sort de ce type. Cet effet dure jusqu'à ce que vous ayez infligé 3 coups critiques avec des sorts de Feu.",
    "nameBranch": "classic",
-   "rank1": "Une fois activé, ce sort augmente de 10% vos chances de coup critique avec les sorts de dégâts de Feu chaque fois que l’un d’eux touche. L’effet dure jusqu’à ce que vous ayez infligé 4 coups critiques non périodiques avec des sorts de Feu.",
-   "textSource": "editorial"
+   "rank1": "Lorsqu’il est activé, ce sort augmente de 10 % les chances de coup critique chaque fois que vous touchez une cible avec un sort de feu. L’effet dure jusqu’à ce que vous ayez infligé 4 coups critiques non périodiques avec des sorts de feu.",
+   "textSource": "client-forever"
   },
   "mage/frost-1-1": {
    "name": "Protection contre le Givre",
@@ -24388,20 +25283,27 @@ window.TALENT_FR={
    "classic": "Augmente de 15% l'armure et les résistances octroyées par vos sorts Armure de givre et Armure de glace. De plus, donne à votre Gardien de givre 10% de chances de renvoyer les sorts et effets de Givre tant qu'il est actif.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 15% l’armure et les résistances conférées par vos sorts Armure de givre et Armure de glace. De plus, confère à votre Gardien de givre 10% de chances de renvoyer les sorts et effets de Givre tant qu’il est actif.",
-    "Augmente de 30% l’armure et les résistances conférées par vos sorts Armure de givre et Armure de glace. De plus, confère à votre Gardien de givre 20% de chances de renvoyer les sorts et effets de Givre tant qu’il est actif."
+    "Augmente de 15 % l’armure et la résistance conférées par vos sorts Armure de givre et Armure de glace. Votre Gardien de givre a également 10 % de chances de renvoyer les sorts et effets de givre tant qu’il est actif.",
+    "Augmente de 30 % l’armure et la résistance conférées par vos sorts Armure de givre et Armure de glace. Votre Gardien de givre a également 20 % de chances de renvoyer les sorts et effets de givre tant qu’il est actif."
    ],
-   "rank1": "Augmente de 15% l’armure et les résistances conférées par vos sorts Armure de givre et Armure de glace. De plus, confère à votre Gardien de givre 10% de chances de renvoyer les sorts et effets de Givre tant qu’il est actif.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 15 % l’armure et la résistance conférées par vos sorts Armure de givre et Armure de glace. Votre Gardien de givre a également 10 % de chances de renvoyer les sorts et effets de givre tant qu’il est actif.",
+   "textSource": "client-forever"
   },
   "mage/frost-1-2": {
    "name": "Eclair de givre amélioré",
    "nameSource": "officiel",
    "spell": 11070,
    "classic": "Réduit le temps d'incantation de votre sort Eclair de givre de 0.1 sec.",
-   "rank1": "Réduit le temps d'incantation de votre sort Eclair de givre de 0.1 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Réduit le temps d’incantation de votre sort Éclair de givre de 0.1 s.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit le temps d’incantation de votre sort Éclair de givre de 0.1 s.",
+    "Réduit le temps d’incantation de votre sort Éclair de givre de 0.2 s.",
+    "Réduit le temps d’incantation de votre sort Éclair de givre de 0.3 s.",
+    "Réduit le temps d’incantation de votre sort Éclair de givre de 0.4 s.",
+    "Réduit le temps d’incantation de votre sort Éclair de givre de 0.5 s."
+   ]
   },
   "mage/frost-1-3": {
    "name": "Précision élémentaire",
@@ -24410,14 +25312,14 @@ window.TALENT_FR={
    "classic": "Réduit de 2% les chances que votre adversaire résiste à vos sorts de Givre ou de Feu.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 1% vos chances de toucher avec vos sorts de Givre et de Feu.",
-    "Augmente de 2% vos chances de toucher avec vos sorts de Givre et de Feu.",
-    "Augmente de 3% vos chances de toucher avec vos sorts de Givre et de Feu.",
-    "Augmente de 4% vos chances de toucher avec vos sorts de Givre et de Feu.",
-    "Augmente de 5% vos chances de toucher avec vos sorts de Givre et de Feu."
+    "Améliore de 1 % vos chances de toucher avec les sorts de feu et de givre.",
+    "Améliore de 2 % vos chances de toucher avec les sorts de feu et de givre.",
+    "Améliore de 3 % vos chances de toucher avec les sorts de feu et de givre.",
+    "Améliore de 4 % vos chances de toucher avec les sorts de feu et de givre.",
+    "Améliore de 5 % vos chances de toucher avec les sorts de feu et de givre."
    ],
-   "rank1": "Augmente de 1% vos chances de toucher avec vos sorts de Givre et de Feu.",
-   "textSource": "editorial"
+   "rank1": "Améliore de 1 % vos chances de toucher avec les sorts de feu et de givre.",
+   "textSource": "client-forever"
   },
   "mage/frost-2-1": {
    "name": "Eclats de glace",
@@ -24425,8 +25327,15 @@ window.TALENT_FR={
    "spell": 11207,
    "classic": "Augmente de 20% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Givre.",
    "rank1": "Augmente de 20% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Givre.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 20% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Givre.",
+    "Augmente de 40% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Givre.",
+    "Augmente de 60% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Givre.",
+    "Augmente de 80% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Givre.",
+    "Augmente de 100% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Givre."
+   ]
   },
   "mage/frost-2-2": {
    "name": "Gel prolongé",
@@ -24434,26 +25343,40 @@ window.TALENT_FR={
    "spell": 11175,
    "classic": "Augmente la durée de vos effets de gel de 1 seconde et réduit la vitesse de la cible de 4% supplémentaires.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 11% la durée de vos effets de gel et réduit de 3% supplémentaires la vitesse de la cible.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 11 % la durée de vos effets d’engourdissement et réduit la vitesse de la cible de 3 % supplémentaires.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 11 % la durée de vos effets d’engourdissement et réduit la vitesse de la cible de 3 % supplémentaires.",
+    "Augmente de 22 % la durée de vos effets d’engourdissement et réduit la vitesse de la cible de 7 % supplémentaires.",
+    "Augmente de 33 % la durée de vos effets d’engourdissement et réduit la vitesse de la cible de 10 % supplémentaires."
+   ]
   },
   "mage/frost-2-3": {
    "name": "Nova de givre améliorée",
    "nameSource": "officiel",
    "spell": 11165,
    "classic": "Réduit le temps de recharge du sort Nova de givre de 2 secondes.",
-   "rank1": "Réduit le temps de recharge du sort Nova de givre de 2 secondes.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Réduit le temps de recharge du sort Nova de givre de 2 secondes.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit le temps de recharge du sort Nova de givre de 2 secondes.",
+    "Réduit le temps de recharge du sort Nova de givre de 4 secondes."
+   ]
   },
   "mage/frost-2-4": {
    "name": "Morsure de givre",
    "nameSource": "officiel",
    "spell": 11071,
    "classic": "Donne à vos effets de gel 5% de chances de geler la cible pendant 5 sec.",
-   "rank1": "Donne à vos effets de gel 5% de chances de geler la cible pendant 5 sec.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Confère 5 % de chances à vos effets d’engourdissement de geler la cible pendant 5 sec.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Confère 5 % de chances à vos effets d’engourdissement de geler la cible pendant 5 sec.",
+    "Confère 10 % de chances à vos effets d’engourdissement de geler la cible pendant 5 sec.",
+    "Confère 15 % de chances à vos effets d’engourdissement de geler la cible pendant 5 sec."
+   ]
   },
   "mage/frost-3-1": {
    "name": "Glace perçante",
@@ -24461,8 +25384,13 @@ window.TALENT_FR={
    "spell": 11151,
    "classic": "Augmente les points de dégâts infligés par vos sorts de Givre de 2%.",
    "rank1": "Augmente les points de dégâts infligés par vos sorts de Givre de 2%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente les points de dégâts infligés par vos sorts de Givre de 2%.",
+    "Augmente les points de dégâts infligés par vos sorts de Givre de 4%.",
+    "Augmente les points de dégâts infligés par vos sorts de Givre de 6%."
+   ]
   },
   "mage/frost-3-2": {
    "name": "Canalisation du givre",
@@ -24470,8 +25398,13 @@ window.TALENT_FR={
    "spell": 11160,
    "classic": "Réduit de 5% le coût en mana de vos sorts de Givre, et réduit de 10% la menace qu'ils génèrent.",
    "rank1": "Réduit de 5% le coût en mana de vos sorts de Givre, et réduit de 10% la menace qu'ils génèrent.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit de 5% le coût en mana de vos sorts de Givre, et réduit de 10% la menace qu'ils génèrent.",
+    "Réduit de 10% le coût en mana de vos sorts de Givre, et réduit de 20% la menace qu'ils génèrent.",
+    "Réduit de 15% le coût en mana de vos sorts de Givre, et réduit de 30% la menace qu'ils génèrent."
+   ]
   },
   "mage/frost-3-4": {
    "name": "Blizzard amélioré",
@@ -24480,12 +25413,12 @@ window.TALENT_FR={
    "classic": "Ajoute un effet d'engourdissement à votre sort Blizzard. Il réduit la vitesse de déplacement de la cible de 30%. Dure 1.50 sec..",
    "nameBranch": "classic",
    "ranks": [
-    "Ajoute un effet de gel à votre sort Blizzard. Cet effet réduit la vitesse de déplacement de la cible de 15% pendant 1,5 sec.",
-    "Ajoute un effet de gel à votre sort Blizzard. Cet effet réduit la vitesse de déplacement de la cible de 25% pendant 1,5 sec.",
-    "Ajoute un effet de gel à votre sort Blizzard. Cet effet réduit la vitesse de déplacement de la cible de 40% pendant 1,5 sec."
+    "Ajoute un effet d’engourdissement à votre sort Blizzard. Il réduit la vitesse de déplacement de la cible de 15 % pendant 1.5 sec.",
+    "Ajoute un effet d’engourdissement à votre sort Blizzard. Il réduit la vitesse de déplacement de la cible de 25 % pendant 1.5 sec.",
+    "Ajoute un effet d’engourdissement à votre sort Blizzard. Il réduit la vitesse de déplacement de la cible de 40 % pendant 1.5 sec."
    ],
-   "rank1": "Ajoute un effet de gel à votre sort Blizzard. Cet effet réduit la vitesse de déplacement de la cible de 15% pendant 1,5 sec.",
-   "textSource": "editorial"
+   "rank1": "Ajoute un effet d’engourdissement à votre sort Blizzard. Il réduit la vitesse de déplacement de la cible de 15 % pendant 1.5 sec.",
+   "textSource": "client-forever"
   },
   "mage/frost-4-1": {
    "name": "Allonge arctique",
@@ -24493,8 +25426,12 @@ window.TALENT_FR={
    "spell": 16757,
    "classic": "Augmente la portée de vos sorts Eclair de givre et Blizzard et les rayons d'effet de vos sorts Nova de givre et Cône de froid de 10%.",
    "rank1": "Augmente la portée de vos sorts Eclair de givre et Blizzard et les rayons d'effet de vos sorts Nova de givre et Cône de froid de 10%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente la portée de vos sorts Eclair de givre et Blizzard et les rayons d'effet de vos sorts Nova de givre et Cône de froid de 10%.",
+    "Augmente la portée de vos sorts Eclair de givre et Blizzard et les rayons d'effet de vos sorts Nova de givre et Cône de froid de 20%."
+   ]
   },
   "mage/frost-4-2": {
    "name": "Bloc de glace",
@@ -24502,7 +25439,7 @@ window.TALENT_FR={
    "spell": 11958,
    "classic": "Vous enveloppe dans un bloc de glace qui vous protège des attaques physiques et des sorts pendant 10 sec. En contrepartie, vous ne pouvez pas attaquer, vous déplacer ni lancer de sorts.",
    "rank1": "Vous enveloppe dans un bloc de glace qui vous protège des attaques physiques et des sorts pendant 10 sec. En contrepartie, vous ne pouvez pas attaquer, vous déplacer ni lancer de sorts.",
-   "textSource": "officiel",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "mage/frost-4-4": {
@@ -24511,8 +25448,13 @@ window.TALENT_FR={
    "spell": 11170,
    "classic": "Augmente de 10% vos chances d'infliger un coup critique avec tous les sorts lorsque vous attaquez des cibles gelées.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 17% les chances de coup critique de tous vos sorts contre les cibles gelées.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 17 % les chances de coup critique de tous vos sorts contre les cibles gelées.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 17 % les chances de coup critique de tous vos sorts contre les cibles gelées.",
+    "Augmente de 33 % les chances de coup critique de tous vos sorts contre les cibles gelées.",
+    "Augmente de 50 % les chances de coup critique de tous vos sorts contre les cibles gelées."
+   ]
   },
   "mage/frost-5-1": {
    "name": "Cône de froid amélioré",
@@ -24520,8 +25462,13 @@ window.TALENT_FR={
    "spell": 11190,
    "classic": "Augmente de 15% les points de dégâts infligés par votre sort Cône de froid.",
    "rank1": "Augmente de 12% les points de dégâts infligés par votre sort Cône de froid.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 12% les points de dégâts infligés par votre sort Cône de froid.",
+    "Augmente de 23% les points de dégâts infligés par votre sort Cône de froid.",
+    "Augmente de 35% les points de dégâts infligés par votre sort Cône de froid."
+   ]
   },
   "mage/frost-5-2": {
    "name": "Morsure du froid",
@@ -24529,8 +25476,8 @@ window.TALENT_FR={
    "spell": 12472,
    "classic": "À l’activation, met fin au temps de recharge de tous vos sorts de givre.",
    "nameBranch": "classic",
-   "rank1": "Met fin au temps de recharge restant de tous vos autres sorts de Givre.",
-   "textSource": "editorial"
+   "rank1": "Réinitialise les temps de recharge restants de tous vos autres sorts de givre.",
+   "textSource": "client-forever"
   },
   "mage/frost-6-3": {
    "name": "Froid hivernal",
@@ -24538,8 +25485,15 @@ window.TALENT_FR={
    "spell": 11180,
    "classic": "Vos sorts de givre causant des dégâts ont 20 % de chances de déclencher l’effet de Froid hivernal, qui augmente les chances de critique des sorts de givre de 2 % pendant 15 sec. Cumulable jusqu’à 5 fois.",
    "nameBranch": "classic",
-   "rank1": "Confère à vos sorts de dégâts de Givre 20% de chances d’appliquer l’effet Froid hivernal, qui augmente de 2% les chances de coup critique de vos sorts Lance de glace et Éclair de givre sur la cible pendant 15 sec. Cumulable jusqu’à 1 fois.",
-   "textSource": "editorial"
+   "rank1": "Confère à vos sorts de givre 20 % de chances d’appliquer l’effet Froid de l’hiver, qui augmente de 2 % les chances que vos sorts Javelot de glace et Éclair de givre infligent un coup critique à la cible pendant 15 sec. Cumulable jusqu’à 1 fois.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Confère à vos sorts de givre 20 % de chances d’appliquer l’effet Froid de l’hiver, qui augmente de 2 % les chances que vos sorts Javelot de glace et Éclair de givre infligent un coup critique à la cible pendant 15 sec. Cumulable jusqu’à 1 fois.",
+    "Confère à vos sorts de givre 40 % de chances d’appliquer l’effet Froid de l’hiver, qui augmente de 2 % les chances que vos sorts Javelot de glace et Éclair de givre infligent un coup critique à la cible pendant 15 sec. Cumulable jusqu’à 2 fois.",
+    "Confère à vos sorts de givre 60 % de chances d’appliquer l’effet Froid de l’hiver, qui augmente de 2 % les chances que vos sorts Javelot de glace et Éclair de givre infligent un coup critique à la cible pendant 15 sec. Cumulable jusqu’à 3 fois.",
+    "Confère à vos sorts de givre 80 % de chances d’appliquer l’effet Froid de l’hiver, qui augmente de 2 % les chances que vos sorts Javelot de glace et Éclair de givre infligent un coup critique à la cible pendant 15 sec. Cumulable jusqu’à 4 fois.",
+    "Confère à vos sorts de givre 100 % de chances d’appliquer l’effet Froid de l’hiver, qui augmente de 2 % les chances que vos sorts Javelot de glace et Éclair de givre infligent un coup critique à la cible pendant 15 sec. Cumulable jusqu’à 5 fois."
+   ]
   },
   "mage/frost-7-2": {
    "name": "Barrière de glace",
@@ -24547,8 +25501,8 @@ window.TALENT_FR={
    "spell": 11426,
    "classic": "Vous protège instantanément à l'aide d'un bouclier magique qui absorbe 455 points de dégâts. Dure 1 min. Tant que le bouclier est actif, les sorts ne sont pas interrompus.",
    "nameBranch": "classic",
-   "rank1": "Vous protège instantanément d’un bouclier absorbant 448 points de dégâts. Dure 1 min. Tant que le bouclier tient, vos incantations ne sont ni interrompues ni retardées par les dégâts subis.",
-   "textSource": "editorial"
+   "rank1": "Vous protège instantanément à l’aide d’un bouclier magique qui absorbe 448 points de dégâts. Dure 1 min. Tant que le bouclier est actif, les incantations de sorts ne peuvent pas être interrompues ou retardées par les dégâts subis.",
+   "textSource": "client-forever"
   },
   "demoniste/affliction-1-1": {
    "name": "Connexion améliorée",
@@ -24556,8 +25510,12 @@ window.TALENT_FR={
    "spell": 18182,
    "classic": "Augmente de 10% le montant de points de mana gagné par votre sort Connexion.",
    "rank1": "Augmente de 10% le montant de points de mana gagné par votre sort Connexion.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 10% le montant de points de mana gagné par votre sort Connexion.",
+    "Augmente de 20% le montant de points de mana gagné par votre sort Connexion."
+   ]
   },
   "demoniste/affliction-1-2": {
    "name": "Suppression",
@@ -24565,8 +25523,15 @@ window.TALENT_FR={
    "spell": 18174,
    "classic": "Réduit de 2% les chances de vos ennemis de résister à vos sorts d'Affliction.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 1% vos chances de toucher avec tous vos sorts et attaques, et réduit de 4% toute la menace que vous générez.",
-   "textSource": "editorial"
+   "rank1": "Améliore de 1 % vos chances de toucher et réduit le niveau de menace que vous générez de 4 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Améliore de 1 % vos chances de toucher et réduit le niveau de menace que vous générez de 4 %.",
+    "Améliore de 2 % vos chances de toucher et réduit le niveau de menace que vous générez de 8 %.",
+    "Améliore de 3 % vos chances de toucher et réduit le niveau de menace que vous générez de 12 %.",
+    "Améliore de 4 % vos chances de toucher et réduit le niveau de menace que vous générez de 16 %.",
+    "Améliore de 5 % vos chances de toucher et réduit le niveau de menace que vous générez de 20 %."
+   ]
   },
   "demoniste/affliction-1-3": {
    "name": "Corruption améliorée",
@@ -24575,14 +25540,14 @@ window.TALENT_FR={
    "classic": "Réduit le temps d'incantation de votre sort Corruption de 0.4 sec.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 0,4 sec le temps d’incantation de votre sort Corruption et augmente de 2% les dégâts qu’il inflige.",
-    "Réduit de 0,8 sec le temps d’incantation de votre sort Corruption et augmente de 4% les dégâts qu’il inflige.",
-    "Réduit de 1,2 sec le temps d’incantation de votre sort Corruption et augmente de 6% les dégâts qu’il inflige.",
-    "Réduit de 1,6 sec le temps d’incantation de votre sort Corruption et augmente de 8% les dégâts qu’il inflige.",
-    "Réduit de 2 sec le temps d’incantation de votre sort Corruption et augmente de 10% les dégâts qu’il inflige."
+    "Réduit le temps d’incantation de votre sort Corruption de 0.4 s et augmente les dégâts qu’il inflige de 2 %.",
+    "Réduit le temps d’incantation de votre sort Corruption de 0.8 s et augmente les dégâts qu’il inflige de 4 %.",
+    "Réduit le temps d’incantation de votre sort Corruption de 1.2 s et augmente les dégâts qu’il inflige de 6 %.",
+    "Réduit le temps d’incantation de votre sort Corruption de 1.6 s et augmente les dégâts qu’il inflige de 8 %.",
+    "Réduit le temps d’incantation de votre sort Corruption de 2 s et augmente les dégâts qu’il inflige de 10 %."
    ],
-   "rank1": "Réduit de 0,4 sec le temps d’incantation de votre sort Corruption et augmente de 2% les dégâts qu’il inflige.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps d’incantation de votre sort Corruption de 0.4 s et augmente les dégâts qu’il inflige de 2 %.",
+   "textSource": "client-forever"
   },
   "demoniste/affliction-3-1": {
    "name": "Plaie d’agonie améliorée",
@@ -24591,8 +25556,12 @@ window.TALENT_FR={
    "classic": "Augmente les points de dégâts infligés par votre sort Malédiction d'agonie de 2%.",
    "note": "Forever a renommé ce talent (anciennement « Improved Curse of Agony ») : le client français de Classic ne connaît que « Malédiction d’agonie améliorée ». Le nom retenu suit celui du sort renommé, « Plaie d’agonie » dans le client français de Cataclysme (sort 980).",
    "nameBranch": "classic",
-   "rank1": "Augmente de 5% les dégâts infligés par votre Plaie d’agonie.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 5 % les dégâts infligés par votre sort Plaie d’agonie.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 5 % les dégâts infligés par votre sort Plaie d’agonie.",
+    "Augmente de 10 % les dégâts infligés par votre sort Plaie d’agonie."
+   ]
   },
   "demoniste/affliction-3-2": {
    "name": "Concentration corrompue",
@@ -24600,8 +25569,13 @@ window.TALENT_FR={
    "spell": 17783,
    "classic": "Vous confère 14% de chances d'éviter les interruptions causées par les points de dégâts lorsque vous canalisez vos sorts Drain de vie, Drain de mana et Siphon d'âme.",
    "nameBranch": "classic",
-   "rank1": "Vous donne 23% de chances d’éviter les interruptions causées par les dégâts lorsque vous canalisez ou incantez vos sorts Drain de vie, Drain de mana, Siphon d’âme et Calvaire.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 23 % de chances d’éviter l’interruption de vos incantations par des dégâts lorsque vous canalisez ou lancez un sort Drain de vie, Drain de mana, Drain d’âme ou Calvaire.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vous confère 23 % de chances d’éviter l’interruption de vos incantations par des dégâts lorsque vous canalisez ou lancez un sort Drain de vie, Drain de mana, Drain d’âme ou Calvaire.",
+    "Vous confère 47 % de chances d’éviter l’interruption de vos incantations par des dégâts lorsque vous canalisez ou lancez un sort Drain de vie, Drain de mana, Drain d’âme ou Calvaire.",
+    "Vous confère 70 % de chances d’éviter l’interruption de vos incantations par des dégâts lorsque vous canalisez ou lancez un sort Drain de vie, Drain de mana, Drain d’âme ou Calvaire."
+   ]
   },
   "demoniste/affliction-3-3": {
    "name": "Malédiction amplifiée",
@@ -24609,8 +25583,8 @@ window.TALENT_FR={
    "spell": 18288,
    "classic": "Augmente de 50% l'effet de votre prochaine Malédiction de faiblesse ou Malédiction d'agonie, ou de 20% celui de votre prochaine Malédiction de fatigue. Dure 30 sec.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 50% l’effet de votre prochaine Malédiction de faiblesse ou Plaie d’agonie, ou de 20% celui de votre prochaine Malédiction de fatigue. Dure 30 sec.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 50 % l’effet de votre prochaine Malédiction de faiblesse ou Plaie d’agonie, ou de 20 % celui de votre prochaine Malédiction de fatigue. Dure 30 sec.",
+   "textSource": "client-forever"
   },
   "demoniste/affliction-4-2": {
    "name": "Crépuscule",
@@ -24618,8 +25592,12 @@ window.TALENT_FR={
    "spell": 18094,
    "classic": "Confère à vos sorts Corruption et Drain de vie 2 % de chances de vous plonger dans un état de Transe de l’ombre après avoir infligé des dégâts à une cible. Cet état réduit le temps d’incantation de votre prochain sort Trait de l’ombre de 100 %.",
    "nameBranch": "classic",
-   "rank1": "Confère à vos sorts Corruption, Siphon d’âme, Drain de vie et Calvaire 2% de chances de vous plonger dans un état de Transe de l’ombre après avoir infligé des dégâts à une cible. Cet état réduit de 100% le temps d’incantation de votre prochain sort Trait de l’ombre.",
-   "textSource": "editorial"
+   "rank1": "Confère à vos sorts Corruption, Drain d’âme, Drain de vie et Calvaire 2 % de chances de vous plonger dans une Transe de l’ombre après avoir infligé des dégâts à votre adversaire. Cet état réduit le temps d’incantation de votre prochain sort Trait de l’ombre de 100 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Confère à vos sorts Corruption, Drain d’âme, Drain de vie et Calvaire 2 % de chances de vous plonger dans une Transe de l’ombre après avoir infligé des dégâts à votre adversaire. Cet état réduit le temps d’incantation de votre prochain sort Trait de l’ombre de 100 %.",
+    "Confère à vos sorts Corruption, Drain d’âme, Drain de vie et Calvaire 4 % de chances de vous plonger dans une Transe de l’ombre après avoir infligé des dégâts à votre adversaire. Cet état réduit le temps d’incantation de votre prochain sort Trait de l’ombre de 100 %."
+   ]
   },
   "demoniste/affliction-4-3": {
    "name": "Malédiction de fatigue",
@@ -24635,8 +25613,8 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "spell": 18265,
    "classic": "Transfère 15 points de vie de la cible vers le lanceur de sorts toutes les 3 sec. Dure 30 sec.",
-   "rank1": "Transfère 11 points de vie de la cible vers le lanceur de sorts toutes les 3 sec. Dure 30 sec.",
-   "textSource": "officiel-chiffre",
+   "rank1": "Transfère 11 points de vie de la cible vers le lanceur ou la lanceuse toutes les 3 s. Dure 30 sec.",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "demoniste/affliction-6-3": {
@@ -24645,8 +25623,15 @@ window.TALENT_FR={
    "spell": 18271,
    "classic": "Augmente de 2% les points de dégâts infligés ou les points de vie drainés par vos sorts d'Ombre.",
    "rank1": "Augmente de 1% les points de dégâts infligés ou les points de vie drainés par vos sorts d'Ombre.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 1% les points de dégâts infligés ou les points de vie drainés par vos sorts d'Ombre.",
+    "Augmente de 2% les points de dégâts infligés ou les points de vie drainés par vos sorts d'Ombre.",
+    "Augmente de 3% les points de dégâts infligés ou les points de vie drainés par vos sorts d'Ombre.",
+    "Augmente de 4% les points de dégâts infligés ou les points de vie drainés par vos sorts d'Ombre.",
+    "Augmente de 5% les points de dégâts infligés ou les points de vie drainés par vos sorts d'Ombre."
+   ]
   },
   "demoniste/demonology-1-1": {
    "name": "Captation de vie améliorée",
@@ -24655,11 +25640,11 @@ window.TALENT_FR={
    "classic": "Augmente le nombre de points de vie transférés par votre sort Captation de vie de 10%.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 20% le nombre de points de vie transférés par votre sort Captation de vie, réduit son coût en vie de 15% et la menace qu’il génère de 50%. Permet d’utiliser Captation de vie quel que soit l’état de santé de votre démon.",
-    "Augmente de 40% le nombre de points de vie transférés par votre sort Captation de vie, réduit son coût en vie de 30% et la menace qu’il génère de 100%. Permet d’utiliser Captation de vie quel que soit l’état de santé de votre démon."
+    "Augmente le nombre de points de vie transférés par votre sort Captation de vie de 20 %, réduit de 15 % son coût en points de vie et réduit de 50 % le niveau de menace qu’il génère. Vous pouvez utiliser Captation de vie quel que soit le nombre de points de vie de votre familier.",
+    "Augmente le nombre de points de vie transférés par votre sort Captation de vie de 40 %, réduit de 30 % son coût en points de vie et réduit de 100 % le niveau de menace qu’il génère. Vous pouvez utiliser Captation de vie quel que soit le nombre de points de vie de votre familier."
    ],
-   "rank1": "Augmente de 20% le nombre de points de vie transférés par votre sort Captation de vie, réduit son coût en vie de 15% et la menace qu’il génère de 50%. Permet d’utiliser Captation de vie quel que soit l’état de santé de votre démon.",
-   "textSource": "editorial"
+   "rank1": "Augmente le nombre de points de vie transférés par votre sort Captation de vie de 20 %, réduit de 15 % son coût en points de vie et réduit de 50 % le niveau de menace qu’il génère. Vous pouvez utiliser Captation de vie quel que soit le nombre de points de vie de votre familier.",
+   "textSource": "client-forever"
   },
   "demoniste/demonology-1-2": {
    "name": "Diablotin amélioré",
@@ -24668,12 +25653,12 @@ window.TALENT_FR={
    "classic": "Augmente les effets des sorts Eclair de feu, Bouclier de feu et Pacte de sang de votre diablotin de 10%.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 10% les dégâts du sort Éclair de feu de votre diablotin et de 10% l’effet de son sort Bouclier de feu.",
-    "Augmente de 20% les dégâts du sort Éclair de feu de votre diablotin et de 20% l’effet de son sort Bouclier de feu.",
-    "Augmente de 30% les dégâts du sort Éclair de feu de votre diablotin et de 30% l’effet de son sort Bouclier de feu."
+    "Augmente les dégâts du sort Éclair de feu de votre diablotin de 10 % et l’effet de son Bouclier de feu de 10 %.",
+    "Augmente les dégâts du sort Éclair de feu de votre diablotin de 20 % et l’effet de son Bouclier de feu de 20 %.",
+    "Augmente les dégâts du sort Éclair de feu de votre diablotin de 30 % et l’effet de son Bouclier de feu de 30 %."
    ],
-   "rank1": "Augmente de 10% les dégâts du sort Éclair de feu de votre diablotin et de 10% l’effet de son sort Bouclier de feu.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts du sort Éclair de feu de votre diablotin de 10 % et l’effet de son Bouclier de feu de 10 %.",
+   "textSource": "client-forever"
   },
   "demoniste/demonology-1-3": {
    "name": "Baiser démoniaque",
@@ -24681,8 +25666,15 @@ window.TALENT_FR={
    "spell": 18697,
    "classic": "Augmente votre total d'Endurance de 3% mais réduit votre total d'Esprit de 1%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 3% votre total d’Endurance.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre total d'Endurance de 3%.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente votre total d'Endurance de 3%.",
+    "Augmente votre total d'Endurance de 6%.",
+    "Augmente votre total d'Endurance de 9%.",
+    "Augmente votre total d'Endurance de 12%.",
+    "Augmente votre total d'Endurance de 15%."
+   ]
   },
   "demoniste/demonology-1-4": {
    "name": "Puissance impie",
@@ -24691,23 +25683,28 @@ window.TALENT_FR={
    "classic": "Augmente de 4% les dégâts infligés par les attaques de mêlée du marcheur du Vide, de la succube, de l’incube et du chasseur corrompu.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 2% tous les dégâts infligés par vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus.",
-    "Augmente de 4% les dégâts infligés par vos diablotins, marcheurs du Vide, succubes et chasseurs corrompus.",
-    "Augmente de 6% les dégâts infligés par vos diablotins, marcheurs du Vide, succubes et chasseurs corrompus.",
-    "Augmente de 8% les dégâts infligés par vos diablotins, marcheurs du Vide, succubes et chasseurs corrompus.",
-    "Augmente de 10% les dégâts infligés par vos diablotins, marcheurs du Vide, succubes et chasseurs corrompus."
+    "Augmente de 2 % les dégâts infligés par vos familiers Diablotin, Marcheur du Vide, Succube, Incube et Chasseur corrompu.",
+    "Augmente de 4 % les dégâts infligés par vos familiers Diablotin, Marcheur du Vide, Succube, Incube et Chasseur corrompu.",
+    "Augmente de 6 % les dégâts infligés par vos familiers Diablotin, Marcheur du Vide, Succube, Incube et Chasseur corrompu.",
+    "Augmente de 8 % les dégâts infligés par vos familiers Diablotin, Marcheur du Vide, Succube, Incube et Chasseur corrompu.",
+    "Augmente de 10 % les dégâts infligés par vos familiers Diablotin, Marcheur du Vide, Succube, Incube et Chasseur corrompu."
    ],
-   "rank1": "Augmente de 2% tous les dégâts infligés par vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 2 % les dégâts infligés par vos familiers Diablotin, Marcheur du Vide, Succube, Incube et Chasseur corrompu.",
+   "textSource": "client-forever"
   },
   "demoniste/demonology-2-2": {
    "name": "Marcheur du Vide amélioré",
    "nameSource": "officiel",
    "spell": 18705,
    "classic": "Augmente de 10% l'efficacité des sorts Tourment, Consumer l'ombre, Sacrifice et Souffrance de votre marcheur du Vide.",
-   "rank1": "Augmente de 10% l'efficacité des sorts Tourment, Consumer l'ombre, Sacrifice et Souffrance de votre marcheur du Vide.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Augmente de 10 % l’efficacité des sorts Tourment, Consumer les ombres, Sacrifice et Souffrance de votre Marcheur du Vide.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 10 % l’efficacité des sorts Tourment, Consumer les ombres, Sacrifice et Souffrance de votre Marcheur du Vide.",
+    "Augmente de 20 % l’efficacité des sorts Tourment, Consumer les ombres, Sacrifice et Souffrance de votre Marcheur du Vide.",
+    "Augmente de 30 % l’efficacité des sorts Tourment, Consumer les ombres, Sacrifice et Souffrance de votre Marcheur du Vide."
+   ]
   },
   "demoniste/demonology-2-3": {
    "name": "Vitalité gangrenée",
@@ -24717,12 +25714,12 @@ window.TALENT_FR={
    "note": "Forever a renommé ce talent : le client français ne connaît que « Endurance corrompue » (anciennement « Fel Stamina »).",
    "nameBranch": "forever",
    "ranks": [
-    "Augmente de 5% le maximum de points de vie et de mana de vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus, et de 5% votre propre maximum de mana.",
-    "Augmente de 10% le maximum de points de vie de vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus, et de 10% votre propre maximum de mana.",
-    "Augmente de 15% le maximum de points de vie de vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus, et de 15% votre propre maximum de mana."
+    "Augmente de 5 % le maximum de points de vie et de mana de vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus. De plus, augmente votre maximum de mana de 5 %.",
+    "Augmente de 10 % le maximum de points de vie et de mana de vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus. De plus, augmente votre maximum de mana de 10 %.",
+    "Augmente de 15 % le maximum de points de vie et de mana de vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus. De plus, augmente votre maximum de mana de 15 %."
    ],
-   "rank1": "Augmente de 5% le maximum de points de vie et de mana de vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus, et de 5% votre propre maximum de mana.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 5 % le maximum de points de vie et de mana de vos diablotins, marcheurs du Vide, succubes, incubes et chasseurs corrompus. De plus, augmente votre maximum de mana de 5 %.",
+   "textSource": "client-forever"
   },
   "demoniste/demonology-3-1": {
    "name": "Sayaad amélioré",
@@ -24730,8 +25727,13 @@ window.TALENT_FR={
    "spell": 18754,
    "classic": "Augmente de 10% les effets des techniques Fouet de la douleur et Baiser apaisant de votre succube et de votre incube. Augmente également la durée des techniques Séduction et Invisibilité inférieure de 10%.",
    "rank1": "Augmente de 10% les effets des techniques Fouet de la douleur et Baiser apaisant de votre succube et de votre incube. Augmente également la durée des techniques Séduction et Invisibilité inférieure de 10%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 10% les effets des techniques Fouet de la douleur et Baiser apaisant de votre succube et de votre incube. Augmente également la durée des techniques Séduction et Invisibilité inférieure de 10%.",
+    "Augmente de 20% les effets des techniques Fouet de la douleur et Baiser apaisant de votre succube et de votre incube. Augmente également la durée des techniques Séduction et Invisibilité inférieure de 20%.",
+    "Augmente de 30% les effets des techniques Fouet de la douleur et Baiser apaisant de votre succube et de votre incube. Augmente également la durée des techniques Séduction et Invisibilité inférieure de 30%."
+   ]
   },
   "demoniste/demonology-3-2": {
    "name": "Sacrifice démoniaque",
@@ -24747,9 +25749,13 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "spell": 18709,
    "classic": "Réduit le temps d’incantation de vos sorts d’invocations de diablotin, de succube, d’incube, de marcheur du Vide ou de chasseur corrompu de 2 s et leur coût en mana de 20%.",
-   "rank1": "Réduit le temps d’incantation de vos sorts d’invocations de diablotin, de succube, d’incube, de marcheur du Vide ou de chasseur corrompu de 2 s et leur coût en mana de 20%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "rank1": "Réduit le temps d’incantation de vos sorts d’invocations de diablotin, de succube, d’incube, de marcheur du Vide ou de chasseur corrompu de 2 s et leur coût en mana de 20%.",
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit le temps d’incantation de vos sorts d’invocations de diablotin, de succube, d’incube, de marcheur du Vide ou de chasseur corrompu de 2 s et leur coût en mana de 20%.",
+    "Réduit le temps d’incantation de vos sorts d’invocations de diablotin, de succube, d’incube, de marcheur du Vide ou de chasseur corrompu de 4 s et leur coût en mana de 40%."
+   ]
   },
   "demoniste/demonology-4-3": {
    "name": "Domination corrompue",
@@ -24757,7 +25763,7 @@ window.TALENT_FR={
    "spell": 18708,
    "classic": "Le temps d’incantation de votre prochain sort d’invocation de diablotin, de marcheur du Vide, de succube, d’incube ou de chasseur corrompu est réduit de 5.5 s, et son coût en mana est réduit de 50%.",
    "rank1": "Le temps d’incantation de votre prochain sort d’invocation de diablotin, de marcheur du Vide, de succube, d’incube ou de chasseur corrompu est réduit de 6 s, et son coût en mana est réduit de 50%.",
-   "textSource": "officiel-chiffre",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "demoniste/demonology-5-2": {
@@ -24766,8 +25772,8 @@ window.TALENT_FR={
    "spell": 19028,
    "classic": "Quand l’effet est actif, 30 % des dégâts infligés au lanceur ou à la lanceuse sont subis à sa place par son diablotin, son marcheur du Vide, sa succube, son incube ou son chasseur corrompu. Entre outre, le Démon comme son maître ou sa maîtresse infligent 3 % de dégâts supplémentaires. Dure tant que le Démon est actif.",
    "nameBranch": "classic",
-   "rank1": "Quand l’effet est actif, 30% des dégâts infligés au lanceur sont subis à sa place par son diablotin, son marcheur du Vide, sa succube, son incube ou son chasseur corrompu. En outre, le démon comme son maître infligent 3% de dégâts supplémentaires. Dure tant que le démon est actif.",
-   "textSource": "editorial"
+   "rank1": "À l’activation, 30 % de tous les dégâts subis par le personnage lanceur sont transférés à son démon Diablotin, Marcheur du Vide, Succube, Incube ou Chasseur corrompu. De plus, le démon et son maître infligent tous deux 3 % de dégâts supplémentaires. Dure tant que le démon est actif.",
+   "textSource": "client-forever"
   },
   "demoniste/demonology-6-3": {
    "name": "Maître démonologue",
@@ -24776,14 +25782,14 @@ window.TALENT_FR={
    "classic": "Fait bénéficier le démoniste et le démon invoqué d’un effet aussi longtemps que le démon est actif.Diablotin : réduit la menace générée de 4 %.Marcheur du Vide : réduit les dégâts physiques subis de 2 %.Succube/Incube : augmente les dégâts infligés de 2 %.Chasseur corrompu : augmente les résistances de 0,2 par niveau.",
    "nameBranch": "classic",
    "ranks": [
-    "Fait bénéficier le démoniste et le démon invoqué d’un effet aussi longtemps que ce démon est actif.\n\nDiablotin : augmente de 2% les dégâts de Feu infligés.\n\nMarcheur du Vide : réduit de 2% les dégâts physiques subis.\n\nSuccube/Incube : augmente de 2% les dégâts d’Ombre infligés.\n\nChasseur corrompu : réduit de 2% les dégâts magiques subis.",
-    "Fait bénéficier le démoniste et le démon invoqué d’un effet aussi longtemps que ce démon est actif.\n\nDiablotin : augmente de 4% les dégâts de Feu infligés.\n\nMarcheur du Vide : réduit de 4% les dégâts physiques subis.\n\nSuccube/Incube : augmente de 4% les dégâts d’Ombre infligés.\n\nChasseur corrompu : réduit de 4% les dégâts magiques subis.",
-    "Fait bénéficier le démoniste et le démon invoqué d’un effet aussi longtemps que ce démon est actif.\n\nDiablotin : augmente de 6% les dégâts de Feu infligés.\n\nMarcheur du Vide : réduit de 6% les dégâts physiques subis.\n\nSuccube/Incube : augmente de 6% les dégâts d’Ombre infligés.\n\nChasseur corrompu : réduit de 6% les dégâts magiques subis.",
-    "Fait bénéficier le démoniste et le démon invoqué d’un effet aussi longtemps que ce démon est actif.\n\nDiablotin : augmente de 8% les dégâts de Feu infligés.\n\nMarcheur du Vide : réduit de 8% les dégâts physiques subis.\n\nSuccube/Incube : augmente de 8% les dégâts d’Ombre infligés.\n\nChasseur corrompu : réduit de 8% les dégâts magiques subis.",
-    "Fait bénéficier le démoniste et le démon invoqué d’un effet aussi longtemps que ce démon est actif.\n\nDiablotin : augmente de 10% les dégâts de Feu infligés.\n\nMarcheur du Vide : réduit de 10% les dégâts physiques subis.\n\nSuccube/Incube : augmente de 10% les dégâts d’Ombre infligés.\n\nChasseur corrompu : réduit de 10% les dégâts magiques subis."
+    "Fait bénéficier le personnage démoniste et le démon invoqué d’un effet aussi longtemps que le démon est actif. Diablotin : augmente les dégâts de feu infligés de 2 %. Marcheur du Vide : réduit les dégâts physiques subis de 2 %. Succube/Incube : augmente les dégâts d’ombre infligés de 2 %. Chasseur corrompu : réduit les dégâts magiques subis de 2 %.",
+    "Fait bénéficier le personnage démoniste et le démon invoqué d’un effet aussi longtemps que le démon est actif. Diablotin : augmente les dégâts de feu infligés de 4 %. Marcheur du Vide : réduit les dégâts physiques subis de 4 %. Succube/Incube : augmente les dégâts d’ombre infligés de 4 %. Chasseur corrompu : réduit les dégâts magiques subis de 4 %.",
+    "Fait bénéficier le personnage démoniste et le démon invoqué d’un effet aussi longtemps que le démon est actif. Diablotin : augmente les dégâts de feu infligés de 6 %. Marcheur du Vide : réduit les dégâts physiques subis de 6 %. Succube/Incube : augmente les dégâts d’ombre infligés de 6 %. Chasseur corrompu : réduit les dégâts magiques subis de 6 %.",
+    "Fait bénéficier le personnage démoniste et le démon invoqué d’un effet aussi longtemps que le démon est actif. Diablotin : augmente les dégâts de feu infligés de 8 %. Marcheur du Vide : réduit les dégâts physiques subis de 8 %. Succube/Incube : augmente les dégâts d’ombre infligés de 8 %. Chasseur corrompu : réduit les dégâts magiques subis de 8 %.",
+    "Fait bénéficier le personnage démoniste et le démon invoqué d’un effet aussi longtemps que le démon est actif. Diablotin : augmente les dégâts de feu infligés de 10 %. Marcheur du Vide : réduit les dégâts physiques subis de 10 %. Succube/Incube : augmente les dégâts d’ombre infligés de 10 %. Chasseur corrompu : réduit les dégâts magiques subis de 10 %."
    ],
-   "rank1": "Fait bénéficier le démoniste et le démon invoqué d’un effet aussi longtemps que ce démon est actif.\n\nDiablotin : augmente de 2% les dégâts de Feu infligés.\n\nMarcheur du Vide : réduit de 2% les dégâts physiques subis.\n\nSuccube/Incube : augmente de 2% les dégâts d’Ombre infligés.\n\nChasseur corrompu : réduit de 2% les dégâts magiques subis.",
-   "textSource": "editorial"
+   "rank1": "Fait bénéficier le personnage démoniste et le démon invoqué d’un effet aussi longtemps que le démon est actif. Diablotin : augmente les dégâts de feu infligés de 2 %. Marcheur du Vide : réduit les dégâts physiques subis de 2 %. Succube/Incube : augmente les dégâts d’ombre infligés de 2 %. Chasseur corrompu : réduit les dégâts magiques subis de 2 %.",
+   "textSource": "client-forever"
   },
   "demoniste/destruction-1-1": {
    "name": "Allonge de destruction",
@@ -24791,8 +25797,12 @@ window.TALENT_FR={
    "spell": 17917,
    "classic": "Augmente de 10% la portée de vos sorts de Destruction.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 10% la portée de vos sorts qui infligent des dégâts.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 10 % la portée de vos sorts de dégâts.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 10 % la portée de vos sorts de dégâts.",
+    "Augmente de 20 % la portée de vos sorts de dégâts."
+   ]
   },
   "demoniste/destruction-1-2": {
    "name": "Trait de l'ombre amélioré",
@@ -24800,8 +25810,15 @@ window.TALENT_FR={
    "spell": 17793,
    "classic": "Les coups critiques de votre sort Trait de l'ombre augmentent de 4% les dégâts d'Ombre infligés à la cible par les 4 prochaines sources de dégâts non périodiques. Cet effet dure 12 sec au maximum.",
    "nameBranch": "classic",
-   "rank1": "Les coups critiques de votre sort Trait de l’ombre augmentent de 4% les dégâts d’Ombre que vos attaques infligent à la cible pendant 12 sec.",
-   "textSource": "editorial"
+   "rank1": "Les coups critiques de votre Trait de l’ombre augmentent les dégâts d’ombre subis par la cible de vos attaques de 4 % pendant 12 sec.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Les coups critiques de votre Trait de l’ombre augmentent les dégâts d’ombre subis par la cible de vos attaques de 4 % pendant 12 sec.",
+    "Les coups critiques de votre Trait de l’ombre augmentent les dégâts d’ombre subis par la cible de vos attaques de 8 % pendant 12 sec.",
+    "Les coups critiques de votre Trait de l’ombre augmentent les dégâts d’ombre subis par la cible de vos attaques de 12 % pendant 12 sec.",
+    "Les coups critiques de votre Trait de l’ombre augmentent les dégâts d’ombre subis par la cible de vos attaques de 16 % pendant 12 sec.",
+    "Les coups critiques de votre Trait de l’ombre augmentent les dégâts d’ombre subis par la cible de vos attaques de 20 % pendant 12 sec."
+   ]
   },
   "demoniste/destruction-1-3": {
    "name": "Fléau",
@@ -24809,8 +25826,15 @@ window.TALENT_FR={
    "spell": 17788,
    "classic": "Réduit le temps d'incantation de vos sorts Trait de l'ombre et Immolation de 0.1 sec. et Feu de l'âme de 0.4 sec.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 0,1 sec le temps d’incantation de vos sorts Trait de l’ombre, Immolation et Incinérer, et de 0,4 sec celui de votre sort Feu de l’âme.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 0.1 s le temps d’incantation de vos sorts Trait de l’ombre, Immolation et Incinérer, et de 0.4 s celui de votre sort Feu de l’âme.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 0.1 s le temps d’incantation de vos sorts Trait de l’ombre, Immolation et Incinérer, et de 0.4 s celui de votre sort Feu de l’âme.",
+    "Réduit de 0.2 s le temps d’incantation de vos sorts Trait de l’ombre, Immolation et Incinérer, et de 0.8 s celui de votre sort Feu de l’âme.",
+    "Réduit de 0.3 s le temps d’incantation de vos sorts Trait de l’ombre, Immolation et Incinérer, et de 1.2 s celui de votre sort Feu de l’âme.",
+    "Réduit de 0.4 s le temps d’incantation de vos sorts Trait de l’ombre, Immolation et Incinérer, et de 1.6 s celui de votre sort Feu de l’âme.",
+    "Réduit de 0.5 s le temps d’incantation de vos sorts Trait de l’ombre, Immolation et Incinérer, et de 2 s celui de votre sort Feu de l’âme."
+   ]
   },
   "demoniste/destruction-2-2": {
    "name": "Cataclysme",
@@ -24818,8 +25842,13 @@ window.TALENT_FR={
    "spell": 17778,
    "classic": "Réduit le coût en mana de vos sorts de Destruction de 1%.",
    "rank1": "Réduit le coût en mana de vos sorts de Destruction de 3%.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit le coût en mana de vos sorts de Destruction de 3%.",
+    "Réduit le coût en mana de vos sorts de Destruction de 6%.",
+    "Réduit le coût en mana de vos sorts de Destruction de 10%."
+   ]
   },
   "demoniste/destruction-2-3": {
    "name": "Conséquences",
@@ -24827,8 +25856,15 @@ window.TALENT_FR={
    "spell": 18119,
    "classic": "Confère 2% de chances à vos sorts de Destruction d'hébéter la cible pendant 5 sec.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 10% les dégâts initiaux de votre sort Immolation et confère à votre sort Conflagration 20% de chances d’hébéter la cible, réduisant sa vitesse de déplacement de 50% pendant 5 sec.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts initiaux infligés par votre Immolation de 10 % et votre Conflagration a 20 % de chances d’hébéter la cible, ce qui réduit sa vitesse de déplacement de 50 % pendant 5 sec.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente les dégâts initiaux infligés par votre Immolation de 10 % et votre Conflagration a 20 % de chances d’hébéter la cible, ce qui réduit sa vitesse de déplacement de 50 % pendant 5 sec.",
+    "Augmente les dégâts initiaux infligés par votre Immolation de 20 % et votre Conflagration a 40 % de chances d’hébéter la cible, ce qui réduit sa vitesse de déplacement de 50 % pendant 5 sec.",
+    "Augmente les dégâts initiaux infligés par votre Immolation de 30 % et votre Conflagration a 60 % de chances d’hébéter la cible, ce qui réduit sa vitesse de déplacement de 50 % pendant 5 sec.",
+    "Augmente les dégâts initiaux infligés par votre Immolation de 40 % et votre Conflagration a 80 % de chances d’hébéter la cible, ce qui réduit sa vitesse de déplacement de 50 % pendant 5 sec.",
+    "Augmente les dégâts initiaux infligés par votre Immolation de 50 % et votre Conflagration a 100 % de chances d’hébéter la cible, ce qui réduit sa vitesse de déplacement de 50 % pendant 5 sec."
+   ]
   },
   "demoniste/destruction-3-2": {
    "name": "Ruine",
@@ -24836,8 +25872,15 @@ window.TALENT_FR={
    "spell": 17959,
    "classic": "Augmente de 100% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Destruction.",
    "rank1": "Augmente de 20% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Destruction.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente de 20% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Destruction.",
+    "Augmente de 40% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Destruction.",
+    "Augmente de 60% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Destruction.",
+    "Augmente de 80% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Destruction.",
+    "Augmente de 100% les points de dégâts supplémentaires infligés par les coups critiques de vos sorts de Destruction."
+   ]
   },
   "demoniste/destruction-3-3": {
    "name": "Brûlure de l'ombre",
@@ -24854,8 +25897,13 @@ window.TALENT_FR={
    "spell": 18135,
    "classic": "Vous donne 35% de chances de résister aux interruptions causées par les dégâts lorsque vous canalisez les sorts Pluie de feu, Flammes infernales ou Feu de l'âme.",
    "nameBranch": "classic",
-   "rank1": "Vous donne 23% de chances de résister aux interruptions causées par les dégâts lorsque vous incantez ou canalisez un sort de Destruction.",
-   "textSource": "editorial"
+   "rank1": "Vous donne 23% de chances de résister aux interruptions causées par les dégâts lorsque vous lancez ou canalisez n'importe quel sort de Destruction.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vous donne 23% de chances de résister aux interruptions causées par les dégâts lorsque vous lancez ou canalisez n'importe quel sort de Destruction.",
+    "Vous donne 47% de chances de résister aux interruptions causées par les dégâts lorsque vous lancez ou canalisez n'importe quel sort de Destruction.",
+    "Vous donne 70% de chances de résister aux interruptions causées par les dégâts lorsque vous lancez ou canalisez n'importe quel sort de Destruction."
+   ]
   },
   "demoniste/destruction-4-2": {
    "name": "Flammes déchirantes",
@@ -24864,8 +25912,13 @@ window.TALENT_FR={
    "classic": "Augmente de 2% les chances d'infliger un coup critique avec votre sort Douleur brûlante.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Douleur brûlante améliorée » (anciennement « Improved Searing Pain »).",
    "nameBranch": "forever",
-   "rank1": "Augmente de 3% les chances d’infliger un coup critique avec votre sort Douleur brûlante et de 3% les dégâts infligés par tous vos sorts de Destruction.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 3 % les chances de coup critique de votre sort Douleur brûlante. De plus, augmente de 3 % les dégâts infligés par tous vos sorts de destruction.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 3 % les chances de coup critique de votre sort Douleur brûlante. De plus, augmente de 3 % les dégâts infligés par tous vos sorts de destruction.",
+    "Augmente de 7 % les chances de coup critique de votre sort Douleur brûlante. De plus, augmente de 7 % les dégâts infligés par tous vos sorts de destruction.",
+    "Augmente de 10 % les chances de coup critique de votre sort Douleur brûlante. De plus, augmente de 10 % les dégâts infligés par tous vos sorts de destruction."
+   ]
   },
   "demoniste/destruction-4-3": {
    "name": "Conflagration",
@@ -24883,11 +25936,11 @@ window.TALENT_FR={
    "classic": "Confère 13% de chances à vos sorts Pluie de feu, Flammes infernales et Feu de l'âme d'étourdir la cible pendant 3 sec.",
    "nameBranch": "classic",
    "ranks": [
-    "Confère à votre sort Feu de l’âme 13% de chances d’étourdir la cible pendant 3 sec, et à vos sorts Pluie de feu et Flammes infernales 13% de chances, sur leur durée, d’étourdir pendant 3 sec les cibles à qui ils infligent des dégâts.",
-    "Confère à votre sort Feu de l’âme 26% de chances d’étourdir la cible pendant 3 sec, et à vos sorts Pluie de feu et Flammes infernales 26% de chances, sur leur durée, d’étourdir pendant 3 sec les cibles à qui ils infligent des dégâts."
+    "Confère à votre sort Feu de l’âme 13 % de chances d’étourdir la cible pendant 3 sec et à vos sorts Pluie de feu et Flammes infernales 13 % de chances d’étourdir les cibles touchées pendant 3 sec avant que leur effet prenne fin.",
+    "Confère à votre sort Feu de l’âme 26 % de chances d’étourdir la cible pendant 3 sec et à vos sorts Pluie de feu et Flammes infernales 26 % de chances d’étourdir les cibles touchées pendant 3 sec avant que leur effet prenne fin."
    ],
-   "rank1": "Confère à votre sort Feu de l’âme 13% de chances d’étourdir la cible pendant 3 sec, et à vos sorts Pluie de feu et Flammes infernales 13% de chances, sur leur durée, d’étourdir pendant 3 sec les cibles à qui ils infligent des dégâts.",
-   "textSource": "editorial"
+   "rank1": "Confère à votre sort Feu de l’âme 13 % de chances d’étourdir la cible pendant 3 sec et à vos sorts Pluie de feu et Flammes infernales 13 % de chances d’étourdir les cibles touchées pendant 3 sec avant que leur effet prenne fin.",
+   "textSource": "client-forever"
   },
   "druide/balance-1-2": {
    "name": "Colère améliorée",
@@ -24895,8 +25948,15 @@ window.TALENT_FR={
    "spell": 16814,
    "classic": "Réduit le temps d'incantation de votre sort Colère de 0.1 sec.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 0,1 sec le temps d’incantation de votre sort Colère et de 10% son coût en mana.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps d’incantation de votre sort Colère de 0.1 s et son coût en mana de 10 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le temps d’incantation de votre sort Colère de 0.1 s et son coût en mana de 10 %.",
+    "Réduit le temps d’incantation de votre sort Colère de 0.2 s et son coût en mana de 20 %.",
+    "Réduit le temps d’incantation de votre sort Colère de 0.3 s et son coût en mana de 30 %.",
+    "Réduit le temps d’incantation de votre sort Colère de 0.4 s et son coût en mana de 40 %.",
+    "Réduit le temps d’incantation de votre sort Colère de 0.5 s et son coût en mana de 50 %."
+   ]
   },
   "druide/balance-2-1": {
    "name": "Lueur de la lune",
@@ -24904,8 +25964,13 @@ window.TALENT_FR={
    "spell": 16845,
    "classic": "Réduit de 3% le coût en mana de vos sorts Eclat lunaire, Feu stellaire, Colère, Toucher guérisseur, Rétablissement et Récupération.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 8% le coût en mana de vos sorts offensifs.",
-   "textSource": "editorial"
+   "rank1": "Reduces the Mana cost of your damaging spells by 8%.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Reduces the Mana cost of your damaging spells by 8%.",
+    "Reduces the Mana cost of your damaging spells by 17%.",
+    "Reduces the Mana cost of your damaging spells by 25%."
+   ]
   },
   "druide/balance-2-2": {
    "name": "Eclat lunaire amélioré",
@@ -24913,8 +25978,12 @@ window.TALENT_FR={
    "spell": 16821,
    "classic": "Augmente les points de dégâts et les chances de porter un coup critique avec votre sort Eclat lunaire de 2%.",
    "rank1": "Augmente les points de dégâts et les chances de porter un coup critique avec votre sort Eclat lunaire de 5%.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente les points de dégâts et les chances de porter un coup critique avec votre sort Eclat lunaire de 5%.",
+    "Augmente les points de dégâts et les chances de porter un coup critique avec votre sort Eclat lunaire de 10%."
+   ]
   },
   "druide/balance-2-4": {
    "name": "Allonge de la Nature",
@@ -24922,8 +25991,12 @@ window.TALENT_FR={
    "spell": 16819,
    "classic": "Augmente la portée des sorts Colère, Sarments, Lucioles, Eclat lunaire, Feu stellaire et Ouragan de 10%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 10% la portée de vos sorts offensifs d’Équilibre et de 2% vos chances de toucher avec tous vos sorts et attaques.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 10 % la portée de vos sorts d’Équilibre offensifs et améliore de 2 % vos chances de toucher.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 10 % la portée de vos sorts d’Équilibre offensifs et améliore de 2 % vos chances de toucher.",
+    "Augmente de 20 % la portée de vos sorts d’Équilibre offensifs et améliore de 4 % vos chances de toucher."
+   ]
   },
   "druide/balance-3-1": {
    "name": "Sarments améliorés",
@@ -24931,8 +26004,13 @@ window.TALENT_FR={
    "spell": 16918,
    "classic": "Vous confère 40% de chances d'éviter d'être interrompu lorsque vous lancez le sort Sarments.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 25% les dégâts infligés par votre sort Sarments, et ses victimes peuvent subir jusqu’à 25% de dégâts supplémentaires sans que l’effet soit interrompu.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts infligés par votre sort Sarments de 25 %. Sa victime peut subir 25 % de dégâts supplémentaires sans interrompre l’effet.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente les dégâts infligés par votre sort Sarments de 25 %. Sa victime peut subir 25 % de dégâts supplémentaires sans interrompre l’effet.",
+    "Augmente les dégâts infligés par votre sort Sarments de 50 %. Sa victime peut subir 50 % de dégâts supplémentaires sans interrompre l’effet.",
+    "Augmente les dégâts infligés par votre sort Sarments de 75 %. Sa victime peut subir 75 % de dégâts supplémentaires sans interrompre l’effet."
+   ]
   },
   "druide/balance-4-1": {
    "name": "Essaim d'insectes",
@@ -24949,8 +26027,15 @@ window.TALENT_FR={
    "spell": 16909,
    "classic": "Augmente de 20% le bonus de dégâts supplémentaires infligés par les coups critiques avec vos sorts Feu stellaire, Eclat lunaire et Colère.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 20% le bonus de dégâts critiques de vos sorts des Arcanes et de Nature.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 20 % le bonus de dégâts des coups critiques de vos sorts des arcanes et de nature.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 20 % le bonus de dégâts des coups critiques de vos sorts des arcanes et de nature.",
+    "Augmente de 40 % le bonus de dégâts des coups critiques de vos sorts des arcanes et de nature.",
+    "Augmente de 60 % le bonus de dégâts des coups critiques de vos sorts des arcanes et de nature.",
+    "Augmente de 80 % le bonus de dégâts des coups critiques de vos sorts des arcanes et de nature.",
+    "Augmente de 100 % le bonus de dégâts des coups critiques de vos sorts des arcanes et de nature."
+   ]
   },
   "druide/balance-4-3": {
    "name": "Feu stellaire amélioré",
@@ -24958,8 +26043,15 @@ window.TALENT_FR={
    "spell": 16850,
    "classic": "Réduit le temps d'incantation de Feu stellaire de 0.1 sec. et a 3% de chances d'étourdir la cible pendant 3 sec.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 0,1 sec le temps d’incantation de Feu stellaire, qui a en outre 3% de chances d’étourdir sa cible pendant 3 sec.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps d’incantation de Feu stellaire de 0.1 s. Feu stellaire a 3 % de chances d’étourdir la cible pendant 3 sec.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le temps d’incantation de Feu stellaire de 0.1 s. Feu stellaire a 3 % de chances d’étourdir la cible pendant 3 sec.",
+    "Réduit le temps d’incantation de Feu stellaire de 0.2 s. Feu stellaire a 6 % de chances d’étourdir la cible pendant 3 sec.",
+    "Réduit le temps d’incantation de Feu stellaire de 0.3 s. Feu stellaire a 9 % de chances d’étourdir la cible pendant 3 sec.",
+    "Réduit le temps d’incantation de Feu stellaire de 0.4 s. Feu stellaire a 12 % de chances d’étourdir la cible pendant 3 sec.",
+    "Réduit le temps d’incantation de Feu stellaire de 0.5 s. Feu stellaire a 15 % de chances d’étourdir la cible pendant 3 sec."
+   ]
   },
   "druide/balance-5-2": {
    "name": "Grâce de la nature",
@@ -24967,8 +26059,8 @@ window.TALENT_FR={
    "spell": 16880,
    "classic": "Tous les coups critiques obtenus avec les sorts vous valent une Bénédiction de la nature. Cette dernière réduit de 0.5 sec. le temps d'incantation de votre prochain sort.",
    "nameBranch": "classic",
-   "rank1": "Tous les coups critiques non périodiques obtenus avec vos sorts vous valent une bénédiction de la nature, qui augmente votre vitesse d’incantation et réduit de 10% votre temps de recharge global pendant 3 sec.",
-   "textSource": "editorial"
+   "rank1": "Tous les coups critiques non périodiques des sorts vous confèrent une bénédiction de la nature, qui augmente votre vitesse d’incantation des sorts et réduit votre temps de recharge global de 10 % pendant 3 sec.",
+   "textSource": "client-forever"
   },
   "druide/balance-6-2": {
    "name": "Fureur lunaire",
@@ -24976,8 +26068,15 @@ window.TALENT_FR={
    "spell": 16896,
    "classic": "Augmente les points de dégâts infligés par vos sorts Feu stellaire, Eclat lunaire et Colère de .",
    "nameBranch": "classic",
-   "rank1": "Augmente de 2% les dégâts infligés par vos sorts des Arcanes et de Nature.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts infligés par vos sorts des arcanes et de nature de 2 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente les dégâts infligés par vos sorts des arcanes et de nature de 2 %.",
+    "Augmente les dégâts infligés par vos sorts des arcanes et de nature de 4 %.",
+    "Augmente les dégâts infligés par vos sorts des arcanes et de nature de 6 %.",
+    "Augmente les dégâts infligés par vos sorts des arcanes et de nature de 8 %.",
+    "Augmente les dégâts infligés par vos sorts des arcanes et de nature de 10 %."
+   ]
   },
   "druide/balance-7-2": {
    "name": "Forme de sélénien",
@@ -24985,8 +26084,8 @@ window.TALENT_FR={
    "spell": 24858,
    "classic": "Transforme le personnage druide en sélénien. Sous cette forme, l’Armure conférée par les objets est augmentée de 360 % et les membres du groupe à moins de 30 m voient leurs chances de coup critique des sorts augmentées de 3 %. La transformation libère le personnage-joueur des effets de métamorphose ou affectant le déplacement.",
    "nameBranch": "classic",
-   "rank1": "Transforme le druide en sélénien. Sous cette forme, l’armure conférée par les objets est augmentée de 360%, Augure de lucidité a 100% de chances supplémentaires de se déclencher, et tous les membres du groupe se trouvant à moins de 45 mètres voient leurs chances de coup critique augmentées de 3%, effet exclusif avec Chef de la meute. Le sélénien ne peut pas lancer de sorts de soins tant qu’il est transformé.\n\nLa transformation libère le lanceur des effets de métamorphose et de ceux qui entravent le déplacement.",
-   "textSource": "editorial"
+   "rank1": "Transforms the Druid into Moonkin Form. While in this form, the armor contribution from items is increased by 360%, Omen of Clarity gains 100% increased chance to trigger, and all party members within 45 yards have their critical strike chance increased by 3%, exclusive with Leader of the Pack. The Moonkin cannot cast healing spells while shapeshifted. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+   "textSource": "client-forever"
   },
   "druide/feral-combat-1-2": {
    "name": "Férocité",
@@ -24996,13 +26095,13 @@ window.TALENT_FR={
    "nameBranch": "classic",
    "ranks": [
     "Réduit de 1 point de rage ou d’énergie le coût de vos techniques Mutiler, Mutilation, Balayage, Griffe et Griffure.",
-    "Réduit de 2 points de rage ou d’énergie le coût de vos techniques Mutiler, Balayage, Griffe et Griffure.",
-    "Réduit de 3 points de rage ou d’énergie le coût de vos techniques Mutiler, Balayage, Griffe et Griffure.",
-    "Réduit de 4 points de rage ou d’énergie le coût de vos techniques Mutiler, Balayage, Griffe et Griffure.",
-    "Réduit de 5 points de rage ou d’énergie le coût de vos techniques Mutiler, Balayage, Griffe et Griffure."
+    "Réduit de 2 points de rage ou d’énergie le coût de vos techniques Mutiler, Mutilation, Balayage, Griffe et Griffure.",
+    "Réduit de 3 points de rage ou d’énergie le coût de vos techniques Mutiler, Mutilation, Balayage, Griffe et Griffure.",
+    "Réduit de 4 points de rage ou d’énergie le coût de vos techniques Mutiler, Mutilation, Balayage, Griffe et Griffure.",
+    "Réduit de 5 points de rage ou d’énergie le coût de vos techniques Mutiler, Mutilation, Balayage, Griffe et Griffure."
    ],
    "rank1": "Réduit de 1 point de rage ou d’énergie le coût de vos techniques Mutiler, Mutilation, Balayage, Griffe et Griffure.",
-   "textSource": "editorial"
+   "textSource": "client-forever"
   },
   "druide/feral-combat-1-3": {
    "name": "Cœur de fauve",
@@ -25011,14 +26110,14 @@ window.TALENT_FR={
    "classic": "Augmente votre Intelligence de 4%. De plus, votre Endurance est augmentée de 4% lorsque vous êtes en forme d'ours ou d'ours redoutable et votre Force est augmentée de 4% lorsque vous êtes en forme de félin.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 2% votre Intelligence. De plus, votre Endurance est augmentée de 4% lorsque vous êtes en forme d’ours ou d’ours redoutable, et votre Force de 2% lorsque vous êtes en forme de félin.",
-    "Augmente de 4% votre Intelligence. De plus, votre Endurance est augmentée de 8% lorsque vous êtes en forme d’ours ou d’ours redoutable, et votre Force de 4% lorsque vous êtes en forme de félin.",
-    "Augmente de 6% votre Intelligence. De plus, votre Endurance est augmentée de 12% lorsque vous êtes en forme d’ours ou d’ours redoutable, et votre Force de 6% lorsque vous êtes en forme de félin.",
-    "Augmente de 8% votre Intelligence. De plus, votre Endurance est augmentée de 16% lorsque vous êtes en forme d’ours ou d’ours redoutable, et votre Force de 8% lorsque vous êtes en forme de félin.",
-    "Augmente de 10% votre Intelligence. De plus, votre Endurance est augmentée de 20% lorsque vous êtes en forme d’ours ou d’ours redoutable, et votre Force de 10% lorsque vous êtes en forme de félin."
+    "Augmente votre Intelligence de 2 %. Sous forme d’ours ou d’ours redoutable, votre Endurance augmente de 4 %. Sous forme de félin, votre Force augmente de 2 %.",
+    "Augmente votre Intelligence de 4 %. Sous forme d’ours ou d’ours redoutable, votre Endurance augmente de 8 %. Sous forme de félin, votre Force augmente de 4 %.",
+    "Augmente votre Intelligence de 6 %. Sous forme d’ours ou d’ours redoutable, votre Endurance augmente de 12 %. Sous forme de félin, votre Force augmente de 6 %.",
+    "Augmente votre Intelligence de 8 %. Sous forme d’ours ou d’ours redoutable, votre Endurance augmente de 16 %. Sous forme de félin, votre Force augmente de 8 %.",
+    "Augmente votre Intelligence de 10 %. Sous forme d’ours ou d’ours redoutable, votre Endurance augmente de 20 %. Sous forme de félin, votre Force augmente de 10 %."
    ],
-   "rank1": "Augmente de 2% votre Intelligence. De plus, votre Endurance est augmentée de 4% lorsque vous êtes en forme d’ours ou d’ours redoutable, et votre Force de 2% lorsque vous êtes en forme de félin.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre Intelligence de 2 %. Sous forme d’ours ou d’ours redoutable, votre Endurance augmente de 4 %. Sous forme de félin, votre Force augmente de 2 %.",
+   "textSource": "client-forever"
   },
   "druide/feral-combat-2-1": {
    "name": "Célérité farouche",
@@ -25028,11 +26127,11 @@ window.TALENT_FR={
    "note": "Forever a renommé ce talent : le client français ne connaît que « Célérité féline » (anciennement « Feline Swiftness »).",
    "nameBranch": "forever",
    "ranks": [
-    "Augmente de 15% votre vitesse de déplacement en forme de félin et de 2% vos chances d’esquiver.",
-    "Augmente de 30% votre vitesse de déplacement en forme de félin et de 4% vos chances d’esquiver."
+    "Augmente de 15 % votre vitesse de déplacement et de 2 % vos chances d’esquiver sous votre forme de félin.",
+    "Augmente de 30 % votre vitesse de déplacement et de 4 % vos chances d’esquiver sous votre forme de félin."
    ],
-   "rank1": "Augmente de 15% votre vitesse de déplacement en forme de félin et de 2% vos chances d’esquiver.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 15 % votre vitesse de déplacement et de 2 % vos chances d’esquiver sous votre forme de félin.",
+   "textSource": "client-forever"
   },
   "druide/feral-combat-2-2": {
    "name": "Instinct farouche",
@@ -25054,8 +26153,12 @@ window.TALENT_FR={
    "spell": 16940,
    "classic": "Augmente la durée d'étourdissement de vos techniques Sonner et Traquenard de 0.5 sec.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 0,5 sec la durée d’étourdissement de vos techniques Sonner et Traquenard, et réduit de 15 sec le temps de recharge de Sonner.",
-   "textSource": "editorial"
+   "rank1": "Augmente la durée d’étourdissement de vos techniques Sonner et Traquenard de 0.5 s et réduit le temps de recharge de Sonner de 15 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente la durée d’étourdissement de vos techniques Sonner et Traquenard de 0.5 s et réduit le temps de recharge de Sonner de 15 s.",
+    "Augmente la durée d’étourdissement de vos techniques Sonner et Traquenard de 1 s et réduit le temps de recharge de Sonner de 30 s."
+   ]
   },
   "druide/feral-combat-2-4": {
    "name": "Peau épaisse",
@@ -25063,8 +26166,13 @@ window.TALENT_FR={
    "spell": 16929,
    "classic": "Augmente de 2% le score d'armure apporté par les objets.",
    "nameBranch": "classic",
-   "rank1": "En forme d’ours, de félin, d’ours redoutable ou de sélénien, vous gagnez 1 point d’armure de base supplémentaire par niveau, plus 0,67 point d’armure de base par point de compétence Défense au-delà de cinq fois votre niveau. Ce montant peut encore être augmenté par les multiplicateurs de ces formes.",
-   "textSource": "editorial"
+   "rank1": "Sous forme d’ours, de félin, d’ours redoutable ou de sélénien, vous bénéficiez d’un bonus d’armure de base de 1 par niveau, ainsi que d’un bonus d’armure de base supplémentaire de 0.67 pour chaque point de défense dépassant cinq fois votre niveau. Ce montant peut être augmenté par les multiplicateurs de ces formes.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Sous forme d’ours, de félin, d’ours redoutable ou de sélénien, vous bénéficiez d’un bonus d’armure de base de 1 par niveau, ainsi que d’un bonus d’armure de base supplémentaire de 0.67 pour chaque point de défense dépassant cinq fois votre niveau. Ce montant peut être augmenté par les multiplicateurs de ces formes.",
+    "Sous forme d’ours, de félin, d’ours redoutable ou de sélénien, vous bénéficiez d’un bonus d’armure de base de 2 par niveau, ainsi que d’un bonus d’armure de base supplémentaire de 1.33 pour chaque point de défense dépassant cinq fois votre niveau. Ce montant peut être augmenté par les multiplicateurs de ces formes.",
+    "Sous forme d’ours, de félin, d’ours redoutable ou de sélénien, vous bénéficiez d’un bonus d’armure de base de 3 par niveau, ainsi que d’un bonus d’armure de base supplémentaire de 2.00 pour chaque point de défense dépassant cinq fois votre niveau. Ce montant peut être augmenté par les multiplicateurs de ces formes."
+   ]
   },
   "druide/feral-combat-3-2": {
    "name": "Furie sauvage",
@@ -25072,8 +26180,12 @@ window.TALENT_FR={
    "spell": 16998,
    "classic": "Augmente les points de dégâts infligés par vos techniques Griffe, Griffure, Mutiler et Balayage de 10%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 5% les dégâts infligés par vos techniques Griffe, Griffure, Lambeau, Mutiler et Balayage.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 5 % les dégâts infligés par vos techniques Griffe, Griffure, Lambeau, Mutiler et Balayage.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 5 % les dégâts infligés par vos techniques Griffe, Griffure, Lambeau, Mutiler et Balayage.",
+    "Augmente de 10 % les dégâts infligés par vos techniques Griffe, Griffure, Lambeau, Mutiler et Balayage."
+   ]
   },
   "druide/feral-combat-3-3": {
    "name": "Charge farouche",
@@ -25091,11 +26203,11 @@ window.TALENT_FR={
    "classic": "Augmente de 2% vos chances d'infliger un coup critique lorsque vous êtes transformé en ours, en ours redoutable ou en félin.",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente de 3% vos chances d’infliger un coup critique lorsque vous êtes en forme d’ours, d’ours redoutable ou de félin.",
-    "Augmente de 6% vos chances d’infliger un coup critique lorsque vous êtes en forme d’ours, d’ours redoutable ou de félin."
+    "Augmente de 3 % vos chances de coup critique lorsque vous êtes sous forme d’ours, d’ours redoutable ou de félin.",
+    "Augmente de 6 % vos chances de coup critique lorsque vous êtes sous forme d’ours, d’ours redoutable ou de félin."
    ],
-   "rank1": "Augmente de 3% vos chances d’infliger un coup critique lorsque vous êtes en forme d’ours, d’ours redoutable ou de félin.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 3 % vos chances de coup critique lorsque vous êtes sous forme d’ours, d’ours redoutable ou de félin.",
+   "textSource": "client-forever"
   },
   "druide/feral-combat-4-1": {
    "name": "Attaques lacérantes",
@@ -25105,7 +26217,12 @@ window.TALENT_FR={
    "note": "Forever a renommé ce talent : le client français ne connaît que « Lambeau amélioré » (anciennement « Improved Shred »).",
    "nameBranch": "forever",
    "rank1": "Réduit de 6 le coût en énergie de votre technique Lambeau et de 1 le coût en rage de votre technique Lacérer.",
-   "textSource": "editorial"
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 6 le coût en énergie de votre technique Lambeau et de 1 le coût en rage de votre technique Lacérer.",
+    "Réduit de 12 le coût en énergie de votre technique Lambeau et de 2 le coût en rage de votre technique Lacérer.",
+    "Réduit de 18 le coût en énergie de votre technique Lambeau et de 3 le coût en rage de votre technique Lacérer."
+   ]
   },
   "druide/feral-combat-4-3": {
    "name": "Frappes de prédateur",
@@ -25113,8 +26230,13 @@ window.TALENT_FR={
    "spell": 16972,
    "classic": "Augmente votre puissance d'attaque en mêlée en forme de félin, d'ours et d'ours redoutable de 50% de votre niveau.",
    "nameBranch": "classic",
-   "rank1": "Augmente votre puissance d’attaque en mêlée de 50% de votre niveau en forme de félin, en forme d’ours et en forme d’ours redoutable.",
-   "textSource": "editorial"
+   "rank1": "Sous forme de félin, d’ours ou d’ours redoutable, augmente votre puissance d’attaque en mêlée d’un montant correspondant à 50 % de votre niveau.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Sous forme de félin, d’ours ou d’ours redoutable, augmente votre puissance d’attaque en mêlée d’un montant correspondant à 50 % de votre niveau.",
+    "Sous forme de félin, d’ours ou d’ours redoutable, augmente votre puissance d’attaque en mêlée d’un montant correspondant à 100 % de votre niveau.",
+    "Sous forme de félin, d’ours ou d’ours redoutable, augmente votre puissance d’attaque en mêlée d’un montant correspondant à 150 % de votre niveau."
+   ]
   },
   "druide/feral-combat-4-4": {
    "name": "Fureur primitive",
@@ -25123,11 +26245,11 @@ window.TALENT_FR={
    "classic": "Vous confère 50% de chances de gagner un bonus supplémentaire de 5 points de rage à chaque fois que vous assénez un coup critique lorsque vous êtes transformé en ours ou en ours redoutable.",
    "nameBranch": "classic",
    "ranks": [
-    "Vous confère 50% de chances de gagner 5 points de rage supplémentaires chaque fois que vous infligez un coup critique en forme d’ours ou d’ours redoutable. De plus, vos coups critiques non périodiques obtenus avec des techniques de la forme de félin qui génèrent des points de combo ont 50% de chances d’ajouter un point de combo supplémentaire.",
-    "Vous confère 100% de chances de gagner 5 points de rage supplémentaires chaque fois que vous infligez un coup critique en forme d’ours ou d’ours redoutable. De plus, vos coups critiques non périodiques obtenus avec des techniques de la forme de félin qui génèrent des points de combo ont 100% de chances d’ajouter un point de combo supplémentaire."
+    "Vous confère 50 % de chances de générer 5 points de rage supplémentaires chaque fois que vous réussissez un coup critique en forme d’ours ou d’ours redoutable. De plus, vos coups critiques non périodiques obtenus avec les techniques de la forme de félin ajoutant des points de combo ont 50 % de chances d’ajouter un point de combo supplémentaire.",
+    "Vous confère 100 % de chances de générer 5 points de rage supplémentaires chaque fois que vous réussissez un coup critique en forme d’ours ou d’ours redoutable. De plus, vos coups critiques non périodiques obtenus avec les techniques de la forme de félin ajoutant des points de combo ont 100 % de chances d’ajouter un point de combo supplémentaire."
    ],
-   "rank1": "Vous confère 50% de chances de gagner 5 points de rage supplémentaires chaque fois que vous infligez un coup critique en forme d’ours ou d’ours redoutable. De plus, vos coups critiques non périodiques obtenus avec des techniques de la forme de félin qui génèrent des points de combo ont 50% de chances d’ajouter un point de combo supplémentaire.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 50 % de chances de générer 5 points de rage supplémentaires chaque fois que vous réussissez un coup critique en forme d’ours ou d’ours redoutable. De plus, vos coups critiques non périodiques obtenus avec les techniques de la forme de félin ajoutant des points de combo ont 50 % de chances d’ajouter un point de combo supplémentaire.",
+   "textSource": "client-forever"
   },
   "druide/feral-combat-5-2": {
    "name": "Chef de la meute",
@@ -25135,8 +26257,8 @@ window.TALENT_FR={
    "spell": 17007,
    "classic": "Pendant qu'il est en forme de félin, d'ours ou d'ours redoutable, le Chef de la meute augmente de 3% les chances de tous les membres du groupe se trouvant à moins de 45 mètres d'obtenir un coup critique avec les attaques à distance et en mêlée.",
    "nameBranch": "classic",
-   "rank1": "En forme de félin, d’ours ou d’ours redoutable, le Chef de la meute augmente de 3% les chances de coup critique de tous les membres du groupe se trouvant à moins de 45 mètres, effet exclusif avec l’Aura de sélénien.",
-   "textSource": "editorial"
+   "rank1": "Pendant qu’il est en forme de félin, d’ours ou d’ours redoutable, le Chef de la meute augmente de 3 % les chances de tous les membres du groupe se trouvant à moins de 45 m d’obtenir un coup critique. Incompatible avec Aura de sélénien.",
+   "textSource": "client-forever"
   },
   "druide/restoration-1-2": {
    "name": "Focalisation de la nature",
@@ -25145,14 +26267,14 @@ window.TALENT_FR={
    "classic": "Vous confère 14% de chances d'éviter d'être interrompu par les attaques lorsque vous incantez les sorts Toucher guérisseur, Rétablissement et Tranquillité.",
    "nameBranch": "classic",
    "ranks": [
-    "Vous confère 14% de chances d’éviter d’être interrompu par les dégâts lorsque vous incantez des sorts des Arcanes et de Nature.",
-    "Vous confère 28% de chances d’éviter d’être interrompu par les dégâts lorsque vous incantez des sorts des Arcanes et de Nature.",
-    "Vous confère 42% de chances d’éviter d’être interrompu par les dégâts lorsque vous incantez des sorts des Arcanes et de Nature.",
-    "Vous confère 56% de chances d’éviter d’être interrompu par les dégâts lorsque vous incantez des sorts des Arcanes et de Nature.",
-    "Vous confère 70% de chances d’éviter d’être interrompu par les dégâts lorsque vous incantez des sorts des Arcanes et de Nature."
+    "Vous confère 14 % de chances d’éviter les interruptions provoquées par les dégâts lors de l’incantation de sorts des arcanes et de nature.",
+    "Vous confère 28 % de chances d’éviter les interruptions provoquées par les dégâts lors de l’incantation de sorts des arcanes et de nature.",
+    "Vous confère 42 % de chances d’éviter les interruptions provoquées par les dégâts lors de l’incantation de sorts des arcanes et de nature.",
+    "Vous confère 56 % de chances d’éviter les interruptions provoquées par les dégâts lors de l’incantation de sorts des arcanes et de nature.",
+    "Vous confère 70 % de chances d’éviter les interruptions provoquées par les dégâts lors de l’incantation de sorts des arcanes et de nature."
    ],
-   "rank1": "Vous confère 14% de chances d’éviter d’être interrompu par les dégâts lorsque vous incantez des sorts des Arcanes et de Nature.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 14 % de chances d’éviter les interruptions provoquées par les dégâts lors de l’incantation de sorts des arcanes et de nature.",
+   "textSource": "client-forever"
   },
   "druide/restoration-1-3": {
    "name": "Fureur",
@@ -25161,14 +26283,14 @@ window.TALENT_FR={
    "classic": "Vous confère 20% de chances de gagner 10 points de rage lorsque vous vous transformez en ours et ours redoutable ou 40 points d'énergie lorsque vous vous transformez en félin.",
    "nameBranch": "classic",
    "ranks": [
-    "Vous confère 20% de chances de gagner 10 points de rage lorsque vous prenez la forme d’ours ou d’ours redoutable. Lorsque vous prenez la forme de félin, vous récupérez 20% de l’énergie que vous aviez la dernière fois que vous étiez en forme de félin, plus 2 points d’énergie par seconde passée hors des formes d’ours, de félin et d’ours redoutable, jusqu’à un maximum de 20 points d’énergie.",
-    "Vous confère 40% de chances de gagner 10 points de rage lorsque vous prenez la forme d’ours ou d’ours redoutable. Lorsque vous prenez la forme de félin, vous récupérez 40% de l’énergie que vous aviez la dernière fois que vous étiez en forme de félin, plus 4 points d’énergie par seconde passée hors des formes d’ours, de félin et d’ours redoutable, jusqu’à un maximum de 40 points d’énergie.",
-    "Vous confère 60% de chances de gagner 10 points de rage lorsque vous prenez la forme d’ours ou d’ours redoutable. Lorsque vous prenez la forme de félin, vous récupérez 60% de l’énergie que vous aviez la dernière fois que vous étiez en forme de félin, plus 6 points d’énergie par seconde passée hors des formes d’ours, de félin et d’ours redoutable, jusqu’à un maximum de 60 points d’énergie.",
-    "Vous confère 80% de chances de gagner 10 points de rage lorsque vous prenez la forme d’ours ou d’ours redoutable. Lorsque vous prenez la forme de félin, vous récupérez 80% de l’énergie que vous aviez la dernière fois que vous étiez en forme de félin, plus 8 points d’énergie par seconde passée hors des formes d’ours, de félin et d’ours redoutable, jusqu’à un maximum de 80 points d’énergie.",
-    "Vous confère 100% de chances de gagner 10 points de rage lorsque vous prenez la forme d’ours ou d’ours redoutable. Lorsque vous prenez la forme de félin, vous récupérez 100% de l’énergie que vous aviez la dernière fois que vous étiez en forme de félin, plus 10 points d’énergie par seconde passée hors des formes d’ours, de félin et d’ours redoutable, jusqu’à un maximum de 100 points d’énergie."
+    "Vous confère 20 % de chances de gagner 10 points de rage lorsque vous adoptez la forme d’ours ou d’ours redoutable. Lorsque vous adoptez la forme de félin, vous regagnez 20 % de l’énergie que vous possédiez lors de votre dernière forme de félin, plus 2 points d’énergie pour chaque seconde que vous n’avez pas passée sous forme d’ours, de félin ou d’ours redoutable, jusqu’à un bonus maximum de 20 points d’énergie.",
+    "Vous confère 40 % de chances de gagner 10 points de rage lorsque vous adoptez la forme d’ours ou d’ours redoutable. Lorsque vous adoptez la forme de félin, vous regagnez 40 % de l’énergie que vous possédiez lors de votre dernière forme de félin, plus 4 points d’énergie pour chaque seconde que vous n’avez pas passée sous forme d’ours, de félin ou d’ours redoutable, jusqu’à un bonus maximum de 40 points d’énergie.",
+    "Vous confère 60 % de chances de gagner 10 points de rage lorsque vous adoptez la forme d’ours ou d’ours redoutable. Lorsque vous adoptez la forme de félin, vous regagnez 60 % de l’énergie que vous possédiez lors de votre dernière forme de félin, plus 6 points d’énergie pour chaque seconde que vous n’avez pas passée sous forme d’ours, de félin ou d’ours redoutable, jusqu’à un bonus maximum de 60 points d’énergie.",
+    "Vous confère 80 % de chances de gagner 10 points de rage lorsque vous adoptez la forme d’ours ou d’ours redoutable. Lorsque vous adoptez la forme de félin, vous regagnez 80 % de l’énergie que vous possédiez lors de votre dernière forme de félin, plus 8 points d’énergie pour chaque seconde que vous n’avez pas passée sous forme d’ours, de félin ou d’ours redoutable, jusqu’à un bonus maximum de 80 points d’énergie.",
+    "Vous confère 100 % de chances de gagner 10 points de rage lorsque vous adoptez la forme d’ours ou d’ours redoutable. Lorsque vous adoptez la forme de félin, vous regagnez 100 % de l’énergie que vous possédiez lors de votre dernière forme de félin, plus 10 points d’énergie pour chaque seconde que vous n’avez pas passée sous forme d’ours, de félin ou d’ours redoutable, jusqu’à un bonus maximum de 100 points d’énergie."
    ],
-   "rank1": "Vous confère 20% de chances de gagner 10 points de rage lorsque vous prenez la forme d’ours ou d’ours redoutable. Lorsque vous prenez la forme de félin, vous récupérez 20% de l’énergie que vous aviez la dernière fois que vous étiez en forme de félin, plus 2 points d’énergie par seconde passée hors des formes d’ours, de félin et d’ours redoutable, jusqu’à un maximum de 20 points d’énergie.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 20 % de chances de gagner 10 points de rage lorsque vous adoptez la forme d’ours ou d’ours redoutable. Lorsque vous adoptez la forme de félin, vous regagnez 20 % de l’énergie que vous possédiez lors de votre dernière forme de félin, plus 2 points d’énergie pour chaque seconde que vous n’avez pas passée sous forme d’ours, de félin ou d’ours redoutable, jusqu’à un bonus maximum de 20 points d’énergie.",
+   "textSource": "client-forever"
   },
   "druide/restoration-2-1": {
    "name": "Naturaliste",
@@ -25177,8 +26299,15 @@ window.TALENT_FR={
    "classic": "Réduit le temps d'incantation de votre sort Toucher guérisseur de 0.1 sec.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Toucher guérisseur amélioré » (anciennement « Improved Healing Touch »).",
    "nameBranch": "forever",
-   "rank1": "Réduit de 0,1 sec le temps d’incantation de votre sort Toucher guérisseur et augmente de 1% tous les dégâts que vous infligez.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps d’incantation de votre sort Toucher guérisseur de 0.1 s et augmente tous les dégâts que vous infligez de 1 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le temps d’incantation de votre sort Toucher guérisseur de 0.1 s et augmente tous les dégâts que vous infligez de 1 %.",
+    "Réduit le temps d’incantation de votre sort Toucher guérisseur de 0.2 s et augmente tous les dégâts que vous infligez de 2 %.",
+    "Réduit le temps d’incantation de votre sort Toucher guérisseur de 0.3 s et augmente tous les dégâts que vous infligez de 3 %.",
+    "Réduit le temps d’incantation de votre sort Toucher guérisseur de 0.4 s et augmente tous les dégâts que vous infligez de 4 %.",
+    "Réduit le temps d’incantation de votre sort Toucher guérisseur de 0.5 s et augmente tous les dégâts que vous infligez de 5 %."
+   ]
   },
   "druide/restoration-2-2": {
    "name": "Discrétion",
@@ -25186,8 +26315,13 @@ window.TALENT_FR={
    "spell": 17118,
    "classic": "Diminue le niveau de menace généré par vos sorts de soins de 4%.",
    "nameBranch": "classic",
-   "rank1": "Réduit de 10% la menace générée par vos sorts de Nature et des Arcanes.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 10 % le niveau de menace généré par vos sorts de nature et des arcanes.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 10 % le niveau de menace généré par vos sorts de nature et des arcanes.",
+    "Réduit de 20 % le niveau de menace généré par vos sorts de nature et des arcanes.",
+    "Réduit de 30 % le niveau de menace généré par vos sorts de nature et des arcanes."
+   ]
   },
   "druide/restoration-2-3": {
    "name": "Changeforme naturel",
@@ -25195,8 +26329,13 @@ window.TALENT_FR={
    "spell": 16833,
    "classic": "Réduit le coût en mana de tous les changements de forme de 10%.",
    "rank1": "Réduit le coût en mana de tous les changements de forme de 10%.",
-   "textSource": "officiel",
-   "nameBranch": "tbc"
+   "textSource": "client-forever",
+   "nameBranch": "tbc",
+   "ranks": [
+    "Réduit le coût en mana de tous les changements de forme de 10%.",
+    "Réduit le coût en mana de tous les changements de forme de 20%.",
+    "Réduit le coût en mana de tous les changements de forme de 30%."
+   ]
   },
   "druide/restoration-3-2": {
    "name": "Renvoi",
@@ -25204,8 +26343,13 @@ window.TALENT_FR={
    "spell": 17106,
    "classic": "Vous confère 5% de votre vitesse de récupération du mana normale pendant l'incantation.",
    "rank1": "Vous confère 17% de votre vitesse de récupération du mana normale pendant l'incantation.",
-   "textSource": "officiel-chiffre",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Vous confère 17% de votre vitesse de récupération du mana normale pendant l'incantation.",
+    "Vous confère 33% de votre vitesse de récupération du mana normale pendant l'incantation.",
+    "Vous confère 50% de votre vitesse de récupération du mana normale pendant l'incantation."
+   ]
   },
   "druide/restoration-3-3": {
    "name": "Don de la Nature",
@@ -25213,8 +26357,15 @@ window.TALENT_FR={
    "spell": 17104,
    "classic": "Augmente les effets de tous les sorts de soins de 2%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 2% l’effet de tous vos sorts de soins.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 2 % l’effet de tous vos sorts de soins.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 2 % l’effet de tous vos sorts de soins.",
+    "Augmente de 4 % l’effet de tous vos sorts de soins.",
+    "Augmente de 6 % l’effet de tous vos sorts de soins.",
+    "Augmente de 8 % l’effet de tous vos sorts de soins.",
+    "Augmente de 10 % l’effet de tous vos sorts de soins."
+   ]
   },
   "druide/restoration-4-2": {
    "name": "Tranquillité de l'esprit",
@@ -25222,8 +26373,15 @@ window.TALENT_FR={
    "spell": 24968,
    "classic": "Réduit le coût en mana de vos sorts Toucher guérisseur et Tranquillité de 2%.",
    "rank1": "Réduit le coût en mana de vos sorts Toucher guérisseur et Tranquillité de 2%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Réduit le coût en mana de vos sorts Toucher guérisseur et Tranquillité de 2%.",
+    "Réduit le coût en mana de vos sorts Toucher guérisseur et Tranquillité de 4%.",
+    "Réduit le coût en mana de vos sorts Toucher guérisseur et Tranquillité de 6%.",
+    "Réduit le coût en mana de vos sorts Toucher guérisseur et Tranquillité de 8%.",
+    "Réduit le coût en mana de vos sorts Toucher guérisseur et Tranquillité de 10%."
+   ]
   },
   "druide/restoration-4-3": {
    "name": "Récupération améliorée",
@@ -25231,8 +26389,13 @@ window.TALENT_FR={
    "spell": 17111,
    "classic": "Augmente les effets de votre sort Récupération de 5%.",
    "rank1": "Augmente les effets de votre sort Récupération de 5%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente les effets de votre sort Récupération de 5%.",
+    "Augmente les effets de votre sort Récupération de 10%.",
+    "Augmente les effets de votre sort Récupération de 15%."
+   ]
   },
   "druide/restoration-4-4": {
    "name": "Prompte guérison",
@@ -25240,8 +26403,8 @@ window.TALENT_FR={
    "spell": 18562,
    "classic": "le montant de points de vie équivalent à 12 s de Récupération ou 18 s de Rétablissement.",
    "nameBranch": "classic",
-   "rank1": "Soigne instantanément une cible sous l’effet de Récupération ou de Rétablissement d’un montant égal à la durée totale de l’effet périodique de l’un de ces sorts.",
-   "textSource": "editorial"
+   "rank1": "Soigne instantanément une cible avec un effet actif de Récupération ou de Rétablissement pour lui rendre un montant de points de vie équivalent à la durée totale de l’effet périodique de l’un de ces sorts.",
+   "textSource": "client-forever"
   },
   "druide/restoration-5-1": {
    "name": "Rapidité de la nature",
@@ -25249,7 +26412,7 @@ window.TALENT_FR={
    "spell": 17116,
    "classic": "Lorsque cette technique est activée, votre prochain sort de Nature devient un sort instantané.",
    "rank1": "Lorsque cette technique est activée, votre prochain sort de Nature devient un sort instantané.",
-   "textSource": "officiel",
+   "textSource": "client-forever",
    "nameBranch": "classic"
   },
   "druide/restoration-5-4": {
@@ -25259,11 +26422,11 @@ window.TALENT_FR={
    "classic": "Diminue le niveau de menace généré par Tranquillité de 50%.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 50% la menace générée par Tranquillité et de 30% son temps de recharge.",
-    "Réduit de 100% la menace générée par Tranquillité et de 60% son temps de recharge."
+    "Diminue le niveau de menace généré par Tranquillité de 50 % et réduit le temps de recharge de 30 %.",
+    "Diminue le niveau de menace généré par Tranquillité de 100 % et réduit le temps de recharge de 60 %."
    ],
-   "rank1": "Réduit de 50% la menace générée par Tranquillité et de 30% son temps de recharge.",
-   "textSource": "editorial"
+   "rank1": "Diminue le niveau de menace généré par Tranquillité de 50 % et réduit le temps de recharge de 30 %.",
+   "textSource": "client-forever"
   },
   "druide/restoration-6-3": {
    "name": "Rétablissement amélioré",
@@ -25271,16 +26434,28 @@ window.TALENT_FR={
    "spell": 17074,
    "classic": "Augmente les chances d'obtenir un effet critique avec votre sort Rétablissement de 10%.",
    "rank1": "Augmente les chances d'obtenir un effet critique avec votre sort Rétablissement de 10%.",
-   "textSource": "officiel",
-   "nameBranch": "classic"
+   "textSource": "client-forever",
+   "nameBranch": "classic",
+   "ranks": [
+    "Augmente les chances d'obtenir un effet critique avec votre sort Rétablissement de 10%.",
+    "Augmente les chances d'obtenir un effet critique avec votre sort Rétablissement de 20%.",
+    "Augmente les chances d'obtenir un effet critique avec votre sort Rétablissement de 30%.",
+    "Augmente les chances d'obtenir un effet critique avec votre sort Rétablissement de 40%.",
+    "Augmente les chances d'obtenir un effet critique avec votre sort Rétablissement de 50%."
+   ]
   },
   "guerrier/fury-5-1": {
    "name": "Précision",
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 29590,
-   "rank1": "Augmente de 1% vos chances de toucher avec toutes vos attaques et techniques.",
-   "textSource": "editorial"
+   "rank1": "Améliore vos chances de toucher de 1 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Améliore vos chances de toucher de 1 %.",
+    "Améliore vos chances de toucher de 2 %.",
+    "Améliore vos chances de toucher de 3 %."
+   ]
   },
   "paladin/holy-3-3": {
    "name": "Puissance purifiante",
@@ -25288,19 +26463,23 @@ window.TALENT_FR={
    "nameBranch": "tbc",
    "spell": 31825,
    "ranks": [
-    "Réduit de 10% le coût en mana de vos sorts Purification et Purifier, et de 17% le temps de recharge de vos sorts Exorcisme et Courroux sacré.",
-    "Réduit de 20% le coût en mana de vos sorts Purification et Purifier, et de 33% le temps de recharge de vos sorts Exorcisme et Courroux sacré."
+    "Réduit de 10 % le coût en mana de vos sorts Épuration et Purification, et de 17 % le temps de recharge de vos sorts Exorcisme et Colère divine.",
+    "Réduit de 20 % le coût en mana de vos sorts Épuration et Purification, et de 33 % le temps de recharge de vos sorts Exorcisme et Colère divine."
    ],
-   "rank1": "Réduit de 10% le coût en mana de vos sorts Purification et Purifier, et de 17% le temps de recharge de vos sorts Exorcisme et Courroux sacré.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 10 % le coût en mana de vos sorts Épuration et Purification, et de 17 % le temps de recharge de vos sorts Exorcisme et Colère divine.",
+   "textSource": "client-forever"
   },
   "paladin/holy-4-1": {
    "name": "Imprégnation de lumière",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 53569,
-   "rank1": "Pendant 15 sec après un coup critique de vos sorts Horion sacré ou Éclair lumineux, le temps d’incantation de votre prochaine Lumière sacrée est réduit de 0,5 sec.",
-   "textSource": "editorial"
+   "rank1": "Les coups critiques de Horion sacré et Éclair lumineux réduisent de 0.5 s le temps d’incantation de votre prochain sort Lumière sacrée lancé dans les 15 sec.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Les coups critiques de Horion sacré et Éclair lumineux réduisent de 0.5 s le temps d’incantation de votre prochain sort Lumière sacrée lancé dans les 15 sec.",
+    "Les coups critiques de Horion sacré et Éclair lumineux réduisent de 1.0 s le temps d’incantation de votre prochain sort Lumière sacrée lancé dans les 15 sec."
+   ]
   },
   "paladin/protection-3-4": {
    "name": "Devoir sacré",
@@ -25308,43 +26487,63 @@ window.TALENT_FR={
    "nameBranch": "tbc",
    "spell": 31848,
    "ranks": [
-    "Augmente de 2% votre Endurance totale et réduit de 30 sec le temps de recharge de vos sorts Bouclier divin, Protection divine et Rempart du templier.",
-    "Augmente de 4% votre Endurance totale et réduit de 60 sec le temps de recharge de vos sorts Bouclier divin, Protection divine et Rempart du templier."
+    "Augmente votre total d’Endurance de 2 % et réduit le temps de recharge de vos techniques Bouclier divin, Protection divine et Rempart de templier de 30 s.",
+    "Augmente votre total d’Endurance de 4 % et réduit le temps de recharge de vos techniques Bouclier divin, Protection divine et Rempart de templier de 60 s."
    ],
-   "rank1": "Augmente de 2% votre Endurance totale et réduit de 30 sec le temps de recharge de vos sorts Bouclier divin, Protection divine et Rempart du templier.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre total d’Endurance de 2 % et réduit le temps de recharge de vos techniques Bouclier divin, Protection divine et Rempart de templier de 30 s.",
+   "textSource": "client-forever"
   },
   "paladin/retribution-3-2": {
    "name": "Jugement sanctifié",
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 31876,
-   "rank1": "Confère à votre technique Jugement 33% de chances de vous rendre 20% du coût en mana du sceau jugé.",
-   "textSource": "editorial"
+   "rank1": "Confère à votre technique Jugement 33 % de chances de récupérer 20 % du coût en mana du sceau jugé.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Confère à votre technique Jugement 33 % de chances de récupérer 20 % du coût en mana du sceau jugé.",
+    "Confère à votre technique Jugement 66 % de chances de récupérer 40 % du coût en mana du sceau jugé.",
+    "Confère à votre technique Jugement 100 % de chances de récupérer 60 % du coût en mana du sceau jugé."
+   ]
   },
   "paladin/retribution-4-4": {
    "name": "Croisade",
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 31866,
-   "rank1": "Augmente de 1% tous les dégâts que vous infligez, et de 1% supplémentaire contre les démons et les morts-vivants.",
-   "textSource": "editorial"
+   "rank1": "Augmente tous les dégâts infligés de 1 %, et de 1 % supplémentaires contre les cibles démoniaques et mortes-vivantes.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente tous les dégâts infligés de 1 %, et de 1 % supplémentaires contre les cibles démoniaques et mortes-vivantes.",
+    "Augmente tous les dégâts infligés de 2 %, et de 2 % supplémentaires contre les cibles démoniaques et mortes-vivantes."
+   ]
   },
   "chasseur/beast-mastery-2-1": {
    "name": "Feu focalisé",
    "nameSource": "officiel",
    "nameBranch": "forever",
    "spell": 1223755,
-   "rank1": "Augmente de 1 % tous les dégâts que vous et votre familier infligez tant que ce dernier est actif.",
-   "textSource": "client-forever"
+   "rank1": "Augmente de 1 % tous les dégâts que vous et votre familier infligez tant que ce dernier est actif.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 1 % tous les dégâts que vous et votre familier infligez tant que ce dernier est actif.",
+    "Augmente de 2 % tous les dégâts que vous et votre familier infligez tant que ce dernier est actif."
+   ]
   },
   "chasseur/marksmanship-2-3": {
    "name": "Visée minutieuse",
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 34482,
-   "rank1": "Augmente votre puissance d’attaque de 20% de votre Intelligence.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre puissance d’attaque d’un montant égal à 20 % de votre Intelligence.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente votre puissance d’attaque d’un montant égal à 20 % de votre Intelligence.",
+    "Augmente votre puissance d’attaque d’un montant égal à 40 % de votre Intelligence.",
+    "Augmente votre puissance d’attaque d’un montant égal à 60 % de votre Intelligence.",
+    "Augmente votre puissance d’attaque d’un montant égal à 80 % de votre Intelligence.",
+    "Augmente votre puissance d’attaque d’un montant égal à 100 % de votre Intelligence."
+   ]
   },
   "chasseur/marksmanship-3-1": {
    "name": "Tueur rapide",
@@ -25352,19 +26551,23 @@ window.TALENT_FR={
    "nameBranch": "tbc",
    "spell": 34948,
    "ranks": [
-    "Réduit de 1 min le temps de recharge de votre technique Tir rapide. De plus, lorsque vous tuez un ennemi non trivial, ou qu’il meurt en étant affecté par votre Morsure de serpent, vous gagnez Tueur rapide, qui augmente de 10% les dégâts de votre prochain Tir dans les 20 sec.",
-    "Réduit de 2 min le temps de recharge de votre technique Tir rapide. De plus, lorsque vous tuez un ennemi non trivial, ou qu’il meurt en étant affecté par votre Morsure de serpent, vous gagnez Tueur rapide, qui augmente de 20% les dégâts de votre prochain Tir dans les 20 sec."
+    "Réduit de 1 min. le temps de recharge de votre technique Tir rapide. De plus, lorsque vous éliminez un adversaire non négligeable ou qu’il meurt alors qu’il subit Morsure de serpent, vous obtenez l’effet Tueur rapide, qui augmente de 10 % les dégâts de votre prochaine technique de tir lancée dans les 20 sec.",
+    "Réduit de 2 min. le temps de recharge de votre technique Tir rapide. De plus, lorsque vous éliminez un adversaire non négligeable ou qu’il meurt alors qu’il subit Morsure de serpent, vous obtenez l’effet Tueur rapide, qui augmente de 20 % les dégâts de votre prochaine technique de tir lancée dans les 20 sec."
    ],
-   "rank1": "Réduit de 1 min le temps de recharge de votre technique Tir rapide. De plus, lorsque vous tuez un ennemi non trivial, ou qu’il meurt en étant affecté par votre Morsure de serpent, vous gagnez Tueur rapide, qui augmente de 10% les dégâts de votre prochain Tir dans les 20 sec.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 1 min. le temps de recharge de votre technique Tir rapide. De plus, lorsque vous éliminez un adversaire non négligeable ou qu’il meurt alors qu’il subit Morsure de serpent, vous obtenez l’effet Tueur rapide, qui augmente de 10 % les dégâts de votre prochaine technique de tir lancée dans les 20 sec.",
+   "textSource": "client-forever"
   },
   "chasseur/marksmanship-5-1": {
    "name": "Recouvrement rapide",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 53228,
-   "rank1": "Toucher une cible avec votre technique Morsure de serpent vous accorde 25%, et consommer Tueur rapide vous accorde 50%, de votre régénération de mana pendant l’incantation durant 15 sec.",
-   "textSource": "editorial"
+   "rank1": "Toucher une cible avec votre technique Morsure de serpent vous confère 25 % et consommer Tueur rapide vous confère 50 % de régénération de points de mana lors de la prochaine incantation de 15 sec.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Toucher une cible avec votre technique Morsure de serpent vous confère 25 % et consommer Tueur rapide vous confère 50 % de régénération de points de mana lors de la prochaine incantation de 15 sec.",
+    "Toucher une cible avec votre technique Morsure de serpent vous confère 50 % et consommer Tueur rapide vous confère 100 % de régénération de points de mana lors de la prochaine incantation de 15 sec."
+   ]
   },
   "chasseur/survival-1-2": {
    "name": "Pistage amélioré",
@@ -25372,22 +26575,26 @@ window.TALENT_FR={
    "nameBranch": "wotlk",
    "spell": 52783,
    "ranks": [
-    "Lorsque vous pistez les bêtes, les démons, les draconiens, les élémentaires, les géants, les humanoïdes ou les morts-vivants, tous les dégâts que vous infligez au type de créature pisté sont augmentés de 1%.",
-    "Lorsque vous pistez les bêtes, les démons, les draconiens, les élémentaires, les géants, les humanoïdes ou les morts-vivants, tous les dégâts que vous infligez au type de créature pisté sont augmentés de 2%.",
-    "Lorsque vous pistez les bêtes, les démons, les draconiens, les élémentaires, les géants, les humanoïdes ou les morts-vivants, tous les dégâts que vous infligez au type de créature pisté sont augmentés de 3%.",
-    "Lorsque vous pistez les bêtes, les démons, les draconiens, les élémentaires, les géants, les humanoïdes ou les morts-vivants, tous les dégâts que vous infligez au type de créature pisté sont augmentés de 4%.",
-    "Lorsque vous pistez les bêtes, les démons, les draconiens, les élémentaires, les géants, les humanoïdes ou les morts-vivants, tous les dégâts que vous infligez au type de créature pisté sont augmentés de 5%."
+    "Lorsque vous remontez la piste de bêtes, de démons, de draconiens, d’élémentaires, de géants, d’humanoïdes ou de morts-vivants, tous les dégâts que vous infligez au type de créature pisté augmentent de 1 %.",
+    "Lorsque vous remontez la piste de bêtes, de démons, de draconiens, d’élémentaires, de géants, d’humanoïdes ou de morts-vivants, tous les dégâts que vous infligez au type de créature pisté augmentent de 2 %.",
+    "Lorsque vous remontez la piste de bêtes, de démons, de draconiens, d’élémentaires, de géants, d’humanoïdes ou de morts-vivants, tous les dégâts que vous infligez au type de créature pisté augmentent de 3 %.",
+    "Lorsque vous remontez la piste de bêtes, de démons, de draconiens, d’élémentaires, de géants, d’humanoïdes ou de morts-vivants, tous les dégâts que vous infligez au type de créature pisté augmentent de 4 %.",
+    "Lorsque vous remontez la piste de bêtes, de démons, de draconiens, d’élémentaires, de géants, d’humanoïdes ou de morts-vivants, tous les dégâts que vous infligez au type de créature pisté augmentent de 5 %."
    ],
-   "rank1": "Lorsque vous pistez les bêtes, les démons, les draconiens, les élémentaires, les géants, les humanoïdes ou les morts-vivants, tous les dégâts que vous infligez au type de créature pisté sont augmentés de 1%.",
-   "textSource": "editorial"
+   "rank1": "Lorsque vous remontez la piste de bêtes, de démons, de draconiens, d’élémentaires, de géants, d’humanoïdes ou de morts-vivants, tous les dégâts que vous infligez au type de créature pisté augmentent de 1 %.",
+   "textSource": "client-forever"
   },
   "chasseur/survival-4-1": {
    "name": "Tactique de survie",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 19286,
-   "rank1": "Augmente de 5% vos chances de toucher avec vos techniques Piège et Faire le mort.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 5 % vos chances de toucher avec vos techniques Piège et Feindre la mort.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 5 % vos chances de toucher avec vos techniques Piège et Feindre la mort.",
+    "Augmente de 10 % vos chances de toucher avec vos techniques Piège et Feindre la mort."
+   ]
   },
   "chasseur/survival-5-1": {
    "name": "Ingéniosité",
@@ -25395,10 +26602,10 @@ window.TALENT_FR={
    "nameBranch": "forever",
    "spell": 440529,
    "ranks": [
-    "Réduit de 30 % le coût en mana de vos techniques de Piège et techniques en mêlée. De plus, vos coups critiques ont 30 % de chances de permettre à 50 % de votre régénération de mana de se poursuivre lors des incantations pendant 30 sec.",
-    "Réduit de 60 % le coût en mana de vos techniques de Piège et techniques en mêlée. De plus, vos coups critiques ont 60 % de chances de permettre à 50 % de votre régénération de mana de se poursuivre lors des incantations pendant 30 sec."
+    "Réduit de 30 % le coût en mana de vos techniques de Piège et techniques en mêlée. De plus, vos coups critiques ont 30 % de chances de permettre à 50 % de votre régénération de mana de se poursuivre lors des incantations pendant 30 sec.",
+    "Réduit de 60 % le coût en mana de vos techniques de Piège et techniques en mêlée. De plus, vos coups critiques ont 60 % de chances de permettre à 50 % de votre régénération de mana de se poursuivre lors des incantations pendant 30 sec."
    ],
-   "rank1": "Réduit de 30 % le coût en mana de vos techniques de Piège et techniques en mêlée. De plus, vos coups critiques ont 30 % de chances de permettre à 50 % de votre régénération de mana de se poursuivre lors des incantations pendant 30 sec.",
+   "rank1": "Réduit de 30 % le coût en mana de vos techniques de Piège et techniques en mêlée. De plus, vos coups critiques ont 30 % de chances de permettre à 50 % de votre régénération de mana de se poursuivre lors des incantations pendant 30 sec.",
    "textSource": "client-forever",
    "note": "Nous portions « Ressource », nom officiel de ce talent en Burning Crusade. Le client de Forever emploie « Ingéniosité » : un nom officiel d’une extension antérieure ne dit rien du nom retenu par Forever."
   },
@@ -25416,38 +26623,49 @@ window.TALENT_FR={
    "nameBranch": "wotlk",
    "spell": 13960,
    "ranks": [
-    "Confère un bénéfice à vos attaques d’arme de mêlée, selon l’arme employée.\n\nHache et épée : vos attaques de mêlée réussies ont 1% de chances de déclencher une attaque supplémentaire sur la cible.\n\nDague et arme de pugilat : augmente de 1% vos chances de coup critique.\n\nMasse : vos attaques ignorent 3% de l’armure de votre cible.",
-    "Confère un bénéfice à vos attaques d’arme de mêlée, selon l’arme employée.\n\nHache et épée : vos attaques de mêlée réussies ont 2% de chances de déclencher une attaque supplémentaire sur la cible.\n\nDague et arme de pugilat : augmente de 2% vos chances de coup critique.\n\nMasse : vos attaques ignorent 6% de l’armure de votre cible.",
-    "Confère un bénéfice à vos attaques d’arme de mêlée, selon l’arme employée.\n\nHache et épée : vos attaques de mêlée réussies ont 3% de chances de déclencher une attaque supplémentaire sur la cible.\n\nDague et arme de pugilat : augmente de 3% vos chances de coup critique.\n\nMasse : vos attaques ignorent 9% de l’armure de votre cible.",
-    "Confère un bénéfice à vos attaques d’arme de mêlée, selon l’arme employée.\n\nHache et épée : vos attaques de mêlée réussies ont 4% de chances de déclencher une attaque supplémentaire sur la cible.\n\nDague et arme de pugilat : augmente de 4% vos chances de coup critique.\n\nMasse : vos attaques ignorent 12% de l’armure de votre cible.",
-    "Confère un bénéfice à vos attaques d’arme de mêlée, selon l’arme employée.\n\nHache et épée : vos attaques de mêlée réussies ont 5% de chances de déclencher une attaque supplémentaire sur la cible.\n\nDague et arme de pugilat : augmente de 5% vos chances de coup critique.\n\nMasse : vos attaques ignorent 15% de l’armure de votre cible."
+    "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/épée : vos attaques en mêlée réussies ont 1 % de chances de déclencher une attaque supplémentaire contre la cible. Dague/poing : vos chances de coup critique augmentent de 1 %. Masse : vos attaques ignorent 3 % de l’armure de la cible.",
+    "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/épée : vos attaques en mêlée réussies ont 2 % de chances de déclencher une attaque supplémentaire contre la cible. Dague/poing : vos chances de coup critique augmentent de 2 %. Masse : vos attaques ignorent 6 % de l’armure de la cible.",
+    "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/épée : vos attaques en mêlée réussies ont 3 % de chances de déclencher une attaque supplémentaire contre la cible. Dague/poing : vos chances de coup critique augmentent de 3 %. Masse : vos attaques ignorent 9 % de l’armure de la cible.",
+    "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/épée : vos attaques en mêlée réussies ont 4 % de chances de déclencher une attaque supplémentaire contre la cible. Dague/poing : vos chances de coup critique augmentent de 4 %. Masse : vos attaques ignorent 12 % de l’armure de la cible.",
+    "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/épée : vos attaques en mêlée réussies ont 5 % de chances de déclencher une attaque supplémentaire contre la cible. Dague/poing : vos chances de coup critique augmentent de 5 %. Masse : vos attaques ignorent 15 % de l’armure de la cible."
    ],
-   "rank1": "Confère un bénéfice à vos attaques d’arme de mêlée, selon l’arme employée.\n\nHache et épée : vos attaques de mêlée réussies ont 1% de chances de déclencher une attaque supplémentaire sur la cible.\n\nDague et arme de pugilat : augmente de 1% vos chances de coup critique.\n\nMasse : vos attaques ignorent 3% de l’armure de votre cible.",
-   "textSource": "editorial"
+   "rank1": "Confère un avantage à vos attaques avec les armes de mêlée selon l’arme utilisée. Hache/épée : vos attaques en mêlée réussies ont 1 % de chances de déclencher une attaque supplémentaire contre la cible. Dague/poing : vos chances de coup critique augmentent de 1 %. Masse : vos attaques ignorent 3 % de l’armure de la cible.",
+   "textSource": "client-forever"
   },
   "voleur/subtlety-2-3": {
    "name": "Coup tordu",
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 14076,
-   "rank1": "Réduit de 25% le coût en énergie de vos techniques Assommer et Cécité.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 25 % le coût en énergie de vos techniques Assommer et Cécité.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 25 % le coût en énergie de vos techniques Assommer et Cécité.",
+    "Réduit de 50 % le coût en énergie de vos techniques Assommer et Cécité."
+   ]
   },
   "pretre/discipline-1-3": {
    "name": "Disciplines jumelles",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 47586,
-   "rank1": "Augmente de 1% les dégâts et les soins de vos sorts à lancement instantané.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 1 % les dégâts et les soins de vos sorts instantanés.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 1 % les dégâts et les soins de vos sorts instantanés.",
+    "Augmente de 2 % les dégâts et les soins de vos sorts instantanés.",
+    "Augmente de 3 % les dégâts et les soins de vos sorts instantanés.",
+    "Augmente de 4 % les dégâts et les soins de vos sorts instantanés.",
+    "Augmente de 5 % les dégâts et les soins de vos sorts instantanés."
+   ]
   },
   "pretre/discipline-4-3": {
    "name": "Protection de l’âme",
    "nameSource": "officiel",
    "nameBranch": "forever",
    "spell": 402000,
-   "rank1": "Réduit de 4 sec le temps de recharge de votre sort Mot de pouvoir : Bouclier et de 15% son coût en mana.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps de recharge de votre sort Mot de pouvoir : Bouclier de 4 s et réduit son coût en mana de 15 %.",
+   "textSource": "client-forever"
   },
   "pretre/discipline-5-2": {
    "name": "Pénitence",
@@ -25462,40 +26680,62 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "forever",
    "spell": 425280,
-   "rank1": "Vos soins de Soins rapides, Soins de liaison, Soins inférieurs, Soins, Soins supérieurs et Pénitence gagnent 2% de chances de coup critique lorsqu’ils sont lancés sur une cible affectée par Âme affaiblie, et réduisent de 1 sec la durée restante de cette Âme affaiblie.",
-   "textSource": "editorial"
+   "rank1": "Vos soins avec Soins rapides, Soins de lien, Soins inférieurs, Soins, Soins supérieurs et Pénitence voient leurs chances de coup critique augmenter de 2 % sur une cible avec Âme affaiblie. De plus, la durée restante d’Âme affaiblie est réduite de 1 s.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vos soins avec Soins rapides, Soins de lien, Soins inférieurs, Soins, Soins supérieurs et Pénitence voient leurs chances de coup critique augmenter de 2 % sur une cible avec Âme affaiblie. De plus, la durée restante d’Âme affaiblie est réduite de 1 s.",
+    "Vos soins avec Soins rapides, Soins de lien, Soins inférieurs, Soins, Soins supérieurs et Pénitence voient leurs chances de coup critique augmenter de 4 % sur une cible avec Âme affaiblie. De plus, la durée restante d’Âme affaiblie est réduite de 2 s.",
+    "Vos soins avec Soins rapides, Soins de lien, Soins inférieurs, Soins, Soins supérieurs et Pénitence voient leurs chances de coup critique augmenter de 6 % sur une cible avec Âme affaiblie. De plus, la durée restante d’Âme affaiblie est réduite de 3 s.",
+    "Vos soins avec Soins rapides, Soins de lien, Soins inférieurs, Soins, Soins supérieurs et Pénitence voient leurs chances de coup critique augmenter de 8 % sur une cible avec Âme affaiblie. De plus, la durée restante d’Âme affaiblie est réduite de 4 s.",
+    "Vos soins avec Soins rapides, Soins de lien, Soins inférieurs, Soins, Soins supérieurs et Pénitence voient leurs chances de coup critique augmenter de 10 % sur une cible avec Âme affaiblie. De plus, la durée restante d’Âme affaiblie est réduite de 5 s."
+   ]
   },
   "pretre/discipline-6-3": {
    "name": "Égide divine",
    "nameSource": "officiel",
    "nameBranch": "forever",
    "spell": 431622,
-   "rank1": "Vos soins critiques créent sur la cible un bouclier protecteur absorbant 5% du montant soigné. Dure 12 sec.",
-   "textSource": "editorial"
+   "rank1": "Vos soins critiques créent un bouclier protecteur sur la cible qui absorbe un montant de dégâts égal à 5 % des points de vie rendus. Dure 12 sec.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vos soins critiques créent un bouclier protecteur sur la cible qui absorbe un montant de dégâts égal à 5 % des points de vie rendus. Dure 12 sec.",
+    "Vos soins critiques créent un bouclier protecteur sur la cible qui absorbe un montant de dégâts égal à 10 % des points de vie rendus. Dure 12 sec.",
+    "Vos soins critiques créent un bouclier protecteur sur la cible qui absorbe un montant de dégâts égal à 15 % des points de vie rendus. Dure 12 sec."
+   ]
   },
   "chaman/elemental-combat-5-2": {
    "name": "Surcharge de foudre",
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 30675,
-   "rank1": "Donne à vos sorts Eclair et Chaîne d'éclairs 3% de chances de lancer un second sort semblable sur la même cible sans coût supplémentaire. Ce sort n'inflige que la moitié des dégâts et ne génère pas de menace.",
-   "textSource": "officiel-chiffre"
+   "rank1": "Confère à vos sorts Éclair et Chaîne d’éclairs 3 % de chances de lancer un second sort similaire sur la même cible sans coût supplémentaire, infligeant la moitié des dégâts et ne générant aucun niveau de menace.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Confère à vos sorts Éclair et Chaîne d’éclairs 3 % de chances de lancer un second sort similaire sur la même cible sans coût supplémentaire, infligeant la moitié des dégâts et ne générant aucun niveau de menace.",
+    "Confère à vos sorts Éclair et Chaîne d’éclairs 7 % de chances de lancer un second sort similaire sur la même cible sans coût supplémentaire, infligeant la moitié des dégâts et ne générant aucun niveau de menace.",
+    "Confère à vos sorts Éclair et Chaîne d’éclairs 10 % de chances de lancer un second sort similaire sur la même cible sans coût supplémentaire, infligeant la moitié des dégâts et ne générant aucun niveau de menace."
+   ]
   },
   "chaman/enhancement-2-2": {
    "name": "Dextérité mentale",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 51883,
-   "rank1": "Augmente votre puissance d’attaque d’un montant égal à 33% de votre Intelligence.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre puissance d’attaque d’un montant égal à 33 % de votre intelligence.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente votre puissance d’attaque d’un montant égal à 33 % de votre intelligence.",
+    "Augmente votre puissance d’attaque d’un montant égal à 67 % de votre intelligence.",
+    "Augmente votre puissance d’attaque d’un montant égal à 100 % de votre intelligence."
+   ]
   },
   "chaman/enhancement-3-3": {
    "name": "Focalisation chamanique",
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 43338,
-   "rank1": "Réduit de 45% le coût en mana de vos sorts Horion et Bouclier de foudre.",
-   "textSource": "editorial"
+   "rank1": "Réduit le coût en mana de vos sorts Horion et Bouclier de foudre de 45 %.",
+   "textSource": "client-forever"
   },
   "chaman/enhancement-5-2": {
    "name": "Rapidité mentale",
@@ -25503,27 +26743,38 @@ window.TALENT_FR={
    "nameBranch": "tbc",
    "spell": 30812,
    "ranks": [
-    "Augmente vos dégâts et vos soins par sort d’un montant pouvant atteindre 15% de votre Intelligence.",
-    "Augmente vos dégâts et vos soins par sort de 30% de votre Intelligence."
+    "Augmente les dégâts et les soins de vos sorts d’un montant pouvant atteindre 15 % de votre intelligence.",
+    "Augmente les dégâts et les soins de vos sorts d’un montant pouvant atteindre 30 % de votre intelligence."
    ],
-   "rank1": "Augmente vos dégâts et vos soins par sort d’un montant pouvant atteindre 15% de votre Intelligence.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts et les soins de vos sorts d’un montant pouvant atteindre 15 % de votre intelligence.",
+   "textSource": "client-forever"
   },
   "chaman/enhancement-5-3": {
    "name": "Frappe-tempête amélioré",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 51521,
-   "rank1": "Lorsque vous utilisez Frappe-tempête, vous avez 50% de chances de bénéficier de 50% de régénération de mana pendant l’incantation durant 15 sec, et le temps de recharge de Frappe-tempête a 50% de chances d’être réinitialisé à chaque esquive ou parade.",
-   "textSource": "editorial"
+   "rank1": "Lorsque vous utilisez Frappe-tempête, vous avez 50 % de chances d’augmenter votre régénération de mana de 50 % pendant 15 sec lorsque vous lancez des sorts, et le temps de recharge de Frappe-tempête a 50 % de chances d’être réinitialisé chaque fois que vous esquivez ou parez.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Lorsque vous utilisez Frappe-tempête, vous avez 50 % de chances d’augmenter votre régénération de mana de 50 % pendant 15 sec lorsque vous lancez des sorts, et le temps de recharge de Frappe-tempête a 50 % de chances d’être réinitialisé chaque fois que vous esquivez ou parez.",
+    "Lorsque vous utilisez Frappe-tempête, vous avez 100 % de chances d’augmenter votre régénération de mana de 50 % pendant 15 sec lorsque vous lancez des sorts, et le temps de recharge de Frappe-tempête a 100 % de chances d’être réinitialisé chaque fois que vous esquivez ou parez."
+   ]
   },
   "chaman/enhancement-6-3": {
    "name": "Arme du Maelström",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 51528,
-   "rank1": "Lorsque vous infligez des dégâts avec une attaque de mêlée, vous avez une chance de réduire de 4% le temps d’incantation et le coût en mana de votre prochain sort Éclair. Cumulable jusqu’à 5 fois. Dure 30 sec.",
-   "textSource": "editorial"
+   "rank1": "Quand vous infligez des dégâts avec une attaque en mêlée, vous avez une chance de réduire de 4 % le temps d’incantation et le coût en mana de votre prochain sort Éclair. Cumulable jusqu’à 5 fois. Dure 30 sec.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Quand vous infligez des dégâts avec une attaque en mêlée, vous avez une chance de réduire de 4 % le temps d’incantation et le coût en mana de votre prochain sort Éclair. Cumulable jusqu’à 5 fois. Dure 30 sec.",
+    "Quand vous infligez des dégâts avec une attaque en mêlée, vous avez une chance de réduire de 8 % le temps d’incantation et le coût en mana de votre prochain sort Éclair. Cumulable jusqu’à 5 fois. Dure 30 sec.",
+    "Quand vous infligez des dégâts avec une attaque en mêlée, vous avez une chance de réduire de 12 % le temps d’incantation et le coût en mana de votre prochain sort Éclair. Cumulable jusqu’à 5 fois. Dure 30 sec.",
+    "Quand vous infligez des dégâts avec une attaque en mêlée, vous avez une chance de réduire de 16 % le temps d’incantation et le coût en mana de votre prochain sort Éclair. Cumulable jusqu’à 5 fois. Dure 30 sec.",
+    "Quand vous infligez des dégâts avec une attaque en mêlée, vous avez une chance de réduire de 20 % le temps d’incantation et le coût en mana de votre prochain sort Éclair. Cumulable jusqu’à 5 fois. Dure 30 sec."
+   ]
   },
   "chaman/restoration-7-2": {
    "name": "Remous",
@@ -25538,16 +26789,16 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 44404,
-   "rank1": "Confère à votre sort Décharge des arcanes 40% de chances, et à vos sorts Boule de feu, Éclair de givre et Trait de givre-feu 20% de chances, de réduire de 50% la durée de canalisation de vos prochains Projectiles des arcanes, d’en réduire le coût en mana de 100% et d’en lancer un projectile toutes les 0,5 sec.",
-   "textSource": "editorial"
+   "rank1": "Confère à votre sort Déflagration des arcanes 40 % de chances, et à vos sorts Boule de feu, Éclair de givre et Éclair de givrefeu 20 % de chances de réduire de 50 % la durée de canalisation de votre prochain sort Projectiles des arcanes, de réduire son coût en mana de 100 % et de faire tirer des projectiles toutes les 0.5 s.",
+   "textSource": "client-forever"
   },
   "mage/fire-4-3": {
    "name": "Bonne série",
    "nameSource": "officiel",
    "nameBranch": "forever",
    "spell": 400624,
-   "rank1": "Vos coups critiques non périodiques de Boule de feu, Trait de givre-feu, Trait de feu et Brûlure vous confèrent Chaleur continue pendant 15 sec. Chaleur continue réduit de 25% le temps d’incantation d’Explosion pyrotechnique, cumulable jusqu’à 3 fois.",
-   "textSource": "editorial"
+   "rank1": "Vos coups critiques non périodiques obtenus avec Boule de feu, Éclair de givrefeu, Trait de feu et Brûlure vous confèrent Bonne série pendant 15 sec. Bonne série réduit de 25 % le temps d’incantation d'Explosion pyrotechnique et est cumulable jusqu’à 3 fois.",
+   "textSource": "client-forever"
   },
   "mage/frost-5-3": {
    "name": "Doigts de givre",
@@ -25566,40 +26817,65 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "forever",
    "spell": 1225177,
-   "rank1": "Augmente de 1% tous les dégâts périodiques infligés par vos sorts de démoniste.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts périodiques de vos sorts de démoniste de 1 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente les dégâts périodiques de vos sorts de démoniste de 1 %.",
+    "Augmente les dégâts périodiques de vos sorts de démoniste de 2 %.",
+    "Augmente les dégâts périodiques de vos sorts de démoniste de 3 %.",
+    "Augmente les dégâts périodiques de vos sorts de démoniste de 4 %.",
+    "Augmente les dégâts périodiques de vos sorts de démoniste de 5 %."
+   ]
   },
   "demoniste/affliction-3-4": {
    "name": "Pandémie",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 58435,
-   "rank1": "Augmente de 33% le bonus de dégâts critiques de vos sorts Corruption, Plaie d’agonie, Plaie funeste, Siphon d’âme, Drain de vie, Siphon de vie et Calvaire.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 33 % les points de dégâts supplémentaires infligés par les coups critiques de vos sorts Corruption, Plaie d’agonie, Plaie funeste, Drain d’âme, Drain de vie, Siphon de vie et Calvaire.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 33 % les points de dégâts supplémentaires infligés par les coups critiques de vos sorts Corruption, Plaie d’agonie, Plaie funeste, Drain d’âme, Drain de vie, Siphon de vie et Calvaire.",
+    "Augmente de 67 % les points de dégâts supplémentaires infligés par les coups critiques de vos sorts Corruption, Plaie d’agonie, Plaie funeste, Drain d’âme, Drain de vie, Siphon de vie et Calvaire.",
+    "Augmente de 100 % les points de dégâts supplémentaires infligés par les coups critiques de vos sorts Corruption, Plaie d’agonie, Plaie funeste, Drain d’âme, Drain de vie, Siphon de vie et Calvaire."
+   ]
   },
   "demoniste/affliction-5-3": {
    "name": "Siphon d'âme",
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 17804,
-   "rank1": "Augmente de 4% les dégâts infligés ou la vie drainée par vos sorts Drain de vie, Siphon d’âme et Calvaire, par effet d’Affliction actif sur la cible, jusqu’à un maximum de 12%.",
-   "textSource": "editorial"
+   "rank1": "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 4% per each of your other Affliction effects active on the target, up to a maximum increase of 12%.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 4% per each of your other Affliction effects active on the target, up to a maximum increase of 12%.",
+    "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 8% per each of your other Affliction effects active on the target, up to a maximum increase of 24%.",
+    "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 12% per each of your other Affliction effects active on the target, up to a maximum increase of 36%."
+   ]
   },
   "demoniste/demonology-2-1": {
    "name": "Égide démoniaque",
    "nameSource": "officiel",
    "nameBranch": "forever",
    "spell": 1235316,
-   "rank1": "Augmente de 15% l’efficacité de vos sorts Peau de démon et Armure de démon.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 15 % l’efficacité de vos sorts Peau de démon et Armure démoniaque.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 15 % l’efficacité de vos sorts Peau de démon et Armure démoniaque.",
+    "Augmente de 30 % l’efficacité de vos sorts Peau de démon et Armure démoniaque."
+   ]
   },
   "demoniste/demonology-4-1": {
    "name": "Décimation",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 63156,
-   "rank1": "Réduit de 45% le temps de recharge de votre sort Feu de l’âme. Lorsque vous lancez Trait de l’ombre ou Douleur brûlante sur un ennemi sous 35% de points de vie, il inflige 3% de dégâts supplémentaires et, pendant les 10 sec qui suivent, le temps d’incantation de votre sort Feu de l’âme est réduit de 20% et ne coûte aucun Fragment d’âme.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps de recharge de votre sort Feu de l’âme de 45 %. Lorsque vous lancez Trait de l’ombre ou Douleur brûlante sur un personnage adverse avec moins de 35 % de ses points de vie, ces sorts infligent 3 % de dégâts supplémentaires. De plus, pendant 10 sec, votre sort Feu de l’âme voit son temps d’incantation réduit de 20 %, et il ne coûte aucun éclat d’âme.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le temps de recharge de votre sort Feu de l’âme de 45 %. Lorsque vous lancez Trait de l’ombre ou Douleur brûlante sur un personnage adverse avec moins de 35 % de ses points de vie, ces sorts infligent 3 % de dégâts supplémentaires. De plus, pendant 10 sec, votre sort Feu de l’âme voit son temps d’incantation réduit de 20 %, et il ne coûte aucun éclat d’âme.",
+    "Réduit le temps de recharge de votre sort Feu de l’âme de 90 %. Lorsque vous lancez Trait de l’ombre ou Douleur brûlante sur un personnage adverse avec moins de 35 % de ses points de vie, ces sorts infligent 6 % de dégâts supplémentaires. De plus, pendant 10 sec, votre sort Feu de l’âme voit son temps d’incantation réduit de 40 %, et il ne coûte aucun éclat d’âme."
+   ]
   },
   "demoniste/demonology-5-1": {
    "name": "Chasseur corrompu amélioré",
@@ -25608,116 +26884,172 @@ window.TALENT_FR={
    "spell": 54037,
    "note": "Nom repris d’un talent homonyme du client français (Wrath of the Lich King), trouvé hors de l’arbre où Forever le place.",
    "ranks": [
-    "Augmente de 10% la réduction de puissance d’attaque du Sang vicié de votre chasseur corrompu, les soins de son Dévorer la magie et le niveau de détection de sa Paranoïa, et réduit de 2 sec le temps de recharge de son Interruption.",
-    "Augmente de 20% la réduction de puissance d’attaque du Sang vicié de votre chasseur corrompu, les soins de son Dévorer la magie et le niveau de détection de sa Paranoïa, et réduit de 4 sec le temps de recharge de son Interruption.",
-    "Augmente de 30% la réduction de puissance d’attaque du Sang vicié de votre chasseur corrompu, les soins de son Dévorer la magie et le niveau de détection de sa Paranoïa, et réduit de 6 sec le temps de recharge de son Interruption."
+    "Augmente de 10 % la réduction de puissance d’attaque infligée par la technique Corruption sanguine de votre chasseur corrompu, les soins de sa technique Dévorer la magie, et le niveau de détection de sa technique Paranoïa. De plus, réduit le temps de recharge de sa technique Verrou magique de 2 s.",
+    "Augmente de 20 % la réduction de puissance d’attaque infligée par la technique Corruption sanguine de votre chasseur corrompu, les soins de sa technique Dévorer la magie, et le niveau de détection de sa technique Paranoïa. De plus, réduit le temps de recharge de sa technique Verrou magique de 4 s.",
+    "Augmente de 30 % la réduction de puissance d’attaque infligée par la technique Corruption sanguine de votre chasseur corrompu, les soins de sa technique Dévorer la magie, et le niveau de détection de sa technique Paranoïa. De plus, réduit le temps de recharge de sa technique Verrou magique de 6 s."
    ],
-   "rank1": "Augmente de 10% la réduction de puissance d’attaque du Sang vicié de votre chasseur corrompu, les soins de son Dévorer la magie et le niveau de détection de sa Paranoïa, et réduit de 2 sec le temps de recharge de son Interruption.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 10 % la réduction de puissance d’attaque infligée par la technique Corruption sanguine de votre chasseur corrompu, les soins de sa technique Dévorer la magie, et le niveau de détection de sa technique Paranoïa. De plus, réduit le temps de recharge de sa technique Verrou magique de 2 s.",
+   "textSource": "client-forever"
   },
   "demoniste/demonology-5-3": {
    "name": "Connaissance démoniaque",
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 35691,
-   "rank1": "Augmente vos dégâts par sort et ceux de votre démon d’un montant pouvant atteindre 33% de votre niveau tant qu’un démon invoqué est actif.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts de vos sorts et ceux des sorts de votre familier démon d’un montant pouvant atteindre 33 % de votre niveau tant que vous avez un familier démon invoqué actif.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente les dégâts de vos sorts et ceux des sorts de votre familier démon d’un montant pouvant atteindre 33 % de votre niveau tant que vous avez un familier démon invoqué actif.",
+    "Augmente les dégâts de vos sorts et ceux des sorts de votre familier démon d’un montant pouvant atteindre 67 % de votre niveau tant que vous avez un familier démon invoqué actif.",
+    "Augmente les dégâts de vos sorts et ceux des sorts de votre familier démon d’un montant pouvant atteindre 100 % de votre niveau tant que vous avez un familier démon invoqué actif."
+   ]
   },
   "demoniste/demonology-7-2": {
    "name": "Pacte démoniaque",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 47236,
-   "rank1": "Votre effet Sacrifice démoniaque n’est plus annulé par l’invocation d’un démon différent. Réinvoquer le démon sacrifié l’annule toujours.",
-   "textSource": "editorial"
+   "rank1": "Votre effet de Sacrifice démoniaque ne s’annule plus lorsque vous invoquez un autre familier démon. L’effet sera toujours annulé si vous réinvoquez le familier sacrifié.",
+   "textSource": "client-forever"
   },
   "demoniste/destruction-2-1": {
    "name": "Peau de la fournaise",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 63349,
-   "rank1": "Réduit tous les dégâts subis de 2%.",
-   "textSource": "officiel"
+   "rank1": "Réduit tous les dégâts subis de 2 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit tous les dégâts subis de 2 %.",
+    "Réduit tous les dégâts subis de 4 %.",
+    "Réduit tous les dégâts subis de 6 %.",
+    "Réduit tous les dégâts subis de 8 %.",
+    "Réduit tous les dégâts subis de 10 %."
+   ]
   },
   "demoniste/destruction-5-3": {
    "name": "Feu et soufre",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 47266,
-   "rank1": "Augmente de 8% les chances d’infliger un coup critique avec votre sort Conflagration.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 8 % les chances de coup critique de votre sort Conflagration.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 8 % les chances de coup critique de votre sort Conflagration.",
+    "Augmente de 17 % les chances de coup critique de votre sort Conflagration.",
+    "Augmente de 25 % les chances de coup critique de votre sort Conflagration."
+   ]
   },
   "demoniste/destruction-6-3": {
    "name": "Ombre et flammes",
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 30288,
-   "rank1": "Toucher un ennemi avec Conflagration augmente de 2% tous les dégâts d’Ombre que vous infligez pendant 20 sec, et le toucher avec Brûlure de l’ombre augmente de 2% tous les dégâts de Feu que vous infligez pendant 20 sec. De plus, Conflagration a 20% de chances de ne pas consommer Immolation, et Brûlure de l’ombre a 20% de chances de vous rendre instantanément un Fragment d’âme.",
-   "textSource": "editorial"
+   "rank1": "Le fait de toucher un personnage adverse avec Conflagration augmente tous les dégâts d’ombre de 2 % pendant 20 sec. Le fait de toucher un personnage adverse avec Brûlure de l’ombre augmente tous les dégâts de feu de 2 % pendant 20 sec. De plus, Conflagration a 20 % de chances de ne pas consommer Immolation, et Brûlure de l’ombre a 20 % de chances de rendre instantanément un éclat d’âme.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Le fait de toucher un personnage adverse avec Conflagration augmente tous les dégâts d’ombre de 2 % pendant 20 sec. Le fait de toucher un personnage adverse avec Brûlure de l’ombre augmente tous les dégâts de feu de 2 % pendant 20 sec. De plus, Conflagration a 20 % de chances de ne pas consommer Immolation, et Brûlure de l’ombre a 20 % de chances de rendre instantanément un éclat d’âme.",
+    "Le fait de toucher un personnage adverse avec Conflagration augmente tous les dégâts d’ombre de 4 % pendant 20 sec. Le fait de toucher un personnage adverse avec Brûlure de l’ombre augmente tous les dégâts de feu de 4 % pendant 20 sec. De plus, Conflagration a 40 % de chances de ne pas consommer Immolation, et Brûlure de l’ombre a 40 % de chances de rendre instantanément un éclat d’âme.",
+    "Le fait de toucher un personnage adverse avec Conflagration augmente tous les dégâts d’ombre de 6 % pendant 20 sec. Le fait de toucher un personnage adverse avec Brûlure de l’ombre augmente tous les dégâts de feu de 6 % pendant 20 sec. De plus, Conflagration a 60 % de chances de ne pas consommer Immolation, et Brûlure de l’ombre a 60 % de chances de rendre instantanément un éclat d’âme.",
+    "Le fait de toucher un personnage adverse avec Conflagration augmente tous les dégâts d’ombre de 8 % pendant 20 sec. Le fait de toucher un personnage adverse avec Brûlure de l’ombre augmente tous les dégâts de feu de 8 % pendant 20 sec. De plus, Conflagration a 80 % de chances de ne pas consommer Immolation, et Brûlure de l’ombre a 80 % de chances de rendre instantanément un éclat d’âme.",
+    "Le fait de toucher un personnage adverse avec Conflagration augmente tous les dégâts d’ombre de 10 % pendant 20 sec. Le fait de toucher un personnage adverse avec Brûlure de l’ombre augmente tous les dégâts de feu de 10 % pendant 20 sec. De plus, Conflagration a 100 % de chances de ne pas consommer Immolation, et Brûlure de l’ombre a 100 % de chances de rendre instantanément un éclat d’âme."
+   ]
   },
   "druide/balance-1-3": {
    "name": "Genèse",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 57810,
-   "rank1": "Augmente de 1% les dégâts et les soins périodiques infligés par vos sorts et vos techniques.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 1 % les dégâts et les soins périodiques produits par vos sorts et techniques.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 1 % les dégâts et les soins périodiques produits par vos sorts et techniques.",
+    "Augmente de 2 % les dégâts et les soins périodiques produits par vos sorts et techniques.",
+    "Augmente de 3 % les dégâts et les soins périodiques produits par vos sorts et techniques.",
+    "Augmente de 4 % les dégâts et les soins périodiques produits par vos sorts et techniques.",
+    "Augmente de 5 % les dégâts et les soins périodiques produits par vos sorts et techniques."
+   ]
   },
   "druide/balance-2-3": {
    "name": "Majesté de la nature",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 35363,
-   "rank1": "Augmente de 2% vos chances d’infliger un coup critique avec vos sorts et vos attaques de mêlée.",
-   "textSource": "editorial"
+   "rank1": "Augmente les chances de coup critique de vos sorts et attaques de mêlée de 2 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente les chances de coup critique de vos sorts et attaques de mêlée de 2 %.",
+    "Augmente les chances de coup critique de vos sorts et attaques de mêlée de 4 %."
+   ]
   },
   "druide/balance-3-3": {
    "name": "Splendeur de la nature",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 57865,
-   "rank1": "Augmente de 3 sec la durée de vos sorts Éclat lunaire et Récupération, de 6 sec celle de votre sort Rétablissement et de 2 sec celle de votre sort Essaim d’insectes.",
-   "textSource": "editorial"
+   "rank1": "Augmente la durée de vos sorts Éclat lunaire et Récupération de 3 s, celle de Rétablissement de 6 s et celle d’Essaim d’insectes de 2 s.",
+   "textSource": "client-forever"
   },
   "druide/balance-5-3": {
    "name": "Éclipse",
    "nameSource": "officiel",
    "nameBranch": "forever",
    "spell": 408248,
-   "rank1": "Votre sort Colère réduit le temps d’incantation de vos 2 prochains sorts Feu stellaire de 0,17 sec. Cumule jusqu’à 4 charges. Dure 15 sec.",
-   "textSource": "editorial"
+   "rank1": "Votre sort Colère réduit le temps d’incantation de vos 2 prochains sorts Feu stellaire de 0.17 s. Vous pouvez cumuler jusqu’à 4 charges. Dure 15 sec.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Votre sort Colère réduit le temps d’incantation de vos 2 prochains sorts Feu stellaire de 0.17 s. Vous pouvez cumuler jusqu’à 4 charges. Dure 15 sec.",
+    "Votre sort Colère réduit le temps d’incantation de vos 2 prochains sorts Feu stellaire de 0.33 s. Vous pouvez cumuler jusqu’à 4 charges. Dure 15 sec.",
+    "Votre sort Colère réduit le temps d’incantation de vos 2 prochains sorts Feu stellaire de 0.50 s. Vous pouvez cumuler jusqu’à 4 charges. Dure 15 sec."
+   ]
   },
   "druide/feral-combat-4-2": {
    "name": "Mutilation",
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 33917,
-   "rank1": "Mutile la cible et lui inflige 100% des dégâts normaux, plus 26 points de dégâts.",
-   "textSource": "editorial"
+   "rank1": "Mutile la cible et lui inflige 100 % des dégâts normaux plus 26.",
+   "textSource": "client-forever"
   },
   "druide/feral-combat-5-1": {
    "name": "Instincts prédateurs",
    "nameSource": "officiel",
    "nameBranch": "forever",
    "spell": 1223242,
-   "rank1": "Augmente de 10% le bonus de dégâts critiques de vos techniques de mêlée.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 10 % le bonus de dégâts des coups critiques de vos techniques de mêlée.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 10 % le bonus de dégâts des coups critiques de vos techniques de mêlée.",
+    "Augmente de 20 % le bonus de dégâts des coups critiques de vos techniques de mêlée."
+   ]
   },
   "druide/feral-combat-5-4": {
    "name": "Roi de la jungle",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 48492,
-   "rank1": "Fureur du tigre vous rend désormais instantanément 20 points d’énergie.",
-   "textSource": "editorial"
+   "rank1": "Fureur du tigre vous confère désormais instantanément 20 points d’énergie.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Fureur du tigre vous confère désormais instantanément 20 points d’énergie.",
+    "Fureur du tigre vous confère désormais instantanément 40 points d’énergie.",
+    "Fureur du tigre vous confère désormais instantanément 60 points d’énergie."
+   ]
   },
   "druide/feral-combat-6-1": {
    "name": "Réaction naturelle",
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 57878,
-   "rank1": "Augmente de 1% vos chances d’esquiver et vous confère 20% de chances de gagner 5 points de rage chaque fois que vous esquivez.",
-   "textSource": "editorial"
+   "rank1": "Augmente vos chances d’esquiver de 1 % et vous confère 20 % de chances d’obtenir 5 points de rage chaque fois que vous esquivez.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente vos chances d’esquiver de 1 % et vous confère 20 % de chances d’obtenir 5 points de rage chaque fois que vous esquivez.",
+    "Augmente vos chances d’esquiver de 2 % et vous confère 40 % de chances d’obtenir 5 points de rage chaque fois que vous esquivez.",
+    "Augmente vos chances d’esquiver de 3 % et vous confère 60 % de chances d’obtenir 5 points de rage chaque fois que vous esquivez.",
+    "Augmente vos chances d’esquiver de 4 % et vous confère 80 % de chances d’obtenir 5 points de rage chaque fois que vous esquivez.",
+    "Augmente vos chances d’esquiver de 5 % et vous confère 100 % de chances d’obtenir 5 points de rage chaque fois que vous esquivez."
+   ]
   },
   "druide/feral-combat-6-3": {
    "name": "Pourfendre et déchirer",
@@ -25725,14 +27057,14 @@ window.TALENT_FR={
    "nameBranch": "wotlk",
    "spell": 48432,
    "ranks": [
-    "Augmente de 2% les dégâts infligés par vos techniques de mêlée aux cibles qui saignent.",
-    "Augmente de 4% les dégâts infligés par vos techniques de mêlée aux cibles qui saignent.",
-    "Augmente de 6% les dégâts infligés par vos techniques de mêlée aux cibles qui saignent.",
-    "Augmente de 8% les dégâts infligés par vos techniques de mêlée aux cibles qui saignent.",
-    "Augmente de 10% les dégâts infligés par vos techniques de mêlée aux cibles qui saignent."
+    "Augmente les dégâts infligés par vos techniques de mêlée aux cibles qui saignent de 2 %.",
+    "Augmente les dégâts infligés par vos techniques de mêlée aux cibles qui saignent de 4 %.",
+    "Augmente les dégâts infligés par vos techniques de mêlée aux cibles qui saignent de 6 %.",
+    "Augmente les dégâts infligés par vos techniques de mêlée aux cibles qui saignent de 8 %.",
+    "Augmente les dégâts infligés par vos techniques de mêlée aux cibles qui saignent de 10 %."
    ],
-   "rank1": "Augmente de 2% les dégâts infligés par vos techniques de mêlée aux cibles qui saignent.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts infligés par vos techniques de mêlée aux cibles qui saignent de 2 %.",
+   "textSource": "client-forever"
   },
   "druide/feral-combat-7-2": {
    "name": "Berserk",
@@ -25747,16 +27079,21 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 51179,
-   "rank1": "Réduit de 0,5 sec le temps de recharge global de vos sorts Récupération, Prompte guérison et Croissance sauvage.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps de recharge global de 0.5 s pour vos sorts Récupération, Prompte guérison et Croissance sauvage.",
+   "textSource": "client-forever"
   },
   "druide/restoration-5-2": {
    "name": "Esprit vif",
    "nameSource": "officiel",
    "nameBranch": "tbc",
    "spell": 34151,
-   "rank1": "Augmente de 5% votre Esprit.",
-   "textSource": "editorial"
+   "rank1": "Augmente votre Esprit de 5 %.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente votre Esprit de 5 %.",
+    "Augmente votre Esprit de 10 %.",
+    "Augmente votre Esprit de 15 %."
+   ]
   },
   "druide/restoration-7-2": {
    "name": "Croissance sauvage",
@@ -25769,16 +27106,21 @@ window.TALENT_FR={
   "guerrier/fury-3-4": {
    "name": "Rage infinie",
    "nameSource": "officiel",
-   "rank1": "Augmente votre rage maximale de 10.",
-   "textSource": "editorial",
+   "rank1": "Augmente votre maximum de points de rage de 10.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
-   "spell": 1310236
+   "spell": 1310236,
+   "ranks": [
+    "Augmente votre maximum de points de rage de 10.",
+    "Augmente votre maximum de points de rage de 20.",
+    "Augmente votre maximum de points de rage de 30."
+   ]
   },
   "guerrier/fury-4-2": {
    "name": "Coups déchaînés",
    "nameSource": "officiel",
-   "rank1": "Votre Tourbillon frappe également avec votre arme de main gauche et le coût en rage de votre technique Enchaînement est réduit de 2.",
-   "textSource": "editorial",
+   "rank1": "Permet également à votre technique Tourbillon de frapper avec votre arme tenue en main gauche et réduit le coût en rage de votre technique Enchaînement de 2.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1310315
   },
@@ -25786,55 +27128,74 @@ window.TALENT_FR={
    "name": "Maîtrise de la défense",
    "nameSource": "officiel",
    "ranks": [
-    "Vous donne 50% de chances de générer 5 points de rage lorsque vous esquivez ou parez avec un bouclier équipé.",
-    "Vous donne 100% de chances de générer 5 points de rage lorsque vous esquivez ou parez avec un bouclier équipé."
+    "Vous confère 50 % de chances de générer 5 points de rage lorsque vous esquivez ou parez avec un bouclier équipé.",
+    "Vous confère 100 % de chances de générer 5 points de rage lorsque vous esquivez ou parez avec un bouclier équipé."
    ],
-   "rank1": "Vous donne 50% de chances de générer 5 points de rage lorsque vous esquivez ou parez avec un bouclier équipé.",
-   "textSource": "editorial",
+   "rank1": "Vous confère 50 % de chances de générer 5 points de rage lorsque vous esquivez ou parez avec un bouclier équipé.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1310316
   },
   "guerrier/protection-4-3": {
    "name": "Avant-garde",
    "nameSource": "adapte",
-   "rank1": "Votre technique Charge devient utilisable en posture défensive.",
-   "textSource": "editorial"
+   "rank1": "Votre technique Charge est désormais utilisable en posture défensive.",
+   "textSource": "client-forever",
+   "spell": 1310317
   },
   "paladin/holy-1-1": {
    "name": "Frappe sacrée améliorée",
    "nameSource": "adapte",
-   "rank1": "Réduit de 1 sec le temps de recharge de votre technique Frappe sacrée.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 1 s le temps de recharge de votre technique Frappe sacrée.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit de 1 s le temps de recharge de votre technique Frappe sacrée.",
+    "Réduit de 2 s le temps de recharge de votre technique Frappe sacrée."
+   ],
+   "spell": 1310902
   },
   "paladin/holy-3-1": {
    "name": "Voix de la vérité",
    "nameSource": "officiel",
-   "rank1": "Vous rend insensible aux effets de silence et d’interruption. Dure 6 sec.",
-   "textSource": "editorial",
+   "rank1": "Vous rend insensible aux effets de silence et d’interruption pendant 6 sec.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1310897
   },
   "paladin/holy-3-2": {
    "name": "Révérence",
    "nameSource": "adapte",
-   "rank1": "Permet à 10% de votre régénération de mana de se poursuivre pendant l’incantation.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 10 % de votre vitesse normale de récupération du mana pendant l’incantation.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vous confère 10 % de votre vitesse normale de récupération du mana pendant l’incantation.",
+    "Vous confère 20 % de votre vitesse normale de récupération du mana pendant l’incantation.",
+    "Vous confère 30 % de votre vitesse normale de récupération du mana pendant l’incantation."
+   ],
+   "spell": 1310899
   },
   "paladin/holy-5-1": {
    "name": "Précision divine",
    "nameSource": "adapte",
-   "rank1": "Augmente de 6% vos chances de toucher avec vos sorts du Sacré.",
-   "textSource": "editorial"
+   "rank1": "Améliore de 6 % vos chances de toucher avec les sorts du sacré.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Améliore de 6 % vos chances de toucher avec les sorts du sacré.",
+    "Améliore de 12 % vos chances de toucher avec les sorts du sacré.",
+    "Améliore de 18 % vos chances de toucher avec les sorts du sacré."
+   ],
+   "spell": 1310904
   },
   "paladin/holy-5-3": {
    "name": "Terre consacrée",
    "nameSource": "adapte",
    "ranks": [
-    "Confère à vos sorts du Sacré 5% de dégâts supplémentaires contre les 4 premiers ennemis qui pénètrent dans votre Consécration.",
-    "Confère à vos sorts du Sacré 10% de dégâts supplémentaires contre les 4 premiers ennemis qui pénètrent dans votre Consécration."
+    "Augmente les dégâts de vos sorts du sacré de 5 % contre les 4 premiers adversaires qui entrent dans la zone d’effet de votre Consécration.",
+    "Augmente les dégâts de vos sorts du sacré de 10 % contre les 4 premiers adversaires qui entrent dans la zone d’effet de votre Consécration."
    ],
-   "rank1": "Confère à vos sorts du Sacré 5% de dégâts supplémentaires contre les 4 premiers ennemis qui pénètrent dans votre Consécration.",
-   "textSource": "editorial"
+   "rank1": "Augmente les dégâts de vos sorts du sacré de 5 % contre les 4 premiers adversaires qui entrent dans la zone d’effet de votre Consécration.",
+   "textSource": "client-forever",
+   "spell": 1310905
   },
   "paladin/holy-7-2": {
    "name": "Vigile de Lumière",
@@ -25847,20 +27208,22 @@ window.TALENT_FR={
   "paladin/protection-3-1": {
    "name": "Sceau de fureur amélioré",
    "nameSource": "adapte",
-   "rank1": "Lorsque le bouclier de votre Sceau de fureur est entièrement absorbé, vous récupérez 38 points de mana, un montant augmenté de 15% par niveau que l’attaquant a de plus que vous, jusqu’à 45%.",
-   "textSource": "editorial"
+   "rank1": "Une fois que le bouclier de Sceau de fureur est entièrement absorbé, rend 0 points de mana, augmentés de 15 % par niveau vous séparant du personnage attaquant, jusqu’à 45 %.",
+   "textSource": "client-forever",
+   "spell": 1314103
   },
   "paladin/protection-4-1": {
    "name": "Jugement rapide",
    "nameSource": "adapte",
-   "rank1": "Met fin au temps de recharge restant de votre technique Jugement et réduit de 100% le coût en mana de votre prochain Jugement.",
-   "textSource": "editorial"
+   "rank1": "Réinitialise le temps de recharge de Jugement et réduit le coût en mana de votre prochaine utilisation de cette technique de 100 %.",
+   "textSource": "client-forever",
+   "spell": 1310994
   },
   "paladin/protection-5-2": {
    "name": "Rempart de templier",
    "nameSource": "officiel",
-   "rank1": "Une fois activée, cette technique vous accorde un bouclier d’absorption égal à 100% de votre maximum de points de vie pendant 8 sec. Applique Tolérance pendant 1 min. Ne peut pas être lancée tant que Tolérance est active.",
-   "textSource": "editorial",
+   "rank1": "Lorsqu’elle est active, cette technique vous confère un bouclier qui absorbe des dégâts équivalant à 100 % de votre maximum de points de vie pendant 8 sec. Applique Longanimité pendant 1 min. Elle ne peut pas être lancée tant que Longanimité est active.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1311015
   },
@@ -25868,30 +27231,32 @@ window.TALENT_FR={
    "name": "Credo de fer",
    "nameSource": "adapte",
    "ranks": [
-    "Augmente de 5% la menace générée par votre technique Frappe sacrée. Tant que Fureur vertueuse est active, Frappe sacrée réduit également de 2% les dégâts que vous subissez pendant 6 sec.",
-    "Augmente de 10% la menace générée par votre technique Frappe sacrée. Tant que Fureur vertueuse est active, Frappe sacrée réduit également de 4% les dégâts que vous subissez pendant 6 sec.",
-    "Augmente de 15% la menace générée par votre technique Frappe sacrée. Tant que Fureur vertueuse est active, Frappe sacrée réduit également de 6% les dégâts que vous subissez pendant 6 sec.",
-    "Augmente de 20% la menace générée par votre technique Frappe sacrée. Tant que Fureur vertueuse est active, Frappe sacrée réduit également de 8% les dégâts que vous subissez pendant 6 sec.",
-    "Augmente de 25% la menace générée par votre technique Frappe sacrée. Tant que Fureur vertueuse est active, Frappe sacrée réduit également de 10% les dégâts que vous subissez pendant 6 sec."
+    "Augmente le niveau de menace généré par votre technique Frappe sacrée de 5 %. Tant que Fureur vertueuse est active, Frappe sacrée réduit également les dégâts que vous subissez de 2 % pendant 6 sec.",
+    "Augmente le niveau de menace généré par votre technique Frappe sacrée de 10 %. Tant que Fureur vertueuse est active, Frappe sacrée réduit également les dégâts que vous subissez de 4 % pendant 6 sec.",
+    "Augmente le niveau de menace généré par votre technique Frappe sacrée de 15 %. Tant que Fureur vertueuse est active, Frappe sacrée réduit également les dégâts que vous subissez de 6 % pendant 6 sec.",
+    "Augmente le niveau de menace généré par votre technique Frappe sacrée de 20 %. Tant que Fureur vertueuse est active, Frappe sacrée réduit également les dégâts que vous subissez de 8 % pendant 6 sec.",
+    "Augmente le niveau de menace généré par votre technique Frappe sacrée de 25 %. Tant que Fureur vertueuse est active, Frappe sacrée réduit également les dégâts que vous subissez de 10 % pendant 6 sec."
    ],
-   "rank1": "Augmente de 5% la menace générée par votre technique Frappe sacrée. Tant que Fureur vertueuse est active, Frappe sacrée réduit également de 2% les dégâts que vous subissez pendant 6 sec.",
-   "textSource": "editorial"
+   "rank1": "Augmente le niveau de menace généré par votre technique Frappe sacrée de 5 %. Tant que Fureur vertueuse est active, Frappe sacrée réduit également les dégâts que vous subissez de 2 % pendant 6 sec.",
+   "textSource": "client-forever",
+   "spell": 1311034
   },
   "paladin/retribution-2-2": {
    "name": "Conduit sacré",
    "nameSource": "adapte",
    "ranks": [
-    "Réduit de 20% le coût en mana de vos sorts Consécration, Courroux sacré, Exorcisme et Marteau du courroux.",
-    "Réduit de 40% le coût en mana de vos sorts Consécration, Courroux sacré, Exorcisme et Marteau du courroux."
+    "Réduit de 20 % le coût en mana de vos sorts Consécration, Colère divine, Exorcisme et Marteau de courroux.",
+    "Réduit de 40 % le coût en mana de vos sorts Consécration, Colère divine, Exorcisme et Marteau de courroux."
    ],
-   "rank1": "Réduit de 20% le coût en mana de vos sorts Consécration, Courroux sacré, Exorcisme et Marteau du courroux.",
-   "textSource": "editorial"
+   "rank1": "Réduit de 20 % le coût en mana de vos sorts Consécration, Colère divine, Exorcisme et Marteau de courroux.",
+   "textSource": "client-forever",
+   "spell": 1237268
   },
   "paladin/retribution-4-3": {
    "name": "Sentence sacrée",
    "nameSource": "officiel",
-   "rank1": "Augmente de 10% les points de dégâts de votre technique Frappe sacrée et lui fait renouveler tous les effets de Jugement présents sur la cible.",
-   "textSource": "editorial",
+   "rank1": "Augmente les dégâts infligés par votre technique Frappe sacrée de 10 % et réinitialise tous les effets de Jugement qui affectent la cible.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1311087
   },
@@ -25899,26 +27264,31 @@ window.TALENT_FR={
    "name": "Champion de la lumière",
    "nameSource": "officiel",
    "ranks": [
-    "Augmente vos dégâts et vos soins par sort d’un montant pouvant atteindre 33% de votre Intelligence.",
-    "Augmente vos dégâts et vos soins par sort d’un montant pouvant atteindre 66% de votre Intelligence.",
-    "Augmente vos dégâts et vos soins par sort d’un montant pouvant atteindre 100% de votre Intelligence."
+    "Augmente les dégâts et les soins de vos sorts d’un montant pouvant atteindre 33 % de votre intelligence.",
+    "Augmente les dégâts et les soins de vos sorts d’un montant pouvant atteindre 66 % de votre intelligence.",
+    "Augmente les dégâts et les soins de vos sorts d’un montant pouvant atteindre 100 % de votre intelligence."
    ],
-   "rank1": "Augmente vos dégâts et vos soins par sort d’un montant pouvant atteindre 33% de votre Intelligence.",
-   "textSource": "editorial",
+   "rank1": "Augmente les dégâts et les soins de vos sorts d’un montant pouvant atteindre 33 % de votre intelligence.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1311084
   },
   "paladin/retribution-6-3": {
    "name": "Instrument de la loi",
    "nameSource": "adapte",
-   "rank1": "Réduit de 0,5 sec le temps d’incantation de votre Marteau du courroux et réduit de 10% toute la menace que vous générez tant que Fureur vertueuse est inactive.",
-   "textSource": "editorial"
+   "rank1": "Réduit le temps d’incantation de Marteau de courroux de 0.5 s et réduit le niveau de menace que vous générez de 10 % tant que Fureur vertueuse est inactive.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le temps d’incantation de Marteau de courroux de 0.5 s et réduit le niveau de menace que vous générez de 10 % tant que Fureur vertueuse est inactive.",
+    "Réduit le temps d’incantation de Marteau de courroux de 1.0 s et réduit le niveau de menace que vous générez de 20 % tant que Fureur vertueuse est inactive."
+   ],
+   "spell": 1311085
   },
   "paladin/retribution-7-2": {
    "name": "Effet de lumière",
    "nameSource": "officiel",
-   "rank1": "Lorsque vous remplacez votre Sceau d’autorité, Sceau de piété, Sceau de fureur ou Sceau de justice par un autre Sceau, vous gagnez un Écho. Votre prochaine attaque de mêlée applique les effets du Sceau remplacé et consomme l’Écho.",
-   "textSource": "editorial",
+   "rank1": "Quand vous remplacez votre Sceau d’autorité, de piété, de fureur ou de justice par un autre, vous obtenez un Écho. Votre prochaine attaque en mêlée applique les effets du sceau remplacé et consomme l’Écho.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1310735
   },
@@ -25934,7 +27304,7 @@ window.TALENT_FR={
   "chasseur/marksmanship-3-4": {
    "name": "Loup solitaire",
    "nameSource": "officiel",
-   "rank1": "Vous infligez 20 % de dégâts supplémentaires avec toutes vos attaques tant que vous n’avez pas de familier actif.",
+   "rank1": "Vous infligez 20 % de dégâts supplémentaires avec toutes vos attaques tant que vous n’avez pas de familier actif.",
    "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 415370
@@ -25942,31 +27312,46 @@ window.TALENT_FR={
   "chasseur/survival-4-2": {
    "name": "Tranchant de prédateur",
    "nameSource": "officiel",
-   "rank1": "Augmente de 6 % les dégâts des coups critiques de vos techniques de mêlée et de 10 % les dégâts de votre arme en main gauche.",
+   "rank1": "Augmente de 6 % les dégâts des coups critiques de vos techniques de mêlée et de 10 % les dégâts de votre arme en main gauche.",
    "textSource": "client-forever",
    "nameBranch": "forever",
-   "spell": 1310627
+   "spell": 1310627,
+   "ranks": [
+    "Augmente de 6 % les dégâts des coups critiques de vos techniques de mêlée et de 10 % les dégâts de votre arme en main gauche.",
+    "Augmente de 12 % les dégâts des coups critiques de vos techniques de mêlée et de 20 % les dégâts de votre arme en main gauche.",
+    "Augmente de 18 % les dégâts des coups critiques de vos techniques de mêlée et de 30 % les dégâts de votre arme en main gauche.",
+    "Augmente de 24 % les dégâts des coups critiques de vos techniques de mêlée et de 40 % les dégâts de votre arme en main gauche.",
+    "Augmente de 30 % les dégâts des coups critiques de vos techniques de mêlée et de 50 % les dégâts de votre arme en main gauche."
+   ]
   },
   "chasseur/survival-5-2": {
    "name": "Exposition de proie",
    "nameSource": "officiel",
-   "rank1": "Vos attaques contre les cibles portant la Marque du chasseur ont 5 % de chances d’activer votre Morsure de mangouste pendant 5 sec.",
+   "rank1": "Vos attaques contre les cibles portant la Marque du chasseur ont 5 % de chances d’activer votre Morsure de mangouste pendant 5 sec.",
    "textSource": "client-forever",
    "nameBranch": "forever",
-   "spell": 1310532
+   "spell": 1310532,
+   "ranks": [
+    "Vos attaques contre les cibles portant la Marque du chasseur ont 5 % de chances d’activer votre Morsure de mangouste pendant 5 sec.",
+    "Vos attaques contre les cibles portant la Marque du chasseur ont 10 % de chances d’activer votre Morsure de mangouste pendant 5 sec."
+   ]
   },
   "chasseur/survival-5-3": {
    "name": "Discipline de survivaliste",
    "nameSource": "officiel",
-   "rank1": "Réduit de 20 % le temps de recharge de vos techniques Piège et Dissuasion.",
+   "rank1": "Réduit de 20 % le temps de recharge de vos techniques Piège et Dissuasion.",
    "textSource": "client-forever",
    "nameBranch": "forever",
-   "spell": 1310496
+   "spell": 1310496,
+   "ranks": [
+    "Réduit de 20 % le temps de recharge de vos techniques Piège et Dissuasion.",
+    "Réduit de 40 % le temps de recharge de vos techniques Piège et Dissuasion."
+   ]
   },
   "chasseur/survival-5-4": {
    "name": "Coup de trotteur",
    "nameSource": "officiel",
-   "rank1": "Un coup puissant qui inflige 100 % des dégâts de l’arme de mêlée.",
+   "rank1": "Un coup puissant qui inflige 100 % des dégâts de l’arme de mêlée.",
    "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1317257
@@ -25974,7 +27359,7 @@ window.TALENT_FR={
   "chasseur/survival-7-2": {
    "name": "Frappes lacérantes",
    "nameSource": "officiel",
-   "rank1": "Votre Morsure de mangouste fait également saigner la cible, ce qui lui inflige 40 % des dégâts de la morsure en 21 sec.",
+   "rank1": "Votre Morsure de mangouste fait également saigner la cible, ce qui lui inflige 40 % des dégâts de la morsure en 21 sec.",
    "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1310533
@@ -25982,8 +27367,8 @@ window.TALENT_FR={
   "voleur/assassination-7-2": {
    "name": "Toxine",
    "nameSource": "officiel",
-   "rank1": "Coup de grâce qui augmente de 30% les dégâts de vos poisons et de 10% vos chances de les appliquer. Sa durée augmente avec les points de combo :\n 1 point : 9 secondes\n 2 points : 12 secondes\n 3 points : 15 secondes\n 4 points : 18 secondes\n 5 points : 21 secondes",
-   "textSource": "editorial",
+   "rank1": "Coup de grâce qui augmente les dégâts infligés par vos poisons de 30 % et vos chances d’appliquer des poisons de 10 %. La durée dépend du nombre de points de combo : 1 point : 9 s 2 points : 12 s 3 points : 15 s 4 points : 18 s 5 points : 21 s",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1310703
   },
@@ -25991,7 +27376,8 @@ window.TALENT_FR={
    "name": "Exécution parfaite",
    "nameSource": "adapte",
    "rank1": "Réduit de 10 le coût en énergie de votre technique Éviscération.",
-   "textSource": "editorial"
+   "textSource": "client-forever",
+   "spell": 1310711
   },
   "voleur/subtlety-3-3": {
    "name": "Distraction améliorée",
@@ -26008,38 +27394,66 @@ window.TALENT_FR={
   "voleur/subtlety-6-1": {
    "name": "Quiétus",
    "nameSource": "officiel",
-   "rank1": "Vos techniques Attaque pernicieuse, Frappe fantomatique et Hémorragie infligent 2% de dégâts supplémentaires aux cibles dont les points de vie sont inférieurs à 35%.",
-   "textSource": "editorial",
+   "rank1": "Vos techniques Attaque pernicieuse, Frappe fantomatique et Hémorragie entraînent 2 % de dégâts supplémentaires contre les cibles à moins de 35 % de points de vie.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
-   "spell": 1310728
+   "spell": 1310728,
+   "ranks": [
+    "Vos techniques Attaque pernicieuse, Frappe fantomatique et Hémorragie entraînent 2 % de dégâts supplémentaires contre les cibles à moins de 35 % de points de vie.",
+    "Vos techniques Attaque pernicieuse, Frappe fantomatique et Hémorragie entraînent 4 % de dégâts supplémentaires contre les cibles à moins de 35 % de points de vie.",
+    "Vos techniques Attaque pernicieuse, Frappe fantomatique et Hémorragie entraînent 6 % de dégâts supplémentaires contre les cibles à moins de 35 % de points de vie.",
+    "Vos techniques Attaque pernicieuse, Frappe fantomatique et Hémorragie entraînent 8 % de dégâts supplémentaires contre les cibles à moins de 35 % de points de vie.",
+    "Vos techniques Attaque pernicieuse, Frappe fantomatique et Hémorragie entraînent 10 % de dégâts supplémentaires contre les cibles à moins de 35 % de points de vie."
+   ]
   },
   "voleur/subtlety-6-3": {
    "name": "Coupe-gorge",
    "nameSource": "officiel",
-   "rank1": "Votre Attaque sournoise a 3% de chances de rendre votre prochaine Embuscade utilisable sans camouflage dans les 10 sec.",
-   "textSource": "editorial",
+   "rank1": "Votre technique Attaque sournoise a 3 % de chances de vous permettre d’effectuer votre prochaine Embuscade en moins de 10 sec sans être en Camouflage.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
-   "spell": 462708
+   "spell": 462708,
+   "ranks": [
+    "Votre technique Attaque sournoise a 3 % de chances de vous permettre d’effectuer votre prochaine Embuscade en moins de 10 sec sans être en Camouflage.",
+    "Votre technique Attaque sournoise a 6 % de chances de vous permettre d’effectuer votre prochaine Embuscade en moins de 10 sec sans être en Camouflage.",
+    "Votre technique Attaque sournoise a 9 % de chances de vous permettre d’effectuer votre prochaine Embuscade en moins de 10 sec sans être en Camouflage.",
+    "Votre technique Attaque sournoise a 12 % de chances de vous permettre d’effectuer votre prochaine Embuscade en moins de 10 sec sans être en Camouflage.",
+    "Votre technique Attaque sournoise a 15 % de chances de vous permettre d’effectuer votre prochaine Embuscade en moins de 10 sec sans être en Camouflage."
+   ]
   },
   "voleur/subtlety-7-2": {
    "name": "Mille coupures",
    "nameSource": "officiel",
-   "rank1": "Lorsque votre technique Rupture inflige ses dégâts périodiques, le coût en énergie de votre prochaine Hémorragie ou Attaque sournoise dans les 10 sec est réduit de 3, cumulable jusqu’à 5 fois.",
-   "textSource": "editorial",
+   "rank1": "Lorsque votre technique Rupture inflige des dégâts périodiques, le coût en énergie de votre prochaine utilisation d’Hémorragie ou Attaque sournoise en moins de 10 sec est réduit de 3. Cumulable jusqu’à 5 fois.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1310721
   },
   "pretre/discipline-1-1": {
    "name": "Puissance de la Lumière",
    "nameSource": "adapte",
-   "rank1": "Vos sorts Châtiment et Pénitence infligent 2% de dégâts supplémentaires aux cibles affectées par vos Flammes sacrées.",
-   "textSource": "editorial"
+   "rank1": "Vos sorts Châtiment et Pénitence infligent 2 % de dégâts supplémentaires aux cibles affectées par votre sort Flammes sacrées.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Vos sorts Châtiment et Pénitence infligent 2 % de dégâts supplémentaires aux cibles affectées par votre sort Flammes sacrées.",
+    "Vos sorts Châtiment et Pénitence infligent 4 % de dégâts supplémentaires aux cibles affectées par votre sort Flammes sacrées.",
+    "Vos sorts Châtiment et Pénitence infligent 6 % de dégâts supplémentaires aux cibles affectées par votre sort Flammes sacrées.",
+    "Vos sorts Châtiment et Pénitence infligent 8 % de dégâts supplémentaires aux cibles affectées par votre sort Flammes sacrées.",
+    "Vos sorts Châtiment et Pénitence infligent 10 % de dégâts supplémentaires aux cibles affectées par votre sort Flammes sacrées."
+   ],
+   "spell": 1309969
   },
   "pretre/discipline-2-2": {
    "name": "Précision sacrée",
    "nameSource": "adapte",
-   "rank1": "Augmente de 6% vos chances de toucher avec vos sorts du Sacré.",
-   "textSource": "editorial"
+   "rank1": "Améliore de 6 % vos chances de toucher avec les sorts du sacré.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Améliore de 6 % vos chances de toucher avec les sorts du sacré.",
+    "Améliore de 12 % vos chances de toucher avec les sorts du sacré.",
+    "Améliore de 18 % vos chances de toucher avec les sorts du sacré."
+   ],
+   "spell": 1309957
   },
   "pretre/holy-4-4": {
    "name": "Soins de lien",
@@ -26052,8 +27466,13 @@ window.TALENT_FR={
   "pretre/holy-5-1": {
    "name": "Litanie de Lumière",
    "nameSource": "adapte",
-   "rank1": "Lorsque vous lancez un sort de soins, vous récupérez un nombre de points de mana égal à 5% du coût de base du sort si votre soin précédent était un sort différent.",
-   "textSource": "editorial"
+   "rank1": "Lorsque vous lancez un sort de soins, vous récupérez un montant de mana égal à 5 % du coût de base du sort si vos soins précédents proviennent d’un sort différent.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Lorsque vous lancez un sort de soins, vous récupérez un montant de mana égal à 5 % du coût de base du sort si vos soins précédents proviennent d’un sort différent.",
+    "Lorsque vous lancez un sort de soins, vous récupérez un montant de mana égal à 10 % du coût de base du sort si vos soins précédents proviennent d’un sort différent."
+   ],
+   "spell": 1317006
   },
   "pretre/holy-7-2": {
    "name": "Prière de guérison",
@@ -26065,35 +27484,41 @@ window.TALENT_FR={
    "name": "Fouet mental amélioré",
    "nameSource": "adapte",
    "ranks": [
-    "Votre Fouet mental inflige 10% de dégâts supplémentaires et gagne 5 mètres de portée, mais ralentit la vitesse de déplacement de la cible de 35%.",
-    "Votre Fouet mental inflige 20% de dégâts supplémentaires et gagne 10 mètres de portée, mais ralentit la vitesse de déplacement de la cible de 20%."
+    "Votre sort Fouet mental inflige désormais 10 % de dégâts supplémentaires, sa portée augmente de 5 m, et il diminue la vitesse de déplacement de la cible de 35 %.",
+    "Votre sort Fouet mental inflige désormais 20 % de dégâts supplémentaires, sa portée augmente de 10 m, et il diminue la vitesse de déplacement de la cible de 20 %."
    ],
-   "rank1": "Votre Fouet mental inflige 10% de dégâts supplémentaires et gagne 5 mètres de portée, mais ralentit la vitesse de déplacement de la cible de 35%.",
-   "textSource": "editorial"
+   "rank1": "Votre sort Fouet mental inflige désormais 10 % de dégâts supplémentaires, sa portée augmente de 5 m, et il diminue la vitesse de déplacement de la cible de 35 %.",
+   "textSource": "client-forever",
+   "spell": 1225139
   },
   "pretre/shadow-magic-5-3": {
    "name": "Contagion dévorante",
    "nameSource": "adapte",
    "ranks": [
-    "Réduit de 25% le coût en mana de votre Peste dévorante.\n\nUne cible qui meurt alors que Peste dévorante est active la propage : elle bondit vers un ennemi situé dans un rayon de 5 mètres, pour la durée restante.",
-    "Réduit de 50% le coût en mana de votre Peste dévorante.\n\nUne cible qui meurt alors que Peste dévorante est active la propage : elle bondit vers un ennemi situé dans un rayon de 10 mètres, pour la durée restante."
+    "Réduit le coût en mana de Peste dévorante de 25 %. Les cibles qui meurent alors que Peste dévorante est active propagent l’effet à un personnage adverse proche à moins de 5 m pendant la durée restante.",
+    "Réduit le coût en mana de Peste dévorante de 50 %. Les cibles qui meurent alors que Peste dévorante est active propagent l’effet à un personnage adverse proche à moins de 10 m pendant la durée restante."
    ],
-   "rank1": "Réduit de 25% le coût en mana de votre Peste dévorante.\n\nUne cible qui meurt alors que Peste dévorante est active la propage : elle bondit vers un ennemi situé dans un rayon de 5 mètres, pour la durée restante.",
-   "textSource": "editorial"
+   "rank1": "Réduit le coût en mana de Peste dévorante de 25 %. Les cibles qui meurent alors que Peste dévorante est active propagent l’effet à un personnage adverse proche à moins de 5 m pendant la durée restante.",
+   "textSource": "client-forever",
+   "spell": 1309950
   },
   "pretre/shadow-magic-6-1": {
    "name": "Trépas prématuré",
    "nameSource": "officiel",
-   "rank1": "Contre les cibles dont les points de vie sont à 20% ou moins, augmente de 15% les chances de coup critique de Mot de l’ombre : Mort.",
-   "textSource": "editorial",
+   "rank1": "Augmente de 15 % vos chances de coup critique avec Mot de l’ombre : Mort contre les cibles disposant de 20 % ou moins de leurs points de vie.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
-   "spell": 1310076
+   "spell": 1310076,
+   "ranks": [
+    "Augmente de 15 % vos chances de coup critique avec Mot de l’ombre : Mort contre les cibles disposant de 20 % ou moins de leurs points de vie.",
+    "Augmente de 30 % vos chances de coup critique avec Mot de l’ombre : Mort contre les cibles disposant de 20 % ou moins de leurs points de vie."
+   ]
   },
   "chaman/elemental-combat-5-4": {
    "name": "Lien terrestre",
    "nameSource": "officiel",
-   "rank1": "Votre Totem de lien terrestre immobilise les cibles proches pendant 5 sec lorsqu’il est invoqué.",
-   "textSource": "editorial",
+   "rank1": "Votre totem de lien terrestre immobilise les cibles proches pendant 5 sec lorsqu’il est lancé.",
+   "textSource": "client-forever",
    "note": "Le totem cité est un sort de base du chaman (Earthbind Totem, sort 2484) : nom officiel du client français, « Totem de lien terrestre » — corrigé après une première traduction erronée (« Totem de glèbe »).",
    "nameBranch": "forever",
    "spell": 1222988
@@ -26107,8 +27532,8 @@ window.TALENT_FR={
   "chaman/enhancement-7-2": {
    "name": "Rage long-voyante",
    "nameSource": "officiel",
-   "rank1": "Augmente de 30% votre vitesse d’attaque de mêlée et votre vitesse d’incantation pendant 25 sec.",
-   "textSource": "editorial",
+   "rank1": "Augmente votre vitesse d’attaque en mêlée et d’incantation de 30 % pendant 25 sec.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 425336
   },
@@ -26116,24 +27541,31 @@ window.TALENT_FR={
    "name": "Pleine conscience",
    "nameSource": "adapte",
    "ranks": [
-    "Permet à 17% de votre régénération de mana de se poursuivre pendant l’incantation.",
-    "Permet à 33% de votre régénération de mana de se poursuivre pendant l’incantation.",
-    "Permet à 50% de votre régénération de mana de se poursuivre pendant l’incantation."
+    "Vous confère 17 % de votre vitesse normale de récupération du mana pendant l’incantation.",
+    "Vous confère 33 % de votre vitesse normale de récupération du mana pendant l’incantation.",
+    "Vous confère 50 % de votre vitesse normale de récupération du mana pendant l’incantation."
    ],
-   "rank1": "Permet à 17% de votre régénération de mana de se poursuivre pendant l’incantation.",
-   "textSource": "editorial"
+   "rank1": "Vous confère 17 % de votre vitesse normale de récupération du mana pendant l’incantation.",
+   "textSource": "client-forever",
+   "spell": 1223033
   },
   "chaman/restoration-3-3": {
    "name": "Bouclier d’eau",
    "nameSource": "adapte",
-   "rank1": "Le lanceur est entouré de 3 globes d’eau. Lorsqu’un sort ou une attaque de mêlée ou à distance le touche, ou lorsqu’un de ses sorts de soins produit un effet critique, 2% de son mana maximal lui sont rendus et un globe est consommé. Un seul globe s’active toutes les quelques secondes. Dure 10 min.\n\nUn seul Bouclier élémentaire peut être actif sur le chaman à la fois.",
-   "textSource": "editorial"
+   "rank1": "Le lanceur ou la lanceuse s’entoure de 3 globes d’eau. Si une attaque en mêlée, à distance ou un sort touche le lanceur ou la lanceuse, ou si l’un de ses sorts de soins obtient un effet critique, un globe d’eau est dépensé pour restaurer 2 % de son maximum de mana. Un seul globe peut s’activer toutes les quelques secondes. Dure 10 min. Un seul bouclier élémentaire peut être actif sur le chaman ou la chamane à la fois.",
+   "textSource": "client-forever",
+   "spell": 408510
   },
   "mage/arcane-3-1": {
    "name": "Géométrie des arcanes",
    "nameSource": "adapte",
-   "rank1": "Augmente de 3 mètres la portée de vos sorts des Arcanes.",
-   "textSource": "editorial"
+   "rank1": "Augmente la portée de vos sorts des Arcanes de 3 m.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente la portée de vos sorts des Arcanes de 3 m.",
+    "Augmente la portée de vos sorts des Arcanes de 6 m."
+   ],
+   "spell": 11247
   },
   "mage/arcane-3-4": {
    "name": "Déflagration des arcanes",
@@ -26146,8 +27578,8 @@ window.TALENT_FR={
   "mage/frost-3-3": {
    "name": "Javelot de glace",
    "nameSource": "officiel",
-   "rank1": "Inflige 30 points de dégâts de Givre à une cible ennemie. Inflige 300% de dégâts supplémentaires aux cibles gelées.",
-   "textSource": "editorial",
+   "rank1": "Inflige 30 points de dégâts de givre à une cible ennemie. Inflige 300 % de dégâts de givre supplémentaires aux cibles gelées.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1312002
   },
@@ -26156,11 +27588,11 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "note": "Nom repris du sort Récolte d’âmes du client français (sort 196098) : Forever ne reprend que le nom anglais Soul Harvest, l’effet lui est propre.",
    "ranks": [
-    "Vous gagnez Récolte d’âmes pendant 10 sec si une victime meurt en étant affectée par votre Siphon d’âme. Récolte d’âmes permet à votre mana de se régénérer à 50% de sa vitesse normale pendant que vous incantez, et augmente de 50% votre régénération de mana.",
-    "Vous gagnez Récolte d’âmes pendant 10 sec si une victime meurt en étant affectée par votre Siphon d’âme. Récolte d’âmes permet à votre mana de se régénérer à 100% de sa vitesse normale pendant que vous incantez, et augmente de 100% votre régénération de mana."
+    "Vous bénéficiez de Récolte d’âmes pendant 10 sec si une victime meurt alors qu’elle est affectée par votre Drain d’âme. Récolte d’âmes permet à votre mana de se régénérer à 50 % de la vitesse normale lorsque vous lancez des sorts et augmente votre régénération de mana de 50 %.",
+    "Vous bénéficiez de Récolte d’âmes pendant 10 sec si une victime meurt alors qu’elle est affectée par votre Drain d’âme. Récolte d’âmes permet à votre mana de se régénérer à 100 % de la vitesse normale lorsque vous lancez des sorts et augmente votre régénération de mana de 100 %."
    ],
-   "rank1": "Vous gagnez Récolte d’âmes pendant 10 sec si une victime meurt en étant affectée par votre Siphon d’âme. Récolte d’âmes permet à votre mana de se régénérer à 50% de sa vitesse normale pendant que vous incantez, et augmente de 50% votre régénération de mana.",
-   "textSource": "editorial",
+   "rank1": "Vous bénéficiez de Récolte d’âmes pendant 10 sec si une victime meurt alors qu’elle est affectée par votre Drain d’âme. Récolte d’âmes permet à votre mana de se régénérer à 50 % de la vitesse normale lorsque vous lancez des sorts et augmente votre régénération de mana de 50 %.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 437032
   },
@@ -26168,19 +27600,28 @@ window.TALENT_FR={
    "name": "Drains améliorés",
    "nameSource": "adapte",
    "ranks": [
-    "Augmente de 7% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Calvaire.",
-    "Augmente de 13% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Calvaire.",
-    "Augmente de 20% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Calvaire."
+    "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 7%.",
+    "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 13%.",
+    "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 20%."
    ],
-   "rank1": "Augmente de 7% la vie drainée ou les dégâts infligés par vos sorts Drain de vie, Siphon d’âme et Calvaire.",
-   "textSource": "editorial"
+   "rank1": "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 7%.",
+   "textSource": "client-forever",
+   "spell": 403511
   },
   "demoniste/affliction-4-1": {
    "name": "Malveillance",
    "nameSource": "adapte",
    "note": "Nom repris du sort Malveillance du client français (sort 442726), qui traduit le même mot anglais.",
-   "rank1": "Augmente de 1% les chances d’effet critique de vos sorts d’Ombre.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 1 % les chances d’obtenir un effet critique avec vos sorts d’ombre.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 1 % les chances d’obtenir un effet critique avec vos sorts d’ombre.",
+    "Augmente de 2 % les chances d’obtenir un effet critique avec vos sorts d’ombre.",
+    "Augmente de 3 % les chances d’obtenir un effet critique avec vos sorts d’ombre.",
+    "Augmente de 4 % les chances d’obtenir un effet critique avec vos sorts d’ombre.",
+    "Augmente de 5 % les chances d’obtenir un effet critique avec vos sorts d’ombre."
+   ],
+   "spell": 1310949
   },
   "demoniste/affliction-7-2": {
    "name": "Calvaire",
@@ -26194,10 +27635,14 @@ window.TALENT_FR={
   "demoniste/demonology-2-4": {
    "name": "Énergie démoniaque",
    "nameSource": "officiel",
-   "rank1": "Vous soignez votre démon de 8% de tous les dégâts que vous infligez par sort. Lorsque Connexion vous rend du mana, votre démon invoqué reçoit 50% du mana que vous gagnez.",
-   "textSource": "editorial",
+   "rank1": "Vous soignez votre familier d’un montant égal à 8 % de tous les dégâts des sorts que vous infligez. Lorsque vous obtenez du mana avec Connexion, votre démon invoqué reçoit 50 % du mana que vous récupérez.",
+   "textSource": "client-forever",
    "nameBranch": "forever",
-   "spell": 1225214
+   "spell": 1225214,
+   "ranks": [
+    "Vous soignez votre familier d’un montant égal à 8 % de tous les dégâts des sorts que vous infligez. Lorsque vous obtenez du mana avec Connexion, votre démon invoqué reçoit 50 % du mana que vous récupérez.",
+    "Vous soignez votre familier d’un montant égal à 15 % de tous les dégâts des sorts que vous infligez. Lorsque vous obtenez du mana avec Connexion, votre démon invoqué reçoit 100 % du mana que vous récupérez."
+   ]
   },
   "demoniste/demonology-4-4": {
    "name": "Marque démoniaque",
@@ -26215,8 +27660,9 @@ window.TALENT_FR={
    "name": "Plaie de tumulte",
    "nameSource": "adapte",
    "note": "Nom officiel du client français de Cataclysme (sort 80240), extension d’où Forever reprend ce sort — hors du relevé Classic, Burning Crusade et Wrath sur lequel s’appuie l’import, d’où une entrée éditoriale.",
-   "rank1": "Afflige la cible pendant 5 min : 15% de tous les dégâts que le démoniste inflige à d’autres cibles sont également infligés à la cible maudite. Plaie de tumulte est limité à 1 cible, et une seule Plaie par démoniste peut affecter une même cible.",
-   "textSource": "editorial"
+   "rank1": "Afflige la cible pendant 5 min. La cible maudite subit 15 % de tous les dégâts infligés par le personnage démoniste à d’autres cibles. Plaie de tumulte est limité à 1 cible, et une seule plaie par démoniste peut être active sur une même cible.",
+   "textSource": "client-forever",
+   "spell": 1225228
   },
   "demoniste/destruction-7-2": {
    "name": "Incinérer",
@@ -26229,14 +27675,27 @@ window.TALENT_FR={
    "name": "Lacis",
    "nameSource": "adapte",
    "note": "Nom repris du sort Lacis du client français (sort 203651), qui traduit le même mot anglais, Overgrowth : Forever lui donne un effet qui lui est propre.",
-   "rank1": "Augmente de 1 le nombre maximum de cibles que vous pouvez maintenir sous l’effet de Sarments.",
-   "textSource": "editorial"
+   "rank1": "Augmente de 1 le nombre maximum de cibles pouvant être affectées par Sarments.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente de 1 le nombre maximum de cibles pouvant être affectées par Sarments.",
+    "Augmente de 2 le nombre maximum de cibles pouvant être affectées par Sarments."
+   ],
+   "spell": 17245
   },
   "guerrier/protection-5-4": {
    "name": "Bastion",
    "nameSource": "adapte",
-   "rank1": "Augmente de 2% tous les dégâts que vous infligez lorsqu’un bouclier est équipé.",
-   "textSource": "editorial"
+   "rank1": "Augmente tous les dégâts que vous infligez de 2 % quand un bouclier est équipé.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente tous les dégâts que vous infligez de 2 % quand un bouclier est équipé.",
+    "Augmente tous les dégâts que vous infligez de 4 % quand un bouclier est équipé.",
+    "Augmente tous les dégâts que vous infligez de 6 % quand un bouclier est équipé.",
+    "Augmente tous les dégâts que vous infligez de 8 % quand un bouclier est équipé.",
+    "Augmente tous les dégâts que vous infligez de 10 % quand un bouclier est équipé."
+   ],
+   "spell": 16538
   },
   "guerrier/protection-6-3": {
    "name": "Rage focalisée",
@@ -26244,7 +27703,12 @@ window.TALENT_FR={
    "nameBranch": "tbc",
    "spell": 29787,
    "rank1": "Réduit le coût en rage de vos techniques offensives de 1.",
-   "textSource": "officiel"
+   "textSource": "client-forever",
+   "ranks": [
+    "Réduit le coût en rage de vos techniques offensives de 1.",
+    "Réduit le coût en rage de vos techniques offensives de 2.",
+    "Réduit le coût en rage de vos techniques offensives de 3."
+   ]
   },
   "chasseur/marksmanship-4-4": {
    "name": "Morsure de serpent améliorée",
@@ -26253,8 +27717,15 @@ window.TALENT_FR={
    "spell": 19464,
    "classic": "Augmente les points de dégâts infligés par votre technique Morsure de serpent de 2%.",
    "note": "La bêta ouverte réintroduit ce talent sous son nom Classic et sur le même sort (19464), distinct des « Morsures améliorées » de la ligne 2 que Forever avait élargies aux morsures de vipère et de scorpide.",
-   "rank1": "Augmente de 2% les dégâts infligés par votre Morsure de serpent.",
-   "textSource": "editorial"
+   "rank1": "Augmente les points de dégâts infligés par votre technique Morsure de serpent de 2%.",
+   "textSource": "client-forever",
+   "ranks": [
+    "Augmente les points de dégâts infligés par votre technique Morsure de serpent de 2%.",
+    "Augmente les points de dégâts infligés par votre technique Morsure de serpent de 4%.",
+    "Augmente les points de dégâts infligés par votre technique Morsure de serpent de 6%.",
+    "Augmente les points de dégâts infligés par votre technique Morsure de serpent de 8%.",
+    "Augmente les points de dégâts infligés par votre technique Morsure de serpent de 10%."
+   ]
   }
  },
  "removed": {
