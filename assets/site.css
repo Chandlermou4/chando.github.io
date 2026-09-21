@@ -112,8 +112,32 @@ footer{padding:16px 24px 18px;border-top:1px solid var(--hair);color:var(--dim);
    des 48 px habituels, --page-pad. Sous 761 px les règles d'origine reprennent
    la main : il n'y a plus de marge à rattraper, et le padding y passe à 24 px. */
 @media(min-width:761px){
-  header,.site-switch,.section-nav{
+  header,.site-switch,.section-nav,.topbar{
     padding-inline:max(var(--page-pad,48px),
       calc((100% - var(--page-max,1600px)) / 2 + var(--page-pad,48px)));
   }
+}
+
+/* ── Bandeau : titre à gauche, onglets à droite ──────────────────────────────
+   Le titre occupait une bande à lui seul, laissant une large plage noire vide
+   à sa droite, et les onglets une seconde bande en dessous. Les deux tiennent
+   sur une ligne : le vide disparaît et les onglets gagnent la place d'être
+   lisibles. C'est le bandeau qui porte désormais le filet et les marges
+   latérales ; header et .section-nav rendent les leurs, sinon elles
+   s'additionneraient. */
+.topbar{display:flex;align-items:flex-end;justify-content:space-between;
+  gap:10px 40px;flex-wrap:wrap;border-bottom:1px solid var(--hair)}
+.topbar header{border-bottom:0;padding:34px 0 var(--header-pb,22px)}
+.topbar .section-nav{padding:0 0 calc(var(--header-pb,22px) + 2px)}
+/* Onglets plus gros, et l'actif souligné plus franchement pour rester lisible
+   à cette taille. */
+.topbar .section-nav a{font-size:16px;padding-bottom:6px}
+.topbar .section-nav a.is-here{border-bottom-width:2px}
+@media(max-width:900px){
+  /* Sous cette largeur les deux blocs ne tiennent plus côte à côte : on
+     retrouve l'empilement d'origine, titre puis onglets. */
+  .topbar{display:block}
+  .topbar header{padding:26px 0 14px}
+  .topbar .section-nav{padding:0 0 14px}
+  .topbar .section-nav a{font-size:14.5px}
 }
