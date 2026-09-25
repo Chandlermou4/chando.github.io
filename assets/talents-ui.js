@@ -158,7 +158,20 @@
       }).join('') + '</nav>';
   }
 
+  /* Combien de talents le client français laisse encore en anglais.
+     Quand Blizzard réécrit une description, sa traduction arrive avec un ou
+     plusieurs patchs de retard et la table française renvoie l'anglais entre
+     temps. On affiche ce que le joueur lit en jeu, et on le dit — sinon le
+     lecteur croirait à un oubli de notre part. Le compte vient des données :
+     la mention disparaîtra d'elle-même à la prochaine reprise. */
+  function untranslatedCount() {
+    var t = (window.TALENT_FR || {}).talents || {}, n = 0;
+    for (var k in t) if (t[k].textSource === 'client-forever-non-traduit') n++;
+    return n;
+  }
+
   function renderLegend() {
+    var vo = untranslatedCount();
     return '<div class="talent-legend">' +
       '<span><i class="open"></i> Disponible</span>' +
       '<span><i class="partial"></i> Rangs partiels</span>' +
@@ -166,6 +179,10 @@
       '<span><i class="locked"></i> Verrouillé</span>' +
       '<span><i class="new"></i> Nouveau dans Forever</span>' +
       '<span class="legend-note">Les rangs estimés sont signalés dans l’infobulle du talent.</span>' +
+      (vo ? '<span class="legend-note">' + vo + ' talent' + (vo > 1 ? 's' : '') +
+            ' dont le dernier patch a réécrit la description ' +
+            (vo > 1 ? 's’affichent' : 's’affiche') +
+            ' en anglais : le client français ne les a pas encore traduits.</span>' : '') +
       '</div>';
   }
 

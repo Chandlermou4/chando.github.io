@@ -27,9 +27,9 @@ infobulle. Ce qui ne passe pas garde le texte existant.
 import argparse, csv, io, json, os, re, sys, tempfile, urllib.request
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BUILD = '1.60.1.69913'
+BUILD = '1.60.1.70009'
 WAGO = 'https://wago.tools/db2/%s/csv?build=%s&locale=%s'
-WOWHEAD = 'https://nether.wowhead.com/forever/data/talents-classic?dv=2&db=%d'
+WOWHEAD = 'https://nether.wowhead.com/forever/data/talents-classic?dv=2&db=%s'
 UA = {'User-Agent': 'Mozilla/5.0'}
 
 A = '’'          # apostrophe typographique, convention du fichier
@@ -257,6 +257,8 @@ def reprend(D, FR, noms_fr, noms_en, desc_fr, desc_en, noeuds):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--build', default=BUILD)
+    ap.add_argument('--db', default=None,
+                    help='date anti-cache de Wowhead (AAAAMMJJ) ; aujourd’hui par défaut')
     ap.add_argument('--essai', action='store_true', help="n'écrit rien")
     args = ap.parse_args()
     os.chdir(RACINE)
@@ -271,7 +273,10 @@ def main():
                                         os.path.join(tmp, '%s-%s.csv' % (table, loc)))
     # `db` ne sert qu'à contourner le cache de Wowhead ; le fichier est ensuite
     # gardé en local, une valeur fixe suffit donc.
-    wh = telecharge(WOWHEAD % 20260920,
+    # Sans date fraîche, Wowhead peut resservir un jeu de données d'avant le
+    # dernier patch — et l'alignement se ferait alors sur l'ancien texte.
+    db = args.db or __import__('datetime').date.today().strftime('%Y%m%d')
+    wh = telecharge(WOWHEAD % db,
                     os.path.join(tmp, 'wowhead-talents.txt'))
 
     chemin = os.path.join('data', 'talents-data.js')

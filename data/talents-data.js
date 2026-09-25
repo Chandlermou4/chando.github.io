@@ -550,27 +550,27 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Your melee attacks against targets afflicted by your Rend have a 2% chance to activate your Overpower ability for 1 attack on your current target. Lasts 6 sec.",
+         "text": "Your Main Hand melee attacks against enemies afflicted by your Rend have a 4% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Your melee attacks against targets afflicted by your Rend have a 4% chance to activate your Overpower ability for 1 attack on your current target. Lasts 6 sec.",
+         "text": "Your Main Hand melee attacks against enemies afflicted by your Rend have a 8% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Your melee attacks against targets afflicted by your Rend have a 6% chance to activate your Overpower ability for 1 attack on your current target. Lasts 6 sec.",
+         "text": "Your Main Hand melee attacks against enemies afflicted by your Rend have a 12% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
          "observed": true
         },
         {
          "rank": 4,
-         "text": "Your melee attacks against targets afflicted by your Rend have a 8% chance to activate your Overpower ability for 1 attack on your current target. Lasts 6 sec.",
+         "text": "Your Main Hand melee attacks against enemies afflicted by your Rend have a 16% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
          "observed": true
         },
         {
          "rank": 5,
-         "text": "Your melee attacks against targets afflicted by your Rend have a 10% chance to activate your Overpower ability for 1 attack on your current target. Lasts 6 sec.",
+         "text": "Your Main Hand melee attacks against enemies afflicted by your Rend have a 20% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
          "observed": true
         }
        ],
@@ -698,12 +698,12 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts your melee swing time.",
+         "text": "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 1.5 sec.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Reduces the global cooldown and cast time of your Slam ability by 0.5 sec. In addition, Slam no longer interrupts your melee swing time.",
+         "text": "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec.",
          "observed": true
         }
        ],
@@ -3218,27 +3218,27 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Increases the critical strike chance of your Holy Shock spell by 3%, and all other spells by 1%.",
+         "text": "Increases the critical strike chance of your Holy Shock and Holy Strike spells by 3%, and all other spells by 1%.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Increases the critical strike chance of your Holy Shock spell by 6%, and all other spells by 2%.",
+         "text": "Increases the critical strike chance of your Holy Shock and Holy Strike spells by 6%, and all other spells by 2%.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Increases the critical strike chance of your Holy Shock spell by 9%, and all other spells by 3%.",
+         "text": "Increases the critical strike chance of your Holy Shock and Holy Strike spells by 9%, and all other spells by 3%.",
          "observed": true
         },
         {
          "rank": 4,
-         "text": "Increases the critical strike chance of your Holy Shock spell by 12%, and all other spells by 4%.",
+         "text": "Increases the critical strike chance of your Holy Shock and Holy Strike spells by 12%, and all other spells by 4%.",
          "observed": true
         },
         {
          "rank": 5,
-         "text": "Increases the critical strike chance of your Holy Shock spell by 15%, and all other spells by 5%.",
+         "text": "Increases the critical strike chance of your Holy Shock and Holy Strike spells by 15%, and all other spells by 5%.",
          "observed": true
         }
        ],
@@ -3277,7 +3277,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes friendly targets to heal their party for 315 to 333, or enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost. You may only have 1 Light's Vigil active per Paladin, per party.",
+         "text": "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 326 to 344. The Paladin may only have one Light's Vigil active per party.",
          "observed": true
         }
        ],
@@ -4656,17 +4656,17 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a critical strike. Stacks up to 5 times.",
+         "text": "Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Increases your Physical and Holy damage dealt by 2% for 30 sec after landing a critical strike. Stacks up to 5 times.",
+         "text": "Increases your Physical and Holy damage dealt by 2% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a critical strike. Stacks up to 5 times.",
+         "text": "Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times.",
          "observed": true
         }
        ],
@@ -4829,7 +4829,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "When you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an Echo. Your next melee attack applies the replaced Seal's effects, consuming the Echo.",
+         "text": "Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo.",
          "observed": true
         }
        ],
@@ -7113,7 +7113,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "A powerful kick that deals 100% melee weapon damage.",
+         "text": "A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec.",
          "observed": true
         }
        ],
@@ -11871,7 +11871,7 @@ window.TALENT_DATA={
         },
         {
          "rank": 2,
-         "text": "Reduces the mana cost of your Devouring Plague by 50%. Targets that die while Devouring Plague it is active spreads it, jumping to a nearby enemy within 10 yards for the remaining duration.",
+         "text": "Reduces the mana cost of your Devouring Plague by 50%. Targets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 10 yards for the remaining duration.",
          "observed": true
         }
        ],
@@ -13531,7 +13531,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Increases your melee attack speed and spell casting speed by 30% for 25 sec.",
+         "text": "Increases your attack speed by 30% for 25 sec.",
          "observed": true
         }
        ],
@@ -20018,27 +20018,27 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 1 Rage or Energy.",
+         "text": "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 1 Rage or Energy.",
          "observed": true
         },
         {
          "rank": 2,
-         "text": "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 2 Rage or Energy.",
+         "text": "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 2 Rage or Energy.",
          "observed": true
         },
         {
          "rank": 3,
-         "text": "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 3 Rage or Energy.",
+         "text": "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 3 Rage or Energy.",
          "observed": true
         },
         {
          "rank": 4,
-         "text": "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 4 Rage or Energy.",
+         "text": "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 4 Rage or Energy.",
          "observed": true
         },
         {
          "rank": 5,
-         "text": "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 5 Rage or Energy.",
+         "text": "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 5 Rage or Energy.",
          "observed": true
         }
        ],
@@ -20442,8 +20442,8 @@ window.TALENT_DATA={
       },
       {
        "key": "feral-combat-4-2",
-       "name_en": "Mangle",
-       "icon": "ability_druid_mangle2",
+       "name_en": "Primal Bite",
+       "icon": "ability_racial_cannibalize",
        "row": 4,
        "col": 2,
        "maxRanks": 1,
@@ -20464,7 +20464,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Mangle the target for 100% normal damage plus 26.",
+         "text": "Bite the target for 100% normal damage plus 26.",
          "observed": true
         }
        ],
@@ -20528,8 +20528,8 @@ window.TALENT_DATA={
       },
       {
        "key": "feral-combat-4-4",
-       "name_en": "Primal Fury",
-       "icon": "ability_racial_cannibalize",
+       "name_en": "Blood Frenzy",
+       "icon": "ability_ghoulfrenzy",
        "row": 4,
        "col": 4,
        "maxRanks": 2,
@@ -20821,7 +20821,7 @@ window.TALENT_DATA={
        "ranks": [
         {
          "rank": 1,
-         "text": "Causes your Mangle ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec.",
+         "text": "Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec.",
          "observed": true
         }
        ],
@@ -21618,13 +21618,14 @@ window.TALENT_DATA={
     }
    ]
   }
- ]
+ ],
+ "updatedAt": "2026-09-25"
 }
 ;
 window.TALENT_FR={
  "version": 1,
- "updatedAt": "2026-09-20",
- "method": "Les noms et les textes marqués « client-forever » viennent des tables du client français de Forever, publiées par wago.tools pour la build 1.60.1.69913. Les descriptions y figurent avec leurs variables ($s1, $t, $d) : on les résout en alignant le gabarit anglais de la même table sur le texte anglais déjà résolu que publie le calculateur de Wowhead, rang par rang. Les valeurs sont associées au nom de la variable et non à sa position, le français réordonnant souvent les phrases. Un texte n’est repris que s’il se résout entièrement et que tous les nombres du texte anglais s’y retrouvent ; sinon il reste celui que nous avions. La méthode est vérifiée contre les infobulles photographiées en jeu, qu’elle reproduit au mot près. Les entrées sans cette marque restent éditoriales.",
+ "updatedAt": "2026-09-25",
+ "method": "Les noms et les textes marqués « client-forever » viennent des tables du client français de Forever, publiées par wago.tools pour la build 1.60.1.70009. Les descriptions y figurent avec leurs variables ($s1, $t, $d) : on les résout en alignant le gabarit anglais de la même table sur le texte anglais déjà résolu que publie le calculateur de Wowhead, rang par rang. Les valeurs sont associées au nom de la variable et non à sa position, le français réordonnant souvent les phrases. Un texte n’est repris que s’il se résout entièrement et que tous les nombres du texte anglais s’y retrouvent ; sinon il reste celui que nous avions. La méthode est vérifiée contre les infobulles photographiées en jeu, qu’elle reproduit au mot près. Les entrées sans cette marque restent éditoriales.",
  "glossary": {
   "trees": {
    "Arms": "Armes",
@@ -21840,17 +21841,18 @@ window.TALENT_FR={
   "guerrier/arms-5-1": {
    "name": "Exaltation sanguinaire",
    "nameSource": "officiel",
-   "rank1": "Vos attaques en mêlée contre les cibles affectées par Pourfendre ont 2 % de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
+   "rank1": "Your Main Hand melee attacks against enemies afflicted by your Rend have a 4% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
    "ranks": [
-    "Vos attaques en mêlée contre les cibles affectées par Pourfendre ont 2 % de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
-    "Vos attaques en mêlée contre les cibles affectées par Pourfendre ont 4 % de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
-    "Vos attaques en mêlée contre les cibles affectées par Pourfendre ont 6 % de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
-    "Vos attaques en mêlée contre les cibles affectées par Pourfendre ont 8 % de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec.",
-    "Vos attaques en mêlée contre les cibles affectées par Pourfendre ont 10 % de chances d’activer votre technique Fulgurance pour 1 attaque sur votre cible actuelle. Dure 6 sec."
+    "Your Main Hand melee attacks against enemies afflicted by your Rend have a 4% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
+    "Your Main Hand melee attacks against enemies afflicted by your Rend have a 8% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
+    "Your Main Hand melee attacks against enemies afflicted by your Rend have a 12% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
+    "Your Main Hand melee attacks against enemies afflicted by your Rend have a 16% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
+    "Your Main Hand melee attacks against enemies afflicted by your Rend have a 20% chance to allow the use of your Overpower ability on the target. Lasts 6 sec."
    ],
-   "textSource": "client-forever",
+   "textSource": "client-forever-non-traduit",
    "nameBranch": "forever",
-   "spell": 1289682
+   "spell": 1289682,
+   "note": "Le patch 1.60.1.70009 a réécrit cette description. La table française du client n’est pas encore traduite et renvoie l’anglais : c’est ce que le joueur lit en jeu aujourd’hui, et nous l’affichons tel quel plutôt que de laisser l’ancien texte français, qui décrit un effet que le talent n’a plus. Relancer tools/import-client-fr.py comblera le texte dès que Blizzard l’aura traduit."
   },
   "guerrier/arms-5-2": {
    "name": "Attaques circulaires",
@@ -21879,15 +21881,16 @@ window.TALENT_FR={
   "guerrier/arms-6-1": {
    "name": "Heurtoir amélioré",
    "nameSource": "officiel",
-   "rank1": "Réduit de 0.25 s le temps de recharge global et le temps d’incantation de votre technique Heurtoir. De plus, Heurtoir n’interrompt plus votre temps de frappe en mêlée.",
+   "rank1": "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 1.5 sec.",
    "classic": "Réduit le temps d'incantation de votre technique Heurtoir de 0.1 sec.",
    "spell": 12862,
-   "textSource": "client-forever",
+   "textSource": "client-forever-non-traduit",
    "nameBranch": "wotlk",
    "ranks": [
-    "Réduit de 0.25 s le temps de recharge global et le temps d’incantation de votre technique Heurtoir. De plus, Heurtoir n’interrompt plus votre temps de frappe en mêlée.",
-    "Réduit de 0.50 s le temps de recharge global et le temps d’incantation de votre technique Heurtoir. De plus, Heurtoir n’interrompt plus votre temps de frappe en mêlée."
-   ]
+    "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 1.5 sec.",
+    "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec."
+   ],
+   "note": "Le patch 1.60.1.70009 a réécrit cette description. La table française du client n’est pas encore traduite et renvoie l’anglais : c’est ce que le joueur lit en jeu aujourd’hui, et nous l’affichons tel quel plutôt que de laisser l’ancien texte français, qui décrit un effet que le talent n’a plus. Relancer tools/import-client-fr.py comblera le texte dès que Blizzard l’aura traduit."
   },
   "guerrier/arms-6-3": {
    "name": "Brise-genou amélioré",
@@ -22116,8 +22119,8 @@ window.TALENT_FR={
    "spell": 23881,
    "classic": "Attaque instantanément la cible, infligeant des dégâts égaux à 45% de votre puissance d'attaque. De plus, les 5 prochaines attaques de mêlée réussies rendent 10 points de vie. Cet effet dure 8 sec.",
    "nameBranch": "classic",
-   "rank1": "Attaque instantanément la cible, infligeant des points de dégâts égaux à 35% de votre puissance d’attaque plus 30, et augmente votre vitesse de déplacement de 10% pendant 10 sec.",
-   "textSource": "editorial"
+   "rank1": "Attaque instantanément la cible, lui infligeant des dégâts d’un montant égal à 35 % de votre puissance d’attaque plus 30, et augmente votre vitesse de déplacement de 10 % pendant 10 sec.",
+   "textSource": "client-forever"
   },
   "guerrier/protection-1-2": {
    "name": "Spécialisation Bouclier",
@@ -22430,15 +22433,16 @@ window.TALENT_FR={
    "spell": 5923,
    "classic": "Augmente les chances d'obtenir un effet critique avec vos sorts du Sacré de 1%.",
    "nameBranch": "classic",
-   "rank1": "Augmente de 3 % les chances de coup critique de votre sort Horion sacré, et celles de vos autres sorts de 1 %.",
-   "textSource": "client-forever",
+   "rank1": "Increases the critical strike chance of your Holy Shock and Holy Strike spells by 3%, and all other spells by 1%.",
+   "textSource": "client-forever-non-traduit",
    "ranks": [
-    "Augmente de 3 % les chances de coup critique de votre sort Horion sacré, et celles de vos autres sorts de 1 %.",
-    "Augmente de 6 % les chances de coup critique de votre sort Horion sacré, et celles de vos autres sorts de 2 %.",
-    "Augmente de 9 % les chances de coup critique de votre sort Horion sacré, et celles de vos autres sorts de 3 %.",
-    "Augmente de 12 % les chances de coup critique de votre sort Horion sacré, et celles de vos autres sorts de 4 %.",
-    "Augmente de 15 % les chances de coup critique de votre sort Horion sacré, et celles de vos autres sorts de 5 %."
-   ]
+    "Increases the critical strike chance of your Holy Shock and Holy Strike spells by 3%, and all other spells by 1%.",
+    "Increases the critical strike chance of your Holy Shock and Holy Strike spells by 6%, and all other spells by 2%.",
+    "Increases the critical strike chance of your Holy Shock and Holy Strike spells by 9%, and all other spells by 3%.",
+    "Increases the critical strike chance of your Holy Shock and Holy Strike spells by 12%, and all other spells by 4%.",
+    "Increases the critical strike chance of your Holy Shock and Holy Strike spells by 15%, and all other spells by 5%."
+   ],
+   "note": "Le patch 1.60.1.70009 a réécrit cette description. La table française du client n’est pas encore traduite et renvoie l’anglais : c’est ce que le joueur lit en jeu aujourd’hui, et nous l’affichons tel quel plutôt que de laisser l’ancien texte français, qui décrit un effet que le talent n’a plus. Relancer tools/import-client-fr.py comblera le texte dès que Blizzard l’aura traduit."
   },
   "paladin/protection-1-2": {
    "name": "Résistance",
@@ -22706,13 +22710,13 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "spell": 20111,
    "classic": "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 2%.",
-   "rank1": "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 3%.",
+   "rank1": "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 2%.",
    "textSource": "client-forever",
    "nameBranch": "classic",
    "ranks": [
-    "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 3%.",
-    "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 6%.",
-    "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 9%."
+    "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 2%.",
+    "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 4%.",
+    "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 6%."
    ]
   },
   "paladin/retribution-5-2": {
@@ -22721,13 +22725,14 @@ window.TALENT_FR={
    "spell": 20049,
    "classic": "Après un coup critique obtenu en frappant avec une arme ou avec un sort ou une technique, vous infligez 3 % de dégâts physiques et du sacré supplémentaires pendant 8 sec.",
    "nameBranch": "classic",
-   "rank1": "Vos coups critiques augmentent les dégâts physiques et les dégâts du sacré que vous infligez de 1 % pendant 30 sec. Cumulable jusqu’à 5 fois.",
-   "textSource": "client-forever",
+   "rank1": "Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times.",
+   "textSource": "client-forever-non-traduit",
    "ranks": [
-    "Vos coups critiques augmentent les dégâts physiques et les dégâts du sacré que vous infligez de 1 % pendant 30 sec. Cumulable jusqu’à 5 fois.",
-    "Vos coups critiques augmentent les dégâts physiques et les dégâts du sacré que vous infligez de 2 % pendant 30 sec. Cumulable jusqu’à 5 fois.",
-    "Vos coups critiques augmentent les dégâts physiques et les dégâts du sacré que vous infligez de 3 % pendant 30 sec. Cumulable jusqu’à 5 fois."
-   ]
+    "Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times.",
+    "Increases your Physical and Holy damage dealt by 2% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times.",
+    "Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times."
+   ],
+   "note": "Le patch 1.60.1.70009 a réécrit cette description. La table française du client n’est pas encore traduite et renvoie l’anglais : c’est ce que le joueur lit en jeu aujourd’hui, et nous l’affichons tel quel plutôt que de laisser l’ancien texte français, qui décrit un effet que le talent n’a plus. Relancer tools/import-client-fr.py comblera le texte dès que Blizzard l’aura traduit."
   },
   "paladin/retribution-5-3": {
    "name": "Repentir",
@@ -25047,12 +25052,12 @@ window.TALENT_FR={
    "spell": 15058,
    "classic": "Augmente de 1% les dégâts de vos sorts et leurs chances de coup critique.",
    "nameBranch": "classic",
-   "rank1": "Increases the damage done by your spells by 1% and your critical strike chance by 1%.",
+   "rank1": "Augmente les dégâts infligés par vos sorts de 1 % et vos chances de coup critique de 1 %.",
    "textSource": "client-forever",
    "ranks": [
-    "Increases the damage done by your spells by 1% and your critical strike chance by 1%.",
-    "Increases the damage done by your spells by 2% and your critical strike chance by 2%.",
-    "Increases the damage done by your spells by 3% and your critical strike chance by 3%."
+    "Augmente les dégâts infligés par vos sorts de 1 % et vos chances de coup critique de 1 %.",
+    "Augmente les dégâts infligés par vos sorts de 2 % et vos chances de coup critique de 2 %.",
+    "Augmente les dégâts infligés par vos sorts de 3 % et vos chances de coup critique de 3 %."
    ]
   },
   "mage/arcane-7-2": {
@@ -25071,11 +25076,11 @@ window.TALENT_FR={
    "classic": "Réduit le temps de recharge de votre sort Trait de feu de 0.5 secondes.",
    "note": "Forever a renommé ce talent : le client français ne connaît que « Trait de feu amélioré » (anciennement « Improved Fire Blast »).",
    "nameBranch": "forever",
-   "rank1": "Réduit le temps de recharge de votre sort Trait de feu de 1 s. L’élimination d’une cible non négligeable augmente de 25 % les chances de coup critique de votre sort Trait de feu lancé dans les 20 sec.",
+   "rank1": "Réduit le temps de recharge de votre sort Trait de feu de 1 s. L’élimination d’une cible non négligeable augmente de 25 % les chances de coup critique de votre sort Trait de feu lancé dans les 30 sec.",
    "textSource": "client-forever",
    "ranks": [
-    "Réduit le temps de recharge de votre sort Trait de feu de 1 s. L’élimination d’une cible non négligeable augmente de 25 % les chances de coup critique de votre sort Trait de feu lancé dans les 20 sec.",
-    "Réduit le temps de recharge de votre sort Trait de feu de 2 s. L’élimination d’une cible non négligeable augmente de 50 % les chances de coup critique de votre sort Trait de feu lancé dans les 20 sec."
+    "Réduit le temps de recharge de votre sort Trait de feu de 1 s. L’élimination d’une cible non négligeable augmente de 25 % les chances de coup critique de votre sort Trait de feu lancé dans les 30 sec.",
+    "Réduit le temps de recharge de votre sort Trait de feu de 2 s. L’élimination d’une cible non négligeable augmente de 50 % les chances de coup critique de votre sort Trait de feu lancé dans les 30 sec."
    ]
   },
   "mage/fire-1-2": {
@@ -25966,12 +25971,12 @@ window.TALENT_FR={
    "spell": 16845,
    "classic": "Réduit de 3% le coût en mana de vos sorts Eclat lunaire, Feu stellaire, Colère, Toucher guérisseur, Rétablissement et Récupération.",
    "nameBranch": "classic",
-   "rank1": "Reduces the Mana cost of your damaging spells by 8%.",
+   "rank1": "Réduit de 8 % le coût en mana de vos sorts de dégâts.",
    "textSource": "client-forever",
    "ranks": [
-    "Reduces the Mana cost of your damaging spells by 8%.",
-    "Reduces the Mana cost of your damaging spells by 17%.",
-    "Reduces the Mana cost of your damaging spells by 25%."
+    "Réduit de 8 % le coût en mana de vos sorts de dégâts.",
+    "Réduit de 17 % le coût en mana de vos sorts de dégâts.",
+    "Réduit de 25 % le coût en mana de vos sorts de dégâts."
    ]
   },
   "druide/balance-2-2": {
@@ -26086,7 +26091,7 @@ window.TALENT_FR={
    "spell": 24858,
    "classic": "Transforme le personnage druide en sélénien. Sous cette forme, l’Armure conférée par les objets est augmentée de 360 % et les membres du groupe à moins de 30 m voient leurs chances de coup critique des sorts augmentées de 3 %. La transformation libère le personnage-joueur des effets de métamorphose ou affectant le déplacement.",
    "nameBranch": "classic",
-   "rank1": "Transforms the Druid into Moonkin Form. While in this form, the armor contribution from items is increased by 360%, Omen of Clarity gains 100% increased chance to trigger, and all party members within 45 yards have their critical strike chance increased by 3%, exclusive with Leader of the Pack. The Moonkin cannot cast healing spells while shapeshifted. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+   "rank1": "Transforme le personnage druide en sélénien. Sous cette forme, l’Armure conférée par les objets est augmentée de 360 %, Augure de clarté a 100 % de chances supplémentaires de se déclencher et les membres du groupe à moins de 45 m voient leurs chances de coup critique augmentées de 3 %. Incompatible avec Chef de la meute. La forme de sélénien ne permet pas de lancer de sorts de soins. La transformation libère le personnage-joueur des effets de métamorphose ou affectant le déplacement.",
    "textSource": "client-forever"
   },
   "druide/feral-combat-1-2": {
@@ -26096,14 +26101,15 @@ window.TALENT_FR={
    "classic": "Réduit le coût en rage ou en énergie de vos techniques Mutiler, Balayage, Griffe et Griffure de 1.",
    "nameBranch": "classic",
    "ranks": [
-    "Réduit de 1 point de rage ou d’énergie le coût de vos techniques Mutiler, Mutilation, Balayage, Griffe et Griffure.",
-    "Réduit de 2 points de rage ou d’énergie le coût de vos techniques Mutiler, Mutilation, Balayage, Griffe et Griffure.",
-    "Réduit de 3 points de rage ou d’énergie le coût de vos techniques Mutiler, Mutilation, Balayage, Griffe et Griffure.",
-    "Réduit de 4 points de rage ou d’énergie le coût de vos techniques Mutiler, Mutilation, Balayage, Griffe et Griffure.",
-    "Réduit de 5 points de rage ou d’énergie le coût de vos techniques Mutiler, Mutilation, Balayage, Griffe et Griffure."
+    "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 1 Rage or Energy.",
+    "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 2 Rage or Energy.",
+    "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 3 Rage or Energy.",
+    "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 4 Rage or Energy.",
+    "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 5 Rage or Energy."
    ],
-   "rank1": "Réduit de 1 point de rage ou d’énergie le coût de vos techniques Mutiler, Mutilation, Balayage, Griffe et Griffure.",
-   "textSource": "client-forever"
+   "rank1": "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 1 Rage or Energy.",
+   "textSource": "client-forever-non-traduit",
+   "note": "Le patch 1.60.1.70009 a réécrit cette description. La table française du client n’est pas encore traduite et renvoie l’anglais : c’est ce que le joueur lit en jeu aujourd’hui, et nous l’affichons tel quel plutôt que de laisser l’ancien texte français, qui décrit un effet que le talent n’a plus. Relancer tools/import-client-fr.py comblera le texte dès que Blizzard l’aura traduit."
   },
   "druide/feral-combat-1-3": {
    "name": "Cœur de fauve",
@@ -26241,17 +26247,18 @@ window.TALENT_FR={
    ]
   },
   "druide/feral-combat-4-4": {
-   "name": "Fureur primitive",
-   "nameSource": "officiel",
+   "name": "Blood Frenzy",
+   "nameSource": "non-traduit",
    "spell": 16958,
    "classic": "Vous confère 50% de chances de gagner un bonus supplémentaire de 5 points de rage à chaque fois que vous assénez un coup critique lorsque vous êtes transformé en ours ou en ours redoutable.",
-   "nameBranch": "classic",
+   "nameBranch": "forever",
    "ranks": [
     "Vous confère 50 % de chances de générer 5 points de rage supplémentaires chaque fois que vous réussissez un coup critique en forme d’ours ou d’ours redoutable. De plus, vos coups critiques non périodiques obtenus avec les techniques de la forme de félin ajoutant des points de combo ont 50 % de chances d’ajouter un point de combo supplémentaire.",
     "Vous confère 100 % de chances de générer 5 points de rage supplémentaires chaque fois que vous réussissez un coup critique en forme d’ours ou d’ours redoutable. De plus, vos coups critiques non périodiques obtenus avec les techniques de la forme de félin ajoutant des points de combo ont 100 % de chances d’ajouter un point de combo supplémentaire."
    ],
    "rank1": "Vous confère 50 % de chances de générer 5 points de rage supplémentaires chaque fois que vous réussissez un coup critique en forme d’ours ou d’ours redoutable. De plus, vos coups critiques non périodiques obtenus avec les techniques de la forme de félin ajoutant des points de combo ont 50 % de chances d’ajouter un point de combo supplémentaire.",
-   "textSource": "client-forever"
+   "textSource": "client-forever",
+   "note": "Renommé par le patch 1.60.1.70009 : « Primal Fury » devient « Blood Frenzy ». La table française du client n’est pas encore traduite et renvoie l’anglais ; nous affichons ce que le joueur lit en jeu. Relancer tools/import-client-fr.py comblera le nom dès que Blizzard l’aura traduit."
   },
   "druide/feral-combat-5-2": {
    "name": "Chef de la meute",
@@ -26674,8 +26681,8 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 47540,
-   "rank1": "Projette une volée de lumière sacrée sur la cible, infligeant 96 points de dégâts du Sacré à un ennemi ou rendant 233 points de vie à un allié. Instantanément, puis toutes les 1 sec pendant 2 sec.",
-   "textSource": "editorial"
+   "rank1": "Lance une salve de lumière sacrée sur la cible et inflige 81 points de dégâts du sacré à un personnage adverse ou rend 184 points de vie à un personnage allié instantanément et toutes les 1 s pendant 2 sec.",
+   "textSource": "client-forever"
   },
   "pretre/discipline-5-3": {
    "name": "Regain d’espoir",
@@ -26799,7 +26806,7 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "forever",
    "spell": 400624,
-   "rank1": "Vos coups critiques non périodiques obtenus avec Boule de feu, Éclair de givrefeu, Trait de feu et Brûlure vous confèrent Bonne série pendant 15 sec. Bonne série réduit de 25 % le temps d’incantation d'Explosion pyrotechnique et est cumulable jusqu’à 3 fois.",
+   "rank1": "Vos coups critiques non périodiques obtenus avec Boule de feu, Éclair de givrefeu, Trait de feu et Brûlure vous confèrent Bonne série pendant 20 sec. Bonne série réduit de 25 % le temps d’incantation d'Explosion pyrotechnique et est cumulable jusqu’à 3 fois.",
    "textSource": "client-forever"
   },
   "mage/frost-5-3": {
@@ -26843,16 +26850,16 @@ window.TALENT_FR={
    ]
   },
   "demoniste/affliction-5-3": {
-   "name": "Siphon d'âme",
+   "name": "Siphon d’âme",
    "nameSource": "officiel",
-   "nameBranch": "tbc",
+   "nameBranch": "forever",
    "spell": 17804,
-   "rank1": "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 4% per each of your other Affliction effects active on the target, up to a maximum increase of 12%.",
+   "rank1": "Augmente les dégâts infligés ou les points de vie drainés par vos sorts Drain de vie, Drain d’âme et Calvaire de 4 % pour chacun de vos autres effets d’Affliction actifs sur la cible, jusqu’à un bonus maximal de 12 %.",
    "textSource": "client-forever",
    "ranks": [
-    "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 4% per each of your other Affliction effects active on the target, up to a maximum increase of 12%.",
-    "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 8% per each of your other Affliction effects active on the target, up to a maximum increase of 24%.",
-    "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 12% per each of your other Affliction effects active on the target, up to a maximum increase of 36%."
+    "Augmente les dégâts infligés ou les points de vie drainés par vos sorts Drain de vie, Drain d’âme et Calvaire de 4 % pour chacun de vos autres effets d’Affliction actifs sur la cible, jusqu’à un bonus maximal de 12 %.",
+    "Augmente les dégâts infligés ou les points de vie drainés par vos sorts Drain de vie, Drain d’âme et Calvaire de 8 % pour chacun de vos autres effets d’Affliction actifs sur la cible, jusqu’à un bonus maximal de 24 %.",
+    "Augmente les dégâts infligés ou les points de vie drainés par vos sorts Drain de vie, Drain d’âme et Calvaire de 12 % pour chacun de vos autres effets d’Affliction actifs sur la cible, jusqu’à un bonus maximal de 36 %."
    ]
   },
   "demoniste/demonology-2-1": {
@@ -27006,12 +27013,13 @@ window.TALENT_FR={
    ]
   },
   "druide/feral-combat-4-2": {
-   "name": "Mutilation",
-   "nameSource": "officiel",
-   "nameBranch": "tbc",
-   "spell": 33917,
-   "rank1": "Mutile la cible et lui inflige 100 % des dégâts normaux plus 26.",
-   "textSource": "client-forever"
+   "name": "Primal Bite",
+   "nameSource": "non-traduit",
+   "nameBranch": "forever",
+   "spell": 407995,
+   "rank1": "Bite the target for 100% normal damage plus 26.",
+   "textSource": "client-forever-non-traduit",
+   "note": "Renommé par le patch 1.60.1.70009 : « Mangle » devient « Primal Bite ». La table française du client n’est pas encore traduite et renvoie l’anglais ; nous affichons ce que le joueur lit en jeu. Relancer tools/import-client-fr.py comblera le nom dès que Blizzard l’aura traduit. Le patch 1.60.1.70009 a réécrit cette description. La table française du client n’est pas encore traduite et renvoie l’anglais : c’est ce que le joueur lit en jeu aujourd’hui, et nous l’affichons tel quel plutôt que de laisser l’ancien texte français, qui décrit un effet que le talent n’a plus. Relancer tools/import-client-fr.py comblera le texte dès que Blizzard l’aura traduit."
   },
   "druide/feral-combat-5-1": {
    "name": "Instincts prédateurs",
@@ -27102,8 +27110,8 @@ window.TALENT_FR={
    "nameSource": "officiel",
    "nameBranch": "wotlk",
    "spell": 48438,
-   "rank1": "Soigne la cible et son groupe de 285 points de vie en 7 sec. Les membres du groupe doivent se trouver à moins de 43 mètres de la cible. Les soins sont d’abord prodigués rapidement, puis ralentissent à mesure que Croissance sauvage approche de sa durée totale.",
-   "textSource": "editorial"
+   "rank1": "Rend 336 points de vie en 7 sec à la cible et aux membres de son groupe se trouvant à moins de 43.5 m d’elle. La quantité de soins prodiguée est importante au début, puis diminue à mesure que Croissance sauvage atteint sa durée maximale.",
+   "textSource": "client-forever"
   },
   "guerrier/fury-3-4": {
    "name": "Rage infinie",
@@ -27266,7 +27274,7 @@ window.TALENT_FR={
   "paladin/retribution-4-3": {
    "name": "Sentence sacrée",
    "nameSource": "officiel",
-   "rank1": "Augmente les dégâts infligés par votre technique Frappe sacrée de 10 % et réinitialise tous les effets de Jugement qui affectent la cible.",
+   "rank1": "Augmente les dégâts infligés par votre technique Frappe sacrée de 20 % et réinitialise tous les effets de Jugement qui affectent la cible.",
    "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1311087
@@ -27299,10 +27307,11 @@ window.TALENT_FR={
   "paladin/retribution-7-2": {
    "name": "Effet de lumière",
    "nameSource": "officiel",
-   "rank1": "Quand vous remplacez votre Sceau d’autorité, de piété, de fureur ou de justice par un autre, vous obtenez un Écho. Votre prochaine attaque en mêlée applique les effets du sceau remplacé et consomme l’Écho.",
-   "textSource": "client-forever",
+   "rank1": "Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo.",
+   "textSource": "client-forever-non-traduit",
    "nameBranch": "forever",
-   "spell": 1310735
+   "spell": 1310735,
+   "note": "Le patch 1.60.1.70009 a réécrit cette description. La table française du client n’est pas encore traduite et renvoie l’anglais : c’est ce que le joueur lit en jeu aujourd’hui, et nous l’affichons tel quel plutôt que de laisser l’ancien texte français, qui décrit un effet que le talent n’a plus. Relancer tools/import-client-fr.py comblera le texte dès que Blizzard l’aura traduit."
   },
   "chasseur/beast-mastery-4-4": {
    "name": "Invocation de faucon",
@@ -27363,10 +27372,11 @@ window.TALENT_FR={
   "chasseur/survival-5-4": {
    "name": "Coup de trotteur",
    "nameSource": "officiel",
-   "rank1": "Un coup puissant qui inflige 100 % des dégâts de l’arme de mêlée.",
-   "textSource": "client-forever",
+   "rank1": "A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec.",
+   "textSource": "client-forever-non-traduit",
    "nameBranch": "forever",
-   "spell": 1317257
+   "spell": 1317257,
+   "note": "Le patch 1.60.1.70009 a réécrit cette description. La table française du client n’est pas encore traduite et renvoie l’anglais : c’est ce que le joueur lit en jeu aujourd’hui, et nous l’affichons tel quel plutôt que de laisser l’ancien texte français, qui décrit un effet que le talent n’a plus. Relancer tools/import-client-fr.py comblera le texte dès que Blizzard l’aura traduit."
   },
   "chasseur/survival-7-2": {
    "name": "Frappes lacérantes",
@@ -27514,13 +27524,14 @@ window.TALENT_FR={
    "name": "Contagion dévorante",
    "nameSource": "officiel",
    "ranks": [
-    "Réduit le coût en mana de Peste dévorante de 25 %. Les cibles qui meurent alors que Peste dévorante est active propagent l’effet à un personnage adverse proche à moins de 5 m pendant la durée restante.",
-    "Réduit le coût en mana de Peste dévorante de 50 %. Les cibles qui meurent alors que Peste dévorante est active propagent l’effet à un personnage adverse proche à moins de 10 m pendant la durée restante."
+    "Reduces the mana cost of your Devouring Plague by 25%. Targets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 5 yards for the remaining duration.",
+    "Reduces the mana cost of your Devouring Plague by 50%. Targets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 10 yards for the remaining duration."
    ],
-   "rank1": "Réduit le coût en mana de Peste dévorante de 25 %. Les cibles qui meurent alors que Peste dévorante est active propagent l’effet à un personnage adverse proche à moins de 5 m pendant la durée restante.",
-   "textSource": "client-forever",
+   "rank1": "Reduces the mana cost of your Devouring Plague by 25%. Targets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 5 yards for the remaining duration.",
+   "textSource": "client-forever-non-traduit",
    "spell": 1309950,
-   "nameBranch": "forever"
+   "nameBranch": "forever",
+   "note": "Le patch 1.60.1.70009 a réécrit cette description. La table française du client n’est pas encore traduite et renvoie l’anglais : c’est ce que le joueur lit en jeu aujourd’hui, et nous l’affichons tel quel plutôt que de laisser l’ancien texte français, qui décrit un effet que le talent n’a plus. Relancer tools/import-client-fr.py comblera le texte dès que Blizzard l’aura traduit."
   },
   "pretre/shadow-magic-6-1": {
    "name": "Trépas prématuré",
@@ -27554,10 +27565,11 @@ window.TALENT_FR={
   "chaman/enhancement-7-2": {
    "name": "Rage long-voyante",
    "nameSource": "officiel",
-   "rank1": "Augmente votre vitesse d’attaque en mêlée et d’incantation de 30 % pendant 25 sec.",
-   "textSource": "client-forever",
+   "rank1": "Increases your attack speed by 30% for 25 sec.",
+   "textSource": "client-forever-non-traduit",
    "nameBranch": "forever",
-   "spell": 425336
+   "spell": 425336,
+   "note": "Le patch 1.60.1.70009 a réécrit cette description. La table française du client n’est pas encore traduite et renvoie l’anglais : c’est ce que le joueur lit en jeu aujourd’hui, et nous l’affichons tel quel plutôt que de laisser l’ancien texte français, qui décrit un effet que le talent n’a plus. Relancer tools/import-client-fr.py comblera le texte dès que Blizzard l’aura traduit."
   },
   "chaman/restoration-2-1": {
    "name": "Pleine conscience",
@@ -27623,15 +27635,16 @@ window.TALENT_FR={
   },
   "demoniste/affliction-2-3": {
    "name": "Drains améliorés",
-   "nameSource": "adapte",
+   "nameSource": "officiel",
    "ranks": [
-    "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 7%.",
-    "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 13%.",
-    "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 20%."
+    "Augmente les points de vie drainés ou les dégâts infligés par vos sorts Drain de vie, Drain d’âme et Calvaire de 7 %.",
+    "Augmente les points de vie drainés ou les dégâts infligés par vos sorts Drain de vie, Drain d’âme et Calvaire de 13 %.",
+    "Augmente les points de vie drainés ou les dégâts infligés par vos sorts Drain de vie, Drain d’âme et Calvaire de 20 %."
    ],
-   "rank1": "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 7%.",
+   "rank1": "Augmente les points de vie drainés ou les dégâts infligés par vos sorts Drain de vie, Drain d’âme et Calvaire de 7 %.",
    "textSource": "client-forever",
-   "spell": 403511
+   "spell": 403511,
+   "nameBranch": "forever"
   },
   "demoniste/affliction-4-1": {
    "name": "Malveillance",
@@ -27652,7 +27665,7 @@ window.TALENT_FR={
   "demoniste/affliction-7-2": {
    "name": "Calvaire",
    "nameSource": "officiel",
-   "rank1": "Déchire la cible de l’intérieur, ce qui lui inflige 37 points de dégâts d’ombre toutes les 1 s et augmente les dégâts qu’elle subit par vos autres effets de dégâts d’ombre de 10 %. Dure 6 sec.",
+   "rank1": "Déchire la cible de l’intérieur, ce qui lui inflige 36 points de dégâts d’ombre toutes les 1 s et augmente les dégâts qu’elle subit par vos autres effets de dégâts d’ombre de 10 %. Dure 6 sec.",
    "textSource": "client-forever",
    "nameBranch": "forever",
    "spell": 1316697,
