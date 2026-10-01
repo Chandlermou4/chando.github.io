@@ -33,7 +33,7 @@ Voir `ARCHITECTURE.md`. En résumé :
   `<boss>.html` par boss. `chando.pages.dev/tbc/…`
 - `forever/` : tout le contenu Forever — `talents.html` (calculateur de
   talents), `legacy.html` (calculateur de Points Legacy), `races.html`
-  (raciaux) et `news.html`, l'index des actualités. `chando.pages.dev/forever/…`
+  (raciaux), `mascottes.html` (collection des mascottes) et `news.html`, l'index des actualités. `chando.pages.dev/forever/…`
 - `forever/actualites/` : une page par article d'actualité, servie en
   `chando.pages.dev/forever/actualites/<slug>`. Rédaction originale et images
   officielles créditées — voir ARCHITECTURE.md pour les conditions.

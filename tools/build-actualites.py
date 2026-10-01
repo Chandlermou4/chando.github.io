@@ -167,6 +167,8 @@ def nav(ici):
                          lien('/forever/legacy.html', 'Points Legacy'),
                          lien('/forever/races.html', 'Raciaux'),
                          lien('/forever/metiers.html', 'Métiers'),
+                         lien('/forever/bis.html', 'BiS'),
+                         lien('/forever/mascottes.html', 'Mascottes'),
                          lien('/forever/news.html', 'Actualités')])
             + '\n</nav>\n')
 

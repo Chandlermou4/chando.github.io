@@ -11,7 +11,8 @@ publié.
   `<boss>.html` par boss. Chaque nouvelle page TBC se dépose ici.
 - `forever/` : section Forever. `talents.html` (calculateur de talents),
   `legacy.html` (calculateur de Points Legacy), `races.html` (combinaisons
-  race-classe et changements de raciaux) et `news.html` — toute future page
+  race-classe et changements de raciaux), `mascottes.html` (collection des
+  mascottes) et `news.html` — toute future page
   Forever se dépose ici. Chaque page de la section porte le même petit
   `.section-nav` pour naviguer entre elles.
 - **Les deux calculateurs** (`talents.html`, `legacy.html`) partagent une
@@ -31,6 +32,14 @@ publié.
   que les écarts (4 lignes de grille au lieu de 7, icône « ? » des
   emplacements non révélés). C'est délibéré — les deux outils doivent se
   ressembler au pixel près, un seul jeu de règles à modifier pour les deux.
+- `forever/mascottes.html` : collection des 113 mascottes de la bêta. Même
+  découpage que les listes BiS : `data/mascottes-data.js`
+  (`window.MASCOTTES_DATA`, relevé du client recoupé avec Wowhead Forever,
+  chaque mascotte portant ses sources de confirmation) et
+  `assets/mascottes-ui.js` (rendu). La vue vit dans l'URL : `?vue=…` pour une
+  sélection (avant le niveau 30, nouvelles, mystères), `?m=<slug>` pour la
+  fiche d'une mascotte. Les mascottes cochées sont gardées dans le stockage
+  local du navigateur (`chando-mascottes-collection`), rien n'est envoyé.
 - `forever/news.html` : **index** de la section Actualités. Ne contient plus
   d'article, seulement la liste des 21 articles avec vignette, rubrique, date
   et description. Son URL `/forever/news` ne change pas.

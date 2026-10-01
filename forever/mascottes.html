@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mascottes — WoW Forever</title>
+<meta name="description" content="Les 113 mascottes de World of Warcraft: Forever relevées dans le client de la bêta : où et comment les obtenir, le niveau réellement requis, les 42 nouvelles espèces et celles qui restent à découvrir.">
+<link rel="canonical" href="https://chando.pages.dev/forever/mascottes">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chando">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Mascottes — WoW Forever">
+<meta property="og:description" content="Les 113 mascottes de World of Warcraft: Forever relevées dans le client de la bêta : où et comment les obtenir, le niveau réellement requis, les 42 nouvelles espèces et celles qui restent à découvrir.">
+<meta property="og:url" content="https://chando.pages.dev/forever/mascottes">
+<meta property="og:image" content="https://chando.pages.dev/assets/media/og-forever.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/media/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/media/favicon-180.png">
+<script>
+  try{var t=localStorage.getItem('guide-theme');
+    if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+:root{--page-base:1320px}
+main{flex:1;width:100%;max-width:var(--page-max);margin:0 auto;padding:30px 48px 64px}
+main h2{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:22px;margin:0;color:var(--fg)}
+main h3{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:20px;margin:30px 0 12px;color:#1d8dcd}
+main .lede{color:var(--dim);font-size:14.5px;max-width:75ch;margin-bottom:8px}
+main .notice a{color:#1d8dcd}
+
+/* Statuts : la couleur du cadre porte le statut, comme la rareté dans le jeu */
+.st-obtenable{--st:#3fa66a}.st-a_decouvrir{--st:#d4a52a}.st-inaccessible{--st:#8a9299}.st-cachee{--st:#9b6fc0}.st-nouv{--st:#1d8dcd}
+.m-badge{display:inline-flex;align-items:center;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:3px 8px;border-radius:999px;border:1px solid color-mix(in srgb,var(--st,var(--dim)) 55%,transparent);
+  color:var(--st,var(--dim));background:color-mix(in srgb,var(--st,var(--dim)) 12%,transparent);white-space:nowrap}
+.m-icone{display:inline-flex;flex:none;border:2px solid var(--st);border-radius:6px;overflow:hidden;background:#0d0f0e}
+.m-icone img{width:100%;height:100%;display:block}
+.m-cache{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* Onglets de sélection et chiffres */
+.m-vues{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.m-vues a{text-decoration:none;font-size:13.5px;font-weight:600;color:var(--dim);border:1px solid var(--hair);border-radius:999px;padding:7px 14px}
+.m-vues a span{font-weight:500;opacity:.7;margin-left:4px}
+.m-vues a:hover{color:var(--fg)}
+.m-vues a.is-here{color:var(--fg);border-color:#1d8dcd;background:rgba(29,141,205,.1)}
+.m-chiffres{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:1px solid var(--hair);border-radius:10px;overflow:hidden;margin:4px 0 22px}
+.m-chiffres div{padding:14px 18px;display:flex;flex-direction:column-reverse}
+.m-chiffres div+div{border-left:1px solid var(--hair)}
+.m-chiffres dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.m-chiffres dd{font-family:'Newsreader',Georgia,serif;font-size:32px;line-height:1.15;color:#1d8dcd}
+.m-amorce{margin:14px 0 22px}
+
+/* Outils */
+.m-outils{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:6px 0 12px}
+.m-cherche{flex:1 1 320px}
+.m-cherche input{width:100%;font:inherit;font-size:14.5px;color:var(--fg);background:transparent;border:1px solid var(--hair);border-radius:8px;padding:10px 14px}
+.m-cherche input:focus{outline:none;border-color:#1d8dcd}
+.m-progres{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--dim);min-width:220px}
+.m-progres b{color:var(--fg);font-size:16px}
+.m-barre{display:block;height:4px;border-radius:2px;background:var(--hair);overflow:hidden}
+.m-barre i{display:block;height:100%;background:#1d8dcd;transition:width .3s}
+.m-filtres{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.m-filtres select{font:inherit;font-size:13px;color:var(--fg);background:var(--bg);border:1px solid var(--hair);border-radius:8px;padding:8px 10px}
+.m-case{display:flex;gap:7px;align-items:center;font-size:13px;color:var(--dim);padding:0 4px;cursor:pointer}
+.m-case input{accent-color:#1d8dcd}
+.m-bascule{display:inline-flex;border:1px solid var(--hair);border-radius:8px;overflow:hidden}
+.m-bascule button{font:inherit;font-size:13px;color:var(--dim);background:transparent;border:0;padding:8px 13px;cursor:pointer}
+.m-bascule button+button{border-left:1px solid var(--hair)}
+.m-bascule button[aria-pressed=true]{color:var(--fg);background:rgba(29,141,205,.12)}
+.m-compte{font-size:12.5px;color:var(--dim);margin:12px 0 0}
+.m-vide{padding:40px;text-align:center;border:1px dashed var(--hair);border-radius:10px;color:var(--dim);margin-top:18px}
+
+/* Galerie : le modèle d'abord, le nom ensuite */
+.m-paquet{margin-top:26px}
+.m-paquet h2{display:flex;align-items:baseline;gap:10px;padding-bottom:8px;margin-bottom:12px;border-bottom:1px solid var(--hair)}
+.m-paquet h2 span{font-family:'Hanken Grotesk',sans-serif;font-size:12.5px;color:#1d8dcd}
+.m-galerie,.m-lignes{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.m-galerie{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
+.m-carte{position:relative;border:1px solid var(--hair);border-radius:10px;overflow:hidden;transition:border-color .15s,transform .15s}
+.m-carte:hover{border-color:#1d8dcd;transform:translateY(-2px)}
+.m-carte.a-moi{border-color:color-mix(in srgb,#3fa66a 60%,transparent)}
+.m-carte>a{display:flex;flex-direction:column;height:100%;text-decoration:none;color:var(--fg)}
+.m-portrait{position:relative;display:flex;align-items:center;justify-content:center;height:150px;overflow:hidden;
+  background:radial-gradient(ellipse at 50% 62%,color-mix(in srgb,var(--st) 26%,#252a28) 0,#121513 72%);border-bottom:2px solid color-mix(in srgb,var(--st) 60%,transparent)}
+.m-portrait>img{height:100%;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(0 6px 8px rgba(0,0,0,.6))}
+.m-portrait>img+.m-icone{display:none}
+.st-cachee.m-portrait>img,.st-inaccessible.m-portrait>img{filter:drop-shadow(0 6px 8px rgba(0,0,0,.6)) saturate(.6)}
+.m-portrait.grand{height:250px;border-radius:10px;border-bottom:0}
+.m-nom{display:flex;flex-direction:column;min-width:0;padding:9px 12px 11px;line-height:1.3}
+.m-nom b{font-weight:600;font-size:14.5px}
+.m-nom small{font-size:12px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.m-nouv{font-style:normal;font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1d8dcd;
+  border:1px solid rgba(29,141,205,.5);border-radius:4px;padding:1px 5px;background:rgba(12,13,11,.75)}
+.m-carte .m-nouv{position:absolute;top:9px;left:9px}
+.m-coche{width:22px;height:22px;flex:none;border:1px solid var(--hair);border-radius:5px;background:rgba(12,13,11,.6);cursor:pointer;padding:0;
+  display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px}
+.m-coche:hover{border-color:#1d8dcd}
+.m-coche[aria-pressed=true]{background:#3fa66a;border-color:#3fa66a}
+.m-coche[aria-pressed=true]:after{content:'✓'}
+.m-carte .m-coche{position:absolute;top:8px;right:8px}
+.m-lignes{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px}
+.m-ligne{display:flex;align-items:center;border:1px solid var(--hair);border-radius:8px;transition:border-color .15s}
+.m-ligne:hover{border-color:#1d8dcd}
+.m-ligne.a-moi{border-color:color-mix(in srgb,#3fa66a 60%,transparent)}
+.m-ligne>a{flex:1;display:flex;align-items:center;gap:4px;padding:8px 10px;text-decoration:none;color:var(--fg);min-width:0}
+.m-ligne .m-nom{padding:0 0 0 8px}
+.m-ligne .m-nouv{margin-left:4px;vertical-align:1px}
+.m-ligne .m-coche{margin-right:10px}
+.m-lignes.compact{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+
+/* Journal et légende */
+.m-journal{margin-top:46px}
+.m-journal ol{list-style:none;margin:14px 0 0;padding:0;border-left:1px solid var(--hair)}
+.m-journal li{position:relative;display:grid;grid-template-columns:110px 230px minmax(0,1fr);gap:14px;align-items:center;padding:11px 0 11px 20px;border-bottom:1px solid var(--hair)}
+.m-journal li:before{content:'';position:absolute;left:-5px;top:50%;margin-top:-5px;width:9px;height:9px;border-radius:50%;background:#1d8dcd;box-shadow:0 0 0 3px var(--bg)}
+.m-journal time{font-size:12.5px;color:#1d8dcd}
+.m-journal li>a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;font-size:14.5px}
+.m-journal p{font-size:13.5px;color:var(--dim)}
+.m-src{color:#1d8dcd;font-size:12px}
+.m-legende{margin-top:40px}
+.m-legende div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 26px;margin-top:14px}
+.m-legende p{font-size:13.5px;color:var(--dim)}
+.m-legende .m-badge{margin-right:6px}
+
+/* Fiche */
+.m-fil{margin-bottom:18px}
+.m-fil a{font-size:13px;font-weight:600;color:var(--dim);text-decoration:none}
+.m-fil a:hover{color:#1d8dcd}
+.m-tete{display:flex;align-items:center;gap:16px;padding-bottom:18px;border-bottom:1px solid var(--hair)}
+.m-tete h2{font-size:30px;margin:6px 0 2px}
+.m-tete p{font-size:13px;color:var(--dim)}
+.m-tete .en{font-style:italic}
+.m-badges{display:flex;flex-wrap:wrap;gap:6px}
+.m-fiche{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:44px;margin-top:22px}
+.m-faits{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--hair);border-radius:10px;overflow:hidden}
+.m-faits div{padding:12px 16px;border-bottom:1px solid var(--hair)}
+.m-faits div:nth-child(odd){border-right:1px solid var(--hair)}
+.m-faits dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:2px}
+.m-faits dd{font-size:15px}
+.m-inconnu{color:var(--dim);font-style:italic}
+.m-fiche .notice{margin:16px 0 0}
+.m-cadre{margin:0 0 12px}
+.m-cadre figcaption{font-size:11.5px;color:var(--dim);margin-top:7px}
+.m-ajout{width:100%;font:inherit;font-size:13.5px;font-weight:600;color:var(--fg);background:transparent;border:1px solid var(--hair);border-radius:8px;padding:10px;cursor:pointer;margin-bottom:16px}
+.m-ajout:hover{border-color:#1d8dcd}
+.m-ajout[aria-pressed=true]{border-color:#3fa66a;color:#3fa66a}
+.m-boite{border:1px solid var(--hair);border-radius:10px;padding:14px 16px;margin-bottom:14px;font-size:13.5px}
+.m-boite ul{margin:4px 0 10px 18px;color:var(--fg)}
+.m-boite p{color:var(--fg);margin-top:2px}
+.m-boite a{display:block;color:#1d8dcd;text-decoration:none;margin-top:6px}
+.m-sur{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-top:2px}
+
+@media(max-width:1000px){.m-chiffres{grid-template-columns:repeat(3,minmax(0,1fr))}.m-chiffres div:nth-child(4){border-left:0}.m-chiffres div:nth-child(n+4){border-top:1px solid var(--hair)}
+  .m-journal li{grid-template-columns:110px minmax(0,1fr)}.m-journal p{grid-column:1/-1}.m-fiche{grid-template-columns:minmax(0,1fr) 250px;gap:26px}}
+@media(max-width:760px){main{padding:24px 24px 48px}
+  .m-chiffres{grid-template-columns:1fr 1fr}.m-chiffres div{border-left:0!important;border-top:1px solid var(--hair)}.m-chiffres div:nth-child(-n+2){border-top:0}
+  .m-chiffres div:nth-child(odd){border-right:1px solid var(--hair)}.m-chiffres div:last-child{grid-column:1/-1;border-right:0}
+  .m-filtres select{flex:1 1 45%}.m-progres{width:100%}
+  .m-galerie{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.m-portrait{height:125px}
+  .m-journal li{grid-template-columns:1fr;gap:4px}.m-legende div{grid-template-columns:1fr}
+  .m-fiche{display:flex;flex-direction:column-reverse}.m-faits{grid-template-columns:1fr}.m-faits div:nth-child(odd){border-right:0}
+  .m-tete h2{font-size:25px}}
+</style>
+</head>
+<body>
+
+<nav class="site-switch">
+  <a href="/tbc/strats.html" class="tbc">TBC</a>
+  <a href="/forever/talents.html" class="forever is-here">Forever</a>
+</nav>
+
+<div class="topbar">
+<header>
+  <span class="eyebrow">WoW Forever · bêta ouverte</span>
+  <h1>Mascottes</h1>
+</header>
+
+<nav class="section-nav">
+  <a href="/forever/talents.html">Calculateur de talents</a>
+  <a href="/forever/legacy.html">Points Legacy</a>
+  <a href="/forever/races.html">Raciaux</a>
+  <a href="/forever/metiers.html">Métiers</a>
+  <a href="/forever/bis.html">BiS</a>
+  <a href="/forever/mascottes.html" class="is-here">Mascottes</a>
+  <a href="/forever/news.html">Actualités</a>
+</nav>
+</div>
+
+<main>
+
+<div class="notice">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+  <div><strong>Relevé dans le client de la bêta (build 1.60.1.70124), recoupé avec Wowhead Forever et les découvertes des joueurs.</strong> Une mascotte n'est marquée « obtenable » que si sa méthode est confirmée ; chaque fiche dit d'où vient l'information. Les taux de butin viennent souvent de petits échantillons. Icônes et rendus 3D sont affichés depuis le CDN public de Wowhead. Cochez les mascottes que vous possédez : la liste reste dans ce navigateur.</div>
+</div>
+
+<div id="mascottes"><noscript><p class="lede">La collection a besoin de JavaScript pour s'afficher.</p></noscript></div>
+
+</main>
+
+<footer>
+  <a class="feedback" href="https://discord.gg/rz5PxxMgnv" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.213.386-.46.905-.63 1.319a18.27 18.27 0 0 0-5.51 0C9.575 3.905 9.322 3.386 9.11 3a19.7 19.7 0 0 0-4.432 1.369C1.869 8.59 1.106 12.705 1.488 16.76a19.9 19.9 0 0 0 6.073 3.08 14.6 14.6 0 0 0 1.307-2.136c-.72-.271-1.41-.606-2.06-1 .173-.128.342-.261.505-.398a14.2 14.2 0 0 0 12.171 0c.165.14.334.273.506.398-.652.394-1.343.73-2.064 1.001.377.75.815 1.463 1.307 2.135a19.85 19.85 0 0 0 6.076-3.08c.448-4.7-.766-8.777-3.209-12.39ZM8.02 14.331c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.955 2.419-2.157 2.419Zm7.96 0c-1.183 0-2.157-1.085-2.157-2.419s.955-2.418 2.157-2.418c1.21 0 2.176 1.094 2.157 2.418 0 1.334-.946 2.419-2.157 2.419Z"/></svg>Pour signaler une erreur ou proposer une modification</a>
+</footer>
+
+<button id="themetoggle" type="button" aria-label="Basculer le thème clair ou sombre"></button>
+
+<script src="/data/mascottes-data.js"></script>
+<script src="/assets/mascottes-ui.js"></script>
+<script>
+(function(){
+  var KEY='guide-theme', root=document.documentElement, btn=document.getElementById('themetoggle');
+  function sync(){ btn.textContent=(root.dataset.theme==='light')?'Sombre':'Clair'; }
+  btn.addEventListener('click',function(){
+    var toLight=root.dataset.theme!=='light';
+    root.dataset.theme=toLight?'light':'dark';
+    try{localStorage.setItem(KEY,toLight?'light':'dark')}catch(e){}
+    sync();
+  });
+  sync();
+})();
+</script>
+
+<script defer src="/assets/online.js"></script>
+<!-- Cloudflare Web Analytics -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cda3a81db83047a5a191c0d75d1db09c"}'></script>
+<!-- End Cloudflare Web Analytics -->
+</body>
+</html>
